@@ -1,0 +1,10 @@
+{
+   "create_camp_info": {
+      "searcher_delay": "6h+6h",
+      "radius": 14,
+      "spawn_range": {
+         "min": 100,
+         "max": 350
+      }
+   }
+}

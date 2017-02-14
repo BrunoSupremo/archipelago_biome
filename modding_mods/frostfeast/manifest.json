@@ -1,0 +1,16 @@
+{
+	"mixintos": {
+		"frostfeast/data/biome/index.json":"archipelago_biome/data/biome/index.json",
+
+		"archipelago_biome/data/biome/archipelago.json": "archipelago_biome/modding_mods/frostfeast/freezing_archipelago.json",
+		"archipelago_biome/data/biome/archipelago_generation_data.json": "archipelago_biome/modding_mods/frostfeast/generation.json",
+
+		"archipelago_biome:trees:bend_palm:large": "archipelago_biome/modding_mods/frostfeast/trees/large_bend_palm.json",
+		"archipelago_biome:trees:bend_palm:small": "archipelago_biome/modding_mods/frostfeast/trees/small_bend_palm.json",
+		"archipelago_biome:trees:dranden:small": "archipelago_biome/modding_mods/frostfeast/trees/dranden.json",
+		"archipelago_biome:trees:palm:large": "archipelago_biome/modding_mods/frostfeast/trees/large_palm.json",
+		"archipelago_biome:trees:palm:small": "archipelago_biome/modding_mods/frostfeast/trees/small_palm.json",
+		"archipelago_biome:trees:papaya": "archipelago_biome/modding_mods/frostfeast/trees/papaya.json",
+		"archipelago_biome:trees:smalea:small": "archipelago_biome/modding_mods/frostfeast/trees/smalea.json"
+	}
+}

@@ -1,0 +1,42 @@
+{
+   "components": {
+      "stonehearth:shepherd_pasture": {
+         "check_for_strays_interval": "6h",
+         "default_type": "stonehearth:rabbit",
+         "pasture_data": {
+            "stonehearth:sheep": {
+               "name": "i18n(stonehearth:ui.game.zones_mode.pasture.sheep_pasture_name)",
+               "description": "i18n(stonehearth:ui.game.zones_mode.pasture.sheep_pasture_description)",
+               "icon": "/stonehearth/entities/critters/sheep/sheep.png",
+               "min_population": 2,
+               "reproduction_uri": "stonehearth:sheep:young",
+               "max_num_per_10_square_unit": 0.48,
+               "base_reproduction_period": "36h",
+               "min_reproduction_period": "12h",
+               "feed_uri": "stonehearth:food:sheep_feed"
+            },
+            "stonehearth:rabbit": {
+               "name": "i18n(stonehearth:ui.game.zones_mode.pasture.rabbit_pasture_name)",
+               "description": "i18n(stonehearth:ui.game.zones_mode.pasture.rabbit_pasture_description)",
+               "icon": "/stonehearth/entities/critters/rabbit/rabbit.png",
+               "min_population": 2,
+               "max_num_per_10_square_unit": 1,
+               "base_reproduction_period": "18h",
+               "min_reproduction_period": "8h",
+               "feed_uri": "stonehearth:food:rabbit_feed"
+            },
+            "stonehearth:poyo": {
+               "name": "i18n(stonehearth:ui.game.zones_mode.pasture.poyo_pasture_name)",
+               "description": "i18n(stonehearth:ui.game.zones_mode.pasture.poyo_pasture_description)",
+               "icon": "/stonehearth/entities/critters/poyo/poyo.png",
+               "reproduction_uri": "stonehearth:poyo:egg",
+               "min_population": 2,
+               "max_num_per_10_square_unit": 1,
+               "base_reproduction_period": "24h",
+               "min_reproduction_period": "10h",
+               "feed_uri": "stonehearth:food:poyo_feed"
+            }
+         }
+      }
+   }
+}

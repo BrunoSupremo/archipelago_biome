@@ -1,0 +1,5 @@
+{
+	"mixintos": {
+		"archipelago_biome/data/biome/archipelago_generation_data.json": "archipelago_biome/modding_mods/brewerymod/generation.json"
+	}
+}

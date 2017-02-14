@@ -1,0 +1,12 @@
+{
+   "type": "command",
+   "name": "chop_tree",
+   "display_name": "i18n(stonehearth:data.commands.chop_tree.display_name)",
+   "description": "i18n(stonehearth:data.commands.chop_tree.description)",
+   "icon": "/stonehearth/data/commands/slaughter/slaughter.png",
+   "action": "call",
+   "function": "stonehearth:permanently_harvest_entity",
+   "args": [
+      "{{self}}"
+   ]
+}

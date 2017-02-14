@@ -1,0 +1,54 @@
+{
+	"mixins": "stonehearth:mixins:tree",
+	"type": "mixin",
+	"components": {
+		"stonehearth:resource_node": {
+			"resource": "stonehearth:resources:wood:oak_log",
+			"resource_loot_table": {
+				"entries": {
+					"palm_items": {
+						"items": {
+							"none": {
+								"uri": "",
+								"weight": 1.5
+							},
+							"coconut": {
+								"uri": "archipelago_biome:food:coconut",
+								"weight": 1
+							}
+						}
+					}
+				}
+			}
+		},
+		"stonehearth:commands": {
+			"commands": [
+				"archipelago_biome:commands:chop_tree"
+			]
+		},
+		"stonehearth:renewable_resource_node": {
+			"harvester_effect": "work_high",
+			"category": "harvest",
+			"resource": "archipelago_biome:food:coconut",
+			"renewal_time": "20h",
+			"unripe_description": "i18n(archipelago_biome:entities.trees.common_palm.unripe_description)",
+			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect"
+		},
+		"mob": {
+			"align_to_grid": [
+				"x",
+				"z"
+			],
+			"model_origin": { "x": -0.5, "y": 0, "z": 0.5 },
+			"region_origin": { "x": -0.5, "y": 0, "z": 0.5 }
+		},
+		"tree_stump:stump_data": {
+			"stump_alias": "archipelago_biome:trees:palm:small:stump"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"description": "i18n(archipelago_biome:entities.trees.common_palm.description)"
+		}
+	}
+}

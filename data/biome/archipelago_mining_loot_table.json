@@ -1,0 +1,36 @@
+{
+   "mixins" : "stonehearth:mining:base_loot_table",
+   "mineable_blocks" : {
+      "sand" : {
+         "entries": {
+            "default": {
+               "num_rolls": 1,
+               "items" : {
+                  "none": {"uri" : "", "weight" : 100 },
+                  "hunk_of_stone": {"uri": "stonehearth:resources:stone:hunk_of_stone", "weight": 1 },
+                  "clay_mound": {"uri" : "stonehearth:resources:clay:clay_mound", "weight" : 3 }
+               }
+            }
+         }
+      },
+      "grass" : {
+         "entries": {
+            "default": {
+               "num_rolls": 1,
+               "items" : {
+                  "clay_mound": {"uri" : "stonehearth:resources:clay:clay_mound", "weight" : 3 }
+               }
+            }
+         }
+      },
+      "dirt" : {
+         "entries": {
+            "default": {
+               "items" : {
+                  "clay_mound": { "uri" : "stonehearth:resources:clay:clay_mound", "weight" : 3 }
+               }
+            }
+         }
+      }    
+   }
+}

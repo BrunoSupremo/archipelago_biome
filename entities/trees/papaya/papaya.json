@@ -1,0 +1,95 @@
+{
+   "mixins": "stonehearth:mixins:tree",
+   "type": "entity",
+   "components": {
+      "render_info": {
+         "scale": 0.5
+      },
+      "mob": {
+         "model_origin": {"x": 0, "y": 0, "z": 0 },
+         "region_origin": {"x": -0.5, "y": 0, "z": 0.5 }
+      },
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(papaya.qb)"
+            ]
+         },
+         "depleted": {
+            "models": [
+               "file(papaya_empty.qb)"
+            ]
+         }
+      },
+      "stonehearth:resource_node": {
+         "resource": "stonehearth:resources:wood:oak_log", 
+         "durability": 3,
+         "resource_loot_table": {
+            "entries": {
+               "palm_items": {
+                  "items": {
+                     "none": {
+                        "uri": "",
+                        "weight": 1
+                     },
+                     "coconut": {
+                        "uri": "archipelago_biome:food:papaya_basket",
+                        "weight": 2
+                     }
+                  }
+               }
+            }
+         }
+      },
+      "stonehearth:commands": {
+         "commands": [
+            "archipelago_biome:commands:chop_tree"
+         ]
+      },
+      "stonehearth:renewable_resource_node": {
+         "harvester_effect": "work_high",
+         "category": "harvest",
+         "resource": "archipelago_biome:food:papaya_basket",
+         "renewal_time": "20h",
+         "unripe_description": "i18n(archipelago_biome:entities.trees.papaya.unripe_description)",
+         "harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect"
+      },
+      "destination": {
+         "region": [
+            {
+               "min": {"x": -1, "y": 0, "z": 0 },
+               "max": {"x": 0, "y": 1, "z": 1 }
+            }
+         ]
+      },
+      "region_collision_shape": {
+         "region": [
+            {
+               "min": {"x": -2, "y": 8, "z": -6 },
+               "max": {"x": 2, "y": 10, "z": 7 }
+            },
+            {
+               "min": {"x": 2, "y": 8, "z": -3 },
+               "max": {"x": 6, "y": 10, "z": 2 }
+            },
+            {
+               "min": {"x": -7, "y": 8, "z": -3 },
+               "max": {"x": -2, "y": 10, "z": 4 }
+            },
+            {
+               "min": {"x": -1, "y": 0, "z": 0 },
+               "max": {"x": 0, "y": 8, "z": 1 }
+            }
+         ]
+      }
+   },
+   "entity_data": {
+      "tree_stump:stump_data": {
+         "stump_alias": "archipelago_biome:trees:papaya:stump"
+      },
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.trees.papaya.display_name)",
+         "description": "i18n(archipelago_biome:entities.trees.papaya.description)"
+      }
+   }
+}

@@ -1,0 +1,17 @@
+{
+   "script_info": {
+      "data": {
+         "min_days_before_return": 2,
+         "max_days_before_return": 2,
+         "mixintypes": {
+            "wants": "override"
+         },
+         "wants": {
+            "archipelago_biome:decoration:fruit_container": {
+               "min": 5,
+               "max": 8
+            }
+         }
+      }
+   }
+}

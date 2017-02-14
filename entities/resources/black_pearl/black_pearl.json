@@ -1,0 +1,36 @@
+{
+   "type": "entity",
+   "mixins": "stonehearth:mixins:item_properties",
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(black_pearl.qb)"
+            ]
+         }
+      },
+      "mob": {
+         "model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+      }
+   },
+   "entity_data": {
+      "stonehearth:net_worth": {
+         "value_in_gold": 150,
+         "rarity": "rare",
+         "shop_info": {
+            "buyable": false,
+            "sellable": true,
+            "shopkeeper_level": 1,
+            "shopkeeper_type": "caravan"
+         }
+      },
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.resources.black_pearl.display_name)",
+         "description": "i18n(archipelago_biome:entities.resources.black_pearl.description)",
+         "icon": "file(black_pearl.png)",
+         "is_item": true,
+         "category": "resources",
+         "material_tags": "black_pearl stockpile_trophy"
+      }
+   }
+}

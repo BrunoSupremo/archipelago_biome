@@ -1,0 +1,30 @@
+#selectSettlement.archipelago_biome::before {
+	content:"";
+	position: absolute;
+	left:100px;
+	top:130px;
+	width: 1052px;
+	height: 665px;
+	background: url('images/x_map.png');
+	opacity:0.5;
+}
+#selectSettlement {
+	#scroll {
+		#vegetation  {
+			.bullet.archipelago_biome {
+				background-image: url(images/veg_empty.png);   
+			}
+			.bullet.full.archipelago_biome {
+				background-image: url(images/veg.png);     
+			}
+		}
+		#wildlife  {
+			.bullet.archipelago_biome {
+				background-image: url(images/wildlife_empty.png);   
+			}
+			.bullet.full.archipelago_biome {
+				background-image: url(images/wildlife.png);     
+			}
+		}
+	}
+}

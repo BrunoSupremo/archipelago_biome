@@ -1,0 +1,17 @@
+{
+	"skeleton": {
+		 "body": [0.000000,0.000000,0.000000],
+		 "leftbackleg": [0.000000,0.000000,0.000000],
+		 "leftfrontleg": [0.000000,0.000000,0.000000],
+		 "lefthand": [0.000000,0.000000,0.000000],
+		 "lefthandpincer": [0.000000,0.000000,0.000000],
+		 "leftmiddleleg": [0.000000,0.000000,0.000000],
+		 "rightbackleg": [0.000000,0.000000,0.000000],
+		 "rightfrontleg": [0.000000,0.000000,0.000000],
+		 "righthand": [0.000000,0.000000,0.000000],
+		 "righthandpincer": [0.000000,0.000000,0.000000],
+		 "rightmiddleleg": [0.000000,0.000000,0.000000]
+	},
+	"animation_root" : "file(animations)",
+	"effects_root": "file(effects)"
+}

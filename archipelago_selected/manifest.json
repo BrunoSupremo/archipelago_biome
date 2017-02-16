@@ -19,6 +19,11 @@
 		"stonehearth/scenarios/static/squirrel_nest/squirrel_nest.json":"file(scenarios/static/rabbit_nest/rabbit_nest.json)"
 	},
 	"overrides": {
+		"stonehearth/entities/monsters/goblins/goblin/goblin_head_1.qb":"file(entities/monsters/goblins/goblin/goblin_head_1.qb)",
+		"stonehearth/entities/monsters/goblins/goblin/goblin_head_2.qb":"file(entities/monsters/goblins/goblin/goblin_head_2.qb)",
+		"stonehearth/entities/monsters/goblins/goblin/goblin_head_3.qb":"file(entities/monsters/goblins/goblin/goblin_head_3.qb)",
+		"stonehearth/entities/monsters/goblins/goblin/goblin_head_4.qb":"file(entities/monsters/goblins/goblin/goblin_head_4.qb)",
+		"stonehearth/entities/monsters/goblins/goblin/goblin_head_5.qb":"file(entities/monsters/goblins/goblin/goblin_head_5.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":  "file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
 

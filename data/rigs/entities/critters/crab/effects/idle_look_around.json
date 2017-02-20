@@ -4,7 +4,7 @@
       "animation": {
             "type": "animation_effect",
             "start_time": 0,
-            "animation": "run.json",
+            "animation": "idle_look_around.json",
             "loop": true
       }
    }

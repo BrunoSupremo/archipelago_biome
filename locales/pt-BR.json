@@ -19,6 +19,12 @@
 				"description":"Quebre-o para madeira e ouro."
 			}
 		},
+		"critters":{
+			"crab":{
+				"display_name":"Caranguejo",
+				"description":"Sinta o beliscão"
+			}
+		},
 		"crops":{
 			"palm_tree_crop":{
 				"display_name":"Muda de Palmeira",

@@ -1,0 +1,37 @@
+{
+   "type": "encounter",
+   "encounter_type": "dialog_tree",
+   "rarity": "common",
+   "in_edge": "miranda_talks_about_cocolings",
+   "dialog_tree_info": {
+      "start_node": "start",
+      "nodes": {
+         "start": {
+            "bulletin": {
+               "title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_talks_about_cocolings.title)",
+               "dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+               "portrait": "file(images/captain_miranda.png)",
+               "message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_talks_about_cocolings.message_start)",
+               "choices": {
+                  "archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_talks_about_cocolings.choice": {
+                     "next_node": "message_2"
+                  }
+               }
+            }
+         },
+         "message_2": {
+            "bulletin": {
+               "title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_talks_about_cocolings.title)",
+               "dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+               "portrait": "file(images/captain_miranda.png)",
+               "message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_talks_about_cocolings.message_2)",
+               "choices": {
+                  "archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_talks_about_cocolings.choice_end": {
+                     "out_edge": "wait_to_spawn_crate_again"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

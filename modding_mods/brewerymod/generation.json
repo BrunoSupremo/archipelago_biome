@@ -1,0 +1,70 @@
+{
+	"landscape": {
+		"placement_table": {
+			"brewerymod:allium:plant": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.2,
+					"exclusion_radius": 1
+				}
+			},
+			"brewerymod:mushroom:plant": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.2,
+					"exclusion_radius": 1
+				}
+			},
+			"brewerymod:roses:plant": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.2,
+					"exclusion_radius": 1
+				}
+			},
+			"brewerymod:blueberry:plant": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.2,
+					"exclusion_radius": 1
+				}
+			},
+			"brewerymod:strawberry:plant": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.2,
+					"exclusion_radius": 1
+				}
+			}
+		},
+		"scattered": {
+			"plants": {
+				"weights": {
+					"foothills": {
+						"1": {
+							"brewerymod:allium:plant": 0.1,
+							"brewerymod:mushroom:plant": 0.1,
+							"brewerymod:roses:plant": 0.1,
+							"brewerymod:blueberry:plant": 0.1,
+							"brewerymod:strawberry:plant": 0.1
+						}
+					},
+					"mountains": {
+						"1": {
+							"brewerymod:allium:plant": 0.1,
+							"brewerymod:mushroom:plant": 0.1,
+							"brewerymod:roses:plant": 0.1,
+							"brewerymod:blueberry:plant": 0.1,
+							"brewerymod:strawberry:plant": 0.1
+						}
+					}
+				}
+			}
+		}
+	}
+}

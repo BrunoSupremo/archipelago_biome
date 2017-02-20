@@ -1,0 +1,23 @@
+{
+   "alias": "archipelago_biome:biome:archipelago",
+   "type": "biome",
+   "display_name": "i18n(archipelago_biome:data.biome.archipelago.display_name)",
+   "description": "i18n(archipelago_biome:data.biome.archipelago.description)",
+   "random_location_names": [
+      "i18n(archipelago_biome:data.biome.archipelago.random_location_names.000)",
+      "i18n(archipelago_biome:data.biome.archipelago.random_location_names.001)",
+      "i18n(archipelago_biome:data.biome.archipelago.random_location_names.002)",
+      "i18n(archipelago_biome:data.biome.archipelago.random_location_names.003)"
+   ],
+   "image": "file(images/archipelago_400x300.png)",
+   "story_board_image": "file(images/archipelago_story_board.png)",
+   "game_mode_images": {
+      "stonehearth:game_mode:normal": "file(images/archipelago_story_normal.png)",
+      "stonehearth:game_mode:hard": "file(images/archipelago_story_hard.png)"
+   },
+   "applied_manifests": {
+      "archipelago": "archipelago_biome/archipelago_selected/manifest.json"
+   },
+   "mining_loot_table": "file(archipelago_mining_loot_table.json)",
+   "generation_file": "file(archipelago_generation_data.json)"
+}

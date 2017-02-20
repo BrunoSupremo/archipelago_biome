@@ -1,0 +1,32 @@
+{
+   "mixins": "stonehearth:mixins:placed_object",
+   "type": "entity",
+   "components": {
+      "render_info": {
+         "scale": 1
+      },
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(sapling_palm_tree.qb)"
+            ]
+         }
+      },
+      "mob": {
+         "align_to_grid": [
+            "x",
+            "z"
+         ],
+         "model_origin": { "x": -0.5, "y": 0, "z": 0.5 },
+         "region_origin": { "x": -0.5, "y": 0, "z": 0.5 }
+      }
+   },
+   "entity_data": {
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.trees.palm_tree.sapling_palm_tree.display_name)",
+         "description": "i18n(archipelago_biome:entities.trees.common_palm.description)",
+         "icon": "file(sapling_palm_tree.png)",
+         "category": "plants"
+      }
+   }
+}

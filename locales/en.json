@@ -1,0 +1,304 @@
+{
+	"entities":{
+		"beach":{
+			"bottle":{
+				"display_name":"Bottle",
+				"description":"Bottle"
+			},
+			"broken_boat":{
+				"display_name":"Broken Boat",
+				"description":"Harvest for wood and gold."
+			},
+			"oyster":{
+				"display_name":"Oyster",
+				"description":"Pearl's house.",
+				"unripe_description":"An empty shell."
+			},
+			"starfish":{
+				"display_name":"Starfish",
+				"description":"A.k.a. Sea Stars, starfish is not a fish. It’s an echinoderm!"
+			}
+		},
+		"crops":{
+			"palm_tree_crop":{
+				"display_name":"Palm Tree Sapling",
+				"description": "Out of trees? Get ready to participate in reforestation.",
+				"growth_stage_0":{
+					"name":"Seed Pod",
+					"description":"It is just a buried cononut."
+				},
+				"growth_stage_1":{
+					"name":"Palm Tree Seedling",
+					"description":"It finally pierced through the shell."
+				},
+				"growth_stage_2":{
+					"name":"Palm Tree Sprout",
+					"description":"Trying to reach the sun."
+				},
+				"growth_stage_3":{
+					"name":"Palm Tree Sapling",
+					"description":"Ready to be transferred to a bigger plot."
+				}
+			}
+		},
+		"decoration":{
+			"fruit_container":{
+				"display_name":"Fruit Container",
+				"description":"Ready to be exported",
+				"recipe":{
+					"description":"Easier to sell your fruits this way.",
+					"flavor":"Take care to not bruise the fruits!"
+				}
+			},
+			"pirate_flag":{
+				"display_name":"Pirate Flag",
+				"description":"Not a good way to make friends",
+				"recipe":{
+					"description":"A classic pirate themed flag.",
+					"flavor":"Aaaarrrrgggghhhh!"
+				}
+			},
+			"raft":{
+				"display_name":"Raft",
+				"description":"Primitive sailboat",
+				"recipe":{
+					"description":"The starting point of any naval fleet.",
+					"flavor":"Maybe you can sail in it if you dream hard enough!"
+				}
+			},
+			"sand_castle":{
+				"display_name":"Sand Castle",
+				"description":"The Sand Princess is in another sand castle",
+				"recipe":{
+					"description":"Uses sand (clay) to build your dream castle",
+					"flavor":"4 years in architecture school to build this?"
+				}
+			},
+			"ship_wheel":{
+				"display_name":"Ship Wheel",
+				"description":"So you can guide your dreams",
+				"recipe":{
+					"description":"Could be used to steer a ship, but nowadays it is mostly used for decorations",
+					"flavor":"You know what would be good with it? A ship!"
+				}
+			},
+			"tiki_torch":{
+				"display_name":"Tiki Torch",
+				"description":"A very long torch",
+				"recipe":{
+					"description":"An outdoor light attached to a long pole fixed into the ground.",
+					"flavor":"Will brighten up the party and keep bugs at bay"
+				}
+			}
+		},
+		"food":{
+			"coconut":{
+				"display_name":"Coconut",
+				"description":"Always refreshing"
+			},
+			"papaya_basket":{
+				"display_name":"Papaya Basket",
+				"description":"Full of Papaya fruits"
+			},
+			"papaya_serving":{
+				"display_name":"Papaya fruit",
+				"description":"One half of a fruit"
+			}
+		},
+		"monsters":{
+			"cocoling":{
+				"display_name":"Cocoling",
+				"description":"Not a coconut. Not refreshing"
+			},
+			"cocoling_spawner":{
+				"display_name":"Ancient Spawner",
+				"description":"Old but gold."
+			},
+			"fake_container":{
+				"display_name":"Mysterious Crate",
+				"description":"Break it to check what is inside"
+			}
+		},
+		"resources":{
+			"pearl":{
+				"display_name":"White Pearl",
+				"description":"Perhaps the best-loved gem of all time"
+			},
+			"black_pearl":{
+				"display_name":"Black Pearl",
+				"description":"Full of curses, sells for a good price"
+			},
+			"hot_rock":{
+				"display_name":"Hot Rock",
+				"description":"Rich in minerals, just mine it"
+			}
+		},
+		"trees":{
+			"common_palm":{
+				"description":"A symbol of the tropical island paradise.",
+				"unripe_description":"No coconuts yet. A symbol of the tropical island paradise."
+			},
+			"palm_tree":{
+				"sapling_palm_tree":{
+					"display_name":"Palm Tree Sapling"
+				},
+				"small_palm_tree":{
+					"display_name":"Small Palm Tree"
+				},
+				"large_palm_tree":{
+					"display_name":"Large Palm Tree"
+				},
+				"small_palm_stump":{
+					"display_name":"Small Palm Tree Stump"
+				},
+				"large_palm_stump":{
+					"display_name":"Large Palm Tree Stump"
+				}
+			},
+			"bend_palm_tree":{
+				"small_bend_palm_tree":{
+					"display_name":"Small Bent Palm Tree"
+				},
+				"large_bend_palm_tree":{
+					"display_name":"Large Bent Palm Tree"
+				}
+			},
+			"dranden":{
+				"display_name":"Dranden Tree",
+				"description":"Large trunk with heavy leaves"
+			},
+			"dranden_stump":{
+				"display_name":"Dranden Tree Stump"
+			},
+			"smalea":{
+				"display_name":"Smalea Tree",
+				"description":"Small and dense tree"
+			},
+			"smalea_stump":{
+				"display_name":"Smalea Tree Stump"
+			},
+			"papaya":{
+				"display_name":"Papaya Tree",
+				"description":"A large, tree-like plant (it is not a tree?)",
+				"unripe_description":"Not yet ripe for harvest"
+			},
+			"papaya_stump":{
+				"display_name":"Papaya Tree Stump"
+			}
+		},
+		"volcano":{
+			"display_name":"Volcano",
+			"description":"Hot! Good for crazy rituals."
+		}
+	},
+	"ui": {
+		"data":{
+			"constants":{
+				"fruit_name":"Fruit"
+			}
+		},
+		"game":{
+			"build_mode":{
+				"building_templates":{
+					"template_names":{
+						"beach_tower":"Beach Tower",
+						"little_pier":"Little Pier",
+						"open_house":"Open House",
+						"small_beach_house":"Small Beach House",
+						"small_boat":"Small Boat",
+						"pirate_ship":"Pirate Ship",
+						"carpenter_house":"Carpenter's House"
+					}
+				}
+			}
+		},
+		"shell": {
+			"select_settlement": {
+				"terrain_codes": {
+					"water": "Ocean",
+					"plains_2": "Beach",
+					"foothills_1": "Plains"
+				}
+			}
+		}
+	},
+	"data": {
+		"biome": {
+			"archipelago": {
+				"display_name": "Archipelago",
+				"description": "Water everywhere, or sand, whichever is disliked most",
+				"random_location_names": {
+					"000": "Malaio Archipelago",
+					"001": "Mauna Loa Archipelago",
+					"002": "Kylahe Archipelago",
+					"003": "Kona Kai Archipelago"
+				}
+			}
+		},
+		"gm":{
+			"campaigns":{
+				"archipelago":{
+					"common":{
+						"captain_miranda":"Captain Miranda"
+					},
+					"arcs":{
+						"trigger":{
+							"introduction":{
+								"title":"A help from the seas",
+								"message_start":"Hey, nice to meet you! I'm Miranda. Want some help?<br>I can talk about a few things if you are new here in the islands.",
+								"message_decline":"Well, take care.<br>Good luck.",
+								"message_accept":"Yes! Finally someone accepted my help!<br>Er... I mean, follow me!",
+								"message_trees":"You will start looking for wood and food, right?<br>Here you can find both at the same place!<br>Do you see the palm trees?<br>When you harvest them you get coconuts. Those don't fill much though.<br>Later if you want, you can cut them for their wood (select a palm tree and then click in the 'axe' command at the bottom left)",
+								"message_oysters":"Oh, and these big oysters are awesome. You can harvest their pearls from time to time which sell for a good amount.<br>Rumours mention rare black pearls, but I never saw one myself.",
+								"message_broken_boats":"Take a look around and you may find some unlucky boat wrecks.<br>You can scavenger those and find good treasures.",
+								"message_bye":"That's all for now.<br>I'll return later to check how you guys are doing.<br>I need to take advantage of this wind and sail, my ship will not fill itself with goods and treasures.<br>Bye bye and good luck."
+							},
+							"miranda_before_selling_clay":{
+								"title":"Too much clay on my boat",
+								"message_start":"I made some trades with a Rayya merchant. Did you know they have a lot of clay, super cheap? I couldn't refuse, but now I have too much of it!",
+								"message_convincing":"I can't sail with the ship being so heavy! What you say? Can I sell some to you? I guess you will need some as you don't have much land to dig for it..."
+							},
+							"miranda_clay_shop":"Captain Miranda's clay excess",
+							"miranda_notice_a_lost_crate":{
+								"title":"Did you lost a crate?",
+								"message_start":"By the way, while we were trading I noticed this crate near your camp. I'm guessing it is yours, so I put it near your camp flag.",
+								"choice":"Uhm? What crate?",
+								"this_crate":"This crate?"
+							},
+							"miranda_talks_about_cocolings":{
+								"title":"Cocolings",
+								"message_start":"I'm sorry that you got attacked yesterday. Those cocolings are appearing everywhere lately...",
+								"choice":"The little evil coconuts?",
+								"message_2":"Yes. They are causing problems in many other islands too!<br>We still don't know how they got here or why...<br>There are many other islanders trying to figured this mystery out.",
+								"choice_end":"I will help when possible."
+							},
+							"miranda_notice_another_crate":{
+								"title":"Another crate...",
+								"message_start":"Watch out, I just saw another crate at your island! Better move your guards before opening it.",
+								"choice":"Show me!"
+							}
+						}
+					}
+				}
+			}
+		},
+		"saved_objects":{
+			"building_templates_index":{
+				"template_tabs":{
+					"display_name": "Archipelago",
+					"categories":{
+						"camp":"Beach Camp",
+						"town":"Pirates Hideout",
+						"tier3":"Royal Port"
+					}
+				}
+			}
+		}
+	},
+	"modding_mods":{
+		"frostfeast":{
+			"display_name": "Freezing Archipelago",
+			"description": "Water everywhere, or sand, whichever is disliked most. With extra snow?"
+		}
+	}
+}

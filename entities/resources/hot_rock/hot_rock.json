@@ -1,0 +1,78 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"render_info": {
+			"scale": 0.1
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"/stonehearth/entities/resources/copper/copper_ore/copper_ore.qb"
+				]
+			}
+		},
+		"effect_list": {
+			"default": "stonehearth:effects:brazier_effect"
+		},
+		"stonehearth:resource_node": {
+			"category": "harvest",
+			"resource_loot_table": {
+				"entries": {
+					"random_items": {
+						"items": {
+							"junk_stone": {
+								"uri": "stonehearth:resources:stone:hunk_of_stone"
+							},
+							"ore": {
+								"uri": "stonehearth:resources:copper:ore"
+							},
+							"ore2": {
+								"uri": "stonehearth:resources:tin:ore"
+							},
+							"ore3": {
+								"uri": "stonehearth:resources:iron:ore"
+							},
+							"lump_of_coal": {
+								"uri": "stonehearth:resources:coal:lump_of_coal"
+							}
+						}
+					}
+				}
+			},
+			"harvest_overlay_effect": "stonehearth:effects:mine_overlay_effect",
+			"harvester_effect": "mine",
+			"description": "mine_boulder"
+		},
+		"mob": {
+			"model_origin": {"x": 0, "y": 0, "z": 0 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"navgrid": {
+			"has_physics": true
+		},
+		"stonehearth:on_destroy": {
+			"effect": "stonehearth:effects:poof_effect"
+		},
+		"stonehearth:food_decay": {
+			"initial_decay": {
+				"min": 6,
+				"max": 10
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.resources.hot_rock.display_name)",
+			"description": "i18n(archipelago_biome:entities.resources.hot_rock.description)"
+		}
+	}
+}

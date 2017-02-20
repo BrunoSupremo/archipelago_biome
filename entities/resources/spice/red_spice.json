@@ -1,0 +1,19 @@
+{
+   "type": "entity",
+   "mixins": "archipelago_biome:mixins:spice",
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(red_spice.qb)"
+            ]
+         }
+      }
+   },
+   "entity_data": {
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.resources.red_spice.display_name)",
+         "icon": "file(red_spice.png)"
+      }
+   }
+}

@@ -1,0 +1,12 @@
+{
+	"mixintypes": {
+		"habitat_types": "override"
+	},
+	"habitat_types" : ["foothills", "mountains"],
+	"data" : {
+		"num_critters" : {
+			"min" : 1,
+			"max" : 4
+		}
+	}
+}

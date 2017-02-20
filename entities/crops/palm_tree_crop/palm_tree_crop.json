@@ -1,0 +1,86 @@
+{
+   "type": "entity",
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(palm_tree_4.qb)"
+            ]
+         },
+         "palm_tree_1": {
+            "models": [
+               "file(palm_tree_1.qb)"
+            ]
+         },
+         "palm_tree_2": {
+            "models": [
+               "file(palm_tree_2.qb)"
+            ]
+         },
+         "palm_tree_3": {
+            "models": [
+               "file(palm_tree_3.qb)"
+            ]
+         },
+         "palm_tree_4": {
+            "models": [
+               "file(palm_tree_4.qb)"
+            ]
+         }
+      },
+      "render_info": {
+         "scale": 0.11
+      },
+      "mob": {
+         "model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+      },
+      "stonehearth:crop": {
+         "resource_pairings": {
+            "palm_tree_4": "archipelago_biome:trees:palm:sapling"
+         },
+         "harvest_threshhold": "palm_tree_4",
+         "plant_overlay_effect": "stonehearth:effects:plant_crop_overlay_effect"
+      },
+      "stonehearth:growing": {
+         "growth_period": "2d",
+         "growth_stages": [
+            {
+               "model_name": "palm_tree_1",
+               "name": "i18n(archipelago_biome:entities.crops.palm_tree_crop.growth_stage_0.name)",
+               "description": "i18n(archipelago_biome:entities.crops.palm_tree_crop.growth_stage_0.description)"
+            },
+            {
+               "model_name": "palm_tree_2",
+               "name": "i18n(archipelago_biome:entities.crops.palm_tree_crop.growth_stage_1.name)",
+               "description": "i18n(archipelago_biome:entities.crops.palm_tree_crop.growth_stage_1.description)"
+            },
+            {
+               "model_name": "palm_tree_3",
+               "name": "i18n(archipelago_biome:entities.crops.palm_tree_crop.growth_stage_2.name)",
+               "description": "i18n(archipelago_biome:entities.crops.palm_tree_crop.growth_stage_2.description)"
+            },
+            {
+               "model_name": "palm_tree_4",
+               "name": "i18n(archipelago_biome:entities.crops.palm_tree_crop.growth_stage_3.name)",
+               "description": "i18n(archipelago_biome:entities.crops.palm_tree_crop.growth_stage_3.description)"
+            }
+         ]
+      }
+   },
+   "entity_data": {
+      "stonehearth:net_worth": {
+         "value_in_gold": 0,
+         "rarity": "common",
+         "shop_info": {
+            "buyable": false,
+            "sellable": false
+         }
+      },
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.crops.palm_tree_crop.display_name)",
+         "description": "i18n(archipelago_biome:entities.crops.palm_tree_crop.description)",
+         "icon": "file(palm_tree_crop.png)",
+         "material_tags": "crop palm_tree_sapling"
+      }
+   }
+}

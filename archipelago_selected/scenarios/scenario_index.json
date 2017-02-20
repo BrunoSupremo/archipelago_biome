@@ -1,5 +1,8 @@
 {
    "static" : {
+      "scenarios" : [
+         "file(static/crab_nest)"
+      ],
       "categories" : {
          "wildlife" : {
             "density" : 10

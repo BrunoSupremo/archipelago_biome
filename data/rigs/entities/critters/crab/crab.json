@@ -1,0 +1,18 @@
+{
+	"skeleton": {
+		 "body": [0.000000,1.418033,3.336066],
+		 "lefthandinside": [4.500000,-2.500000,4.000000],
+		 "lefthandoutside": [5.500000,-2.500000,4.000000],
+		 "leftlegback": [3.500000,3.500000,1.000000],
+		 "leftlegfront": [3.500000,-0.500000,1.000000],
+		 "leftlegmiddle": [3.500000,1.500000,1.000000],
+		 "righthandinside": [-4.500000,-2.500000,4.000000],
+		 "righthandoutside": [-5.500000,-2.500000,4.000000],
+		 "rightlegback": [-3.500000,3.500000,1.000000],
+		 "rightlegfront": [-3.500000,-0.500000,1.000000],
+		 "rightlegmiddle": [-3.500000,1.500000,1.000000],
+		 "root": [0.000000,0.000000,0.000000]
+	},
+	"animation_root" : "file(animations)",
+	"effects_root": "file(effects)"
+}

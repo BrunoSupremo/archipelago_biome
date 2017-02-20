@@ -1,0 +1,21 @@
+{
+	"name" : "crab_nest",
+	"category" : "wildlife",
+	"habitat_types" : ["plains"],
+	"size" : {
+		"width" : 16,
+		"length" : 16
+	},
+	"weight" : 10,
+	"unique" : false,
+	"script" : "stonehearth/scenarios/static/critter_nest/critter_nest.lua",
+
+	"data" : {
+		"critter_length" : 1,
+		"num_critters" : {
+			"min" : 1,
+			"max" : 4
+		},
+		"critter_type" : [ "archipelago_biome:critters:crab" ]
+	}
+}

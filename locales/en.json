@@ -19,6 +19,12 @@
 				"description":"A.k.a. Sea Stars, starfish is not a fish. It’s an echinoderm!"
 			}
 		},
+		"critters":{
+			"crab":{
+				"display_name":"Crab",
+				"description":"Feel the pinch"
+			}
+		},
 		"crops":{
 			"palm_tree_crop":{
 				"display_name":"Palm Tree Sapling",

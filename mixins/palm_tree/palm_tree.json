@@ -41,9 +41,6 @@
 			],
 			"model_origin": { "x": -0.5, "y": 0, "z": 0.5 },
 			"region_origin": { "x": -0.5, "y": 0, "z": 0.5 }
-		},
-		"tree_stump:stump_data": {
-			"stump_alias": "archipelago_biome:trees:palm:small:stump"
 		}
 	},
 	"entity_data": {

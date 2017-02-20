@@ -1,113 +1,105 @@
 {
-   "info": {
-      "name": "archipelago_biome",
-      "version": 3
-   },
-   "default_locale": "en",
-   "server_init_script": "file(archipelago_biome_server)",
-   "aliases": {
-      "beach:bottle": "file(entities/beach/bottle)",
-      "beach:broken_boat": "file(entities/beach/broken_boat)",
-      "beach:oyster": "file(entities/beach/oyster)",
-      "beach:starfish": "file(entities/beach/starfish)",
+	"info": {
+		"name": "archipelago_biome",
+		"version": 3
+	},
+	"default_locale": "en",
+	"server_init_script": "file(archipelago_biome_server)",
+	"aliases": {
+		"beach:bottle": "file(entities/beach/bottle)",
+		"beach:broken_boat": "file(entities/beach/broken_boat)",
+		"beach:oyster": "file(entities/beach/oyster)",
+		"beach:starfish": "file(entities/beach/starfish)",
 
-      "biome:archipelago": "file(data/biome/archipelago.json)",
-      
-      "captain_miranda": "file(entities/humans/captain_miranda)",
+		"biome:archipelago": "file(data/biome/archipelago.json)",
 
-      "critters:crab": "file(entities/critters/crab)",
-      "critters:seagull": "file(entities/critters/seagull)",
+		"captain_miranda": "file(entities/humans/captain_miranda)",
 
-      "crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",
+		"critters:crab": "file(entities/critters/crab)",
+		"critters:seagull": "file(entities/critters/seagull)",
 
-      "commands:chop_tree": "file(data/commands/chop_tree)",
+		"crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",
 
-      "data:gm_index": "file(data/gm/gm_index.json)",
+		"commands:chop_tree": "file(data/commands/chop_tree)",
 
-      "decoration:fruit_container": "file(entities/decoration/fruit_container)",
-      "decoration:pirate_flag": "file(entities/decoration/pirate_flag)",
-      "decoration:raft": "file(entities/decoration/raft)",
-      "decoration:sand_castle": "file(entities/decoration/sand_castle)",
-      "decoration:ship_wheel": "file(entities/decoration/ship_wheel)",
-      "decoration:tiki_torch": "file(entities/decoration/tiki_torch)",
+		"data:gm_index": "file(data/gm/gm_index.json)",
 
-      "effects:tiki_torch_effect": "file(data/effects/tiki_torch_effect)",
+		"decoration:fruit_container": "file(entities/decoration/fruit_container)",
+		"decoration:pirate_flag": "file(entities/decoration/pirate_flag)",
+		"decoration:raft": "file(entities/decoration/raft)",
+		"decoration:sand_castle": "file(entities/decoration/sand_castle)",
+		"decoration:ship_wheel": "file(entities/decoration/ship_wheel)",
+		"decoration:tiki_torch": "file(entities/decoration/tiki_torch)",
 
-      "food:coconut": "file(entities/food/coconut)",
-      "food:papaya_basket": "file(entities/food/papaya/papaya_basket)",
-      "food:papaya_serving": "file(entities/food/papaya/papaya_serving)",
+		"effects:tiki_torch_effect": "file(data/effects/tiki_torch_effect)",
 
-      "mixins:palm_tree": "file(mixins/palm_tree)",
-      "mixins:spice": "file(mixins/spice)",
+		"food:coconut": "file(entities/food/coconut)",
+		"food:papaya_basket": "file(entities/food/papaya/papaya_basket)",
+		"food:papaya_serving": "file(entities/food/papaya/papaya_serving)",
 
-      "monsters:cocoling": "file(entities/monsters/cocoling)",
-      "monsters:cocoling_spawner": "file(entities/monsters/cocoling_spawner)",
-      "monsters:fake_container": "file(entities/monsters/fake_container)",
+		"mixins:palm_tree": "file(mixins/palm_tree)",
+		"mixins:spice": "file(mixins/spice)",
 
-      "outfit:tricorn_hat": "file(entities/outfit/tricorn_hat)",
+		"monsters:cocoling": "file(entities/monsters/cocoling)",
+		"monsters:cocoling_spawner": "file(entities/monsters/cocoling_spawner)",
+		"monsters:fake_container": "file(entities/monsters/fake_container)",
 
-      "resources:hot_rock": "file(entities/resources/hot_rock)",
-      "resources:pearl": "file(entities/resources/pearl)",
-      "resources:pearl:black": "file(entities/resources/black_pearl)",
-      "resources:spice:red": "file(entities/resources/spice/red_spice.json)",
-      "resources:spice:green": "file(entities/resources/spice/green_spice.json)",
-      "resources:spice:blue": "file(entities/resources/spice/blue_spice.json)",
-      "resources:spice:old": "file(entities/resources/spice/old_spice.json)",
+		"outfit:tricorn_hat": "file(entities/outfit/tricorn_hat)",
 
-      "town_names": "file(services/server/population/data/archipelago_town_names.json)",
+		"resources:hot_rock": "file(entities/resources/hot_rock)",
+		"resources:pearl": "file(entities/resources/pearl)",
+		"resources:pearl:black": "file(entities/resources/black_pearl)",
+		"resources:spice:red": "file(entities/resources/spice/red_spice.json)",
+		"resources:spice:green": "file(entities/resources/spice/green_spice.json)",
+		"resources:spice:blue": "file(entities/resources/spice/blue_spice.json)",
+		"resources:spice:old": "file(entities/resources/spice/old_spice.json)",
 
-      "trees:bend_palm:large": "file(entities/trees/bend_palm_tree/large_bend_palm_tree)",
-      "trees:bend_palm:small": "file(entities/trees/bend_palm_tree/small_bend_palm_tree)",
-      "trees:dranden:small": "file(entities/trees/dranden)",
-      "trees:palm:large": "file(entities/trees/palm_tree/large_palm_tree)",
-      "trees:palm:small": "file(entities/trees/palm_tree/small_palm_tree)",
-      "trees:palm:sapling": "file(entities/trees/palm_tree/sapling_palm_tree)",
-      "trees:papaya": "file(entities/trees/papaya)",
-      "trees:smalea:small": "file(entities/trees/smalea)",
-      
-      "trees:bend_palm:large:stump": "file(entities/trees/bend_palm_tree/large_bend_palm_tree/large_bend_palm_stump.json)",
-      "trees:bend_palm:small:stump": "file(entities/trees/bend_palm_tree/small_bend_palm_tree/small_bend_palm_stump.json)",
-      "trees:dranden:small:stump": "file(entities/trees/dranden/dranden_stump.json)",
-      "trees:palm:large:stump": "file(entities/trees/palm_tree/large_palm_tree/large_palm_stump.json)",
-      "trees:palm:small:stump": "file(entities/trees/palm_tree/small_palm_tree/small_palm_stump.json)",
-      "trees:papaya:stump": "file(entities/trees/papaya/papaya_stump.json)",
-      "trees:smalea:small:stump": "file(entities/trees/smalea/smalea_stump.json)",
+		"town_names": "file(services/server/population/data/archipelago_town_names.json)",
 
-      "volcano":"file(entities/volcano)"
-   },
-   "mixintos": {
-      "stonehearth:biome:index": "file(data/biome/index.json)",
-      "stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
+		"trees:bend_palm:large":"file(entities/trees/bend_palm_tree/large_bend_palm_tree)",
+		"trees:bend_palm:small":"file(entities/trees/bend_palm_tree/small_bend_palm_tree)",
+		"trees:dranden:small":	"file(entities/trees/dranden)",
+		"trees:palm:large":		"file(entities/trees/palm_tree/large_palm_tree)",
+		"trees:palm:small":		"file(entities/trees/palm_tree/small_palm_tree)",
+		"trees:palm:sapling":	"file(entities/trees/palm_tree/sapling_palm_tree)",
+		"trees:papaya":			"file(entities/trees/papaya)",
+		"trees:smalea:small":	"file(entities/trees/smalea)",
 
-      "stonehearth:data:resource_constants": "file(data/resource_constants.json)",
+		"volcano":"file(entities/volcano)"
+	},
+	"mixintos": {
+		"stonehearth:biome:index": "file(data/biome/index.json)",
+		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
 
-      "stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
-      "stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
-      "rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
+		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
 
-      "stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
+		"stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
 
-      "stonehearth/jobs/carpenter/recipes/recipes.json": "file(jobs/carpenter/recipes)",
-      "stonehearth/jobs/cook/recipes/recipes.json": "file(jobs/cook/recipes)",
-      "stonehearth/jobs/potter/recipes/recipes.json": "file(jobs/potter/recipes)",
-      "stonehearth/jobs/weaver/recipes/recipes.json": "file(jobs/weaver/recipes)",
+		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
-      "stonehearth/locales/pt.json" : "file(locales/pt-BR.json)",
+		"stonehearth/jobs/carpenter/recipes/recipes.json": "file(jobs/carpenter/recipes)",
+		"stonehearth/jobs/cook/recipes/recipes.json": "file(jobs/cook/recipes)",
+		"stonehearth/jobs/potter/recipes/recipes.json": "file(jobs/potter/recipes)",
+		"stonehearth/jobs/weaver/recipes/recipes.json": "file(jobs/weaver/recipes)",
 
-      "brewerymod/manifest.json":"file(modding_mods/brewerymod/manifest.json)",
-      "frostfeast/manifest.json":"file(modding_mods/frostfeast/manifest.json)"
-   },
-   "overrides": {
-      "stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
-      "stonehearth/ui/shell/select_settlement/select_settlement.js": "file(ui/shell/select_settlement/select_settlement.js)"
-   },
-   "components": {
-      "fake_container":"file(components/fake_container/fake_container.lua)",
-      "erupt":"file(components/erupt/erupt_component.lua)"
-   },
-   "ui":{
-      "less":[
-         "file(ui/shell/select_settlement/select_settlement.less)"
-      ]
-   }
+		"stonehearth/locales/pt.json" : "file(locales/pt-BR.json)",
+
+		"brewerymod/manifest.json":"file(modding_mods/brewerymod/manifest.json)",
+		"frostfeast/manifest.json":"file(modding_mods/frostfeast/manifest.json)"
+	},
+	"overrides": {
+		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
+		"stonehearth/ui/shell/select_settlement/select_settlement.js": "file(ui/shell/select_settlement/select_settlement.js)"
+	},
+	"components": {
+		"fake_container":"file(components/fake_container/fake_container.lua)",
+		"erupt":"file(components/erupt/erupt_component.lua)"
+	},
+	"ui":{
+		"less":[
+			"file(ui/shell/select_settlement/select_settlement.less)"
+		]
+	}
 }

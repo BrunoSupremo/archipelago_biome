@@ -5,9 +5,28 @@ king crab
 sea turtle
 *seagull
 palm tree monster
-octopus
-
+octopus / rocktopus
 mosquitos/doenças usar o herbalist pra curar
+
+
+trocar o stump por um component intermediario e ele checa se existe o mod stump
+
+
+ossos de peixes/baleias
+
+
+spawn crates from time to time, expired it after a day for cocolings
+
+coconade
+
+
+cabeças dos goblins estão sendo usadas no soldadinho tb****
+
+beach ball
+coconuts no goblin camp
+
+
+Atlanteans
 
 
 Testar novos habitats (sand/water)

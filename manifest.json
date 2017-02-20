@@ -45,6 +45,7 @@
       "monsters:fake_container": "file(entities/monsters/fake_container)",
 
       "outfit:tricorn_hat": "file(entities/outfit/tricorn_hat)",
+      "outfit:beach_head": "file(entities/outfit/beach_head)",
 
       "resources:hot_rock": "file(entities/resources/hot_rock)",
       "resources:pearl": "file(entities/resources/pearl)",

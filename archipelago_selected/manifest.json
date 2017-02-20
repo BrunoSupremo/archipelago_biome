@@ -10,6 +10,9 @@
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json)",
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
+		
+		"stonehearth:monster_tuning:goblins:worker":"file(data/monster_tuning/goblins/worker)",
+		"stonehearth:monster_tuning:goblins:worker_thief":"file(data/monster_tuning/goblins/worker)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
 		"stonehearth/scenarios/static/critter_nest/critter_nest.json":	"file(scenarios/static/critter_nest/critter_nest.json)",
@@ -21,11 +24,6 @@
 		"stonehearth:trapper:trapping_grounds":"file(jobs/trapper/trapping_grounds)"
 	},
 	"overrides": {
-		"stonehearth/entities/monsters/goblins/goblin/goblin_head_1.qb":"file(entities/monsters/goblins/goblin/goblin_head_1.qb)",
-		"stonehearth/entities/monsters/goblins/goblin/goblin_head_2.qb":"file(entities/monsters/goblins/goblin/goblin_head_2.qb)",
-		"stonehearth/entities/monsters/goblins/goblin/goblin_head_3.qb":"file(entities/monsters/goblins/goblin/goblin_head_3.qb)",
-		"stonehearth/entities/monsters/goblins/goblin/goblin_head_4.qb":"file(entities/monsters/goblins/goblin/goblin_head_4.qb)",
-		"stonehearth/entities/monsters/goblins/goblin/goblin_head_5.qb":"file(entities/monsters/goblins/goblin/goblin_head_5.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":  "file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
 

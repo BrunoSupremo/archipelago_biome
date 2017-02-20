@@ -1,0 +1,52 @@
+{
+   "mixins": "stonehearth:mixins:item_properties",
+   "type": "entity",
+   "components": {
+      "model_variants": {
+         "default": {
+            "layer": "hat",
+            "transparent": "true",
+            "models": [
+               {
+                  "type": "one_of",
+                  "items": [
+                     "file(beach_cap.qb)",
+                     "file(head_flowers.qb)",
+                     "file(swimming_cap.qb)"
+                  ]
+               }
+            ]
+         }
+      },
+      "stonehearth:equipment_piece": {
+         "render_type": "merge_with_model",
+         "slot": "helmet",
+         "ilevel": 1,
+         "required_job_level": 0,
+         "roles": "footman_job",
+         "equip_effect": "stonehearth:effects:weapon_level_up"
+      }
+   },
+   "entity_data": {
+      "stonehearth:combat:armor_data": {
+         "base_damage_reduction": 1
+      },
+      "stonehearth:net_worth": {
+         "value_in_gold": 15,
+         "rarity": "common",
+         "shop_info": {
+            "buyable": false,
+            "sellable": true,
+            "shopkeeper_level": 2,
+            "shopkeeper_type": "caravan"
+         }
+      },
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.outfit.beach_head.display_name)",
+         "description": "i18n(archipelago_biome:entities.outfit.beach_head.description)",
+         "icon": "file(beach_head.png)",
+         "category": "armor",
+         "material_tags": "leather armor light_armor stockpile_equipment"
+      }
+   }
+}

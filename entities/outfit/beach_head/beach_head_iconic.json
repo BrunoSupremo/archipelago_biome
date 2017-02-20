@@ -1,0 +1,25 @@
+{
+   "mixins": "stonehearth:mixins:item_properties",
+   "type": "entity",
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(beach_head_iconic.qb)"
+            ]
+         }
+      },
+      "mob": {
+         "model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+      }
+   },
+   "entity_data": {
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.outfit.beach_head.beach_head_iconic.display_name)",
+         "description": "i18n(archipelago_biome:entities.outfit.beach_head.beach_head_iconic.description)",
+         "icon": "file(beach_head.png)",
+         "is_item": true,
+         "category": "armor"
+      }
+   }
+}

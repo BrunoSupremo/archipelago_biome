@@ -1,9 +1,0 @@
-{
-   "type": "encounter",
-   "encounter_type": "script",
-   "in_edge": "spawn_crate",
-   "out_edge": "wait_after_spawn_crate",
-   "script_info": {
-      "script":"file(spawn_crate.lua)"
-   }
-}

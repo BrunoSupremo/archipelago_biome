@@ -1,7 +1,0 @@
-{
-	"campaigns" : {
-		"archipelago": {
-			"archipelago_campaign": "file(campaigns/archipelago/archipelago_campaign.json)"
-		}
-	}
-}

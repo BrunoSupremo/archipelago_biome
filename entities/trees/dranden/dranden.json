@@ -66,9 +66,6 @@
       }
    },
    "entity_data": {
-      "tree_stump:stump_data": {
-         "stump_alias": "archipelago_biome:trees:dranden:small:stump"
-      },
       "stonehearth:catalog": {
          "display_name": "i18n(archipelago_biome:entities.trees.dranden.display_name)",
          "description": "i18n(archipelago_biome:entities.trees.dranden.description)"

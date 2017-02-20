@@ -153,12 +153,6 @@
 				},
 				"large_palm_tree":{
 					"display_name":"Grande Palmeira"
-				},
-				"small_palm_stump":{
-					"display_name":"Toco de Palmeira Pequena"
-				},
-				"large_palm_stump":{
-					"display_name":"Toco de Palmeira Grande"
 				}
 			},
 			"bend_palm_tree":{
@@ -173,23 +167,14 @@
 				"display_name":"Árvore Dranden",
 				"description":"Tronco largo com folhas pesadas"
 			},
-			"dranden_stump":{
-				"display_name":"Toco de Dranden"
-			},
 			"smalea":{
 				"display_name":"Árvore Smalea",
 				"description":"Árvore pequena e densa"
-			},
-			"smalea_stump":{
-				"display_name":"Toco de Smalea"
 			},
 			"papaya":{
 				"display_name":"Pé de Mamão",
 				"description":"Uma planta grande como uma árvore (não é uma?)",
 				"unripe_description":"Ainda não está madura"
-			},
-			"papaya_stump":{
-				"display_name":"Toco de Pé de Mamão"
 			}
 		},
 		"volcano":{

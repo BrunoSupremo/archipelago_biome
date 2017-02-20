@@ -1,6 +1,5 @@
 tiki warrior
 piratas
-*crab
 king crab
 sea turtle
 *seagull
@@ -9,21 +8,18 @@ octopus / rocktopus
 mosquitos/doenças usar o herbalist pra curar
 
 
-trocar o stump por um component intermediario e ele checa se existe o mod stump
-
 
 ossos de peixes/baleias
 
 
 spawn crates from time to time, expired it after a day for cocolings
 
+
 coconade
 
 
-cabeças dos goblins estão sendo usadas no soldadinho tb****
-
 beach ball
-coconuts no goblin camp
+coconuts, beachball, sandcastle, etc... no goblin camp
 
 
 Atlanteans

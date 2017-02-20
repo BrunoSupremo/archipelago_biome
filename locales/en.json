@@ -153,12 +153,6 @@
 				},
 				"large_palm_tree":{
 					"display_name":"Large Palm Tree"
-				},
-				"small_palm_stump":{
-					"display_name":"Small Palm Tree Stump"
-				},
-				"large_palm_stump":{
-					"display_name":"Large Palm Tree Stump"
 				}
 			},
 			"bend_palm_tree":{
@@ -173,23 +167,14 @@
 				"display_name":"Dranden Tree",
 				"description":"Large trunk with heavy leaves"
 			},
-			"dranden_stump":{
-				"display_name":"Dranden Tree Stump"
-			},
 			"smalea":{
 				"display_name":"Smalea Tree",
 				"description":"Small and dense tree"
-			},
-			"smalea_stump":{
-				"display_name":"Smalea Tree Stump"
 			},
 			"papaya":{
 				"display_name":"Papaya Tree",
 				"description":"A large, tree-like plant (it is not a tree?)",
 				"unripe_description":"Not yet ripe for harvest"
-			},
-			"papaya_stump":{
-				"display_name":"Papaya Tree Stump"
 			}
 		},
 		"volcano":{

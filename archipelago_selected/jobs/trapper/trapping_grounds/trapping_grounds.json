@@ -1,0 +1,9 @@
+{
+   "components": {
+      "stonehearth:trapping_grounds": {
+         "trappable_animal_weights": {
+            "archipelago_biome:critters:crab": 100
+         }
+      }
+   }
+}

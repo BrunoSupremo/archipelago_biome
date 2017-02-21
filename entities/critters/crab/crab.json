@@ -21,6 +21,10 @@
       }
    },
    "entity_data": {
+      "stonehearth:observers:avoid_threatening_entities": {
+         "min_avoidance_distance": 6,
+         "max_avoidance_distance": 6
+      },
       "stonehearth:idle_effects": {
          "effects": [
             {

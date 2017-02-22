@@ -23,6 +23,10 @@
 			"crab":{
 				"display_name":"Crab",
 				"description":"Feel the pinch"
+			},
+			"sea_turtle":{
+				"display_name":"Sea Turtle",
+				"description":"Ocean reptiles with flippers"
 			}
 		},
 		"crops":{

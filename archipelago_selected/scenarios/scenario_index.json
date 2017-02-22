@@ -1,7 +1,8 @@
 {
    "static" : {
       "scenarios" : [
-         "file(static/crab_nest)"
+         "file(static/crab_nest)",
+         "file(static/sea_turtle_nest)"
       ],
       "categories" : {
          "wildlife" : {

@@ -139,6 +139,12 @@
 				"description":"Rico em minerais, é só minerar"
 			}
 		},
+		"toys":{
+			"beachball":{
+				"display_name":"Bola de Praia",
+				"description":"Para jogos de água e praia"
+			}
+		},
 		"trees":{
 			"common_palm":{
 				"description":"O simbolo de uma ilha parasidiaca tropical.",

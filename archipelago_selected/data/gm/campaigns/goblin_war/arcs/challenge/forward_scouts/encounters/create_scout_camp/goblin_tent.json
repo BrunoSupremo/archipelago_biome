@@ -1,0 +1,21 @@
+{
+	"entities" : {
+		"tent" : {
+			"loot_drops": {
+				"entries": {
+					"archipelago_loot_chest": {
+						"num_rolls": {
+							"min": 1,
+							"max": 1
+						},
+						"items": {
+							"beachball": {
+								"uri": "archipelago_biome:toys:beachball"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

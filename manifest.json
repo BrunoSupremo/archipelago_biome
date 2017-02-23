@@ -45,7 +45,7 @@
 		"monsters:fake_container": "file(entities/monsters/fake_container)",
 
 		"outfit:tricorn_hat": "file(entities/outfit/tricorn_hat)",
-    "outfit:beach_head": "file(entities/outfit/beach_head)",
+    	"outfit:beach_head": "file(entities/outfit/beach_head)",
 
 		"resources:hot_rock": "file(entities/resources/hot_rock)",
 		"resources:pearl": "file(entities/resources/pearl)",
@@ -56,6 +56,8 @@
 		"resources:spice:old": "file(entities/resources/spice/old_spice.json)",
 
 		"town_names": "file(services/server/population/data/archipelago_town_names.json)",
+
+		"toys:beachball":"file(entities/toys/beachball)",
 
 		"trees:bend_palm:large":"file(entities/trees/bend_palm_tree/large_bend_palm_tree)",
 		"trees:bend_palm:small":"file(entities/trees/bend_palm_tree/small_bend_palm_tree)",

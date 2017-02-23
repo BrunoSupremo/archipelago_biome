@@ -16,6 +16,10 @@
 			"goblin_hut_2": {
 				"position": { "x": 0, "y": -11 }
 			},
+			"sand_castle": {
+				"info": "file(create_camp/sand_castle.json)",
+				"position": { "x": 0, "y": 8 }
+			},
 			"goblin_barricade_1": {
 				"position": { "x": 3, "y": 14 }
 			},

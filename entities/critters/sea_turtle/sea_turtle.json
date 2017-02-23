@@ -9,13 +9,7 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					{
-						"type": "one_of",
-						"items": [
-							"file(sea_turtle.qb)",
-							"file(sea_turtle2.qb)"
-						]
-					}
+					"file(sea_turtle.qb)"
 				]
 			}
 		},

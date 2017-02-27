@@ -19,9 +19,7 @@
 		"stonehearth/scenarios/static/fox_nest/fox_nest.json":			"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
 		"stonehearth/scenarios/static/rabbit_nest/rabbit_nest.json":	"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
 		"stonehearth/scenarios/static/racoon_nest/racoon_nest.json":	"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
-		"stonehearth/scenarios/static/squirrel_nest/squirrel_nest.json":"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
-
-		"stonehearth:trapper:trapping_grounds":"file(jobs/trapper/trapping_grounds)"
+		"stonehearth/scenarios/static/squirrel_nest/squirrel_nest.json":"file(scenarios/static/rabbit_nest/rabbit_nest.json)"
 	},
 	"overrides": {
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":  "file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",

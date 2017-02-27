@@ -21,6 +21,10 @@
       }
    },
    "entity_data": {
+      "stonehearth:observers:avoid_threatening_entities": {
+         "min_avoidance_distance": 6,
+         "max_avoidance_distance": 6
+      },
       "stonehearth:idle_effects": {
          "effects": [
             {
@@ -34,6 +38,10 @@
             {
                "name": "idle_breathe",
                "weight": 1
+            },
+            {
+               "name": "pinch",
+               "weight": 1
             }
          ]
       },
@@ -41,29 +49,6 @@
          "player_id": "animals",
          "display_name": "i18n(archipelago_biome:entities.critters.crab.display_name)",
          "description": "i18n(archipelago_biome:entities.critters.crab.description)"
-      },
-      "stonehearth:bait_trap": {
-         "can_trap": true,
-         "catch_chance": 0.4,
-         "trigger_trap_on_failure_chance": 0.6
-      },
-      "stonehearth:harvest_beast_loot_table": {
-         "entries": {
-            "default": {
-               "num_rolls": {
-                  "min": 1,
-                  "max": 1
-               },
-               "items": {
-                  "jerky": {
-                     "uri": "stonehearth:red_fox_jerky"
-                  },
-                  "pelt": {
-                     "uri": "stonehearth:resources:red_fox_pelt"
-                  }
-               }
-            }
-         }
       },
       "stonehearth:observers:calorie_animals": {
          "max": 30,
@@ -89,7 +74,7 @@
                      0.6,
                      0
                   ],
-                  "fov": 60
+                  "fov": 40
                }
             }
          }

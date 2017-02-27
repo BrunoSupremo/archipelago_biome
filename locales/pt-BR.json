@@ -23,6 +23,10 @@
 			"crab":{
 				"display_name":"Caranguejo",
 				"description":"Sinta o beliscão"
+			},
+			"sea_turtle":{
+				"display_name":"Tartaruga Marinha",
+				"description":"Répteis marinhos com nadadeiras"
 			}
 		},
 		"crops":{

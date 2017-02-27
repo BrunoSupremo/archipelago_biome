@@ -1,0 +1,11 @@
+{
+   "type": "entity",
+   "mixins": "file(beachball_ghost.json)",
+   "components": {
+      "stonehearth:entity_forms": {
+         "iconic_form": "file(beachball_iconic.json)",
+         "ghost_form": "file(beachball_ghost.json)",
+         "placeable_on_ground": true
+      }
+   }
+}

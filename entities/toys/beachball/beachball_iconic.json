@@ -1,0 +1,9 @@
+{
+   "type": "entity",
+   "mixins": "file(beachball_ghost.json)",
+   "entity_data": {
+      "stonehearth:catalog": {
+         "is_item": true
+      }
+   }
+}

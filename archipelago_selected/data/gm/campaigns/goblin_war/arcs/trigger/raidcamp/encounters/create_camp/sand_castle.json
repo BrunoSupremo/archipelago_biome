@@ -1,0 +1,14 @@
+{
+   "type": "camp_piece",
+   "entities": {
+      "sand_castle": {
+         "uri": "archipelago_biome:decoration:sand_castle",
+         "force_iconic": false,
+         "location": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+         }
+      }
+   }
+}

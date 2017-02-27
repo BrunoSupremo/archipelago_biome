@@ -143,6 +143,12 @@
 				"description":"Rich in minerals, just mine it"
 			}
 		},
+		"toys":{
+			"beachball":{
+				"display_name":"Beach Ball",
+				"description":"For beach and water games"
+			}
+		},
 		"trees":{
 			"common_palm":{
 				"description":"A symbol of the tropical island paradise.",

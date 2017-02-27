@@ -8,6 +8,10 @@
 		"stonehearth:building_templates:index": "file(data/saved_objects/building_templates_index.json)",
 
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json)",
+		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/stockpile.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/stockpile.json)",
+		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/wood_stockpile.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/beachball.json)",
+		"stonehearth/data/gm/campaigns/goblin_war/arcs/challenge/forward_scouts/encounters/create_scout_camp/goblin_tent.json":"file(data/gm/campaigns/goblin_war/arcs/challenge/forward_scouts/encounters/create_scout_camp/goblin_tent.json)",
+		
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 		

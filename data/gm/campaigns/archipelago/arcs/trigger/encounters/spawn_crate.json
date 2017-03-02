@@ -1,9 +1,15 @@
 {
-   "type": "encounter",
-   "encounter_type": "script",
-   "in_edge": "spawn_crate",
-   "out_edge": "wait_after_spawn_crate",
-   "script_info": {
-      "script":"file(spawn_crate.lua)"
-   }
+	"type": "encounter",
+	"encounter_type": "script",
+	"in_edge": "spawn_crate",
+	"out_edge" : {
+		"type": "trigger_many",
+		"out_edges": [
+			"wait_after_spawn_crate",
+			"is_crate_destroyed"
+		]
+	},
+	"script_info": {
+		"script":"file(spawn_crate.lua)"
+	}
 }

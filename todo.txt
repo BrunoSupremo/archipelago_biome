@@ -12,17 +12,10 @@ mosquitos/doenças usar o herbalist pra curar
 ossos de peixes/baleias
 
 
-spawn crates from time to time, expired it after a day for cocolings
+spawn crates from time to time
 
 
 coconade
-
-
-beach ball
-coconuts, beachball, sandcastle, etc... no goblin camp
-
-
-Atlanteans
 
 
 Testar novos habitats (sand/water)
@@ -32,7 +25,9 @@ hearthlings nadam pra se refrescar e brincar
 novos hearthlings chegam de barco
 
 
-poseidon spear, item mais forte de todos, quebra depois de alguns usos
+Atlanteans
+
+
 espadas piratas
 canhões piratas
 
@@ -61,8 +56,17 @@ testar novos metodos com javascript pra evitar override do map.js
 townnames
 
 
+Algumas mulheres (3+-) fogem da ilha delas por causa dos ataques dos cocolings
+explicam que os homens ficaram lá pra lutar
+você pode escolher mandar soldados pra lá, ajudar na luta deles.
+a luta dura 3 dias, e pra cada soldado que vc envia ela dura um dia a menos
+quando acaba seus soldados voltam com um level a mais,
+e um dos homens da ilha chega pra chamar as mulheres de volta
+se você ajudou na luta, ganha deles a poseidon spear
+
+
 Enquanto Miranda espera pelo carregamento do navio, ela vai andar na ilha.
 Descobre o monumento, o jogador chama alguém pra olhar. O monumento ativa e sumona cocolings.
 Derrote todos e pegue o monumento para você.
 (fazer alguma coisa pra consertar ele)
-Ao usa-lo sumona um cocoling e desativa novamente, tendo que recarregar
+Ao usa-lo sumona um cocoling e desativa novamente, tendo que recarregar (fica cinza, sem efeitos)

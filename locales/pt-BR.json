@@ -236,6 +236,15 @@
 				}
 			}
 		},
+		"build":{
+			"building_brushes":{
+				"colors":{
+					"#f1f1a4":"Areia 1 (Arquipélago)",
+					"#f0ea99":"Areia 2 (Arquipélago)",
+					"#f0e187":"Areia 3 (Arquipélago)"
+				}
+			}
+		},
 		"gm":{
 			"campaigns":{
 				"archipelago":{
@@ -265,6 +274,10 @@
 								"message_start":"A propósito, enquanto estávamos negociando eu notei esta caixa perto de seu acampamento. Eu acho que é sua, então eu coloquei perto da sua bandeira.",
 								"choice":"Uhm? Que caixa?",
 								"this_crate":"Esse caixote?"
+							},
+							"teaches_how_to_break_crate":{
+								"title":"Curioso?",
+								"message_start":"Você não vai abrir aquela caixa? Talvez seja importante ou pode estragar!<br>Para abri-lo, use suas ferramentas de colheita (da mesma forma que você faz para cortar árvores ou colher plantas)"
 							},
 							"miranda_talks_about_cocolings":{
 								"title":"Cocolings",

@@ -34,7 +34,7 @@
                      },
                      "coconut": {
                         "uri": "archipelago_biome:food:papaya_basket",
-                        "weight": 2
+                        "weight": 1
                      }
                   }
                }
@@ -50,7 +50,7 @@
          "harvester_effect": "work_high",
          "category": "harvest",
          "resource": "archipelago_biome:food:papaya_basket",
-         "renewal_time": "20h",
+         "renewal_time": "20h+4h",
          "unripe_description": "i18n(archipelago_biome:entities.trees.papaya.unripe_description)",
          "harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect"
       },

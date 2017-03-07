@@ -10,7 +10,7 @@
 						"items": {
 							"none": {
 								"uri": "",
-								"weight": 1.5
+								"weight": 2
 							},
 							"coconut": {
 								"uri": "archipelago_biome:food:coconut",
@@ -30,7 +30,7 @@
 			"harvester_effect": "work_high",
 			"category": "harvest",
 			"resource": "archipelago_biome:food:coconut",
-			"renewal_time": "20h",
+			"renewal_time": "24h",
 			"unripe_description": "i18n(archipelago_biome:entities.trees.common_palm.unripe_description)",
 			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect"
 		},

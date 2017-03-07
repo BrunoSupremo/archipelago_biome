@@ -16,7 +16,7 @@
 			},
 			"starfish":{
 				"display_name":"Starfish",
-				"description":"A.k.a. Sea Stars, starfish is not a fish. It’s an echinoderm!"
+				"description":"A.k.a. Sea Stars, starfish is not really a fish."
 			}
 		},
 		"critters":{
@@ -258,7 +258,7 @@
 								"message_start":"Hey, nice to meet you! I'm Miranda. Want some help?<br>I can talk about a few things if you are new here in the islands.",
 								"message_decline":"Well, take care.<br>Good luck.",
 								"message_accept":"Yes! Finally someone accepted my help!<br>Er... I mean, follow me!",
-								"message_trees":"You will start looking for wood and food, right?<br>Here you can find both at the same place!<br>Do you see the palm trees?<br>When you harvest them you get coconuts. Those don't fill much though.<br>Later if you want, you can cut them for their wood (select a palm tree and then click in the 'axe' command at the bottom left)",
+								"message_trees":"You will start looking for wood and food, right?<br>Here you can find both at the same place!<br>Do you see the palm trees?<br>When you harvest them you get coconuts. Those don't fill much though.<br>Later if you want, you can cut them for their wood (selecting a palm tree and then clicking in the 'axe' command at the bottom left)",
 								"message_oysters":"Oh, and these big oysters are awesome. You can harvest their pearls from time to time which sell for a good amount.<br>Rumours mention rare black pearls, but I never saw one myself.",
 								"message_broken_boats":"Take a look around and you may find some unlucky boat wrecks.<br>You can scavenger those and find good treasures.",
 								"message_bye":"That's all for now.<br>I'll return later to check how you guys are doing.<br>I need to take advantage of this wind and sail, my ship will not fill itself with goods and treasures.<br>Bye bye and good luck."

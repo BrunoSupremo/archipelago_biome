@@ -159,6 +159,29 @@ function CustomLandscaper:mark_water_bodies_archipelago_biome(elevation_map, fea
    self:_add_more_deep_water(feature_map)
 end
 
+function CustomLandscaper:_add_deep_water(feature_map)
+   for j=2, feature_map.height-1 do
+      for i=2, feature_map.width-1 do
+         local feature_name = feature_map:get(i, j)
+
+         if self:is_water_feature(feature_name) then
+            local surrounded_by_water = true
+
+            feature_map:each_neighbor(i, j, false, function(value)
+                  if not self:is_water_feature(value) then
+                     surrounded_by_water = false
+                     return true -- stop iteration
+                  end
+               end)
+
+            if surrounded_by_water then
+               feature_map:set(i, j, water_deep)
+            end
+         end
+      end
+   end
+end
+
 function CustomLandscaper:_add_more_deep_water(feature_map)
    for j=3, feature_map.height-2 do
       for i=3, feature_map.width-2 do
@@ -167,7 +190,7 @@ function CustomLandscaper:_add_more_deep_water(feature_map)
          if self:is_deep_water_feature_archipelago_biome(feature_name) then
             local surrounded_by_deep_water = true
 
-            feature_map:each_neighbor(i, j, true, function(value)
+            feature_map:each_neighbor(i, j, false, function(value)
                   if not self:is_deep_water_feature_archipelago_biome(value) then
                      surrounded_by_deep_water = false
                      return true -- stop iteration

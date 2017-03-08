@@ -155,8 +155,32 @@ function CustomLandscaper:mark_water_bodies_archipelago_biome(elevation_map, fea
    self:_remove_juts(feature_map)
    self:_remove_ponds(feature_map, old_feature_map)
    self:_fix_tile_aligned_water_boundaries(feature_map, old_feature_map)
-   self:_add_deep_water(feature_map)
+   self:_add_deep_water_archipelago(feature_map)
    self:_add_more_deep_water(feature_map)
+   self:_add_more_deep_water_second_pass(feature_map)
+end
+
+function CustomLandscaper:_add_deep_water_archipelago(feature_map)
+   for j=2, feature_map.height-1 do
+      for i=2, feature_map.width-1 do
+         local feature_name = feature_map:get(i, j)
+
+         if self:is_water_feature(feature_name) then
+            local surrounded_by_water = true
+
+            feature_map:each_neighbor(i, j, false, function(value)
+                  if not self:is_water_feature(value) then
+                     surrounded_by_water = false
+                     return true -- stop iteration
+                  end
+               end)
+
+            if surrounded_by_water then
+               feature_map:set(i, j, water_deep)
+            end
+         end
+      end
+   end
 end
 
 function CustomLandscaper:_add_more_deep_water(feature_map)
@@ -164,11 +188,11 @@ function CustomLandscaper:_add_more_deep_water(feature_map)
       for i=3, feature_map.width-2 do
          local feature_name = feature_map:get(i, j)
 
-         if self:is_deep_water_feature_archipelago_biome(feature_name) then
+         if self:is_not_shallow_water_feature(feature_name) then
             local surrounded_by_deep_water = true
 
-            feature_map:each_neighbor(i, j, true, function(value)
-                  if not self:is_deep_water_feature_archipelago_biome(value) then
+            feature_map:each_neighbor(i, j, false, function(value)
+                  if not self:is_not_shallow_water_feature(value) then
                      surrounded_by_deep_water = false
                      return true -- stop iteration
                   end
@@ -178,6 +202,34 @@ function CustomLandscaper:_add_more_deep_water(feature_map)
                feature_map:set(i, j, water_more_deep)
             end
          end
+      end
+   end
+end
+
+function CustomLandscaper:_add_more_deep_water_second_pass(feature_map)
+   local copy_feature_map = feature_map:clone()
+   for j=3, feature_map.height-2 do
+      for i=3, feature_map.width-2 do
+         local feature_name = feature_map:get(i, j)
+
+         if self:is_exactly_deep_water_feature(feature_name) then
+            local number_of_neighbors = 0
+
+            feature_map:each_neighbor(i, j, true, function(value)
+                  if self:is_exactly_deep_water_feature(value) then
+                     number_of_neighbors = number_of_neighbors+1
+                  end
+               end)
+
+            if number_of_neighbors>=3 then
+               copy_feature_map:set(i, j, water_more_deep)
+            end
+         end
+      end
+   end
+   for j=3, feature_map.height-2 do
+      for i=3, feature_map.width-2 do
+         feature_map:set(i, j, copy_feature_map:get(i,j))
       end
    end
 end
@@ -202,12 +254,21 @@ function CustomLandscaper:is_water_feature_archipelago_biome(feature_name)
    return self._water_table[feature_name] ~= nil
 end
 
-function CustomLandscaper:is_deep_water_feature_archipelago_biome(feature_name)
+function CustomLandscaper:is_not_shallow_water_feature(feature_name)
    if feature_name == nil then
       return false
    end
 
    local result = feature_name == water_deep or feature_name == water_more_deep
+   return result
+end
+
+function CustomLandscaper:is_exactly_deep_water_feature(feature_name)
+   if feature_name == nil then
+      return false
+   end
+
+   local result = feature_name == water_deep
    return result
 end
 

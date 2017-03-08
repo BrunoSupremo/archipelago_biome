@@ -440,14 +440,14 @@
                      "stonehearth:plants:frostsnap": 3,
                      "stonehearth:plants:brightbell": 3,
                      "stonehearth:plants:silkweed": 3,
-                     "archipelago_biome:trees:papaya": 1
+                     "archipelago_biome:trees:papaya": 2
                   }
                },
                "mountains": {
                   "1": {
-                     "stonehearth:plants:brightbell": 2,
-                     "stonehearth:plants:frostsnap": 2,
-                     "archipelago_biome:trees:papaya": 1
+                     "stonehearth:plants:brightbell": 3,
+                     "stonehearth:plants:frostsnap": 3,
+                     "archipelago_biome:trees:papaya": 2
                   },
                   "2": {
                      "stonehearth:plants:brightbell": 1,

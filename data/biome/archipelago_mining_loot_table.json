@@ -8,7 +8,7 @@
                "items" : {
                   "none": {"uri" : "", "weight" : 100 },
                   "hunk_of_stone": {"uri": "stonehearth:resources:stone:hunk_of_stone", "weight": 1 },
-                  "clay_mound": {"uri" : "stonehearth:resources:clay:clay_mound", "weight" : 3 }
+                  "clay_mound": {"uri" : "stonehearth:resources:clay:clay_mound", "weight" : 2.8 }
                }
             }
          }
@@ -27,7 +27,7 @@
          "entries": {
             "default": {
                "items" : {
-                  "clay_mound": { "uri" : "stonehearth:resources:clay:clay_mound", "weight" : 3 }
+                  "clay_mound": { "uri" : "stonehearth:resources:clay:clay_mound", "weight" : 2.8 }
                }
             }
          }

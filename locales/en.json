@@ -115,6 +115,16 @@
 				"description":"One half of a fruit"
 			}
 		},
+		"gizmos":{
+			"cocobomb":{
+				"display_name":"CocoBomb",
+				"description":"Don't play with your food.",
+				"recipe":{
+					"description":"After placed, it will explode when enemies hit it. Damage and set fire to enemies near the explosion.",
+					"flavor":"Everything's better with explosions"
+				}
+			}
+		},
 		"monsters":{
 			"cocoling":{
 				"display_name":"Cocoling",

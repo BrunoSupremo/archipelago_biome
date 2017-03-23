@@ -1,0 +1,38 @@
+{
+   "type": "entity",
+   "components": {
+      "stonehearth:equipment_piece": {
+         "slot": "mainhand",
+         "render_type": "none"
+      }
+   },
+   "entity_data": {
+      "stonehearth:combat:weapon_data": {
+         "base_damage": 250,
+         "reach": 5.5
+      },
+      "stonehearth:combat:melee_attacks": [
+         {
+            "name": "explode",
+            "effect": "default",
+            "active_frame": 5,
+            "cooldown": 300,
+            "priority": 1,
+            "aoe_effect": {
+               "damage_multiplier": 1,
+               "aoe_target_limit": 10,
+               "inflictable_debuffs": {
+                  "slow": {
+                     "uri": "stonehearth:buffs:snap_trap_1",
+                     "chance": 1
+                  },
+                  "fire": {
+                     "uri": "stonehearth:buffs:archer:fire_arrow",
+                     "chance": 1
+                  }
+               }
+            }
+         }
+      ]
+   }
+}

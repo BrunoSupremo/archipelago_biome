@@ -115,6 +115,16 @@
 				"description":"Uma metade da fruta"
 			}
 		},
+		"gizmos":{
+			"cocobomb":{
+				"display_name":"CocoBomba",
+				"description":"Não brinque com a comida.",
+				"recipe":{
+					"description":"Após posicionado, irá explodir quando um inimigo bater nele. Machuca e taca fogo nos inimigos próximos da explosão.",
+					"flavor":"Tudo fica melhor com explosões."
+				}
+			}
+		},
 		"monsters":{
 			"cocoling":{
 				"display_name":"Cocoling",

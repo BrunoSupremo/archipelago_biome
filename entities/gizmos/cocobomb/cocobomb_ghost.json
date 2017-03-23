@@ -1,0 +1,30 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.1,
+			"animation_table": "/stonehearth/data/rigs/entities/gizmos/clamp_trap/clamp_trap.json"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(cocobomb.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {"x": -0.05, "y": 0, "z": 0.05 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.gizmos.cocobomb.display_name)",
+			"description": "i18n(archipelago_biome:entities.gizmos.cocobomb.description)",
+			"icon": "file(cocobomb.png)",
+			"category": "defense",
+			"material_tags": "coal coconut defense stockpile_defense"
+		}
+	}
+}

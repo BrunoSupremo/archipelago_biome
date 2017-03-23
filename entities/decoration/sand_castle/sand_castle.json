@@ -1,7 +1,16 @@
 {
    "type": "entity",
-   "mixins": "file(sand_castle_ghost.json)",
+   "mixins": [
+      "file(sand_castle_ghost.json)",
+      "stonehearth:mixins:destructable_object"
+   ],
    "components": {
+      "stonehearth:attributes": {
+         "max_health": {
+            "type": "basic",
+            "value": 1
+         }
+      },
       "stonehearth:entity_forms": {
          "iconic_form": "file(sand_castle_iconic.json)",
          "ghost_form": "file(sand_castle_ghost.json)",

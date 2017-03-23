@@ -1,0 +1,11 @@
+{
+	"craftable_recipes" : {
+		"traps" : {
+			"recipes" : {
+				"cocobomb" : {
+					"recipe" : "file(cocobomb_recipe.json)"
+				}            
+			}
+		}
+	}
+}

@@ -1,21 +1,26 @@
 tiki warrior
 piratas
 king crab
-sea turtle
-*seagull
+seagull
 palm tree monster
 octopus / rocktopus
 mosquitos/doenças usar o herbalist pra curar
+bananas
 
+
+fisherman
+workbench, mesa com facão em cima, rede, vara, balde
+craft floater, marca o local de pesca, só funciona na agua e flutua na superficie
+craft armadilhas para carangueijos, só funciona na agua/areia, o fisher vai até ela e quebra pra pegar o bixo, e deixa um ghost de outra no local pra repor
+peixe e carangueijo pescados são limpos na workbench antes de armazenar
+oyster farm marker, coloca e ele marca todas as oysters em volta pra harvest
+craft pearl export crate
 
 
 ossos de peixes/baleias
 
 
 spawn crates from time to time
-
-
-coconade
 
 
 Testar novos habitats (sand/water)
@@ -25,7 +30,7 @@ hearthlings nadam pra se refrescar e brincar
 novos hearthlings chegam de barco
 
 
-Atlanteans
+Atlanteans, tema verde, ciano, branco, roxo
 
 
 espadas piratas
@@ -56,11 +61,12 @@ testar novos metodos com javascript pra evitar override do map.js
 townnames
 
 
-Algumas mulheres (3+-) fogem da ilha delas por causa dos ataques dos cocolings
+Algumas mulheres (+-3) fogem da ilha delas por causa dos ataques dos cocolings
 explicam que os homens ficaram lá pra lutar
+pedem pra mandar healing potions e curativos (depois dão alguma coisa em troca)
 você pode escolher mandar soldados pra lá, ajudar na luta deles.
 a luta dura 3 dias, e pra cada soldado que vc envia ela dura um dia a menos
-quando acaba seus soldados voltam com um level a mais,
+quando acaba, seus soldados voltam com um level a mais,
 e um dos homens da ilha chega pra chamar as mulheres de volta
 se você ajudou na luta, ganha deles a poseidon spear
 

@@ -22,7 +22,7 @@
       },
       "stonehearth:resource_node": {
          "resource": "stonehearth:resources:wood:oak_log", 
-         "durability": 11
+         "durability": 12
       },
       "destination": {
          "region": [

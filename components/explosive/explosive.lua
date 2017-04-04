@@ -15,7 +15,7 @@ function ArchipelagoExplosive:destroy()
 	for _, entity in pairs(entities) do
 		local is_hostile = stonehearth.player:are_entities_hostile(entity, self._entity)
 		if is_hostile and radiant.entities.has_free_will(entity) then
-			radiant.entities.modify_health(entity, -400)
+			radiant.entities.modify_health(entity, -250)
 			radiant.entities.add_buff(entity, "stonehearth:buffs:archer:fire_arrow")
 			radiant.entities.add_buff(entity, "stonehearth:buffs:archer:slowing_arrow")
 		end

@@ -1,100 +1,99 @@
 {
-   "type": "entity",
-   "mixins": "stonehearth:mixins:monster",
-   "components": {
-      "render_info": {
-         "animation_table": "stonehearth/data/rigs/entities/monster/goblins/goblin/goblin.json"
-      },
-      "model_variants": {
-         "default": {
-            "models": [
-               "file(cocoling.qb)"
-            ]
-         }
-      },
-      "stonehearth:attributes": {
-         "max_health": {
-            "type": "basic",
-            "value": 100
-         },
-         "muscle": {
-            "type": "basic",
-            "value": 10
-         },
-         "menace": {
-            "type": "basic",
-            "value": 35
-         },
-         "courage": {
-            "type": "basic",
-            "value": 50
-         },
-         "speed": {
-            "type": "basic",
-            "value": 80
-         },
-         "exp_reward": {
-            "type": "basic",
-            "value": 10
-         }
-      },
-      "stonehearth:equipment": {
-         "items": [
-            "stonehearth:monsters:forest:entling:fist_weapon"
-         ]
-      },
-      "stonehearth:carry_block": {},
-      "stonehearth:posture": [],
-      "stonehearth:loot_drops": {
-         "entries": {
-            "default": {
-               "num_rolls": {
-                  "min": 1,
-                  "max": 1
-               },
-               "items": {
-                  "coconut": {
-                     "uri": "archipelago_biome:food:coconut",
-                     "weight": 10
-                  }
-               }
-            }
-         }
-      }
-   },
-   "entity_data": {
-      "stonehearth:entity_radius": 0.75,
-      "stonehearth:entity_reach": 1.0,
-      "stonehearth:combat:melee_defenses": [],
-      "stonehearth:ai_packs": {
-         "packs": [
-            "stonehearth:ai_pack:harvesting",
-            "stonehearth:ai_pack:restocking",
-            "stonehearth:ai_pack:patrolling"
-         ]
-      },
-      "stonehearth:portrait": {
-         "portrait_types": {
-            "headshot": {
-               "camera": {
-                  "pos": [
-                     24,
-                     1.2,
-                     -27
-                  ],
-                  "look_at": [
-                     0,
-                     1.3,
-                     0
-                  ],
-                  "fov": 55
-               }
-            }
-         }
-      },
-      "stonehearth:catalog": {
-         "display_name": "i18n(archipelago_biome:entities.monsters.cocoling.display_name)",
-         "description": "i18n(archipelago_biome:entities.monsters.cocoling.description)"
-      }
-   }
+	"type": "entity",
+	"mixins": "stonehearth:mixins:monster",
+	"components": {
+		"render_info": {
+			"animation_table": "stonehearth/data/rigs/entities/monster/goblins/goblin/goblin.json"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(cocoling.qb)"
+				]
+			}
+		},
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 100
+			},
+			"muscle": {
+				"type": "basic",
+				"value": 10
+			},
+			"menace": {
+				"type": "basic",
+				"value": 35
+			},
+			"courage": {
+				"type": "basic",
+				"value": 50
+			},
+			"speed": {
+				"type": "basic",
+				"value": 80
+			},
+			"exp_reward": {
+				"type": "basic",
+				"value": 10
+			}
+		},
+		"stonehearth:equipment": {
+			"items": [
+				"stonehearth:monsters:forest:entling:fist_weapon"
+			]
+		},
+		"stonehearth:carry_block": {},
+		"stonehearth:loot_drops": {
+			"entries": {
+				"default": {
+					"num_rolls": {
+						"min": 1,
+						"max": 1
+					},
+					"items": {
+						"coconut": {
+							"uri": "archipelago_biome:food:coconut",
+							"weight": 10
+						}
+					}
+				}
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:entity_radius": 0.75,
+		"stonehearth:entity_reach": 1.0,
+		"stonehearth:combat:melee_defenses": [],
+		"stonehearth:ai_packs": {
+			"packs": [
+				"stonehearth:ai_pack:harvesting",
+				"stonehearth:ai_pack:restocking",
+				"stonehearth:ai_pack:patrolling"
+			]
+		},
+		"stonehearth:portrait": {
+			"portrait_types": {
+				"headshot": {
+					"camera": {
+						"pos": [
+							24,
+							1.2,
+							-27
+						],
+						"look_at": [
+							0,
+							1.3,
+							0
+						],
+						"fov": 55
+					}
+				}
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.monsters.cocoling.display_name)",
+			"description": "i18n(archipelago_biome:entities.monsters.cocoling.description)"
+		}
+	}
 }

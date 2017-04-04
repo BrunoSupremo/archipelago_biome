@@ -65,35 +65,62 @@ App.StonehearthSelectSettlementView = App.View.extend({
 
       // World Seed
       new StonehearthInputHelper(this.$('#worldSeedInput'), function (value) {
-         var worldSeed = self.get('world_seed');
-         if (self.$("#regenerateButton").hasClass('disabled')) {
-            self.$('#worldSeedInput').val(worldSeed);
-            return;
-         }
-         var seed = parseInt(value);
-         if (isNaN(seed)) {
-            self.$('#worldSeedInput').val(worldSeed);
-            return;
-         }
+            var worldSeed = self.get('world_seed');
+            if (self.$("#regenerateButton").hasClass('disabled')) {
+               self.$('#worldSeedInput').val(worldSeed);
+               return;
+            }
+            var seed = parseInt(value);
+            if (isNaN(seed)) {
+               self.$('#worldSeedInput').val(worldSeed);
+               return;
+            }
 
-         if (seed != worldSeed) {
-            self.$('#map').hide();
-            self.$('#map').stonehearthMap('suspend');
-            self._newGame(seed ,function(e) {
-               self.$('#map').show();
-               radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:ui:start_menu:paper_menu'} );
-               self.$('#map').stonehearthMap('setMap', e.map, e.map_info);
-               self.$('#map').stonehearthMap('resume');
-            });
-         }
-      });
+            if (seed != worldSeed) {
+               self.$('#map').hide();
+               self.$('#map').stonehearthMap('suspend');
+               self._newGame(seed ,function(e) {
+                  self.$('#map').show();
+                  radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:ui:start_menu:paper_menu'} );
+                  self.$('#map').stonehearthMap('setMap', e.map, e.map_info);
+                  self.$('#map').stonehearthMap('resume');
+               });
+            }
+         });
 
       $(document).on('keydown', this._clearSelectionKeyHandler);
+
+      self._animateLoading();
    },
 
    destroy: function() {
       $(document).off('keydown', this._clearSelectionKeyHandler);
+      if (this._loadingAnimationInterval) {
+         clearInterval(this._loadingAnimationInterval);
+         this._loadingAnimationInterval = null;
+      }
       this._super();
+   },
+
+   _animateLoading: function() {
+      var self = this;
+      var loadingElement = self.$('#loadingPeriods');
+
+      var periodsCount = 0;
+      var currentPeriods = '';
+      self._loadingAnimationInterval = setInterval(function() {
+         loadingElement.html(currentPeriods);
+
+         periodsCount++;
+         if (periodsCount >= 4) {
+            periodsCount = 0;
+            currentPeriods = '';
+         } else {
+            currentPeriods = currentPeriods + '.';
+         }
+
+      }, 250);
+
    },
 
    _chooseLocation: function(cellX, cellY) {
@@ -133,23 +160,18 @@ App.StonehearthSelectSettlementView = App.View.extend({
       self.$("#regenerateButton").addClass('disabled');
       self.$('#worldSeedInput').attr('disabled', 'disabled');
 
-      radiant.call('stonehearth:new_game_client', self.options)
-      .fail(function(e) {
-         console.error('new_game_client failed:', e);
-      });
-
       radiant.call_obj('stonehearth.game_creation', 'new_game_command', 12, 8, seed, self.options)
-      .done(function(e) {
-         self._map_info = e.map_info;
-         fn(e);
-      })
-      .fail(function(e) {
-         console.error('new_game failed:', e);
-      })
-      .always(function() {
-         self.$("#regenerateButton").removeClass('disabled');
-         self.$('#worldSeedInput').removeAttr('disabled');
-      });
+         .done(function(e) {
+            self._map_info = e.map_info;
+            fn(e);
+         })
+         .fail(function(e) {
+            console.error('new_game failed:', e);
+         })
+         .always(function() {
+            self.$("#regenerateButton").removeClass('disabled');
+            self.$('#worldSeedInput').removeAttr('disabled');
+         });
    },
 
    _generate_seed: function() {
@@ -168,11 +190,13 @@ App.StonehearthSelectSettlementView = App.View.extend({
 
       if (cell != null) {
          self.$('#scroll').show();
+
          mod_name = self.options.biome_src.replace("/","").split("/")[0].split(":")[0];
          terrainType = i18n.t(mod_name + ':ui.shell.select_settlement.terrain_codes.' + cell.terrain_code);
          if (terrainType.length > 40){
             terrainType = i18n.t('stonehearth:ui.shell.select_settlement.terrain_codes.' + cell.terrain_code);
          }
+
          vegetationDescription = cell.vegetation_density;
          wildlifeDescription = cell.wildlife_density;
          mineralDescription = cell.mineral_density;
@@ -186,7 +210,7 @@ App.StonehearthSelectSettlementView = App.View.extend({
          self._updateTileRatings(self.$('#vegetation'), cell.vegetation_density);
          self._updateTileRatings(self.$('#wildlife'), cell.wildlife_density);
          self._updateTileRatings(self.$('#minerals'), cell.mineral_density);
-         
+
          /*
          self.$('#vegetation')
             .removeAttr('class')
@@ -202,59 +226,59 @@ App.StonehearthSelectSettlementView = App.View.extend({
             .removeAttr('class')
             .addClass('level' + cell.mineral_density)
             .html(mineralDescription);
-            */
-         } else {
-            self.$('#scroll').hide();
-         }
-      },
+         */
+      } else {
+         self.$('#scroll').hide();
+      }
+   },
 
-      _updateTileRatings: function(el, rating) {
-         el.find('.bullet')
+   _updateTileRatings: function(el, rating) {
+      el.find('.bullet')
          .removeClass('full');
 
-         for(var i = 1; i < rating + 1; i++) {
-            el.find('.' + i).addClass('full');
-         }
-      },
+      for(var i = 1; i < rating + 1; i++) {
+         el.find('.' + i).addClass('full');
+      }
+   },
 
-      _clearSelection: function() {
-         var self = this;
+   _clearSelection: function() {
+      var self = this;
 
-         try {
-            self.$('#selectSettlementPin').tooltipster('destroy');
-            self.$('#selectSettlementPin').hide();
-            radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:ui:carpenter_menu:menu_closed'} );
-         } catch(e) {
-         }
+      try {
+         self.$('#selectSettlementPin').tooltipster('destroy');
+         self.$('#selectSettlementPin').hide();
+         radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:ui:carpenter_menu:menu_closed'} );
+      } catch(e) {
+      }
 
-         self.$('#map').stonehearthMap('clearCrosshairs');
-         self._updateScroll(null);
+      self.$('#map').stonehearthMap('clearCrosshairs');
+      self._updateScroll(null);
 
-         if (self.$('#map').stonehearthMap('suspended')) {
-            self.$('#map').stonehearthMap('resume');
-         }
-      },
+      if (self.$('#map').stonehearthMap('suspended')) {
+         self.$('#map').stonehearthMap('resume');
+      }
+   },
 
-      _clearSelectionKeyHandler: function(e) {
-         var self = this;
+   _clearSelectionKeyHandler: function(e) {
+      var self = this;
 
-         var escape_key_code = 27;
+      var escape_key_code = 27;
 
-         if (e.keyCode == escape_key_code) {
-            $('#clearSelectionButton').click();
-         }
-      },
+      if (e.keyCode == escape_key_code) {
+         $('#clearSelectionButton').click();
+      }
+   },
 
-      _selectSettlement: function(cellX, cellY) {
-         var self = this;
+   _selectSettlement: function(cellX, cellY) {
+      var self = this;
 
-         radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:ui:start_menu:embark'} );
-         radiant.call_obj('stonehearth.game_creation', 'generate_start_location_command', cellX, cellY, self._map_info)
+      radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:ui:start_menu:embark'} );
+      radiant.call_obj('stonehearth.game_creation', 'generate_start_location_command', cellX, cellY, self._map_info)
          .fail(function(e) {
             console.error('generate_start_location_command failed:', e);
          });
 
-         App.shellView.addView(App.StonehearthLoadingScreenView);
-         self.destroy();
-      }
-   });
+      App.shellView.addView(App.StonehearthLoadingScreenView);
+      self.destroy();
+   }
+});

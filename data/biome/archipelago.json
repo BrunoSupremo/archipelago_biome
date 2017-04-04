@@ -9,8 +9,8 @@
       "i18n(archipelago_biome:data.biome.archipelago.random_location_names.002)",
       "i18n(archipelago_biome:data.biome.archipelago.random_location_names.003)"
    ],
-   "image": "file(images/archipelago_400x300.png)",
-   "story_board_image": "file(images/archipelago_story_board.png)",
+   "image": "file(images/archipelago_400x300.jpg)",
+   "story_board_image": "file(images/archipelago_story_board.jpg)",
    "game_mode_images": {
       "stonehearth:game_mode:normal": "file(images/archipelago_story_normal.png)",
       "stonehearth:game_mode:hard": "file(images/archipelago_story_hard.png)"

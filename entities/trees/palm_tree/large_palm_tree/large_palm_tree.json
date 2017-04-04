@@ -15,7 +15,7 @@
          }
       },
       "stonehearth:resource_node": {
-         "durability": 7
+         "durability": 8
       },
       "destination": {
          "region": [

@@ -1,548 +1,528 @@
 {
-   "type": "biome_generation_data",
-   "__comment": "parameters for generating forest, flora, and water",
-   "ring_tesselation": {
-      "dirt": [
-         {
-            "width": 8,
-            "name": "dirt_edge_1"
-         }
-      ],
-      "grass": [
-         {
-            "width": 4,
-            "name": "grass_edge_1"
-         },
-         {
-            "width": 6,
-            "name": "grass_edge_2"
-         }
-      ],
-      "grass_hills": [
-         {
-            "width": 3,
-            "name": "grass_hills_edge_1"
-         },
-         {
-            "width": 5,
-            "name": "grass_hills_edge_2"
-         }
-      ],
-      "sand": [
-         {
-            "width": 4,
-            "name": "sand_edge_1"
-         },
-         {
-            "width": 6,
-            "name": "sand_edge_2"
-         }
-      ]
-   },
-   "season": "spring",
-   "palettes": {
-      "spring": {
-         "null": "#ff00ff",
-         "unknown": "#25221a",
-         "bedrock": "#514e45",
-         "rock_layer_1": "#70685f",
-         "rock_layer_2": "#76726b",
-         "rock_layer_3": "#82807b",
-         "rock_layer_4": "#918d86",
-         "rock_layer_5": "#82807b",
-         "rock_layer_6": "#76726b",
-         "rock_layer_7": "#82807b",
-         "rock_layer_8": "#76726b",
-         "soil_light": "#918154",
-         "soil_dark": "#807147",
-         "sand_soil_light": "#e0d177",
-         "sand_soil_dark": "#d0c167",
-         "dirt": "#f1f1a4",
-         "dirt_edge_1": "#f0e187",
-         "grass": "#f0e187",
-         "grass_edge_1": "#f1f1a4",
-         "grass_edge_2": "#f0ea99",
-         "sand": "#f0e187",
-         "sand_edge_1": "#f1f1a4",
-         "sand_edge_2": "#f0ea99",
-         "grass_hills": "#8Bc260",
-         "grass_hills_edge_1": "#AFdC6C",
-         "grass_hills_edge_2": "#9DcF66",
-         "copper_ore": "#c87533",
-         "tin_ore": "#b0a080",
-         "iron_ore": "#90b0d0",
-         "silver_ore": "#cccccc",
-         "gold_ore": "#ffd700",
-         "coal": "#021c24",
-         "marble" : "#DEDEDE"
-      }
-   },
-   "terrain": {
-      "__comment": "minimum height for surface of terrain",
-      "noise_map_settings": {
-         "octaves": 2,
-         "persistence_ratio": 0.1,
-         "bandlimit": 5,
-         "__comment": "can stretch the terrain vertically to allow for long mountain ridges",
-         "aspect_ratio": 1
-      },
-      "plains_percentage": 85,
-      "height_base": 38,
-      "__comments": {
-         "valley_count": "offset of layers from base",
-         "step_count": "number of layers",
-         "step_size": "size of layer, for foothills and mountains this has to be multiple of 5"
-      },
-      "plains": {
-         "step_size": 1,
-         "valley_count": 2,
-         "step_count": 2
-      },
-      "foothills": {
-         "step_size": 5,
-         "step_count": 3
-      },
-      "mountains": {
-         "step_size": 10,
-         "step_count": 12
-      }
-   },
-   "terrain_detailer": {
-      "mountains": {
-         "__comment": "determines the height of the first layer",
-         "depth_function": {
-            "octaves": 2,
-            "persistence_ratio": 0.2,
-            "amplitude": 2.5,
-            "layer_thickness": 3,
-            "layer_count": 2,
-            "__comment": "determines how many adjacent blocks have the same depth",
-            "unit_length": 12
-         },
-         "height_function": {
-            "octaves": 4,
-            "persistence_ratio": 0.1,
-            "amplitude": 2.5,
-            "layer_thickness": 5,
-            "__comment": "determines how many adjacent blocks have the same depth",
-            "unit_length": 16
-         }
-      },
-      "foothills": {
-         "depth_function": {
-            "octaves": 3,
-            "persistence_ratio": 0.2,
-            "amplitude": 2.5,
-            "layer_thickness": 1,
-            "layer_count": 2,
-            "unit_length": 6
-         },
-         "height_function": {
-            "octaves": 4,
-            "persistence_ratio": 0.1,
-            "amplitude": 2.5,
-            "layer_thickness": 1,
-            "unit_length": 8
-         }
-      },
-      "plains": {
-         "depth_function": {
-            "layer_thickness": 1,
-            "layer_count": 1,
-            "unit_length": 8
-         },
-         "height_function": {
-            "layer_thickness": 1,
-            "unit_length": 8
-         }
-      }
-   },
-   "landscape": {
-      "placement_table": {
-         "archipelago_biome:volcano": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 16,
-               "exclusion_radius": 16
-            }
-         },
-         "archipelago_biome:trees:papaya": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 1,
-               "exclusion_radius": 7
-            }
-         },
-         "archipelago_biome:trees:dranden:small": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 2,
-               "item_density": 1,
-               "exclusion_radius": 2
-            }
-         },
-         "archipelago_biome:trees:smalea:small": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 2,
-               "item_density": 0.5,
-               "exclusion_radius": 2
-            }
-         },
-         "archipelago_biome:trees:palm:small": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 3,
-               "item_density": 0.5,
-               "exclusion_radius": 2
-            }
-         },
-         "archipelago_biome:trees:palm:large": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 1,
-               "exclusion_radius": 4
-            }
-         },
-         "archipelago_biome:trees:bend_palm:small": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 3,
-               "item_density": 0.5,
-               "exclusion_radius": 2
-            }
-         },
-         "archipelago_biome:trees:bend_palm:large": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 1,
-               "exclusion_radius": 4
-            }
-         },
-         "archipelago_biome:beach:starfish": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 4,
-               "item_density": 0.2,
-               "exclusion_radius": 1
-            }
-         },
-         "archipelago_biome:beach:oyster": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 1,
-               "exclusion_radius": 2
-            }
-         },
-         "archipelago_biome:beach:broken_boat": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 3,
-               "exclusion_radius": 6
-            }
-         },
-         "stonehearth:plants:brightbell": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 4,
-               "item_density": 0.13,
-               "exclusion_radius": 1
-            }
-         },
-         "stonehearth:plants:frostsnap": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 4,
-               "item_density": 0.17,
-               "exclusion_radius": 1
-            }
-         },
-         "stonehearth:plants:silkweed": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 4,
-               "item_density": 0.1,
-               "exclusion_radius": 1
-            }
-         },
-         "stonehearth:boulder:small": {
-            "placement_type": "dense",
-            "parameters": {
-               "grid_multiple": 4,
-               "item_density": 0.1,
-               "exclusion_radius": 1
-            }
-         },
-         "stonehearth:boulder:medium_1": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 1,
-               "exclusion_radius": 2
-            }
-         },
-         "stonehearth:boulder:medium_2": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 1,
-               "exclusion_radius": 2
-            }
-         },
-         "stonehearth:boulder:medium_3": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 1,
-               "exclusion_radius": 2
-            }
-         },
-         "stonehearth:boulder:large_1": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 2,
-               "exclusion_radius": 3
-            }
-         },
-         "stonehearth:boulder:large_2": {
-            "placement_type": "single",
-            "parameters": {
-               "ground_radius": 2,
-               "exclusion_radius": 3
-            }
-         }
-      },
-      "trees": {
-         "__comment": "tree size variance. anything above 0 will be considered as tree placement, and the size of the tree is determined within the sizes node declared above",
-         "sizes": {
-            "archipelago_biome:trees:palm": {
-               "small": 0,
-               "large": 3
-            },
-            "archipelago_biome:trees:bend_palm": {
-               "small": 0,
-               "large": 3
-            },
-            "archipelago_biome:trees:dranden": {
-               "small": 0
-            },
-            "archipelago_biome:trees:smalea": {
-               "small": 0
-            }
-         },
-         "weights": {
-            "plains": {
-               "1": {
-                  "archipelago_biome:trees:palm": 1,
-                  "archipelago_biome:trees:bend_palm": 1
-               }
-            },
-            "foothills": {
-               "1": {
-                  "archipelago_biome:trees:dranden": 2,
-                  "archipelago_biome:trees:smalea": 1,
-                  "archipelago_biome:trees:palm": 10,
-                  "archipelago_biome:trees:bend_palm": 8
-               },
-               "2": {
-                  "archipelago_biome:trees:dranden": 2,
-                  "archipelago_biome:trees:smalea": 1,
-                  "archipelago_biome:trees:palm": 10,
-                  "archipelago_biome:trees:bend_palm": 6
-               },
-               "3": {
-                  "archipelago_biome:trees:dranden": 8,
-                  "archipelago_biome:trees:smalea": 3,
-                  "archipelago_biome:trees:palm": 1,
-                  "archipelago_biome:trees:bend_palm": 1
-               }
-            },
-            "mountains": {
-               "1": {
-                  "archipelago_biome:trees:dranden": 6,
-                  "archipelago_biome:trees:smalea": 2
-               },
-               "2": {
-                  "archipelago_biome:trees:dranden": 4,
-                  "archipelago_biome:trees:smalea": 3
-               },
-               "3": {
-                  "archipelago_biome:trees:dranden": 3,
-                  "archipelago_biome:trees:smalea": 5
-               }
-            }
-         },
-         "noise_map_parameters": {
-            "__comment": "gaussian function",
-            "mean_offset": {
-               "__comment": "boundary of terrain type",
-               "boundary": 0,
-               "water": 0
-            },
-            "terrain_based": {
-               "plains": {
-                  "1": {
-                     "density": 0.1,
-                     "mean": 1,
-                     "std_dev": 2
-                  }
-               },
-               "foothills": {
-                  "1": {
-                     "density": 0.5,
-                     "mean": 5,
-                     "std_dev": 10
-                  }
-               },
-               "mountains": {
-                  "1": {
-                     "density": 0.5,
-                     "mean": 5,
-                     "std_dev": 10
-                  },
-                  "4": {
-                     "density": 0.1,
-                     "mean": 0,
-                     "std_dev": 10
-                  }
-               }
-            }
-         }
-      },
-      "berries": {
-         "placement": {
-            "function": "gaussian",
-            "mean": -50,
-            "std_dev": 30,
-            "__comment": "offset of mean near different terrain/landscape",
-            "mean_offset": {
-               "tree": 0,
-               "water": 0,
-               "boundary": 0
-            },
-            "density": {
-               "plains": 0,
-               "foothills": 0.5,
-               "mountains": 0
-            }
-         }
-      },
-      "scattered": {
-         "plants": {
-            "__comment": "for example, a small probability with a large density would be more clustered than a large probability with small density.",
-            "weights": {
-               "plains": {
-                  "1": {
-                     "archipelago_biome:beach:starfish": 10,
-                     "archipelago_biome:beach:oyster": 7.5,
-                     "archipelago_biome:beach:broken_boat": 1
-                  }
-               },
-               "foothills": {
-                  "1": {
-                     "stonehearth:plants:frostsnap": 3,
-                     "stonehearth:plants:brightbell": 3,
-                     "stonehearth:plants:silkweed": 3,
-                     "archipelago_biome:trees:papaya": 2
-                  }
-               },
-               "mountains": {
-                  "1": {
-                     "stonehearth:plants:brightbell": 3,
-                     "stonehearth:plants:frostsnap": 3,
-                     "archipelago_biome:trees:papaya": 2
-                  },
-                  "2": {
-                     "stonehearth:plants:brightbell": 1,
-                     "stonehearth:plants:frostsnap": 1
-                  }
-               }
-            },
-            "noise_map_parameters": {
-               "terrain_based": {
-                  "plains": {
-                     "1": {
-                        "probability": 0,
-                        "density": 0.6
-                     },
-                     "2": {
-                        "probability": 0.35,
-                        "density": 0.8
-                     }
-                  },
-                  "foothills": {
-                     "1": {
-                        "probability": 0.9,
-                        "density": 0.7
-                     }
-                  },
-                  "mountains": {
-                     "1": {
-                        "probability": 0.8,
-                        "density": 0.7
-                     },
-                     "2": {
-                        "probability": 0.2,
-                        "density": 0.7
-                     }
-                  }
-               }
-            }
-         },
-         "boulders": {
-            "namespace": "stonehearth:boulder",
-            "noise_map_parameters": {
-               "__comment": "Same as noise map parameters of plants. this is after trees, water, berries and plants are generated",
-               "terrain_based": {
-                  "plains": {
-                     "1": {
-                        "probability": 0,
-                        "density": 0.5
-                     },
-                     "2": {
-                        "probability": 0.4,
-                        "density": 0.6
-                     }
-                  },
-                  "foothills": {
-                     "1": {
-                        "probability": 0.15,
-                        "density": 0.8
-                     }
-                  },
-                  "mountains": {
-                     "1": {
-                        "probability": 0,
-                        "density": 0.8
-                     }
-                  }
-               }
-            },
-            "__comments": "approximation of percentage thresholds of boulder sizes",
-            "cutoffs": {
-               "small": 0.2,
-               "medium": 0.4
-            }
-         }
-      },
-      "water": {
-         "__comment": "placement of water bodies occur at positive samples, parameters are for a standard simplex noise generator",
-         "depth": {
-            "shallow": 1,
-            "deep": 2,
-            "more_deep": 5
-         },
-         "water_height_delta": 0.6,
-         "noise_map_settings": {
-            "__comment": "simplex noise function",
-            "persistence_ratio": 0.1,
-            "bandlimit": 2,
-            "octaves": 2,
-            "range": 10,
-            "aspect_ratio": 1,
-            "mean": {
-               "plains": 5,
-               "foothills": -100,
-               "mountains": -100
-            }
-         }
-      }
-   }
+	"type": "biome_generation_data",
+	"ring_tesselation": {
+		"dirt": [
+			{
+				"width": 8,
+				"name": "dirt_edge_1"
+			}
+		],
+		"grass": [
+			{
+				"width": 4,
+				"name": "grass_edge_1"
+			},
+			{
+				"width": 6,
+				"name": "grass_edge_2"
+			}
+		],
+		"grass_hills": [
+			{
+				"width": 3,
+				"name": "grass_hills_edge_1"
+			},
+			{
+				"width": 5,
+				"name": "grass_hills_edge_2"
+			}
+		],
+		"sand": [
+			{
+				"width": 4,
+				"name": "sand_edge_1"
+			},
+			{
+				"width": 6,
+				"name": "sand_edge_2"
+			}
+		]
+	},
+	"season": "spring",
+	"palettes": {
+		"spring": {
+			"null": "#ff00ff",
+			"unknown": "#25221a",
+			"bedrock": "#514e45",
+			"rock_layer_1": "#70685f",
+			"rock_layer_2": "#76726b",
+			"rock_layer_3": "#82807b",
+			"rock_layer_4": "#918d86",
+			"rock_layer_5": "#82807b",
+			"rock_layer_6": "#76726b",
+			"rock_layer_7": "#82807b",
+			"rock_layer_8": "#76726b",
+			"soil_light": "#918154",
+			"soil_dark": "#807147",
+			"sand_soil_light": "#e0d177",
+			"sand_soil_dark": "#d0c167",
+			"dirt": "#f1f1a4",
+			"dirt_edge_1": "#f0e187",
+			"grass": "#f0e187",
+			"grass_edge_1": "#f1f1a4",
+			"grass_edge_2": "#f0ea99",
+			"sand": "#f0e187",
+			"sand_edge_1": "#f1f1a4",
+			"sand_edge_2": "#f0ea99",
+			"grass_hills": "#8Bc260",
+			"grass_hills_edge_1": "#AFdC6C",
+			"grass_hills_edge_2": "#9DcF66",
+			"copper_ore": "#c87533",
+			"tin_ore": "#b0a080",
+			"iron_ore": "#90b0d0",
+			"silver_ore": "#cccccc",
+			"gold_ore": "#ffd700",
+			"coal": "#021c24",
+			"marble" : "#DEDEDE"
+		}
+	},
+	"terrain": {
+		"noise_map_settings": {
+			"octaves": 3,
+			"persistence_ratio": 0.001,
+			"bandlimit": 3,
+			"aspect_ratio": 1
+		},
+		"plains_percentage": 85,
+		"height_base": 38,
+		"plains": {
+			"step_size": 1,
+			"valley_count": 2,
+			"step_count": 2
+		},
+		"foothills": {
+			"step_size": 5,
+			"step_count": 3
+		},
+		"mountains": {
+			"step_size": 10,
+			"step_count": 12
+		}
+	},
+	"terrain_detailer": {
+		"mountains": {
+			"depth_function": {
+				"octaves": 2,
+				"persistence_ratio": 0.2,
+				"amplitude": 2.5,
+				"layer_thickness": 3,
+				"layer_count": 2,
+				"unit_length": 12
+			},
+			"height_function": {
+				"octaves": 4,
+				"persistence_ratio": 0.1,
+				"amplitude": 2.5,
+				"layer_thickness": 5,
+				"unit_length": 16
+			}
+		},
+		"foothills": {
+			"depth_function": {
+				"octaves": 3,
+				"persistence_ratio": 0.2,
+				"amplitude": 2.5,
+				"layer_thickness": 1,
+				"layer_count": 2,
+				"unit_length": 6
+			},
+			"height_function": {
+				"octaves": 4,
+				"persistence_ratio": 0.1,
+				"amplitude": 2.5,
+				"layer_thickness": 1,
+				"unit_length": 8
+			}
+		},
+		"plains": {
+			"depth_function": {
+				"layer_thickness": 1,
+				"layer_count": 1,
+				"unit_length": 8
+			},
+			"height_function": {
+				"layer_thickness": 1,
+				"unit_length": 8
+			}
+		}
+	},
+	"landscape": {
+		"placement_table": {
+			"archipelago_biome:volcano": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 16,
+					"exclusion_radius": 16
+				}
+			},
+			"archipelago_biome:trees:papaya": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 1,
+					"exclusion_radius": 7
+				}
+			},
+			"archipelago_biome:trees:dranden:small": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 2,
+					"item_density": 1,
+					"exclusion_radius": 2
+				}
+			},
+			"archipelago_biome:trees:smalea:small": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 2,
+					"item_density": 0.5,
+					"exclusion_radius": 2
+				}
+			},
+			"archipelago_biome:trees:palm:small": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 3,
+					"item_density": 0.5,
+					"exclusion_radius": 2
+				}
+			},
+			"archipelago_biome:trees:palm:large": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 1,
+					"exclusion_radius": 4
+				}
+			},
+			"archipelago_biome:trees:bend_palm:small": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 3,
+					"item_density": 0.5,
+					"exclusion_radius": 2
+				}
+			},
+			"archipelago_biome:trees:bend_palm:large": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 1,
+					"exclusion_radius": 4
+				}
+			},
+			"archipelago_biome:beach:starfish": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.2,
+					"exclusion_radius": 1
+				}
+			},
+			"archipelago_biome:beach:oyster": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 1,
+					"exclusion_radius": 2
+				}
+			},
+			"archipelago_biome:beach:broken_boat": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 3,
+					"exclusion_radius": 6
+				}
+			},
+			"stonehearth:plants:brightbell": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.13,
+					"exclusion_radius": 1
+				}
+			},
+			"stonehearth:plants:frostsnap": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.17,
+					"exclusion_radius": 1
+				}
+			},
+			"stonehearth:plants:silkweed": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.1,
+					"exclusion_radius": 1
+				}
+			},
+			"stonehearth:boulder:small": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.1,
+					"exclusion_radius": 1
+				}
+			},
+			"stonehearth:boulder:medium_1": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 1,
+					"exclusion_radius": 2
+				}
+			},
+			"stonehearth:boulder:medium_2": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 1,
+					"exclusion_radius": 2
+				}
+			},
+			"stonehearth:boulder:medium_3": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 1,
+					"exclusion_radius": 2
+				}
+			},
+			"stonehearth:boulder:large_1": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 2,
+					"exclusion_radius": 3
+				}
+			},
+			"stonehearth:boulder:large_2": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 2,
+					"exclusion_radius": 3
+				}
+			}
+		},
+		"trees": {
+			"sizes": {
+				"archipelago_biome:trees:palm": {
+					"small": 0,
+					"large": 3
+				},
+				"archipelago_biome:trees:bend_palm": {
+					"small": 0,
+					"large": 3
+				},
+				"archipelago_biome:trees:dranden": {
+					"small": 0
+				},
+				"archipelago_biome:trees:smalea": {
+					"small": 0
+				}
+			},
+			"weights": {
+				"plains": {
+					"1": {
+						"archipelago_biome:trees:palm": 1,
+						"archipelago_biome:trees:bend_palm": 1
+					}
+				},
+				"foothills": {
+					"1": {
+						"archipelago_biome:trees:dranden": 2,
+						"archipelago_biome:trees:smalea": 1,
+						"archipelago_biome:trees:palm": 10,
+						"archipelago_biome:trees:bend_palm": 8
+					},
+					"2": {
+						"archipelago_biome:trees:dranden": 2,
+						"archipelago_biome:trees:smalea": 1,
+						"archipelago_biome:trees:palm": 10,
+						"archipelago_biome:trees:bend_palm": 6
+					},
+					"3": {
+						"archipelago_biome:trees:dranden": 8,
+						"archipelago_biome:trees:smalea": 3,
+						"archipelago_biome:trees:palm": 1,
+						"archipelago_biome:trees:bend_palm": 1
+					}
+				},
+				"mountains": {
+					"1": {
+						"archipelago_biome:trees:dranden": 6,
+						"archipelago_biome:trees:smalea": 2
+					},
+					"2": {
+						"archipelago_biome:trees:dranden": 4,
+						"archipelago_biome:trees:smalea": 3
+					},
+					"3": {
+						"archipelago_biome:trees:dranden": 3,
+						"archipelago_biome:trees:smalea": 5
+					}
+				}
+			},
+			"noise_map_parameters": {
+				"mean_offset": {
+					"boundary": 0,
+					"water": 0
+				},
+				"terrain_based": {
+					"plains": {
+						"1": {
+							"density": 0.1,
+							"mean": 1,
+							"std_dev": 2
+						}
+					},
+					"foothills": {
+						"1": {
+							"density": 0.5,
+							"mean": 5,
+							"std_dev": 10
+						}
+					},
+					"mountains": {
+						"1": {
+							"density": 0.5,
+							"mean": 5,
+							"std_dev": 10
+						},
+						"4": {
+							"density": 0.1,
+							"mean": 0,
+							"std_dev": 10
+						}
+					}
+				}
+			}
+		},
+		"berries": {
+			"placement": {
+				"function": "gaussian",
+				"mean": -50,
+				"std_dev": 30,
+				"mean_offset": {
+					"tree": 0,
+					"water": 0,
+					"boundary": 0
+				},
+				"density": {
+					"plains": 0,
+					"foothills": 0.5,
+					"mountains": 0
+				}
+			}
+		},
+		"scattered": {
+			"plants": {
+				"weights": {
+					"plains": {
+						"1": {
+							"archipelago_biome:beach:starfish": 10,
+							"archipelago_biome:beach:oyster": 7.5,
+							"archipelago_biome:beach:broken_boat": 1
+						}
+					},
+					"foothills": {
+						"1": {
+							"stonehearth:plants:frostsnap": 3,
+							"stonehearth:plants:brightbell": 3,
+							"stonehearth:plants:silkweed": 3,
+							"archipelago_biome:trees:papaya": 2
+						}
+					},
+					"mountains": {
+						"1": {
+							"stonehearth:plants:brightbell": 3,
+							"stonehearth:plants:frostsnap": 3,
+							"archipelago_biome:trees:papaya": 2
+						},
+						"2": {
+							"stonehearth:plants:brightbell": 1,
+							"stonehearth:plants:frostsnap": 1
+						}
+					}
+				},
+				"noise_map_parameters": {
+					"terrain_based": {
+						"plains": {
+							"1": {
+								"probability": 0,
+								"density": 0.6
+							},
+							"2": {
+								"probability": 0.35,
+								"density": 0.8
+							}
+						},
+						"foothills": {
+							"1": {
+								"probability": 0.9,
+								"density": 0.7
+							}
+						},
+						"mountains": {
+							"1": {
+								"probability": 0.8,
+								"density": 0.7
+							},
+							"2": {
+								"probability": 0.2,
+								"density": 0.7
+							}
+						}
+					}
+				}
+			},
+			"boulders": {
+				"namespace": "stonehearth:boulder",
+				"noise_map_parameters": {
+					"terrain_based": {
+						"plains": {
+							"1": {
+								"probability": 0,
+								"density": 0.5
+							},
+							"2": {
+								"probability": 0.4,
+								"density": 0.6
+							}
+						},
+						"foothills": {
+							"1": {
+								"probability": 0.15,
+								"density": 0.8
+							}
+						},
+						"mountains": {
+							"1": {
+								"probability": 0,
+								"density": 0.8
+							}
+						}
+					}
+				},
+				"cutoffs": {
+					"small": 0.2,
+					"medium": 0.4
+				}
+			}
+		},
+		"water": {
+			"depth": {
+				"shallow": 1,
+				"deep": 2,
+				"more_deep": 5
+			},
+			"water_height_delta": 0.6,
+			"noise_map_settings": {
+				"persistence_ratio": 0.1,
+				"bandlimit": 2,
+				"octaves": 2,
+				"range": 10,
+				"aspect_ratio": 1,
+				"mean": {
+					"plains": 5,
+					"foothills": -100,
+					"mountains": -100
+				}
+			}
+		}
+	}
 }

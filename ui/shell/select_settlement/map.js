@@ -238,33 +238,33 @@ $.widget( "stonehearth.stonehearthMap", {
       for (var y = 0; y < grid.length; y++) {
          for (var x = 0; x < grid[y].length; x++) {
             self._drawCell(context, x, y, grid[y][x]);
-            grid[y][x].tem_agua = grid[y][x].terrain_code == 'water';
+            grid[y][x].has_water = grid[y][x].terrain_code == 'water';
          }
       }
 
       var cellSize = self.options.cellSize;
-      var area_size=12
+      var area_size=15
       for (var y = 0; y < grid.length - area_size; y++) {
          for (var x = 0; x < grid[y].length - area_size; x++) {
-            if(grid[y][x].tem_agua){
-               var area_completa_com_agua = true;
+            if(grid[y][x].has_water){
+               var full_water_area = true;
                for (var yArea = y; yArea < y+area_size; yArea++) {
                   for (var xArea = x; xArea < x+area_size; xArea++) {
-                     if(!grid[yArea][xArea].tem_agua){break;}
+                     if(!grid[yArea][xArea].has_water){break;}
                   }
-                  if(!grid[yArea][xArea].tem_agua){
-                     area_completa_com_agua=false;
+                  if(!grid[yArea][xArea].has_water){
+                     full_water_area=false;
                      break;
                   }
                }
-               if(area_completa_com_agua){
+               if(full_water_area){
                   for (var yArea = y; yArea < y+area_size; yArea++) {
                      for (var xArea = x; xArea < x+area_size; xArea++) {
-                        grid[yArea][xArea].tem_agua = false;
+                        grid[yArea][xArea].has_water = false;
                      }
                   }
                   context.globalAlpha = 0.5;
-                  context.drawImage(map_icons,Math.floor(Math.random() * 14)*100,0,100,100,(x+2)*cellSize,(y+2)*cellSize,100,100);
+                  context.drawImage(map_icons,Math.floor(Math.random() * 14)*100,0,100,100,(x+3)*cellSize,(y+3)*cellSize,100,100);
                   context.globalAlpha = 1;
                }
             }

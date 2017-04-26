@@ -1,48 +1,48 @@
 {
-   "mixins": "stonehearth:mixins:item_properties",
-   "type": "entity",
-   "components": {
-      "model_variants": {
-         "default": {
-            "models": [
-               "file(coconut.qb)"
-            ]
-         }
-      },
-      "mob": {
-         "model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
-      }
-   },
-   "entity_data": {
-      "stonehearth:item": {
-         "category": "food"
-      },
-      "stonehearth:food": {
-         "stonehearth:sitting_on_chair": {
-            "satisfaction": 30
-         },
-         "default": {
-            "satisfaction": 20
-         },
-         "quality": 2
-      },
-      "stonehearth:net_worth": {
-         "value_in_gold": 3,
-         "rarity": "common",
-         "shop_info": {
-            "buyable": true,
-            "sellable": true,
-            "shopkeeper_level": 1,
-            "shopkeeper_type": "caravan"
-         }
-      },
-      "stonehearth:catalog": {
-         "display_name": "i18n(archipelago_biome:entities.food.coconut.display_name)",
-         "description": "i18n(archipelago_biome:entities.food.coconut.description)",
-         "icon": "file(coconut.png)",
-         "is_item": true,
-         "category": "food",
-         "material_tags": "food raw_food fruit coconut vegetarian stockpile_raw_food"
-      }
-   }
+	"mixins": "stonehearth:mixins:food_decay",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(coconut.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food"
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 30
+			},
+			"default": {
+				"satisfaction": 20
+			},
+			"quality": 2
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 3,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.coconut.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.coconut.description)",
+			"icon": "file(coconut.png)",
+			"is_item": true,
+			"category": "food",
+			"material_tags": "food raw_food fruit coconut vegetarian stockpile_raw_food"
+		}
+	}
 }

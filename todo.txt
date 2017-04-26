@@ -61,6 +61,10 @@ testar novos metodos com javascript pra evitar override do map.js
 townnames
 
 
+goblins correm para a sua cidade para pedir ajuda
+se aliam pra derrotar os piratas undead
+
+
 Algumas mulheres (+-3) fogem da ilha delas por causa dos ataques dos cocolings
 explicam que os homens ficaram lá pra lutar
 pedem pra mandar healing potions e curativos (depois dão alguma coisa em troca)

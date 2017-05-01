@@ -1,3 +1,15 @@
+
+
+
+adicionar guirlanda
+atualizar colheita de cocos e corte de coqueiros.
+
+
+
+
+
+
+
 tiki warrior
 piratas
 king crab
@@ -59,6 +71,14 @@ testar novos metodos com javascript pra evitar override do map.js
 
 
 townnames
+
+
+Miranda corre para sua cidade pra se esconder
+Fez alguma coisa e agora estão atras dela
+Os perseguidores vão até sua cidade procurando ela
+Se dizer que não está, irão ataca-lo por mentir
+Se dizer que está, irão ataca-lo por ser aliado dela
+Estavam atras de um artefato relacionado com os cocolings
 
 
 goblins correm para a sua cidade para pedir ajuda

@@ -10,11 +10,11 @@
 	"ingredients": [
 		{
 			"material": "wood resource",
-			"count": 18
+			"count": 11
 		},
 		{
 			"material": "cloth resource",
-			"count": 5
+			"count": 4
 		}
 	],
 	"produces": [

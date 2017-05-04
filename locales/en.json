@@ -216,9 +216,12 @@
 						"little_pier":"Little Pier",
 						"open_house":"Open House",
 						"small_beach_house":"Small Beach House",
+						"carpenter_house":"Carpenter's House",
 						"small_boat":"Small Boat",
-						"pirate_ship":"Pirate Ship",
-						"carpenter_house":"Carpenter's House"
+						"double_outrigger_boat":"Double Outrigger Boat",
+						"explorer_ship":"Explorer Ship",
+						"long_ship":"Long Ship",
+						"trader_ship":"Trader Ship"
 					}
 				}
 			}
@@ -312,7 +315,7 @@
 					"display_name": "Archipelago",
 					"categories":{
 						"camp":"Beach Camp",
-						"town":"Pirates Hideout",
+						"boats":"Boats",
 						"tier3":"Royal Port"
 					}
 				}

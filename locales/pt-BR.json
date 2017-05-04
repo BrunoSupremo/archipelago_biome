@@ -216,9 +216,12 @@
 						"little_pier":"Pequeno porto",
 						"open_house":"Casa Aberta",
 						"small_beach_house":"Casa Pequena de Praia",
+						"carpenter_house":"Casa do Carpinteiro",
 						"small_boat":"Barquinho",
-						"pirate_ship":"Navio Pirata",
-						"carpenter_house":"Casa do Carpinteiro"
+						"double_outrigger_boat":"Barco com estabilizadores",
+						"explorer_ship":"Navio Explorador",
+						"long_ship":"Navio Comprido",
+						"trader_ship":"Navio Comerciante"
 					}
 				}
 			}
@@ -312,7 +315,7 @@
 					"display_name": "Arquipélago",
 					"categories":{
 						"camp":"Acampamento de Praia",
-						"town":"Esconderijo Pirata",
+						"boats":"Barcos",
 						"tier3":"Porto Real"
 					}
 				}

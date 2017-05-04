@@ -1,0 +1,1726 @@
+{
+	"header" : {
+	    "display_name" : "i18n(archipelago_biome:ui.game.build_mode.building_templates.template_names.double_outrigger_boat)",
+		"preview_image" : "file(double_outrigger_boat.png)",
+		"name" : "double_outrigger_boat",
+		"cost" : {
+			"items" : {
+				"stonehearth:decoration:wooden_wall_lantern" : 1
+			},
+			"resources" : {
+				"wood resource" : 154
+			}
+		}
+	},
+	"root" : {
+		"stonehearth:building" : {
+			"structures" : {
+				"stonehearth:roof" : {},
+				"stonehearth:column" : {},
+				"stonehearth:stairs" : {},
+				"stonehearth:wall" : {},
+				"stonehearth:floor" : [
+					23273,
+					20948,
+					27683,
+					27536,
+					27389,
+					27242,
+					22979,
+					27095,
+					26948,
+					26654,
+					26360,
+					26066,
+					25772,
+					25478,
+					25184,
+					24890,
+					24596,
+					24302,
+					24008,
+					23714,
+					23420,
+					23126,
+					22832,
+					22538,
+					26801,
+					26507,
+					26213,
+					22685,
+					25919,
+					25625,
+					25331,
+					25037,
+					24743,
+					24449,
+					24155,
+					23861,
+					23567
+				],
+				"stonehearth:fixture_fabricator" : [
+					22495
+				]
+			}
+		},
+		"id" : 20909,
+		"uri" : "stonehearth:build:prototypes:building",
+		"children" : {
+			"24743" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 7,
+						"z" : -2
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"22979" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : -1,
+						"z" : 4
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 5
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"23420" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 1,
+						"z" : -2
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"25478" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 1,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 8
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"23126" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : -1,
+						"z" : 4
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"26801" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 4,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 8
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 5604501
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"25184" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 0,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 2,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 6657189
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"25919" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 2,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 8
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 5604501
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"23273" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : -1,
+						"z" : 6
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 6657189
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"23714" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 3,
+						"z" : -2
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3097678
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"25625" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 5,
+						"x" : 1,
+						"z" : 2
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 2,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 1,
+							"z" : 0
+						},
+						"tag" : 9150373
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 4,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 3,
+							"z" : 0
+						},
+						"tag" : 9150373
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 11058112
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 3,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 2,
+							"z" : 0
+						},
+						"tag" : 11058112
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 5,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 4,
+							"z" : 0
+						},
+						"tag" : 11058112
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"27536" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 7,
+						"z" : 4
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 5
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"24596" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 2,
+						"z" : -2
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 2,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 1,
+							"z" : 0
+						},
+						"tag" : 4880006
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 3,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 2,
+							"z" : 0
+						},
+						"tag" : 5604501
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"27683" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 7,
+						"z" : 4
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"27095" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 5,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 8
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"22538" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : -1,
+						"z" : -2
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"22832" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : -1,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 6657189
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"22685" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : -1,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 3
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"23567" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 2,
+						"z" : -4
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"26360" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 3,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 9
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 8
+						},
+						"tag" : 3097678
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 8
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 4880006
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"26213" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 2,
+						"z" : 8
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 2,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 1,
+							"z" : 0
+						},
+						"tag" : 3097678
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 3,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 2,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"24890" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 4,
+						"z" : -1
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 4880006
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"25331" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 0,
+						"z" : 6
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 2,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 6657189
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"26507" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 3,
+						"z" : 3
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 7,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"24302" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 4,
+						"z" : -4
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"24155" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 3,
+						"z" : -3
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3097678
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"27242" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 5,
+						"z" : 6
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 3,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 6657189
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"23861" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 2,
+						"z" : -1
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 4880006
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"24449" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 7,
+						"z" : -2
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"25772" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 2,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 3,
+							"z" : 6
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 4880006
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"27389" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 7,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 3
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"24008" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 3,
+						"z" : -5
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3097678
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"26066" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 9,
+						"x" : 2,
+						"z" : 3
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 9150373
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 3,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 2,
+							"z" : 0
+						},
+						"tag" : 9150373
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 2,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 1,
+							"z" : 0
+						},
+						"tag" : 11058112
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"26948" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 1,
+						"x" : 5,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 3,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 6657189
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"20948" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 0,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 0,
+							"z" : 0
+						},
+						"min" : {
+							"y" : 0,
+							"x" : -1,
+							"z" : -2
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"children" : {
+					"22495" : {
+						"mob" : {
+							"orientation" : {
+								"y" : 1,
+								"x" : 0,
+								"w" : 0,
+								"z" : 0
+							},
+							"position" : {
+								"y" : 5,
+								"x" : 3,
+								"z" : 4
+							}
+						},
+						"stonehearth:fixture_fabricator" : {
+							"normal" : {
+								"y" : 0,
+								"x" : 0,
+								"z" : 1
+							},
+							"fixture_uri" : "stonehearth:decoration:wooden_wall_lantern",
+							"rotation" : 180
+						},
+						"uri" : "\/stonehearth\/entities\/decoration\/wooden_wall_lantern\/wooden_wall_lantern_ghost.json",
+						"stonehearth:construction_progress" : {
+							"building_entity" : 20909,
+							"fabricator_component_name" : "stonehearth:fixture_fabricator"
+						}
+					}
+				},
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"26654" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 3,
+						"z" : 6
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3097678
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			},
+			"25037" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 2,
+						"x" : 5,
+						"z" : -2
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 1,
+							"z" : 2
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 3823461
+					}
+				],
+				"uri" : "stonehearth:build:prototypes:floor",
+				"stonehearth:construction_progress" : {
+					"building_entity" : 20909,
+					"fabricator_component_name" : "stonehearth:fabricator"
+				}
+			}
+		},
+		"stonehearth:construction_progress" : {}
+	}
+}

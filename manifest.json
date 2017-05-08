@@ -21,8 +21,6 @@
 
 		"crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",
 
-		"commands:chop_tree": "file(data/commands/chop_tree)",
-
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"decoration:fruit_container": "file(entities/decoration/fruit_container)",
@@ -35,6 +33,8 @@
 		"effects:tiki_torch_effect": "file(data/effects/tiki_torch_effect)",
 		"effects:cocobomb_effect": "file(data/effects/cocobomb_effect)",
 		"effects:cocobomb_explosion_effect": "file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
+		"effects:harvest_coconut_overlay": "file(data/effects/harvest_coconut_overlay)",
+		"effects:harvest_papaya_overlay": "file(data/effects/harvest_papaya_overlay)",
 
 		"food:coconut": "file(entities/food/coconut)",
 		"food:papaya_basket": "file(entities/food/papaya/papaya_basket)",
@@ -106,8 +106,7 @@
 	},
 	"components": {
 		"explosive":"file(components/explosive/explosive.lua)",
-		"fake_container":"file(components/fake_container/fake_container.lua)",
-		"erupt":"file(components/erupt/erupt_component.lua)"
+		"fake_container":"file(components/fake_container/fake_container.lua)"
 	},
 	"ui":{
 		"less":[

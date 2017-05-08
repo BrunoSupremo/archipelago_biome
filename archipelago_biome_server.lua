@@ -12,6 +12,10 @@ function archipelago_biome:_on_required_loaded()
    local custom_height_map_renderer = require('services.server.world_generation.custom_height_map_renderer')
    local height_map_renderer = radiant.mods.require('stonehearth.services.server.world_generation.height_map_renderer')
    radiant.mixin(height_map_renderer, custom_height_map_renderer)
+
+   local custom_resource_call_handler = require('call_handlers.custom_resource_call_handler')
+   local resource_call_handler = radiant.mods.require('stonehearth.call_handlers.resource_call_handler')
+   radiant.mixin(resource_call_handler, custom_resource_call_handler)
 end
 
 radiant.events.listen_once(radiant, 'radiant:required_loaded', archipelago_biome, archipelago_biome._on_required_loaded)

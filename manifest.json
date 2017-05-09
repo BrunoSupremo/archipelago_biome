@@ -24,6 +24,7 @@
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"decoration:fruit_container": "file(entities/decoration/fruit_container)",
+		"decoration:lei": "file(entities/decoration/lei)",
 		"decoration:pirate_flag": "file(entities/decoration/pirate_flag)",
 		"decoration:raft": "file(entities/decoration/raft)",
 		"decoration:sand_castle": "file(entities/decoration/sand_castle)",
@@ -92,6 +93,7 @@
 		"stonehearth/jobs/carpenter/recipes/recipes.json": "file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/cook/recipes/recipes.json": "file(jobs/cook/recipes)",
 		"stonehearth/jobs/engineer/recipes/recipes.json": "file(jobs/engineer/recipes)",
+		"stonehearth/jobs/herbalist/recipes/recipes.json": "file(jobs/herbalist/recipes)",
 		"stonehearth/jobs/potter/recipes/recipes.json": "file(jobs/potter/recipes)",
 		"stonehearth/jobs/weaver/recipes/recipes.json": "file(jobs/weaver/recipes)",
 

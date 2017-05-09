@@ -60,6 +60,14 @@
 					"flavor":"Take care to not bruise the fruits!"
 				}
 			},
+			"lei":{
+				"display_name":"Lei",
+				"description":"Flowers hanging on the wall",
+				"recipe":{
+					"description":"To hang on a wall.",
+					"flavor":"Flowers can add extra beauty to walls!"
+				}
+			},
 			"pirate_flag":{
 				"display_name":"Pirate Flag",
 				"description":"Not a good way to make friends",

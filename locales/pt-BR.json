@@ -60,6 +60,14 @@
 					"flavor":"Cuidado pra não amassar as frutas!"
 				}
 			},
+			"lei":{
+				"display_name":"Lei",
+				"description":"Flores penduradas na parede",
+				"recipe":{
+					"description":"Para pendurar na parede.",
+					"flavor":"Flores podem embelezar as paredes!"
+				}
+			},
 			"pirate_flag":{
 				"display_name":"Bandeira Pirata",
 				"description":"Não é uma boa forma de fazer amigos",

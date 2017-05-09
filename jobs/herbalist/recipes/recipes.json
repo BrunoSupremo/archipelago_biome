@@ -1,0 +1,11 @@
+{
+	"craftable_recipes" : {
+		"decorations" : {
+			"recipes" : {
+				"lei" : {
+					"recipe" : "file(lei_recipe.json)"
+				}
+			}
+		}
+	}
+}

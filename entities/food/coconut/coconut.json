@@ -17,6 +17,16 @@
 		"stonehearth:item": {
 			"category": "food"
 		},
+		"stonehearth:drink": {
+			"_for":"cookmod",
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 100
+			},
+			"default": {
+				"satisfaction": 90
+			},
+			"quality": 4
+		},
 		"stonehearth:food": {
 			"stonehearth:sitting_on_chair": {
 				"satisfaction": 30
@@ -42,7 +52,7 @@
 			"icon": "file(coconut.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": "food raw_food fruit coconut vegetarian stockpile_raw_food"
+			"material_tags": "food raw_food fruit coconut vegetarian stockpile_raw_food drink"
 		}
 	}
 }

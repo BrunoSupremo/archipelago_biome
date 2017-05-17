@@ -108,7 +108,8 @@
 	},
 	"components": {
 		"explosive":"file(components/explosive/explosive.lua)",
-		"fake_container":"file(components/fake_container/fake_container.lua)"
+		"fake_container":"file(components/fake_container/fake_container.lua)",
+		"float":"file(components/float/float.lua)"
 	},
 	"ui":{
 		"less":[

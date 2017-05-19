@@ -52,6 +52,14 @@
 			}
 		},
 		"decoration":{
+			"anchor":{
+				"display_name":"Âncora",
+				"description":"Pesado, pra segurar o barco",
+				"recipe":{
+					"description":"Pode ser colocado no chão ou pendurado em paredes",
+					"flavor":"Se um barco fosse uma cabeça, suas âncoras seriam brincos?"
+				}
+			},
 			"fruit_container":{
 				"display_name":"Caixote de Frutas",
 				"description":"Pronto pra ser exportado",

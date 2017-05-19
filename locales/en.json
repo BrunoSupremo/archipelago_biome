@@ -52,6 +52,14 @@
 			}
 		},
 		"decoration":{
+			"anchor":{
+				"display_name":"Anchor",
+				"description":"Heavy, to hold your ship",
+				"recipe":{
+					"description":"Can be placed in the ground or hang in walls",
+					"flavor":"If a boat were a head, would its anchors be earrings?"
+				}
+			},
 			"fruit_container":{
 				"display_name":"Fruit Container",
 				"description":"Ready to be exported",

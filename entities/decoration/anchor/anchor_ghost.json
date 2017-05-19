@@ -1,0 +1,29 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.0666
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(anchor.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": -0.3666 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.decoration.anchor.display_name)",
+			"description": "i18n(archipelago_biome:entities.decoration.anchor.description)",
+			"icon": "file(anchor.png)",
+			"category": "decoration",
+			"material_tags": "metal crafted decoration stockpile_decoration"
+		}
+	}
+}

@@ -23,6 +23,7 @@
 
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
+		"decoration:anchor": "file(entities/decoration/anchor)",
 		"decoration:fruit_container": "file(entities/decoration/fruit_container)",
 		"decoration:lei": "file(entities/decoration/lei)",
 		"decoration:pirate_flag": "file(entities/decoration/pirate_flag)",
@@ -90,6 +91,7 @@
 
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
+		"stonehearth/jobs/blacksmith/recipes/recipes.json": "file(jobs/blacksmith/recipes)",
 		"stonehearth/jobs/carpenter/recipes/recipes.json": "file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/cook/recipes/recipes.json": "file(jobs/cook/recipes)",
 		"stonehearth/jobs/engineer/recipes/recipes.json": "file(jobs/engineer/recipes)",

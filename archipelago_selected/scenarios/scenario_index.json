@@ -1,13 +1,19 @@
 {
-   "static" : {
-      "scenarios" : [
-         "file(static/crab_nest)",
-         "file(static/sea_turtle_nest)"
-      ],
-      "categories" : {
-         "wildlife" : {
-            "density" : 10
-         }
-      }
-   }
+	"static" : {
+		"scenarios" : [
+			"file(static/crab_nest)",
+			"file(static/sea_turtle_nest)"
+		],
+		"categories" : {
+			"beachlife" : {
+				"density" : 11,
+				"priority" : 0,
+				"location_type" : "surface",
+				"activation_type" : "revealed"
+			},
+			"wildlife" : {
+				"density" : 5
+			}
+		}
+	}
 }

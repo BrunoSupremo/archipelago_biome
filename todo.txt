@@ -23,9 +23,6 @@ ossos de peixes/baleias
 spawn crates from time to time
 
 
-Testar novos habitats (sand/water)
-
-
 hearthlings nadam pra se refrescar e brincar
 novos hearthlings chegam de barco
 
@@ -88,3 +85,8 @@ Descobre o monumento, o jogador chama alguém pra olhar. O monumento ativa e sum
 Derrote todos e pegue o monumento para você.
 (fazer alguma coisa pra consertar ele)
 Ao usa-lo sumona um cocoling e desativa novamente, tendo que recarregar (fica cinza, sem efeitos)
+
+
+Pirata tem raiva da miranda e a culpa pela morte de sua amada, irmã dela.
+A Morte vem buscar miranda para saldar seu débito, que ela fugiu da morte.
+na verdade quem fugiu foi a irmã, que ainda está viva.

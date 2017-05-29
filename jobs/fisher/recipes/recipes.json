@@ -1,0 +1,13 @@
+{
+	"craftable_recipes": {
+		"fishing": {
+			"ordinal": 1,
+			"name": "i18n(archipelago_biome:jobs.fisher.recipes.fisher_tools_name)",
+			"recipes": {
+				"float_bobber": {
+					"recipe": "file(float_bobber_recipe.json)"
+				}
+			}
+		}
+	}
+}

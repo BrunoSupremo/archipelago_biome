@@ -43,6 +43,12 @@
 		"food:papaya_serving": "file(entities/food/papaya/papaya_serving)",
 
 		"gizmos:cocobomb": "file(entities/gizmos/cocobomb)",
+		"gizmos:float_bobber": "file(entities/gizmos/float_bobber)",
+
+		"jobs:fisher": "file(jobs/fisher/fisher_description.json)",
+		"fisher:bucket": "file(jobs/fisher/fisher_bucket/fisher_bucket.json)",
+		"fisher:talisman": "file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
+		"traits:passion_fisher": "file(data/traits/passion_fisher/passion_fisher_trait.json)",
 
 		"mixins:palm_tree": "file(mixins/palm_tree)",
 		"mixins:spice": "file(mixins/spice)",
@@ -83,6 +89,7 @@
 
 		"stonehearth:build:brushes": "file(data/build/building_brushes.json)",
 
+		"stonehearth:data:player_task_groups": "file(services/server/population/data/player_task_groups.json)",
 		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
 
 		"stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
@@ -108,6 +115,9 @@
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
 		"stonehearth/ui/shell/select_settlement/select_settlement.js": "file(ui/shell/select_settlement/select_settlement.js)"
 	},
+	"controllers": {
+		"class:fisher": "file(jobs/fisher/fisher.lua)"
+	},
 	"components": {
 		"explosive":"file(components/explosive/explosive.lua)",
 		"fake_container":"file(components/fake_container/fake_container.lua)",
@@ -115,6 +125,7 @@
 	},
 	"ui":{
 		"less":[
+			"file(jobs/fisher/skin/workshop.less)",
 			"file(ui/shell/select_settlement/select_settlement.less)"
 		]
 	}

@@ -26,7 +26,10 @@ function ArchipelagoFloat:on_added_to_world()
 				-- log:error('object is in the water')
 
 				local water_level = water_component:get_water_level()
-				location.y = math.floor(water_level)
+				local json = radiant.entities.get_json(self)
+				local add_height = json.add_height or 0
+				local new_y = math.floor(water_level) + add_height
+				location.y = math.max(location.y, new_y)
 				-- log:error('float location %s', location.y)
 				radiant.terrain.place_entity_at_exact_location(self._entity, location, {force_iconic = false})
 				self._entity:add_component('mob'):set_ignore_gravity(true)

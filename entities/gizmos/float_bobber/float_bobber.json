@@ -1,0 +1,26 @@
+{
+	"type": "entity",
+	"mixins": "file(float_bobber_ghost.json)",
+	"components": {
+		"archipelago_biome:float":{
+			"add_height": 0.15
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(float_bobber_iconic.json)",
+			"ghost_form": "file(float_bobber_ghost.json)",
+			"placeable_on_ground": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 2,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		}
+	}
+}

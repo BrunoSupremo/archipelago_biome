@@ -1,0 +1,18 @@
+{
+	"crafter_menu": {
+		"items": {
+			"fisher": {
+				"name": "i18n(archipelago_biome:ui.game.menu.crafter_menu.items.fisher.display_name)",
+				"description": "i18n(archipelago_biome:ui.game.menu.crafter_menu.items.fisher.description)",
+				"class": "button",
+				"required_job": "archipelago_biome:jobs:fisher",
+				"required_job_text": "i18n(archipelago_biome:ui.game.menu.crafter_menu.items.fisher.required_job_text)",
+				"icon": "/archipelago_biome/jobs/fisher/images/fisher_menu_icon.png",
+				"sticky": true,
+				"menu_action": "show_crafter_ui",
+				"hotkey_action": "craft:fisher",
+				"hotkey": ""
+			}
+		}
+	}
+}

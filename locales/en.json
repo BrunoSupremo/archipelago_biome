@@ -139,6 +139,10 @@
 					"description":"After placed, it will explode when enemies hit it. Damage and set fire to enemies near the explosion.",
 					"flavor":"Everything's better with explosions"
 				}
+			},
+			"float_bobber":{
+				"display_name":"Float Bobber",
+				"description":"Will attract fish."
 			}
 		},
 		"monsters":{
@@ -218,6 +222,35 @@
 			"description":"Hot! Good for crazy rituals."
 		}
 	},
+	"jobs":{
+		"fisher":{
+			"fisher_description":{
+				"display_name":"Fisher",
+				"description":"Will capture crabs, harvest pearls, and do other water related works",
+				"requirements":"Crafted by you main crafter"
+			},
+			"fisher_bucket":{
+				"display_name":"Fisher Bucket",
+				"description":"Multipurpose bucket",
+				"fisher_bucket_talisman":{
+					"display_name":"Fisher Bucket",
+					"description":"Required to promote a hearthling into a Fisher"
+				}
+			},
+			"fisher_outfit":{
+				"display_name":"Fisher Outfit",
+				"description":"Usual fisher outfit"
+			},
+			"recipes":{
+				"fisher_tools_name":"Fisher Tools",
+				"float_bobber_recipe":{
+					"recipe_name":"Float Bobber",
+					"description":"Place in the water to signal a fishing spot in that area. Fishes will go there and be fished by the fisher.",
+					"flavor":"It takes sometime for fish to spawn"
+				}
+			}
+		}
+	},
 	"ui": {
 		"data":{
 			"constants":{
@@ -238,6 +271,17 @@
 						"explorer_ship":"Explorer Ship",
 						"long_ship":"Long Ship",
 						"trader_ship":"Trader Ship"
+					}
+				}
+			},
+			"menu":{
+				"crafter_menu":{
+					"items":{
+						"fisher":{
+							"display_name":"Fisher Craft Menu",
+							"description":"Create fisher related items",
+							"required_job_text":"Requires a fisher"
+						}
 					}
 				}
 			}

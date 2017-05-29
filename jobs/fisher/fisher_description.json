@@ -1,0 +1,111 @@
+{
+	"type": "job",
+	"enabled": true,
+	"job_id": "fisher",
+	"display_order": 6.5,
+	"alias": "archipelago_biome:jobs:fisher",
+	"display_name": "i18n(archipelago_biome:jobs.fisher.fisher_description.display_name)",
+	"controller": "archipelago_biome:class:fisher",
+	"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.description)",
+	"requirements": "i18n(archipelago_biome:jobs.fisher.fisher_description.requirements)",
+	"talisman_uri": "archipelago_biome:fisher:talisman",
+	"default_stance": "passive",
+	"promotion_activity_name": "promote_fisher",
+	"parent_job": "stonehearth:jobs:worker",
+	"abilities": "file(fisher_abilities)",
+	"equipment": {
+		"torso": "file(fisher_outfit)",
+		"mainhand": "archipelago_biome:fisher:bucket"
+	},
+	"roles": "fisher_job crafter",
+	"icon": "file(/ui/shell/select_settlement/images/wildlife.png)",
+	"task_groups": [
+		"archipelago_biome:task_group:fisher",
+		"stonehearth:task_group:common_tasks",
+		"stonehearth:task_group:crafting",
+		"stonehearth:task_group:restock",
+		"stonehearth:task_group:placement",
+		"stonehearth:task_group:rescue",
+		"stonehearth:task_group:town_alert"
+	],
+	"crafter": {
+		"work_effect": "work",
+		"recipe_list": "/archipelago_biome/jobs/fisher/recipes/recipes.json"
+	},
+	"workshop": {
+		"skin_class": "fisher",
+		"open_sound": "stonehearth:sounds:ui:carpenter_menu:menu_open",
+		"close_sound": "stonehearth:sounds:ui:carpenter_menu:menu_closed"
+	},
+	"xp_rewards": {
+		"craft_level_0": 15,
+		"craft_level_1": 16,
+		"craft_level_2": 17,
+		"craft_level_3": 18,
+		"craft_level_4": 19,
+		"craft_level_5": 20,
+		"craft_level_6": 21
+	},
+	"max_level": 1,
+	"level_data": {
+		"1": {
+			"perks": [
+				{
+					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_1_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_1",
+					"icon": "file(../common/images/standard_catalog.png)",
+					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_1_data.perk_000_description)",
+					"level": 1
+				}
+			]
+		},
+		"2": {
+			"perks": [
+				{
+					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_2_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_2",
+					"icon": "file(../common/images/collaborative_insight.png)",
+					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_2_data.perk_000_description)",
+					"level": 2
+				}
+			]
+		},
+		"3": {
+			"perks": [
+				{
+					"type": "set_fine_percentage",
+					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_3_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_3",
+					"icon": "file(../common/images/artistic_inspiration.png)",
+					"percent_chance": 10,
+					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_3_data.perk_000_description)",
+					"level": 3,
+					"demote_fn": "unset_fine_percentage"
+				}
+			]
+		},
+		"4": {
+			"perks": [
+				{
+					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_4_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_4",
+					"icon": "file(../common/images/extended_catalog.png)",
+					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_4_data.perk_000_description)",
+					"level": 4
+				}
+			]
+		},
+		"6": {
+			"title": "i18n(stonehearth:jobs.fisher.fisher_description.level_6_data.title)",
+			"perks": [
+				{
+					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_6_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_6",
+					"icon": "file(../common/images/master.png)",
+					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_6_data.perk_000_description)",
+					"level": 6
+				}
+			]
+		}
+	}
+}

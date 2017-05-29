@@ -12,6 +12,6 @@
 	},
 
 	"wait_info" :  {
-		"duration" : "30m+30m"
+		"duration" : "30m"
 	}
 }

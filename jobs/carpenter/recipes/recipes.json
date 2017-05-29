@@ -1,5 +1,12 @@
 {
 	"craftable_recipes" : {
+		"tools_weapons": {
+			"recipes": {
+				"fisher_bucket": {
+					"recipe": "file(fisher_bucket_recipe.json)"
+				}
+			}
+		},
 		"building_parts" : {
 			"recipes" : {
 				"ship_wheel" : {

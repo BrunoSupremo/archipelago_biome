@@ -68,6 +68,14 @@
 					"flavor":"Cuidado pra não amassar as frutas!"
 				}
 			},
+			"hammock":{
+				"display_name":"Rede",
+				"description":"Tire uma soneca após comer",
+				"recipe":{
+					"description":"Usado para dormir",
+					"flavor":"Caranguejos podem te beliscar, por baixo..."
+				}
+			},
 			"lei":{
 				"display_name":"Guirlanda de flores",
 				"description":"Flores penduradas na parede",

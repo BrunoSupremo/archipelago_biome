@@ -68,6 +68,14 @@
 					"flavor":"Take care to not bruise the fruits!"
 				}
 			},
+			"hammock":{
+				"display_name":"Hammock",
+				"description":"Take a nap after lunch",
+				"recipe":{
+					"description":"Used for sleeping",
+					"flavor":"Crabs can pinch you, from below..."
+				}
+			},
 			"lei":{
 				"display_name":"Flower Garland",
 				"description":"Flowers hanging on the wall",

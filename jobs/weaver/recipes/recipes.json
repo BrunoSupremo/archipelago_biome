@@ -4,7 +4,10 @@
 			"recipes" : {
 				"pirate_flag" : {
 					"recipe" : "file(pirate_flag_recipe.json)"
-				}            
+				},
+				"hammock" : {
+					"recipe" : "file(hammock_recipe.json)"
+				}
 			}
 		}
 	}

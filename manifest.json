@@ -25,6 +25,7 @@
 
 		"decoration:anchor": "file(entities/decoration/anchor)",
 		"decoration:fruit_container": "file(entities/decoration/fruit_container)",
+		"decoration:hammock": "file(entities/decoration/hammock)",
 		"decoration:lei": "file(entities/decoration/lei)",
 		"decoration:pirate_flag": "file(entities/decoration/pirate_flag)",
 		"decoration:raft": "file(entities/decoration/raft)",

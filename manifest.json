@@ -16,8 +16,8 @@
 		"captain_miranda": "file(entities/humans/captain_miranda)",
 
 		"critters:crab": "file(entities/critters/crab)",
+		"critters:fish": "file(entities/critters/fish)",
 		"critters:sea_turtle": "file(entities/critters/sea_turtle)",
-		"critters:seagull": "file(entities/critters/seagull)",
 
 		"crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",
 

@@ -3,7 +3,14 @@
 	"mixins": "file(float_bobber_ghost.json)",
 	"components": {
 		"archipelago_biome:float":{
-			"add_height": 0.15
+			"add_height": 0.15,
+			"add_animation":{
+				"at_ground":"idle",
+				"at_water":"buoy"
+			}
+		},
+		"render_info": {
+			"animation_table": "file(/data/rigs/entities/gizmos/float_bobber)"
 		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(float_bobber_iconic.json)",

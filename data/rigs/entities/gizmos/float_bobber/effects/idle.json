@@ -4,9 +4,8 @@
 		"animation": {
 			"type": "animation_effect",
 			"start_time": 0,
-			"speed" : 1,
-			"animation": "buoy.json",
-			"loop": true
+			"animation": "idle.json",
+			"loop": false
 		}
 	}
 }

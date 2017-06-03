@@ -1,0 +1,18 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"activity_overlay_effect": {
+			"type" : "activity_overlay_effect",
+			"material" : {
+				"name": "materials/overlay.material.json",
+				"samplers" : [
+					{
+						"name" : "albedoMap",
+						"map": "file(harvest_fish_overlay.png)"
+					}
+				]
+			},
+			"y_offset" : -10
+		}
+	}
+}

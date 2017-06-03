@@ -9,6 +9,7 @@ bananas
 
 
 fisherman
+sushi, pra poder comer o peixe sem ter o cook (então vai precisar de workbench)
 workbench, mesa com facão em cima, rede, vara, balde
 craft float bobber, marca o local de pesca, só funciona na agua e flutua na superficie
 craft armadilhas para carangueijos, só funciona na agua/areia, o fisher vai até ela e quebra pra pegar o bixo, e deixa um ghost de outra no local pra repor

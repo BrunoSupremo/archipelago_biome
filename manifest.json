@@ -32,13 +32,16 @@
 		"decoration:ship_wheel": "file(entities/decoration/ship_wheel)",
 		"decoration:tiki_torch": "file(entities/decoration/tiki_torch)",
 
-		"effects:tiki_torch_effect": "file(data/effects/tiki_torch_effect)",
 		"effects:cocobomb_effect": "file(data/effects/cocobomb_effect)",
 		"effects:cocobomb_explosion_effect": "file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
 		"effects:harvest_coconut_overlay": "file(data/effects/harvest_coconut_overlay)",
+		"effects:harvest_fish_overlay": "file(data/effects/harvest_fish_overlay)",
 		"effects:harvest_papaya_overlay": "file(data/effects/harvest_papaya_overlay)",
+		"effects:no_water_overlay": "file(data/effects/no_water_overlay)",
+		"effects:tiki_torch_effect": "file(data/effects/tiki_torch_effect)",
 
 		"food:coconut": "file(entities/food/coconut)",
+		"food:fish": "file(entities/food/fish)",
 		"food:papaya_basket": "file(entities/food/papaya/papaya_basket)",
 		"food:papaya_serving": "file(entities/food/papaya/papaya_serving)",
 
@@ -121,6 +124,7 @@
 	"components": {
 		"explosive":"file(components/explosive/explosive.lua)",
 		"fake_container":"file(components/fake_container/fake_container.lua)",
+		"fish_spawner":"file(components/fish_spawner/fish_spawner.lua)",
 		"float":"file(components/float/float.lua)"
 	},
 	"ui":{

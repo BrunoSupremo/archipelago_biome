@@ -1,0 +1,36 @@
+{
+   "mixins": "stonehearth:mixins:food_decay",
+   "type": "entity",
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(fish.qb)"
+            ]
+         }
+      },
+      "mob": {
+         "model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+      }
+   },
+   "entity_data": {
+      "stonehearth:net_worth": {
+         "value_in_gold": 15,
+         "rarity": "common",
+         "shop_info": {
+            "buyable": true,
+            "sellable": true,
+            "shopkeeper_level": 1,
+            "shopkeeper_type": "caravan"
+         }
+      },
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.food.fish.display_name)",
+         "description": "i18n(archipelago_biome:entities.food.fish.description)",
+         "icon": "file(fish.png)",
+         "is_item": true,
+         "category": "cooking_ingredient",
+         "material_tags": "stockpile_cooking_ingredient cooking_ingredient meat raw fish"
+      }
+   }
+}

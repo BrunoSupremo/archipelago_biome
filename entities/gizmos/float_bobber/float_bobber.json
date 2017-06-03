@@ -2,8 +2,9 @@
 	"type": "entity",
 	"mixins": "file(float_bobber_ghost.json)",
 	"components": {
+		"archipelago_biome:fish_spawner": {},
 		"archipelago_biome:float":{
-			"add_height": 0.15,
+			"add_height": -0.25,
 			"add_animation":{
 				"at_ground":"idle",
 				"at_water":"buoy"

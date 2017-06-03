@@ -35,16 +35,16 @@ function ArchipelagoFloat:on_added_to_world()
 				local water_level = water_component:get_water_level()
 				local json = radiant.entities.get_json(self)
 				local add_height = json.add_height or 0
-				local new_y = math.floor(water_level) + add_height
+				local new_y = water_level + add_height
 				location.y = math.max(location.y, new_y)
 				-- log:error('float location %s', location.y)
 				radiant.terrain.place_entity_at_exact_location(self._entity, location, {force_iconic = false})
 				self._entity:add_component('mob'):set_ignore_gravity(true)
 				self:_apply_water_animation()
-
 				break
 			end
 		end
+		self.float_timer:destroy()
 		self.float_timer = nil
 		-- log:error('setting listener again')
 		self._added_to_world_listener = radiant.events.listen_once(self._entity, 'stonehearth:on_added_to_world', function()

@@ -8,6 +8,27 @@
 					"recipe": "file(float_bobber_recipe.json)"
 				}
 			}
+		},
+		"food": {
+			"ordinal": 2,
+			"name": "i18n(stonehearth:jobs.cook.recipes.food_name)",
+			"recipes": {
+				"sashimi": {
+					"recipe": "file(sashimi_recipe.json)"
+				}
+			}
+		},
+		"storage": {
+			"ordinal": 3,
+			"name": "i18n(stonehearth:jobs.blacksmith.recipes.storage_name)",
+			"recipes": {
+				"fish_container": {
+					"recipe": "file(fish_container_recipe.json)"
+				},
+				"pearl_container": {
+					"recipe": "file(pearl_container_recipe.json)"
+				}
+			}
 		}
 	}
 }

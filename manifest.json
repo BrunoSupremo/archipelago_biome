@@ -24,8 +24,10 @@
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"decoration:anchor": "file(entities/decoration/anchor)",
+		"decoration:fish_container": "file(entities/decoration/fish_container)",
 		"decoration:fruit_container": "file(entities/decoration/fruit_container)",
 		"decoration:lei": "file(entities/decoration/lei)",
+		"decoration:pearl_container": "file(entities/decoration/pearl_container)",
 		"decoration:pirate_flag": "file(entities/decoration/pirate_flag)",
 		"decoration:raft": "file(entities/decoration/raft)",
 		"decoration:sand_castle": "file(entities/decoration/sand_castle)",
@@ -42,8 +44,10 @@
 
 		"food:coconut": "file(entities/food/coconut)",
 		"food:fish": "file(entities/food/fish)",
+		"food:fish:rotten": "file(entities/food/fish/fish_rotten.json)",
 		"food:papaya_basket": "file(entities/food/papaya/papaya_basket)",
 		"food:papaya_serving": "file(entities/food/papaya/papaya_serving)",
+		"food:sashimi": "file(entities/food/sashimi)",
 
 		"gizmos:cocobomb": "file(entities/gizmos/cocobomb)",
 		"gizmos:float_bobber": "file(entities/gizmos/float_bobber)",

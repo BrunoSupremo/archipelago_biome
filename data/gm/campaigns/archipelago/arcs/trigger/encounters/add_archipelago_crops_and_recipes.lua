@@ -16,6 +16,9 @@ function Archipelago_crops_recipes_adder:start(ctx, data)
 	else
 		carpenter_job:manually_unlock_recipe("tools_weapons:fisher_bucket")
 	end
+
+	local fisher_job = stonehearth.job:get_job_info(ctx.player_id, "archipelago_biome:jobs:fisher")
+	fisher_job:manually_unlock_recipe("storage:pearl_container")
 end
 
 return Archipelago_crops_recipes_adder

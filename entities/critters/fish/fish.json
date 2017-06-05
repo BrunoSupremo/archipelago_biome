@@ -3,6 +3,7 @@
 	"mixins": "stonehearth:mixins:mob",
 	"components": {
 		"render_info": {
+			"cache_model_geometry":false,
 			"animation_table": "file(/data/rigs/entities/critters/fish)",
 			"scale": 0.1,
 			"color_map": "/archipelago_biome/data/materials/color_maps/fish_color_map.json",
@@ -45,7 +46,7 @@
 			}
 		},
 		"stonehearth:resource_node": {
-			"category": "harvest",
+			"category": "fisher",
 			"harvest_overlay_effect": "archipelago_biome:effects:harvest_fish_overlay",
 			"harvester_effect": "fiddle",
 			"description": "harvest_animal",
@@ -53,40 +54,6 @@
 		}
 	},
 	"entity_data": {
-		"stonehearth:customization_variants" : {
-			"customization_options": "file(fish_customizations.json)",
-			"root": {
-				"body_and_tail_color": {
-					"weights": {
-						"body_and_tail_color": 1
-					}
-				}
-			},
-			"packages": {
-				"body_and_tail_color": {
-					"body": {
-						"weights": {
-							"blue":1,
-							"cyan":1,
-							"green":1,
-							"magenta":1,
-							"red":1,
-							"yellow":1
-						}
-					},
-					"tail": {
-						"weights": {
-							"blue":1,
-							"cyan":1,
-							"green":1,
-							"magenta":1,
-							"red":1,
-							"yellow":1
-						}
-					}
-				}
-			}
-		},
 		"stonehearth:catalog": {
 			"player_id": "animals",
 			"display_name": "i18n(archipelago_biome:entities.critters.fish.display_name)",

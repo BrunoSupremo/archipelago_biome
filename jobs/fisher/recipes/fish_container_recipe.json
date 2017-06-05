@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"work_units": 2,
+	"recipe_name": "i18n(archipelago_biome:jobs.fisher.recipes.fish_container_recipe.recipe_name)",
+	"description": "i18n(archipelago_biome:jobs.fisher.recipes.fish_container_recipe.description)",
+	"flavor": "i18n(archipelago_biome:jobs.fisher.recipes.fish_container_recipe.flavor)",
+	"portrait": "/archipelago_biome/entities/decoration/fish_container/fish_container.png",
+	"ingredients": [
+		{
+			"uri": "stonehearth:containers:large_crate",
+			"count" : 1
+		},
+		{
+			"uri": "archipelago_biome:food:fish",
+			"count": 4
+		}
+	],
+	"produces": [
+		{
+			"item": "archipelago_biome:decoration:fish_container"
+		}
+	]
+}

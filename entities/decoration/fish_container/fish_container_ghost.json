@@ -1,0 +1,26 @@
+{
+   "mixins": "stonehearth:mixins:placed_object",
+   "type": "entity",
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(fish_container.qb)"
+            ]
+         }
+      },
+      "mob": {
+         "model_origin": {"x": 0.5, "y": 0, "z": 0.5 },
+         "region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+      }
+   },
+   "entity_data": {
+      "stonehearth:catalog": {
+         "display_name": "i18n(archipelago_biome:entities.decoration.fish_container.display_name)",
+         "description": "i18n(archipelago_biome:entities.decoration.fish_container.description)",
+         "icon": "file(fish_container.png)",
+         "category": "decoration",
+         "material_tags": "wood decoration crafted stockpile_decoration"
+      }
+   }
+}

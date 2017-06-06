@@ -4,6 +4,7 @@
 		"version": 3
 	},
 	"default_locale": "en",
+	"client_init_script": "file(archipelago_biome_client)",
 	"server_init_script": "file(archipelago_biome_server)",
 	"aliases": {
 		"beach:bottle": "file(entities/beach/bottle)",
@@ -96,15 +97,17 @@
 
 		"stonehearth:build:brushes": "file(data/build/building_brushes.json)",
 
-		"stonehearth:data:player_task_groups": "file(services/server/population/data/player_task_groups.json)",
-		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
-
 		"stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
 
+		"stonehearth:data:player_task_groups": "file(services/server/population/data/player_task_groups.json)",
+
+		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
+
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
+		"stonehearth:jobs:index": "file(jobs/index.json)",
 		"stonehearth/jobs/blacksmith/recipes/recipes.json": "file(jobs/blacksmith/recipes)",
 		"stonehearth/jobs/carpenter/recipes/recipes.json": "file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/cook/recipes/recipes.json": "file(jobs/cook/recipes)",
@@ -112,6 +115,8 @@
 		"stonehearth/jobs/herbalist/recipes/recipes.json": "file(jobs/herbalist/recipes)",
 		"stonehearth/jobs/potter/recipes/recipes.json": "file(jobs/potter/recipes)",
 		"stonehearth/jobs/weaver/recipes/recipes.json": "file(jobs/weaver/recipes)",
+
+		"stonehearth:traits_index":"file(data/traits/traits_index.json)",
 
 		"stonehearth/locales/pt-BR.json" : "file(locales/pt-BR.json)",
 

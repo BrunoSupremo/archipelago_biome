@@ -24,6 +24,10 @@
 				"display_name":"Crab",
 				"description":"Feel the pinch"
 			},
+			"fish":{
+				"display_name":"Fish",
+				"description":"Underwater Poyos"
+			},
 			"sea_turtle":{
 				"display_name":"Sea Turtle",
 				"description":"Ocean reptiles with flippers"
@@ -60,12 +64,16 @@
 					"flavor":"If a boat were a head, would its anchors be earrings?"
 				}
 			},
+			"fish_container":{
+				"display_name":"Fish Container",
+				"description":"Ready to be exported"
+			},
 			"fruit_container":{
-				"display_name":"Fruit Container",
+				"display_name":"Coconut Container",
 				"description":"Ready to be exported",
 				"recipe":{
-					"description":"Easier to sell your fruits this way.",
-					"flavor":"Take care to not bruise the fruits!"
+					"description":"Easier to sell your coconuts this way.",
+					"flavor":"Ready to be exported"
 				}
 			},
 			"lei":{
@@ -75,6 +83,10 @@
 					"description":"To hang on a wall.",
 					"flavor":"Flowers can add extra beauty to walls!"
 				}
+			},
+			"pearl_container":{
+				"display_name":"Pearl Container",
+				"description":"Ready to be exported"
 			},
 			"pirate_flag":{
 				"display_name":"Pirate Flag",
@@ -122,6 +134,14 @@
 				"display_name":"Coconut",
 				"description":"Always refreshing"
 			},
+			"fish":{
+				"display_name":"Fresh Fish",
+				"description":"Not ready to be eaten"
+			},
+			"fish_rotten":{
+				"display_name":"Rotten Fish",
+				"description":"Fish spoils very fast..."
+			},
 			"papaya_basket":{
 				"display_name":"Papaya Basket",
 				"description":"Full of Papaya fruits"
@@ -129,6 +149,10 @@
 			"papaya_serving":{
 				"display_name":"Papaya fruit",
 				"description":"One half of a fruit"
+			},
+			"sashimi":{
+				"display_name":"Sashimi",
+				"description":"Fresh raw fish sliced into thin pieces"
 			}
 		},
 		"gizmos":{
@@ -227,7 +251,7 @@
 			"fisher_description":{
 				"display_name":"Fisher",
 				"description":"Will capture crabs, harvest pearls, and do other water related works",
-				"requirements":"Crafted by you main crafter"
+				"requirements":"Crafted by your main crafter"
 			},
 			"fisher_bucket":{
 				"display_name":"Fisher Bucket",
@@ -243,20 +267,35 @@
 			},
 			"recipes":{
 				"fisher_tools_name":"Fisher Tools",
+				"fisher_bucket_recipe":{
+					"recipe_name":"Fisher's Bucket",
+					"description":"Required to promote a hearthling into a Fisher.",
+					"flavor":"Multipurpose bucket"
+				},
+				"fish_container_recipe":{
+					"recipe_name":"Fish Container",
+					"description":"Easier to sell your fish this way.",
+					"flavor":"Ready to be exported"
+				},
 				"float_bobber_recipe":{
 					"recipe_name":"Float Bobber",
 					"description":"Place in the water to signal a fishing spot in that area. Fishes will go there and be fished by the fisher.",
 					"flavor":"It takes sometime for fish to spawn"
+				},
+				"pearl_container_recipe":{
+					"recipe_name":"Pearl Container",
+					"description":"Easier to sell your pearls this way.",
+					"flavor":"Ready to be exported"
+				},
+				"sashimi_recipe":{
+					"recipe_name":"Sashimi",
+					"description":"Fresh raw fish sliced into thin pieces",
+					"flavor":"Not very hard to prepare"
 				}
 			}
 		}
 	},
 	"ui": {
-		"data":{
-			"constants":{
-				"fruit_name":"Fruit"
-			}
-		},
 		"game":{
 			"build_mode":{
 				"building_templates":{

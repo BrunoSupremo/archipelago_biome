@@ -1,8 +1,0 @@
-{
-   "type": "encounter",
-   "encounter_type": "script",
-   "in_edge": "add_archipelago_crops_and_recipes",
-   "script_info": {
-      "script": "file(add_archipelago_crops_and_recipes.lua)"
-   }
-}

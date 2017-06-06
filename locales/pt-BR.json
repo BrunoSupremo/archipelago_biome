@@ -61,11 +61,11 @@
 				}
 			},
 			"fruit_container":{
-				"display_name":"Caixote de Frutas",
+				"display_name":"Caixote de Cocos",
 				"description":"Pronto pra ser exportado",
 				"recipe":{
-					"description":"É mais fácil vender as frutas assim.",
-					"flavor":"Cuidado pra não amassar as frutas!"
+					"description":"É mais fácil vender os cocos assim.",
+					"flavor":"Pronto pra ser exportado"
 				}
 			},
 			"lei":{
@@ -219,11 +219,6 @@
 		}
 	},
 	"ui": {
-		"data":{
-			"constants":{
-				"fruit_name":"Fruta"
-			}
-		},
 		"game":{
 			"build_mode":{
 				"building_templates":{

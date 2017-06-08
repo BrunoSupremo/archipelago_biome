@@ -13,7 +13,7 @@
 			"count" : 1
 		},
 		{
-			"material" : "fruit",
+			"uri": "archipelago_biome:food:coconut",
 			"count" : 4
 		}
 	],

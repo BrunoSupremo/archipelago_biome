@@ -12,11 +12,16 @@
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/wood_stockpile.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/beachball.json)",
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/challenge/forward_scouts/encounters/create_scout_camp/goblin_tent.json":"file(data/gm/campaigns/goblin_war/arcs/challenge/forward_scouts/encounters/create_scout_camp/goblin_tent.json)",
 		
-		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":	"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
-		
-		"stonehearth:monster_tuning:goblins:worker":"file(data/monster_tuning/goblins/worker)",
-		"stonehearth:monster_tuning:goblins:worker_thief":"file(data/monster_tuning/goblins/worker)",
+
+		"archipelago_biome/jobs/cook/recipes/fruit_container_recipe.json":	"file(jobs/unlock_recipe.json)",
+		"archipelago_biome/jobs/fisher/recipes/pearl_container_recipe.json":"file(jobs/unlock_recipe.json)",
+		"archipelago_biome/jobs/fisher/recipes/crab_trap_recipe.json":		"file(jobs/unlock_recipe.json)",
+		"archipelago_biome/jobs/potter/recipes/sand_castle_recipe.json":	"file(jobs/unlock_recipe.json)",
+
+		"stonehearth:monster_tuning:goblins:worker":		"file(data/monster_tuning/goblins/worker)",
+		"stonehearth:monster_tuning:goblins:worker_thief":	"file(data/monster_tuning/goblins/worker)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
 		"stonehearth/scenarios/static/critter_nest/critter_nest.json":	"file(scenarios/static/critter_nest/critter_nest.json)",

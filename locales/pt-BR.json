@@ -5,24 +5,28 @@
 				"display_name":"Garrafa",
 				"description":"Bottle"
 			},
-			"starfish":{
-				"display_name":"Estrela do Mar",
-				"description":"Não são estrelas, nem peixes."
+			"broken_boat":{
+				"display_name":"Barco Quebrado",
+				"description":"Quebre-o para madeira e ouro."
 			},
 			"oyster":{
 				"display_name":"Ostra",
 				"description":"Lar de uma pérola.",
 				"unripe_description":"Uma concha vazia."
 			},
-			"broken_boat":{
-				"display_name":"Barco Quebrado",
-				"description":"Quebre-o para madeira e ouro."
+			"starfish":{
+				"display_name":"Estrela do Mar",
+				"description":"Não são estrelas, nem peixes."
 			}
 		},
 		"critters":{
 			"crab":{
 				"display_name":"Caranguejo",
 				"description":"Sinta o beliscão"
+			},
+			"fish":{
+				"display_name":"Peixe",
+				"description":"Poyos aquaticos"
 			},
 			"sea_turtle":{
 				"display_name":"Tartaruga Marinha",
@@ -60,12 +64,16 @@
 					"flavor":"Se um barco fosse uma cabeça, suas âncoras seriam brincos?"
 				}
 			},
+			"fish_container":{
+				"display_name":"Caixote de peixes",
+				"description":"Pronto pra ser exportado"
+			},
 			"fruit_container":{
-				"display_name":"Caixote de Frutas",
+				"display_name":"Caixote de Cocos",
 				"description":"Pronto pra ser exportado",
 				"recipe":{
-					"description":"É mais fácil vender as frutas assim.",
-					"flavor":"Cuidado pra não amassar as frutas!"
+					"description":"É mais fácil vender os cocos assim.",
+					"flavor":"Pronto pra ser exportado"
 				}
 			},
 			"hammock":{
@@ -83,6 +91,10 @@
 					"description":"Para pendurar na parede.",
 					"flavor":"Flores podem embelezar as paredes!"
 				}
+			},
+			"pearl_container":{
+				"display_name":"Caixote de pérolas",
+				"description":"Pronto pra ser exportado"
 			},
 			"pirate_flag":{
 				"display_name":"Bandeira Pirata",
@@ -130,6 +142,14 @@
 				"display_name":"Coco",
 				"description":"Sempre refrescante"
 			},
+			"fish":{
+				"display_name":"Peixe fresco",
+				"description":"Ainda não está pronto pra comer"
+			},
+			"fish_rotten":{
+				"display_name":"Peixe estragado",
+				"description":"Peixes estragam bem depressa..."
+			},
 			"papaya_basket":{
 				"display_name":"Cesta de mamão",
 				"description":"Cheio de frutas de mamão"
@@ -137,6 +157,10 @@
 			"papaya_serving":{
 				"display_name":"Mamão",
 				"description":"Uma metade da fruta"
+			},
+			"sashimi":{
+				"display_name":"Sashimi",
+				"description":"Peixe cru fresco cortado em fatias bem fininhas"
 			}
 		},
 		"gizmos":{
@@ -147,6 +171,14 @@
 					"description":"Após posicionado, irá explodir quando um inimigo bater nele. Machuca e taca fogo nos inimigos próximos da explosão.",
 					"flavor":"Tudo fica melhor com explosões."
 				}
+			},
+			"crab_trap":{
+				"display_name":"Armadilha de Caranguejo",
+				"description":"Irá atrair e capturar caranguejos."
+			},
+			"float_bobber":{
+				"display_name":"Flutuador",
+				"description":"Irá atrair peixes."
 			}
 		},
 		"monsters":{
@@ -226,12 +258,61 @@
 			"description":"Quente! Bom pra rituais malucos."
 		}
 	},
-	"ui": {
-		"data":{
-			"constants":{
-				"fruit_name":"Fruta"
+	"jobs":{
+		"fisher":{
+			"fisher_description":{
+				"display_name":"Pescador",
+				"description":"Irá pegar caranguejos, colher pérolas, e fazer outras tarefas relacionadas a água",
+				"requirements":"Feito por seu principal artesão"
+			},
+			"fisher_bucket":{
+				"display_name":"Balde de Pescador",
+				"description":"Balde multiuso",
+				"fisher_bucket_talisman":{
+					"display_name":"Balde de Pescador",
+					"description":"Necessário para promover alguém em um pescador"
+				}
+			},
+			"fisher_outfit":{
+				"display_name":"Roupa de Pescador",
+				"description":"Roupa comum de pescador"
+			},
+			"recipes":{
+				"fisher_tools_name":"Ferramentas de Pescador",
+				"fisher_bucket_recipe":{
+					"recipe_name":"Balde de Pescador",
+					"description":"Necessário para promover alguém em um pescador.",
+					"flavor":"Balde multiuso"
+				},
+				"crab_trap_recipe":{
+					"recipe_name":"Armadilha de Caranguejos",
+					"description":"Atrai e captura caranguejos. Pode quebrar depois de alguns usos, exigindo que uma nova armadilha seja feita.",
+					"flavor":"Os caranguejos irão aparecer em torno dela se não houver nenhum perto."
+				},
+				"fish_container_recipe":{
+					"recipe_name":"Caixote de Peixes",
+					"description":"É mais fácil vender os peixes assim.",
+					"flavor":"Pronto pra ser exportado"
+				},
+				"float_bobber_recipe":{
+					"recipe_name":"Flutuador",
+					"description":"Coloque na água para marcar um local de pesca na área. Peixes irão lá para serem pescados pelo pescador.",
+					"flavor":"Demora um pouco até que os peixes apareçam"
+				},
+				"pearl_container_recipe":{
+					"recipe_name":"Caixote de Pérolas",
+					"description":"É mais fácil vender as pérolas assim.",
+					"flavor":"Pronto pra ser exportado"
+				},
+				"sashimi_recipe":{
+					"recipe_name":"Sashimi",
+					"description":"Peixe cru fresco cortado em pedaços finos",
+					"flavor":"Não é muito difícil de preparar"
+				}
 			}
-		},
+		}
+	},
+	"ui": {
 		"game":{
 			"build_mode":{
 				"building_templates":{
@@ -246,6 +327,17 @@
 						"explorer_ship":"Navio Explorador",
 						"long_ship":"Navio Comprido",
 						"trader_ship":"Navio Comerciante"
+					}
+				}
+			},
+			"menu":{
+				"crafter_menu":{
+					"items":{
+						"fisher":{
+							"display_name":"Menu do Pescador",
+							"description":"Cria itens relacionados com pesca",
+							"required_job_text":"Requer um pescador"
+						}
 					}
 				}
 			}

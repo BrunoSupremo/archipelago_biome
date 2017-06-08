@@ -6,15 +6,26 @@ palm tree monster
 octopus / rocktopus
 mosquitos/doenças usar o herbalist pra curar
 bananas
+jellyfish
 
 
-fisherman
+stonemason:
+	cria um monumento/torre de pedra com perola negra
+		talvez algo relacionado com batalhas, como uma torre de ataque (ai seria melhor o engineer)
+		talvez com cura, ela teria hp e curaria os outros ao custo de seu hp, podendo ser curada mais tarde
+		talvez algo com o cocoling spawner
+		talvez libere templates
+	runa com perola negra
+
+
+fisher
 workbench, mesa com facão em cima, rede, vara, balde
-craft floater, marca o local de pesca, só funciona na agua e flutua na superficie
 craft armadilhas para carangueijos, só funciona na agua/areia, o fisher vai até ela e quebra pra pegar o bixo, e deixa um ghost de outra no local pra repor
 peixe e carangueijo pescados são limpos na workbench antes de armazenar
 oyster farm marker, coloca e ele marca todas as oysters em volta pra harvest
-craft pearl export crate
+pescar camarao
+colecionar items raros
+seaweed
 
 
 ossos de peixes/baleias

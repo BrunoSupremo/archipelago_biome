@@ -1,0 +1,36 @@
+{
+	"ai": {
+		"stonehearth:top": {
+			"children": {
+				"stonehearth:work": {
+					"children": {
+						"stonehearth:simple_labor": {
+							"children": {
+								"archipelago_biome:task_group:fisher": {
+									"type": "task_group",
+									"work_order": "haul",
+									"children": {
+										"stonehearth:harvest_resource": {
+											"type": "task",
+											"args": {
+												"category": "fisher"
+											},
+											"priority": 4
+										},
+										"stonehearth:harvest_renewable_resource": {
+											"type": "task",
+											"args": {
+												"category": "fisher"
+											},
+											"priority": 4
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

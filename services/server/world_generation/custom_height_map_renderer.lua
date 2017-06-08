@@ -88,9 +88,7 @@ function CustomHeightMapRenderer:_add_plains_to_region_original(region3, rect, h
 end
 
 function CustomHeightMapRenderer:_add_plains_to_region_archipelago_biome(region3, rect, height)
-   local terrain_info = self._biome:get_terrain_info()
-   local plains_max_height = terrain_info.plains.height_max
-   local material = height < plains_max_height and self._block_types.dirt or self._block_types.sand
+   local material = self._block_types.sand
 
    self:_add_soil_strata_to_region_archipelago_biome(region3, Cube3(
          Point3(rect.min.x, 0,        rect.min.y),

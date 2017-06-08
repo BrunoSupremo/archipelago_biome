@@ -1,0 +1,48 @@
+{
+	"mixins": "stonehearth:mixins:food_decay",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(sashimi.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food"
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 40
+			},
+			"default": {
+				"satisfaction": 25
+			},
+			"quality": 2
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 8,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.sashimi.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.sashimi.description)",
+			"icon": "file(sashimi.png)",
+			"is_item": true,
+			"category": "food",
+			"material_tags": "food raw_food meat sashimi stockpile_raw_food"
+		}
+	}
+}

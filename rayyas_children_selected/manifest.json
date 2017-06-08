@@ -1,0 +1,11 @@
+{
+	"info": {
+		"name": "rayyas_children_selected",
+		"deferred_load": true,
+		"version": 3
+	},
+	"mixintos": {
+		"archipelago_biome/jobs/carpenter/recipes/fisher_bucket_recipe.json":"file(jobs/carpenter/recipes/fisher_bucket_recipe.json)",
+		"archipelago_biome/jobs/potter/recipes/fisher_bucket_recipe.json":"file(jobs/potter/recipes/fisher_bucket_recipe.json)"
+	}
+}

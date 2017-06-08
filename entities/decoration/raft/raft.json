@@ -2,7 +2,9 @@
 	"type": "entity",
 	"mixins": "file(raft_ghost.json)",
 	"components": {
-		"archipelago_biome:float":{},
+		"archipelago_biome:float":{
+			"add_height": -0.475
+		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(raft_iconic.json)",
 			"ghost_form": "file(raft_ghost.json)",
@@ -11,7 +13,7 @@
 		"destination": {
 			"region": [
 				{
-					"min": {"x": -4, "y": -4, "z": -4 },
+					"min": {"x": -4, "y": 0, "z": -4 },
 					"max": {"x": 3, "y": 1, "z": 3 }
 				}
 			]

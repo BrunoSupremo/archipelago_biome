@@ -4,6 +4,7 @@
 		"version": 3
 	},
 	"default_locale": "en",
+	"client_init_script": "file(archipelago_biome_client)",
 	"server_init_script": "file(archipelago_biome_server)",
 	"aliases": {
 		"beach:bottle": "file(entities/beach/bottle)",
@@ -16,34 +17,48 @@
 		"captain_miranda": "file(entities/humans/captain_miranda)",
 
 		"critters:crab": "file(entities/critters/crab)",
+		"critters:fish": "file(entities/critters/fish)",
 		"critters:sea_turtle": "file(entities/critters/sea_turtle)",
-		"critters:seagull": "file(entities/critters/seagull)",
 
 		"crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",
 
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"decoration:anchor": "file(entities/decoration/anchor)",
+		"decoration:fish_container": "file(entities/decoration/fish_container)",
 		"decoration:fruit_container": "file(entities/decoration/fruit_container)",
 		"decoration:hammock": "file(entities/decoration/hammock)",
 		"decoration:lei": "file(entities/decoration/lei)",
+		"decoration:pearl_container": "file(entities/decoration/pearl_container)",
 		"decoration:pirate_flag": "file(entities/decoration/pirate_flag)",
 		"decoration:raft": "file(entities/decoration/raft)",
 		"decoration:sand_castle": "file(entities/decoration/sand_castle)",
 		"decoration:ship_wheel": "file(entities/decoration/ship_wheel)",
 		"decoration:tiki_torch": "file(entities/decoration/tiki_torch)",
 
-		"effects:tiki_torch_effect": "file(data/effects/tiki_torch_effect)",
 		"effects:cocobomb_effect": "file(data/effects/cocobomb_effect)",
 		"effects:cocobomb_explosion_effect": "file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
 		"effects:harvest_coconut_overlay": "file(data/effects/harvest_coconut_overlay)",
+		"effects:harvest_fish_overlay": "file(data/effects/harvest_fish_overlay)",
 		"effects:harvest_papaya_overlay": "file(data/effects/harvest_papaya_overlay)",
+		"effects:no_water_overlay": "file(data/effects/no_water_overlay)",
+		"effects:tiki_torch_effect": "file(data/effects/tiki_torch_effect)",
 
 		"food:coconut": "file(entities/food/coconut)",
+		"food:fish": "file(entities/food/fish)",
+		"food:fish:rotten": "file(entities/food/fish/fish_rotten.json)",
 		"food:papaya_basket": "file(entities/food/papaya/papaya_basket)",
 		"food:papaya_serving": "file(entities/food/papaya/papaya_serving)",
+		"food:sashimi": "file(entities/food/sashimi)",
 
 		"gizmos:cocobomb": "file(entities/gizmos/cocobomb)",
+		"gizmos:crab_trap": "file(entities/gizmos/crab_trap)",
+		"gizmos:float_bobber": "file(entities/gizmos/float_bobber)",
+
+		"jobs:fisher": "file(jobs/fisher/fisher_description.json)",
+		"fisher:bucket": "file(jobs/fisher/fisher_bucket/fisher_bucket.json)",
+		"fisher:talisman": "file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
+		"traits:passion_fisher": "file(data/traits/passion_fisher/passion_fisher_trait.json)",
 
 		"mixins:palm_tree": "file(mixins/palm_tree)",
 		"mixins:spice": "file(mixins/spice)",
@@ -84,21 +99,26 @@
 
 		"stonehearth:build:brushes": "file(data/build/building_brushes.json)",
 
-		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
-
 		"stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
 
+		"stonehearth:data:player_task_groups": "file(services/server/population/data/player_task_groups.json)",
+
+		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
+
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
-		"stonehearth/jobs/blacksmith/recipes/recipes.json": "file(jobs/blacksmith/recipes)",
-		"stonehearth/jobs/carpenter/recipes/recipes.json": "file(jobs/carpenter/recipes)",
-		"stonehearth/jobs/cook/recipes/recipes.json": "file(jobs/cook/recipes)",
-		"stonehearth/jobs/engineer/recipes/recipes.json": "file(jobs/engineer/recipes)",
-		"stonehearth/jobs/herbalist/recipes/recipes.json": "file(jobs/herbalist/recipes)",
-		"stonehearth/jobs/potter/recipes/recipes.json": "file(jobs/potter/recipes)",
-		"stonehearth/jobs/weaver/recipes/recipes.json": "file(jobs/weaver/recipes)",
+		"stonehearth:jobs:index": "file(jobs/index.json)",
+		"stonehearth/jobs/blacksmith/recipes/recipes.json":	"file(jobs/blacksmith/recipes)",
+		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
+		"stonehearth/jobs/cook/recipes/recipes.json":		"file(jobs/cook/recipes)",
+		"stonehearth/jobs/engineer/recipes/recipes.json":	"file(jobs/engineer/recipes)",
+		"stonehearth/jobs/herbalist/recipes/recipes.json":	"file(jobs/herbalist/recipes)",
+		"stonehearth/jobs/potter/recipes/recipes.json":		"file(jobs/potter/recipes)",
+		"stonehearth/jobs/weaver/recipes/recipes.json":		"file(jobs/weaver/recipes)",
+
+		"stonehearth:traits_index":"file(data/traits/traits_index.json)",
 
 		"stonehearth/locales/pt-BR.json" : "file(locales/pt-BR.json)",
 
@@ -109,13 +129,18 @@
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
 		"stonehearth/ui/shell/select_settlement/select_settlement.js": "file(ui/shell/select_settlement/select_settlement.js)"
 	},
+	"controllers": {
+		"class:fisher": "file(jobs/fisher/fisher.lua)"
+	},
 	"components": {
 		"explosive":"file(components/explosive/explosive.lua)",
 		"fake_container":"file(components/fake_container/fake_container.lua)",
+		"fish_spawner":"file(components/fish_spawner/fish_spawner.lua)",
 		"float":"file(components/float/float.lua)"
 	},
 	"ui":{
 		"less":[
+			"file(jobs/fisher/skin/workshop.less)",
 			"file(ui/shell/select_settlement/select_settlement.less)"
 		]
 	}

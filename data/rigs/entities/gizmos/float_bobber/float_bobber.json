@@ -1,0 +1,8 @@
+{
+	"skeleton": {
+		"body": [0.5,0.5,2.5],
+		"root": [0,0,0]
+	},
+	"animation_root" : "file(animations)",
+	"effects_root": "file(effects)"
+}

@@ -10,7 +10,7 @@
 			}
 		},
 		"stonehearth:renewable_resource_node": {
-			"category": "harvest",
+			"category": "fisher",
 			"harvest_overlay_effect": "stonehearth:effects:loot_effect",
 			"unripe_description": "i18n(archipelago_biome:entities.beach.oyster.unripe_description)",
 			"resource_loot_table": {

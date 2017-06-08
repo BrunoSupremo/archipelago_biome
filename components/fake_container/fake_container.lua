@@ -5,11 +5,21 @@ function ArchipelagoFakeContainer:destroy()
 	if not location then
 		return
 	end
-	-- Create the entity and put it on the ground
-	local cocoling = radiant.entities.create_entity('archipelago_biome:monsters:cocoling', {owner = "forest"})
-	radiant.terrain.place_entity_at_exact_location(cocoling, location)
-	cocoling = radiant.entities.create_entity('archipelago_biome:monsters:cocoling', {owner = "forest"})
-	radiant.terrain.place_entity_at_exact_location(cocoling, location)
+	--chose the amount to spawn based on difficult
+	local difficult = 2 --stonehearth:game_mode:normal
+	local gamemode = stonehearth.game_creation:get_game_mode()
+	if gamemode == "stonehearth:game_mode:peaceful" then
+		difficult = 1
+	end
+	if gamemode == "stonehearth:game_mode:hard" then
+		difficult = 3
+	end
+	local cocoling
+	for i=1, difficult do
+		-- Create the entity and put it on the ground
+		cocoling = radiant.entities.create_entity('archipelago_biome:monsters:cocoling', {owner = "forest"})
+		radiant.terrain.place_entity_at_exact_location(cocoling, location)
+	end
 
 	-- local miranda = radiant.entities.create_entity("archipelago_biome:captain_miranda", { owner = "human_npcs" })
 	-- radiant.entities.set_custom_name(miranda, "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)")

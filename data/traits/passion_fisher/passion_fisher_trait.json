@@ -1,0 +1,8 @@
+{
+   "type": "trait",
+   "mixins": "stonehearth:mixins:traits:passion_job",
+   "icon": "file(passion_fisher_trait.png)",
+   "data": {
+      "job_uri": "archipelago_biome:jobs:fisher"
+   }
+}

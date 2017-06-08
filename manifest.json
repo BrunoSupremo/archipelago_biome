@@ -51,6 +51,7 @@
 		"food:sashimi": "file(entities/food/sashimi)",
 
 		"gizmos:cocobomb": "file(entities/gizmos/cocobomb)",
+		"gizmos:crab_trap": "file(entities/gizmos/crab_trap)",
 		"gizmos:float_bobber": "file(entities/gizmos/float_bobber)",
 
 		"jobs:fisher": "file(jobs/fisher/fisher_description.json)",
@@ -108,13 +109,13 @@
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
-		"stonehearth/jobs/blacksmith/recipes/recipes.json": "file(jobs/blacksmith/recipes)",
-		"stonehearth/jobs/carpenter/recipes/recipes.json": "file(jobs/carpenter/recipes)",
-		"stonehearth/jobs/cook/recipes/recipes.json": "file(jobs/cook/recipes)",
-		"stonehearth/jobs/engineer/recipes/recipes.json": "file(jobs/engineer/recipes)",
-		"stonehearth/jobs/herbalist/recipes/recipes.json": "file(jobs/herbalist/recipes)",
-		"stonehearth/jobs/potter/recipes/recipes.json": "file(jobs/potter/recipes)",
-		"stonehearth/jobs/weaver/recipes/recipes.json": "file(jobs/weaver/recipes)",
+		"stonehearth/jobs/blacksmith/recipes/recipes.json":	"file(jobs/blacksmith/recipes)",
+		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
+		"stonehearth/jobs/cook/recipes/recipes.json":		"file(jobs/cook/recipes)",
+		"stonehearth/jobs/engineer/recipes/recipes.json":	"file(jobs/engineer/recipes)",
+		"stonehearth/jobs/herbalist/recipes/recipes.json":	"file(jobs/herbalist/recipes)",
+		"stonehearth/jobs/potter/recipes/recipes.json":		"file(jobs/potter/recipes)",
+		"stonehearth/jobs/weaver/recipes/recipes.json":		"file(jobs/weaver/recipes)",
 
 		"stonehearth:traits_index":"file(data/traits/traits_index.json)",
 

@@ -1,6 +1,6 @@
 {
 	"craftable_recipes" : {
-		"decorations" : {
+		"decoration" : {
 			"recipes" : {
 				"anchor" : {
 					"recipe" : "file(anchor_recipe.json)"

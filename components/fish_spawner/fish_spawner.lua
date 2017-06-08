@@ -24,7 +24,7 @@ function ArchipelagoFishSpawner:spawner_added_to_water()
 		--first time, free fish to understand how the spawn will work, without waiting
 		self:try_to_spawn_fish()
 		--later fish only within the timer
-		self.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoFishSpawner spawn_timer", "8m", radiant.bind(self, 'try_to_spawn_fish'), "8m")
+		self.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoFishSpawner spawn_timer", "8h", radiant.bind(self, 'try_to_spawn_fish'), "8h")
 	end
 end
 

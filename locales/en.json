@@ -164,6 +164,10 @@
 					"flavor":"Everything's better with explosions"
 				}
 			},
+			"crab_trap":{
+				"display_name":"Crab Trap",
+				"description":"Will attract and capture crabs."
+			},
 			"float_bobber":{
 				"display_name":"Float Bobber",
 				"description":"Will attract fish."
@@ -271,6 +275,11 @@
 					"recipe_name":"Fisher's Bucket",
 					"description":"Required to promote a hearthling into a Fisher.",
 					"flavor":"Multipurpose bucket"
+				},
+				"crab_trap_recipe":{
+					"recipe_name":"Crab Trap",
+					"description":"Will attract and capture crabs. It can break after a few uses, requiring a new trap to be crafted.",
+					"flavor":"Crabs will spawn around it if there are none near."
 				},
 				"fish_container_recipe":{
 					"recipe_name":"Fish Container",

@@ -6,6 +6,9 @@
 			"recipes": {
 				"float_bobber": {
 					"recipe": "file(float_bobber_recipe.json)"
+				},
+				"crab_trap": {
+					"recipe": "file(crab_trap_recipe.json)"
 				}
 			}
 		},

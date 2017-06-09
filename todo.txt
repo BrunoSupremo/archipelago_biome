@@ -15,14 +15,14 @@ stonemason:
 		talvez com cura, ela teria hp e curaria os outros ao custo de seu hp, podendo ser curada mais tarde
 		talvez algo com o cocoling spawner
 		talvez libere templates
-	runa com perola negra
+	runa com perola negra (esqueci... talvez um item equipavel)
 
 
 fisher
 workbench, mesa com facão em cima, rede, vara, balde
 craft armadilhas para carangueijos, só funciona na agua/areia, o fisher vai até ela e quebra pra pegar o bixo, e deixa um ghost de outra no local pra repor
 peixe e carangueijo pescados são limpos na workbench antes de armazenar
-oyster farm marker, coloca e ele marca todas as oysters em volta pra harvest
+oyster farm marker, coloca e ele marca todas as oysters em volta pra harvest (perk em level alto pra automatizar?)
 pescar camarao
 colecionar items raros
 seaweed

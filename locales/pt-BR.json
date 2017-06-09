@@ -263,7 +263,15 @@
 			"fisher_description":{
 				"display_name":"Pescador",
 				"description":"Irá pegar caranguejos, colher pérolas, e fazer outras tarefas relacionadas a água",
-				"requirements":"Feito por seu principal artesão"
+				"requirements":"Feito por seu principal artesão",
+				"level_0":{
+					"perk_name":"Pescando",
+					"perk_description":"O pescador pode criar ferramentas para ajudar a pegar peixes."
+				},
+				"level_1":{
+					"perk_name":"Caranguejos",
+					"perk_description":"O pescador agora pode criar e colocar armadilhas para capturar caranguejos."
+				}
 			},
 			"fisher_bucket":{
 				"display_name":"Balde de Pescador",
@@ -388,7 +396,7 @@
 								"message_decline":"Bom, se cuida.<br>Boa sorte.",
 								"message_accept":"Isso! Finalmente aceitaram minha ajuda!<br>Er... Quero dizer, me siga!",
 								"message_trees":"Vai começar procurando madeira e comida, né?<br>Aqui temos os dois no mesmo lugar!<br>Tá vendo as palmeiras?<br>Quando você colher elas vai pegar cocos. Mas eles não enchem muito<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
-								"message_oysters":"Ah, e essas ostras gigantes são incríveis. Você pode colher as pérolas de tempo em tempo que vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
+								"message_oysters":"Ah, e essas ostras gigantes são incríveis. O pescador pode colher as pérolas de tempo em tempo que vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
 								"message_broken_boats":"Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
 								"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
 							},

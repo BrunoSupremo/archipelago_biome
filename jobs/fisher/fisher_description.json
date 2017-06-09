@@ -48,62 +48,25 @@
 	},
 	"max_level": 1,
 	"level_data": {
+		"0": {
+			"perks": [
+				{
+					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_0.perk_name)",
+					"id": "crafter_recipe_unlock_0",
+					"icon": "file(images/fisher_menu_icon.png)",
+					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_0.perk_description)",
+					"level": 0
+				}
+			]
+		},
 		"1": {
 			"perks": [
 				{
-					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_1_data.perk_000_name)",
+					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_1.perk_name)",
 					"id": "crafter_recipe_unlock_1",
-					"icon": "file(../common/images/standard_catalog.png)",
-					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_1_data.perk_000_description)",
+					"icon": "file(images/level_1.png)",
+					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_1.perk_description)",
 					"level": 1
-				}
-			]
-		},
-		"2": {
-			"perks": [
-				{
-					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_2_data.perk_000_name)",
-					"id": "crafter_recipe_unlock_2",
-					"icon": "file(../common/images/collaborative_insight.png)",
-					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_2_data.perk_000_description)",
-					"level": 2
-				}
-			]
-		},
-		"3": {
-			"perks": [
-				{
-					"type": "set_fine_percentage",
-					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_3_data.perk_000_name)",
-					"id": "crafter_recipe_unlock_3",
-					"icon": "file(../common/images/artistic_inspiration.png)",
-					"percent_chance": 10,
-					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_3_data.perk_000_description)",
-					"level": 3,
-					"demote_fn": "unset_fine_percentage"
-				}
-			]
-		},
-		"4": {
-			"perks": [
-				{
-					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_4_data.perk_000_name)",
-					"id": "crafter_recipe_unlock_4",
-					"icon": "file(../common/images/extended_catalog.png)",
-					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_4_data.perk_000_description)",
-					"level": 4
-				}
-			]
-		},
-		"6": {
-			"title": "i18n(stonehearth:jobs.fisher.fisher_description.level_6_data.title)",
-			"perks": [
-				{
-					"name": "i18n(stonehearth:jobs.fisher.fisher_description.level_6_data.perk_000_name)",
-					"id": "crafter_recipe_unlock_6",
-					"icon": "file(../common/images/master.png)",
-					"description": "i18n(stonehearth:jobs.fisher.fisher_description.level_6_data.perk_000_description)",
-					"level": 6
 				}
 			]
 		}

@@ -2,7 +2,16 @@
 	"type": "entity",
 	"mixins": "file(float_bobber_ghost.json)",
 	"components": {
-		"archipelago_biome:fish_spawner": {},
+		"archipelago_biome:fish_spawner": {
+			"spawn":{
+				"animal":"archipelago_biome:critters:fish",
+				"max":100,
+				"start_inside_spawner":true
+			},
+			"interval":"8h",
+			"requires_water":true,
+			"effect_radius":4
+		},
 		"archipelago_biome:float":{
 			"add_height": -0.25,
 			"add_animation":{

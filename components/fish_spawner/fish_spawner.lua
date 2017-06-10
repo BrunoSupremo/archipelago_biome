@@ -8,8 +8,16 @@ function ArchipelagoFishSpawner:initialize()
 end
 
 function ArchipelagoFishSpawner:activate()
+	local json = radiant.entities.get_json(self)
+	self.animal = json.spawn.animal or "archipelago_biome:critters:fish"
+	self.max = json.spawn.max or 10
+	self.start_inside_spawner = json.spawn.start_inside_spawner or false
+	self.interval = json.interval or "8h"
+	self.requires_water = json.requires_water or false
+	self.effect_radius = json.effect_radius or 4
+
 	if not self._in_the_water_listener then
-		self._in_the_water_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', self, self.spawner_added_to_water)
+		self._in_the_water_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', self, self.activate_the_spawner)
 	end
 	if not self._on_removed_from_world_listener then
 		self._on_removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', self, self.spawner_removed)
@@ -19,12 +27,19 @@ function ArchipelagoFishSpawner:activate()
 	end
 end
 
-function ArchipelagoFishSpawner:spawner_added_to_water()
+function ArchipelagoFishSpawner:activate_the_spawner()
+	local ec = self._entity:get_component("entity_container")
+	if ec then
+		for id, child in ec:each_child() do
+			--if it has a child (trapped) it should do nothing, just wait
+			return
+		end
+	end
 	if not self.spawn_timer then
 		--first time, free fish to understand how the spawn will work, without waiting
 		self:try_to_spawn_fish()
 		--later fish only within the timer
-		self.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoFishSpawner spawn_timer", "8h", radiant.bind(self, 'try_to_spawn_fish'), "8h")
+		self.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoFishSpawner spawn_timer", self.interval, radiant.bind(self, 'try_to_spawn_fish'), self.interval)
 	end
 end
 
@@ -37,19 +52,23 @@ function ArchipelagoFishSpawner:spawner_placed()
 	local delayed_function = function ()
 		--for some reason, location is nil when the on_added event fires,
 		--so I have to wait 1gametick for it to be set, and it is done running inside this
-		local location = radiant.entities.get_world_grid_location(self._entity)
-		local intersected_entities = radiant.terrain.get_entities_at_point(location)
-		local show_overlay = true
-		for id, entity in pairs(intersected_entities) do
-			local water_component = entity:get_component('stonehearth:water')
-			if water_component then
-				radiant.events.trigger_async(self._entity, 'archipelago_biome:in_the_water')
-				show_overlay = false
-				break
+		if self.requires_water then
+			local location = radiant.entities.get_world_grid_location(self._entity)
+			local intersected_entities = radiant.terrain.get_entities_at_point(location)
+			local show_overlay = true
+			for id, entity in pairs(intersected_entities) do
+				local water_component = entity:get_component('stonehearth:water')
+				if water_component then
+					radiant.events.trigger_async(self._entity, 'archipelago_biome:in_the_water')
+					show_overlay = false
+					break
+				end
 			end
-		end
-		if show_overlay then
-			self.effect_overlay = radiant.effects.run_effect(self._entity, "archipelago_biome:effects:no_water_overlay")
+			if show_overlay then
+				self.effect_overlay = radiant.effects.run_effect(self._entity, "archipelago_biome:effects:no_water_overlay")
+			end
+		else
+			self:activate_the_spawner()
 		end
 		self.stupid_delay:destroy()
 		self.stupid_delay = nil
@@ -62,33 +81,66 @@ function ArchipelagoFishSpawner:try_to_spawn_fish()
 	if not location then
 		return
 	end
-	local cube = Cube3(location):inflated(Point3(4,7,4))
+	local bottom_height = radiant.terrain.get_point_on_terrain(location).y -1 --extra 1 block
+	--bottom_height to make sure we are checking a space that reaches the bottom of any water
+	local cube = Cube3(location):inflated(Point3(self.effect_radius, location.y - bottom_height, self.effect_radius))
 	local intersected_entities = radiant.terrain.get_entities_in_cube(cube)
 	local fish_counter = 0
+	local last_fish_found = nil
 	for id, entity in pairs(intersected_entities) do
-		if entity:get_uri() == "archipelago_biome:critters:fish" then
+		if entity:get_uri() == self.animal then
 			fish_counter = fish_counter+1
+			last_fish_found = entity
 		end
 	end
-
+	if fish_counter >= self.max then
+		self:approach_task(last_fish_found,location)
+		return --max amount allowed already reached, abort
+	end
 	if fish_counter<2 then
-		self:spawn_fish()
+		self:spawn_fish(location)
 	else
-		local spawn_chance = 1/ ( (fish_counter*fish_counter) /2)
+		local spawn_chance = 1/ math.pow(2,fish_counter-1)
 		if rng:get_real(0,1) <= spawn_chance then
 			--more fish around = fewer chances to have another spawn, but still possible
-			-- 2fish = 50%, 3fish = 22%, 4fish = 12%, 5fish = 8%, etc...
-			self:spawn_fish()
+			-- 2fish = 50%, 3fish = 25%, 4fish = 12,5%, 5fish = 6,25%, etc...
+			self:spawn_fish(location)
 		end
 	end
 end
 
-function ArchipelagoFishSpawner:spawn_fish()
-	local location = radiant.entities.get_world_grid_location(self._entity)
-	local fish = radiant.entities.create_entity('archipelago_biome:critters:fish')
-	radiant.terrain.place_entity_at_exact_location(fish, location)
+function ArchipelagoFishSpawner:spawn_fish(location)
+	local fish = radiant.entities.create_entity(self.animal)
+	if self.start_inside_spawner then
+		radiant.terrain.place_entity_at_exact_location(fish, location)
+	else
+		local far_location = radiant.terrain.find_placement_point(location, self.effect_radius, self.effect_radius*2, fish)
+		radiant.terrain.place_entity_at_exact_location(fish, far_location)
+		self:approach_task(fish,location)
+	end
 	fish:add_component('stonehearth:leash')
-	:create_leash(location, 4, 4)
+	:create_leash(location, self.effect_radius, self.effect_radius)
+end
+
+function ArchipelagoFishSpawner:approach_task(fish,location)
+	self._approach_task = fish:get_component('stonehearth:ai')
+	:get_task_group('stonehearth:unit_control')
+	:create_task('stonehearth:goto_closest_standable_location', {
+		location = location,
+		max_radius = 5,
+		})
+	:set_priority(10)
+	:once()
+	:notify_completed(
+		function ()
+			self._approach_task = nil
+			local mob = fish:add_component('mob')
+			mob:set_mob_collision_type(_radiant.om.Mob.NONE)
+			radiant.entities.add_child(self._entity, fish, Point3.zero)
+			radiant.entities.add_buff(fish, 'stonehearth:buffs:snared')
+		end
+		)
+	:start()
 end
 
 function ArchipelagoFishSpawner:destroy_effect()

@@ -294,7 +294,7 @@
 				},
 				"crab_trap_recipe":{
 					"recipe_name":"Armadilha de Caranguejos",
-					"description":"Atrai e captura caranguejos. Pode quebrar depois de alguns usos, exigindo que uma nova armadilha seja feita.",
+					"description":"Atrai e captura caranguejos. Pode quebrar depois de alguns usos, e precisa de colheita manual para pegar os caranguejos lá dentro.",
 					"flavor":"Os caranguejos irão aparecer em torno dela se não houver nenhum perto."
 				},
 				"fish_container_recipe":{

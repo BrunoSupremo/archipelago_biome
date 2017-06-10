@@ -294,7 +294,7 @@
 				},
 				"crab_trap_recipe":{
 					"recipe_name":"Crab Trap",
-					"description":"Will attract and capture crabs. It can break after a few uses, requiring a new trap to be crafted.",
+					"description":"Will attract and capture crabs. It can break after a few uses, and needs manual harvesting to get the crabs inside.",
 					"flavor":"Crabs will spawn around it if there are none near."
 				},
 				"fish_container_recipe":{

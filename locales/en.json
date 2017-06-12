@@ -142,6 +142,14 @@
 				"display_name":"Coconut",
 				"description":"Always refreshing"
 			},
+			"crab":{
+				"display_name":"Fresh Crab",
+				"description":"Not ready to be eaten"
+			},
+			"crab_rotten":{
+				"display_name":"Rotten Crab",
+				"description":"Crabs spoils very fast..."
+			},
 			"fish":{
 				"display_name":"Fresh Fish",
 				"description":"Not ready to be eaten"
@@ -271,6 +279,10 @@
 				"level_1":{
 					"perk_name":"Crabs",
 					"perk_description":"The fisher can now craft and place traps to capture crabs."
+				},
+				"level_u":{
+					"perk_name":"Not completed yet",
+					"perk_description":"More skills and perks are planned for a future update. Probably involving fish/crabs harvesting becoming automated in higher levels. I hope you liked the class so far :)"
 				}
 			},
 			"fisher_bucket":{

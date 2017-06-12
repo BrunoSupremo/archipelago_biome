@@ -1,0 +1,46 @@
+{
+	"mixins": "stonehearth:mixins:food_decay",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.1
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(crab.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:food_decay": {
+			"initial_decay": {
+				"min": 100,
+				"max": 140
+			},
+			"rotten_entity_alias": "archipelago_biome:food:crab:rotten"
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 7,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.crab.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.crab.description)",
+			"icon": "file(crab.png)",
+			"is_item": true,
+			"category": "cooking_ingredient",
+			"material_tags": "stockpile_cooking_ingredient cooking_ingredient meat raw crab"
+		}
+	}
+}

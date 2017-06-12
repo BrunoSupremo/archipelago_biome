@@ -5,6 +5,7 @@ local rng = _radiant.math.get_default_rng()
 -- local log = radiant.log.create_logger('meu_log')
 
 function ArchipelagoFishSpawner:initialize()
+	--this class was super simple before I started adapting it to also control crab traps...
 end
 
 function ArchipelagoFishSpawner:activate()
@@ -25,6 +26,9 @@ function ArchipelagoFishSpawner:activate()
 	if not self._on_added_to_world_listener then
 		self._on_added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', self, self.spawner_placed)
 	end
+	
+	local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
+	rsc:pause_resource_timer()
 end
 
 function ArchipelagoFishSpawner:activate_the_spawner()
@@ -38,8 +42,11 @@ function ArchipelagoFishSpawner:activate_the_spawner()
 	if not self.spawn_timer then
 		--first time, free fish to understand how the spawn will work, without waiting
 		self:try_to_spawn_fish()
-		--later fish only within the timer
+		--later fish appear only within the timer
 		self.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoFishSpawner spawn_timer", self.interval, radiant.bind(self, 'try_to_spawn_fish'), self.interval)
+
+		local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
+		rsc:pause_resource_timer()
 	end
 end
 
@@ -82,7 +89,7 @@ function ArchipelagoFishSpawner:try_to_spawn_fish()
 		return
 	end
 	local bottom_height = radiant.terrain.get_point_on_terrain(location).y -1 --extra 1 block
-	--bottom_height to make sure we are checking a space that reaches the bottom of any water
+	--bottom_height to make sure we are checking a space that reaches the bottom of any water level
 	local cube = Cube3(location):inflated(Point3(self.effect_radius, location.y - bottom_height, self.effect_radius))
 	local intersected_entities = radiant.terrain.get_entities_in_cube(cube)
 	local fish_counter = 0
@@ -138,6 +145,8 @@ function ArchipelagoFishSpawner:approach_task(fish,location)
 			mob:set_mob_collision_type(_radiant.om.Mob.NONE)
 			radiant.entities.add_child(self._entity, fish, Point3.zero)
 			radiant.entities.add_buff(fish, 'stonehearth:buffs:snared')
+			local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
+			rsc:resume_resource_timer()
 		end
 		)
 	:start()

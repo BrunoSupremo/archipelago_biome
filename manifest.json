@@ -39,12 +39,15 @@
 		"effects:cocobomb_effect": "file(data/effects/cocobomb_effect)",
 		"effects:cocobomb_explosion_effect": "file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
 		"effects:harvest_coconut_overlay": "file(data/effects/harvest_coconut_overlay)",
+		"effects:harvest_crab_overlay": "file(data/effects/harvest_crab_overlay)",
 		"effects:harvest_fish_overlay": "file(data/effects/harvest_fish_overlay)",
 		"effects:harvest_papaya_overlay": "file(data/effects/harvest_papaya_overlay)",
 		"effects:no_water_overlay": "file(data/effects/no_water_overlay)",
 		"effects:tiki_torch_effect": "file(data/effects/tiki_torch_effect)",
 
 		"food:coconut": "file(entities/food/coconut)",
+		"food:crab": "file(entities/food/crab)",
+		"food:crab:rotten": "file(entities/food/crab/crab_rotten.json)",
 		"food:fish": "file(entities/food/fish)",
 		"food:fish:rotten": "file(entities/food/fish/fish_rotten.json)",
 		"food:papaya_basket": "file(entities/food/papaya/papaya_basket)",
@@ -141,7 +144,8 @@
 	"ui":{
 		"less":[
 			"file(jobs/fisher/skin/workshop.less)",
-			"file(ui/shell/select_settlement/select_settlement.less)"
+			"file(ui/shell/select_settlement/select_settlement.less)",
+			"file(ui/shell/title/title.less)"
 		]
 	}
 }

@@ -41,35 +41,6 @@
 			"player_id": "animals",
 			"display_name": "i18n(archipelago_biome:entities.critters.sea_turtle.display_name)",
 			"description": "i18n(archipelago_biome:entities.critters.sea_turtle.description)"
-		},
-		"stonehearth:observers:calorie_animals": {
-			"max": 30,
-			"min": -30,
-			"hungry_threshold": 0,
-			"malnourished_threshold": -10,
-			"hourly_calorie_loss": 1
-		},
-		"stonehearth:diet": {
-			"food_material": "vegetarian"
-		},
-		"stonehearth:portrait": {
-			"portrait_types": {
-				"headshot": {
-					"camera": {
-						"pos": [
-							17,
-							0.8,
-							-27
-						],
-						"look_at": [
-							0,
-							0.6,
-							0
-						],
-						"fov": 50
-					}
-				}
-			}
 		}
 	}
 }

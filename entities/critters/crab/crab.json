@@ -1,83 +1,57 @@
 {
-   "type": "entity",
-   "mixins": "stonehearth:mixins:critter",
-   "components": {
-      "render_info": {
-         "animation_table": "file(/data/rigs/entities/critters/crab)",
-         "scale": 0.15
-      },
-      "model_variants": {
-         "default": {
-            "models": [
-               "file(crab.qb)"
-            ]
-         }
-      },
-      "stonehearth:attributes": {
-         "speed": {
-            "type": "basic",
-            "value": 20
-         }
-      }
-   },
-   "entity_data": {
-      "stonehearth:observers:avoid_threatening_entities": {
-         "min_avoidance_distance": 6,
-         "max_avoidance_distance": 6
-      },
-      "stonehearth:idle_effects": {
-         "effects": [
-            {
-               "name": "eat",
-               "weight": 1
-            },
-            {
-               "name": "idle_look_around",
-               "weight": 1
-            },
-            {
-               "name": "idle_breathe",
-               "weight": 1
-            },
-            {
-               "name": "pinch",
-               "weight": 1
-            }
-         ]
-      },
-      "stonehearth:catalog": {
-         "player_id": "animals",
-         "display_name": "i18n(archipelago_biome:entities.critters.crab.display_name)",
-         "description": "i18n(archipelago_biome:entities.critters.crab.description)"
-      },
-      "stonehearth:observers:calorie_animals": {
-         "max": 30,
-         "min": -30,
-         "hungry_threshold": 0,
-         "malnourished_threshold": -10,
-         "hourly_calorie_loss": 1
-      },
-      "stonehearth:diet": {
-         "food_material": "vegetarian"
-      },
-      "stonehearth:portrait": {
-         "portrait_types": {
-            "headshot": {
-               "camera": {
-                  "pos": [
-                     17,
-                     0.8,
-                     -27
-                  ],
-                  "look_at": [
-                     0,
-                     0.6,
-                     0
-                  ],
-                  "fov": 40
-               }
-            }
-         }
-      }
-   }
+	"type": "entity",
+	"mixins": "stonehearth:mixins:critter",
+	"components": {
+		"stonehearth:ai": {
+			"ai_tree": "stonehearth:data:humanoid_task_groups"
+		},
+		"render_info": {
+			"animation_table": "file(/data/rigs/entities/critters/crab)",
+			"scale": 0.15
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(crab.qb)"
+				]
+			}
+		},
+		"stonehearth:attributes": {
+			"speed": {
+				"type": "basic",
+				"value": 20
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:observers:avoid_threatening_entities": {
+			"min_avoidance_distance": 6,
+			"max_avoidance_distance": 6
+		},
+		"stonehearth:idle_effects": {
+			"effects": [
+				{
+					"name": "eat",
+					"weight": 1
+				},
+				{
+					"name": "idle_look_around",
+					"weight": 1
+				},
+				{
+					"name": "idle_breathe",
+					"weight": 1
+				},
+				{
+					"name": "pinch",
+					"weight": 1
+				}
+			]
+		},
+		"stonehearth:catalog": {
+			"player_id": "animals",
+			"display_name": "i18n(archipelago_biome:entities.critters.crab.display_name)",
+			"description": "i18n(archipelago_biome:entities.critters.crab.description)"
+		}
+	}
 }

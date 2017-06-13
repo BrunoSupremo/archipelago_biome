@@ -1,0 +1,51 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.09
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(fish_cooked.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food"
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 150
+			},
+			"default": {
+				"satisfaction": 80
+			},
+			"quality": 5
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 10,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.fish_cooked.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.fish_cooked.description)",
+			"icon": "file(fish_cooked.png)",
+			"is_item": true,
+			"category": "food",
+			"material_tags": "prepared_food stockpile_prepared_food meat food fish_cooked"
+		}
+	}
+}

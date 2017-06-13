@@ -142,13 +142,40 @@
 				"display_name":"Coconut",
 				"description":"Always refreshing"
 			},
+			"crab":{
+				"display_name":"Fresh Crab",
+				"description":"Not ready to be eaten"
+			},
+			"crab_rotten":{
+				"display_name":"Rotten Crab",
+				"description":"Crabs spoils very fast..."
+			},
 			"fish":{
 				"display_name":"Fresh Fish",
 				"description":"Not ready to be eaten"
 			},
+			"fish_cooked":{
+				"display_name":"Cooked Fish",
+				"description":"Fried and delicious",
+				"recipe":{
+					"description":"Just let it heat in the oven.",
+					"flavor":"Crunchy outside, soft inside"
+				}
+			},
 			"fish_rotten":{
 				"display_name":"Rotten Fish",
 				"description":"Fish spoils very fast..."
+			},
+			"fish_stew":{
+				"display_name":"Fish Stew",
+				"description": "Warm and delicious",
+				"recipe":{
+					"description":"A warm, savory broth, where the fish gets very soft.",
+					"flavor": "Fantastically easy to make"
+				}
+			},
+			"fish_stew_serving":{
+				"display_name": "Bowl of Savory Fish Stew"
 			},
 			"papaya_basket":{
 				"display_name":"Papaya Basket",
@@ -271,6 +298,10 @@
 				"level_1":{
 					"perk_name":"Crabs",
 					"perk_description":"The fisher can now craft and place traps to capture crabs."
+				},
+				"level_u":{
+					"perk_name":"Not completed yet",
+					"perk_description":"More skills and perks are planned for a future update. Probably involving fish/crabs harvesting becoming automated in higher levels. I hope you liked the class so far :)"
 				}
 			},
 			"fisher_bucket":{
@@ -294,7 +325,7 @@
 				},
 				"crab_trap_recipe":{
 					"recipe_name":"Crab Trap",
-					"description":"Will attract and capture crabs. It can break after a few uses, requiring a new trap to be crafted.",
+					"description":"Will attract and capture crabs. It can break after a few uses, and needs manual harvesting to get the crabs inside.",
 					"flavor":"Crabs will spawn around it if there are none near."
 				},
 				"fish_container_recipe":{

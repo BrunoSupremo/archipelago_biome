@@ -2,6 +2,23 @@
 	"type": "entity",
 	"mixins": "file(crab_trap_ghost.json)",
 	"components": {
+		"archipelago_biome:fish_spawner": {
+			"spawn":{
+				"animal":"archipelago_biome:critters:crab",
+				"max":1,
+				"start_inside_spawner":false
+			},
+			"interval":"8h",
+			"requires_water":false,
+			"effect_radius":8
+		},
+		"stonehearth:renewable_resource_node": {
+			"category": "fisher",
+			"harvest_overlay_effect": "archipelago_biome:effects:harvest_crab_overlay",
+			"resource": "archipelago_biome:food:crab",
+			"renewal_time": "1m",
+			"start_unharvestable": true
+		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(crab_trap_iconic.json)",
 			"ghost_form": "file(crab_trap_ghost.json)",

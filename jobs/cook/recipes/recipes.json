@@ -4,7 +4,17 @@
 			"recipes" : {
 				"fruit_container" : {
 					"recipe" : "file(fruit_container_recipe.json)"
-				}            
+				}
+			}
+		},
+		"food": {
+			"recipes" : {
+				"fish_cooked" : {
+					"recipe" : "file(fish_cooked_recipe.json)"
+				},
+				"fish_stew" : {
+					"recipe" : "file(fish_stew_recipe.json)"
+				}
 			}
 		}
 	}

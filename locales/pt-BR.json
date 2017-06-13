@@ -154,9 +154,28 @@
 				"display_name":"Peixe fresco",
 				"description":"Ainda não está pronto pra comer"
 			},
+			"fish_cooked":{
+				"display_name":"Peixe Cozido",
+				"description":"Fritinho e delicioso",
+				"recipe":{
+					"description":"Apenas deixe esquentando no forno.",
+					"flavor":"Crocante por fora, macio por dentro"
+				}
+			},
 			"fish_rotten":{
 				"display_name":"Peixe estragado",
 				"description":"Peixes estragam bem depressa..."
+			},
+			"fish_stew":{
+				"display_name":"Moqueca de peixe",
+				"description": "Quente e delicioso",
+				"recipe":{
+					"description":"Um caldo quente e salgado, onde o peixe fica muito macio.",
+					"flavor": "Fantasticamente fácil de fazer"
+				}
+			},
+			"fish_stew_serving":{
+				"display_name": "Tigela de ensopado de peixe"
 			},
 			"papaya_basket":{
 				"display_name":"Cesta de mamão",

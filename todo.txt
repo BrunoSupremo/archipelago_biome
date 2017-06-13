@@ -25,6 +25,7 @@ oyster farm marker, coloca e ele marca todas as oysters em volta pra harvest (pe
 pescar camarao?
 colecionar items raros
 seaweed
+crab pincers as low level weapons?
 
 
 ossos de peixes/baleias

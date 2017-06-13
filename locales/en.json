@@ -154,9 +154,28 @@
 				"display_name":"Fresh Fish",
 				"description":"Not ready to be eaten"
 			},
+			"fish_cooked":{
+				"display_name":"Cooked Fish",
+				"description":"Fried and delicious",
+				"recipe":{
+					"description":"Just let it heat in the oven.",
+					"flavor":"Crunchy outside, soft inside"
+				}
+			},
 			"fish_rotten":{
 				"display_name":"Rotten Fish",
 				"description":"Fish spoils very fast..."
+			},
+			"fish_stew":{
+				"display_name":"Fish Stew",
+				"description": "Warm and delicious",
+				"recipe":{
+					"description":"A warm, savory broth, where the fish gets very soft.",
+					"flavor": "Fantastically easy to make"
+				}
+			},
+			"fish_stew_serving":{
+				"display_name": "Bowl of Savory Fish Stew"
 			},
 			"papaya_basket":{
 				"display_name":"Papaya Basket",

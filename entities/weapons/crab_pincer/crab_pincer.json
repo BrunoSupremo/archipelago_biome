@@ -1,0 +1,62 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.11
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(crab_pincer_equipped.qb)"
+				]
+			}
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(crab_pincer_iconic.json)"
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "mainhand",
+			"render_type": "attach_to_bone",
+			"postures": [
+				"stonehearth:combat",
+				"stonehearth:patrol"
+			],
+			"ilevel": 11,
+			"roles": "footman_job",
+			"equip_effect": "stonehearth:effects:weapon_level_up"
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:weapon_data": {
+			"base_damage": 11,
+			"reach": 1.5
+		},
+		"stonehearth:combat:melee_attacks": [
+			{
+				"name": "combat_1h_forehand",
+				"effect": "combat_1h_forehand",
+				"active_frame": 16,
+				"cooldown": 0,
+				"priority": 0
+			}
+		],
+		"stonehearth:net_worth": {
+			"value_in_gold": 14,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 2,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.weapons.crab_pincer.display_name)",
+			"description": "i18n(archipelago_biome:entities.weapons.crab_pincer.description)",
+			"icon": "file(crab_pincer.png)",
+			"category": "weapons",
+			"material_tags": "crab melee_weapon crafted stockpile_weapon"
+		}
+	}
+}

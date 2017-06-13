@@ -146,6 +146,18 @@
 				"display_name":"Fresh Crab",
 				"description":"Not ready to be eaten"
 			},
+			"crab_cake":{
+				"display_name":"Crab Cake",
+				"description":"A patty of flaked or minced crab meat, typically served fried.",
+				"recipe":{
+					"description":"A patty of flaked or minced crab meat, typically served fried.",
+					"flavor":"Crunchy outside, soft inside"
+				}
+			},
+			"crab_omelette":{
+				"display_name":"Crab Omelette",
+				"description": "Delicious egg wrapped crab meat"
+			},
 			"crab_rotten":{
 				"display_name":"Rotten Crab",
 				"description":"Crabs spoils very fast..."
@@ -280,9 +292,11 @@
 				"unripe_description":"Not yet ripe for harvest"
 			}
 		},
-		"volcano":{
-			"display_name":"Volcano",
-			"description":"Hot! Good for crazy rituals."
+		"weapons":{
+			"crab_pincer":{
+				"display_name":"Crab Pincer",
+				"description":"Feel the pinch!"
+			}
 		}
 	},
 	"jobs":{
@@ -322,6 +336,11 @@
 					"recipe_name":"Fisher's Bucket",
 					"description":"Required to promote a hearthling into a Fisher.",
 					"flavor":"Multipurpose bucket"
+				},
+				"crab_pincer_recipe":{
+					"recipe_name":"Crab Pincer",
+					"description":"A weapon that you can wear in your hand!",
+					"flavor":"Clean it before putting your hand inside!"
 				},
 				"crab_trap_recipe":{
 					"recipe_name":"Crab Trap",

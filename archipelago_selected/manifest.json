@@ -15,8 +15,11 @@
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":	"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 
+		"archipelago_biome/jobs/cook/recipes/crab_cake_recipe.json":		"file(jobs/unlock_recipe.json)",
+		"archipelago_biome/jobs/cook/recipes/crab_omelette_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/cook/recipes/fruit_container_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/fisher/recipes/pearl_container_recipe.json":"file(jobs/unlock_recipe.json)",
+		"archipelago_biome/jobs/fisher/recipes/crab_pincer_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/fisher/recipes/crab_trap_recipe.json":		"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/potter/recipes/sand_castle_recipe.json":	"file(jobs/unlock_recipe.json)",
 
@@ -31,22 +34,22 @@
 		"stonehearth/scenarios/static/squirrel_nest/squirrel_nest.json":"file(scenarios/static/rabbit_nest/rabbit_nest.json)"
 	},
 	"overrides": {
-		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":  "file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
-		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
+		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":	"file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
+		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":	"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
 
-		"stonehearth/entities/trees/acacia_tree/sapling_acacia_tree/sapling_acacia_tree.qb": "file(entities/trees/sapling_acacia_tree.qb)",
-		"stonehearth/entities/trees/acacia_tree/small_acacia_tree/small_acacia_tree.qb": "file(entities/trees/small_acacia_tree.qb)",
-		"stonehearth/entities/trees/acacia_tree/large_acacia_tree/large_acacia_tree.qb": "file(entities/trees/large_acacia_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/sapling_oak_tree/sapling_oak_tree.qb": "file(entities/trees/sapling_oak_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree.qb": "file(entities/trees/small_oak_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree_2.qb": "file(entities/trees/small_oak_tree_2.qb)",
-		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree_3.qb": "file(entities/trees/small_oak_tree_3.qb)",
-		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree.qb": "file(entities/trees/medium_oak_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_2.qb": "file(entities/trees/medium_oak_tree_2.qb)",
-		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_3.qb": "file(entities/trees/medium_oak_tree_3.qb)",
-		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree.qb": "file(entities/trees/large_oak_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree_2.qb": "file(entities/trees/large_oak_tree_2.qb)",
-		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree_3.qb": "file(entities/trees/large_oak_tree_3.qb)",
+		"stonehearth/entities/trees/acacia_tree/sapling_acacia_tree/sapling_acacia_tree.qb":"file(entities/trees/sapling_acacia_tree.qb)",
+		"stonehearth/entities/trees/acacia_tree/small_acacia_tree/small_acacia_tree.qb":	"file(entities/trees/small_acacia_tree.qb)",
+		"stonehearth/entities/trees/acacia_tree/large_acacia_tree/large_acacia_tree.qb":	"file(entities/trees/large_acacia_tree.qb)",
+		"stonehearth/entities/trees/oak_tree/sapling_oak_tree/sapling_oak_tree.qb":			"file(entities/trees/sapling_oak_tree.qb)",
+		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree.qb":				"file(entities/trees/small_oak_tree.qb)",
+		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree_2.qb":			"file(entities/trees/small_oak_tree_2.qb)",
+		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree_3.qb":			"file(entities/trees/small_oak_tree_3.qb)",
+		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree.qb":			"file(entities/trees/medium_oak_tree.qb)",
+		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_2.qb":			"file(entities/trees/medium_oak_tree_2.qb)",
+		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_3.qb":			"file(entities/trees/medium_oak_tree_3.qb)",
+		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree.qb":				"file(entities/trees/large_oak_tree.qb)",
+		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree_2.qb":			"file(entities/trees/large_oak_tree_2.qb)",
+		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree_3.qb":			"file(entities/trees/large_oak_tree_3.qb)",
 
 		"stonehearth/ui/shell/loading_screen/images/bg.jpg": "file(ui/shell/loading_screen/images/bg.jpg)"
 	}

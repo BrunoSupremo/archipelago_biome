@@ -5,7 +5,6 @@
 	"description": "i18n(archipelago_biome:entities.decoration.fruit_container.recipe.description)",
 	"flavor": "i18n(archipelago_biome:entities.decoration.fruit_container.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/decoration/fruit_container/fruit_container.png", 
-	"level_requirement": 4,
 	"manual_unlock": true,
 	"ingredients": [
 		{

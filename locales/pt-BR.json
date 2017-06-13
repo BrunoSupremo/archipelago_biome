@@ -146,6 +146,18 @@
 				"display_name":"Caranguejo fresco",
 				"description":"Ainda não está pronto pra comer"
 			},
+			"crab_cake":{
+				"display_name":"Bolinho de Caranguejo",
+				"description":"Empada de carne de caranguejo em flocos ou picada, normalmente servido frito.",
+				"recipe":{
+					"description":"Empada de carne de caranguejo em flocos ou picada, normalmente servido frito.",
+					"flavor":"Crocante fora, macio dentro"
+				}
+			},
+			"crab_omelette":{
+				"display_name":"Omelete de Caranguejo",
+				"description": "Carne de caranguejo embalada com ovos deliciosos"
+			},
 			"crab_rotten":{
 				"display_name":"Caranguejo estragado",
 				"description":"Caranguejos estragam bem depressa..."
@@ -280,9 +292,11 @@
 				"unripe_description":"Ainda não está madura"
 			}
 		},
-		"volcano":{
-			"display_name":"Vulcão",
-			"description":"Quente! Bom pra rituais malucos."
+		"weapons":{
+			"crab_pincer":{
+				"display_name":"Garra de Caranguejo",
+				"description":"Sinta o beliscão!"
+			}
 		}
 	},
 	"jobs":{
@@ -318,6 +332,11 @@
 					"recipe_name":"Balde de Pescador",
 					"description":"Necessário para promover alguém em um pescador.",
 					"flavor":"Balde multiuso"
+				},
+				"crab_pincer_recipe":{
+					"recipe_name":"Garra de Caranguejo",
+					"description":"Uma arma que você pode vestir em sua mão!",
+					"flavor":"Limpe antes de enfiar sua mão dentro!"
 				},
 				"crab_trap_recipe":{
 					"recipe_name":"Armadilha de Caranguejos",

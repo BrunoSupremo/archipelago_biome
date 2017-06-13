@@ -9,6 +9,12 @@
 		},
 		"food": {
 			"recipes" : {
+				"crab_cake" : {
+					"recipe" : "file(crab_cake_recipe.json)"
+				},
+				"crab_omelette" : {
+					"recipe" : "file(crab_omelette_recipe.json)"
+				},
 				"fish_cooked" : {
 					"recipe" : "file(fish_cooked_recipe.json)"
 				},

@@ -6,6 +6,7 @@
 	"flavor": "i18n(stonehearth:jobs.cook.recipes.omelette_recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/food/crab_omelette/crab_omelette.png", 
 	"level_requirement": 2,
+	"manual_unlock": true,
 	"workshop": "stonehearth:cook:oven",
 	"ingredients": [
 		{

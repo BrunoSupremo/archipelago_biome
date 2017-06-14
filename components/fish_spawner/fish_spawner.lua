@@ -28,17 +28,12 @@ function ArchipelagoFishSpawner:activate()
 	end
 	
 	local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
-	rsc:pause_resource_timer()
+	if rsc then
+		rsc:pause_resource_timer()
+	end
 end
 
 function ArchipelagoFishSpawner:activate_the_spawner()
-	local ec = self._entity:get_component("entity_container")
-	if ec then
-		for id, child in ec:each_child() do
-			--if it has a child (trapped) it should do nothing, just wait
-			return
-		end
-	end
 	if not self.spawn_timer then
 		--first time, free fish to understand how the spawn will work, without waiting
 		self:try_to_spawn_fish()
@@ -46,7 +41,9 @@ function ArchipelagoFishSpawner:activate_the_spawner()
 		self.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoFishSpawner spawn_timer", self.interval, radiant.bind(self, 'try_to_spawn_fish'), self.interval)
 
 		local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
-		rsc:pause_resource_timer()
+		if rsc then
+			rsc:pause_resource_timer()
+		end
 	end
 end
 
@@ -84,6 +81,13 @@ function ArchipelagoFishSpawner:spawner_placed()
 end
 
 function ArchipelagoFishSpawner:try_to_spawn_fish()
+	local ec = self._entity:get_component("entity_container")
+	if ec then
+		for id, child in ec:each_child() do
+			--if it has a child (trapped) it should do nothing, just wait until harvested
+			return
+		end
+	end
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	if not location then
 		return
@@ -130,6 +134,13 @@ function ArchipelagoFishSpawner:spawn_fish(location)
 end
 
 function ArchipelagoFishSpawner:approach_task(fish,location)
+	local task = fish:get_component('stonehearth:ai')
+	:get_task_group('stonehearth:unit_control')
+	:get_task_with_activity_name("stonehearth:goto_closest_standable_location")
+	if task then
+		return --someone is already capturing it
+	end
+
 	self._approach_task = fish:get_component('stonehearth:ai')
 	:get_task_group('stonehearth:unit_control')
 	:create_task('stonehearth:goto_closest_standable_location', {
@@ -146,7 +157,9 @@ function ArchipelagoFishSpawner:approach_task(fish,location)
 			radiant.entities.add_child(self._entity, fish, Point3.zero)
 			radiant.entities.add_buff(fish, 'stonehearth:buffs:snared')
 			local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
-			rsc:resume_resource_timer()
+			if rsc then
+				rsc:resume_resource_timer()
+			end
 		end
 		)
 	:start()

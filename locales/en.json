@@ -293,6 +293,10 @@
 			}
 		},
 		"weapons":{
+			"slap_fish":{
+				"display_name":"Slap Fish",
+				"description":"Ouch!"
+			},
 			"crab_pincer":{
 				"display_name":"Crab Pincer",
 				"description":"Feel the pinch!"
@@ -366,6 +370,11 @@
 					"recipe_name":"Sashimi",
 					"description":"Fresh raw fish sliced into thin pieces",
 					"flavor":"Not very hard to prepare"
+				},
+				"slap_fish":{
+					"recipe_name":"Slap Fish",
+					"description":"Ouch!",
+					"flavor":"It's more disgusting than dangerous"
 				}
 			}
 		}

@@ -37,6 +37,9 @@
 			"ordinal": 4,
 			"name": "i18n(stonehearth:jobs.blacksmith.recipes.weapons_name)",
 			"recipes": {
+				"slap_fish": {
+					"recipe": "file(slap_fish_recipe.json)"
+				},
 				"crab_pincer": {
 					"recipe": "file(crab_pincer_recipe.json)"
 				}

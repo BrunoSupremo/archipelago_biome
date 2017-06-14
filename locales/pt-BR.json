@@ -293,6 +293,10 @@
 			}
 		},
 		"weapons":{
+			"slap_fish":{
+				"display_name":"Peixe Porrete",
+				"description":"Ai!"
+			},
 			"crab_pincer":{
 				"display_name":"Garra de Caranguejo",
 				"description":"Sinta o beliscão!"
@@ -362,6 +366,11 @@
 					"recipe_name":"Sashimi",
 					"description":"Peixe cru fresco cortado em pedaços finos",
 					"flavor":"Não é muito difícil de preparar"
+				},
+				"slap_fish":{
+					"recipe_name":"Peixe Porrete",
+					"description":"Ai!",
+					"flavor":"É mais nojento do que perigoso"
 				}
 			}
 		}

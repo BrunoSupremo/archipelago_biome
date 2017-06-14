@@ -100,7 +100,8 @@
 		"trees:papaya":			"file(entities/trees/papaya)",
 		"trees:smalea:small":	"file(entities/trees/smalea)",
 
-		"weapons:crab_pincer":"file(entities/weapons/crab_pincer)"
+		"weapons:crab_pincer":"file(entities/weapons/crab_pincer)",
+		"weapons:slap_fish":"file(entities/weapons/slap_fish)"
 	},
 	"mixintos": {
 		"stonehearth:biome:index": "file(data/biome/index.json)",

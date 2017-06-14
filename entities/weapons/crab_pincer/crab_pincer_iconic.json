@@ -11,6 +11,16 @@
 		}
 	},
 	"entity_data": {
+		"stonehearth:portrait": {
+			"portrait_types": {
+				"icon": {
+					"center": { "x": 0, "y": 0.3, "z": 0.8 },
+					"rotation": { "x": 0, "y": 10, "z": 135 },
+					"extra_distance": 0.5,
+					"fov": 30
+				}
+			}
+		},
 		"stonehearth:catalog": {
 			"icon": "file(crab_pincer.png)",
 			"is_item": true,

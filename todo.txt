@@ -19,12 +19,13 @@ stonemason:
 
 
 fisher
-workbench, mesa com facão em cima, rede, vara, balde
-peixe e carangueijo pescados são limpos na workbench antes de armazenar (nah)
-oyster farm marker, coloca e ele marca todas as oysters em volta pra harvest (perk em level alto pra automatizar?)
-pescar camarao?
-colecionar items raros
-seaweed
+	workbench, mesa com facão em cima, rede, vara, balde
+	peixe e carangueijo pescados são limpos na workbench antes de armazenar (nah)
+	oyster farm marker, coloca e ele marca todas as oysters em volta pra harvest (perk em level alto pra automatizar?)
+	pescar camarao?
+	colecionar items raros
+	seaweed
+	fish/crab farm, big netted area
 
 
 ossos de peixes/baleias
@@ -45,9 +46,6 @@ canhões piratas
 
 
 bloquear animais do shepherd, liberar comprando/trocando
-
-
-exportar fruit_container, perolas talvez
 
 
 sistema de comercio maritmo

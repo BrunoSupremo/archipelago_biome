@@ -42,6 +42,7 @@
 		"effects:harvest_crab_overlay":		"file(data/effects/harvest_crab_overlay)",
 		"effects:harvest_fish_overlay":		"file(data/effects/harvest_fish_overlay)",
 		"effects:harvest_papaya_overlay":	"file(data/effects/harvest_papaya_overlay)",
+		"effects:harvest_pearl_overlay":	"file(data/effects/harvest_pearl_overlay)",
 		"effects:no_water_overlay":			"file(data/effects/no_water_overlay)",
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
 

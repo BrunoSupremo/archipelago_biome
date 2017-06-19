@@ -37,7 +37,7 @@
 			"is_item": true,
 			"category": "food",
 			"material_tags": "food",
-			"subject_override": "stonehearth:food:fish_stew"
+			"subject_override": "archipelago_biome:food:papaya_basket"
 		}
 	}
 }

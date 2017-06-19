@@ -28,7 +28,7 @@
 			"display_name": "i18n(stonehearth:entities.food.fish_stew_serving.display_name)",
 			"description": "",
 			"material_tags": "food fish",
-			"subject_override": "stonehearth:food:fish_stew"
+			"subject_override": "archipelago_biome:food:fish_stew"
 		}
 	}
 }

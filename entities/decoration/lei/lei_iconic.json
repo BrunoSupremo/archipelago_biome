@@ -16,7 +16,8 @@
 	"entity_data": {
 		"stonehearth:catalog": {
 			"is_item": true,
-			"category": "decoration"
+			"category": "decoration",
+			"subject_override": "archipelago_biome:decoration:lei"
 		}
 	}
 }

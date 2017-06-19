@@ -367,7 +367,7 @@
 					"description":"Peixe cru fresco cortado em pedaços finos",
 					"flavor":"Não é muito difícil de preparar"
 				},
-				"slap_fish":{
+				"slap_fish_recipe":{
 					"recipe_name":"Peixe Porrete",
 					"description":"Ai!",
 					"flavor":"É mais nojento do que perigoso"

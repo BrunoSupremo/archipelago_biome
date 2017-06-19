@@ -6,12 +6,14 @@ local rng = _radiant.math.get_default_rng()
 
 function ArchipelagoFishSpawner:initialize()
 	--this class was super simple before I started adapting it to also control crab traps...
+	self._sv.spawn_timer = nil
+	self._sv.fish = nil
 end
 
 function ArchipelagoFishSpawner:activate()
 	local json = radiant.entities.get_json(self)
 	self.animal = json.spawn.animal or "archipelago_biome:critters:fish"
-	self.max = json.spawn.max or 10
+	self.max = json.spawn.max or 100
 	self.start_inside_spawner = json.spawn.start_inside_spawner or false
 	self.interval = json.interval or "8h"
 	self.requires_water = json.requires_water or false
@@ -34,11 +36,12 @@ function ArchipelagoFishSpawner:activate()
 end
 
 function ArchipelagoFishSpawner:activate_the_spawner()
-	if not self.spawn_timer then
+	if not self._sv.spawn_timer then
 		--first time, free fish to understand how the spawn will work, without waiting
 		self:try_to_spawn_fish()
 		--later fish appear only within the timer
-		self.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoFishSpawner spawn_timer", self.interval, radiant.bind(self, 'try_to_spawn_fish'), self.interval)
+		self._sv.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoFishSpawner spawn_timer", self.interval, radiant.bind(self, 'try_to_spawn_fish'), self.interval)
+		self.__saved_variables:mark_changed()
 
 		local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
 		if rsc then
@@ -50,6 +53,16 @@ end
 function ArchipelagoFishSpawner:spawner_removed()
 	self:destroy_spawn_timer()
 	self:destroy_effect()
+	if self._sv.fish then
+		local task = self._sv.fish:get_component('stonehearth:ai')
+		:get_task_group('stonehearth:unit_control')
+		:get_task_with_activity_name("stonehearth:goto_closest_standable_location")
+		if task then
+			task:destroy()
+		end
+		self._sv.fish = nil
+		self.__saved_variables:mark_changed()
+	end
 end
 
 function ArchipelagoFishSpawner:spawner_placed()
@@ -84,7 +97,7 @@ function ArchipelagoFishSpawner:try_to_spawn_fish()
 	local ec = self._entity:get_component("entity_container")
 	if ec then
 		for id, child in ec:each_child() do
-			--if it has a child (trapped) it should do nothing, just wait until harvested
+			--if it has a child (trapped) it should do nothing, just wait until harvested.
 			return
 		end
 	end
@@ -125,7 +138,7 @@ function ArchipelagoFishSpawner:spawn_fish(location)
 	if self.start_inside_spawner then
 		radiant.terrain.place_entity_at_exact_location(fish, location)
 	else
-		local far_location = radiant.terrain.find_placement_point(location, self.effect_radius, self.effect_radius*2, fish)
+		local far_location = radiant.terrain.find_placement_point(location, self.effect_radius, self.effect_radius, fish)
 		radiant.terrain.place_entity_at_exact_location(fish, far_location)
 		self:approach_task(fish,location)
 	end
@@ -134,6 +147,9 @@ function ArchipelagoFishSpawner:spawn_fish(location)
 end
 
 function ArchipelagoFishSpawner:approach_task(fish,location)
+	self._sv.fish = fish
+	self.__saved_variables:mark_changed()
+
 	local task = fish:get_component('stonehearth:ai')
 	:get_task_group('stonehearth:unit_control')
 	:get_task_with_activity_name("stonehearth:goto_closest_standable_location")
@@ -160,6 +176,8 @@ function ArchipelagoFishSpawner:approach_task(fish,location)
 			if rsc then
 				rsc:resume_resource_timer()
 			end
+			self._sv.fish = nil
+			self.__saved_variables:mark_changed()
 		end
 		)
 	:start()
@@ -173,10 +191,11 @@ function ArchipelagoFishSpawner:destroy_effect()
 end
 
 function ArchipelagoFishSpawner:destroy_spawn_timer()
-	if self.spawn_timer then
-		self.spawn_timer:destroy()
-		self.spawn_timer = nil
+	if self._sv.spawn_timer then
+		self._sv.spawn_timer:destroy()
+		self._sv.spawn_timer = nil
 	end
+	self.__saved_variables:mark_changed()
 end
 
 function ArchipelagoFishSpawner:destroy()

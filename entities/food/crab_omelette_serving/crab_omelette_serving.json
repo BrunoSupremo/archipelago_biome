@@ -28,7 +28,7 @@
 			"display_name": "i18n(stonehearth:entities.food.omelette.omelette_serving.display_name)",
 			"description": "i18n(stonehearth:entities.food.omelette.omelette_serving.description)",
 			"material_tags": "food omelette_serving meat",
-			"subject_override": "archipelago:food:crab_omelette"
+			"subject_override": "archipelago_biome:food:crab_omelette"
 		}
 	}
 }

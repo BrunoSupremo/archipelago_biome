@@ -371,7 +371,7 @@
 					"description":"Fresh raw fish sliced into thin pieces",
 					"flavor":"Not very hard to prepare"
 				},
-				"slap_fish":{
+				"slap_fish_recipe":{
 					"recipe_name":"Slap Fish",
 					"description":"Ouch!",
 					"flavor":"It's more disgusting than dangerous"

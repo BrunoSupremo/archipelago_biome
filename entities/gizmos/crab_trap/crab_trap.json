@@ -10,7 +10,7 @@
 			},
 			"interval":"8h",
 			"requires_water":false,
-			"effect_radius":8
+			"effect_radius":15
 		},
 		"stonehearth:renewable_resource_node": {
 			"category": "fisher",

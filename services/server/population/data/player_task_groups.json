@@ -13,14 +13,14 @@
 									"args": {
 										"category": "fisher"
 									},
-									"priority": 4
+									"priority": 11
 								},
 								"stonehearth:harvest_renewable_resource": {
 									"type": "task",
 									"args": {
 										"category": "fisher"
 									},
-									"priority": 4
+									"priority": 11
 								}
 							}
 						}

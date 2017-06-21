@@ -152,8 +152,7 @@
 	"ui":{
 		"less":[
 			"file(jobs/fisher/skin/workshop.less)",
-			"file(ui/shell/select_settlement/select_settlement.less)",
-			"file(ui/shell/title/title.less)"
+			"file(ui/shell/select_settlement/select_settlement.less)"
 		]
 	}
 }

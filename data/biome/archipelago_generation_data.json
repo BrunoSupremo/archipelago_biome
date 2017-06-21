@@ -148,13 +148,6 @@
 	},
 	"landscape": {
 		"placement_table": {
-			"archipelago_biome:volcano": {
-				"placement_type": "single",
-				"parameters": {
-					"ground_radius": 16,
-					"exclusion_radius": 16
-				}
-			},
 			"archipelago_biome:trees:papaya": {
 				"placement_type": "single",
 				"parameters": {
@@ -505,6 +498,37 @@
 			}
 		},
 		"water": {
+			"spawn_objects":{
+				"water_1":{
+					"none":28,
+					"archipelago_biome:beach:starfish":2,
+					"archipelago_biome:beach:broken_boat":1,
+					"stonehearth:boulder:small":1,
+					"stonehearth:boulder:medium_1":1,
+					"stonehearth:boulder:medium_2":1,
+					"stonehearth:boulder:medium_3":1,
+					"stonehearth:boulder:large_1":1,
+					"stonehearth:boulder:large_2":1
+				},
+				"water_2":{
+					"none":30,
+					"archipelago_biome:beach:starfish":0.5,
+					"stonehearth:boulder:medium_1":1,
+					"stonehearth:boulder:medium_2":1,
+					"stonehearth:boulder:medium_3":1,
+					"stonehearth:boulder:large_1":1,
+					"stonehearth:boulder:large_2":1
+				},
+				"water_3":{
+					"none":40,
+					"archipelago_biome:beach:broken_boat":0.1,
+					"archipelago_biome:beach:starfish":0.5,
+					"stonehearth:boulder:medium_1":1,
+					"stonehearth:boulder:medium_2":1,
+					"stonehearth:boulder:medium_3":1,
+					"stonehearth:boulder:large_1":1
+				}
+			},
 			"depth": {
 				"shallow": 1,
 				"deep": 2,

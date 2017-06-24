@@ -10,6 +10,7 @@
 		"beach:bottle":		"file(entities/beach/bottle)",
 		"beach:broken_boat":"file(entities/beach/broken_boat)",
 		"beach:oyster":		"file(entities/beach/oyster)",
+		"beach:seaweed":	"file(entities/beach/seaweed)",
 		"beach:starfish":	"file(entities/beach/starfish)",
 
 		"biome:archipelago": "file(data/biome/archipelago.json)",
@@ -146,8 +147,9 @@
 	"components": {
 		"explosive":		"file(components/explosive/explosive.lua)",
 		"fake_container":	"file(components/fake_container/fake_container.lua)",
+		"crab_spawner":		"file(components/fish_spawner/crab_spawner.lua)",
 		"fish_spawner":		"file(components/fish_spawner/fish_spawner.lua)",
-		"float":			"file(components/float/float.lua)"
+		"need_water":		"file(components/need_water/need_water.lua)"
 	},
 	"ui":{
 		"less":[

@@ -2,8 +2,11 @@
 	"type": "entity",
 	"mixins": "file(raft_ghost.json)",
 	"components": {
-		"archipelago_biome:float":{
-			"add_height": -0.475
+		"archipelago_biome:need_water":{
+			"need_water_icon":false,
+			"float":{
+				"add_height": -0.475
+			}
 		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(raft_iconic.json)",

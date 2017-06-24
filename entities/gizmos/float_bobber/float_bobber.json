@@ -2,22 +2,19 @@
 	"type": "entity",
 	"mixins": "file(float_bobber_ghost.json)",
 	"components": {
-		"archipelago_biome:fish_spawner": {
-			"spawn":{
-				"animal":"archipelago_biome:critters:fish",
-				"max":100,
-				"start_inside_spawner":true
-			},
-			"interval":"8h",
-			"requires_water":true,
-			"effect_radius":4
-		},
-		"archipelago_biome:float":{
-			"add_height": -0.25,
-			"add_animation":{
-				"at_ground":"idle",
-				"at_water":"buoy"
+		"archipelago_biome:need_water": {
+			"need_water_icon":true,
+			"float":{
+				"add_height": -0.25,
+				"add_animation":{
+					"at_ground":"idle",
+					"at_water":"buoy"
+				}
 			}
+		},
+		"archipelago_biome:fish_spawner": {
+			"interval":"8h",
+			"radius":4
 		},
 		"render_info": {
 			"animation_table": "file(/data/rigs/entities/gizmos/float_bobber)"

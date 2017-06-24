@@ -201,11 +201,19 @@
 					"exclusion_radius": 4
 				}
 			},
+			"archipelago_biome:beach:seaweed": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 5,
+					"item_density": 0.2,
+					"exclusion_radius": 0
+				}
+			},
 			"archipelago_biome:beach:starfish": {
 				"placement_type": "dense",
 				"parameters": {
 					"grid_multiple": 4,
-					"item_density": 0.2,
+					"item_density": 0.15,
 					"exclusion_radius": 1
 				}
 			},
@@ -416,8 +424,8 @@
 						"1": {
 							"stonehearth:plants:frostsnap": 3,
 							"stonehearth:plants:brightbell": 3,
-							"stonehearth:plants:silkweed": 3,
-							"archipelago_biome:trees:papaya": 2
+							"stonehearth:plants:silkweed": 2,
+							"archipelago_biome:trees:papaya": 3
 						}
 					},
 					"mountains": {
@@ -500,21 +508,24 @@
 		"water": {
 			"spawn_objects":{
 				"water_1":{
-					"none":28,
-					"archipelago_biome:beach:starfish":2,
+					"none":30,
+					"archipelago_biome:beach:seaweed":0.1,
+					"archipelago_biome:beach:oyster":0.2,
+					"archipelago_biome:beach:starfish":4,
 					"archipelago_biome:beach:broken_boat":1,
-					"stonehearth:boulder:small":1,
+					"stonehearth:boulder:small":3,
 					"stonehearth:boulder:medium_1":1,
-					"stonehearth:boulder:medium_2":1,
+					"stonehearth:boulder:medium_2":2,
 					"stonehearth:boulder:medium_3":1,
 					"stonehearth:boulder:large_1":1,
 					"stonehearth:boulder:large_2":1
 				},
 				"water_2":{
-					"none":30,
-					"archipelago_biome:beach:starfish":0.5,
+					"none":20,
+					"archipelago_biome:beach:seaweed":7,
+					"archipelago_biome:beach:starfish":0.4,
 					"stonehearth:boulder:medium_1":1,
-					"stonehearth:boulder:medium_2":1,
+					"stonehearth:boulder:medium_2":0.5,
 					"stonehearth:boulder:medium_3":1,
 					"stonehearth:boulder:large_1":1,
 					"stonehearth:boulder:large_2":1
@@ -522,11 +533,11 @@
 				"water_3":{
 					"none":40,
 					"archipelago_biome:beach:broken_boat":0.1,
-					"archipelago_biome:beach:starfish":0.5,
-					"stonehearth:boulder:medium_1":1,
-					"stonehearth:boulder:medium_2":1,
-					"stonehearth:boulder:medium_3":1,
-					"stonehearth:boulder:large_1":1
+					"archipelago_biome:beach:starfish":0.3,
+					"stonehearth:boulder:medium_1":0.5,
+					"stonehearth:boulder:medium_2":0.1,
+					"stonehearth:boulder:medium_3":0.5,
+					"stonehearth:boulder:large_1":0.5
 				}
 			},
 			"depth": {

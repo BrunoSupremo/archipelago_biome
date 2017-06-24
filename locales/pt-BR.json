@@ -14,6 +14,9 @@
 				"description":"Lar de uma pérola.",
 				"unripe_description":"Uma concha vazia."
 			},
+			"seaweed":{
+				"display_name":"Algas"
+			},
 			"starfish":{
 				"display_name":"Estrela do Mar",
 				"description":"Não são estrelas, nem peixes."

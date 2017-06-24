@@ -35,11 +35,12 @@ end
 
 function FisherClass:_on_renewable_resource_gathered(args)
 	if args.harvested_target then
-		self._job_component:add_exp(10)
+		self._job_component:add_exp(5) --too easy to level up getting plants, then few xp
 	end
 
 	if args.harvested_target:get_uri() == "archipelago_biome:gizmos:crab_trap" then
 		self:_got_a_crab(args.harvested_target)
+		self._job_component:add_exp(5) --extra for crabs, those takes a lot of time
 	end
 end
 

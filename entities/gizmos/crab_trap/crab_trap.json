@@ -2,15 +2,9 @@
 	"type": "entity",
 	"mixins": "file(crab_trap_ghost.json)",
 	"components": {
-		"archipelago_biome:fish_spawner": {
-			"spawn":{
-				"animal":"archipelago_biome:critters:crab",
-				"max":1,
-				"start_inside_spawner":false
-			},
+		"archipelago_biome:crab_spawner": {
 			"interval":"8h",
-			"requires_water":false,
-			"effect_radius":15
+			"radius":15
 		},
 		"stonehearth:renewable_resource_node": {
 			"category": "fisher",

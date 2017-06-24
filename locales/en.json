@@ -14,6 +14,9 @@
 				"description":"Pearl's house.",
 				"unripe_description":"An empty shell."
 			},
+			"seaweed":{
+				"display_name":"Seaweed"
+			},
 			"starfish":{
 				"display_name":"Starfish",
 				"description":"A.k.a. Sea Stars, starfish is not really a fish."

@@ -6,6 +6,7 @@ App.StonehearthSelectSettlementView = App.View.extend({
 
    // Game options (such as peaceful mode, etc.)
    options: {},
+   analytics: {},
 
    init: function() {
       this._super();
@@ -160,7 +161,7 @@ App.StonehearthSelectSettlementView = App.View.extend({
       self.$("#regenerateButton").addClass('disabled');
       self.$('#worldSeedInput').attr('disabled', 'disabled');
 
-      radiant.call_obj('stonehearth.game_creation', 'new_game_command', 12, 8, seed, self.options)
+      radiant.call_obj('stonehearth.game_creation', 'new_game_command', 12, 8, seed, self.options, self.analytics)
          .done(function(e) {
             self._map_info = e.map_info;
             fn(e);

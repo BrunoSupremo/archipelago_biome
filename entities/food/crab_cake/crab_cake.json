@@ -1,5 +1,5 @@
 {
-	"mixins": "stonehearth:mixins:food_decay",
+	"mixins": "stonehearth:mixins:item_properties",
 	"type": "entity",
 	"components": {
 		"model_variants": {
@@ -42,7 +42,7 @@
 			"icon": "file(crab_cake.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": "food prepared_food omelette stockpile_prepared_food meat"
+			"material_tags": "food prepared_food crab stockpile_prepared_food meat"
 		}
 	}
 }

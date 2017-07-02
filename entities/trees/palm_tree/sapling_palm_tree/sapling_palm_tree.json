@@ -1,55 +1,74 @@
 {
-   "mixins": [
-      "stonehearth:mixins:tree",
-      "file(sapling_palm_tree_ghost.json)"
-   ],
-   "type": "entity",
-   "components": {
-      "stonehearth:entity_forms": {
-         "iconic_form": "file(sapling_palm_tree_iconic.json)",
-         "ghost_form": "file(sapling_palm_tree_ghost.json)",
-         "placeable_on_ground": true,
-         "hide_placement_ui": true
-      },
-      "stonehearth:evolve": {},
-      "stonehearth:resource_node": {
-         "resource": "stonehearth:resources:wood:oak_log",
-         "durability": 2
-      },
-      "destination": {
-         "region": [
-            {
-               "min": { "x": -1, "y": 0, "z": 0 },
-               "max": { "x": 0, "y": 1, "z": 1 }
-            }
-         ]
-      },
-      "region_collision_shape": {
-         "region_from_model": {
-            "model": "file(sapling_palm_tree.qb)"
-         }
-      }
-   },
-   "entity_data": {
-      "stonehearth:evolve_data": {
-         "next_stage": "archipelago_biome:trees:palm:small",
-         "evolve_time": "1d"
-      },
-      "stonehearth:net_worth": {
-         "value_in_gold": 1,
-         "rarity": "common",
-         "shop_info": {
-            "buyable": false,
-            "sellable": true,
-            "shopkeeper_level": 1,
-            "shopkeeper_type": "caravan"
-         }
-      },
-      "stonehearth:catalog": {
-         "display_name": "i18n(archipelago_biome:entities.trees.palm_tree.sapling_palm_tree.display_name)",
-         "description": "i18n(archipelago_biome:entities.trees.common_palm.description)",
-         "category": "plants",
-         "material_tags": "plant tree stockpile_plant"
-      }
-   }
+	"mixins": [
+		"stonehearth:mixins:tree",
+		"file(sapling_palm_tree_ghost.json)"
+	],
+	"type": "entity",
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(sapling_palm_tree_iconic.json)",
+			"ghost_form": "file(sapling_palm_tree_ghost.json)",
+			"placeable_on_ground": true,
+			"hide_placement_ui": true
+		},
+		"stonehearth:evolve": {},
+		"stonehearth:resource_node": {
+			"resource": "stonehearth:resources:wood:oak_log",
+			"durability": 2
+		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": -1, "y": 0, "z": 0 },
+					"max": {"x": 0, "y": 1, "z": 1 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": -1, "y": 0, "z": 0 },
+					"max": {"x": 0, "y": 6, "z": 1 }
+				},
+				{
+					"min": {"x": -2, "y": 6, "z": -4 },
+					"max": {"x": 1, "y": 8, "z": -1 }
+				},
+				{
+					"min": {"x": -2, "y": 8, "z": -1 },
+					"max": {"x": 1, "y": 9, "z": 2 }
+				},
+				{
+					"min": {"x": -2, "y": 6, "z": 2 },
+					"max": {"x": 1, "y": 8, "z": 5 }
+				},
+				{
+					"min": {"x": -5, "y": 6, "z": -1 },
+					"max": {"x": 4, "y": 8, "z": 2 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:evolve_data": {
+			"next_stage": "archipelago_biome:trees:palm:small",
+			"evolve_time": "1d"
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 1,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.trees.palm_tree.sapling_palm_tree.display_name)",
+			"description": "i18n(archipelago_biome:entities.trees.common_palm.description)",
+			"category": "plants",
+			"material_tags": "plant tree stockpile_plant"
+		}
+	}
 }

@@ -2,7 +2,6 @@ tiki warrior
 piratas
 king crab
 seagull
-palm tree monster
 octopus / rocktopus
 mosquitos/doenças usar o herbalist pra curar
 bananas
@@ -11,20 +10,14 @@ jellyfish
 
 stonemason:
 	cria um monumento/torre de pedra com perola negra
-		talvez algo relacionado com batalhas, como uma torre de ataque (ai seria melhor o engineer)
-		talvez com cura, ela teria hp e curaria os outros ao custo de seu hp, podendo ser curada mais tarde
 		talvez algo com o cocoling spawner
-		talvez libere templates
-	runa com perola negra (esqueci... talvez um item equipavel)
+			um marcador para os cocolings, spawnam no spawner e vão até a torre
 
 
 fisher
 	workbench, mesa com facão em cima, rede, vara, balde
-	peixe e carangueijo pescados são limpos na workbench antes de armazenar (nah)
-	oyster farm marker, coloca e ele marca todas as oysters em volta pra harvest (perk em level alto pra automatizar?)
 	pescar camarao?
 	colecionar items raros
-	seaweed
 	fish/crab farm, big netted area
 
 

@@ -38,13 +38,13 @@
 		"close_sound": "stonehearth:sounds:ui:carpenter_menu:menu_closed"
 	},
 	"xp_rewards": {
-		"craft_level_0": 15,
-		"craft_level_1": 16,
-		"craft_level_2": 17,
-		"craft_level_3": 18,
-		"craft_level_4": 19,
-		"craft_level_5": 20,
-		"craft_level_6": 21
+		"craft_level_0": 5,
+		"craft_level_1": 7,
+		"craft_level_2": 9,
+		"craft_level_3": 11,
+		"craft_level_4": 13,
+		"craft_level_5": 15,
+		"craft_level_6": 17
 	},
 	"max_level": 2,
 	"level_data": {

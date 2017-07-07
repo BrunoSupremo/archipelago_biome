@@ -35,24 +35,32 @@ end
 
 function FisherClass:_on_renewable_resource_gathered(args)
 	if args.harvested_target then
-		self._job_component:add_exp(5) --too easy to level up getting plants, then few xp
+		self._job_component:add_exp(5) --base exp for any renewable harvest
+	end
+
+	if args.harvested_target:get_uri() == "archipelago_biome:beach:oyster" then
+		self._job_component:add_exp(5) --extra for oysters
+
+		if args.spawned_item:get_uri() == "archipelago_biome:resources:pearl:black" then
+			self._job_component:add_exp(5) --another extra for black pearls
+		end
 	end
 
 	if args.harvested_target:get_uri() == "archipelago_biome:gizmos:crab_trap" then
 		self:_got_a_crab(args.harvested_target)
-		self._job_component:add_exp(5) --extra for crabs, those takes a lot of time
+		self._job_component:add_exp(5) --extra for crabs traps
 	end
 end
 
-function FisherClass:_got_a_crab(trap)
-	local rsc = trap:get_component('stonehearth:renewable_resource_node')
+function FisherClass:_got_a_crab(crab_trap)
+	local rsc = crab_trap:get_component('stonehearth:renewable_resource_node')
 	rsc:pause_resource_timer()
 
-	local ec = trap:get_component("entity_container")
+	local ec = crab_trap:get_component("entity_container")
 	if ec then
 		for id, child in ec:each_child() do
 			radiant.entities.kill_entity(child)
-			radiant.effects.run_effect(trap, "stonehearth:effects:abilities:snare_trap")
+			radiant.effects.run_effect(crab_trap, "stonehearth:effects:abilities:snare_trap")
 
 			return
 		end
@@ -60,7 +68,7 @@ function FisherClass:_got_a_crab(trap)
 end
 
 function FisherClass:_on_resource_gathered(args)
-	if args.harvested_target then
+	if args.harvested_target then --fish is the only possibility for now
 		self._job_component:add_exp(10)
 	end
 end

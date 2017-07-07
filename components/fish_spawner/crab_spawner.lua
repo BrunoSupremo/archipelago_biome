@@ -127,6 +127,7 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 			radiant.entities.add_child(self._entity, crab, Point3.zero)
 			radiant.entities.add_buff(crab, 'stonehearth:buffs:snared')
 
+			radiant.events.trigger(self._entity, 'archipelago_biome:crab_trapped')
 			self:resource_timer(true)
 
 			self._sv.crab = nil

@@ -3,6 +3,7 @@ local Cube3 = _radiant.csg.Cube3
 local Point3 = _radiant.csg.Point3
 local rng = _radiant.math.get_default_rng()
 local CRAB = "archipelago_biome:critters:crab"
+local FisherClass = require 'jobs.fisher.fisher'
 -- local log = radiant.log.create_logger('crab_spawner')
 
 function ArchipelagoCrabSpawner:initialize()
@@ -24,7 +25,7 @@ function ArchipelagoCrabSpawner:activate()
 		self._on_added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', self, self.activate_the_spawner)
 	end
 	
-	self:resource_timer(false)
+	self:ready_to_harvest(false)
 end
 
 function ArchipelagoCrabSpawner:activate_the_spawner()
@@ -38,7 +39,7 @@ function ArchipelagoCrabSpawner:activate_the_spawner()
 			self._sv.spawn_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoCrabSpawner spawn_timer", self.interval, radiant.bind(self, 'try_to_spawn_crab'), self.interval)
 			self.__saved_variables:mark_changed()
 
-			self:resource_timer(false)
+			self:ready_to_harvest(false)
 		end
 		self.stupid_delay:destroy()
 		self.stupid_delay = nil
@@ -127,8 +128,8 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 			radiant.entities.add_child(self._entity, crab, Point3.zero)
 			radiant.entities.add_buff(crab, 'stonehearth:buffs:snared')
 
-			radiant.events.trigger(self._entity, 'archipelago_biome:crab_trapped')
-			self:resource_timer(true)
+			self:ready_to_harvest(true)
+			FisherClass.warn_fishers_to_auto_harvest(self._entity)
 
 			self._sv.crab = nil
 			self.__saved_variables:mark_changed()
@@ -137,7 +138,7 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 	:start()
 end
 
-function ArchipelagoCrabSpawner:resource_timer(resume)
+function ArchipelagoCrabSpawner:ready_to_harvest(resume)
 	local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
 	if rsc then
 		if resume then

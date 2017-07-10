@@ -319,6 +319,14 @@
 				"level_1":{
 					"perk_name":"Caranguejos",
 					"perk_description":"O pescador agora pode criar e colocar armadilhas para capturar caranguejos."
+				},
+				"level_5":{
+					"perk_name":"Pescaria Automática",
+					"perk_description":"O pescador irá marcar os peixes automaticamente para serem pegos."
+				},
+				"level_6":{
+					"perk_name":"Caranguejos Automáticos",
+					"perk_description":"O pescador irá marcar as armadilhas para coleta automaticamente quando capturarem um caranguejo."
 				}
 			},
 			"fisher_bucket":{

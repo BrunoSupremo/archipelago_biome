@@ -46,7 +46,7 @@
 		"craft_level_5": 15,
 		"craft_level_6": 17
 	},
-	"max_level": 2,
+	"max_level": 6,
 	"level_data": {
 		"0": {
 			"perks": [
@@ -78,6 +78,28 @@
 					"icon": "/stonehearth/jobs/unknown/images/icon.png",
 					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_u.perk_description)",
 					"level": 2
+				}
+			]
+		},
+		"5": {
+			"perks": [
+				{
+					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_5.perk_name)",
+					"id": "crafter_recipe_unlock_5",
+					"icon": "file(images/level_5.png)",
+					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_5.perk_description)",
+					"level": 5
+				}
+			]
+		},
+		"6": {
+			"perks": [
+				{
+					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_6.perk_name)",
+					"id": "crafter_recipe_unlock_6",
+					"icon": "file(images/level_6.png)",
+					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_6.perk_description)",
+					"level": 6
 				}
 			]
 		}

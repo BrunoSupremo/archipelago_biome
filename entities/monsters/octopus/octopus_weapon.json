@@ -1,0 +1,49 @@
+{
+	"type": "entity",
+	"components": {
+		"stonehearth:equipment_piece": {
+			"slot": "mainhand",
+			"render_type": "none"
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:weapon_data": {
+			"base_damage": 10,
+			"reach": 1,
+			"base_ranged_damage": 10,
+			"range": 30,
+			"projectile_speed": 15,
+			"projectile_uri": "archipelago_biome:weapons:bubble_shot",
+			"projectile_start_offset": { "x": 0, "y": 1, "z": -0.5 },
+			"projectile_end_offset": { "x": 0, "y": 1, "z": 0 }
+		},
+		"stonehearth:combat:ranged_attacks": [
+			{
+				"name": "combat_ranged_attack",
+				"effect": "combat_ranged_attack",
+				"active_frame": 45,
+				"cooldown": 10000,
+				"priority": 0,
+				"inflictable_debuffs": {
+					"slow_effect": {
+						"uri": "stonehearth:buffs:archer:slowing_arrow",
+						"chance": 1
+					}
+				}
+			}
+		],
+		"stonehearth:combat:melee_attacks": [
+			{
+				"name": "combat_melee_attack",
+				"effect": "combat_melee_attack",
+				"active_frame": 32,
+				"cooldown": 0,
+				"priority": 0,
+				"aoe_effect": {
+					"damage_multiplier": 0.8,
+					"aoe_target_limit": 7
+				}
+			}
+		]
+	}
+}

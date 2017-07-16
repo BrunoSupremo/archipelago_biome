@@ -1,0 +1,26 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"burst": {
+			"type": "cubemitter",
+			"cubemitter": "/archipelago_biome/data/effects/bubble_shot/burst.cubemitter.json",
+			"loop": false,
+			"start_time" : 1400,
+			"end_time" : 1666,
+			"transforms": {
+				"x":0,
+				"y":1,
+				"z":-1,
+				"rx":0,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"animation": {
+			"type": "animation_effect",
+			"start_time": 0,
+			"animation": "combat_ranged_attack.json",
+			"loop": true
+		}
+	}
+}

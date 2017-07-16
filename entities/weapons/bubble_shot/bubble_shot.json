@@ -1,0 +1,15 @@
+{
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.3
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		},
+		"stonehearth:projectile": {},
+		"effect_list": {
+			"default": "archipelago_biome:effects:bubble_shot"
+		}
+	}
+}

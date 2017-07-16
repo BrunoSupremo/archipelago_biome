@@ -37,6 +37,7 @@
 		"decoration:ship_wheel":		"file(entities/decoration/ship_wheel)",
 		"decoration:tiki_torch":		"file(entities/decoration/tiki_torch)",
 
+		"effects:bubble_shot":				"file(data/effects/bubble_shot)",
 		"effects:cocobomb_effect":			"file(data/effects/cocobomb_effect)",
 		"effects:cocobomb_explosion_effect":"file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
 		"effects:harvest_coconut_overlay":	"file(data/effects/harvest_coconut_overlay)",
@@ -77,6 +78,7 @@
 		"monsters:cocoling":		"file(entities/monsters/cocoling)",
 		"monsters:cocoling_spawner":"file(entities/monsters/cocoling_spawner)",
 		"monsters:fake_container":	"file(entities/monsters/fake_container)",
+		"monsters:octopus":			"file(entities/monsters/octopus)",
 
 		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
 		"outfit:beach_head":	"file(entities/outfit/beach_head)",
@@ -102,6 +104,7 @@
 		"trees:papaya":			"file(entities/trees/papaya)",
 		"trees:smalea:small":	"file(entities/trees/smalea)",
 
+		"weapons:bubble_shot":"file(entities/weapons/bubble_shot)",
 		"weapons:crab_pincer":"file(entities/weapons/crab_pincer)",
 		"weapons:slap_fish":"file(entities/weapons/slap_fish)"
 	},

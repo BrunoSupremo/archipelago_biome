@@ -1,0 +1,31 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"bubble": {
+			"type": "cubemitter",
+			"cubemitter": "file(bubble.cubemitter.json)",
+			"loop": true,
+			"transforms": {
+				"x":-0.15,
+				"y":0.15,
+				"z":0.15,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"drops": {
+			"type": "cubemitter",
+			"cubemitter": "file(drops.cubemitter.json)",
+			"loop": true,
+			"transforms": {
+				"x":-0.15,
+				"y":0.15,
+				"z":0.15,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		}
+	}
+}

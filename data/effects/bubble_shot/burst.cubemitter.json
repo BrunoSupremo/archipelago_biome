@@ -1,0 +1,92 @@
+{
+	"name": "burst",
+	"duration": 266,
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "CONSTANT",
+				"values":  [0.5]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [4]
+			}
+		},
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, 0]
+					],
+					[
+						[0, 90],
+						[1, 90]
+					]
+				]
+			},
+			"over_lifetime_y": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, 0]
+					],
+					[
+						[0, 90],
+						[1, 90]
+					]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [
+					[0, 0.3, 1, 0.25],
+					[0, 0.6, 1, 0.25]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0,0],
+					[0.25,0],
+					[0.50,1],
+					[1,0]
+				]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.3]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0,0],
+					[0.50,1],
+					[1,0]
+				]
+			}
+		}
+	},
+	"emission": {
+		"rate": {
+			"kind": "CONSTANT",
+			"values": [500]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": [0,0]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [90]
+		}
+	}
+}

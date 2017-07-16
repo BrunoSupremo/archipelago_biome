@@ -1,0 +1,17 @@
+{
+	"skeleton": {
+		"ATTOVERCOG": [0,-0,30],
+		"head": [0,-0,6],
+		"leg1": [3,-9,2.5],
+		"leg2": [9,-3,2.5],
+		"leg3": [9,3,2.5],
+		"leg4": [3,9,2.5],
+		"leg5": [-3,9,2.5],
+		"leg6": [-9,3,2.5],
+		"leg7": [-9,-3,2.5],
+		"leg8": [-3,-9,2.5],
+		"root": [0,0,0]
+	},
+	"animation_root" : "file(animations)",
+	"effects_root": "file(effects)"
+}

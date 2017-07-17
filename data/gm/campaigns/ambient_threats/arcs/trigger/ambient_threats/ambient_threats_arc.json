@@ -1,0 +1,7 @@
+{
+	"encounters": {
+		"cocoling_raid_2": "file(encounters/trash_mobs/cocoling_raid_2.json)",
+		"alligator_cocoling_raid_5": "file(encounters/trash_mobs/alligator_cocoling_raid_5.json)",
+		"cocoling_raid_7": "file(encounters/trash_mobs/cocoling_raid_7.json)"
+	}
+}

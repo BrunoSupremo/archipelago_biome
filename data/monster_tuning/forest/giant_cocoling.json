@@ -1,0 +1,35 @@
+{
+	"type": "monster_tuning",
+	"estimated_difficulty": 4,
+	"attributes": {
+		"max_health": 1200,
+		"muscle": 130,
+		"menace": 20,
+		"courage": 40,
+		"speed": 80,
+		"additive_armor_modifier": 0,
+		"exp_reward": 125
+	},
+	"scale": 0.2,
+	"equipment": {
+		"weapon": [
+			"stonehearth:monsters:forest:entling:fist_weapon"
+		]
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"num_rolls": {
+					"min": 1,
+					"max": 2
+				},
+				"items": {
+					"coconut": {
+						"uri": "archipelago_biome:food:coconut",
+						"weight": 2
+					}
+				}
+			}
+		}
+	}
+}

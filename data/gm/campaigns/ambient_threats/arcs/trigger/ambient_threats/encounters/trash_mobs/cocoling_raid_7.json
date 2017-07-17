@@ -1,0 +1,31 @@
+{
+	"type": "encounter",
+	"mixins": "archipelago_biome:mixins:encounter:cocoling_raid",
+	"encounter_type": "create_mission",
+	"in_edge": "cocoling_raid_7",
+	"out_edge": "wait_to_destroy_raiding_party",
+	"create_mission_info": {
+		"mission": {
+			"ctx_entity_registration_path": "cocoling_raid_7",
+			"members": {
+				"cocolings": {
+					"from_population": {
+						"min": 5,
+						"max": 5
+					},
+					"tuning": "archipelago_biome:monster_tuning:forest:easy_cocoling"
+				},
+				"giant_cocolings": {
+					"from_population": {
+						"role": "cocoling",
+						"location": { "x": 0, "z": 0 },
+						"min": 2,
+						"max": 2,
+						"range": 20
+					},
+					"tuning": "archipelago_biome:monster_tuning:forest:giant_cocoling"
+				}
+			}
+		}
+	}
+}

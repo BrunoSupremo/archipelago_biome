@@ -1,0 +1,11 @@
+{
+	"roles": {
+		"cocoling": {
+			"male": {
+				"uri": [
+					"archipelago_biome:monsters:cocoling"
+				]
+			}
+		}
+	}
+}

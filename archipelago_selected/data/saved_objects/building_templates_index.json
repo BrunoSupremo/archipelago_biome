@@ -13,7 +13,8 @@
 						"little_pier": "file(building_templates/little_pier.json)",
 						"open_house": "file(building_templates/open_house.json)",
 						"small_beach_house": "file(building_templates/small_beach_house.json)",
-						"carpenter_house": "file(building_templates/carpenter_house.json)"
+						"carpenter_house": "file(building_templates/carpenter_house.json)",
+						"tiki_bar": "file(building_templates/tiki_bar.json)"
 					}
 				},
 				"boats": {

@@ -1,6 +1,6 @@
 {
 	"header" : {
-	    "display_name" : "i18n(archipelago_biome:ui.game.build_mode.building_templates.template_names.trader_ship)",
+		"display_name" : "i18n(archipelago_biome:ui.game.build_mode.building_templates.template_names.trader_ship)",
 		"preview_image" : "file(trader_ship.png)",
 		"name" : "trader_ship",
 		"cost" : {
@@ -3372,513 +3372,513 @@
 						"tag" : 11058112
 					}
 				],
-				"uri" : "stonehearth:build:prototypes:floor",
-				"children" : {
-					"25053" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 0,
-								"x" : 0,
-								"w" : 1,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : -28,
-								"z" : 5
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:containers:leather_bound_chest",
-							"rotation" : 0
-						},
-						"uri" : "\/stonehearth\/entities\/containers\/leather_bound_chest\/leather_bound_chest_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25190" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 0,
-								"x" : 0,
-								"w" : 1,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : -19,
-								"z" : -1
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:containers:large_crate",
-							"rotation" : 0
-						},
-						"uri" : "\/stonehearth\/entities\/containers\/large_crate\/large_crate_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25456" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 1,
-								"x" : 0,
-								"w" : 0,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : -20,
-								"z" : -8
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:furniture:park_bench",
-							"rotation" : 180
-						},
-						"uri" : "\/stonehearth\/entities\/furniture\/park_bench\/park_bench_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"24924" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 0.707107,
-								"x" : 0,
-								"w" : 0.707107,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 10,
-								"x" : -11,
-								"z" : 0
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 0,
-								"x" : -1,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:decoration:wooden_wall_lantern",
-							"rotation" : 90
-						},
-						"uri" : "\/stonehearth\/entities\/decoration\/wooden_wall_lantern\/wooden_wall_lantern_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"21514" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 0.707107,
-								"x" : 0,
-								"w" : 0.707107,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 10,
-								"x" : -32,
-								"z" : 1
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "archipelago_biome:decoration:ship_wheel",
-							"rotation" : 90
-						},
-						"uri" : "\/archipelago_biome\/entities\/decoration\/ship_wheel\/ship_wheel_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25585" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 1,
-								"x" : 0,
-								"w" : 0,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : 0,
-								"z" : 4
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:containers:large_crate",
-							"rotation" : 180
-						},
-						"uri" : "\/stonehearth\/entities\/containers\/large_crate\/large_crate_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25499" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 1,
-								"x" : 0,
-								"w" : 0,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : -18,
-								"z" : -1
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:containers:small_crate",
-							"rotation" : 180
-						},
-						"uri" : "\/stonehearth\/entities\/containers\/small_crate\/small_crate_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25147" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 0,
-								"x" : 0,
-								"w" : 1,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : -28,
-								"z" : -2
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:containers:large_crate",
-							"rotation" : 0
-						},
-						"uri" : "\/stonehearth\/entities\/containers\/large_crate\/large_crate_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25409" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 0,
-								"x" : 0,
-								"w" : 1,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : -20,
-								"z" : 9
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:furniture:park_bench",
-							"rotation" : 0
-						},
-						"uri" : "\/stonehearth\/entities\/furniture\/park_bench\/park_bench_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25010" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 0.707107,
-								"x" : 0,
-								"w" : -0.707107,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 10,
-								"x" : -29,
-								"z" : 1
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 0,
-								"x" : 1,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:decoration:wooden_wall_lantern",
-							"rotation" : 270
-						},
-						"uri" : "\/stonehearth\/entities\/decoration\/wooden_wall_lantern\/wooden_wall_lantern_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25233" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 0,
-								"x" : 0,
-								"w" : 1,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : -18,
-								"z" : 3
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:containers:small_crate",
-							"rotation" : 0
-						},
-						"uri" : "\/stonehearth\/entities\/containers\/small_crate\/small_crate_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					},
-					"25542" : {
-						"mob" : {
-							"orientation" : {
-								"y" : 1,
-								"x" : 0,
-								"w" : 0,
-								"z" : 0
-							},
-							"position" : {
-								"y" : 7,
-								"x" : -17,
-								"z" : 3
-							}
-						},
-						"stonehearth:fixture_fabricator" : {
-							"normal" : {
-								"y" : 1,
-								"x" : 0,
-								"z" : 0
-							},
-							"fixture_uri" : "stonehearth:containers:small_crate",
-							"rotation" : 180
-						},
-						"uri" : "\/stonehearth\/entities\/containers\/small_crate\/small_crate_ghost.json",
-						"stonehearth:construction_progress" : {
-							"building_entity" : 21417,
-							"fabricator_component_name" : "stonehearth:fixture_fabricator"
-						}
-					}
-				},
-				"stonehearth:construction_progress" : {
-					"building_entity" : 21417,
-					"fabricator_component_name" : "stonehearth:fabricator"
-				}
+"uri" : "stonehearth:build:prototypes:floor",
+"children" : {
+	"25053" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : 1,
+				"z" : 0
 			},
-			"21549" : {
-				"mob" : {
-					"orientation" : {
-						"y" : 0,
-						"x" : 0,
-						"w" : 1,
-						"z" : 0
-					},
-					"position" : {
-						"y" : 7,
-						"x" : -27,
-						"z" : -6
-					}
-				},
-				"stonehearth:stairs" : {
-					"is_free_standing" : true,
-					"brush" : "#65573A",
-					"normal" : {
-						"y" : 0,
-						"x" : 1,
-						"z" : 0
-					},
-					"height" : 3,
-					"rotation" : 180,
-					"shape" : "hollow",
-					"width" : 2
-				},
-				"stonehearth:construction_data" : {},
-				"shape" : [
-					{
-						"max" : {
-							"y" : 3,
-							"x" : -1,
-							"z" : 2
-						},
-						"min" : {
-							"y" : 1,
-							"x" : -2,
-							"z" : 0
-						},
-						"tag" : 3823461
-					},
-					{
-						"max" : {
-							"y" : 2,
-							"x" : 0,
-							"z" : 2
-						},
-						"min" : {
-							"y" : 0,
-							"x" : -1,
-							"z" : 0
-						},
-						"tag" : 3823461
-					},
-					{
-						"max" : {
-							"y" : 1,
-							"x" : 1,
-							"z" : 2
-						},
-						"min" : {
-							"y" : 0,
-							"x" : 0,
-							"z" : 0
-						},
-						"tag" : 3823461
-					}
-				],
-				"uri" : "stonehearth:build:prototypes:stairs",
-				"stonehearth:construction_progress" : {
-					"building_entity" : 21417,
-					"fabricator_component_name" : "stonehearth:fabricator"
-				}
-			},
-			"21456" : {
-				"mob" : {
-					"orientation" : {
-						"y" : 0,
-						"x" : 0,
-						"w" : 1,
-						"z" : 0
-					},
-					"position" : {
-						"y" : 7,
-						"x" : -27,
-						"z" : 6
-					}
-				},
-				"stonehearth:stairs" : {
-					"is_free_standing" : true,
-					"brush" : "#65573A",
-					"normal" : {
-						"y" : 0,
-						"x" : 1,
-						"z" : 0
-					},
-					"height" : 3,
-					"rotation" : 180,
-					"shape" : "hollow",
-					"width" : 2
-				},
-				"stonehearth:construction_data" : {},
-				"shape" : [
-					{
-						"max" : {
-							"y" : 3,
-							"x" : -1,
-							"z" : 2
-						},
-						"min" : {
-							"y" : 1,
-							"x" : -2,
-							"z" : 0
-						},
-						"tag" : 3823461
-					},
-					{
-						"max" : {
-							"y" : 2,
-							"x" : 0,
-							"z" : 2
-						},
-						"min" : {
-							"y" : 0,
-							"x" : -1,
-							"z" : 0
-						},
-						"tag" : 3823461
-					},
-					{
-						"max" : {
-							"y" : 1,
-							"x" : 1,
-							"z" : 2
-						},
-						"min" : {
-							"y" : 0,
-							"x" : 0,
-							"z" : 0
-						},
-						"tag" : 3823461
-					}
-				],
-				"uri" : "stonehearth:build:prototypes:stairs",
-				"stonehearth:construction_progress" : {
-					"building_entity" : 21417,
-					"fabricator_component_name" : "stonehearth:fabricator"
-				}
+			"position" : {
+				"y" : 7,
+				"x" : -28,
+				"z" : 5
 			}
 		},
-		"stonehearth:construction_progress" : {}
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:leather_bound_chest",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/leather_bound_chest\/leather_bound_chest_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25190" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : 1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 7,
+				"x" : -19,
+				"z" : -1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:large_crate",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/large_crate\/large_crate_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25456" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 7,
+				"x" : -20,
+				"z" : -8
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:park_bench",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/park_bench\/park_bench_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"24924" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 10,
+				"x" : -11,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 0,
+				"x" : -1,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:decoration:wooden_wall_lantern",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/decoration\/wooden_wall_lantern\/wooden_wall_lantern_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"21514" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 10,
+				"x" : -32,
+				"z" : 1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "archipelago_biome:decoration:ship_wheel",
+			"rotation" : 90
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/ship_wheel\/ship_wheel_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25585" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 7,
+				"x" : 0,
+				"z" : 4
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:large_crate",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/large_crate\/large_crate_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25499" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 7,
+				"x" : -18,
+				"z" : -1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:small_crate",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/small_crate\/small_crate_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25147" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : 1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 7,
+				"x" : -28,
+				"z" : -2
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:large_crate",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/large_crate\/large_crate_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25409" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : 1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 7,
+				"x" : -20,
+				"z" : 9
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:park_bench",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/park_bench\/park_bench_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25010" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 10,
+				"x" : -29,
+				"z" : 1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:decoration:wooden_wall_lantern",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/decoration\/wooden_wall_lantern\/wooden_wall_lantern_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25233" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : 1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 7,
+				"x" : -18,
+				"z" : 3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:small_crate",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/small_crate\/small_crate_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"25542" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 7,
+				"x" : -17,
+				"z" : 3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:small_crate",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/small_crate\/small_crate_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 21417,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
 	}
+},
+"stonehearth:construction_progress" : {
+	"building_entity" : 21417,
+	"fabricator_component_name" : "stonehearth:fabricator"
+}
+},
+"21549" : {
+	"mob" : {
+		"orientation" : {
+			"y" : 0,
+			"x" : 0,
+			"w" : 1,
+			"z" : 0
+		},
+		"position" : {
+			"y" : 7,
+			"x" : -27,
+			"z" : -6
+		}
+	},
+	"stonehearth:stairs" : {
+		"is_free_standing" : true,
+		"brush" : "#65573A",
+		"normal" : {
+			"y" : 0,
+			"x" : 1,
+			"z" : 0
+		},
+		"height" : 3,
+		"rotation" : 180,
+		"shape" : "hollow",
+		"width" : 2
+	},
+	"stonehearth:construction_data" : {},
+	"shape" : [
+		{
+			"max" : {
+				"y" : 3,
+				"x" : -1,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 1,
+				"x" : -2,
+				"z" : 0
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : -1,
+				"z" : 0
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : 0
+			},
+			"tag" : 3823461
+		}
+	],
+	"uri" : "stonehearth:build:prototypes:stairs",
+	"stonehearth:construction_progress" : {
+		"building_entity" : 21417,
+		"fabricator_component_name" : "stonehearth:fabricator"
+	}
+},
+"21456" : {
+	"mob" : {
+		"orientation" : {
+			"y" : 0,
+			"x" : 0,
+			"w" : 1,
+			"z" : 0
+		},
+		"position" : {
+			"y" : 7,
+			"x" : -27,
+			"z" : 6
+		}
+	},
+	"stonehearth:stairs" : {
+		"is_free_standing" : true,
+		"brush" : "#65573A",
+		"normal" : {
+			"y" : 0,
+			"x" : 1,
+			"z" : 0
+		},
+		"height" : 3,
+		"rotation" : 180,
+		"shape" : "hollow",
+		"width" : 2
+	},
+	"stonehearth:construction_data" : {},
+	"shape" : [
+		{
+			"max" : {
+				"y" : 3,
+				"x" : -1,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 1,
+				"x" : -2,
+				"z" : 0
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : -1,
+				"z" : 0
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : 0
+			},
+			"tag" : 3823461
+		}
+	],
+	"uri" : "stonehearth:build:prototypes:stairs",
+	"stonehearth:construction_progress" : {
+		"building_entity" : 21417,
+		"fabricator_component_name" : "stonehearth:fabricator"
+	}
+}
+},
+"stonehearth:construction_progress" : {}
+}
 }

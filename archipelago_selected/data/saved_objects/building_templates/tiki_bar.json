@@ -1,0 +1,6073 @@
+{
+	"header" : {
+		"display_name" : "i18n(archipelago_biome:ui.game.build_mode.building_templates.template_names.tiki_bar)",
+		"preview_image" : "file(tiki_bar.png)",
+		"name" : "tiki_bar",
+		"cost" : {
+			"items" : {
+				"stonehearth:furniture:simple_wooden_chair" : 15,
+				"stonehearth:furniture:writing_desk" : 9,
+				"stonehearth:cook:oven" : 1,
+				"stonehearth:furniture:table_for_one" : 2,
+				"stonehearth:furniture:stone_table" : 2,
+				"stonehearth:construction:picket_fence" : 34,
+				"stonehearth:decoration:bird_bath" : 1,
+				"stonehearth:cook:workbench" : 1,
+				"archipelago_biome:decoration:lei" : 6,
+				"archipelago_biome:decoration:tiki_torch" : 6,
+				"stonehearth:containers:small_crate" : 2
+			},
+			"resources" : {
+				"stone resource" : 3,
+				"wood resource" : 533
+			}
+		}
+	},
+	"root" : {
+		"stonehearth:building" : {
+			"structures" : {
+				"stonehearth:roof" : {},
+				"stonehearth:column" : {},
+				"stonehearth:stairs" : {},
+				"stonehearth:fixture_fabricator" : [
+					12754,
+					13138,
+					13012,
+					14030,
+					13270,
+					13398,
+					13782,
+					13530,
+					13658,
+					14931,
+					14807,
+					14683,
+					14559,
+					14435,
+					14311,
+					14185,
+					12789,
+					14061,
+					13173,
+					13937,
+					15210,
+					13561,
+					13689,
+					14962,
+					14838,
+					14714,
+					14590,
+					14466,
+					14342,
+					12946,
+					14092,
+					13968,
+					13208,
+					13844,
+					13464,
+					13592,
+					13720,
+					14993,
+					14869,
+					14745,
+					14621,
+					12849,
+					13043,
+					14497,
+					15117,
+					14373,
+					13103,
+					15179,
+					15148,
+					13305,
+					14123,
+					12981,
+					15086,
+					13999,
+					15241,
+					13239,
+					15272,
+					15055,
+					13429,
+					13751,
+					14154,
+					13499,
+					15024,
+					13336,
+					13906,
+					14900,
+					13875,
+					13627,
+					14776,
+					13367,
+					12884,
+					14652,
+					14216,
+					12915,
+					14528,
+					13813,
+					14276,
+					14404,
+					15303
+				],
+				"stonehearth:floor" : [
+					14247,
+					12725,
+					12820,
+					12667,
+					12696,
+					13074
+				],
+				"stonehearth:wall" : {}
+			}
+		},
+		"id" : 12628,
+		"uri" : "stonehearth:build:prototypes:building",
+		"children" : {
+			"14247" : {
+				"stonehearth:floor" : {
+					"connected_to" : {},
+					"category" : "slab"
+				},
+				"mob" : {
+					"orientation" : {
+						"y" : 0,
+						"x" : 0,
+						"w" : 1,
+						"z" : 0
+					},
+					"position" : {
+						"y" : 0,
+						"x" : 0,
+						"z" : 0
+					}
+				},
+				"stonehearth:construction_data" : {},
+				"shape" : [
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 21,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 1,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 0,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 6,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 5,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 11,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 10,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 11,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 10,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 16,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 15,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 21,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 20,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 21,
+							"z" : 1
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 20,
+							"z" : 0
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 1,
+							"z" : 0
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 0,
+							"z" : -15
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 21,
+							"z" : 0
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 20,
+							"z" : -15
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 1,
+							"z" : -3
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : -4
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 21,
+							"z" : -3
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 20,
+							"z" : -4
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 24,
+							"z" : -4
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 23,
+							"z" : -5
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 21,
+							"z" : -5
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 20,
+							"z" : -6
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 24,
+							"z" : -5
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 23,
+							"z" : -6
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 1,
+							"z" : -7
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : -8
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 1,
+							"z" : -7
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 0,
+							"z" : -8
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 21,
+							"z" : -7
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 20,
+							"z" : -8
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 21,
+							"z" : -9
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 20,
+							"z" : -10
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 24,
+							"z" : -9
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 23,
+							"z" : -10
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 24,
+							"z" : -10
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 23,
+							"z" : -11
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 1,
+							"z" : -11
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : -12
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 21,
+							"z" : -11
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 20,
+							"z" : -12
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 1,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 0,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 21,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 0,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 1,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 0,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 6,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 5,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 11,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 10,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 11,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 10,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 16,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 15,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 21,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 20,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 21,
+							"z" : -15
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 20,
+							"z" : -16
+						},
+						"tag" : 2176320
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 22,
+							"z" : -4
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 21,
+							"z" : -5
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 23,
+							"z" : -5
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 21,
+							"z" : -6
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 24,
+							"z" : -6
+						},
+						"min" : {
+							"y" : 1,
+							"x" : 22,
+							"z" : -7
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 22,
+							"z" : -8
+						},
+						"min" : {
+							"y" : 1,
+							"x" : 21,
+							"z" : -9
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 23,
+							"z" : -9
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 21,
+							"z" : -10
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 23,
+							"z" : -10
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 22,
+							"z" : -11
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 23,
+							"z" : -4
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 22,
+							"z" : -5
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 24,
+							"z" : -5
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 23,
+							"z" : -6
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 22,
+							"z" : -6
+						},
+						"min" : {
+							"y" : 1,
+							"x" : 21,
+							"z" : -7
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 23,
+							"z" : -8
+						},
+						"min" : {
+							"y" : 1,
+							"x" : 22,
+							"z" : -9
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 2,
+							"x" : 24,
+							"z" : -8
+						},
+						"min" : {
+							"y" : 1,
+							"x" : 23,
+							"z" : -10
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 24,
+							"z" : -9
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 23,
+							"z" : -10
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 1,
+							"x" : 22,
+							"z" : -10
+						},
+						"min" : {
+							"y" : 0,
+							"x" : 21,
+							"z" : -11
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 22,
+							"z" : -6
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 21,
+							"z" : -8
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 22,
+							"z" : -8
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 21,
+							"z" : -9
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 24,
+							"z" : -6
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 22,
+							"z" : -7
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 23,
+							"z" : -7
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 22,
+							"z" : -9
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 24,
+							"z" : -7
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 23,
+							"z" : -8
+						},
+						"tag" : 5604501
+					},
+					{
+						"max" : {
+							"y" : 3,
+							"x" : 24,
+							"z" : -8
+						},
+						"min" : {
+							"y" : 2,
+							"x" : 23,
+							"z" : -9
+						},
+						"tag" : 6657189
+					},
+					{
+						"max" : {
+							"y" : 4,
+							"x" : 24,
+							"z" : -6
+						},
+						"min" : {
+							"y" : 3,
+							"x" : 23,
+							"z" : -9
+						},
+						"tag" : 2176320
+					}
+				],
+"uri" : "stonehearth:build:prototypes:floor",
+"children" : {
+	"14559" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 20,
+				"z" : -15
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14993" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 20,
+				"z" : -1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14962" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : -15
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14342" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 17,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14776" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 15,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15117" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 1,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14497" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 20,
+				"z" : -3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14528" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : -7
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15055" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 15,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14838" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : -1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14652" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 13,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14311" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 7,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14869" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 7,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15086" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 20,
+				"z" : -13
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14276" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 17,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14404" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : -11
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15303" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : -5
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14435" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : -9
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14621" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 11,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14466" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 3,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14683" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 19,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14745" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 19,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14373" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : -3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15272" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 13,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15179" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 11,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15148" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 9,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15241" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : -13
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14714" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 9,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15024" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 3,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14931" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 20,
+				"z" : -5
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14590" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 5,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14900" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 1,
+				"z" : -16
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"15210" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 20,
+				"z" : -11
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14807" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 2,
+				"x" : 5,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:construction:picket_fence",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/construction\/picket_fence\/picket_fence_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	}
+},
+"stonehearth:construction_progress" : {
+	"building_entity" : 12628,
+	"fabricator_component_name" : "stonehearth:fabricator"
+}
+},
+"12820" : {
+	"stonehearth:floor" : {
+		"connected_to" : {},
+		"category" : "slab"
+	},
+	"mob" : {
+		"orientation" : {
+			"y" : 0,
+			"x" : 0,
+			"w" : 1,
+			"z" : 0
+		},
+		"position" : {
+			"y" : 3,
+			"x" : 14,
+			"z" : -8
+		}
+	},
+	"stonehearth:construction_data" : {},
+	"shape" : [
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : 0
+			},
+			"tag" : 6051150
+		},
+		{
+			"max" : {
+				"y" : 3,
+				"x" : 1,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 2,
+				"x" : 0,
+				"z" : 0
+			},
+			"tag" : 6051150
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 1,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 0,
+				"z" : 0
+			},
+			"tag" : 6051150
+		}
+	],
+	"uri" : "stonehearth:build:prototypes:floor",
+	"children" : {
+		"13012" : {
+			"mob" : {
+				"orientation" : {
+					"y" : 0.707107,
+					"x" : 0,
+					"w" : -0.707107,
+					"z" : 0
+				},
+				"position" : {
+					"y" : 5,
+					"x" : 1,
+					"z" : 0
+				}
+			},
+			"stonehearth:fixture_fabricator" : {
+				"normal" : {
+					"y" : 0,
+					"x" : 1,
+					"z" : 0
+				},
+				"fixture_uri" : "archipelago_biome:decoration:lei",
+				"rotation" : 270
+			},
+			"uri" : "\/archipelago_biome\/entities\/decoration\/lei\/lei_ghost.json",
+			"stonehearth:construction_progress" : {
+				"building_entity" : 12628,
+				"fabricator_component_name" : "stonehearth:fixture_fabricator"
+			}
+		},
+		"12946" : {
+			"mob" : {
+				"orientation" : {
+					"y" : 0.707107,
+					"x" : 0,
+					"w" : 0.707107,
+					"z" : 0
+				},
+				"position" : {
+					"y" : 5,
+					"x" : 0,
+					"z" : 0
+				}
+			},
+			"stonehearth:fixture_fabricator" : {
+				"normal" : {
+					"y" : 1,
+					"x" : 0,
+					"z" : 0
+				},
+				"fixture_uri" : "stonehearth:furniture:stone_table",
+				"rotation" : 90
+			},
+			"uri" : "\/stonehearth\/entities\/furniture\/stone_table\/stone_table_ghost.json",
+			"stonehearth:construction_progress" : {
+				"building_entity" : 12628,
+				"fabricator_component_name" : "stonehearth:fixture_fabricator"
+			}
+		},
+		"12884" : {
+			"mob" : {
+				"orientation" : {
+					"y" : 1,
+					"x" : 0,
+					"w" : 0,
+					"z" : 0
+				},
+				"position" : {
+					"y" : 5,
+					"x" : 0,
+					"z" : 1
+				}
+			},
+			"stonehearth:fixture_fabricator" : {
+				"normal" : {
+					"y" : 0,
+					"x" : 0,
+					"z" : 1
+				},
+				"fixture_uri" : "archipelago_biome:decoration:lei",
+				"rotation" : 180
+			},
+			"uri" : "\/archipelago_biome\/entities\/decoration\/lei\/lei_ghost.json",
+			"stonehearth:construction_progress" : {
+				"building_entity" : 12628,
+				"fabricator_component_name" : "stonehearth:fixture_fabricator"
+			}
+		},
+		"12981" : {
+			"mob" : {
+				"orientation" : {
+					"y" : 0,
+					"x" : 0,
+					"w" : -1,
+					"z" : 0
+				},
+				"position" : {
+					"y" : 5,
+					"x" : 0,
+					"z" : -1
+				}
+			},
+			"stonehearth:fixture_fabricator" : {
+				"normal" : {
+					"y" : 0,
+					"x" : 0,
+					"z" : -1
+				},
+				"fixture_uri" : "archipelago_biome:decoration:lei",
+				"rotation" : 0
+			},
+			"uri" : "\/archipelago_biome\/entities\/decoration\/lei\/lei_ghost.json",
+			"stonehearth:construction_progress" : {
+				"building_entity" : 12628,
+				"fabricator_component_name" : "stonehearth:fixture_fabricator"
+			}
+		},
+		"13043" : {
+			"mob" : {
+				"orientation" : {
+					"y" : 0.707107,
+					"x" : 0,
+					"w" : 0.707107,
+					"z" : 0
+				},
+				"position" : {
+					"y" : 3,
+					"x" : 0,
+					"z" : 0
+				}
+			},
+			"stonehearth:fixture_fabricator" : {
+				"normal" : {
+					"y" : 1,
+					"x" : 0,
+					"z" : 0
+				},
+				"fixture_uri" : "stonehearth:furniture:stone_table",
+				"rotation" : 90
+			},
+			"uri" : "\/stonehearth\/entities\/furniture\/stone_table\/stone_table_ghost.json",
+			"stonehearth:construction_progress" : {
+				"building_entity" : 12628,
+				"fabricator_component_name" : "stonehearth:fixture_fabricator"
+			}
+		},
+		"12915" : {
+			"mob" : {
+				"orientation" : {
+					"y" : 0.707107,
+					"x" : 0,
+					"w" : 0.707107,
+					"z" : 0
+				},
+				"position" : {
+					"y" : 5,
+					"x" : -1,
+					"z" : 0
+				}
+			},
+			"stonehearth:fixture_fabricator" : {
+				"normal" : {
+					"y" : 0,
+					"x" : -1,
+					"z" : 0
+				},
+				"fixture_uri" : "archipelago_biome:decoration:lei",
+				"rotation" : 90
+			},
+			"uri" : "\/archipelago_biome\/entities\/decoration\/lei\/lei_ghost.json",
+			"stonehearth:construction_progress" : {
+				"building_entity" : 12628,
+				"fabricator_component_name" : "stonehearth:fixture_fabricator"
+			}
+		},
+		"12849" : {
+			"mob" : {
+				"orientation" : {
+					"y" : 0.707107,
+					"x" : 0,
+					"w" : 0.707107,
+					"z" : 0
+				},
+				"position" : {
+					"y" : 1,
+					"x" : 0,
+					"z" : 0
+				}
+			},
+			"stonehearth:fixture_fabricator" : {
+				"normal" : {
+					"y" : 1,
+					"x" : 0,
+					"z" : 0
+				},
+				"fixture_uri" : "stonehearth:decoration:bird_bath",
+				"rotation" : 90
+			},
+			"uri" : "\/stonehearth\/entities\/decoration\/bird_bath\/bird_bath_ghost.json",
+			"stonehearth:construction_progress" : {
+				"building_entity" : 12628,
+				"fabricator_component_name" : "stonehearth:fixture_fabricator"
+			}
+		}
+	},
+	"stonehearth:construction_progress" : {
+		"building_entity" : 12628,
+		"fabricator_component_name" : "stonehearth:fabricator"
+	}
+},
+"12696" : {
+	"stonehearth:floor" : {
+		"connected_to" : {},
+		"category" : "slab"
+	},
+	"mob" : {
+		"orientation" : {
+			"y" : 0,
+			"x" : 0,
+			"w" : 1,
+			"z" : 0
+		},
+		"position" : {
+			"y" : 3,
+			"x" : 17,
+			"z" : -8
+		}
+	},
+	"stonehearth:construction_data" : {},
+	"shape" : {},
+	"uri" : "stonehearth:build:prototypes:floor",
+	"stonehearth:construction_progress" : {
+		"building_entity" : 12628,
+		"fabricator_component_name" : "stonehearth:fabricator"
+	}
+},
+"13074" : {
+	"stonehearth:floor" : {
+		"connected_to" : {},
+		"category" : "foundation"
+	},
+	"mob" : {
+		"orientation" : {
+			"y" : 0,
+			"x" : 0,
+			"w" : 1,
+			"z" : 0
+		},
+		"position" : {
+			"y" : 2,
+			"x" : 1,
+			"z" : -1
+		}
+	},
+	"stonehearth:construction_data" : {},
+	"shape" : [
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : 0
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 5,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 3,
+				"z" : 0
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 7,
+				"z" : 0
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 11,
+				"z" : 0
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 15,
+				"z" : 0
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -1
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 4,
+				"z" : -1
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 8,
+				"z" : -1
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 14,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 12,
+				"z" : -1
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 16,
+				"z" : -1
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : -2
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 7,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 5,
+				"z" : -2
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 11,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 9,
+				"z" : -2
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 13,
+				"z" : -2
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 17,
+				"z" : -2
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -3
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -3
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -3
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -3
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 18,
+				"z" : -3
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -4
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 5,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 3,
+				"z" : -4
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 17,
+				"z" : -14
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 7,
+				"z" : -4
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 13,
+				"z" : -14
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 11,
+				"z" : -4
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 11,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 9,
+				"z" : -14
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 15,
+				"z" : -4
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 7,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 5,
+				"z" : -14
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -5
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 4,
+				"z" : -5
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 8,
+				"z" : -5
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 14,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 12,
+				"z" : -5
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 16,
+				"z" : -5
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : -6
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 7,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 5,
+				"z" : -6
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 11,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 9,
+				"z" : -6
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 13,
+				"z" : -6
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 17,
+				"z" : -6
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -7
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -7
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -7
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -7
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 18,
+				"z" : -7
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -8
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 5,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 3,
+				"z" : -8
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : -14
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 7,
+				"z" : -8
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 16,
+				"z" : -13
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 11,
+				"z" : -8
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 14,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 12,
+				"z" : -13
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 15,
+				"z" : -8
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 8,
+				"z" : -13
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -9
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 4,
+				"z" : -9
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 8,
+				"z" : -9
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 14,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 12,
+				"z" : -9
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 16,
+				"z" : -9
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : -10
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 7,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 5,
+				"z" : -10
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 11,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 9,
+				"z" : -10
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 13,
+				"z" : -10
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 17,
+				"z" : -10
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -11
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -11
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -11
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -11
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 18,
+				"z" : -11
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -12
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 5,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 3,
+				"z" : -12
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 4,
+				"z" : -13
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 7,
+				"z" : -12
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -13
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 11,
+				"z" : -12
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 15,
+				"z" : -12
+			},
+			"tag" : 5604501
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : 0
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 7,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 5,
+				"z" : 0
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 11,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 9,
+				"z" : 0
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 13,
+				"z" : 0
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 17,
+				"z" : 0
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -1
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -1
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -1
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -1
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 18,
+				"z" : -1
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -3
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 3,
+				"z" : -2
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 5,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 4,
+				"z" : -3
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 7,
+				"z" : -2
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 8,
+				"z" : -3
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 11,
+				"z" : -2
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 12,
+				"z" : -3
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 15,
+				"z" : -2
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 16,
+				"z" : -3
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 5,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 9,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 14,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 13,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : -2
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 17,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 7,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 11,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -4
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -5
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -5
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -5
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -4
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -5
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -3
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 18,
+				"z" : -5
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 15,
+				"z" : -14
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -7
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 3,
+				"z" : -6
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 5,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 4,
+				"z" : -7
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 7,
+				"z" : -6
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 8,
+				"z" : -7
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 11,
+				"z" : -6
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 12,
+				"z" : -7
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 15,
+				"z" : -6
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -5
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 16,
+				"z" : -7
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 5,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 9,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 14,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 13,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : -6
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 17,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 7,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 11,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -8
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -9
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -9
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -9
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -8
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -9
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 18,
+				"z" : -9
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 11,
+				"z" : -14
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -11
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 3,
+				"z" : -10
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 5,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 4,
+				"z" : -11
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 7,
+				"z" : -10
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 8,
+				"z" : -11
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 11,
+				"z" : -10
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 12,
+				"z" : -11
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 15,
+				"z" : -10
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -9
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 16,
+				"z" : -11
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 1,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 5,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 9,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 14,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 13,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : -10
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 17,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 7,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 11,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -12
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 16,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 14,
+				"z" : -13
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 2,
+				"z" : -13
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 6,
+				"z" : -13
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 12,
+				"z" : -12
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 10,
+				"z" : -13
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 19,
+				"z" : -11
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 18,
+				"z" : -13
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 7,
+				"z" : -14
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 1,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -14
+			},
+			"tag" : 6657189
+		},
+		{
+			"max" : {
+				"y" : 1,
+				"x" : 5,
+				"z" : -13
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 3,
+				"z" : -14
+			},
+			"tag" : 6657189
+		}
+	],
+"uri" : "stonehearth:build:prototypes:floor",
+"children" : {
+	"13464" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -5
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:cook:workbench",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/jobs\/cook\/cook_workbench\/cook_workbench_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13844" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -5
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13398" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13999" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -11
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13658" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13270" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 3,
+				"z" : -7
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:cook:oven",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/jobs\/cook\/cook_oven\/cook_oven_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13499" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "archipelago_biome:decoration:tiki_torch",
+			"rotation" : 90
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/tiki_torch\/tiki_torch_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13968" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:table_for_one",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/table_for_one\/table_for_one_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13239" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -13
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14061" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 18,
+				"z" : -14
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "archipelago_biome:decoration:tiki_torch",
+			"rotation" : 90
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/tiki_torch\/tiki_torch_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13305" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -2
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "archipelago_biome:decoration:tiki_torch",
+			"rotation" : 90
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/tiki_torch\/tiki_torch_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13751" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "archipelago_biome:decoration:tiki_torch",
+			"rotation" : 90
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/tiki_torch\/tiki_torch_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14123" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -11
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13782" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -9
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13561" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -9
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14216" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -4
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:small_crate",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/small_crate\/small_crate_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13103" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : -14
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "archipelago_biome:decoration:tiki_torch",
+			"rotation" : 90
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/tiki_torch\/tiki_torch_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14030" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : -7
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13336" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13429" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -11
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:table_for_one",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/table_for_one\/table_for_one_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13367" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -11
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13592" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -10
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:containers:small_crate",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/containers\/small_crate\/small_crate_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13720" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 9,
+				"z" : -12
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "archipelago_biome:decoration:tiki_torch",
+			"rotation" : 90
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/tiki_torch\/tiki_torch_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13208" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -13
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13813" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14154" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 17,
+				"z" : -11
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13689" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 4,
+				"z" : -3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13627" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -7
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13530" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 15,
+				"z" : -5
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13173" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -5
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14185" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 10,
+				"z" : -7
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13906" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 2,
+				"z" : -5
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13937" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : -0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 13,
+				"z" : -3
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 270
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13138" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -13
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 180
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"13875" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 6,
+				"z" : -1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:simple_wooden_chair",
+			"rotation" : 0
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/simple_wooden_chair\/simple_wooden_chair_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"14092" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0.707107,
+				"x" : 0,
+				"w" : 0.707107,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 1,
+				"x" : 8,
+				"z" : -9
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"fixture_uri" : "stonehearth:furniture:writing_desk",
+			"rotation" : 90
+		},
+		"uri" : "\/stonehearth\/entities\/furniture\/writing_desk\/writing_desk_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	}
+},
+"stonehearth:construction_progress" : {
+	"building_entity" : 12628,
+	"fabricator_component_name" : "stonehearth:fabricator"
+}
+},
+"12667" : {
+	"stonehearth:floor" : {
+		"connected_to" : {},
+		"category" : "foundation"
+	},
+	"mob" : {
+		"orientation" : {
+			"y" : 0,
+			"x" : 0,
+			"w" : 1,
+			"z" : 0
+		},
+		"position" : {
+			"y" : 2,
+			"x" : 1,
+			"z" : -1
+		}
+	},
+	"stonehearth:construction_data" : {},
+	"shape" : {},
+	"uri" : "stonehearth:build:prototypes:floor",
+	"stonehearth:construction_progress" : {
+		"building_entity" : 12628,
+		"fabricator_component_name" : "stonehearth:fabricator"
+	}
+},
+"12725" : {
+	"stonehearth:floor" : {
+		"connected_to" : {},
+		"category" : "slab"
+	},
+	"mob" : {
+		"orientation" : {
+			"y" : 0,
+			"x" : 0,
+			"w" : 1,
+			"z" : 0
+		},
+		"position" : {
+			"y" : 3,
+			"x" : 8,
+			"z" : -11
+		}
+	},
+	"stonehearth:construction_data" : {},
+	"shape" : [
+		{
+			"max" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 6
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 8,
+				"x" : -1,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 6
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : 1,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 5,
+				"x" : 0,
+				"z" : 6
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 5
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 2
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 8,
+				"x" : -1,
+				"z" : 5
+			},
+			"min" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 2
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : 1,
+				"z" : 5
+			},
+			"min" : {
+				"y" : 5,
+				"x" : 0,
+				"z" : 2
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 0
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 8,
+				"x" : -1,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 0
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : 1,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 5,
+				"x" : 0,
+				"z" : 0
+			},
+			"tag" : 2186094
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : -3,
+				"z" : 8
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -4,
+				"z" : 7
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : -2,
+				"z" : 8
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -3,
+				"z" : 7
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : -1,
+				"z" : 8
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -2,
+				"z" : 7
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : 0,
+				"z" : 8
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -1,
+				"z" : 7
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 1,
+				"z" : 8
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 0,
+				"z" : 7
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : -3,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -4,
+				"z" : -1
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : -2,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -3,
+				"z" : -1
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : -1,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -2,
+				"z" : -1
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : 0,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -1,
+				"z" : -1
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 1,
+				"z" : 0
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 0,
+				"z" : -1
+			},
+			"tag" : 2253688
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 6
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -5,
+				"z" : 5
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 6
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 5
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 6
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 5
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 8,
+				"x" : -1,
+				"z" : 6
+			},
+			"min" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 5
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : 0,
+				"z" : 6
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -1,
+				"z" : 5
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : 1,
+				"z" : 6
+			},
+			"min" : {
+				"y" : 5,
+				"x" : 0,
+				"z" : 5
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 2,
+				"z" : 6
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 1,
+				"z" : 5
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -5,
+				"z" : 1
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 1
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 1
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 8,
+				"x" : -1,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 1
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : 0,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -1,
+				"z" : 1
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 6,
+				"x" : 1,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 5,
+				"x" : 0,
+				"z" : 1
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 2,
+				"z" : 2
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 1,
+				"z" : 1
+			},
+			"tag" : 2324882
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -5,
+				"z" : 6
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 6
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : 0,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -1,
+				"z" : 6
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 2,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 1,
+				"z" : 6
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 5
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -5,
+				"z" : 2
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 5
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 2
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : 0,
+				"z" : 5
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -1,
+				"z" : 2
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 2,
+				"z" : 5
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 1,
+				"z" : 2
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : -4,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -5,
+				"z" : 0
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : -2,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -3,
+				"z" : 0
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 7,
+				"x" : 0,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 6,
+				"x" : -1,
+				"z" : 0
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 2,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 1,
+				"z" : 0
+			},
+			"tag" : 2583424
+		},
+		{
+			"max" : {
+				"y" : 4,
+				"x" : -3,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : -4,
+				"z" : 6
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : -3,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -4,
+				"z" : 0
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 0,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -3,
+				"z" : 6
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 4,
+				"x" : 1,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : 6
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 1,
+				"z" : 7
+			},
+			"min" : {
+				"y" : 4,
+				"x" : 0,
+				"z" : 1
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 4,
+				"x" : -3,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : -4,
+				"z" : 0
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 5,
+				"x" : 1,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 4,
+				"x" : -3,
+				"z" : 0
+			},
+			"tag" : 3823461
+		},
+		{
+			"max" : {
+				"y" : 4,
+				"x" : 1,
+				"z" : 1
+			},
+			"min" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : 0
+			},
+			"tag" : 3823461
+		}
+	],
+"uri" : "stonehearth:build:prototypes:floor",
+"children" : {
+	"12789" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 0,
+				"x" : 0,
+				"w" : -1,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 4,
+				"x" : -2,
+				"z" : -1
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : -1
+			},
+			"fixture_uri" : "archipelago_biome:decoration:lei",
+			"rotation" : 0
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/lei\/lei_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	},
+	"12754" : {
+		"mob" : {
+			"orientation" : {
+				"y" : 1,
+				"x" : 0,
+				"w" : 0,
+				"z" : 0
+			},
+			"position" : {
+				"y" : 4,
+				"x" : -2,
+				"z" : 7
+			}
+		},
+		"stonehearth:fixture_fabricator" : {
+			"normal" : {
+				"y" : 0,
+				"x" : 0,
+				"z" : 1
+			},
+			"fixture_uri" : "archipelago_biome:decoration:lei",
+			"rotation" : 180
+		},
+		"uri" : "\/archipelago_biome\/entities\/decoration\/lei\/lei_ghost.json",
+		"stonehearth:construction_progress" : {
+			"building_entity" : 12628,
+			"fabricator_component_name" : "stonehearth:fixture_fabricator"
+		}
+	}
+},
+"stonehearth:construction_progress" : {
+	"building_entity" : 12628,
+	"fabricator_component_name" : "stonehearth:fabricator"
+}
+}
+},
+"stonehearth:construction_progress" : {}
+}
+}

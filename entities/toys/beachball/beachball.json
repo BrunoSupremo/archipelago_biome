@@ -1,11 +1,23 @@
 {
-   "type": "entity",
-   "mixins": "file(beachball_ghost.json)",
-   "components": {
-      "stonehearth:entity_forms": {
-         "iconic_form": "file(beachball_iconic.json)",
-         "ghost_form": "file(beachball_ghost.json)",
-         "placeable_on_ground": true
-      }
-   }
+	"type": "entity",
+	"mixins": "file(beachball_ghost.json)",
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(beachball_iconic.json)",
+			"ghost_form": "file(beachball_ghost.json)",
+			"placeable_on_ground": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 30,
+			"rarity": "rare",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		}
+	}
 }

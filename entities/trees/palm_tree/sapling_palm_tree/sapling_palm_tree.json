@@ -13,7 +13,7 @@
 		},
 		"stonehearth:evolve": {},
 		"stonehearth:resource_node": {
-			"resource": "stonehearth:resources:wood:oak_log",
+			"resource": "stonehearth:resources:wood:palm_log",
 			"durability": 2
 		},
 		"destination": {

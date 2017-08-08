@@ -3,7 +3,7 @@
 	"type": "mixin",
 	"components": {
 		"stonehearth:resource_node": {
-			"resource": "stonehearth:resources:wood:oak_log"
+			"resource": "stonehearth:resources:wood:palm_log"
 		},
 		"stonehearth:renewable_resource_node": {
 			"harvester_effect": "work_high",

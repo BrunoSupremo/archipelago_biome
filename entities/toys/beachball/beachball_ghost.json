@@ -23,16 +23,6 @@
 		}
 	},
 	"entity_data": {
-		"stonehearth:net_worth": {
-			"value_in_gold": 30,
-			"rarity": "rare",
-			"shop_info": {
-				"buyable": false,
-				"sellable": true,
-				"shopkeeper_level": 1,
-				"shopkeeper_type": "caravan"
-			}
-		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.toys.beachball.display_name)",
 			"description": "i18n(archipelago_biome:entities.toys.beachball.description)",

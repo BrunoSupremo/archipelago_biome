@@ -28,6 +28,7 @@
 		}
 	},
 	"entity_data": {
+		"archipelago_biome:crab_trap":{},
 		"stonehearth:net_worth": {
 			"value_in_gold": 3,
 			"rarity": "common",

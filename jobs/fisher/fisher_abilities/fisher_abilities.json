@@ -4,6 +4,8 @@
       "stonehearth:equipment_piece" : {
          "injected_ai" : {
             "actions" : [
+               "archipelago_biome:actions:get_fish",
+               "archipelago_biome:actions:get_crab"
             ],
             "ai_packs" : [
                "stonehearth:ai_pack:crafting",

@@ -8,6 +8,10 @@
 							"type": "task_group",
 							"work_order": "job",
 							"children": {
+								"archipelago_biome:get_fish": {
+									"type": "task",
+									"priority": 1
+								},
 								"stonehearth:harvest_resource": {
 									"type": "task",
 									"args": {

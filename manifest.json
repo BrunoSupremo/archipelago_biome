@@ -7,6 +7,9 @@
 	"client_init_script": "file(archipelago_biome_client)",
 	"server_init_script": "file(archipelago_biome_server)",
 	"aliases": {
+		"actions:get_fish": "file(ai/actions/fisher/get_fish_action.lua)",
+		"actions:get_crab": "file(ai/actions/fisher/get_crab_action.lua)",
+		
 		"beach:bottle":		"file(entities/beach/bottle)",
 		"beach:broken_boat":"file(entities/beach/broken_boat)",
 		"beach:oyster":		"file(entities/beach/oyster)",

@@ -3,7 +3,6 @@ local Cube3 = _radiant.csg.Cube3
 local Point3 = _radiant.csg.Point3
 local rng = _radiant.math.get_default_rng()
 local CRAB = "archipelago_biome:critters:crab"
-local FisherClass = require 'jobs.fisher.fisher'
 -- local log = radiant.log.create_logger('crab_spawner')
 
 function ArchipelagoCrabSpawner:initialize()
@@ -129,7 +128,6 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 			radiant.entities.add_buff(crab, 'stonehearth:buffs:snared')
 
 			self:ready_to_harvest(true)
-			FisherClass.warn_fishers_to_auto_harvest(self._entity)
 
 			self._sv.crab = nil
 			self.__saved_variables:mark_changed()

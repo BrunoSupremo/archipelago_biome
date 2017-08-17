@@ -3,7 +3,6 @@ local Cube3 = _radiant.csg.Cube3
 local Point3 = _radiant.csg.Point3
 local rng = _radiant.math.get_default_rng()
 local FISH = "archipelago_biome:critters:fish"
-local FisherClass = require 'jobs.fisher.fisher'
 -- local log = radiant.log.create_logger('fish_spawner')
 
 function ArchipelagoFishSpawner:initialize()
@@ -82,8 +81,6 @@ function ArchipelagoFishSpawner:spawn_fish(location)
 	radiant.terrain.place_entity_at_exact_location(fish, location)
 	fish:add_component('stonehearth:leash')
 	:create_leash(location, self.radius, self.radius)
-
-	FisherClass.warn_fishers_to_auto_harvest(fish, radiant.entities.get_player_id(self._entity))
 end
 
 function ArchipelagoFishSpawner:push_away_from_land(old_location, radius)

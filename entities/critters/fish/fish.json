@@ -54,6 +54,7 @@
 		}
 	},
 	"entity_data": {
+		"archipelago_biome:fish":{},
 		"stonehearth:catalog": {
 			"player_id": "animals",
 			"display_name": "i18n(archipelago_biome:entities.critters.fish.display_name)",
@@ -62,7 +63,6 @@
 		"stonehearth:ai_packs": {
 			"packs": [
 				"stonehearth:ai_pack:idle",
-				"stonehearth:ai_pack:idle:bored:idle_effects",
 				"stonehearth:ai_pack:idle:bored:wander"
 			]
 		}

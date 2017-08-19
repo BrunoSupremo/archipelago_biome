@@ -322,11 +322,11 @@
 				},
 				"level_5":{
 					"perk_name":"Pescaria Automática",
-					"perk_description":"O pescador irá marcar os peixes automaticamente para serem pegos."
+					"perk_description":"O pescador irá pescar automaticamente."
 				},
 				"level_6":{
 					"perk_name":"Caranguejos Automáticos",
-					"perk_description":"O pescador irá marcar as armadilhas para coleta automaticamente quando capturarem um caranguejo."
+					"perk_description":"O pescador irá coletar automaticamente as armadilhas quando capturarem um caranguejo."
 				}
 			},
 			"fisher_bucket":{

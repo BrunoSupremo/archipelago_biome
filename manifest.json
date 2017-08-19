@@ -74,6 +74,8 @@
 		"fisher:bucket":		"file(jobs/fisher/fisher_bucket/fisher_bucket.json)",
 		"fisher:talisman":		"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 		"traits:passion_fisher":"file(data/traits/passion_fisher/passion_fisher_trait.json)",
+		"automatic_fishing":	"file(jobs/fisher/fisher_abilities/automatic_fishing.json)",
+		"automatic_crabbing":	"file(jobs/fisher/fisher_abilities/automatic_crabbing.json)",
 
 		"mixins:encounter:cocoling_raid":"file(mixins/encounter/mixin_cocoling_raid.json)",
 		"mixins:palm_tree":	"file(mixins/palm_tree)",

@@ -322,11 +322,11 @@
 				},
 				"level_5":{
 					"perk_name":"Automatic Fishing",
-					"perk_description":"The fisher will automatically mark any new fish to be collected."
+					"perk_description":"The fisher will automatically fish."
 				},
 				"level_6":{
-					"perk_name":"Automatic Crab Harvesting",
-					"perk_description":"The fisher will automatically mark a crab trap for harvest when it captures a crab."
+					"perk_name":"Automatic Crabbing",
+					"perk_description":"The fisher will automatically harvest a crab trap when it captures a crab."
 				}
 			},
 			"fisher_bucket":{

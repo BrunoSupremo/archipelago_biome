@@ -9,13 +9,16 @@ local NUM_STRATA = 2
 local STRATA_PERIOD = STRATA_HEIGHT * NUM_STRATA
 
 function CustomHeightMapRenderer:_add_soil_strata_to_region(region3, cube3)
-   local mod_name = stonehearth.world_generation:get_biome_alias()
-   --mod_name is the mod that has the current biome
-   local colon_pos = string.find (mod_name, ":", 1, true) or -1
-   mod_name = "_add_soil_strata_to_region_" .. string.sub (mod_name, 1, colon_pos-1)
-   if self[mod_name]~=nil then
-      self[mod_name](self,region3, cube3)
+   local biome_name = stonehearth.world_generation:get_biome_alias()
+   local colon_position = string.find (biome_name, ":", 1, true) or -1
+   local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+   local fn = "_add_soil_strata_to_region_" .. mod_name_containing_the_biome
+   if self[fn] ~= nil then
+      --found a function for the biome being used, named:
+      -- self:_add_soil_strata_to_region_<biome_name>(args,...)
+      self[fn](self, region3, cube3)
    else
+      --there is no function for this specific biome, so call a copy of the original from stonehearth
       self:_add_soil_strata_to_region_original(region3, cube3)
    end
 end
@@ -59,13 +62,16 @@ function CustomHeightMapRenderer:_add_soil_strata_to_region_archipelago_biome(re
 end
 
 function CustomHeightMapRenderer:_add_plains_to_region(region3, rect, height)
-   local mod_name = stonehearth.world_generation:get_biome_alias()
-   --mod_name is the mod that has the current biome
-   local colon_pos = string.find (mod_name, ":", 1, true) or -1
-   mod_name = "_add_plains_to_region_" .. string.sub (mod_name, 1, colon_pos-1)
-   if self[mod_name]~=nil then
-      self[mod_name](self,region3,rect,height)
+   local biome_name = stonehearth.world_generation:get_biome_alias()
+   local colon_position = string.find (biome_name, ":", 1, true) or -1
+   local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+   local fn = "_add_plains_to_region_" .. mod_name_containing_the_biome
+   if self[fn] ~= nil then
+      --found a function for the biome being used, named:
+      -- self:_add_plains_to_region_<biome_name>(args,...)
+      self[fn](self, region3, rect, height)
    else
+      --there is no function for this specific biome, so call a copy of the original from stonehearth
       self:_add_plains_to_region_original(region3, rect, height)
    end
 end
@@ -103,14 +109,16 @@ function CustomHeightMapRenderer:_add_plains_to_region_archipelago_biome(region3
 end
 
 function CustomHeightMapRenderer:_add_foothills_to_region(region3, rect, height)
-   local mod_name = stonehearth.world_generation:get_biome_alias()
-   --log:error('nome %s', mod_name)
-   --mod_name is the mod that has the current biome
-   local colon_pos = string.find (mod_name, ":", 1, true) or -1
-   mod_name = "_add_foothills_to_region_" .. string.sub (mod_name, 1, colon_pos-1)
-   if self[mod_name]~=nil then
-      self[mod_name](self,region3,rect,height)
+   local biome_name = stonehearth.world_generation:get_biome_alias()
+   local colon_position = string.find (biome_name, ":", 1, true) or -1
+   local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+   local fn = "_add_foothills_to_region_" .. mod_name_containing_the_biome
+   if self[fn] ~= nil then
+      --found a function for the biome being used, named:
+      -- self:_add_foothills_to_region_<biome_name>(args,...)
+      self[fn](self, region3, rect, height)
    else
+      --there is no function for this specific biome, so call a copy of the original from stonehearth
       self:_add_foothills_to_region_original(region3, rect, height)
    end
 end
@@ -157,13 +165,16 @@ function CustomHeightMapRenderer:_add_foothills_to_region_archipelago_biome(regi
 end
 
 function CustomHeightMapRenderer:_add_mountains_to_region(region3, rect, height)
-   local mod_name = stonehearth.world_generation:get_biome_alias()
-   --mod_name is the mod that has the current biome
-   local colon_pos = string.find (mod_name, ":", 1, true) or -1
-   mod_name = "_add_mountains_to_region_" .. string.sub (mod_name, 1, colon_pos-1)
-   if self[mod_name]~=nil then
-      self[mod_name](self,region3,rect,height)
+   local biome_name = stonehearth.world_generation:get_biome_alias()
+   local colon_position = string.find (biome_name, ":", 1, true) or -1
+   local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+   local fn = "_add_mountains_to_region_" .. mod_name_containing_the_biome
+   if self[fn] ~= nil then
+      --found a function for the biome being used, named:
+      -- self:_add_mountains_to_region_<biome_name>(args,...)
+      self[fn](self, region3, rect, height)
    else
+      --there is no function for this specific biome, so call a copy of the original from stonehearth
       self:_add_mountains_to_region_original(region3, rect, height)
    end
 end

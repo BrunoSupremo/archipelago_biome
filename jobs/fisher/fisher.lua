@@ -40,6 +40,7 @@ function FisherClass:_on_renewable_resource_gathered(args)
 	end
 
 	if args.harvested_target:get_uri() == "archipelago_biome:gizmos:crab_trap" then
+		stonehearth.ai:reconsider_entity(args.harvested_target)
 		self:_got_a_crab(args.harvested_target)
 		self._job_component:add_exp(10) --extra for crabs traps
 	end

@@ -1,13 +1,16 @@
 local CustomResourceCallHandler = class()
 
 function CustomResourceCallHandler:harvest_entity(session, response, entity, from_harvest_tool)
-	local mod_name = stonehearth.world_generation:get_biome_alias()
-	--mod_name is the mod that has the current biome
-	local colon_pos = string.find (mod_name, ":", 1, true) or -1
-	mod_name = "harvest_entity_" .. string.sub (mod_name, 1, colon_pos-1)
-	if self[mod_name]~=nil then
-		self[mod_name](self,session, response, entity, from_harvest_tool)
+	local biome_name = stonehearth.world_generation:get_biome_alias()
+	local colon_position = string.find (biome_name, ":", 1, true) or -1
+	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+	local fn = "harvest_entity_" .. mod_name_containing_the_biome
+	if self[fn] ~= nil then
+		--found a function for the biome being used, named:
+		-- self:harvest_entity_<biome_name>(args,...)
+		self[fn](self, session, response, entity, from_harvest_tool)
 	else
+		--there is no function for this specific biome, so call a copy of the original from stonehearth
 		self:harvest_entity_original(session, response, entity, from_harvest_tool)
 	end
 end

@@ -1,0 +1,12 @@
+{
+	"type": "entity",
+	"components": {
+		"stonehearth:equipment_piece": {
+			"injected_ai": {
+				"actions" : [
+					"archipelago_biome:actions:get_crab"
+				]
+			}
+		}
+	}
+}

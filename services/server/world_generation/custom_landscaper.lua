@@ -10,14 +10,16 @@ local CustomLandscaper = class()
 -- local log = radiant.log.create_logger('meu_log')
 
 function CustomLandscaper:__init(biome, rng, seed)
-	local mod_name = stonehearth.world_generation:get_biome_alias()
-	--log:error('nome %s', mod_name)
-	--mod_name is the mod that has the current biome
-	local colon_pos = string.find (mod_name, ":", 1, true) or -1
-	mod_name = "__init_" .. string.sub (mod_name, 1, colon_pos-1)
-	if self[mod_name]~=nil then
-		self[mod_name](self, biome, rng, seed)
+	local biome_name = stonehearth.world_generation:get_biome_alias()
+	local colon_position = string.find (biome_name, ":", 1, true) or -1
+	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+	local fn = "__init_" .. mod_name_containing_the_biome
+	if self[fn] ~= nil then
+		--found a function for the biome being used, named:
+		-- self:__init_<biome_name>(args,...)
+		self[fn](self, biome, rng, seed)
 	else
+		--there is no function for this specific biome, so call a copy of the original from stonehearth
 		self:__init_original(biome, rng, seed)
 	end
 end
@@ -68,13 +70,16 @@ function CustomLandscaper:__init_archipelago_biome(biome, rng, seed)
 end
 
 function CustomLandscaper:mark_water_bodies(elevation_map, feature_map)
-	local mod_name = stonehearth.world_generation:get_biome_alias()
-	--mod_name is the mod that has the current biome
-	local colon_pos = string.find (mod_name, ":", 1, true) or -1
-	mod_name = "mark_water_bodies_" .. string.sub (mod_name, 1, colon_pos-1)
-	if self[mod_name]~=nil then
-		self[mod_name](self, elevation_map, feature_map)
+	local biome_name = stonehearth.world_generation:get_biome_alias()
+	local colon_position = string.find (biome_name, ":", 1, true) or -1
+	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+	local fn = "mark_water_bodies_" .. mod_name_containing_the_biome
+	if self[fn] ~= nil then
+		--found a function for the biome being used, named:
+		-- self:mark_water_bodies_<biome_name>(args,...)
+		self[fn](self, elevation_map, feature_map)
 	else
+		--there is no function for this specific biome, so call a copy of the original from stonehearth
 		self:mark_water_bodies_original(elevation_map, feature_map)
 	end
 end
@@ -236,13 +241,16 @@ function CustomLandscaper:_add_more_deep_water_second_pass(feature_map)
 end
 
 function CustomLandscaper:is_water_feature(feature_name)
-	local mod_name = stonehearth.world_generation:get_biome_alias()
-	--mod_name is the mod that has the current biome
-	local colon_pos = string.find (mod_name, ":", 1, true) or -1
-	mod_name = "is_water_feature_" .. string.sub (mod_name, 1, colon_pos-1)
-	if self[mod_name]~=nil then
-		return self[mod_name](self, feature_name)
+	local biome_name = stonehearth.world_generation:get_biome_alias()
+	local colon_position = string.find (biome_name, ":", 1, true) or -1
+	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+	local fn = "is_water_feature_" .. mod_name_containing_the_biome
+	if self[fn] ~= nil then
+		--found a function for the biome being used, named:
+		-- self:is_water_feature_<biome_name>(args,...)
+		return self[fn](self, feature_name)
 	else
+		--there is no function for this specific biome, so call a copy of the original from stonehearth
 		return self:is_water_feature_original(feature_name)
 	end
 end
@@ -275,13 +283,16 @@ end
 
 --- water spawning
 function CustomLandscaper:place_features(tile_map, feature_map, place_item)
-	local mod_name = stonehearth.world_generation:get_biome_alias()
-	--mod_name is the mod that has the current biome
-	local colon_pos = string.find (mod_name, ":", 1, true) or -1
-	mod_name = "place_features_" .. string.sub (mod_name, 1, colon_pos-1)
-	if self[mod_name]~=nil then
-		self[mod_name](self,tile_map, feature_map, place_item)
+	local biome_name = stonehearth.world_generation:get_biome_alias()
+	local colon_position = string.find (biome_name, ":", 1, true) or -1
+	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+	local fn = "place_features_" .. mod_name_containing_the_biome
+	if self[fn] ~= nil then
+		--found a function for the biome being used, named:
+		-- self:place_features_<biome_name>(args,...)
+		self[fn](self, tile_map, feature_map, place_item)
 	else
+		--there is no function for this specific biome, so call a copy of the original from stonehearth
 		self:place_features_original(tile_map, feature_map, place_item)
 	end
 end

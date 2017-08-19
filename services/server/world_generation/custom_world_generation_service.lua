@@ -2,13 +2,16 @@ local Cube3 = _radiant.csg.Cube3
 local CustomWorldGenerationService = class()
 
 function CustomWorldGenerationService:_add_water_bodies(regions)
-   local mod_name = stonehearth.world_generation:get_biome_alias()
-   --mod_name is the mod that has the current biome
-   local colon_pos = string.find (mod_name, ":", 1, true) or -1
-   mod_name = "_add_water_bodies_" .. string.sub (mod_name, 1, colon_pos-1)
-   if self[mod_name]~=nil then
-      self[mod_name](self,regions)
+   local biome_name = stonehearth.world_generation:get_biome_alias()
+   local colon_position = string.find (biome_name, ":", 1, true) or -1
+   local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
+   local fn = "_add_water_bodies_" .. mod_name_containing_the_biome
+   if self[fn] ~= nil then
+      --found a function for the biome being used, named:
+      -- self:_add_water_bodies_<biome_name>(args,...)
+      self[fn](self, regions)
    else
+      --there is no function for this specific biome, so call a copy of the original from stonehearth
       self:_add_water_bodies_original(regions)
    end
 end

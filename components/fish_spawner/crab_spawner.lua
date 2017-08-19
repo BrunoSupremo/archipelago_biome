@@ -128,6 +128,7 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 			radiant.entities.add_buff(crab, 'stonehearth:buffs:snared')
 
 			self:ready_to_harvest(true)
+			stonehearth.ai:reconsider_entity(self._entity)
 
 			self._sv.crab = nil
 			self.__saved_variables:mark_changed()
@@ -140,7 +141,7 @@ function ArchipelagoCrabSpawner:ready_to_harvest(resume)
 	local rsc = self._entity:get_component('stonehearth:renewable_resource_node')
 	if rsc then
 		if resume then
-			rsc:resume_resource_timer()
+			rsc:renew()
 		else
 			rsc:pause_resource_timer()
 		end

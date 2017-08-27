@@ -1,7 +1,12 @@
 {
 	"encounters": {
 		"cocoling_raid_2": "file(encounters/trash_mobs/cocoling_raid_2.json)",
-		"alligator_cocoling_raid_5": "file(encounters/trash_mobs/alligator_cocoling_raid_5.json)",
-		"cocoling_raid_7": "file(encounters/trash_mobs/cocoling_raid_7.json)"
+		"octopus_raid_2": "file(encounters/trash_mobs/octopus_raid_2.json)",
+		"octopus_cocoling_raid_5": "file(encounters/trash_mobs/octopus_cocoling_raid_5.json)",
+		"giant_octopus_raid_6": "file(encounters/trash_mobs/giant_octopus_raid_6.json)",
+		"cocoling_raid_7": "file(encounters/trash_mobs/cocoling_raid_7.json)",
+		"pack_of_octopus": "file(encounters/pack_of_octopus.json)",
+		"wait_for_octopus_pack_killed": "file(encounters/wait_for_octopus_pack_killed.json)",
+		"octopus_pack_killed": "file(encounters/octopus_pack_killed.json)"
 	}
 }

@@ -1,7 +1,8 @@
 {
 	"out_edge": {
 		"out_edges": [
-			"alligator_cocoling_raid_5"
+			"octopus_cocoling_raid_5",
+			"giant_octopus_raid_6"
 		]
 	}
 }

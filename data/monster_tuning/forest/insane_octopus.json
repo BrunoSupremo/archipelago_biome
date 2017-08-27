@@ -1,0 +1,23 @@
+{
+	"type": "monster_tuning",
+	"estimated_difficulty": 5,
+	"render_info": {
+		"color_map": "archipelago_biome:color_map:octopus",
+		"material_maps": [
+			"/archipelago_biome/data/materials/material_maps/octopus_material_map.json"
+		]
+	},
+	"unit_info": {
+		"description": "i18n(archipelago_biome:data.monster_tuning.forest.insane_octopus.description)"
+	},
+	"scale": 0.25,
+	"attributes": {
+		"max_health": 1500,
+		"muscle": 100,
+		"menace": 40,
+		"courage": 60,
+		"speed": 60,
+		"additive_armor_modifier": 5,
+		"exp_reward": 90
+	}
+}

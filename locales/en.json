@@ -235,6 +235,10 @@
 			"fake_container":{
 				"display_name":"Mysterious Crate",
 				"description":"Break it to check what is inside"
+			},
+			"octopus":{
+				"display_name":"Octopus",
+				"description":"Arms, more than you can count"
 			}
 		},
 		"resources":{
@@ -433,10 +437,7 @@
 				"display_name": "Archipelago",
 				"description": "Water everywhere, or sand, whichever is disliked most",
 				"random_location_names": {
-					"000": "Malaio Archipelago",
-					"001": "Mauna Loa Archipelago",
-					"002": "Kylahe Archipelago",
-					"003": "Kona Kai Archipelago"
+					"000": "Mauna Loa Archipelago"
 				}
 			}
 		},
@@ -446,6 +447,13 @@
 					"#f1f1a4":"Sand 1 (Archipelago)",
 					"#f0ea99":"Sand 2 (Archipelago)",
 					"#f0e187":"Sand 3 (Archipelago)"
+				}
+			}
+		},
+		"monster_tuning":{
+			"forest":{
+				"insane_octopus":{
+					"description":"Smaller octopus tend to flock around them."
 				}
 			}
 		},

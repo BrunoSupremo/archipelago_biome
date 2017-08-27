@@ -3,6 +3,7 @@
 	"mixins": "stonehearth:mixins:monster",
 	"components": {
 		"render_info": {
+			"cache_model_geometry":false,
 			"animation_table": "file(/data/rigs/entities/monster/octopus)"
 		},
 		"model_variants": {
@@ -52,7 +53,7 @@
 					},
 					"items": {
 						"coconut": {
-							"uri": "archipelago_biome:food:coconut",
+							"uri": "archipelago_biome:food:fish",
 							"weight": 10
 						}
 					}
@@ -72,16 +73,8 @@
 			"portrait_types": {
 				"headshot": {
 					"camera": {
-						"pos": [
-							24,
-							1.2,
-							-27
-						],
-						"look_at": [
-							0,
-							1.3,
-							0
-						],
+						"pos": [24, 1.2, -27 ],
+						"look_at": [0, 1.3, 0 ],
 						"fov": 55
 					}
 				}

@@ -235,6 +235,10 @@
 			"fake_container":{
 				"display_name":"Caixote Misterioso",
 				"description":"Quebre ele pra ver o que tem dentro"
+			},
+			"octopus":{
+				"display_name":"Polvo",
+				"description":"Braços, mais do que você consegue contar"
 			}
 		},
 		"resources":{
@@ -433,10 +437,7 @@
 				"display_name": "Arquipélago",
 				"description": "Água em todo canto, ou areia, o que for mais irritante",
 				"random_location_names": {
-					"000": "Arquipélago Malaio",
-					"001": "Arquipélago Mauna Loa",
-					"002": "Arquipélago Kylahe",
-					"003": "Arquipélago Kona Kai"
+					"000": "Arquipélago Mauna Loa"
 				}
 			}
 		},
@@ -446,6 +447,13 @@
 					"#f1f1a4":"Areia 1 (Arquipélago)",
 					"#f0ea99":"Areia 2 (Arquipélago)",
 					"#f0e187":"Areia 3 (Arquipélago)"
+				}
+			}
+		},
+		"monster_tuning":{
+			"forest":{
+				"insane_octopus":{
+					"description":"Polvos menores tendem a se reunir em torno deles."
 				}
 			}
 		},

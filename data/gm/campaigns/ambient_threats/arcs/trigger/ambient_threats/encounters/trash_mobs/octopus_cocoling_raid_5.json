@@ -1,8 +1,8 @@
 {
 	"type": "encounter",
-	"mixins": "stonehearth:mixins:encounter:alligator_raid",
+	"mixins": "archipelago_biome:mixins:encounter:octopus_raid",
 	"encounter_type": "create_mission",
-	"in_edge": "alligator_cocoling_raid_5",
+	"in_edge": "octopus_cocoling_raid_5",
 	"out_edge": "wait_to_destroy_raiding_party",
 	"can_start": {
 		"test_1": {
@@ -15,14 +15,14 @@
 	},
 	"create_mission_info": {
 		"mission": {
-			"ctx_entity_registration_path": "alligator_cocoling_raid_5",
+			"ctx_entity_registration_path": "octopus_cocoling_raid_5",
 			"members": {
-				"alligators": {
+				"octopus": {
 					"from_population": {
 						"min": 1,
 						"max": 1
 					},
-					"tuning": "stonehearth:monster_tuning:forest:medium_alligator"
+					"tuning": "archipelago_biome:monster_tuning:forest:medium_octopus"
 				},
 				"cocolings": {
 					"from_population": {

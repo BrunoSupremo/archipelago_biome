@@ -6,7 +6,7 @@
 			"cache_model_geometry":false,
 			"animation_table": "file(/data/rigs/entities/critters/fish)",
 			"scale": 0.1,
-			"color_map": "/archipelago_biome/data/materials/color_maps/fish_color_map.json",
+			"color_map": "archipelago_biome:color_map:fish",
 			"material_maps": [
 				{
 					"type": "one_of",

@@ -6,6 +6,13 @@
 					"archipelago_biome:monsters:cocoling"
 				]
 			}
+		},
+		"octopus": {
+			"male": {
+				"uri": [
+					"archipelago_biome:monsters:octopus"
+				]
+			}
 		}
 	}
 }

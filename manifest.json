@@ -20,6 +20,9 @@
 
 		"captain_miranda": "file(entities/humans/captain_miranda)",
 
+		"color_map:fish":	"file(data/materials/color_maps/fish_color_map.json)",
+		"color_map:octopus":"file(data/materials/color_maps/octopus_color_map.json)",
+
 		"critters:crab":		"file(entities/critters/crab)",
 		"critters:fish":		"file(entities/critters/fish)",
 		"critters:sea_turtle":	"file(entities/critters/sea_turtle)",
@@ -77,7 +80,9 @@
 		"automatic_fishing":	"file(jobs/fisher/fisher_abilities/automatic_fishing.json)",
 		"automatic_crabbing":	"file(jobs/fisher/fisher_abilities/automatic_crabbing.json)",
 
-		"mixins:encounter:cocoling_raid":"file(mixins/encounter/mixin_cocoling_raid.json)",
+		"mixins:encounter:octopus_raid":	"file(mixins/encounter/mixin_octopus_raid.json)",
+		"mixins:encounter:cocoling_raid":	"file(mixins/encounter/mixin_cocoling_raid.json)",
+
 		"mixins:palm_tree":	"file(mixins/palm_tree)",
 		"mixins:spice":		"file(mixins/spice)",
 
@@ -88,6 +93,10 @@
 
 		"monster_tuning:forest:easy_cocoling":	"file(data/monster_tuning/forest/easy_cocoling.json)",
 		"monster_tuning:forest:giant_cocoling":	"file(data/monster_tuning/forest/giant_cocoling.json)",
+		"monster_tuning:forest:easy_octopus":	"file(data/monster_tuning/forest/easy_octopus.json)",
+		"monster_tuning:forest:medium_octopus":	"file(data/monster_tuning/forest/medium_octopus.json)",
+		"monster_tuning:forest:giant_octopus":	"file(data/monster_tuning/forest/giant_octopus.json)",
+		"monster_tuning:forest:insane_octopus":	"file(data/monster_tuning/forest/insane_octopus.json)",
 
 		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
 		"outfit:beach_head":	"file(entities/outfit/beach_head)",
@@ -127,9 +136,11 @@
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
 		"stonehearth:gm:campaigns:arcs:ambient_threats": "file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json)",
-		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json)",
-		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/insane_raids.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/insane_raids.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/very_easy_raids.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/very_easy_raids.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/insane_raids.json":	"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/insane_raids.json)",
 
 		"stonehearth:data:player_task_groups": "file(services/server/population/data/player_task_groups.json)",
 

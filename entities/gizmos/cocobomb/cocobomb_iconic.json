@@ -3,11 +3,7 @@
 	"type": "entity",
 	"components": {
 		"render_info": {
-			"scale": 0.1,
-			"color_map": "stonehearth:color_map:engineer",
-			"material_maps": [
-				"/stonehearth/data/materials/material_maps/engineer_material_map.json"
-			]
+			"scale": 0.1
 		},
 		"model_variants": {
 			"default": {

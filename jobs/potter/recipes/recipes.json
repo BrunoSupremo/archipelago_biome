@@ -12,7 +12,7 @@
 			"recipes" : {
 				"sand_castle" : {
 					"recipe" : "file(sand_castle_recipe.json)"
-				}            
+				}
 			}
 		}
 	}

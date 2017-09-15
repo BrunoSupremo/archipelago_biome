@@ -52,8 +52,8 @@ function ArchipelagoCrabSpawner:spawner_removed()
 	if self._sv.crab then
 		local task = self._sv.crab:get_component('stonehearth:ai')
 		:get_task_group('stonehearth:unit_control')
-		:get_task_with_activity_name("stonehearth:goto_entity")
-		if task then
+		:get_name()
+		if task=="stonehearth:goto_entity" then
 			task:destroy()
 		end
 		self._sv.crab = nil
@@ -107,8 +107,8 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 
 	local task = crab:get_component('stonehearth:ai')
 	:get_task_group('stonehearth:unit_control')
-	:get_task_with_activity_name("stonehearth:goto_entity")
-	if task then
+	:get_name()
+	if task=="stonehearth:goto_entity" then
 		return --someone is already capturing it
 	end
 

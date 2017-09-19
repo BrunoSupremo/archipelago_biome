@@ -1,4 +1,6 @@
 archipelago_biome = {}
+local log = radiant.log.create_logger('version')
+log:error("Archipelago Biome mod for alpha 22.5")
 
 function archipelago_biome:_on_required_loaded()
    local custom_world_generation_service = require('services.server.world_generation.custom_world_generation_service')

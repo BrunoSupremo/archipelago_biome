@@ -7,6 +7,9 @@ bananas
 jellyfish
 
 
+crops das outras arvores
+
+
 stonemason:
 	cria um monumento/torre de pedra com perola negra
 		talvez algo com o cocoling spawner

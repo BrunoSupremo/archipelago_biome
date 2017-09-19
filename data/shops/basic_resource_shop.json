@@ -4,10 +4,14 @@
 			"shop_info": {
 				"inventory": {
 					"shopkeeper_level": 3,
-					"entries": [ 
+					"mixintypes": {
+						"entries": "override"
+					},
+					"entries": [
 						{
 							"items": [
 								"stonehearth:resources:wood:palm_log",
+								"stonehearth:resources:stone:hunk_of_stone",
 								"archipelago_biome:food:coconut",
 								"archipelago_biome:food:fish",
 								"archipelago_biome:resources:pearl"
@@ -25,10 +29,14 @@
 			"shop_info": {
 				"inventory": {
 					"shopkeeper_level": 3,
-					"entries": [ 
+					"mixintypes": {
+						"entries": "override"
+					},
+					"entries": [
 						{
 							"items": [
 								"stonehearth:resources:wood:palm_log",
+								"stonehearth:resources:stone:hunk_of_stone",
 								"archipelago_biome:food:coconut",
 								"archipelago_biome:food:fish",
 								"archipelago_biome:resources:pearl"

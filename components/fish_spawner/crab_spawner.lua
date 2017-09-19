@@ -50,11 +50,9 @@ function ArchipelagoCrabSpawner:spawner_removed()
 	-- log:error("spawner_removed")
 	self:destroy_spawn_timer()
 	if self._sv.crab then
-		local task = self._sv.crab:get_component('stonehearth:ai')
-		:get_task_group('stonehearth:unit_control')
-		:get_name()
-		if task=="stonehearth:goto_entity" then
-			task:destroy()
+		if self._approach_task then
+			self._approach_task:destroy()
+			self._approach_task = nil
 		end
 		self._sv.crab = nil
 		self.__saved_variables:mark_changed()
@@ -101,14 +99,9 @@ function ArchipelagoCrabSpawner:spawn_crab(location)
 end
 
 function ArchipelagoCrabSpawner:approach_task(crab,location)
-	-- log:error("approach_task")
-	self._sv.crab = crab
-	self.__saved_variables:mark_changed()
-
-	local task = crab:get_component('stonehearth:ai')
-	:get_task_group('stonehearth:unit_control')
-	:get_name()
-	if task=="stonehearth:goto_entity" then
+	local activities = crab:get_component('stonehearth:ai'):get_active_activities()
+	if activities["stonehearth:goto_entity"] then
+		-- log:error("someone is already capturing it")
 		return --someone is already capturing it
 	end
 
@@ -121,6 +114,7 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 	:once()
 	:notify_completed(
 		function ()
+			-- log:error("notify_completed")
 			self._approach_task = nil
 			local mob = crab:add_component('mob')
 			mob:set_mob_collision_type(_radiant.om.Mob.NONE)
@@ -135,6 +129,9 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 		end
 		)
 	:start()
+
+	self._sv.crab = crab
+	self.__saved_variables:mark_changed()
 end
 
 function ArchipelagoCrabSpawner:ready_to_harvest(resume)
@@ -159,6 +156,7 @@ end
 
 function ArchipelagoCrabSpawner:destroy()
 	-- log:error("destroy")
+	self:spawner_removed()
 	if self._on_added_to_world_listener then
 		self._on_added_to_world_listener:destroy()
 		self._on_added_to_world_listener = nil

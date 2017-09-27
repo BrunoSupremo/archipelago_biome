@@ -7,7 +7,7 @@ bananas
 jellyfish
 
 
-crops das outras arvores
+crops das outras arvores, a seed(box) é feita pelo herbalist
 
 
 stonemason:

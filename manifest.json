@@ -163,8 +163,7 @@
 
 		"stonehearth/locales/pt-BR.json" : "file(locales/pt-BR.json)",
 
-		"brewerymod/manifest.json":"file(modding_mods/brewerymod/manifest.json)",
-		"frostfeast/manifest.json":"file(modding_mods/frostfeast/manifest.json)"
+		"brewerymod/manifest.json":"file(modding_mods/brewerymod/manifest.json)"
 	},
 	"overrides": {
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",

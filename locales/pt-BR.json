@@ -359,7 +359,7 @@
 				},
 				"crab_trap_recipe":{
 					"recipe_name":"Armadilha de Caranguejos",
-					"description":"Atrai e captura caranguejos. Pode quebrar depois de alguns usos, e precisa de colheita manual para pegar os caranguejos lá dentro.",
+					"description":"Atrai e captura caranguejos. Precisa de colheita manual para pegar os caranguejos lá dentro.",
 					"flavor":"Os caranguejos irão aparecer em torno dela se não houver nenhum perto."
 				},
 				"fish_container_recipe":{
@@ -369,8 +369,8 @@
 				},
 				"float_bobber_recipe":{
 					"recipe_name":"Flutuador",
-					"description":"Coloque na água para marcar um local de pesca na área. Peixes irão lá para serem pescados pelo pescador.",
-					"flavor":"Demora um pouco até que os peixes apareçam"
+					"description":"Coloque na água para sinalizar um ponto de pesca nessa área. Os peixes aparecerão lá e podem ser pescados pelo pescador.",
+					"flavor":"Demora um pouco até que os peixes apareçam, e precisa 'colher' manualmente"
 				},
 				"pearl_container_recipe":{
 					"recipe_name":"Caixote de Pérolas",
@@ -519,12 +519,6 @@
 					}
 				}
 			}
-		}
-	},
-	"modding_mods":{
-		"frostfeast":{
-			"display_name": "Arquipélago Congelante",
-			"description": "Água em todo canto, ou areia, o que for mais irritante. E agora com neve?"
 		}
 	}
 }

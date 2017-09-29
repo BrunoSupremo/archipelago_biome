@@ -9,7 +9,9 @@
 	"aliases": {
 		"actions:get_fish": "file(ai/actions/fisher/get_fish_action.lua)",
 		"actions:get_crab": "file(ai/actions/fisher/get_crab_action.lua)",
-		
+
+		"armor:turtle_shield":		"file(entities/armor/turtle_shield)",
+
 		"beach:bottle":		"file(entities/beach/bottle)",
 		"beach:broken_boat":"file(entities/beach/broken_boat)",
 		"beach:oyster":		"file(entities/beach/oyster)",

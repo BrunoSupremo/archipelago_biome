@@ -1,0 +1,79 @@
+{
+	"name": "sparks",
+	"duration": 10,
+	"emission": {
+		"rate": {
+			"kind": "CONSTANT",
+			"values": [10]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [45]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": [0.2, 0.2]
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0.1, 0.5]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [2]
+			}
+		},
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, -360],
+						[1, 360]
+					],
+					[
+						[0, 360],
+						[1, 360]
+					]
+				]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.1]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 1],
+					[0.5, 1],
+					[1, 0]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [
+					[1, 0.8, 0, 1],
+					[1, 0.4, 0, 1]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 1],
+					[0.8, 1],
+					[1, 0]
+				]
+			}
+		}
+	},
+	"material": "materials/cubemitter_bloom.material.json"
+}

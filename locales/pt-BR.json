@@ -1,5 +1,11 @@
 {
 	"entities":{
+		"armor":{
+			"turtle_shield":{
+				"display_name":"Escudo Tartaruga",
+				"description":"Um casco utilizado como escudo"
+			}
+		},
 		"beach":{
 			"bottle":{
 				"display_name":"Garrafa",

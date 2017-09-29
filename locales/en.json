@@ -1,5 +1,11 @@
 {
 	"entities":{
+		"armor":{
+			"turtle_shield":{
+				"display_name":"Turtle Shield",
+				"description":"A turtle shell used as a shield"
+			}
+		},
 		"beach":{
 			"bottle":{
 				"display_name":"Bottle",

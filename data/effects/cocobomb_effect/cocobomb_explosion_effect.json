@@ -18,7 +18,7 @@
 		},
 		"explosion": {
 			"type": "cubemitter",
-			"cubemitter": "file(explosion_cubemitter.json)",
+			"cubemitter": "/archipelago_biome/data/horde/particles/cocobomb/explosion_cubemitter.json",
 			"loop": false,
 			"start_time" : 0,
 			"end_time" : 1000,

@@ -3,7 +3,7 @@
 	"tracks": {
 		"burst": {
 			"type": "cubemitter",
-			"cubemitter": "/archipelago_biome/data/effects/bubble_shot/burst.cubemitter.json",
+			"cubemitter": "/archipelago_biome/data/horde/particles/bubble_shot/burst.cubemitter.json",
 			"loop": false,
 			"start_time" : 1400,
 			"end_time" : 1666,

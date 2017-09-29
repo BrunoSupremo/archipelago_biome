@@ -3,7 +3,7 @@
 	"tracks": {
 		"bubble": {
 			"type": "cubemitter",
-			"cubemitter": "file(bubble.cubemitter.json)",
+			"cubemitter": "/archipelago_biome/data/horde/particles/bubble_shot/bubble.cubemitter.json",
 			"loop": true,
 			"transforms": {
 				"x":-0.15,
@@ -16,7 +16,7 @@
 		},
 		"drops": {
 			"type": "cubemitter",
-			"cubemitter": "file(drops.cubemitter.json)",
+			"cubemitter": "/archipelago_biome/data/horde/particles/bubble_shot/drops.cubemitter.json",
 			"loop": true,
 			"transforms": {
 				"x":-0.15,

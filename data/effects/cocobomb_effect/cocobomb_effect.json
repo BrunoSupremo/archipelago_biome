@@ -3,7 +3,7 @@
 	"tracks": {
 		"cubemitter": {
 			"type": "cubemitter",
-			"cubemitter": "file(sparks_cubemitter.json)",
+			"cubemitter": "/archipelago_biome/data/horde/particles/cocobomb/sparks_cubemitter.json",
 			"loop": true,
 			"transforms": {
 				"x":-0.05,

@@ -1,0 +1,21 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_requirements_met",
+	"in_edge"  : "wait_first_soldier",
+	"out_edge" : "miranda_before_selling_clay",
+	"wait_for_requirements_met_info": {
+		"requirements": {
+			"has_soldier": {
+				"item": "script",
+				"type": "deny_if_less_than",
+				"value": 1,
+				"script": "file(has_soldier.lua)"
+			},
+			"next_day": {
+				"item": "days_elapsed",
+				"type": "deny_if_less_than",
+				"value": 1
+			}
+		}
+	}
+}

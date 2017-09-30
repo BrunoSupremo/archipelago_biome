@@ -1,0 +1,25 @@
+{
+	"type": "campaign",
+	"rarity": "common",
+	"can_start": {
+		"test_1": {
+			"biome_check": {
+				"type": "deny_if_not",
+				"item": "biome",
+				"value": "archipelago_biome:biome:archipelago"
+			},
+			"game_mode_check": {
+				"type": "deny_if",
+				"item": "game_mode",
+				"value": "stonehearth:game_mode:peaceful"
+			}
+		}
+	},
+	"arcs": {
+		"trigger": {
+			"helper": "file(arcs/trigger/encounters_list.json)"
+		},
+		"challenge": {},
+		"climax": {}
+	}
+}

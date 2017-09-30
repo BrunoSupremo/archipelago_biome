@@ -8,11 +8,8 @@ function ArchipelagoFakeContainer:destroy()
 	--chose the amount to spawn based on difficult
 	local difficult = 2 --stonehearth:game_mode:normal
 	local gamemode = stonehearth.game_creation:get_game_mode()
-	if gamemode == "stonehearth:game_mode:peaceful" then
-		difficult = 1
-	end
 	if gamemode == "stonehearth:game_mode:hard" then
-		difficult = 3
+		difficult = 4
 	end
 	local cocoling
 	for i=1, difficult do

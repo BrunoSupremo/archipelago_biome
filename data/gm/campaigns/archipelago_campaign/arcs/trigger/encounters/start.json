@@ -1,0 +1,9 @@
+{
+	"type" : "encounter",
+	"encounter_type" : "wait",
+	"in_edge"  : "start",
+	"out_edge" : "wait_first_soldier",
+	"wait_info" :  {
+		"duration" : "1h"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"type": "arc",
+	"rarity": "common",
+	"encounters": {
+		"start": "file(encounters/start.json)",
+		"introduction_dialogue": "file(encounters/introduction_dialogue.json)",
+		"add_archipelago_crops": "file(encounters/add_archipelago_crops.json)"
+	}
+}

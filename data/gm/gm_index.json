@@ -1,7 +1,10 @@
 {
 	"campaigns" : {
-		"archipelago": {
-			"archipelago_campaign": "file(campaigns/archipelago/archipelago_campaign.json)"
+		"archipelago_tutorial": {
+			"archipelago_tutorial": "file(campaigns/archipelago_tutorial/archipelago_tutorial.json)"
+		},
+		"archipelago_campaign": {
+			"archipelago_campaign": "file(campaigns/archipelago_campaign/archipelago_campaign.json)"
 		}
 	}
 }

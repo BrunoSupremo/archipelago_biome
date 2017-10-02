@@ -1,0 +1,39 @@
+{
+	"type": "encounter",
+	"encounter_type": "shop",
+	"unique": true,
+	"in_edge": "miranda_clay_shop",
+	"out_edge" : "miranda_notice_a_lost_crate",
+	"shop_info": {
+		"name": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_clay_shop)",
+		"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_clay_shop)",
+		"inventory": {
+			"shopkeeper_level": 2,
+			"shopkeeper_gold": 70,
+			"entries": [
+				{
+					"items": [
+						"stonehearth:resources:clay:clay_mound",
+						"stonehearth:containers:clay_pile"
+					],
+					"quantity": {
+						"min": 20,
+						"max": 50
+					}
+				},
+				{
+					"items": [
+						"stonehearth:resources:wood:palm_log",
+						"stonehearth:containers:log_pile",
+						"stonehearth:resources:stone:hunk_of_stone",
+						"stonehearth:containers:stone_pile"
+					],
+					"quantity": {
+						"min": 1,
+						"max": 5
+					}
+				}
+			]
+		}
+	}
+}

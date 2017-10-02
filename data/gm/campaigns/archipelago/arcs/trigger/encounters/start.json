@@ -6,9 +6,11 @@
 		"type": "trigger_many",
 		"out_edges": [
 			"introduction_dialogue",
-			"add_crops_and_recipes"
+			"add_archipelago_crops",
+			"wait_first_soldier"
 		]
 	},
+
 	"wait_info" :  {
 		"duration" : "30m"
 	}

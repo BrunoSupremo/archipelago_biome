@@ -6,7 +6,7 @@
 	"flavor": "i18n(archipelago_biome:jobs.fisher.recipes.fisher_bucket_recipe.flavor)",
 	"portrait": "/archipelago_biome/jobs/fisher/fisher_bucket/fisher_bucket.png",
 	"workshop": "stonehearth:carpenter:workbench",
-	"manual_unlock": false,
+	"manual_unlock": true,
 	"ingredients": [
 		{
 			"material": "wood resource",

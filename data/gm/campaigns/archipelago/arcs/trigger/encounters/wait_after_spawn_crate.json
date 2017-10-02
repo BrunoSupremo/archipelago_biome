@@ -1,0 +1,11 @@
+{
+	"type" : "encounter",
+	"encounter_type" : "wait",
+
+	"in_edge"  : "wait_after_spawn_crate",
+	"out_edge" : "teaches_how_to_break_crate",
+
+	"wait_info" :  {
+		"duration" : "23h+1h"
+	}
+}

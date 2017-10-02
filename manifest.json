@@ -4,7 +4,6 @@
 		"version": 3
 	},
 	"default_locale": "en",
-	"client_init_script": "file(archipelago_biome_client)",
 	"server_init_script": "file(archipelago_biome_server)",
 	"aliases": {
 		"actions:get_fish": "file(ai/actions/fisher/get_fish_action.lua)",
@@ -24,6 +23,8 @@
 
 		"color_map:fish":	"file(data/materials/color_maps/fish_color_map.json)",
 		"color_map:octopus":"file(data/materials/color_maps/octopus_color_map.json)",
+
+		"commands:open_crate":"file(data/commands/open_crate)",
 
 		"critters:crab":		"file(entities/critters/crab)",
 		"critters:fish":		"file(entities/critters/fish)",
@@ -54,6 +55,7 @@
 		"effects:harvest_papaya_overlay":	"file(data/effects/harvest_papaya_overlay)",
 		"effects:harvest_pearl_overlay":	"file(data/effects/harvest_pearl_overlay)",
 		"effects:no_water_overlay":			"file(data/effects/no_water_overlay)",
+		"effects:open_crate":				"file(data/effects/open_crate)",
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
 
 		"food:coconut":"file(entities/food/coconut)",

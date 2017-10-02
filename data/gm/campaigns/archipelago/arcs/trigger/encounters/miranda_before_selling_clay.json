@@ -1,0 +1,37 @@
+{
+   "type": "encounter",
+   "encounter_type": "dialog_tree",
+   "rarity": "common",
+   "in_edge": "miranda_before_selling_clay",
+   "dialog_tree_info": {
+      "start_node": "start",
+      "nodes": {
+         "start": {
+            "bulletin": {
+               "title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_before_selling_clay.title)",
+               "dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+               "portrait": "file(images/captain_miranda.png)",
+               "message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_before_selling_clay.message_start)",
+               "choices": {
+                  "stonehearth:ui.game.common.ok": {
+                     "next_node": "convincing"
+                  }
+               }
+            }
+         },
+         "convincing": {
+            "bulletin": {
+               "title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_before_selling_clay.title)",
+               "dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+               "portrait": "file(images/captain_miranda.png)",
+               "message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.miranda_before_selling_clay.message_convincing)",
+               "choices": {
+                  "stonehearth:ui.game.common.ok": {
+                     "out_edge" : "miranda_clay_shop"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

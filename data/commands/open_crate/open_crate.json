@@ -1,0 +1,10 @@
+{
+	"type": "command",
+	"name": "open_crate",
+	"display_name": "i18n(archipelago_biome:data.commands.open_crate.display_name)",
+	"description": "i18n(archipelago_biome:data.commands.open_crate.description)",
+	"icon": "file(open_crate.png)",
+	"action": "call",
+	"function": "stonehearth:permanently_harvest_entity",
+	"args": []
+}

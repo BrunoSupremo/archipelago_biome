@@ -4,6 +4,6 @@
 	"encounters": {
 		"start": "file(encounters/start.json)",
 		"introduction_dialogue": "file(encounters/introduction_dialogue.json)",
-		"add_archipelago_crops": "file(encounters/add_archipelago_crops.json)"
+		"add_crops_and_recipes": "file(encounters/add_crops_and_recipes.json)"
 	}
 }

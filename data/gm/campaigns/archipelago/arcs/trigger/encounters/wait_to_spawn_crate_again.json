@@ -1,0 +1,11 @@
+{
+   "type" : "encounter",
+   "encounter_type" : "wait",
+
+   "in_edge"  : "wait_to_spawn_crate_again",
+   "out_edge" : "miranda_notice_another_crate",
+
+   "wait_info" :  {
+      "duration" : "24h"
+   }
+}

@@ -456,6 +456,12 @@
 				}
 			}
 		},
+		"commands":{
+			"open_crate":{
+				"display_name":"Open Crate",
+				"description":"Hammer it until it breaks"
+			}
+		},
 		"monster_tuning":{
 			"forest":{
 				"insane_octopus":{

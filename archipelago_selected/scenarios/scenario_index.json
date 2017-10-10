@@ -13,6 +13,9 @@
 			},
 			"wildlife" : {
 				"density" : 5
+			},
+			"ruins" : {
+				"density" : 1
 			}
 		}
 	}

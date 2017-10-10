@@ -7,17 +7,6 @@ bananas
 jellyfish
 
 
-
-ganhar turtle shield em uma missão (detectar quando o jogador tem um footman level x e um fisher level x){
-	Miranda avisa que viu alguma coisa na água,
-	camera foca no objeto
-	jogador harvest ou clica lá nele
-	o pescador (só ele consegue) vai lá e pega o item
-	Miranda explica o item
-
-	depois outra missão identica, mas para o knight (big turtle shield)
-}
-
 crops das outras arvores, a seed(box) é feita pelo herbalist
 
 

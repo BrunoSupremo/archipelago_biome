@@ -470,51 +470,54 @@
 			}
 		},
 		"gm":{
+			"captain_miranda":"Capitã Miranda",
 			"campaigns":{
-				"archipelago":{
-					"common":{
-						"captain_miranda":"Capitã Miranda"
-					},
-					"arcs":{
-						"trigger":{
-							"introduction":{
-								"title":"Uma ajuda do mar",
-								"message_start":"Ei, prazer em te conhecer! Sou a Miranda. Quer uma ajuda?<br>Posso te falar sobre algumas coisas se for novo aqui nas ilhas.",
-								"message_decline":"Bom, se cuida.<br>Boa sorte.",
-								"message_accept":"Isso! Finalmente aceitaram minha ajuda!<br>Er... Quero dizer, me siga!",
-								"message_trees":"Vai começar procurando madeira e comida, né?<br>Aqui temos os dois no mesmo lugar!<br>Tá vendo as palmeiras?<br>Quando você colher elas vai pegar cocos. Mas eles não enchem muito<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
-								"message_oysters":"Ah, e essas ostras gigantes são incríveis. O pescador pode colher as pérolas de tempo em tempo que vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
-								"message_broken_boats":"Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
-								"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
-							},
-							"miranda_before_selling_clay":{
-								"title":"Muito barro no meu barco",
-								"message_start":"Fiz algumas trocas com um comerciante de Rayya. Você sabia que eles têm um monte de barro, super barato? Eu não podia recusar, mas agora eu tenho muito!",
-								"message_convincing":"Eu não posso navegar com o navio tão pesado! O que você me diz? Posso vender um pouco para você? Eu acho que você vai precisar já que você não tem muita terra para cavar por ai..."
-							},
-							"miranda_clay_shop":"O excesso de argila da capitã Miranda",
-							"miranda_notice_a_lost_crate":{
-								"title":"Você perdeu um caixote?",
-								"message_start":"A propósito, enquanto estávamos negociando eu notei esta caixa perto de seu acampamento. Eu acho que é sua, então eu coloquei perto da sua bandeira.",
-								"choice":"Uhm? Que caixa?",
-								"this_crate":"Esse caixote?"
-							},
-							"teaches_how_to_break_crate":{
-								"title":"Curioso?",
-								"message_start":"Você não vai abrir aquela caixa? Talvez seja importante ou pode estragar!<br>Para abri-lo, use suas ferramentas de colheita (da mesma forma que você faz para cortar árvores ou colher plantas)"
-							},
-							"miranda_talks_about_cocolings":{
-								"title":"Cocolings",
-								"message_start":"Lamento ter sido atacado ontem. Aqueles cocolings estão aparecendo em toda parte ultimamente...",
-								"choice":"Os coquinhos endiabrados?",
-								"message_2":"Sim. Eles estão causando problemas em muitas outras ilhas também!<br>Nós ainda não sabemos como eles chegaram aqui ou pra que...<br>Existem muitas outras ilhas tentando descobrir esse mistério.",
-								"choice_end":"Ajudarei no que for possível."
-							},
-							"miranda_notice_another_crate":{
-								"title":"Outra caixa...",
-								"message_start":"Cuidado, eu acabei de avistar outro caixote na sua ilha! Melhor chamar os guardas antes de abri-lo.",
-								"choice":"Me mostre!"
-							}
+				"archipelago_tutorial":{
+					"trigger":{
+						"introduction":{
+							"title":"Uma ajuda do mar",
+							"message_start":"Ei, prazer em te conhecer! Sou a Miranda. Quer uma ajuda?<br>Posso te falar sobre algumas coisas se for novo aqui nas ilhas.",
+							"message_decline":"Bom, se cuida.<br>Boa sorte.",
+							"message_accept":"Isso! Finalmente aceitaram minha ajuda!<br>Er... Quero dizer, me siga!",
+							"message_trees":"Vai começar procurando madeira e comida, né?<br>Aqui temos os dois no mesmo lugar!<br>Tá vendo as palmeiras?<br>Quando você colher elas vai pegar cocos. Mas eles não enchem muito<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
+							"message_oysters":"Ah, e essas ostras gigantes são incríveis. O pescador pode colher as pérolas de tempo em tempo que vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
+							"message_broken_boats":"Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
+							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
+						}
+					}
+				},
+				"archipelago_campaign":{
+					"trigger":{
+						"miranda_before_selling_clay":{
+							"title":"Muito barro no meu barco",
+							"message_start":"Fiz algumas trocas com um comerciante de Rayya. Você sabia que eles têm um monte de barro, super barato? Eu não podia recusar, mas agora eu tenho muito!",
+							"message_convincing":"Eu não posso navegar com o navio tão pesado! O que você me diz? Posso vender um pouco para você? Eu acho que você vai precisar já que você não tem muita terra para cavar por ai..."
+						},
+						"miranda_clay_shop":"O excesso de argila da capitã Miranda",
+						"miranda_notice_a_lost_crate":{
+							"title":"Você perdeu um caixote?",
+							"message_start":"A propósito, enquanto estávamos negociando eu notei esta caixa perto de seu acampamento. Eu acho que é sua, então eu coloquei perto da sua bandeira.",
+							"choice":"Uhm? Que caixa?",
+							"this_crate":"Esse caixote?"
+						},
+						"teaches_how_to_break_crate":{
+							"title":"Curioso?",
+							"message_start":"Você não vai abrir aquela caixa? Talvez seja importante ou pode estragar!<br>Para abri-lo, use suas ferramentas de colheita (da mesma forma que você faz para cortar árvores ou colher plantas)"
+						},
+						"miranda_talks_about_cocolings":{
+							"title":"Cocolings",
+							"message_start":"Lamento ter sido atacado ontem. Aqueles cocolings estão aparecendo em toda parte ultimamente...",
+							"choice":"Os coquinhos endiabrados?",
+							"message_2":"Sim. Eles estão causando problemas em muitas outras ilhas também!<br>Nós ainda não sabemos como eles chegaram aqui ou pra que...<br>Existem muitas outras ilhas tentando descobrir esse mistério.",
+							"choice_end":"Ajudarei no que for possível."
+						},
+						"miranda_notice_another_crate":{
+							"title":"Outra caixa...",
+							"message_start":"Cuidado, eu acabei de avistar outro caixote na sua ilha! Melhor chamar os guardas antes de abri-lo.",
+							"choice":"Me mostre!"
+						},
+						"shield_spawned":{
+							"found":"O pescador viu alguma coisa na água"
 						}
 					}
 				}

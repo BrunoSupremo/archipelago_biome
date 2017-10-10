@@ -8,10 +8,10 @@
 		"nodes": {
 			"start": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.message_start)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_start)",
 					"choices": {
 						"stonehearth:ui.game.common.decline": {
 							"next_node": "decline"
@@ -24,21 +24,23 @@
 			},
 			"decline": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.message_decline)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_decline)",
 					"choices": {
-						"stonehearth:ui.game.common.ok": {}
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "arc:finish"
+						}
 					}
 				}
 			},
 			"accept": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.message_accept)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_accept)",
 					"choices": {
 						"stonehearth:ui.game.common.next": {
 							"next_node": "trees"
@@ -48,10 +50,10 @@
 			},
 			"trees": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.message_trees)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_trees)",
 					"choices": {
 						"stonehearth:ui.game.common.next": {
 							"next_node": "oysters"
@@ -61,10 +63,10 @@
 			},
 			"oysters": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.message_oysters)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_oysters)",
 					"choices": {
 						"stonehearth:ui.game.common.next": {
 							"next_node": "broken_boats"
@@ -74,10 +76,10 @@
 			},
 			"broken_boats": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.message_broken_boats)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_broken_boats)",
 					"choices": {
 						"stonehearth:ui.game.common.next": {
 							"next_node": "bye"
@@ -87,10 +89,10 @@
 			},
 			"bye": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.introduction.message_bye)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_bye)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {
 							"out_edge": "arc:finish"

@@ -1,9 +1,6 @@
 {
 	"type": "entity",
-	"mixins": [
-		"stonehearth:mixins:placed_object",
-		"stonehearth:mixins:destructable_object"
-	],
+	"mixins": "stonehearth:mixins:placed_object",
 	"components": {
 		"archipelago_biome:fake_container":{},
 		"stonehearth:commands": {
@@ -16,16 +13,6 @@
 			"harvest_overlay_effect": "archipelago_biome:effects:open_crate",
 			"harvester_effect": "work",
 			"durability": 6
-		},
-		"stonehearth:attributes": {
-			"max_health": {
-				"type": "basic",
-				"value": 20
-			},
-			"menace": {
-				"type": "basic",
-				"value": 1
-			}
 		},
 		"model_variants": {
 			"default": {

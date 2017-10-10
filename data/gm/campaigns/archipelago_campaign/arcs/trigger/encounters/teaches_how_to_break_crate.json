@@ -17,10 +17,10 @@
 		"nodes": {
 			"start": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.teaches_how_to_break_crate.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.campaigns.archipelago.common.captain_miranda)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.teaches_how_to_break_crate.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago.arcs.trigger.teaches_how_to_break_crate.message_start)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.teaches_how_to_break_crate.message_start)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {}
 					}

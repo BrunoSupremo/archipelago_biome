@@ -1,0 +1,22 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_requirements_met",
+	"in_edge"  : "soldier_and_fisher_levelup",
+	"out_edge" : "fisher_in_the_water",
+	"wait_for_requirements_met_info": {
+		"requirements": {
+			"soldier_level_1": {
+				"item": "highest_job_level",
+				"type": "deny_if_less_than",
+				"value": 1,
+				"job_alias": "stonehearth:jobs:footman"
+			},
+			"fisher_level_2": {
+				"item": "highest_job_level",
+				"type": "deny_if_less_than",
+				"value": 2,
+				"job_alias": "archipelago_biome:jobs:fisher"
+			}
+		}
+	}
+}

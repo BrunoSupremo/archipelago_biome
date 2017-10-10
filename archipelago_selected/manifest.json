@@ -26,6 +26,8 @@
 		"stonehearth:monster_tuning:goblins:worker":		"file(data/monster_tuning/goblins/worker)",
 		"stonehearth:monster_tuning:goblins:worker_thief":	"file(data/monster_tuning/goblins/worker)",
 
+		"stonehearth:rabbit:statue": "file(entities/rabbit/rabbit_statue)",
+
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
 		"stonehearth/scenarios/static/critter_nest/critter_nest.json":	"file(scenarios/static/critter_nest/critter_nest.json)",
 		"stonehearth/scenarios/static/fox_nest/fox_nest.json":			"file(scenarios/static/rabbit_nest/rabbit_nest.json)",

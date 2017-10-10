@@ -1,0 +1,46 @@
+{
+	"components": {
+		"model_variants": {
+			"mixintypes": {
+				"default": "override"
+			},
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(rabbit_statue_01.qb)",
+							"file(rabbit_statue_02.qb)"
+						]
+					}
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {"x": -0.25, "y": 0, "z": 0 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"destination": {
+			"mixintypes": {
+				"region": "override"
+			},
+			"region": [
+				{
+					"min": {"x": -3, "y": 0, "z": -3 },
+					"max": {"x": 4, "y": 15, "z": 4 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"mixintypes": {
+				"region": "override"
+			},
+			"region": [
+				{
+					"min": {"x": -3, "y": 0, "z": -3 },
+					"max": {"x": 4, "y": 15, "z": 4 }
+				}
+			]
+		}
+	}
+}

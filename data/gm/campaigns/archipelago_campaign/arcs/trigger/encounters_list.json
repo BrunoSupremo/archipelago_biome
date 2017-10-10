@@ -4,6 +4,10 @@
 	"encounters": {
 		"start": "file(encounters/start.json)",
 		"wait_first_soldier":"file(encounters/wait_first_soldier.json)",
+
+		"soldier_and_fisher_levelup":"file(encounters/soldier_and_fisher_levelup.json)",
+		"fisher_in_the_water":"file(encounters/fisher_in_the_water.json)",
+
 		"miranda_before_selling_clay":"file(encounters/miranda_before_selling_clay.json)",
 		"miranda_clay_shop":"file(encounters/miranda_clay_shop.json)",
 		"miranda_notice_a_lost_crate":"file(encounters/miranda_notice_a_lost_crate.json)",

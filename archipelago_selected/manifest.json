@@ -55,6 +55,8 @@
 		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree_2.qb":			"file(entities/trees/large_oak_tree_2.qb)",
 		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree_3.qb":			"file(entities/trees/large_oak_tree_3.qb)",
 
+		"stonehearth/ui/game/create_camp/create_camp.js":"file(ui/game/create_camp/create_camp.js)",
+
 		"stonehearth/ui/shell/loading_screen/images/bg.jpg": "file(ui/shell/loading_screen/images/bg.jpg)"
 	}
 }

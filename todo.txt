@@ -4,7 +4,7 @@ king crab
 seagull
 mosquitos/doenças usar o herbalist pra curar
 bananas
-jellyfish
+jellyfish transparent
 
 
 crops das outras arvores, a seed(box) é feita pelo herbalist
@@ -56,9 +56,6 @@ destravam templates de acordo com o nivel de seu porto
 
 
 testar novos metodos com javascript pra evitar override do map.js
-
-
-townnames
 
 
 Miranda corre para sua cidade pra se esconder

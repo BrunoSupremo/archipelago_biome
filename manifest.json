@@ -161,13 +161,21 @@
 		"stonehearth/jobs/potter/recipes/recipes.json":		"file(jobs/potter/recipes)",
 		"stonehearth/jobs/weaver/recipes/recipes.json":		"file(jobs/weaver/recipes)",
 
-		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
+		"stonehearth:kingdoms:ascendancy":			"archipelago_biome:town_names",
+		"rayyas_children:kingdoms:rayyas_children":	"archipelago_biome:town_names",
+		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:traits_index":"file(data/traits/traits_index.json)",
 
 		"stonehearth/locales/pt-BR.json" : "file(locales/pt-BR.json)",
 
 		"brewerymod/manifest.json":"file(modding_mods/brewerymod/manifest.json)"
+	},
+	"functions": {
+		"generate_town_name": {
+			"controller": "file(call_handlers/population_call_handler.lua)",
+			"endpoint": "server"
+		}
 	},
 	"overrides": {
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",

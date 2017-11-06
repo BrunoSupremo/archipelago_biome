@@ -1,0 +1,17 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(dock_leg.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 1 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	}
+}

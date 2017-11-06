@@ -1,427 +1,415 @@
 {
-	"entities":{
-		"armor":{
-			"turtle_shield":{
-				"display_name":"Turtle Shield",
-				"description":"A turtle shell used as a shield"
+	"entities": {
+		"armor": {
+			"turtle_shield": {
+				"display_name": "Turtle Shield",
+				"description": "A turtle shell used as a shield"
 			}
 		},
-		"beach":{
-			"bottle":{
-				"display_name":"Bottle",
-				"description":"Bottle"
+		"beach": {
+			"bottle": {
+				"display_name": "Bottle",
+				"description": "Bottle"
 			},
-			"broken_boat":{
-				"display_name":"Broken Boat",
-				"description":"Harvest for wood and gold."
+			"broken_boat": {
+				"display_name": "Broken Boat",
+				"description": "Harvest for wood and gold."
 			},
-			"oyster":{
-				"display_name":"Oyster",
-				"description":"Pearl's house.",
-				"unripe_description":"An empty shell."
+			"oyster": {
+				"display_name": "Oyster",
+				"description": "Pearl's house.",
+				"unripe_description": "An empty shell."
 			},
-			"seaweed":{
-				"display_name":"Seaweed"
+			"seaweed": {
+				"display_name": "Seaweed"
 			},
-			"starfish":{
-				"display_name":"Starfish",
-				"description":"A.k.a. Sea Stars, starfish is not really a fish."
+			"starfish": {
+				"display_name": "Starfish",
+				"description": "A.k.a. Sea Stars, starfish is not really a fish."
 			}
 		},
-		"critters":{
-			"crab":{
-				"display_name":"Crab",
-				"description":"Feel the pinch"
+		"critters": {
+			"crab": {
+				"display_name": "Crab",
+				"description": "Feel the pinch"
 			},
-			"fish":{
-				"display_name":"Fish",
-				"description":"Underwater Poyos"
-			},
-			"sea_turtle":{
-				"display_name":"Sea Turtle",
-				"description":"Ocean reptiles with flippers"
+			"sea_turtle": {
+				"display_name": "Sea Turtle",
+				"description": "Ocean reptiles with flippers"
 			}
 		},
-		"crops":{
-			"palm_tree_crop":{
-				"display_name":"Palm Tree Sapling",
+		"crops": {
+			"palm_tree_crop": {
+				"display_name": "Palm Tree Sapling",
 				"description": "Out of trees? Get ready to participate in reforestation.",
-				"growth_stage_0":{
-					"name":"Seed Pod",
-					"description":"It is just a buried cononut."
+				"growth_stage_0": {
+					"name": "Seed Pod",
+					"description": "It is just a buried cononut."
 				},
-				"growth_stage_1":{
-					"name":"Palm Tree Seedling",
-					"description":"It finally pierced through the shell."
+				"growth_stage_1": {
+					"name": "Palm Tree Seedling",
+					"description": "It finally pierced through the shell."
 				},
-				"growth_stage_2":{
-					"name":"Palm Tree Sprout",
-					"description":"Trying to reach the sun."
+				"growth_stage_2": {
+					"name": "Palm Tree Sprout",
+					"description": "Trying to reach the sun."
 				},
-				"growth_stage_3":{
-					"name":"Palm Tree Sapling",
-					"description":"Ready to be transferred to a bigger plot."
+				"growth_stage_3": {
+					"name": "Palm Tree Sapling",
+					"description": "Ready to be transferred to a bigger plot."
 				}
 			}
 		},
-		"decoration":{
-			"anchor":{
-				"display_name":"Anchor",
-				"description":"Heavy, to hold your ship",
-				"recipe":{
-					"description":"Can be placed in the ground or hang in walls",
-					"flavor":"If a boat were a head, would its anchors be earrings?"
+		"decoration": {
+			"anchor": {
+				"display_name": "Anchor",
+				"description": "Heavy, to hold your ship",
+				"recipe": {
+					"description": "Can be placed in the ground or hang in walls",
+					"flavor": "If a boat were a head, would its anchors be earrings?"
 				}
 			},
-			"fish_container":{
-				"display_name":"Fish Container",
-				"description":"Ready to be exported"
+			"dock": {
+				"display_name": "Fishing Dock",
+				"description": "A platform where fishers go to fish"
 			},
-			"fruit_container":{
-				"display_name":"Coconut Container",
-				"description":"Ready to be exported",
-				"recipe":{
-					"description":"Easier to sell your coconuts this way.",
-					"flavor":"Ready to be exported"
+			"fish_container": {
+				"display_name": "Fish Container",
+				"description": "Ready to be exported"
+			},
+			"fruit_container": {
+				"display_name": "Coconut Container",
+				"description": "Ready to be exported",
+				"recipe": {
+					"description": "Easier to sell your coconuts this way.",
+					"flavor": "Ready to be exported"
 				}
 			},
-			"hammock":{
-				"display_name":"Hammock",
-				"description":"Take a nap after lunch",
-				"recipe":{
-					"description":"Used for sleeping",
-					"flavor":"Crabs can pinch you, from below..."
+			"hammock": {
+				"display_name": "Hammock",
+				"description": "Take a nap after lunch",
+				"recipe": {
+					"description": "Used for sleeping",
+					"flavor": "Crabs can pinch you, from below..."
 				}
 			},
-			"lei":{
-				"display_name":"Flower Garland",
-				"description":"Flowers hanging on the wall",
-				"recipe":{
-					"description":"To hang on a wall.",
-					"flavor":"Flowers can add extra beauty to walls!"
+			"lei": {
+				"display_name": "Flower Garland",
+				"description": "Flowers hanging on the wall",
+				"recipe": {
+					"description": "To hang on a wall.",
+					"flavor": "Flowers can add extra beauty to walls!"
 				}
 			},
-			"pearl_container":{
-				"display_name":"Pearl Container",
-				"description":"Ready to be exported"
+			"pearl_container": {
+				"display_name": "Pearl Container",
+				"description": "Ready to be exported"
 			},
-			"pirate_flag":{
-				"display_name":"Pirate Flag",
-				"description":"Not a good way to make friends",
-				"recipe":{
-					"description":"A classic pirate themed flag.",
-					"flavor":"Aaaarrrrgggghhhh!"
+			"pirate_flag": {
+				"display_name": "Pirate Flag",
+				"description": "Not a good way to make friends",
+				"recipe": {
+					"description": "A classic pirate themed flag.",
+					"flavor": "Aaaarrrrgggghhhh!"
 				}
 			},
-			"raft":{
-				"display_name":"Raft",
-				"description":"Primitive sailboat",
-				"recipe":{
-					"description":"The starting point of any naval fleet.",
-					"flavor":"Maybe you can sail in it if you dream hard enough!"
+			"raft": {
+				"display_name": "Raft",
+				"description": "Primitive sailboat",
+				"recipe": {
+					"description": "The starting point of any naval fleet.",
+					"flavor": "Maybe you can sail in it if you dream hard enough!"
 				}
 			},
-			"sand_castle":{
-				"display_name":"Sand Castle",
-				"description":"The Sand Princess is in another sand castle",
-				"recipe":{
-					"description":"Uses sand (clay) to build your dream castle",
-					"flavor":"4 years in architecture school to build this?"
+			"sand_castle": {
+				"display_name": "Sand Castle",
+				"description": "The Sand Princess is in another sand castle",
+				"recipe": {
+					"description": "Uses sand (clay) to build your dream castle",
+					"flavor": "4 years in architecture school to build this?"
 				}
 			},
-			"ship_wheel":{
-				"display_name":"Ship Wheel",
-				"description":"So you can guide your dreams",
-				"recipe":{
-					"description":"Could be used to steer a ship, but nowadays it is mostly used for decorations",
-					"flavor":"You know what would be good with it? A ship!"
+			"ship_wheel": {
+				"display_name": "Ship Wheel",
+				"description": "So you can guide your dreams",
+				"recipe": {
+					"description": "Could be used to steer a ship, but nowadays it is mostly used for decorations",
+					"flavor": "You know what would be good with it? A ship!"
 				}
 			},
-			"tiki_torch":{
-				"display_name":"Tiki Torch",
-				"description":"A very long torch",
-				"recipe":{
-					"description":"An outdoor light attached to a long pole fixed into the ground.",
-					"flavor":"Will brighten up the party and keep bugs at bay"
+			"tiki_torch": {
+				"display_name": "Tiki Torch",
+				"description": "A very long torch",
+				"recipe": {
+					"description": "An outdoor light attached to a long pole fixed into the ground.",
+					"flavor": "Will brighten up the party and keep bugs at bay"
 				}
 			}
 		},
-		"food":{
-			"coconut":{
-				"display_name":"Coconut",
-				"description":"Always refreshing"
+		"food": {
+			"coconut": {
+				"display_name": "Coconut",
+				"description": "Always refreshing"
 			},
-			"crab":{
-				"display_name":"Fresh Crab",
-				"description":"Not ready to be eaten"
+			"crab": {
+				"display_name": "Fresh Crab",
+				"description": "Not ready to be eaten"
 			},
-			"crab_cake":{
-				"display_name":"Crab Cake",
-				"description":"A patty of flaked or minced crab meat, typically served fried.",
-				"recipe":{
-					"description":"A patty of flaked or minced crab meat, typically served fried.",
-					"flavor":"Crunchy outside, soft inside"
+			"crab_cake": {
+				"display_name": "Crab Cake",
+				"description": "A patty of flaked or minced crab meat, typically served fried.",
+				"recipe": {
+					"description": "A patty of flaked or minced crab meat, typically served fried.",
+					"flavor": "Crunchy outside, soft inside"
 				}
 			},
-			"crab_omelette":{
-				"display_name":"Crab Omelette",
+			"crab_omelette": {
+				"display_name": "Crab Omelette",
 				"description": "Delicious egg wrapped crab meat"
 			},
-			"crab_rotten":{
-				"display_name":"Rotten Crab",
-				"description":"Crabs spoils very fast..."
+			"crab_rotten": {
+				"display_name": "Rotten Crab",
+				"description": "Crabs spoils very fast..."
 			},
-			"fish":{
-				"display_name":"Fresh Fish",
-				"description":"Not ready to be eaten"
+			"fish": {
+				"display_name": "Fresh Fish",
+				"description": "Not ready to be eaten"
 			},
-			"fish_cooked":{
-				"display_name":"Cooked Fish",
-				"description":"Fried and delicious",
-				"recipe":{
-					"description":"Just let it heat in the oven.",
-					"flavor":"Crunchy outside, soft inside"
+			"fish_cooked": {
+				"display_name": "Cooked Fish",
+				"description": "Fried and delicious",
+				"recipe": {
+					"description": "Just let it heat in the oven.",
+					"flavor": "Crunchy outside, soft inside"
 				}
 			},
-			"fish_rotten":{
-				"display_name":"Rotten Fish",
-				"description":"Fish spoils very fast..."
+			"fish_rotten": {
+				"display_name": "Rotten Fish",
+				"description": "Fish spoils very fast..."
 			},
-			"fish_stew":{
-				"display_name":"Fish Stew",
+			"fish_stew": {
+				"display_name": "Fish Stew",
 				"description": "Warm and delicious",
-				"recipe":{
-					"description":"A warm, savory broth, where the fish gets very soft.",
+				"recipe": {
+					"description": "A warm, savory broth, where the fish gets very soft.",
 					"flavor": "Fantastically easy to make"
 				}
 			},
-			"fish_stew_serving":{
+			"fish_stew_serving": {
 				"display_name": "Bowl of Savory Fish Stew"
 			},
-			"papaya_basket":{
-				"display_name":"Papaya Basket",
-				"description":"Full of Papaya fruits"
+			"papaya_basket": {
+				"display_name": "Papaya Basket",
+				"description": "Full of Papaya fruits"
 			},
-			"papaya_serving":{
-				"display_name":"Papaya fruit",
-				"description":"One half of a fruit"
+			"papaya_serving": {
+				"display_name": "Papaya fruit",
+				"description": "One half of a fruit"
 			},
-			"sashimi":{
-				"display_name":"Sashimi",
-				"description":"Fresh raw fish sliced into thin pieces"
+			"sashimi": {
+				"display_name": "Sashimi",
+				"description": "Fresh raw fish sliced into thin pieces"
 			}
 		},
-		"gizmos":{
-			"cocobomb":{
-				"display_name":"CocoBomb",
-				"description":"Don't play with your food.",
-				"recipe":{
-					"description":"After placed, it will explode when enemies hit it. Damage and set fire to enemies near the explosion.",
-					"flavor":"Everything's better with explosions"
+		"gizmos": {
+			"cocobomb": {
+				"display_name": "CocoBomb",
+				"description": "Don't play with your food.",
+				"recipe": {
+					"description": "After placed, it will explode when enemies hit it. Damage and set fire to enemies near the explosion.",
+					"flavor": "Everything's better with explosions"
 				}
 			},
-			"crab_trap":{
-				"display_name":"Crab Trap",
-				"description":"Will attract and capture crabs."
-			},
-			"float_bobber":{
-				"display_name":"Float Bobber",
-				"description":"Will attract fish."
+			"crab_trap": {
+				"display_name": "Crab Trap",
+				"description": "Will attract and capture crabs."
 			}
 		},
-		"monsters":{
-			"cocoling":{
-				"display_name":"Cocoling",
-				"description":"Not a coconut. Not refreshing"
+		"monsters": {
+			"cocoling": {
+				"display_name": "Cocoling",
+				"description": "Not a coconut. Not refreshing"
 			},
-			"cocoling_spawner":{
-				"display_name":"Ancient Spawner",
-				"description":"Old but gold."
+			"cocoling_spawner": {
+				"display_name": "Ancient Spawner",
+				"description": "Old but gold."
 			},
-			"fake_container":{
-				"display_name":"Mysterious Crate",
-				"description":"Break it to check what is inside"
+			"fake_container": {
+				"display_name": "Mysterious Crate",
+				"description": "Break it to check what is inside"
 			},
-			"octopus":{
-				"display_name":"Octopus",
-				"description":"Arms, more than you can count"
+			"octopus": {
+				"display_name": "Octopus",
+				"description": "Arms, more than you can count"
 			}
 		},
-		"resources":{
-			"pearl":{
-				"display_name":"White Pearl",
-				"description":"Perhaps the best-loved gem of all time"
+		"resources": {
+			"pearl": {
+				"display_name": "White Pearl",
+				"description": "Perhaps the best-loved gem of all time"
 			},
-			"black_pearl":{
-				"display_name":"Black Pearl",
-				"description":"Full of curses, sells for a good price"
+			"black_pearl": {
+				"display_name": "Black Pearl",
+				"description": "Full of curses, sells for a good price"
 			},
-			"hot_rock":{
-				"display_name":"Hot Rock",
-				"description":"Rich in minerals, just mine it"
+			"hot_rock": {
+				"display_name": "Hot Rock",
+				"description": "Rich in minerals, just mine it"
 			}
 		},
-		"toys":{
-			"beachball":{
-				"display_name":"Beach Ball",
-				"description":"For beach and water games"
+		"toys": {
+			"beachball": {
+				"display_name": "Beach Ball",
+				"description": "For beach and water games"
 			}
 		},
-		"trees":{
-			"common_palm":{
-				"description":"A symbol of the tropical island paradise.",
-				"unripe_description":"No coconuts yet. A symbol of the tropical island paradise."
+		"trees": {
+			"common_palm": {
+				"description": "A symbol of the tropical island paradise.",
+				"unripe_description": "No coconuts yet. A symbol of the tropical island paradise."
 			},
-			"palm_tree":{
-				"sapling_palm_tree":{
-					"display_name":"Palm Tree Sapling"
+			"palm_tree": {
+				"sapling_palm_tree": {
+					"display_name": "Palm Tree Sapling"
 				},
-				"small_palm_tree":{
-					"display_name":"Small Palm Tree"
+				"small_palm_tree": {
+					"display_name": "Small Palm Tree"
 				},
-				"large_palm_tree":{
-					"display_name":"Large Palm Tree"
+				"large_palm_tree": {
+					"display_name": "Large Palm Tree"
 				}
 			},
-			"bend_palm_tree":{
-				"small_bend_palm_tree":{
-					"display_name":"Small Bent Palm Tree"
+			"bend_palm_tree": {
+				"small_bend_palm_tree": {
+					"display_name": "Small Bent Palm Tree"
 				},
-				"large_bend_palm_tree":{
-					"display_name":"Large Bent Palm Tree"
+				"large_bend_palm_tree": {
+					"display_name": "Large Bent Palm Tree"
 				}
 			},
-			"dranden":{
-				"display_name":"Dranden Tree",
-				"description":"Large trunk with heavy leaves"
+			"dranden": {
+				"display_name": "Dranden Tree",
+				"description": "Large trunk with heavy leaves"
 			},
-			"smalea":{
-				"display_name":"Smalea Tree",
-				"description":"Small and dense tree"
+			"smalea": {
+				"display_name": "Smalea Tree",
+				"description": "Small and dense tree"
 			},
-			"papaya":{
-				"display_name":"Papaya Tree",
-				"description":"A large, tree-like plant (it is not a tree?)",
-				"unripe_description":"Not yet ripe for harvest"
+			"papaya": {
+				"display_name": "Papaya Tree",
+				"description": "A large, tree-like plant (it is not a tree?)",
+				"unripe_description": "Not yet ripe for harvest"
 			}
 		},
-		"weapons":{
-			"slap_fish":{
-				"display_name":"Slap Fish",
-				"description":"Ouch!"
+		"weapons": {
+			"slap_fish": {
+				"display_name": "Slap Fish",
+				"description": "Ouch!"
 			},
-			"crab_pincer":{
-				"display_name":"Crab Pincer",
-				"description":"Feel the pinch!"
+			"crab_pincer": {
+				"display_name": "Crab Pincer",
+				"description": "Feel the pinch!"
 			}
 		}
 	},
-	"jobs":{
-		"fisher":{
-			"fisher_description":{
-				"display_name":"Fisher",
-				"description":"Will capture crabs, harvest pearls, and do other water related works",
-				"requirements":"Crafted by your main crafter",
-				"level_0":{
-					"perk_name":"Fishing",
-					"perk_description":"The fisher can craft tools to help catching fish."
+	"jobs": {
+		"fisher": {
+			"fisher_description": {
+				"display_name": "Fisher",
+				"description": "Will capture crabs, harvest pearls, and do other water related works",
+				"requirements": "Crafted by your main crafter",
+				"level_0": {
+					"perk_name": "Fishing",
+					"perk_description": "The fisher can craft tools to help catching fish."
 				},
-				"level_1":{
-					"perk_name":"Crabs",
-					"perk_description":"The fisher can now craft and place traps to capture crabs."
-				},
-				"level_5":{
-					"perk_name":"Automatic Fishing",
-					"perk_description":"The fisher will automatically fish."
-				},
-				"level_6":{
-					"perk_name":"Automatic Crabbing",
-					"perk_description":"The fisher will automatically harvest a crab trap when it captures a crab."
+				"level_1": {
+					"perk_name": "Crabs",
+					"perk_description": "The fisher can now craft and place traps to capture crabs."
 				}
 			},
-			"fisher_bucket":{
-				"display_name":"Fisher Bucket",
-				"description":"Multipurpose bucket",
-				"fisher_bucket_talisman":{
-					"display_name":"Fisher Bucket",
-					"description":"Required to promote a hearthling into a Fisher"
+			"fisher_bucket": {
+				"display_name": "Fisher Bucket",
+				"description": "Multipurpose bucket",
+				"fisher_bucket_talisman": {
+					"display_name": "Fisher Bucket",
+					"description": "Required to promote a hearthling into a Fisher"
 				}
 			},
-			"fisher_outfit":{
-				"display_name":"Fisher Outfit",
-				"description":"Usual fisher outfit"
+			"fisher_outfit": {
+				"display_name": "Fisher Outfit",
+				"description": "Usual fisher outfit"
 			},
-			"recipes":{
-				"fisher_tools_name":"Fisher Tools",
-				"fisher_bucket_recipe":{
-					"recipe_name":"Fisher's Bucket",
-					"description":"Required to promote a hearthling into a Fisher.",
-					"flavor":"Multipurpose bucket"
+			"recipes": {
+				"fisher_tools_name": "Fisher Tools",
+				"fisher_bucket_recipe": {
+					"recipe_name": "Fisher's Bucket",
+					"description": "Required to promote a hearthling into a Fisher.",
+					"flavor": "Multipurpose bucket"
 				},
-				"crab_pincer_recipe":{
-					"recipe_name":"Crab Pincer",
-					"description":"A weapon that you can wear in your hand!",
-					"flavor":"Clean it before putting your hand inside!"
+				"crab_pincer_recipe": {
+					"recipe_name": "Crab Pincer",
+					"description": "A weapon that you can wear in your hand!",
+					"flavor": "Clean it before putting your hand inside!"
 				},
-				"crab_trap_recipe":{
-					"recipe_name":"Crab Trap",
-					"description":"Will attract and capture crabs. Needs manual harvesting to get the crabs inside.",
-					"flavor":"Crabs will spawn around it if there are none near."
+				"crab_trap_recipe": {
+					"recipe_name": "Crab Trap",
+					"description": "Will attract and capture crabs. Needs manual harvesting to get the crabs inside.",
+					"flavor": "Crabs will spawn around it if there are none near."
 				},
-				"fish_container_recipe":{
-					"recipe_name":"Fish Container",
-					"description":"Easier to sell your fish this way.",
-					"flavor":"Ready to be exported"
+				"fish_container_recipe": {
+					"recipe_name": "Fish Container",
+					"description": "Easier to sell your fish this way.",
+					"flavor": "Ready to be exported"
 				},
-				"float_bobber_recipe":{
-					"recipe_name":"Float Bobber",
-					"description":"Place in the water to signal a fishing spot in that area. Fishes will appear there and can be fished by the fisher.",
-					"flavor":"It takes sometime for fish to spawn, and needs manual 'harvesting'"
+				"pearl_container_recipe": {
+					"recipe_name": "Pearl Container",
+					"description": "Easier to sell your pearls this way.",
+					"flavor": "Ready to be exported"
 				},
-				"pearl_container_recipe":{
-					"recipe_name":"Pearl Container",
-					"description":"Easier to sell your pearls this way.",
-					"flavor":"Ready to be exported"
+				"sashimi_recipe": {
+					"recipe_name": "Sashimi",
+					"description": "Fresh raw fish sliced into thin pieces",
+					"flavor": "Not very hard to prepare"
 				},
-				"sashimi_recipe":{
-					"recipe_name":"Sashimi",
-					"description":"Fresh raw fish sliced into thin pieces",
-					"flavor":"Not very hard to prepare"
+				"slap_fish_recipe": {
+					"recipe_name": "Slap Fish",
+					"description": "Ouch!",
+					"flavor": "It's more disgusting than dangerous"
 				},
-				"slap_fish_recipe":{
-					"recipe_name":"Slap Fish",
-					"description":"Ouch!",
-					"flavor":"It's more disgusting than dangerous"
+				"dock_recipe": {
+					"recipe_name": "Fishing Dock",
+					"description": "Place it at a edge facing the water. The fisher will recognize this as a fishing spot and use it when fishing.",
+					"flavor": "Fish loves to be under its shadow"
 				}
 			}
 		}
 	},
 	"ui": {
-		"game":{
-			"build_mode":{
-				"building_templates":{
-					"template_names":{
-						"beach_tower":"Beach Tower",
-						"little_pier":"Little Pier",
-						"open_house":"Open House",
-						"small_beach_house":"Small Beach House",
-						"carpenter_house":"Carpenter's House",
-						"tiki_bar":"Tiki Bar",
-						"small_boat":"Small Boat",
-						"double_outrigger_boat":"Double Outrigger Boat",
-						"explorer_ship":"Explorer Ship",
-						"long_ship":"Long Ship",
-						"trader_ship":"Trader Ship"
+		"game": {
+			"build_mode": {
+				"building_templates": {
+					"template_names": {
+						"beach_tower": "Beach Tower",
+						"little_pier": "Little Pier",
+						"open_house": "Open House",
+						"small_beach_house": "Small Beach House",
+						"carpenter_house": "Carpenter's House",
+						"tiki_bar": "Tiki Bar",
+						"small_boat": "Small Boat",
+						"double_outrigger_boat": "Double Outrigger Boat",
+						"explorer_ship": "Explorer Ship",
+						"long_ship": "Long Ship",
+						"trader_ship": "Trader Ship"
 					}
 				}
 			},
-			"menu":{
-				"crafter_menu":{
-					"items":{
-						"fisher":{
-							"display_name":"Fisher Craft Menu",
-							"description":"Create fisher related items",
-							"required_job_text":"Requires a fisher"
+			"menu": {
+				"crafter_menu": {
+					"items": {
+						"fisher": {
+							"display_name": "Fisher Craft Menu",
+							"description": "Create fisher related items",
+							"required_job_text": "Requires a fisher"
 						}
 					}
 				}
@@ -447,90 +435,90 @@
 				}
 			}
 		},
-		"build":{
-			"building_brushes":{
-				"colors":{
-					"#f1f1a4":"Sand 1 (Archipelago)",
-					"#f0ea99":"Sand 2 (Archipelago)",
-					"#f0e187":"Sand 3 (Archipelago)"
+		"build": {
+			"building_brushes": {
+				"colors": {
+					"#f1f1a4": "Sand 1 (Archipelago)",
+					"#f0ea99": "Sand 2 (Archipelago)",
+					"#f0e187": "Sand 3 (Archipelago)"
 				}
 			}
 		},
-		"commands":{
-			"open_crate":{
-				"display_name":"Open Crate",
-				"description":"Hammer it until it breaks"
+		"commands": {
+			"open_crate": {
+				"display_name": "Open Crate",
+				"description": "Hammer it until it breaks"
 			}
 		},
-		"monster_tuning":{
-			"forest":{
-				"insane_octopus":{
-					"description":"Smaller octopus tend to flock around them."
+		"monster_tuning": {
+			"forest": {
+				"insane_octopus": {
+					"description": "Smaller octopus tend to flock around them."
 				}
 			}
 		},
-		"gm":{
-			"captain_miranda":"Captain Miranda",
-			"campaigns":{
-				"archipelago_tutorial":{
-					"trigger":{
-						"introduction":{
-							"title":"A help from the seas",
-							"message_start":"Hey, nice to meet you! I'm Miranda. Want some help?<br>I can talk about a few things if you are new here in the islands.",
-							"message_decline":"Well, take care.<br>Good luck.",
-							"message_accept":"Yes! Finally someone accepted my help!<br>Er... I mean, follow me!",
-							"message_trees":"You will start looking for wood and food, right?<br>Here you can find both at the same place!<br>Do you see the palm trees?<br>When you harvest them you get coconuts. Those don't fill much though.<br>Harvesting it a second time (while it has no coconuts) will instead chop it for wood.",
-							"message_oysters":"Oh, and these big oysters are awesome. A fisher can harvest their pearls from time to time which sell for a good amount.<br>Rumours mention rare black pearls, but I never saw one myself.",
-							"message_broken_boats":"Take a look around and you may find some unlucky boat wrecks.<br>You can scavenger those and find good treasures.",
-							"message_bye":"That's all for now.<br>I'll return later to check how you guys are doing.<br>I need to take advantage of this wind and sail, my ship will not fill itself with goods and treasures.<br>Bye bye and good luck."
+		"gm": {
+			"captain_miranda": "Captain Miranda",
+			"campaigns": {
+				"archipelago_tutorial": {
+					"trigger": {
+						"introduction": {
+							"title": "A help from the seas",
+							"message_start": "Hey, nice to meet you! I'm Miranda. Want some help?<br>I can talk about a few things if you are new here in the islands.",
+							"message_decline": "Well, take care.<br>Good luck.",
+							"message_accept": "Yes! Finally someone accepted my help!<br>Er... I mean, follow me!",
+							"message_trees": "You will start looking for wood and food, right?<br>Here you can find both at the same place!<br>Do you see the palm trees?<br>When you harvest them you get coconuts. Those don't fill much though.<br>Harvesting it a second time (while it has no coconuts) will instead chop it for wood.",
+							"message_oysters": "Oh, and these big oysters are awesome. A fisher can harvest their pearls from time to time which sell for a good amount.<br>Rumours mention rare black pearls, but I never saw one myself.",
+							"message_broken_boats": "Take a look around and you may find some unlucky boat wrecks.<br>You can scavenger those and find good treasures.",
+							"message_bye": "That's all for now.<br>I'll return later to check how you guys are doing.<br>I need to take advantage of this wind and sail, my ship will not fill itself with goods and treasures.<br>Bye bye and good luck."
 						}
 					}
 				},
-				"archipelago_campaign":{
-					"trigger":{
-						"miranda_before_selling_clay":{
-							"title":"Too much clay on my boat",
-							"message_start":"I made some trades with a Rayya merchant. Did you know they have a lot of clay, super cheap? I couldn't refuse, but now I have too much of it!",
-							"message_convincing":"I can't sail with the ship being so heavy! What you say? Can I sell some to you? I guess you will need some as you don't have much land to dig for it..."
+				"archipelago_campaign": {
+					"trigger": {
+						"miranda_before_selling_clay": {
+							"title": "Too much clay on my boat",
+							"message_start": "I made some trades with a Rayya merchant. Did you know they have a lot of clay, super cheap? I couldn't refuse, but now I have too much of it!",
+							"message_convincing": "I can't sail with the ship being so heavy! What you say? Can I sell some to you? I guess you will need some as you don't have much land to dig for it..."
 						},
-						"miranda_clay_shop":"Captain Miranda's clay excess",
-						"miranda_notice_a_lost_crate":{
-							"title":"Did you lost a crate?",
-							"message_start":"By the way, while we were trading I noticed this crate near your camp. I'm guessing it is yours, so I put it near your camp flag.",
-							"choice":"Uhm? What crate?",
-							"this_crate":"This crate?"
+						"miranda_clay_shop": "Captain Miranda's clay excess",
+						"miranda_notice_a_lost_crate": {
+							"title": "Did you lost a crate?",
+							"message_start": "By the way, while we were trading I noticed this crate near your camp. I'm guessing it is yours, so I put it near your camp flag.",
+							"choice": "Uhm? What crate?",
+							"this_crate": "This crate?"
 						},
-						"teaches_how_to_break_crate":{
-							"title":"Curious?",
-							"message_start":"Aren't you going to open that crate? Maybe it is important or it can spoils!<br>To open it, use your harvest tools (the same way you do to cut trees or harvest plants)"
+						"teaches_how_to_break_crate": {
+							"title": "Curious?",
+							"message_start": "Aren't you going to open that crate? Maybe it is important or it can spoils!<br>To open it, use your harvest tools (the same way you do to cut trees or harvest plants)"
 						},
-						"miranda_talks_about_cocolings":{
-							"title":"Cocolings",
-							"message_start":"I'm sorry that you got attacked yesterday. Those cocolings are appearing everywhere lately...",
-							"choice":"The little evil coconuts?",
-							"message_2":"Yes. They are causing problems in many other islands too!<br>We still don't know how they got here or why...<br>There are many other islanders trying to figured this mystery out.",
-							"choice_end":"I will help when possible."
+						"miranda_talks_about_cocolings": {
+							"title": "Cocolings",
+							"message_start": "I'm sorry that you got attacked yesterday. Those cocolings are appearing everywhere lately...",
+							"choice": "The little evil coconuts?",
+							"message_2": "Yes. They are causing problems in many other islands too!<br>We still don't know how they got here or why...<br>There are many other islanders trying to figured this mystery out.",
+							"choice_end": "I will help when possible."
 						},
-						"miranda_notice_another_crate":{
-							"title":"Another crate...",
-							"message_start":"Watch out, I just saw another crate at your island! Better move your guards before opening it.",
-							"choice":"Show me!"
+						"miranda_notice_another_crate": {
+							"title": "Another crate...",
+							"message_start": "Watch out, I just saw another crate at your island! Better move your guards before opening it.",
+							"choice": "Show me!"
 						},
-						"shield_spawned":{
-							"found":"The fisher saw something in the water"
+						"shield_spawned": {
+							"found": "The fisher saw something in the water"
 						}
 					}
 				}
 			}
 		},
-		"saved_objects":{
-			"building_templates_index":{
-				"template_tabs":{
+		"saved_objects": {
+			"building_templates_index": {
+				"template_tabs": {
 					"display_name": "Archipelago",
-					"categories":{
-						"camp":"Beach Camp",
-						"boats":"Boats",
-						"tier3":"Royal Port"
+					"categories": {
+						"camp": "Beach Camp",
+						"boats": "Boats",
+						"tier3": "Royal Port"
 					}
 				}
 			}

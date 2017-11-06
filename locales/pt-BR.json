@@ -33,10 +33,6 @@
 				"display_name":"Caranguejo",
 				"description":"Sinta o beliscão"
 			},
-			"fish":{
-				"display_name":"Peixe",
-				"description":"Poyos aquaticos"
-			},
 			"sea_turtle":{
 				"display_name":"Tartaruga Marinha",
 				"description":"Répteis marinhos com nadadeiras"
@@ -72,6 +68,10 @@
 					"description":"Pode ser colocado no chão ou pendurado em paredes",
 					"flavor":"Se um barco fosse uma cabeça, suas âncoras seriam brincos?"
 				}
+			},
+			"dock":{
+				"display_name":"Doca de pesca",
+				"description":"Uma plataforma onde os pescadores vão para pescar"
 			},
 			"fish_container":{
 				"display_name":"Caixote de peixes",
@@ -223,10 +223,6 @@
 			"crab_trap":{
 				"display_name":"Armadilha de Caranguejo",
 				"description":"Irá atrair e capturar caranguejos."
-			},
-			"float_bobber":{
-				"display_name":"Flutuador",
-				"description":"Irá atrair peixes."
 			}
 		},
 		"monsters":{
@@ -329,14 +325,6 @@
 				"level_1":{
 					"perk_name":"Caranguejos",
 					"perk_description":"O pescador agora pode criar e colocar armadilhas para capturar caranguejos."
-				},
-				"level_5":{
-					"perk_name":"Pescaria Automática",
-					"perk_description":"O pescador irá pescar automaticamente."
-				},
-				"level_6":{
-					"perk_name":"Caranguejos Automáticos",
-					"perk_description":"O pescador irá coletar automaticamente as armadilhas quando capturarem um caranguejo."
 				}
 			},
 			"fisher_bucket":{
@@ -373,11 +361,6 @@
 					"description":"É mais fácil vender os peixes assim.",
 					"flavor":"Pronto pra ser exportado"
 				},
-				"float_bobber_recipe":{
-					"recipe_name":"Flutuador",
-					"description":"Coloque na água para sinalizar um ponto de pesca nessa área. Os peixes aparecerão lá e podem ser pescados pelo pescador.",
-					"flavor":"Demora um pouco até que os peixes apareçam, e precisa 'colher' manualmente"
-				},
 				"pearl_container_recipe":{
 					"recipe_name":"Caixote de Pérolas",
 					"description":"É mais fácil vender as pérolas assim.",
@@ -392,6 +375,11 @@
 					"recipe_name":"Peixe Porrete",
 					"description":"Ai!",
 					"flavor":"É mais nojento do que perigoso"
+				},
+				"dock_recipe": {
+					"recipe_name": "Doca de pesca",
+					"description": "Coloque-o em uma borda de frente para a água. O pescador irá reconhecer isso como um ponto de pesca e usá-lo na pesca.",
+					"flavor": "Os peixes gostam de ficar embaixo da sombra"
 				}
 			}
 		}

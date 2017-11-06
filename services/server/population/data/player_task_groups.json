@@ -8,7 +8,11 @@
 							"type": "task_group",
 							"work_order": "job",
 							"children": {
-								"archipelago_biome:get_fish": {
+								"archipelago_biome:get_crab": {
+									"type": "task",
+									"priority": 2
+								},
+								"archipelago_biome:go_fish": {
 									"type": "task",
 									"priority": 1
 								},

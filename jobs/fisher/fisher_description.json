@@ -69,32 +69,6 @@
 					"level": 1
 				}
 			]
-		},
-		"5": {
-			"perks": [
-				{
-					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_5.perk_name)",
-					"id": "automatic_fishing",
-					"type":"add_equipment",
-					"equipment": "archipelago_biome:automatic_fishing",
-					"icon": "file(images/level_5.png)",
-					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_5.perk_description)",
-					"level": 5
-				}
-			]
-		},
-		"6": {
-			"perks": [
-				{
-					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_6.perk_name)",
-					"id": "automatic_crabbing",
-					"type":"add_equipment",
-					"equipment": "archipelago_biome:automatic_crabbing",
-					"icon": "file(images/level_6.png)",
-					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_6.perk_description)",
-					"level": 6
-				}
-			]
 		}
 	}
 }

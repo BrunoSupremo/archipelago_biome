@@ -1,10 +1,15 @@
-tiki warrior
-piratas
-king crab
-seagull
-mosquitos/doenças usar o herbalist pra curar
-bananas
-jellyfish transparent
+Para depois do a23
+	deletar critter:fish e tudo relacionado
+	deletar gizmo:float_bobber e tudo relacionado
+
+mobs
+	tiki warrior
+	piratas
+	king crab
+	seagull
+	mosquitos
+		doenças usar o herbalist pra curar
+	jellyfish transparent
 
 
 crops das outras arvores, a seed(box) é feita pelo herbalist
@@ -33,11 +38,13 @@ hearthlings nadam pra se refrescar e brincar
 novos hearthlings chegam de barco
 
 
-Atlanteans, tema verde, ciano, branco, roxo
+Atlanteans
+	tema verde, ciano, branco, roxo
 
-
-espadas piratas
-canhões piratas
+items
+	espadas piratas
+	canhões piratas
+	bananas
 
 
 bloquear animais do shepherd, liberar comprando/trocando

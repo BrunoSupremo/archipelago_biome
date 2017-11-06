@@ -6,10 +6,14 @@
 	"default_locale": "en",
 	"server_init_script": "file(archipelago_biome_server)",
 	"aliases": {
-		"actions:get_fish": "file(ai/actions/fisher/get_fish_action.lua)",
-		"actions:get_crab": "file(ai/actions/fisher/get_crab_action.lua)",
+		"ai_pack:fishing":"file(ai/packs/fishing_ai_pack.json)",
 
-		"armor:turtle_shield":		"file(entities/armor/turtle_shield)",
+		"actions:go_fish":				"file(ai/actions/fisher/go_fish_action.lua)",
+		"actions:fishing_animations":	"file(ai/actions/fisher/fishing_animations_action.lua)",
+		"actions:pickup_fish":			"file(ai/actions/fisher/pickup_fish_action.lua)",
+		"actions:get_crab":				"file(ai/actions/fisher/get_crab_action.lua)",
+
+		"armor:turtle_shield":"file(entities/armor/turtle_shield)",
 
 		"beach:bottle":		"file(entities/beach/bottle)",
 		"beach:broken_boat":"file(entities/beach/broken_boat)",
@@ -35,6 +39,9 @@
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"decoration:anchor":			"file(entities/decoration/anchor)",
+		"decoration:dock":				"file(entities/decoration/dock)",
+		"decoration:dock_leg":			"file(entities/decoration/dock/dock_leg.json)",
+		"decoration:dock_spot":			"file(entities/decoration/dock/dock_spot.json)",
 		"decoration:fish_container":	"file(entities/decoration/fish_container)",
 		"decoration:fruit_container":	"file(entities/decoration/fruit_container)",
 		"decoration:hammock":			"file(entities/decoration/hammock)",
@@ -81,8 +88,6 @@
 		"fisher:bucket":		"file(jobs/fisher/fisher_bucket/fisher_bucket.json)",
 		"fisher:talisman":		"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 		"traits:passion_fisher":"file(data/traits/passion_fisher/passion_fisher_trait.json)",
-		"automatic_fishing":	"file(jobs/fisher/fisher_abilities/automatic_fishing.json)",
-		"automatic_crabbing":	"file(jobs/fisher/fisher_abilities/automatic_crabbing.json)",
 
 		"mixins:encounter:octopus_raid":	"file(mixins/encounter/mixin_octopus_raid.json)",
 		"mixins:encounter:cocoling_raid":	"file(mixins/encounter/mixin_cocoling_raid.json)",
@@ -178,6 +183,10 @@
 		}
 	},
 	"overrides": {
+		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":"file(data/rigs/entities/humans/animations/female/fishing_start.json)",
+		"stonehearth/data/rigs/entities/humans/animations/male/fishing_start.json":"file(data/rigs/entities/humans/animations/female/fishing_start.json)",
+		"stonehearth/data/rigs/entities/humans/effects/fishing_start.json":"file(data/rigs/entities/humans/effects/fishing_start.json)",
+
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
 		"stonehearth/ui/shell/select_settlement/select_settlement.js": "file(ui/shell/select_settlement/select_settlement.js)"
 	},
@@ -185,6 +194,7 @@
 		"class:fisher": "file(jobs/fisher/fisher.lua)"
 	},
 	"components": {
+		"dock":				"file(components/dock/dock.lua)",
 		"explosive":		"file(components/explosive/explosive.lua)",
 		"fake_container":	"file(components/fake_container/fake_container.lua)",
 		"crab_spawner":		"file(components/fish_spawner/crab_spawner.lua)",

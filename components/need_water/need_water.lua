@@ -1,4 +1,5 @@
 local Point3 = _radiant.csg.Point3
+local Cube3 = _radiant.csg.Cube3
 local ArchipelagoNeedWater = class()
 -- local log = radiant.log.create_logger('need_water')
 
@@ -11,6 +12,7 @@ function ArchipelagoNeedWater:activate()
 	-- log:error("activate")
 	local json = radiant.entities.get_json(self)
 	self.need_water_icon = json.need_water_icon
+	self.water_location_function = json.water_location_function
 	self.float = json.float
 	if self.float and self.float.add_animation then
 		self._ground_animation = self.float.add_animation.at_ground
@@ -68,7 +70,17 @@ function ArchipelagoNeedWater:on_added_to_world()
 		--so I have to wait 1gametick for it to be set, and it is done running inside this
 		local location = radiant.entities.get_world_grid_location(self._entity)
 		if location then
-			local intersected_entities = radiant.terrain.get_entities_at_point(location)
+			local intersected_entities
+			if self.water_location_function then
+				local component = self._entity:get_component(self.water_location_function.component)
+				local fn = self.water_location_function.fn
+
+				local water_location = component[fn](component)
+				intersected_entities = radiant.terrain.get_entities_at_point(water_location)
+			else
+				intersected_entities = radiant.terrain.get_entities_at_point(location)
+			end
+
 			local in_the_water = false
 			for id, entity in pairs(intersected_entities) do
 				local water_component = entity:get_component('stonehearth:water')

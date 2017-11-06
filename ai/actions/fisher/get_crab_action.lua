@@ -1,7 +1,7 @@
 local GetCrab = class()
 
 GetCrab.name = 'get a crab'
-GetCrab.does = 'archipelago_biome:get_fish'
+GetCrab.does = 'archipelago_biome:get_crab'
 GetCrab.args = { }
 GetCrab.version = 2
 GetCrab.priority = 1

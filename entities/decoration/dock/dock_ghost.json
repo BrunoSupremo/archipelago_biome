@@ -1,0 +1,52 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(dock.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 1 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": -1, "y": 0, "z": -2 },
+					"max": {"x": 2, "y": 1, "z": 1 }
+				}
+			],
+			"adjacent": [
+				{
+					"min": {"x": -2, "y": 0, "z": -2 },
+					"max": {"x": -1, "y": 3, "z": 1 }
+				},
+				{
+					"min": {"x": -1, "y": 0, "z": -3 },
+					"max": {"x": 2, "y": 3, "z": -2 }
+				},
+				{
+					"min": {"x": -1, "y": 0, "z": 1 },
+					"max": {"x": 2, "y": 3, "z": 2 }
+				},
+				{
+					"min": {"x": 2, "y": 0, "z": -2 },
+					"max": {"x": 3, "y": 3, "z": 1 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.decoration.dock.display_name)",
+			"description": "i18n(archipelago_biome:entities.decoration.dock.description)",
+			"icon": "file(dock.png)",
+			"category": "decoration",
+			"material_tags": "wood crafted decoration stockpile_decoration"
+		}
+	}
+}

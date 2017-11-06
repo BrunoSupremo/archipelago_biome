@@ -14,7 +14,7 @@
 			"fisher_level_2": {
 				"item": "highest_job_level",
 				"type": "deny_if_less_than",
-				"value": 2,
+				"value": 1,
 				"job_alias": "archipelago_biome:jobs:fisher"
 			}
 		}

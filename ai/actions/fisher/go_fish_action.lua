@@ -2,6 +2,7 @@ local GoFish = class()
 
 GoFish.name = 'go to a dock to fish'
 GoFish.does = 'archipelago_biome:go_fish'
+GoFish.status_text_key = 'archipelago_biome:ai.actions.status_text.fishing'
 GoFish.args = { }
 GoFish.version = 2
 GoFish.priority = 1

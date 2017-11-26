@@ -1,4 +1,11 @@
 {
+	"ai":{
+		"actions":{
+			"status_text":{
+				"fishing":"Pescando"
+			}
+		}
+	},
 	"entities":{
 		"armor":{
 			"turtle_shield":{
@@ -335,6 +342,10 @@
 					"description":"Necessário para promover alguém em um pescador"
 				}
 			},
+			"fisher_rod": {
+				"display_name": "Vara de Pescar",
+				"description": "Uma vara longa e flexível usada para pegar peixes"
+			},
 			"fisher_outfit":{
 				"display_name":"Roupa de Pescador",
 				"description":"Roupa comum de pescador"
@@ -467,10 +478,10 @@
 							"message_start":"Ei, prazer em te conhecer! Sou a Miranda. Quer uma ajuda?<br>Posso te falar sobre algumas coisas se for novo aqui nas ilhas.",
 							"message_decline":"Bom, se cuida.<br>Boa sorte.",
 							"message_accept":"Isso! Finalmente aceitaram minha ajuda!<br>Er... Quero dizer, me siga!",
-							"message_trees":"Vai começar procurando madeira e comida, né?<br>Aqui temos os dois no mesmo lugar!<br>Tá vendo as palmeiras?<br>Quando você colher elas vai pegar cocos. Mas eles não enchem muito<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
+							"message_trees":"Vai começar procurando madeira e comida, né?<br>Aqui temos os dois com palmeiras!<br>Quando você colher elas vai pegar cocos. Mas eles não enchem muito<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
 							"message_oysters":"Ah, e essas ostras gigantes são incríveis. O pescador pode colher as pérolas de tempo em tempo que vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
 							"message_broken_boats":"Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
-							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
+							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento bom e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
 						}
 					}
 				},

@@ -15,7 +15,7 @@
 	"abilities": "file(fisher_abilities)",
 	"equipment": {
 		"torso": "file(fisher_outfit)",
-		"mainhand": "archipelago_biome:fisher:bucket"
+		"mainhand": "archipelago_biome:fisher:rod"
 	},
 	"roles": "fisher_job crafter",
 	"icon": "file(images/icon.png)",

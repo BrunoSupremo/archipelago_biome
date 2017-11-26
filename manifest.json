@@ -84,10 +84,10 @@
 		"gizmos:crab_trap":		"file(entities/gizmos/crab_trap)",
 		"gizmos:float_bobber":	"file(entities/gizmos/float_bobber)",
 
-		"jobs:fisher":			"file(jobs/fisher/fisher_description.json)",
-		"fisher:bucket":		"file(jobs/fisher/fisher_bucket/fisher_bucket.json)",
-		"fisher:talisman":		"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
-		"traits:passion_fisher":"file(data/traits/passion_fisher/passion_fisher_trait.json)",
+		"jobs:fisher":		"file(jobs/fisher/fisher_description.json)",
+		"fisher:bucket":	"file(jobs/fisher/fisher_bucket/fisher_bucket.json)",
+		"fisher:rod":		"file(jobs/fisher/fisher_rod/fisher_rod.json)",
+		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 
 		"mixins:encounter:octopus_raid":	"file(mixins/encounter/mixin_octopus_raid.json)",
 		"mixins:encounter:cocoling_raid":	"file(mixins/encounter/mixin_cocoling_raid.json)",
@@ -121,6 +121,8 @@
 		"town_names": "file(services/server/population/data/archipelago_town_names.json)",
 
 		"toys:beachball":"file(entities/toys/beachball)",
+
+		"traits:passion_fisher":"file(data/traits/passion_fisher/passion_fisher_trait.json)",
 
 		"trees:bend_palm:large":"file(entities/trees/bend_palm_tree/large_bend_palm_tree)",
 		"trees:bend_palm:small":"file(entities/trees/bend_palm_tree/small_bend_palm_tree)",
@@ -184,7 +186,7 @@
 	},
 	"overrides": {
 		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":"file(data/rigs/entities/humans/animations/female/fishing_start.json)",
-		"stonehearth/data/rigs/entities/humans/animations/male/fishing_start.json":"file(data/rigs/entities/humans/animations/female/fishing_start.json)",
+		"stonehearth/data/rigs/entities/humans/animations/male/fishing_start.json":"file(data/rigs/entities/humans/animations/male/fishing_start.json)",
 		"stonehearth/data/rigs/entities/humans/effects/fishing_start.json":"file(data/rigs/entities/humans/effects/fishing_start.json)",
 
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",

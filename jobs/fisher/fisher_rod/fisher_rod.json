@@ -1,0 +1,49 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:item_properties",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(fisher_rod_equipped.qb)"
+				]
+			}
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "mainhand",
+			"render_type": "attach_to_bone",
+			"postures": [
+				"stonehearth:combat"
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:weapon_data": {
+			"base_damage": 4,
+			"reach": 2.5
+		},
+		"stonehearth:combat:melee_attacks": [
+			{
+				"name": "combat_2h_attack",
+				"effect": "combat_2h_attack",
+				"active_frame": 21,
+				"cooldown": 0,
+				"priority": 2
+			}
+		],
+		"stonehearth:net_worth": {
+			"value_in_gold": 0,
+			"shop_info": {
+				"buyable": false,
+				"sellable": false
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:jobs.fisher.fisher_rod.display_name)",
+			"description": "i18n(archipelago_biome:jobs.fisher.fisher_rod.description)",
+			"icon": "file(fisher_rod.png)",
+			"category": "tools",
+			"material_tags": "tool"
+		}
+	}
+}

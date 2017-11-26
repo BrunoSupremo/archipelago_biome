@@ -12,7 +12,7 @@
 			"type": "attach_item_effect",
 			"start_time": 0,
 			"end_time": 0,
-			"item": "archipelago_biome:fisher:bucket",
+			"item": "archipelago_biome:fisher:rod",
 			"bone": "mainHand"
 		}         
 	}

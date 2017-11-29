@@ -501,7 +501,7 @@
 						},
 						"teaches_how_to_break_crate": {
 							"title": "Curious?",
-							"message_start": "Aren't you going to open that crate? Maybe it is important or it can spoils!<br>To open it, use your harvest tools (the same way you do to cut trees or harvest plants)"
+							"message_start": "Aren't you going to open that crate? Maybe it is important or it can spoils!<br>(To open it, select it then click on the open button)"
 						},
 						"miranda_talks_about_cocolings": {
 							"title": "Cocolings",

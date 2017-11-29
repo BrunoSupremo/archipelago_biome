@@ -3,17 +3,13 @@
 	"tracks": {
 		"animation": {
 			"type": "animation_effect",
-			"animation": "fishing_start.json",
-			"start_time": 0,
-			"end_time": 2000,
+			"animation": "fishing_end.json",
 			"loop": false
 		},
 		"grab_hoe" : {
 			"type": "attach_item_effect",
-			"start_time": 0,
-			"end_time": 2000,
 			"item": "archipelago_biome:fisher:rod",
 			"bone": "mainHand"
-		}         
+		}
 	}
 }

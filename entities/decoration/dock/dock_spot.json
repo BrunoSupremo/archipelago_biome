@@ -1,5 +1,24 @@
 {
 	"type": "entity",
+	"components": {
+		"mob": {
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			],
+			"adjacent": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			]
+		}
+	},
 	"entity_data": {
 		"archipelago_biome:fishing_spot":{}
 	}

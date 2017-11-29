@@ -2,6 +2,7 @@
 	"type" : "ai_pack",
 	"actions" : [
 		"archipelago_biome:actions:go_fish",
+		"archipelago_biome:actions:turn_to_face_water",
 		"archipelago_biome:actions:fishing_animations",
 		"archipelago_biome:actions:pickup_fish",
 		"archipelago_biome:actions:get_crab"

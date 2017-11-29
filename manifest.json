@@ -9,6 +9,7 @@
 		"ai_pack:fishing":"file(ai/packs/fishing_ai_pack.json)",
 
 		"actions:go_fish":				"file(ai/actions/fisher/go_fish_action.lua)",
+		"actions:turn_to_face_water":	"file(ai/actions/fisher/turn_to_face_water_action.lua)",
 		"actions:fishing_animations":	"file(ai/actions/fisher/fishing_animations_action.lua)",
 		"actions:pickup_fish":			"file(ai/actions/fisher/pickup_fish_action.lua)",
 		"actions:get_crab":				"file(ai/actions/fisher/get_crab_action.lua)",
@@ -185,9 +186,15 @@
 		}
 	},
 	"overrides": {
-		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":"file(data/rigs/entities/humans/animations/female/fishing_start.json)",
-		"stonehearth/data/rigs/entities/humans/animations/male/fishing_start.json":"file(data/rigs/entities/humans/animations/male/fishing_start.json)",
-		"stonehearth/data/rigs/entities/humans/effects/fishing_start.json":"file(data/rigs/entities/humans/effects/fishing_start.json)",
+		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":	"file(data/rigs/entities/humans/animations/female/fishing_start.json)",
+		"stonehearth/data/rigs/entities/humans/animations/female/fishing_middle.json":	"file(data/rigs/entities/humans/animations/female/fishing_middle.json)",
+		"stonehearth/data/rigs/entities/humans/animations/female/fishing_end.json":		"file(data/rigs/entities/humans/animations/female/fishing_end.json)",
+		"stonehearth/data/rigs/entities/humans/animations/male/fishing_start.json":	"file(data/rigs/entities/humans/animations/male/fishing_start.json)",
+		"stonehearth/data/rigs/entities/humans/animations/male/fishing_middle.json":"file(data/rigs/entities/humans/animations/male/fishing_middle.json)",
+		"stonehearth/data/rigs/entities/humans/animations/male/fishing_end.json":	"file(data/rigs/entities/humans/animations/male/fishing_end.json)",
+		"stonehearth/data/rigs/entities/humans/effects/fishing_start.json":	"file(data/rigs/entities/humans/effects/fishing_start.json)",
+		"stonehearth/data/rigs/entities/humans/effects/fishing_middle.json":"file(data/rigs/entities/humans/effects/fishing_middle.json)",
+		"stonehearth/data/rigs/entities/humans/effects/fishing_end.json":	"file(data/rigs/entities/humans/effects/fishing_end.json)",
 
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
 		"stonehearth/ui/shell/select_settlement/select_settlement.js": "file(ui/shell/select_settlement/select_settlement.js)"

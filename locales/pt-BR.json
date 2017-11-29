@@ -501,7 +501,7 @@
 						},
 						"teaches_how_to_break_crate":{
 							"title":"Curioso?",
-							"message_start":"Você não vai abrir aquela caixa? Talvez seja importante ou pode estragar!<br>Para abri-lo, use suas ferramentas de colheita (da mesma forma que você faz para cortar árvores ou colher plantas)"
+							"message_start":"Você não vai abrir aquela caixa? Talvez seja importante ou pode estragar!<br>(Para abri-lo, selecione-o e clique no botão Abrir)"
 						},
 						"miranda_talks_about_cocolings":{
 							"title":"Cocolings",

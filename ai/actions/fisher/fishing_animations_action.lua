@@ -2,7 +2,7 @@ local FishingAnimations = class()
 
 FishingAnimations.name = 'run fishing animations'
 FishingAnimations.does = 'archipelago_biome:fishing_animations'
-FishingAnimations.args = { }
+FishingAnimations.args = {}
 FishingAnimations.version = 2
 FishingAnimations.priority = 1
 
@@ -17,7 +17,7 @@ return ai:create_compound_action(FishingAnimations)
 :execute('stonehearth:run_effect', { effect = "emote_watch_pet" })
 :execute('stonehearth:run_effect', { effect = "fishing_start" })
 :execute('stonehearth:run_effect', {
-	effect = "hoe",
+	effect = "fishing_middle",
 	times = ai.BACK(3).time_waiting_for_fish
 	})
-:execute('stonehearth:run_effect', { effect = "work" })
+:execute('stonehearth:run_effect', { effect = "fishing_end" })

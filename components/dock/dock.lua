@@ -39,7 +39,6 @@ function ArchipelagoDock:on_added_to_world()
 		local location = radiant.entities.get_world_grid_location(self._entity)
 		if location then
 			self:add_legs(location)
-			-- self:add_fishing_spot(location)
 		end
 		self.stupid_delay:destroy()
 		self.stupid_delay = nil
@@ -53,11 +52,17 @@ function ArchipelagoDock:_get_dock_edge(dock,location)
 	return location + offset
 end
 
+function ArchipelagoDock:_get_dock_center(dock,location)
+	local facing = radiant.entities.get_facing(dock)
+	local offset = radiant.math.rotate_about_y_axis(-Point3.unit_z, facing):to_closest_int()
+	return location + offset
+end
+
 function ArchipelagoDock:get_bottom()
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	local offset = Point3.unit_y
 	local edge = self:_get_dock_edge(self._entity,location)
-	local bottom_position
+	local bottom_position = edge
 	while not radiant.terrain.is_blocked(edge - offset) do
 		bottom_position = edge - offset
 		offset = offset + Point3.unit_y
@@ -70,7 +75,9 @@ function ArchipelagoDock:add_fishing_spot(location)
 	if not self._sv.dock_spot then
 		self._sv.dock_spot = radiant.entities.create_entity("archipelago_biome:decoration:dock_spot")
 		radiant.terrain.place_entity_at_exact_location(self._sv.dock_spot,
-			self:_get_dock_edge(self._entity,location) +Point3.unit_y)
+			self:_get_dock_center(self._entity,location) +Point3.unit_y)
+		local facing = radiant.entities.get_facing(self._entity)
+		radiant.entities.turn_to(self._sv.dock_spot, facing)
 		self.__saved_variables:mark_changed()
 	end
 end

@@ -4,8 +4,7 @@
 	"recipe_name": "i18n(archipelago_biome:entities.decoration.sand_castle.display_name)",
 	"description": "i18n(archipelago_biome:entities.decoration.sand_castle.recipe.description)",
 	"flavor": "i18n(archipelago_biome:entities.decoration.sand_castle.recipe.flavor)",
-	"portrait" : "/archipelago_biome/entities/decoration/sand_castle/sand_castle.png", 
-	"level_requirement" : 0,
+	"portrait" : "/archipelago_biome/entities/decoration/sand_castle/sand_castle.png",
 	"manual_unlock": true,
 	"ingredients": [
 		{

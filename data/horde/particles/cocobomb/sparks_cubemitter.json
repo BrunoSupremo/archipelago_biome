@@ -1,10 +1,12 @@
 {
 	"name": "sparks",
-	"duration": 10,
+	"duration": 5000,
+	"material": "materials/cubemitter_bloom.material.json",
+	"loops": true,
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [10]
+			"values": [7]
 		},
 		"angle": {
 			"kind": "CONSTANT",
@@ -12,14 +14,16 @@
 		},
 		"origin": {
 			"surface": "POINT",
-			"values": [0.2, 0.2]
+			"values": {
+				"surface": "POINT"
+			}
 		}
 	},
 	"particle": {
 		"lifetime": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values": [0.1, 0.5]
+				"values": [200, 500]
 			}
 		},
 		"speed": {
@@ -52,7 +56,7 @@
 				"kind": "CURVE",
 				"values": [
 					[0, 1],
-					[0.5, 1],
+					[0.5, 0.9],
 					[1, 0]
 				]
 			}
@@ -74,6 +78,5 @@
 				]
 			}
 		}
-	},
-	"material": "materials/cubemitter_bloom.material.json"
+	}
 }

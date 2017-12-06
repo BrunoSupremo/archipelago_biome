@@ -19,8 +19,8 @@
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
-			"display_name": "i18n(archipelago_biome:entities.gizmos.float_bobber.display_name)",
-			"description": "i18n(archipelago_biome:entities.gizmos.float_bobber.description)",
+			"display_name": "Float Bobber",
+			"description": "blah",
 			"icon": "file(float_bobber.png)",
 			"category": "decoration",
 			"material_tags": "wood crafted decoration stockpile_decoration"

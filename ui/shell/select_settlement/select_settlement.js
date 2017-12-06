@@ -279,7 +279,13 @@ App.StonehearthSelectSettlementView = App.View.extend({
             console.error('generate_start_location_command failed:', e);
          });
 
-      App.shellView.addView(App.StonehearthLoadingScreenView);
+      App.navigate('shell/loading');
       self.destroy();
+   },
+ 
+   actions: {
+      quitToMainMenu: function() {
+         App.stonehearthClient.quitToMainMenu('shellView');
+      }
    }
 });

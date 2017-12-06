@@ -2,9 +2,6 @@
 	"type": "entity",
 	"mixins": "stonehearth:mixins:critter",
 	"components": {
-		"stonehearth:ai": {
-			"ai_tree": "stonehearth:data:humanoid_task_groups"
-		},
 		"render_info": {
 			"animation_table": "file(/data/rigs/entities/critters/crab)",
 			"scale": 0.15
@@ -24,6 +21,11 @@
 		}
 	},
 	"entity_data": {
+		"stonehearth:ai_packs": {
+			"packs": [
+				"archipelago_biome:ai_pack:crab_movement"
+			]
+		},
 		"stonehearth:observers:avoid_threatening_entities": {
 			"min_avoidance_distance": 6,
 			"max_avoidance_distance": 6

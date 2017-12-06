@@ -106,11 +106,10 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 	end
 
 	self._approach_task = crab:get_component('stonehearth:ai')
-	:get_task_group('stonehearth:unit_control')
+	:get_task_group('archipelago_biome:task_groups:crab_movement')
 	:create_task('stonehearth:goto_entity', {
 		entity = self._entity
 		})
-	:set_priority(100)
 	:once()
 	:notify_completed(
 		function ()

@@ -20,7 +20,7 @@ App.StonehearthCreateCampView = App.View.extend({
 			self._placeBanner();
 		});
 
-		radiant.call('stonehearth:dm_pause_game');
+		radiant.call('stonehearth:dm_pause_game_if_only_player');
 	},
 
 	_placeBanner: function () {
@@ -34,6 +34,7 @@ App.StonehearthCreateCampView = App.View.extend({
 			App.stonehearthClient.hideTip();
 			if (o.result) {
 				radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:banner_plant'} );
+				// prompt the player for their settlement's name
 				App.gameView.addView(App.StonehearthNameCampView, {
 					position: {
 						my : 'center bottom',
@@ -116,7 +117,7 @@ App.StonehearthNameCampView = App.View.extend({
 
 		this.$('.ok').click(function() {
 			radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:ui:start_menu:submenu_select'} );
-			var townName = self.$('#name').val()
+			var townName = App.stonehearth.validator.enforceStringLength(self.$('#name'));
 			App.stonehearthClient.settlementName(townName);
 			radiant.call_obj('stonehearth.town', 'set_town_name_command', townName);
 			radiant.call('stonehearth:dm_resume_game');

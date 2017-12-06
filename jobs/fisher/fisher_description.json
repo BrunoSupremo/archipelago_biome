@@ -20,13 +20,13 @@
 	"roles": "fisher_job crafter",
 	"icon": "file(images/icon.png)",
 	"task_groups": [
-		"archipelago_biome:task_group:fisher",
-		"stonehearth:task_group:common_tasks",
-		"stonehearth:task_group:crafting",
-		"stonehearth:task_group:restock",
-		"stonehearth:task_group:placement",
-		"stonehearth:task_group:rescue",
-		"stonehearth:task_group:town_alert"
+		"archipelago_biome:task_groups:fishing",
+		"stonehearth:task_groups:common_tasks",
+		"stonehearth:task_groups:restock",
+		"stonehearth:task_groups:placement",
+		"stonehearth:task_groups:rescue",
+		"stonehearth:task_groups:crafting",
+		"stonehearth:task_groups:town_alert"
 	],
 	"crafter": {
 		"work_effect": "fiddle",
@@ -48,25 +48,25 @@
 	},
 	"max_level": 6,
 	"level_data": {
-		"0": {
-			"perks": [
-				{
-					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_0.perk_name)",
-					"id": "crafter_recipe_unlock_0",
-					"icon": "file(images/fisher_menu_icon.png)",
-					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_0.perk_description)",
-					"level": 0
-				}
-			]
-		},
 		"1": {
 			"perks": [
 				{
 					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_1.perk_name)",
 					"id": "crafter_recipe_unlock_1",
-					"icon": "file(images/level_1.png)",
+					"icon": "file(images/fisher_menu_icon.png)",
 					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_1.perk_description)",
 					"level": 1
+				}
+			]
+		},
+		"2": {
+			"perks": [
+				{
+					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_2.perk_name)",
+					"id": "crafter_recipe_unlock_2",
+					"icon": "file(images/crab_perk.png)",
+					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_2.perk_description)",
+					"level": 2
 				}
 			]
 		}

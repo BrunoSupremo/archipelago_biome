@@ -1,40 +1,5 @@
 {
-	"ai": {
-		"stonehearth:top": {
-			"children": {
-				"stonehearth:work": {
-					"children": {
-						"archipelago_biome:task_group:fisher": {
-							"type": "task_group",
-							"work_order": "job",
-							"children": {
-								"archipelago_biome:get_crab": {
-									"type": "task",
-									"priority": 2
-								},
-								"archipelago_biome:go_fish": {
-									"type": "task",
-									"priority": 1
-								},
-								"stonehearth:harvest_resource": {
-									"type": "task",
-									"args": {
-										"category": "fisher"
-									},
-									"priority": 10
-								},
-								"stonehearth:harvest_renewable_resource": {
-									"type": "task",
-									"args": {
-										"category": "fisher"
-									},
-									"priority": 10
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+	"task_groups": [
+		"archipelago_biome:task_groups:fishing"
+	]
 }

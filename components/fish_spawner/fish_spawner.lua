@@ -9,17 +9,35 @@ function ArchipelagoFishSpawner:initialize()
 	self._sv.spawn_timer = nil
 end
 
-function ArchipelagoFishSpawner:activate()
-	local json = radiant.entities.get_json(self)
-	self.interval = json.interval or "8h"
-	self.radius = json.radius or 4
+function ArchipelagoFishSpawner:post_activate()
+	local delayed_function = function ()
+		--delayed to get location to work
+		local location = radiant.entities.get_world_grid_location(self._entity)
+		self.stupid_delay:destroy()
+		self.stupid_delay = nil
 
-	if not self._in_the_water_listener then
-		self._in_the_water_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', self, self.activate_the_spawner)
+		local cube = Cube3(location):inflated(Point3(8,8,8))
+		local intersected_entities = radiant.terrain.get_entities_in_cube(cube)
+		for id, entity in pairs(intersected_entities) do
+			if entity:get_uri() == FISH then
+				radiant.entities.destroy_entity(entity)
+			end
+		end
+
+		radiant.entities.destroy_entity(self._entity)
 	end
-	if not self._on_removed_from_world_listener then
-		self._on_removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', self, self.destroy_spawn_timer)
-	end
+	self.stupid_delay = stonehearth.calendar:set_persistent_timer("ArchipelagoFishSpawner delay", 10, delayed_function)
+
+	-- local json = radiant.entities.get_json(self)
+	-- self.interval = json.interval or "8h"
+	-- self.radius = json.radius or 4
+
+	-- if not self._in_the_water_listener then
+	-- 	self._in_the_water_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', self, self.activate_the_spawner)
+	-- end
+	-- if not self._on_removed_from_world_listener then
+	-- 	self._on_removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', self, self.destroy_spawn_timer)
+	-- end
 end
 
 function ArchipelagoFishSpawner:activate_the_spawner()

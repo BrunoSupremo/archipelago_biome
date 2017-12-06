@@ -153,7 +153,13 @@ function CustomLandscaper:mark_water_bodies_archipelago_biome(elevation_map, fea
 				if value > 0 then
 					local old_value = feature_map:get(i, j)
 					old_feature_map:set(i, j, old_value)
-					feature_map:set(i, j, water_shallow)
+
+					local islands_value = SimplexNoise.proportional_simplex_noise(config.octaves,config.persistence_ratio, config.bandlimit,config.mean[terrain_type],config.range,config.aspect_ratio, self._seed,i,j)
+					if islands_value > config.range-1 then
+						feature_map:set(i, j, self:_spawn_island_trees())
+					else
+						feature_map:set(i, j, water_shallow)
+					end
 				end
 			end
 		end
@@ -164,6 +170,16 @@ function CustomLandscaper:mark_water_bodies_archipelago_biome(elevation_map, fea
 	self:_add_deep_water_archipelago(feature_map)
 	self:_add_more_deep_water(feature_map)
 	self:_add_more_deep_water_second_pass(feature_map)
+end
+
+function CustomLandscaper:_spawn_island_trees()
+	local tree = {
+		"archipelago_biome:trees:palm:small",
+		"archipelago_biome:trees:palm:large",
+		"archipelago_biome:trees:bend_palm:small",
+		"archipelago_biome:trees:bend_palm:large"
+	}
+	return tree[self._rng:get_int(1,4)]
 end
 
 function CustomLandscaper:_add_deep_water_archipelago(feature_map)

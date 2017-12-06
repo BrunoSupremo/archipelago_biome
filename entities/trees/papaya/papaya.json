@@ -65,7 +65,8 @@
 	"entity_data": {
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.trees.papaya.display_name)",
-			"description": "i18n(archipelago_biome:entities.trees.papaya.description)"
+			"description": "i18n(archipelago_biome:entities.trees.papaya.description)",
+			"icon":"file(papaya.png)"
 		}
 	}
 }

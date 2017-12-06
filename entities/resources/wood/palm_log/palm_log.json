@@ -1,0 +1,12 @@
+{
+	"components": {
+		"stonehearth:stacks": {
+			"max_stacks": 60
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"icon": "file(palm_log.png)"
+		}
+	}
+}

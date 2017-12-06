@@ -1,50 +1,57 @@
 {
-	"name": "drops",
-	"duration": 1,
-	"particle": {
-		"lifetime": {
-			"start": {
-				"kind": "CONSTANT",
-				"values":  [1]
-			}
-		},
-		"speed": {
-			"start": {
-				"kind": "CONSTANT",
-				"values": [-2]
-			}
-		},
-
-		"color": {
-			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [
-					[0, 0.3, 1, 1],
-					[0, 0.6, 1, 1]
-				]
-			}
-		},
-		"scale": {
-			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [0.1, 0.15]
-			}
-		},
-		"velocity": {
-		}
-	},
-	"emission": {
-		"rate": {
-			"kind": "CONSTANT",
-			"values": [5]
-		},
-		"origin": {
-			"surface": "POINT",
-			"values": [8, 8]
-		},
-		"angle": {
-			"kind": "CONSTANT",
-			"values": [0]
-		}
-	}
+   "name": "drops",
+   "duration": 1000,
+   "material": "materials/cubemitter.material.json",
+   "loops": true,
+   "emission": {
+      "rate": {
+         "kind": "CONSTANT",
+         "values": [5]
+      },
+      "angle": {
+         "kind": "CONSTANT",
+         "values": [0]
+      },
+      "origin": {
+         "surface": "POINT",
+         "values": {
+            "surface": "POINT"
+         }
+      }
+   },
+   "particle": {
+      "lifetime": {
+         "start": {
+            "kind": "CONSTANT",
+            "values": [1000]
+         }
+      },
+      "speed": {
+         "start": {
+            "kind": "CONSTANT",
+            "values": [0]
+         }
+      },
+      "acceleration": {
+         "over_lifetime_y": {
+            "kind": "CONSTANT",
+            "values": [-10]
+         }
+      },
+      "scale": {
+         "start": {
+            "kind": "RANDOM_BETWEEN",
+            "values": [0.1, 0.15]
+         }
+      },
+      "color": {
+         "start": {
+            "kind": "RANDOM_BETWEEN",
+            "values": [
+               [0, 0.3, 1, 1],
+               [0, 0.6, 1, 1]
+            ]
+         }
+      }
+   }
 }

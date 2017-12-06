@@ -38,7 +38,8 @@
 	"entity_data": {
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.monsters.cocoling.display_name)",
-			"description": "i18n(archipelago_biome:entities.monsters.cocoling.description)"
+			"description": "i18n(archipelago_biome:entities.monsters.cocoling.description)",
+			"icon":"file(cocoling.png)"
 		}
 	}
 }

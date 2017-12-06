@@ -6,6 +6,7 @@
 	"default_locale": "en",
 	"server_init_script": "file(archipelago_biome_server)",
 	"aliases": {
+		"ai_pack:crab_movement":"file(ai/packs/crab_movement_ai_pack.json)",
 		"ai_pack:fishing":"file(ai/packs/fishing_ai_pack.json)",
 
 		"actions:go_fish":				"file(ai/actions/fisher/go_fish_action.lua)",
@@ -13,6 +14,9 @@
 		"actions:fishing_animations":	"file(ai/actions/fisher/fishing_animations_action.lua)",
 		"actions:pickup_fish":			"file(ai/actions/fisher/pickup_fish_action.lua)",
 		"actions:get_crab":				"file(ai/actions/fisher/get_crab_action.lua)",
+
+		"task_groups:crab_movement": "file(ai/task_groups/crab_task_group.lua)",
+		"task_groups:fishing": "file(ai/task_groups/fishing_task_group.lua)",
 
 		"armor:turtle_shield":"file(entities/armor/turtle_shield)",
 
@@ -32,7 +36,6 @@
 		"commands:open_crate":"file(data/commands/open_crate)",
 
 		"critters:crab":		"file(entities/critters/crab)",
-		"critters:fish":		"file(entities/critters/fish)",
 		"critters:sea_turtle":	"file(entities/critters/sea_turtle)",
 
 		"crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",
@@ -83,10 +86,8 @@
 
 		"gizmos:cocobomb":		"file(entities/gizmos/cocobomb)",
 		"gizmos:crab_trap":		"file(entities/gizmos/crab_trap)",
-		"gizmos:float_bobber":	"file(entities/gizmos/float_bobber)",
 
 		"jobs:fisher":		"file(jobs/fisher/fisher_description.json)",
-		"fisher:bucket":	"file(jobs/fisher/fisher_bucket/fisher_bucket.json)",
 		"fisher:rod":		"file(jobs/fisher/fisher_rod/fisher_rod.json)",
 		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 
@@ -138,6 +139,11 @@
 		"weapons:crab_pincer":	"file(entities/weapons/crab_pincer)",
 		"weapons:slap_fish":	"file(entities/weapons/slap_fish)"
 	},
+	"deprecated_aliases": {
+		"critters:fish":		"file(entities/critters/fish)",
+		"gizmos:float_bobber":	"file(entities/gizmos/float_bobber)",
+		"fisher:bucket":	"file(jobs/fisher/fisher_bucket/fisher_bucket.json)"
+	},
 	"mixintos": {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
@@ -173,6 +179,8 @@
 		"rayyas_children:kingdoms:rayyas_children":	"archipelago_biome:town_names",
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
+		"stonehearth:resources:wood:palm_log":"file(entities/resources/wood/palm_log)",
+
 		"stonehearth:traits_index":"file(data/traits/traits_index.json)",
 
 		"stonehearth/locales/pt-BR.json" : "file(locales/pt-BR.json)",
@@ -206,7 +214,7 @@
 		"dock":				"file(components/dock/dock.lua)",
 		"explosive":		"file(components/explosive/explosive.lua)",
 		"fake_container":	"file(components/fake_container/fake_container.lua)",
-		"crab_spawner":		"file(components/fish_spawner/crab_spawner.lua)",
+		"crab_spawner":		"file(components/crab_spawner/crab_spawner.lua)",
 		"fish_spawner":		"file(components/fish_spawner/fish_spawner.lua)",
 		"need_water":		"file(components/need_water/need_water.lua)"
 	},

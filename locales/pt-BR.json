@@ -325,11 +325,11 @@
 				"display_name":"Pescador",
 				"description":"Irá pegar caranguejos, colher pérolas, e fazer outras tarefas relacionadas a água",
 				"requirements":"Feito por seu principal artesão",
-				"level_0":{
+				"level_1":{
 					"perk_name":"Pescando",
 					"perk_description":"O pescador pode criar ferramentas para ajudar a pegar peixes."
 				},
-				"level_1":{
+				"level_2":{
 					"perk_name":"Caranguejos",
 					"perk_description":"O pescador agora pode criar e colocar armadilhas para capturar caranguejos."
 				}

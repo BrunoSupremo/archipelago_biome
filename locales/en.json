@@ -325,11 +325,11 @@
 				"display_name": "Fisher",
 				"description": "Will capture crabs, harvest pearls, and do other water related works",
 				"requirements": "Crafted by your main crafter",
-				"level_0": {
+				"level_1": {
 					"perk_name": "Fishing",
 					"perk_description": "The fisher can craft tools to help catching fish."
 				},
-				"level_1": {
+				"level_2": {
 					"perk_name": "Crabs",
 					"perk_description": "The fisher can now craft and place traps to capture crabs."
 				}

@@ -5,8 +5,8 @@
 			"type": "cubemitter",
 			"cubemitter": "particles/dust_poof/purple_dust_poof.cubemitter.json",
 			"loop": false,
-			"start_time" : 750,
-			"end_time" : 4400,
+			"start_time" : 650,
+			"end_time" : 4000,
 			"transforms": {
 				"x":0,
 				"y":0,

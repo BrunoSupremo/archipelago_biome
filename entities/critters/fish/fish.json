@@ -46,7 +46,7 @@
 			}
 		},
 		"stonehearth:resource_node": {
-			"category": "fisher",
+			"category": "fishing",
 			"harvest_overlay_effect": "archipelago_biome:effects:harvest_fish_overlay",
 			"harvester_effect": "fiddle",
 			"description": "harvest_animal",
@@ -57,8 +57,8 @@
 		"archipelago_biome:fish":{},
 		"stonehearth:catalog": {
 			"player_id": "animals",
-			"display_name": "i18n(archipelago_biome:entities.critters.fish.display_name)",
-			"description": "i18n(archipelago_biome:entities.critters.fish.description)"
+			"display_name": "Fish",
+			"description": "Underwater Poyo"
 		},
 		"stonehearth:ai_packs": {
 			"packs": [

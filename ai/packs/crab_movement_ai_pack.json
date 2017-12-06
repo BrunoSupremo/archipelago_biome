@@ -1,0 +1,6 @@
+{
+	"type" : "ai_pack",
+	"task_groups": [
+		"archipelago_biome:task_groups:crab_movement"
+	]
+}

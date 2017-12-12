@@ -183,21 +183,22 @@ function CustomLandscaper:_spawn_island_trees()
 end
 
 function CustomLandscaper:_add_deep_water_archipelago(feature_map)
-	for j=2, feature_map.height-1 do
-		for i=2, feature_map.width-1 do
+	local is_valid_and_has_water = function (i,j)
+		if feature_map:in_bounds(i,j) then
+			local feature_name = feature_map:get(i, j)
+			return self:is_water_feature(feature_name)
+		end
+		return true --is out of bounds, consider it as having water
+	end
+	for j=1, feature_map.height do
+		for i=1, feature_map.width do
 			local feature_name = feature_map:get(i, j)
 
 			if self:is_water_feature(feature_name) then
-				local surrounded_by_water = true
-
-				feature_map:each_neighbor(i, j, false, function(value)
-						if not self:is_water_feature(value) then
-							surrounded_by_water = false
-							return true -- stop iteration
-						end
-					end)
-
-				if surrounded_by_water then
+				if		is_valid_and_has_water(i-1, j) 
+					and is_valid_and_has_water(i+1, j)
+					and is_valid_and_has_water(i, j-1)
+					and is_valid_and_has_water(i, j+1) then
 					feature_map:set(i, j, water_deep)
 				end
 			end
@@ -206,21 +207,22 @@ function CustomLandscaper:_add_deep_water_archipelago(feature_map)
 end
 
 function CustomLandscaper:_add_more_deep_water(feature_map)
-	for j=3, feature_map.height-2 do
-		for i=3, feature_map.width-2 do
+	local is_valid_and_has_water = function (i,j)
+		if feature_map:in_bounds(i,j) then
+			local feature_name = feature_map:get(i, j)
+			return self:is_not_shallow_water_feature(feature_name)
+		end
+		return true --is out of bounds, consider it as having water
+	end
+	for j=1, feature_map.height do
+		for i=1, feature_map.width do
 			local feature_name = feature_map:get(i, j)
 
-			if self:is_not_shallow_water_feature(feature_name) then
-				local surrounded_by_deep_water = true
-
-				feature_map:each_neighbor(i, j, false, function(value)
-						if not self:is_not_shallow_water_feature(value) then
-							surrounded_by_deep_water = false
-							return true -- stop iteration
-						end
-					end)
-
-				if surrounded_by_deep_water then
+			if self:is_water_feature(feature_name) then
+				if		is_valid_and_has_water(i-1, j) 
+					and is_valid_and_has_water(i+1, j)
+					and is_valid_and_has_water(i, j-1)
+					and is_valid_and_has_water(i, j+1) then
 					feature_map:set(i, j, water_more_deep)
 				end
 			end
@@ -230,8 +232,8 @@ end
 
 function CustomLandscaper:_add_more_deep_water_second_pass(feature_map)
 	local copy_feature_map = feature_map:clone()
-	for j=3, feature_map.height-2 do
-		for i=3, feature_map.width-2 do
+	for j=2, feature_map.height-1 do
+		for i=2, feature_map.width-1 do
 			local feature_name = feature_map:get(i, j)
 
 			if self:is_exactly_deep_water_feature(feature_name) then
@@ -249,8 +251,8 @@ function CustomLandscaper:_add_more_deep_water_second_pass(feature_map)
 			end
 		end
 	end
-	for j=3, feature_map.height-2 do
-		for i=3, feature_map.width-2 do
+	for j=2, feature_map.height-1 do
+		for i=2, feature_map.width-1 do
 			feature_map:set(i, j, copy_feature_map:get(i,j))
 		end
 	end

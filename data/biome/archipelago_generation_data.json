@@ -201,6 +201,13 @@
 					"exclusion_radius": 4
 				}
 			},
+			"archipelago_biome:beach:wave": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 1,
+					"exclusion_radius": 7
+				}
+			},
 			"archipelago_biome:beach:seaweed": {
 				"placement_type": "dense",
 				"parameters": {
@@ -508,7 +515,8 @@
 		"water": {
 			"spawn_objects":{
 				"water_1":{
-					"none":30,
+					"none":15,
+					"archipelago_biome:beach:wave":15,
 					"archipelago_biome:beach:seaweed":0.1,
 					"archipelago_biome:beach:oyster":0.2,
 					"archipelago_biome:beach:starfish":4,

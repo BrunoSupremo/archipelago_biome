@@ -25,6 +25,7 @@
 		"beach:oyster":		"file(entities/beach/oyster)",
 		"beach:seaweed":	"file(entities/beach/seaweed)",
 		"beach:starfish":	"file(entities/beach/starfish)",
+		"beach:wave":		"file(entities/beach/wave)",
 
 		"biome:archipelago": "file(data/biome/archipelago.json)",
 
@@ -68,6 +69,7 @@
 		"effects:no_water_overlay":			"file(data/effects/no_water_overlay)",
 		"effects:open_crate":				"file(data/effects/open_crate)",
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
+		"effects:wave_effect":				"file(data/effects/wave_effect)",
 
 		"food:coconut":"file(entities/food/coconut)",
 		"food:crab":				 "file(entities/food/crab)",
@@ -216,7 +218,8 @@
 		"fake_container":	"file(components/fake_container/fake_container.lua)",
 		"crab_spawner":		"file(components/crab_spawner/crab_spawner.lua)",
 		"fish_spawner":		"file(components/fish_spawner/fish_spawner.lua)",
-		"need_water":		"file(components/need_water/need_water.lua)"
+		"need_water":		"file(components/need_water/need_water.lua)",
+		"wave":				"file(components/wave/wave.lua)"
 	},
 	"ui":{
 		"less":[

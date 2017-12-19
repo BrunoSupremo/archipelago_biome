@@ -517,6 +517,12 @@
 						},
 						"shield_spawned":{
 							"found":"O pescador viu alguma coisa na água"
+						},
+						"lets_trade_again": {
+							"title": "Vamos fazer mais trocas?",
+							"message_start": "Oi! Quer comprar alguns itens inúteis novamente?<br> Oh, desculpe, não percebi que você tinha visitantes. Eu voltarei mais tarde.",
+							"choice": "Visitantes?..",
+							"message_those_guys": "Sim, aqueles caras ali. Deixe-me te mostrar."
 						}
 					}
 				}

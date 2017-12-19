@@ -1,8 +1,8 @@
 {
-	"ai":{
-		"actions":{
-			"status_text":{
-				"fishing":"Fishing"
+	"ai": {
+		"actions": {
+			"status_text": {
+				"fishing": "Fishing"
 			}
 		}
 	},
@@ -389,7 +389,7 @@
 				},
 				"dock_recipe": {
 					"recipe_name": "Fishing Dock",
-					"description": "Place it at a edge facing the water. The fisher will recognize this as a fishing spot and use it when fishing.",
+					"description": "Place it at an edge facing the water. The fisher will recognize this as a fishing spot and use it when fishing.",
 					"flavor": "Fish loves to be under its shadow"
 				}
 			}
@@ -517,6 +517,12 @@
 						},
 						"shield_spawned": {
 							"found": "The fisher saw something in the water"
+						},
+						"lets_trade_again": {
+							"title": "Let's trade again?",
+							"message_start": "Hi! Wanna buy some useless items again?<br> Oh, sorry, didn't noticed you had visitors. I will return later.",
+							"choice": "Visitors?..",
+							"message_those_guys": "Yes, those guys over there. Let me show you."
 						}
 					}
 				}

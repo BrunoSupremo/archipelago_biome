@@ -19,6 +19,10 @@
 		"miranda_talks_about_cocolings":"file(encounters/miranda_talks_about_cocolings.json)",
 		"wait_to_spawn_crate_again":"file(encounters/wait_to_spawn_crate_again.json)",
 		"miranda_notice_another_crate":"file(encounters/miranda_notice_another_crate.json)",
-		"spawn_crate_again":"file(encounters/spawn_crate_again.json)"
+		"spawn_crate_again":"file(encounters/spawn_crate_again.json)",
+
+		"wait_after_spawn_crate_again":"file(encounters/wait_after_spawn_crate_again.json)",
+		"lets_trade_again":"file(encounters/lets_trade_again.json)",
+		"show_the_visitors":"file(encounters/show_the_visitors.json)"
 	}
 }

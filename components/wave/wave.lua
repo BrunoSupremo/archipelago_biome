@@ -2,21 +2,14 @@ local ArchipelagoWave = class()
 local Point3 = _radiant.csg.Point3
 local rng = _radiant.math.get_default_rng()
 
-function ArchipelagoWave:initialize()
-	self._sv.wave_timer = nil
-end
-
 function ArchipelagoWave:post_activate()
 	self.timer = stonehearth.calendar:set_timer('rotate wave to correct orientation', "1m", function()
 		self:rotate()
 		self.timer = nil
 		end)
 
-	if not self._sv.wave_timer then
-		local interval = 2000 + rng:get_int(1,2000)
-		self._sv.wave_timer = stonehearth.calendar:set_persistent_interval("ArchipelagoWave wave_timer", interval, function() self:run_effect() end, interval)
-		self.__saved_variables:mark_changed()
-	end
+	local interval = 2000 + rng:get_int(1,2000)
+	self.wave_timer = stonehearth.calendar:set_interval("ArchipelagoWave wave_timer", interval, function() self:run_effect() end, interval)
 end
 
 function ArchipelagoWave:run_effect()
@@ -48,10 +41,9 @@ function ArchipelagoWave:rotate()
 end
 
 function ArchipelagoWave:destroy()
-	if self._sv.wave_timer then
-		self._sv.wave_timer:destroy()
-		self._sv.wave_timer = nil
-		self.__saved_variables:mark_changed()
+	if self.wave_timer then
+		self.wave_timer:destroy()
+		self.wave_timer = nil
 	end
 end
 

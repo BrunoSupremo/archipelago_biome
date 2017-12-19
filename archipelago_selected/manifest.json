@@ -7,6 +7,7 @@
 	"mixintos": {
 		"stonehearth:building_templates:index": "file(data/saved_objects/building_templates_index.json)",
 
+		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/wait_to_start.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/wait_to_start.json)",
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json)",
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/stockpile.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/stockpile.json)",
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/wood_stockpile.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/beachball.json)",
@@ -57,6 +58,12 @@
 
 		"stonehearth/ui/game/create_camp/create_camp.js":"file(ui/game/create_camp/create_camp.js)",
 
-		"stonehearth/ui/shell/loading_screen/images/bg.jpg": "file(ui/shell/loading_screen/images/bg.jpg)"
+		"stonehearth/ui/shell/loading_screen/images/bg0.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
+		"stonehearth/ui/shell/loading_screen/images/bg1.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
+		"stonehearth/ui/shell/loading_screen/images/bg2.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
+		"stonehearth/ui/shell/loading_screen/images/bg3.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
+		"stonehearth/ui/shell/loading_screen/images/bg4.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
+		"stonehearth/ui/shell/loading_screen/images/bg5.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
+		"stonehearth/ui/shell/loading_screen/images/bg6.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)"
 	}
 }

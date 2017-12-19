@@ -7,7 +7,7 @@ end
 function Archipelago_spawn_mysterious_crate:start(ctx, data)
 	if data and data.spawn_outside then
 		self._sv.searcher = radiant.create_controller('stonehearth:game_master:util:choose_location_outside_town',
-			ctx.player_id, 16, 100,
+			16, 100,
 			function(op, location)
 				return self:_find_location_callback(op, location, ctx)
 			end)

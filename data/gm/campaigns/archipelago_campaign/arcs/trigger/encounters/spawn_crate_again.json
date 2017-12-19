@@ -2,6 +2,7 @@
 	"type": "encounter",
 	"encounter_type": "script",
 	"in_edge": "spawn_crate_again",
+	"out_edge": "wait_after_spawn_crate_again",
 	"script_info": {
 		"script":"file(spawn_crate.lua)",
 		"data":{

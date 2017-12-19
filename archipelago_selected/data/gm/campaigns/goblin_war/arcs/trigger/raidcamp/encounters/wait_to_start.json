@@ -1,0 +1,8 @@
+{
+	"wait_for_net_worth_info": {
+		"threshold": {
+			"min": 5000,
+			"max": 6000
+		}
+	}
+}

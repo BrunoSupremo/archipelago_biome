@@ -5,18 +5,52 @@ local Region2 = _radiant.csg.Region2
 local Rect2 = _radiant.csg.Rect2
 local game_master_lib = require 'stonehearth.lib.game_master.game_master_lib'
 
-function ArchipelagoShowTheVisitors:create_visitors(ctx, wave)
+function ArchipelagoShowTheVisitors:initialize()
+	self._sv.searcher = nil
+end
+
+function ArchipelagoShowTheVisitors:start(ctx, info)
+	self._sv.searcher = radiant.create_controller('archipelago_biome:game_master:util:choose_water_location_outside_town',
+		16, 100,
+		function(op, location)
+			return self:_find_location_callback(op, location, ctx)
+			end)
+end
+
+function ArchipelagoShowTheVisitors:_find_location_callback(op, location, ctx)
+	if op == 'check_location' then
+		return true
+	--
+	elseif op == 'set_location' then
+		self:create_visitors(ctx, location)
+	--
+	elseif op == 'abort' then
+		local town = stonehearth.town:get_town(ctx.player_id)
+		local location = town:get_landing_location()
+		location.y = 39
+		location = radiant.terrain.find_placement_point(location, 64, 320, false, 12)
+		if not location then
+			return
+		end
+		self:create_visitors(ctx, location)
+	else
+		radiant.error('unknown op "%s" in choose_location_outside_town callback', op)
+	end
+end
+
+function ArchipelagoShowTheVisitors:create_visitors(ctx, location)
 	local player_id = ctx.player_id
 	local raft = radiant.entities.create_entity("archipelago_biome:decoration:raft", {owner = player_id})
-	local location = radiant.entities.get_world_grid_location(wave)
 	radiant.terrain.place_entity(raft, location, { force_iconic = false })
 	game_master_lib.register_entities(ctx, 'visitors', { raft = raft })
 
+	local pop = stonehearth.population:get_population(player_id)
 	for i=1,3 do
 		local visitor = radiant.entities.create_entity("stonehearth:female_"..i, {owner = player_id})
+		pop:set_citizen_name(visitor, 'female')
 		visitor:add_component('stonehearth:customization'):generate_custom_appearance()
 		visitor:add_component('stonehearth:job'):promote_to("stonehearth:jobs:worker")
-		visitor:add_component('stonehearth:equipment'):equip_item("stonehearth/jobs/mason/mason_outfit/mason_outfit.json")
+		visitor:add_component('stonehearth:equipment'):equip_item("archipelago_biome:outfit:visitor")
 		local new_location = radiant.terrain.find_placement_point(location+Point3(0,1,0), 1, 3, visitor)
 		radiant.terrain.place_entity(visitor, new_location)
 		game_master_lib.register_entities(ctx, 'visitors', { [i] = visitor })
@@ -36,43 +70,18 @@ function ArchipelagoShowTheVisitors:create_visitors(ctx, wave)
 		cursor:add_region(visible_rgn)
 		end)
 
-	return raft
-end
-
-function ArchipelagoShowTheVisitors:start(ctx, info)
-	local wave
-	local waves = {}
-	local territory = stonehearth.terrain:get_territory(ctx.player_id)
-	local town_center = territory:get_centroid()
-	local ec = radiant._root_entity:get_component('entity_container')
-	if ec then
-		for id, child in ec:each_child() do
-			if child:get_uri() == "archipelago_biome:beach:wave" then
-				local position = radiant.entities.get_world_grid_location(child)
-				local distance = Point2(position.x, position.z):distance_to(town_center)
-				waves[id] = {child = child, distance = distance}
-			end
-		end
-	end
-	table.sort(waves,
-		function (a, b)
-			return a.distance < b.distance
-		end
-		)
-	for id, entity in pairs(waves) do
-		if entity.distance > 100 then
-			wave = entity.child
-			break
-		end
-	end
-
-	local raft = self:create_visitors(ctx, wave)
-
 	stonehearth.bulletin_board:post_bulletin(ctx.player_id)
 	:set_data({
-		zoom_to_entity = raft,
-		title = "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.shield_spawned.found)"
+		zoom_to_entity = ctx.visitors[1],
+		title = "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.show_the_visitors.show)"
 		})
+end
+
+function ArchipelagoShowTheVisitors:destroy()
+	if self._sv.searcher then
+		self._sv.searcher:destroy()
+		self._sv.searcher = nil
+	end
 end
 
 return ArchipelagoShowTheVisitors

@@ -2,9 +2,6 @@
 	"mixins": "stonehearth:mixins:item_properties",
 	"type": "entity",
 	"components": {
-		"render_info": {
-			"scale": 0.09
-		},
 		"model_variants": {
 			"default": {
 				"models": [
@@ -14,9 +11,6 @@
 		},
 		"effect_list": {
 			"default": "stonehearth:effects:rotten_food"
-		},
-		"mob": {
-			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
 		}
 	},
 	"entity_data": {

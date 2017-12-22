@@ -2,7 +2,7 @@
 	"type": "encounter",
 	"encounter_type": "script",
 	"in_edge": "show_the_visitors",
-	"out_edge" : "",
+	"out_edge" : "confirm_visitors_spawned",
 	"script_info": {
 		"script":"file(show_the_visitors.lua)"
 	}

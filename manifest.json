@@ -111,8 +111,9 @@
 		"monster_tuning:forest:giant_octopus":	"file(data/monster_tuning/forest/giant_octopus.json)",
 		"monster_tuning:forest:insane_octopus":	"file(data/monster_tuning/forest/insane_octopus.json)",
 
-		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
 		"outfit:beach_head":	"file(entities/outfit/beach_head)",
+		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
+		"outfit:visitor":		"file(entities/outfit/visitor_outfit)",
 
 		"resources:hot_rock":	"file(entities/resources/hot_rock)",
 		"resources:pearl":		"file(entities/resources/pearl)",
@@ -210,7 +211,8 @@
 		"stonehearth/ui/shell/select_settlement/select_settlement.js": "file(ui/shell/select_settlement/select_settlement.js)"
 	},
 	"controllers": {
-		"class:fisher": "file(jobs/fisher/fisher.lua)"
+		"class:fisher": "file(jobs/fisher/fisher.lua)",
+		"game_master:util:choose_water_location_outside_town": "file(services/server/game_master/controllers/util/choose_water_location_outside_town.lua)"
 	},
 	"components": {
 		"dock":				"file(components/dock/dock.lua)",

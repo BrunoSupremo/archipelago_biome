@@ -23,6 +23,8 @@
 
 		"wait_after_spawn_crate_again":"file(encounters/wait_after_spawn_crate_again.json)",
 		"lets_trade_again":"file(encounters/lets_trade_again.json)",
-		"show_the_visitors":"file(encounters/show_the_visitors.json)"
+		"show_the_visitors":"file(encounters/show_the_visitors.json)",
+		"confirm_visitors_spawned":"file(encounters/confirm_visitors_spawned.json)",
+		"visitors_introduction":"file(encounters/visitors_introduction.json)"
 	}
 }

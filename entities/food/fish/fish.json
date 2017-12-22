@@ -2,18 +2,12 @@
 	"mixins": "stonehearth:mixins:food_decay",
 	"type": "entity",
 	"components": {
-		"render_info": {
-			"scale": 0.09
-		},
 		"model_variants": {
 			"default": {
 				"models": [
 					"file(fish.qb)"
 				]
 			}
-		},
-		"mob": {
-			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
 		}
 	},
 	"entity_data": {

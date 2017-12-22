@@ -523,6 +523,9 @@
 							"message_start": "Hi! Wanna buy some useless items again?<br> Oh, sorry, didn't noticed you had visitors. I will return later.",
 							"choice": "Visitors?..",
 							"message_those_guys": "Yes, those guys over there. Let me show you."
+						},
+						"show_the_visitors": {
+							"show": "Over here"
 						}
 					}
 				}

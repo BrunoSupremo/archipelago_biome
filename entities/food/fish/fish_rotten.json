@@ -33,6 +33,9 @@
 			"icon": "file(fish_rotten.png)",
 			"is_item": true,
 			"category": "uncategorized"
+		},
+		"stonehearth:appeal": {
+			"appeal": -30
 		}
 	}
 }

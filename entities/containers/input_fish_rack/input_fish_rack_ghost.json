@@ -1,0 +1,29 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(input_fish_rack.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {"x": 0, "y": 0, "z": 0 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"render_info": {
+			"scale": 0.1,
+			"animation_table": "file(/data/rigs/entities/containers/input_fish_rack/input_fish_rack.json)"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.containers.input_fish_rack.display_name)",
+			"description": "i18n(archipelago_biome:entities.containers.input_fish_rack.description)",
+			"icon": "file(input_fish_rack.png)",
+			"category": "storage",
+			"material_tags": "wood containers crafted furniture stockpile_furniture"
+		}
+	}
+}

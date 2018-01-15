@@ -36,6 +36,8 @@
 
 		"commands:open_crate":"file(data/commands/open_crate)",
 
+		"containers:input_fish_rack": "file(entities/containers/input_fish_rack)",
+
 		"critters:crab":		"file(entities/critters/crab)",
 		"critters:sea_turtle":	"file(entities/critters/sea_turtle)",
 
@@ -137,6 +139,8 @@
 		"trees:palm:sapling":	"file(entities/trees/palm_tree/sapling_palm_tree)",
 		"trees:papaya":			"file(entities/trees/papaya)",
 		"trees:smalea:small":	"file(entities/trees/smalea)",
+
+		"ui:input_box:fish_filters": "file(ui/data/input_box_fish_filters.json)",
 
 		"weapons:bubble_shot":	"file(entities/weapons/bubble_shot)",
 		"weapons:crab_pincer":	"file(entities/weapons/crab_pincer)",

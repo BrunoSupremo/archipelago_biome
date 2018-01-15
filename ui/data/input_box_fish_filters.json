@@ -1,0 +1,18 @@
+{
+	"type": "index",
+	"stockpile": {
+		"cooking_ingredients": {
+			"display_name": "i18n(stonehearth:ui.game.zones_mode.stockpile.filters.tooltip_cooking)",
+			"icon": "/stonehearth/ui/game/modes/zones_mode/stockpile/images/taxonomy/meat.png",
+			"ordinal": 1,
+			"categories": {
+				"fish": {
+					"ordinal": 1,
+					"display_name": "i18n(archipelago_biome:entities.food.fish.display_name)",
+					"icon": "/archipelago_biome/entities/food/fish/fish.png",
+					"filter": "cooking_ingredient fish"
+				}
+			}
+		}
+	}
+}

@@ -35,6 +35,12 @@
 				"description":"Não são estrelas, nem peixes."
 			}
 		},
+		"containers": {
+			"input_fish_rack": {
+				"display_name": "Fish Rack",
+				"description": "Guarda e deixa amostra seus peixes"
+			}
+		},
 		"critters":{
 			"crab":{
 				"display_name":"Caranguejo",

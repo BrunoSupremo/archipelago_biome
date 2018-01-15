@@ -35,6 +35,12 @@
 				"description": "A.k.a. Sea Stars, starfish is not really a fish."
 			}
 		},
+		"containers": {
+			"input_fish_rack": {
+				"display_name": "Fish Rack",
+				"description": "Store and display your fish"
+			}
+		},
 		"critters": {
 			"crab": {
 				"display_name": "Crab",

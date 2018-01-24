@@ -26,8 +26,8 @@
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
-			"display_name": "i18n(stonehearth:jobs.mason.mason_outfit.display_name)",
-			"description": "i18n(stonehearth:jobs.mason.mason_outfit.description)",
+			"display_name": "i18n(stonehearth:jobs.worker.worker_outfit.display_name)",
+			"description": "i18n(archipelago_biome:entities.outfit.visitor_outfit.description)",
 			"icon": "file(visitor_outfit.png)"
 		}
 	}

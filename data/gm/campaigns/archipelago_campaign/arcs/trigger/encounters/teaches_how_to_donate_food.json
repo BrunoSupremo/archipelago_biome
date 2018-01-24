@@ -1,0 +1,31 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"in_edge": "teaches_how_to_donate_food",
+	"can_start": {
+		"test_1": {
+			"food_bin_is_full": {
+				"item": "script",
+				"type": "deny_if",
+				"value": true,
+				"script": "file(food_bin_is_full.lua)"
+			}
+		}
+	},
+	"dialog_tree_info": {
+		"start_node": "start",
+		"nodes": {
+			"start": {
+				"bulletin": {
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.teaches_how_to_donate_food.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+					"portrait": "file(images/anya.png)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.teaches_how_to_donate_food.message_start)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {}
+					}
+				}
+			}
+		}
+	}
+}

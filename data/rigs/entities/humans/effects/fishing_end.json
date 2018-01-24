@@ -10,6 +10,51 @@
 			"type": "attach_item_effect",
 			"item": "archipelago_biome:fisher:rod",
 			"bone": "mainHand"
+		},
+		"emoticon": {
+			"type": "cubemitter",
+			"start_time" : 0,
+			"end_time" : 1000,
+			"cubemitter": "particles/emote/emoticons/surprise.cubemitter.json",
+			"transforms": {
+				"x":0,
+				"y":0,
+				"z":0,
+				"rx":0,
+				"ry":0,
+				"rz":0
+			},
+			"bone": "head"
+		},
+		"emoticon2": {
+			"type": "cubemitter",
+			"start_time" : 300,
+			"end_time" : 1000,
+			"cubemitter": "particles/emote/emoticons/surprise.cubemitter.json",
+			"transforms": {
+				"x":0,
+				"y":0,
+				"z":0,
+				"rx":0,
+				"ry":0,
+				"rz":0
+			},
+			"bone": "head"
+		},
+		"emoticon3": {
+			"type": "cubemitter",
+			"start_time" : 600,
+			"end_time" : 1000,
+			"cubemitter": "particles/emote/emoticons/surprise.cubemitter.json",
+			"transforms": {
+				"x":0,
+				"y":0,
+				"z":0,
+				"rx":0,
+				"ry":0,
+				"rz":0
+			},
+			"bone": "head"
 		}
 	}
 }

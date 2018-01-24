@@ -5,6 +5,7 @@
 	"description": "i18n(archipelago_biome:jobs.fisher.recipes.fish_container_recipe.description)",
 	"flavor": "i18n(archipelago_biome:jobs.fisher.recipes.fish_container_recipe.flavor)",
 	"portrait": "/archipelago_biome/entities/decoration/fish_container/fish_container.png",
+	"level_requirement": 2,
 	"ingredients": [
 		{
 			"uri": "stonehearth:containers:large_crate",

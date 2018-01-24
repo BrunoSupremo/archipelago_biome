@@ -5,10 +5,10 @@
 	"can_start": {
 		"test_1": {
 			"crate_exists": {
-				"item": "script",
+				"uri": "archipelago_biome:monsters:fake_container",
+				"item": "exists_in_world",
 				"type": "deny_if_not",
-				"value": true,
-				"script": "file(crate_exists.lua)"
+				"value": true
 			}
 		}
 	},

@@ -25,6 +25,9 @@
 			"ordinal": 3,
 			"name": "i18n(stonehearth:jobs.blacksmith.recipes.storage_name)",
 			"recipes": {
+				"input_fish_rack": {
+					"recipe": "file(input_fish_rack_recipe.json)"
+				},
 				"fish_container": {
 					"recipe": "file(fish_container_recipe.json)"
 				},

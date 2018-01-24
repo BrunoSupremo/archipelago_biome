@@ -1,0 +1,63 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "miranda_offers_a_ride",
+	"dialog_tree_info": {
+		"start_node": "start",
+		"nodes": {
+			"start": {
+				"bulletin": {
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+					"portrait": "file(images/anya.png)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.message_start)",
+					"choices": {
+						"archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.choice": {
+							"next_node": "message_2"
+						}
+					}
+				}
+			},
+			"message_2": {
+				"bulletin": {
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+					"portrait": "file(images/anya.png)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.message_2)",
+					"choices": {
+						"archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.choice_2": {
+							"next_node": "message_3"
+						}
+					}
+				}
+			},
+			"message_3": {
+				"bulletin": {
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
+					"portrait": "file(images/captain_miranda.png)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.message_3)",
+					"choices": {
+						"archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.choice_3": {
+							"next_node": "message_4"
+						}
+					}
+				}
+			},
+			"message_4": {
+				"bulletin": {
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+					"portrait": "file(images/anya.png)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.message_4)",
+					"choices": {
+						"archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.miranda_offers_a_ride.choice_end": {
+							"out_edge": "gm_cleans_everything"
+						}
+					}
+				}
+			}
+		}
+	}
+}

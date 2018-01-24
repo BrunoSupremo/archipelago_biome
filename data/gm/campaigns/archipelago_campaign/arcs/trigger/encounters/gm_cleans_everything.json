@@ -1,0 +1,9 @@
+{
+	"type": "encounter",
+	"encounter_type": "script",
+	"in_edge": "gm_cleans_everything",
+	"out_edge" : "arc:finish",
+	"script_info": {
+		"script":"file(gm_cleans_everything.lua)"
+	}
+}

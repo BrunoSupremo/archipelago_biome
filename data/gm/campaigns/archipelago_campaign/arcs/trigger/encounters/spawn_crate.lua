@@ -22,8 +22,8 @@ function Archipelago_spawn_mysterious_crate:start(ctx, data)
 end
 
 function Archipelago_spawn_mysterious_crate:_spawn(location, ctx)
-	local fake_container = radiant.entities.create_entity('archipelago_biome:monsters:fake_container', {owner = "animals"})
-	local inventory = stonehearth.inventory:get_inventory("animals")
+	local fake_container = radiant.entities.create_entity('archipelago_biome:monsters:fake_container', {owner = ctx.player_id})
+	local inventory = stonehearth.inventory:get_inventory(ctx.player_id)
 	inventory:add_item(fake_container)
 	location = radiant.terrain.find_placement_point(location, 1, 8, fake_container)
 	radiant.terrain.place_entity(fake_container, location)

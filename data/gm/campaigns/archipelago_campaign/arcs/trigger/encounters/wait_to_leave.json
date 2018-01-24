@@ -1,0 +1,9 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_time_of_day",
+	"in_edge"  : "wait_to_leave",
+	"out_edge" : "miranda_offers_a_ride",
+	"wait_for_time_of_day_info": {
+		"time": "8:00"
+	}
+}

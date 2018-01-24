@@ -1,0 +1,9 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait",
+	"in_edge": "wait_after_create_food_bin",
+	"out_edge": "teaches_how_to_donate_food",
+	"wait_info": {
+		"duration": "23h+1h"
+	}
+}

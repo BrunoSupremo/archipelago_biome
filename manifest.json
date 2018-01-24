@@ -29,7 +29,8 @@
 
 		"biome:archipelago": "file(data/biome/archipelago.json)",
 
-		"captain_miranda": "file(entities/humans/captain_miranda)",
+		"captain_miranda":	"file(entities/humans/captain_miranda)",
+		"anya":				"file(entities/humans/anya)",
 
 		"color_map:fish":	"file(data/materials/color_maps/fish_color_map.json)",
 		"color_map:octopus":"file(data/materials/color_maps/octopus_color_map.json)",
@@ -37,6 +38,7 @@
 		"commands:open_crate":"file(data/commands/open_crate)",
 
 		"containers:input_fish_rack": "file(entities/containers/input_fish_rack)",
+		"containers:input_bin:food_bin": "file(entities/containers/input_food_bin)",
 
 		"critters:crab":		"file(entities/critters/crab)",
 		"critters:sea_turtle":	"file(entities/critters/sea_turtle)",
@@ -91,7 +93,8 @@
 		"gizmos:cocobomb":		"file(entities/gizmos/cocobomb)",
 		"gizmos:crab_trap":		"file(entities/gizmos/crab_trap)",
 
-		"jobs:fisher":		"file(jobs/fisher/fisher_description.json)",
+		"jobs:index":	"file(jobs/index.json)",
+		"jobs:fisher":	"file(jobs/fisher/fisher_description.json)",
 		"fisher:rod":		"file(jobs/fisher/fisher_rod/fisher_rod.json)",
 		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 
@@ -141,6 +144,7 @@
 		"trees:smalea:small":	"file(entities/trees/smalea)",
 
 		"ui:input_box:fish_filters": "file(ui/data/input_box_fish_filters.json)",
+		"ui:input_box:food_bin_filters": "file(ui/data/input_box_food_bin_filters.json)",
 
 		"weapons:bubble_shot":	"file(entities/weapons/bubble_shot)",
 		"weapons:crab_pincer":	"file(entities/weapons/crab_pincer)",
@@ -173,7 +177,7 @@
 
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
-		"stonehearth:jobs:index": "file(jobs/index.json)",
+		"stonehearth:jobs:index": "archipelago_biome:jobs:index",
 		"stonehearth/jobs/blacksmith/recipes/recipes.json":	"file(jobs/blacksmith/recipes)",
 		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/cook/recipes/recipes.json":		"file(jobs/cook/recipes)",
@@ -209,6 +213,7 @@
 		"stonehearth/data/rigs/entities/humans/animations/male/fishing_start.json":	"file(data/rigs/entities/humans/animations/male/fishing_start.json)",
 		"stonehearth/data/rigs/entities/humans/animations/male/fishing_middle.json":"file(data/rigs/entities/humans/animations/male/fishing_middle.json)",
 		"stonehearth/data/rigs/entities/humans/animations/male/fishing_end.json":	"file(data/rigs/entities/humans/animations/male/fishing_end.json)",
+		"stonehearth/data/rigs/entities/humans/effects/emote_watch_fish.json":	"file(data/rigs/entities/humans/effects/emote_watch_fish.json)",
 		"stonehearth/data/rigs/entities/humans/effects/fishing_start.json":	"file(data/rigs/entities/humans/effects/fishing_start.json)",
 		"stonehearth/data/rigs/entities/humans/effects/fishing_middle.json":"file(data/rigs/entities/humans/effects/fishing_middle.json)",
 		"stonehearth/data/rigs/entities/humans/effects/fishing_end.json":	"file(data/rigs/entities/humans/effects/fishing_end.json)",

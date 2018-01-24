@@ -1,0 +1,37 @@
+{
+   "type": "encounter",
+   "encounter_type": "dialog_tree",
+   "rarity": "common",
+   "in_edge": "anya_says_she_will_leave",
+   "dialog_tree_info": {
+      "start_node": "start",
+      "nodes": {
+         "start": {
+            "bulletin": {
+               "title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.anya_says_she_will_leave.title)",
+               "dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+               "portrait": "file(images/anya.png)",
+               "message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.anya_says_she_will_leave.message_start)",
+               "choices": {
+                  "stonehearth:ui.game.common.ok": {
+                     "next_node": "message_2"
+                  }
+               }
+            }
+         },
+         "message_2": {
+            "bulletin": {
+               "title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.anya_says_she_will_leave.title)",
+               "dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+               "portrait": "file(images/anya.png)",
+               "message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.anya_says_she_will_leave.message_2)",
+               "choices": {
+                  "stonehearth:ui.game.common.ok": {
+                     "out_edge": "wait_to_leave"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,15 @@
+{
+	"type": "encounter",
+	"encounter_type": "script",
+	"in_edge": "create_food_bin",
+	"out_edge":{
+		"type": "trigger_many",
+		"out_edges": [
+			"wait_after_create_food_bin",
+			"is_food_bin_full"
+		]
+	},
+	"script_info": {
+		"script":"file(create_food_bin.lua)"
+	}
+}

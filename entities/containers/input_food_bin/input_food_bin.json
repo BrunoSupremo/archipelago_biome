@@ -1,0 +1,18 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:containers:input_bin:woven",
+	"components": {
+		"stonehearth:storage": {
+			"filter_list": "archipelago_biome:ui:input_box:food_bin_filters"
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 0,
+			"shop_info": {
+				"buyable": false,
+				"sellable": false
+			}
+		}
+	}
+}

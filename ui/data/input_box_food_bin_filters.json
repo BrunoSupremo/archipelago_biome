@@ -1,0 +1,18 @@
+{
+	"type": "index",
+	"stockpile": {
+		"raw_foods": {
+			"display_name": "i18n(archipelago_biome:ui.game.zones_mode.stockpile.filters.food_bin)",
+			"icon": "/stonehearth/ui/game/bulletin/bulletin_list/images/row_quest.png",
+			"ordinal": 1,
+			"categories": {
+				"raw_food": {
+					"ordinal": 1,
+					"display_name": "i18n(stonehearth:ui.game.zones_mode.stockpile.filters.tooltip_raw_food)",
+					"icon": "/stonehearth/ui/game/modes/zones_mode/stockpile/images/taxonomy/fruit.png",
+					"filter": "stockpile_raw_food"
+				}
+			}
+		}
+	}
+}

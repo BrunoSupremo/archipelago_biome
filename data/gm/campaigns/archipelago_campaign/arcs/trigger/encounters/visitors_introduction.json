@@ -9,8 +9,8 @@
 			"start": {
 				"bulletin": {
 					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
-					"portrait": "file(images/captain_miranda.png)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+					"portrait": "file(images/anya.png)",
 					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.message_start)",
 					"choices": {
 						"archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.choice": {
@@ -22,12 +22,25 @@
 			"message_2": {
 				"bulletin": {
 					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.title)",
-					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
-					"portrait": "file(images/captain_miranda.png)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+					"portrait": "file(images/anya.png)",
 					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.message_2)",
 					"choices": {
+						"archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.choice_2": {
+							"next_node": "message_3"
+						}
+					}
+				}
+			},
+			"message_3": {
+				"bulletin": {
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.anya)",
+					"portrait": "file(images/anya.png)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.message_3)",
+					"choices": {
 						"archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.visitors_introduction.choice_end": {
-							"out_edge": ""
+							"out_edge": "create_food_bin"
 						}
 					}
 				}

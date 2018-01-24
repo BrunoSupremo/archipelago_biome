@@ -1,0 +1,16 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_requirements_met",
+	"in_edge"  : "is_food_bin_full",
+	"out_edge" : "anya_says_she_will_leave",
+	"wait_for_requirements_met_info": {
+		"requirements": {
+			"food_bin_is_full": {
+				"item": "script",
+				"type": "deny_if_not",
+				"value": true,
+				"script": "file(food_bin_is_full.lua)"
+			}
+		}
+	}
+}

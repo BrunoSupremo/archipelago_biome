@@ -20,10 +20,10 @@ end
 function ArchipelagoShowTheVisitors:_find_location_callback(op, location, ctx)
 	if op == 'check_location' then
 		return true
-	--
+	--dummy comment just to fix the elseif auto indent problem
 	elseif op == 'set_location' then
 		self:create_visitors(ctx, location)
-	--
+	--dummy comment just to fix the elseif auto indent problem
 	elseif op == 'abort' then
 		local town = stonehearth.town:get_town(ctx.player_id)
 		local location = town:get_landing_location()
@@ -42,18 +42,23 @@ function ArchipelagoShowTheVisitors:create_visitors(ctx, location)
 	local player_id = ctx.player_id
 	local raft = radiant.entities.create_entity("archipelago_biome:decoration:raft", {owner = player_id})
 	radiant.terrain.place_entity(raft, location, { force_iconic = false })
-	game_master_lib.register_entities(ctx, 'visitors', { raft = raft })
 
 	local pop = stonehearth.population:get_population(player_id)
 	for i=1,3 do
-		local visitor = radiant.entities.create_entity("stonehearth:female_"..i, {owner = player_id})
-		pop:set_citizen_name(visitor, 'female')
+		local visitor
+		if i == 3 then
+			visitor = radiant.entities.create_entity("archipelago_biome:anya", {owner = player_id})
+			radiant.entities.set_custom_name(visitor, "i18n(archipelago_biome:entities.humans.anya.display_name)")
+		else
+			visitor = radiant.entities.create_entity("stonehearth:female_"..i, {owner = player_id})
+			pop:set_citizen_name(visitor, 'female')
+		end
 		visitor:add_component('stonehearth:customization'):generate_custom_appearance()
 		visitor:add_component('stonehearth:job'):promote_to("stonehearth:jobs:worker")
 		visitor:add_component('stonehearth:equipment'):equip_item("archipelago_biome:outfit:visitor")
-		local new_location = radiant.terrain.find_placement_point(location+Point3(0,1,0), 1, 3, visitor)
+		local new_location = radiant.terrain.find_placement_point(location, 2, 5, visitor)
 		radiant.terrain.place_entity(visitor, new_location)
-		game_master_lib.register_entities(ctx, 'visitors', { [i] = visitor })
+		game_master_lib.register_entities(ctx, 'visitors', { ["female_"..i] = visitor })
 	end
 	
 	-- add to the visible region for that player
@@ -72,7 +77,7 @@ function ArchipelagoShowTheVisitors:create_visitors(ctx, location)
 
 	stonehearth.bulletin_board:post_bulletin(ctx.player_id)
 	:set_data({
-		zoom_to_entity = ctx.visitors[1],
+		zoom_to_entity = ctx.visitors.female_3,
 		title = "i18n(archipelago_biome:data.gm.campaigns.archipelago_campaign.trigger.show_the_visitors.show)"
 		})
 end

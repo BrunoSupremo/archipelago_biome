@@ -6,10 +6,10 @@
 	"wait_for_requirements_met_info": {
 		"requirements": {
 			"crate_does_not_exists": {
-				"item": "script",
-				"type": "deny_if_not",
-				"value": false,
-				"script": "file(crate_exists.lua)"
+				"uri": "archipelago_biome:monsters:fake_container",
+				"item": "exists_in_world",
+				"type": "deny_if",
+				"value": true
 			}
 		}
 	}

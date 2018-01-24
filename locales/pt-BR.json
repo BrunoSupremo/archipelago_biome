@@ -37,8 +37,12 @@
 		},
 		"containers": {
 			"input_fish_rack": {
-				"display_name": "Fish Rack",
+				"display_name": "Cabide de peixes",
 				"description": "Guarda e deixa amostra seus peixes"
+			},
+			"input_food_bin": {
+				"display_name": "Doação de Comida",
+				"description": "Um container com suprimentos, para doações de comida"
 			}
 		},
 		"critters":{
@@ -323,6 +327,20 @@
 				"display_name":"Garra de Caranguejo",
 				"description":"Sinta o beliscão!"
 			}
+		},
+		"humans": {
+			"anya":{
+				"display_name": "Anya"
+			},
+			"captain_miranda":{
+				"display_name": "Capitã Miranda",
+				"description": "O mar é seu lar"
+			}
+		},
+		"outfit": {
+			"visitor_outfit": {
+				"description": "Roupa comum de outra ilha"
+			}
 		}
 	},
 	"jobs":{
@@ -378,6 +396,11 @@
 					"description":"É mais fácil vender os peixes assim.",
 					"flavor":"Pronto pra ser exportado"
 				},
+				"input_fish_rack_recipe": {
+					"recipe_name": "Cabide de peixes",
+					"description": "Um recipiente para peixes, para manter os cozinheiros abastecidos.",
+					"flavor": "Melhor do que armazená-los no chão"
+				},
 				"pearl_container_recipe":{
 					"recipe_name":"Caixote de Pérolas",
 					"description":"É mais fácil vender as pérolas assim.",
@@ -430,6 +453,13 @@
 						}
 					}
 				}
+			},
+			"zones_mode": {
+				"stockpile": {
+					"filters": {
+						"food_bin": "Ajude doando comida"
+					}
+				}
 			}
 		},
 		"shell": {
@@ -475,6 +505,7 @@
 			}
 		},
 		"gm":{
+			"anya": "Anya",
 			"captain_miranda":"Capitã Miranda",
 			"campaigns":{
 				"archipelago_tutorial":{
@@ -485,7 +516,7 @@
 							"message_decline":"Bom, se cuida.<br>Boa sorte.",
 							"message_accept":"Isso! Finalmente aceitaram minha ajuda!<br>Er... Quero dizer, me siga!",
 							"message_trees":"Vai começar procurando madeira e comida, né?<br>Aqui temos os dois com palmeiras!<br>Quando você colher elas vai pegar cocos. Mas eles não enchem muito<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
-							"message_oysters":"Ah, e essas ostras gigantes são incríveis. O pescador pode colher as pérolas de tempo em tempo que vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
+							"message_oysters":"Ah, e essas ostras gigantes são incríveis. Apenas um pescador pode colhê-las e suas pérolas vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
 							"message_broken_boats":"Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
 							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento bom e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
 						}
@@ -532,6 +563,35 @@
 						},
 						"show_the_visitors": {
 							"show": "Por aqui"
+						},
+						"visitors_introduction": {
+							"title": "Precisamos de ajuda",
+							"message_start": "Oi, Sou Anya. Desculpe chegar em sua ilha tão de repente. Não tivemos escolha.",
+							"choice": "O que houve?",
+							"message_2": "Você já ouviu sorbe os cocolings, certo? Eram irritantes, mas não uma ameaça. Pelo menos não até alguns dias atrás.<br>Os homens ficaram para lutar enquanto viemos buscar ajuda. Precisamos principalmente de comida, se possível.",
+							"choice_2": "Eu posso ajudar",
+							"message_3": "Obrigado! Colocamos uma cesta perto da sua bandeira onde você pode colocar a comida.<br>Enquanto isso, podemos ajudar vocês com o trabalho que precisa ser feito em sua cidade.",
+							"choice_end": "Bem-vindas!"
+						},
+						"teaches_how_to_donate_food": {
+							"title": "Precisa de ajuda?",
+							"message_start": "A esta de comida ainda não está cheia?<br>(Para encher, clique nela, e ative o filtro de comida)"
+						},
+						"anya_says_she_will_leave": {
+							"message_start": "Ei! Você conseguiu! Muito obrigado.",
+							"message_2": "Então, eu acho que isso significa que estamos prontos pra ir. Vamos sair de manhã as 8:00, tá bom?",
+							"title": "Cesta de comida cheia"
+						},
+						"miranda_offers_a_ride": {
+							"title": "Tchau tchau",
+							"message_start": "Não acredito no quanto vocês nos ajudaram. Obrigado.",
+							"choice": "Sem problemas",
+							"message_2": "Bom, onde está aquela jangada velha?",
+							"choice_2": "Hã?",
+							"message_3": "Jangada velha? Não não. Vamos ir no meu navio. Com ele chegaremos rapidinho.",
+							"choice_3": "Que legal",
+							"message_4": "Obrigado Miranda. Obrigado gente. Nós já vamos indo.<br>Nos deseje sorte! Tchau!",
+							"choice_end": "Tchau!"
 						}
 					}
 				}

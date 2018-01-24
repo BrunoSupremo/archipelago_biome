@@ -39,6 +39,10 @@
 			"input_fish_rack": {
 				"display_name": "Fish Rack",
 				"description": "Store and display your fish"
+			},
+			"input_food_bin": {
+				"display_name": "Food Donation",
+				"description": "A supply container, for food donations"
 			}
 		},
 		"critters": {
@@ -323,6 +327,20 @@
 				"display_name": "Crab Pincer",
 				"description": "Feel the pinch!"
 			}
+		},
+		"humans": {
+			"anya": {
+				"display_name": "Anya"
+			},
+			"captain_miranda": {
+				"display_name": "Captain Miranda",
+				"description": "The sea is her home"
+			}
+		},
+		"outfit": {
+			"visitor_outfit": {
+				"description": "Common worker outfit from another island"
+			}
 		}
 	},
 	"jobs": {
@@ -378,6 +396,11 @@
 					"description": "Easier to sell your fish this way.",
 					"flavor": "Ready to be exported"
 				},
+				"input_fish_rack_recipe": {
+					"recipe_name": "Fish Rack",
+					"description": "A container for fish, to help keep crafters supplied.",
+					"flavor": "Better than storing it in the floor"
+				},
 				"pearl_container_recipe": {
 					"recipe_name": "Pearl Container",
 					"description": "Easier to sell your pearls this way.",
@@ -430,6 +453,13 @@
 						}
 					}
 				}
+			},
+			"zones_mode": {
+				"stockpile": {
+					"filters": {
+						"food_bin": "Help donating food"
+					}
+				}
 			}
 		},
 		"shell": {
@@ -475,6 +505,7 @@
 			}
 		},
 		"gm": {
+			"anya": "Anya",
 			"captain_miranda": "Captain Miranda",
 			"campaigns": {
 				"archipelago_tutorial": {
@@ -485,7 +516,7 @@
 							"message_decline": "Well, take care.<br>Good luck.",
 							"message_accept": "Yes! Finally someone accepted my help!<br>Er... I mean, follow me!",
 							"message_trees": "You will start looking for wood and food, right?<br>Here we have both with palm trees!<br>When you harvest them you get coconuts. Those don't fill much though.<br>Harvesting it a second time (while it has no coconuts) will instead chop it for wood.",
-							"message_oysters": "Oh, and these big oysters are awesome. A fisher can harvest their pearls from time to time which sell for a good amount.<br>Rumours mention rare black pearls, but I never saw one myself.",
+							"message_oysters": "Oh, and these big oysters are awesome. Only a fisher can harvest them and their pearls sell for a good amount.<br>Rumours mention rare black pearls, but I never saw one myself.",
 							"message_broken_boats": "Take a look around and you may find some unlucky boat wrecks.<br>You can scavenger those and find good treasures.",
 							"message_bye": "That's all for now.<br>I'll return later to check how you guys are doing.<br>I need to take advantage of this good wind and set sail, my ship will not fill itself with goods and treasures.<br>Bye bye and good luck."
 						}
@@ -532,6 +563,35 @@
 						},
 						"show_the_visitors": {
 							"show": "Over here"
+						},
+						"visitors_introduction": {
+							"title": "We need help",
+							"message_start": "Hi, I'm Anya. Sorry to land into your town so suddenly. We didn't have much choice.",
+							"choice": "What happened?",
+							"message_2": "I'm sure you heard about the cocolings, right? They were annoying, but not a threat.<br>Not until a couple days ago.<br>The men stayed to fight while we came seeking for help. We need mostly food, if possible.",
+							"choice_2": "I can help",
+							"message_3": "Thanks! We will place a bin near your town flag where you can put the food.<br>Meanwhile, we can help you working in your town.",
+							"choice_end": "Welcome!"
+						},
+						"teaches_how_to_donate_food": {
+							"title": "Do you need help?",
+							"message_start": "The food bin is not full yet?<br>(To start filling it, click on it, and activate the food filter)"
+						},
+						"anya_says_she_will_leave": {
+							"message_start": "Hey! You did it! Thank you.",
+							"message_2": "So, I guess this means we are ready to go. We will leave in the morning at 8:00, ok?",
+							"title": "Food bin filled"
+						},
+						"miranda_offers_a_ride": {
+							"title": "Bye bye",
+							"message_start": "I can not believe how much you helped us. Thank you.",
+							"choice": "No problem",
+							"message_2": "Now, where is our old raft?",
+							"choice_2": "Uh?",
+							"message_3": "Old raft? No no. We are going in my ship. With it we will get there in no time.",
+							"choice_3": "That is nice",
+							"message_4": "Thank you Miranda. Thanks guys. We should go.<br>Wish us luck! Bye!",
+							"choice_end": "Bye!"
 						}
 					}
 				}

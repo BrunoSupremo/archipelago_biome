@@ -21,9 +21,7 @@ function ArchipelagoFisherInTheWater:start(ctx, info)
 end
 
 function ArchipelagoFisherInTheWater:spawn_shield(location, ctx)
-	local shield = radiant.entities.create_entity('archipelago_biome:armor:turtle_shield', {owner = "animals"})
-	local inventory = stonehearth.inventory:get_inventory("animals")
-	inventory:add_item(shield)
+	local shield = radiant.entities.create_entity('archipelago_biome:armor:turtle_shield')
 	location = radiant.terrain.find_placement_point(location, 1, 3, shield)
 	radiant.terrain.place_entity(shield, location)
 

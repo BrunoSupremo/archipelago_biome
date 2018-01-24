@@ -25,6 +25,14 @@
 		"lets_trade_again":"file(encounters/lets_trade_again.json)",
 		"show_the_visitors":"file(encounters/show_the_visitors.json)",
 		"confirm_visitors_spawned":"file(encounters/confirm_visitors_spawned.json)",
-		"visitors_introduction":"file(encounters/visitors_introduction.json)"
+		"visitors_introduction":"file(encounters/visitors_introduction.json)",
+		"create_food_bin":"file(encounters/create_food_bin.json)",
+		"wait_after_create_food_bin":"file(encounters/wait_after_create_food_bin.json)",
+		"teaches_how_to_donate_food":"file(encounters/teaches_how_to_donate_food.json)",
+		"is_food_bin_full":"file(encounters/is_food_bin_full.json)",
+		"anya_says_she_will_leave":"file(encounters/anya_says_she_will_leave.json)",
+		"wait_to_leave":"file(encounters/wait_to_leave.json)",
+		"miranda_offers_a_ride":"file(encounters/miranda_offers_a_ride.json)",
+		"gm_cleans_everything":"file(encounters/gm_cleans_everything.json)"
 	}
 }

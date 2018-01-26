@@ -37,6 +37,11 @@ function ArchipelagoWave:rotate()
 	end
 	x = x/terrain_count
 	z = z/terrain_count
+	if x == 0 and z == 0 then
+		--this means that it has no direction to look, e.g. a tie between pointing right and left
+		radiant.entities.destroy_entity(self._entity)
+		return
+	end
 	self._entity:get_component('mob'):turn_to_face_point(location + Point3(x, location.y, z))
 end
 

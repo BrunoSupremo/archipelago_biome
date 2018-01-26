@@ -1,5 +1,6 @@
 {
 	"type": "recipe",
+	"effort": 90,
 	"work_units": 5,
 	"recipe_name": "i18n(archipelago_biome:entities.decoration.anchor.display_name)",
 	"description": "i18n(archipelago_biome:entities.decoration.anchor.recipe.description)",

@@ -13,7 +13,7 @@
 			"iconic_form": "file(turtle_shield_iconic.json)"
 		},
 		"stonehearth:equipment_piece": {
-			"slot": "offhand",
+			"slot": "leftArm",
 			"render_type": "attach_to_bone",
 			"postures": [
 				"stonehearth:combat",

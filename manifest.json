@@ -32,8 +32,8 @@
 		"captain_miranda":	"file(entities/humans/captain_miranda)",
 		"anya":				"file(entities/humans/anya)",
 
-		"color_map:fish":	"file(data/materials/color_maps/fish_color_map.json)",
 		"color_map:octopus":"file(data/materials/color_maps/octopus_color_map.json)",
+		"color_map:tree":	"file(data/materials/color_maps/tree_color_map.json)",
 
 		"commands:open_crate":"file(data/commands/open_crate)",
 
@@ -67,7 +67,6 @@
 		"effects:cocobomb_explosion_effect":"file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
 		"effects:harvest_coconut_overlay":	"file(data/effects/harvest_coconut_overlay)",
 		"effects:harvest_crab_overlay":		"file(data/effects/harvest_crab_overlay)",
-		"effects:harvest_fish_overlay":		"file(data/effects/harvest_fish_overlay)",
 		"effects:harvest_papaya_overlay":	"file(data/effects/harvest_papaya_overlay)",
 		"effects:harvest_pearl_overlay":	"file(data/effects/harvest_pearl_overlay)",
 		"effects:no_water_overlay":			"file(data/effects/no_water_overlay)",
@@ -100,9 +99,9 @@
 
 		"mixins:encounter:octopus_raid":	"file(mixins/encounter/mixin_octopus_raid.json)",
 		"mixins:encounter:cocoling_raid":	"file(mixins/encounter/mixin_cocoling_raid.json)",
-
-		"mixins:palm_tree":	"file(mixins/palm_tree)",
-		"mixins:spice":		"file(mixins/spice)",
+		"mixins:foreign_tree":"file(mixins/foreign_tree)",
+		"mixins:palm_tree":"file(mixins/palm_tree)",
+		"mixins:spice":"file(mixins/spice)",
 
 		"monsters:cocoling":		"file(entities/monsters/cocoling)",
 		"monsters:cocoling_spawner":"file(entities/monsters/cocoling_spawner)",
@@ -149,11 +148,6 @@
 		"weapons:bubble_shot":	"file(entities/weapons/bubble_shot)",
 		"weapons:crab_pincer":	"file(entities/weapons/crab_pincer)",
 		"weapons:slap_fish":	"file(entities/weapons/slap_fish)"
-	},
-	"deprecated_aliases": {
-		"critters:fish":		"file(entities/critters/fish)",
-		"gizmos:float_bobber":	"file(entities/gizmos/float_bobber)",
-		"fisher:bucket":	"file(jobs/fisher/fisher_bucket/fisher_bucket.json)"
 	},
 	"mixintos": {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
@@ -230,7 +224,6 @@
 		"explosive":		"file(components/explosive/explosive.lua)",
 		"fake_container":	"file(components/fake_container/fake_container.lua)",
 		"crab_spawner":		"file(components/crab_spawner/crab_spawner.lua)",
-		"fish_spawner":		"file(components/fish_spawner/fish_spawner.lua)",
 		"need_water":		"file(components/need_water/need_water.lua)",
 		"wave":				"file(components/wave/wave.lua)"
 	},

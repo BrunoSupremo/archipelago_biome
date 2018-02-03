@@ -1,0 +1,38 @@
+{
+	"archipelago_biome:acacia:leaves:dark" :{"color" : "#3A6F35"},
+	"archipelago_biome:acacia:leaves:light":{"color" : "#437F3C"},
+	"archipelago_biome:acacia:wood:dark" :	{"color" : "#6D5631"},
+	"archipelago_biome:acacia:wood:light" :	{"color" : "#816335"},
+
+	"archipelago_biome:oak:leaves:darker" :	{"color" : "#3B6F2E"},
+	"archipelago_biome:oak:leaves:dark" :	{"color" : "#407633"},
+	"archipelago_biome:oak:leaves:light" :	{"color" : "#448638"},
+	"archipelago_biome:oak:leaves:lighter" :{"color" : "#458C3A"},
+	"archipelago_biome:oak:wood:dark" :		{"color" : "#7A5E38"},
+	"archipelago_biome:oak:wood:light" :	{"color" : "#906D3B"},
+
+	"archipelago_biome:oak:leaves:darker2" :{"color" : "#3C762C"},
+	"archipelago_biome:oak:leaves:dark2" :	{"color" : "#417E31"},
+	"archipelago_biome:oak:leaves:light2" :	{"color" : "#438B32"},
+	"archipelago_biome:oak:leaves:lighter2":{"color" : "#459333"},
+	"archipelago_biome:oak:wood:dark2" :	{"color" : "#795E38"},
+	"archipelago_biome:oak:wood:light2" :	{"color" : "#8F6D3C"},
+
+	"archipelago_biome:oak:leaves:darker3" :{"color" : "#386C2E"},
+	"archipelago_biome:oak:leaves:dark3" :	{"color" : "#3D7434"},
+	"archipelago_biome:oak:leaves:light3" :	{"color" : "#41843A"},
+	"archipelago_biome:oak:leaves:lighter3":{"color" : "#428A3E"},
+
+	"archipelago_biome:oak:leaves:lighter4":{"color" : "#498E3D"},
+	"archipelago_biome:oak:wood:darker4" :	{"color" : "#69502E"},
+	"archipelago_biome:oak:wood:dark4" :	{"color" : "#765932"},
+	"archipelago_biome:oak:wood:light4" :	{"color" : "#826132"},
+	"archipelago_biome:oak:wood:lighter4" :	{"color" : "#846334"},
+
+	"archipelago_biome:oak:leaves:lighter5":{"color" : "#4B9842"},
+
+	"archipelago_biome:oak:wood:dark6" :	{"color" : "#725936"},
+	"archipelago_biome:oak:wood:light6" :	{"color" : "#86683C"},
+
+	"archipelago_biome:oak:leaves:lighter7":{"color" : "#3C8A3A"}
+}

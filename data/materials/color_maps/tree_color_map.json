@@ -1,0 +1,38 @@
+{
+	"#253739": "archipelago_biome:acacia:leaves:dark",
+	"#344848": "archipelago_biome:acacia:leaves:light",
+	"#38372C": "archipelago_biome:acacia:wood:dark",
+	"#413F33": "archipelago_biome:acacia:wood:light",
+
+	"#26362A": "archipelago_biome:oak:leaves:darker",
+	"#304435": "archipelago_biome:oak:leaves:dark",
+	"#37563F": "archipelago_biome:oak:leaves:light",
+	"#386243": "archipelago_biome:oak:leaves:lighter",
+	"#51483A": "archipelago_biome:oak:wood:dark",
+	"#5F523E": "archipelago_biome:oak:wood:light",
+
+	"#294427": "archipelago_biome:oak:leaves:darker2",
+	"#335431": "archipelago_biome:oak:leaves:dark2",
+	"#356033": "archipelago_biome:oak:leaves:light2",
+	"#397136": "archipelago_biome:oak:leaves:lighter2",
+	"#50483B": "archipelago_biome:oak:wood:dark2",
+	"#5D5240": "archipelago_biome:oak:wood:light2",
+
+	"#21312A": "archipelago_biome:oak:leaves:darker3",
+	"#2A4037": "archipelago_biome:oak:leaves:dark3",
+	"#315244": "archipelago_biome:oak:leaves:light3",
+	"#325E4C": "archipelago_biome:oak:leaves:lighter3",
+
+	"#40664A": "archipelago_biome:oak:leaves:lighter4",
+	"#302C26": "archipelago_biome:oak:wood:darker4",
+	"#3C372F": "archipelago_biome:oak:wood:dark4",
+	"#443B2C": "archipelago_biome:oak:wood:light4",
+	"#473F31": "archipelago_biome:oak:wood:lighter4",
+
+	"#447A53": "archipelago_biome:oak:leaves:lighter5",
+
+	"#413D37": "archipelago_biome:oak:wood:dark6",
+	"#4C4841": "archipelago_biome:oak:wood:light6",
+
+	"#275E43": "archipelago_biome:oak:leaves:lighter7"
+}

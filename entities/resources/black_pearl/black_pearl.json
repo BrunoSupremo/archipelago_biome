@@ -15,7 +15,7 @@
 	},
 	"entity_data": {
 		"stonehearth:net_worth": {
-			"value_in_gold": 150,
+			"value_in_gold": 66,
 			"rarity": "rare",
 			"shop_info": {
 				"buyable": false,

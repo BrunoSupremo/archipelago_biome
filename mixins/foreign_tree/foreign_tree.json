@@ -1,0 +1,10 @@
+{
+	"components": {
+		"render_info": {
+			"color_map": "archipelago_biome:color_map:tree",
+			"material_maps": [
+				"/archipelago_biome/data/materials/material_maps/tree_material_map.json"
+			]
+		}
+	}
+}

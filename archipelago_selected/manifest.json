@@ -24,6 +24,10 @@
 		"archipelago_biome/jobs/fisher/recipes/crab_trap_recipe.json":		"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/potter/recipes/sand_castle_recipe.json":	"file(jobs/unlock_recipe.json)",
 
+		"stonehearth:mixins:tree": "archipelago_biome:mixins:foreign_tree",
+		"stonehearth/entities/trees/acacia_tree/sapling_acacia_tree/sapling_acacia_tree_iconic.json": "archipelago_biome:mixins:foreign_tree",
+		"stonehearth/entities/trees/oak_tree/sapling_oak_tree/sapling_oak_tree_iconic.json": "archipelago_biome:mixins:foreign_tree",
+
 		"stonehearth:monster_tuning:goblins:worker":		"file(data/monster_tuning/goblins/worker)",
 		"stonehearth:monster_tuning:goblins:worker_thief":	"file(data/monster_tuning/goblins/worker)",
 
@@ -41,20 +45,6 @@
 	"overrides": {
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":	"file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":	"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
-
-		"stonehearth/entities/trees/acacia_tree/sapling_acacia_tree/sapling_acacia_tree.qb":"file(entities/trees/sapling_acacia_tree.qb)",
-		"stonehearth/entities/trees/acacia_tree/small_acacia_tree/small_acacia_tree.qb":	"file(entities/trees/small_acacia_tree.qb)",
-		"stonehearth/entities/trees/acacia_tree/large_acacia_tree/large_acacia_tree.qb":	"file(entities/trees/large_acacia_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/sapling_oak_tree/sapling_oak_tree.qb":			"file(entities/trees/sapling_oak_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree.qb":				"file(entities/trees/small_oak_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree_2.qb":			"file(entities/trees/small_oak_tree_2.qb)",
-		"stonehearth/entities/trees/oak_tree/small_oak_tree/small_oak_tree_3.qb":			"file(entities/trees/small_oak_tree_3.qb)",
-		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree.qb":			"file(entities/trees/medium_oak_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_2.qb":			"file(entities/trees/medium_oak_tree_2.qb)",
-		"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_3.qb":			"file(entities/trees/medium_oak_tree_3.qb)",
-		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree.qb":				"file(entities/trees/large_oak_tree.qb)",
-		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree_2.qb":			"file(entities/trees/large_oak_tree_2.qb)",
-		"stonehearth/entities/trees/oak_tree/large_oak_tree/large_oak_tree_3.qb":			"file(entities/trees/large_oak_tree_3.qb)",
 
 		"stonehearth/ui/game/create_camp/create_camp.js":"file(ui/game/create_camp/create_camp.js)",
 

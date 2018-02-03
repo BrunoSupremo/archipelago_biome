@@ -1,13 +1,5 @@
 {
 	"craftable_recipes" : {
-		"tools_weapons": {
-			"ordinal": 2,
-			"recipes": {
-				"fisher_bucket": {
-					"recipe": "file(fisher_bucket_recipe.json)"
-				}
-			}
-		},
 		"furniture" : {
 			"recipes" : {
 				"sand_castle" : {

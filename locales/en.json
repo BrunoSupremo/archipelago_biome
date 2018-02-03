@@ -388,7 +388,7 @@
 				},
 				"crab_trap_recipe": {
 					"recipe_name": "Crab Trap",
-					"description": "Will attract and capture crabs. Needs manual harvesting to get the crabs inside.",
+					"description": "It will attract and capture nearby crabs after it is placed.",
 					"flavor": "Crabs will spawn around it if there are none near."
 				},
 				"fish_container_recipe": {

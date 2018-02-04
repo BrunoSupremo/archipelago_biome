@@ -3,7 +3,7 @@
 	"mixins": "file(crab_trap_ghost.json)",
 	"components": {
 		"archipelago_biome:crab_spawner": {
-			"interval":"8h",
+			"interval":"8h+2h",
 			"radius":15
 		},
 		"stonehearth:renewable_resource_node": {

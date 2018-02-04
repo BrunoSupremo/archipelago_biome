@@ -41,6 +41,7 @@
 		"containers:input_bin:food_bin": "file(entities/containers/input_food_bin)",
 
 		"critters:crab":		"file(entities/critters/crab)",
+		"critters:crab:collar":	"file(entities/critters/crab/collar.json)",
 		"critters:sea_turtle":	"file(entities/critters/sea_turtle)",
 
 		"crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",

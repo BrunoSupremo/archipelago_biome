@@ -21,11 +21,6 @@
 		}
 	},
 	"entity_data": {
-		"stonehearth:ai_packs": {
-			"packs": [
-				"archipelago_biome:ai_pack:crab_movement"
-			]
-		},
 		"stonehearth:observers:avoid_threatening_entities": {
 			"min_avoidance_distance": 6,
 			"max_avoidance_distance": 6

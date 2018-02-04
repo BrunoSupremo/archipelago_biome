@@ -2,6 +2,7 @@ local ArchipelagoCrabSpawner = class()
 local Cube3 = _radiant.csg.Cube3
 local Point3 = _radiant.csg.Point3
 local CRAB = "archipelago_biome:critters:crab"
+local COLLAR = "archipelago_biome:critters:crab:collar"
 -- local log = radiant.log.create_logger('crab_spawner')
 
 function ArchipelagoCrabSpawner:initialize()
@@ -75,16 +76,16 @@ function ArchipelagoCrabSpawner:try_to_spawn_crab()
 	local cube = Cube3(location):inflated(Point3(self.radius, 1, self.radius))
 	local intersected_entities = radiant.terrain.get_entities_in_cube(cube)
 	local crab_counter = 0
-	local last_crab_found = nil
 	for id, entity in pairs(intersected_entities) do
 		if entity:get_uri() == CRAB then
 			crab_counter = crab_counter+1
-			last_crab_found = entity
+			local approaching = self:approach_task(entity,location)
+			if approaching then
+				break
+			end
 		end
 	end
-	if crab_counter > 0 then
-		self:approach_task(last_crab_found,location)
-	else
+	if crab_counter == 0 then
 		self:spawn_crab(location)
 	end
 end
@@ -92,17 +93,36 @@ end
 function ArchipelagoCrabSpawner:spawn_crab(location)
 	-- log:error("spawn_crab")
 	local crab = radiant.entities.create_entity(CRAB)
-	local far_location = radiant.terrain.find_placement_point(location, self.radius, self.radius, crab)
-	radiant.terrain.place_entity_at_exact_location(crab, far_location)
-	self:approach_task(crab,location)
+	local far_location, found = radiant.terrain.find_placement_point(location, self.radius, self.radius, crab)
+	if found then
+		radiant.terrain.place_entity_at_exact_location(crab, far_location)
+		self:approach_task(crab,location)
+	else
+		-- log:error("Somehow the game didn't found a place to spawn the crab")
+		radiant.entities.destroy_entity(crab)
+	end
 end
 
 function ArchipelagoCrabSpawner:approach_task(crab,location)
+	local crab_parent = radiant.entities.get_parent(crab)
+	if crab_parent:get_uri() == "archipelago_biome:gizmos:crab_trap" then
+		-- log:error("Crab in a trap already")
+		return false
+	end
 	local activities = crab:get_component('stonehearth:ai'):get_active_activities()
 	if activities["stonehearth:goto_entity"] then
 		-- log:error("someone is already capturing it")
-		return --someone is already capturing it
+		return false
 	end
+
+	local crab_collar = radiant.entities.create_entity(COLLAR)
+	local equipment = crab:add_component('stonehearth:equipment')
+	if equipment:has_item_type(COLLAR) then
+		-- log:error("someone is already capturing it")
+		return false
+	end
+	equipment:equip_item(crab_collar)
+	radiant.entities.add_buff(crab, 'stonehearth:buffs:despawn:after_day')
 
 	self._approach_task = crab:get_component('stonehearth:ai')
 	:get_task_group('archipelago_biome:task_groups:crab_movement')
@@ -110,6 +130,16 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 		entity = self._entity
 		})
 	:once()
+	:notify_interrupted(
+		function ()
+			-- log:error("notify_interrupted")
+			self._approach_task = nil
+			equipment:unequip_item(COLLAR)
+
+			self._sv.crab = nil
+			self.__saved_variables:mark_changed()
+		end
+		)
 	:notify_completed(
 		function ()
 			-- log:error("notify_completed")
@@ -118,6 +148,7 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 			mob:set_mob_collision_type(_radiant.om.Mob.NONE)
 			radiant.entities.add_child(self._entity, crab, Point3.zero)
 			radiant.entities.add_buff(crab, 'stonehearth:buffs:snared')
+			radiant.entities.remove_buff(crab, 'stonehearth:buffs:despawn:after_day')
 
 			self:ready_to_harvest(true)
 			stonehearth.ai:reconsider_entity(self._entity)
@@ -130,6 +161,7 @@ function ArchipelagoCrabSpawner:approach_task(crab,location)
 
 	self._sv.crab = crab
 	self.__saved_variables:mark_changed()
+	return true
 end
 
 function ArchipelagoCrabSpawner:ready_to_harvest(resume)

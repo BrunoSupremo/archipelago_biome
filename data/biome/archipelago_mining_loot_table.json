@@ -18,7 +18,7 @@
 				"default": {
 					"num_rolls": 1,
 					"items" : {
-						"clay_mound": {"uri" : "stonehearth:resources:clay:clay_mound", "weight" : 2.5 }
+						"clay_mound": {"uri" : "stonehearth:resources:clay:clay_mound", "weight" : 2 }
 					}
 				}
 			}

@@ -238,19 +238,27 @@
 					"exclusion_radius": 6
 				}
 			},
-			"stonehearth:plants:brightbell": {
+			"archipelago_biome:plants:hibiscus": {
 				"placement_type": "dense",
 				"parameters": {
 					"grid_multiple": 4,
-					"item_density": 0.13,
+					"item_density": 0.1,
+					"exclusion_radius": 1
+				}
+			},
+			"stonehearth:plants:brightbell": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 3,
+					"item_density": 0.1,
 					"exclusion_radius": 1
 				}
 			},
 			"stonehearth:plants:frostsnap": {
 				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 4,
-					"item_density": 0.17,
+					"grid_multiple": 3,
+					"item_density": 0.1,
 					"exclusion_radius": 1
 				}
 			},
@@ -429,19 +437,22 @@
 					},
 					"foothills": {
 						"1": {
-							"stonehearth:plants:frostsnap": 3,
+							"archipelago_biome:plants:hibiscus": 1,
 							"stonehearth:plants:brightbell": 3,
+							"stonehearth:plants:frostsnap": 3,
 							"stonehearth:plants:silkweed": 2,
 							"archipelago_biome:trees:papaya": 3
 						}
 					},
 					"mountains": {
 						"1": {
-							"stonehearth:plants:brightbell": 3,
+							"archipelago_biome:plants:hibiscus": 1,
+							"stonehearth:plants:brightbell": 2,
 							"stonehearth:plants:frostsnap": 3,
 							"archipelago_biome:trees:papaya": 2
 						},
 						"2": {
+							"archipelago_biome:plants:hibiscus": 1,
 							"stonehearth:plants:brightbell": 1,
 							"stonehearth:plants:frostsnap": 1
 						}

@@ -260,6 +260,13 @@
 				"description": "Arms, more than you can count"
 			}
 		},
+		"plants": {
+			"hibiscus_plant": {
+				"display_name": "Giant Sea Hibiscus",
+				"description": "Can be harvested for healing herbs",
+				"unripe_description": "This plant has been harvested and has not grown back yet"
+			}
+		},
 		"resources": {
 			"pearl": {
 				"display_name": "White Pearl",
@@ -268,6 +275,12 @@
 			"black_pearl": {
 				"display_name": "Black Pearl",
 				"description": "Full of curses, sells for a good price"
+			},
+			"herb": {
+				"hibiscus": {
+					"display_name": "Hibiscus Flower",
+					"description": "A beautiful tropical bloom with healing properties"
+				}
 			},
 			"hot_rock": {
 				"display_name": "Hot Rock",

@@ -260,6 +260,13 @@
 				"description":"Braços, mais do que você consegue contar"
 			}
 		},
+		"plants": {
+			"hibiscus_plant": {
+				"display_name": "Hibiscus Gigante do Mar",
+				"description": "Pode ser colhido para ervas curativas",
+				"unripe_description": "Esta planta foi colhida e ainda não cresceu novamente"
+			}
+		},
 		"resources":{
 			"pearl":{
 				"display_name":"Pérola Branca",
@@ -268,6 +275,12 @@
 			"black_pearl":{
 				"display_name":"Pérola Negra",
 				"description":"Cheia de maldições, vende por um bom preço"
+			},
+			"herb": {
+				"hibiscus": {
+					"display_name": "Flor de Hibiscus",
+					"description": "Uma bela flor tropical com propriedades curativas"
+				}
 			},
 			"hot_rock":{
 				"display_name":"Pedra Quente",

@@ -1,5 +1,8 @@
 {
 	"archipelago_biome:skin:main" : {
 		"color" : "#6C358D"
+	},
+	"archipelago_biome:eyes:glowing" : {
+		"render_material" : "materials/glowy_voxel.material.json"
 	}
 }

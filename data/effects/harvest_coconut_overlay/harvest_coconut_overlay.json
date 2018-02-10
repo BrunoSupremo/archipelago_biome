@@ -7,8 +7,12 @@
 				"name": "materials/overlay.material.json",
 				"samplers" : [
 					{
-						"name" : "albedoMap",
+						"name" : "foregroundMap",
 						"map": "file(harvest_coconut_overlay.png)"
+					},
+					{
+						"name" : "albedoMap",
+						"map": "materials/thoughts/default_overlay.png"
 					}
 				]
 			},

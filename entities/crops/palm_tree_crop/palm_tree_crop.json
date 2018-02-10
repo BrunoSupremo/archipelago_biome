@@ -42,7 +42,7 @@
          "plant_overlay_effect": "stonehearth:effects:plant_crop_overlay_effect"
       },
       "stonehearth:growing": {
-         "growth_period": "2d",
+         "growth_period": "1d",
          "growth_stages": [
             {
                "model_name": "palm_tree_1",

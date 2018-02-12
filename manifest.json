@@ -120,16 +120,18 @@
 		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
 		"outfit:visitor":		"file(entities/outfit/visitor_outfit)",
 
-		"plants:hibiscus": "file(entities/plants/hibiscus_plant)",
+		"plants:hibiscus":		"file(entities/plants/hibiscus_plant)",
+		"plants:blue_hibiscus":	"file(entities/plants/blue_hibiscus_plant)",
 
-		"resources:herb:hibiscus":	"file(entities/resources/herb/hibiscus)",
-		"resources:hot_rock":		"file(entities/resources/hot_rock)",
-		"resources:pearl":			"file(entities/resources/pearl)",
-		"resources:pearl:black":	"file(entities/resources/black_pearl)",
-		"resources:spice:red":		"file(entities/resources/spice/red_spice.json)",
-		"resources:spice:green":	"file(entities/resources/spice/green_spice.json)",
-		"resources:spice:blue":		"file(entities/resources/spice/blue_spice.json)",
-		"resources:spice:old":		"file(entities/resources/spice/old_spice.json)",
+		"resources:herb:hibiscus":		"file(entities/resources/herb/hibiscus)",
+		"resources:herb:blue_hibiscus":	"file(entities/resources/herb/blue_hibiscus)",
+		"resources:hot_rock":	"file(entities/resources/hot_rock)",
+		"resources:pearl":		"file(entities/resources/pearl)",
+		"resources:pearl:black":"file(entities/resources/black_pearl)",
+		"resources:spice:red":	"file(entities/resources/spice/red_spice.json)",
+		"resources:spice:green":"file(entities/resources/spice/green_spice.json)",
+		"resources:spice:blue":	"file(entities/resources/spice/blue_spice.json)",
+		"resources:spice:old":	"file(entities/resources/spice/old_spice.json)",
 
 		"town_names": "file(services/server/population/data/archipelago_town_names.json)",
 

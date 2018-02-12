@@ -265,6 +265,11 @@
 				"display_name": "Giant Sea Hibiscus",
 				"description": "Can be harvested for healing herbs",
 				"unripe_description": "This plant has been harvested and has not grown back yet"
+			},
+			"blue_hibiscus_plant": {
+				"display_name": "Blue Giant Sea Hibiscus",
+				"description": "Rare, can be harvested for healing herbs",
+				"unripe_description": "This plant has been harvested and has not grown back yet"
 			}
 		},
 		"resources": {
@@ -280,6 +285,10 @@
 				"hibiscus": {
 					"display_name": "Hibiscus Flower",
 					"description": "A beautiful tropical bloom with healing properties"
+				},
+				"blue_hibiscus": {
+					"display_name": "Blue Hibiscus Flower",
+					"description": "A rare tropical bloom with healing properties"
 				}
 			},
 			"hot_rock": {

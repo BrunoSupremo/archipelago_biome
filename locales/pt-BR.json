@@ -265,6 +265,11 @@
 				"display_name": "Hibiscus Gigante do Mar",
 				"description": "Pode ser colhido para ervas curativas",
 				"unripe_description": "Esta planta foi colhida e ainda não cresceu novamente"
+			},
+			"blue_hibiscus_plant": {
+				"display_name": "Hibiscus Gigante do Mar Azul",
+				"description": "Raro, pode ser colhido para ervas curativas",
+				"unripe_description": "Esta planta foi colhida e ainda não cresceu novamente"
 			}
 		},
 		"resources":{
@@ -280,6 +285,10 @@
 				"hibiscus": {
 					"display_name": "Flor de Hibiscus",
 					"description": "Uma bela flor tropical com propriedades curativas"
+				},
+				"blue_hibiscus": {
+					"display_name": "Flor de Hibiscus Azul",
+					"description": "Uma rara flor tropical com propriedades curativas"
 				}
 			},
 			"hot_rock":{

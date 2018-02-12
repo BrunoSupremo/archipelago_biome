@@ -79,11 +79,11 @@
 	"terrain": {
 		"noise_map_settings": {
 			"octaves": 3,
-			"persistence_ratio": 0.001,
-			"bandlimit": 3,
+			"persistence_ratio": 0.01,
+			"bandlimit": 3.5,
 			"aspect_ratio": 1
 		},
-		"plains_percentage": 85,
+		"plains_percentage": 60,
 		"height_base": 38,
 		"plains": {
 			"step_size": 1,
@@ -96,7 +96,7 @@
 		},
 		"mountains": {
 			"step_size": 10,
-			"step_count": 12
+			"step_count": 6
 		}
 	},
 	"terrain_detailer": {
@@ -346,10 +346,10 @@
 						"archipelago_biome:trees:bend_palm": 8
 					},
 					"2": {
-						"archipelago_biome:trees:dranden": 2,
-						"archipelago_biome:trees:smalea": 1,
-						"archipelago_biome:trees:palm": 10,
-						"archipelago_biome:trees:bend_palm": 6
+						"archipelago_biome:trees:dranden": 4,
+						"archipelago_biome:trees:smalea": 2,
+						"archipelago_biome:trees:palm": 6,
+						"archipelago_biome:trees:bend_palm": 4
 					},
 					"3": {
 						"archipelago_biome:trees:dranden": 8,

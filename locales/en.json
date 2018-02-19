@@ -630,6 +630,10 @@
 					}
 				}
 			}
+		},
+		"version_check": {
+			"title": "Outdated Archipelago Biome Mod",
+			"message": "The mod was designed for version alpha [str(i18n_data.current_mod_version)], but your game is at alpha [str(i18n_data.current_alpha)]. <br>Check at the mod page for an update. Updates are released usually in the first days after the main game is updated."
 		}
 	}
 }

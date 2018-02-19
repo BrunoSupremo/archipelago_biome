@@ -630,6 +630,10 @@
 					}
 				}
 			}
+		},
+		"version_check": {
+			"title": "Mod do Bioma Arquipélago Desatualizado",
+			"message": "O mod foi feito para a versão alpha [str(i18n_data.current_mod_version)], mas seu jogo está no alpha [str(i18n_data.current_alpha)]. <br>Verifique na página do mod por uma atualização. Atualizações são normalmente lançadas após a versão principal do jogo ser atualizada."
 		}
 	}
 }

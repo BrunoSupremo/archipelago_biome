@@ -104,6 +104,7 @@
 		"mixins:palm_tree":"file(mixins/palm_tree)",
 		"mixins:spice":"file(mixins/spice)",
 
+		"monsters:cave_chest":		"file(entities/monsters/cave_chest)",
 		"monsters:cocoling":		"file(entities/monsters/cocoling)",
 		"monsters:cocoling_spawner":"file(entities/monsters/cocoling_spawner)",
 		"monsters:fake_container":	"file(entities/monsters/fake_container)",
@@ -115,6 +116,7 @@
 		"monster_tuning:forest:medium_octopus":	"file(data/monster_tuning/forest/medium_octopus.json)",
 		"monster_tuning:forest:giant_octopus":	"file(data/monster_tuning/forest/giant_octopus.json)",
 		"monster_tuning:forest:insane_octopus":	"file(data/monster_tuning/forest/insane_octopus.json)",
+		"monster_tuning:undead:cave_skeleton":	"file(data/monster_tuning/undead/cave_skeleton.json)",
 
 		"outfit:beach_head":	"file(entities/outfit/beach_head)",
 		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
@@ -132,6 +134,8 @@
 		"resources:spice:green":"file(entities/resources/spice/green_spice.json)",
 		"resources:spice:blue":	"file(entities/resources/spice/blue_spice.json)",
 		"resources:spice:old":	"file(entities/resources/spice/old_spice.json)",
+
+		"terrain:cave": "file(entities/terrain/cave)",
 
 		"town_names": "file(services/server/population/data/archipelago_town_names.json)",
 
@@ -226,12 +230,13 @@
 		"game_master:util:choose_water_location_outside_town": "file(services/server/game_master/controllers/util/choose_water_location_outside_town.lua)"
 	},
 	"components": {
-		"dock":				"file(components/dock/dock.lua)",
-		"explosive":		"file(components/explosive/explosive.lua)",
-		"fake_container":	"file(components/fake_container/fake_container.lua)",
-		"crab_spawner":		"file(components/crab_spawner/crab_spawner.lua)",
-		"need_water":		"file(components/need_water/need_water.lua)",
-		"wave":				"file(components/wave/wave.lua)"
+		"cave":			"file(components/cave/cave.lua)",
+		"crab_spawner":	"file(components/crab_spawner/crab_spawner.lua)",
+		"dock":			"file(components/dock/dock.lua)",
+		"explosive":	"file(components/explosive/explosive.lua)",
+		"need_water":	"file(components/need_water/need_water.lua)",
+		"trojan":		"file(components/trojan/trojan.lua)",
+		"wave":			"file(components/wave/wave.lua)"
 	},
 	"ui":{
 		"less":[

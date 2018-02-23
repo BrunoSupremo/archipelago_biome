@@ -1,0 +1,117 @@
+{
+	"mixins": [
+		"stonehearth:mixins:align_to_grid",
+		"stonehearth:mixins:destructable_object"
+	],
+	"type": "entity",
+	"components": {
+		"archipelago_biome:trojan":{
+			"uri":"stonehearth:monsters:evil:loot_chest_fake",
+			"player_id":"undead",
+			"min":1,
+			"max":1,
+			"scale":0.1,
+			"equipment":"stonehearth:monsters:evil:loot_chest_fake:mouth_weapon",
+			"no_trojan_percent_chance":95,
+			"loot_drops":"remove",
+			"in_game_mode_hard":{
+				"no_trojan_percent_chance":90
+			}
+		},
+		"render_info": {
+			"scale": 0.1
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"stonehearth/entities/decoration/loot_chest/loot_chest.qb"
+				]
+			}
+		},
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 10
+			}
+		},
+		"mob": {},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 1, "y": 2, "z": 1 }
+				}
+			]
+		},
+		"stonehearth:loot_drops": {
+			"entries": {
+				"default": {
+					"num_rolls": {
+						"min": 2,
+						"max": 8
+					},
+					"items": {
+						"ore": {
+							"uri": "stonehearth:resources:copper:ore",
+							"weight": 13
+						},
+						"ore2": {
+							"uri": "stonehearth:resources:silver:ore",
+							"weight": 12
+						},
+						"ore3": {
+							"uri": "stonehearth:resources:gold:ore",
+							"weight": 11
+						},
+						"copper_ingot": {
+							"uri": "stonehearth:refined:copper_ingot",
+							"weight": 10
+						},
+						"bronze_ingot": {
+							"uri": "stonehearth:refined:bronze_ingot",
+							"weight": 9
+						},
+						"steel_ingot": {
+							"uri": "stonehearth:refined:steel_ingot",
+							"weight": 8
+						},
+						"silver_ingot": {
+							"uri": "stonehearth:refined:silver_ingot",
+							"weight": 7
+						},
+						"gold_ingot": {
+							"uri": "stonehearth:refined:gold_ingot",
+							"weight": 6
+						},
+						"plushie_toy_rabbit": {
+							"uri": "stonehearth:toys:plushie_toy_rabbit",
+							"weight": 5
+						},
+						"leather_vest": {
+							"uri": "stonehearth:armor:leather_vest",
+							"weight": 4
+						},
+						"bronze_breastplate": {
+							"uri": "stonehearth:armor:bronze_breastplate",
+							"weight": 3
+						},
+						"iron_mail": {
+							"uri": "stonehearth:armor:iron_mail",
+							"weight": 2
+						},
+						"dusty_tome": {
+							"uri": "stonehearth:loot:dusty_tome",
+							"weight": 1
+						}
+					}
+				}
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:entities.decoration.loot_chest.display_name)",
+			"description": "i18n(stonehearth:entities.decoration.loot_chest.description)"
+		}
+	}
+}

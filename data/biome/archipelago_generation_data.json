@@ -50,8 +50,8 @@
 			"rock_layer_4": "#918d86",
 			"rock_layer_5": "#82807b",
 			"rock_layer_6": "#76726b",
-			"rock_layer_7": "#82807b",
-			"rock_layer_8": "#76726b",
+			"rock_layer_7": "#918d86",
+			"rock_layer_8": "#918d86",
 			"soil_light": "#918154",
 			"soil_dark": "#807147",
 			"sand_soil_light": "#e0d177",
@@ -148,6 +148,13 @@
 	},
 	"landscape": {
 		"placement_table": {
+			"archipelago_biome:terrain:cave": {
+				"placement_type": "single",
+				"parameters": {
+					"ground_radius": 0,
+					"exclusion_radius": 7.5
+				}
+			},
 			"archipelago_biome:trees:papaya": {
 				"placement_type": "single",
 				"parameters": {
@@ -411,6 +418,11 @@
 							"density": 0.1,
 							"mean": 0,
 							"std_dev": 10
+						},
+						"6": {
+							"density": 0.1,
+							"mean": -1,
+							"std_dev": 10
 						}
 					}
 				}
@@ -531,6 +543,59 @@
 				"cutoffs": {
 					"small": 0.2,
 					"medium": 0.4
+				}
+			},
+			"caves": {
+				"weights": {
+					"plains": {
+						"1": {
+							"archipelago_biome:terrain:cave":1
+						}
+					},
+					"foothills": {
+						"1": {
+							"archipelago_biome:terrain:cave":1
+						}
+					},
+					"mountains": {
+						"1": {
+							"archipelago_biome:terrain:cave":1
+						}
+					}
+				},
+				"noise_map_parameters": {
+					"terrain_based": {
+						"plains": {
+							"1": {
+								"probability": 0,
+								"density": 0
+							}
+						},
+						"foothills": {
+							"1": {
+								"probability": 0,
+								"density": 0
+							}
+						},
+						"mountains": {
+							"1": {
+								"probability": 0.3,
+								"density": 1
+							},
+							"2": {
+								"probability": 0.25,
+								"density": 1
+							},
+							"4": {
+								"probability": 0.2,
+								"density": 1
+							},
+							"6": {
+								"probability": 0.1,
+								"density": 1
+							}
+						}
+					}
 				}
 			}
 		},

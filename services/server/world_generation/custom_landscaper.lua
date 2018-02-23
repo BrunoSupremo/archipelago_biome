@@ -66,62 +66,59 @@ function CustomLandscaper:__init_archipelago_biome(biome, rng, seed)
 		water_3 = self._landscape_info.water.depth.more_deep or self._landscape_info.water.depth.deep
 	}
 
-	self:_parse_landscape_info()
+	self:_parse_landscape_info_archipelago_biome()
 end
 
-function CustomLandscaper:mark_water_bodies(elevation_map, feature_map)
-	local biome_name = stonehearth.world_generation:get_biome_alias()
-	local colon_position = string.find (biome_name, ":", 1, true) or -1
-	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
-	local fn = "mark_water_bodies_" .. mod_name_containing_the_biome
-	if self[fn] ~= nil then
-		--found a function for the biome being used, named:
-		-- self:mark_water_bodies_<biome_name>(args,...)
-		self[fn](self, elevation_map, feature_map)
-	else
-		--there is no function for this specific biome, so call a copy of the original from stonehearth
-		self:mark_water_bodies_original(elevation_map, feature_map)
-	end
+function CustomLandscaper:_parse_landscape_info_archipelago_biome()
+	local landscape_info = self._landscape_info
+
+	self._placement_table = self._landscape_info.placement_table
+
+	self._tree_size_data = self:_parse_tree_sizes(landscape_info.trees.sizes)
+
+	local boulder_config = landscape_info.scattered.boulders
+	self._noise_map_params = self:_parse_simplex_noise(boulder_config)
+
+	local plant_config = landscape_info.scattered.plants
+	local plant_data = {}
+	plant_data.types = self:_parse_weights(plant_config)
+	plant_data.noise_map_parameters = self:_parse_simplex_noise(plant_config)
+	self._plant_data = plant_data
+
+	local cave_config = landscape_info.scattered.caves
+	local cave_data = {}
+	cave_data.types = self:_parse_weights(cave_config)
+	cave_data.noise_map_parameters = self:_parse_simplex_noise(cave_config)
+	self._cave_data = cave_data
+
+	local tree_config = landscape_info.trees
+	local tree_data = {}
+	tree_data.types = self:_parse_weights(tree_config)
+	tree_data.noise_map_parameters = self:_parse_gaussian_noise(tree_config)
+	self._tree_data = tree_data
 end
 
-function CustomLandscaper:mark_water_bodies_original(elevation_map, feature_map)
+function CustomLandscaper:mark_caves(elevation_map, feature_map)
 	local rng = self._rng
 	local biome = self._biome
-	local config = self._landscape_info.water.noise_map_settings
-	local modifier_map, density_map = self:_get_filter_buffers(feature_map.width, feature_map.height)
-	--fill modifier map to push water bodies away from terrain type boundaries
-	local modifier_fn = function (i,j)
-		if self:_is_flat(elevation_map, i, j, 1) then
-			return 0
-		else
-			return -1*config.range
-		end
-	end
-	--use density map as buffer for smoothing filter
-	density_map:fill(modifier_fn)
-	FilterFns.filter_2D_0125(modifier_map, density_map, modifier_map.width, modifier_map.height, 10)
-	--mark water bodies on feature map using density map and simplex noise
-	local old_feature_map = Array2D(feature_map.width, feature_map.height)
+	local config = self._landscape_info.scattered.caves
+	local occupied, elevation, noise_variant, value, cave_types, cave_name, cave_type
+
 	for j=1, feature_map.height do
 		for i=1, feature_map.width do
-			local occupied = feature_map:get(i, j) ~= nil
+			occupied = feature_map:get(i, j) ~= nil
 			if not occupied then
-				local elevation = elevation_map:get(i, j)
-				local terrain_type = biome:get_terrain_type(elevation)
-				local value = SimplexNoise.proportional_simplex_noise(config.octaves,config.persistence_ratio, config.bandlimit,config.mean[terrain_type],config.range,config.aspect_ratio, self._seed,i,j)
-				value = value + modifier_map:get(i,j)
-				if value > 0 then
-					local old_value = feature_map:get(i, j)
-					old_feature_map:set(i, j, old_value)
-					feature_map:set(i, j, water_shallow)
+				elevation = elevation_map:get(i, j)
+				noise_variant = self:_get_variant(self._cave_data.noise_map_parameters, elevation)
+				value = self:_scattered_noise_function(i,j,noise_variant.probability)
+				if value > 0 and rng:get_real(0, 1) < noise_variant.density then
+					cave_types = self:_get_variant(self._cave_data.types, elevation)
+					cave_name = cave_types:choose_random()
+					feature_map:set(i, j, cave_name)
 				end
 			end
 		end
 	end
-	self:_remove_juts(feature_map)
-	self:_remove_ponds(feature_map, old_feature_map)
-	self:_fix_tile_aligned_water_boundaries(feature_map, old_feature_map)
-	self:_add_deep_water(feature_map)
 end
 
 function CustomLandscaper:mark_water_bodies_archipelago_biome(elevation_map, feature_map)

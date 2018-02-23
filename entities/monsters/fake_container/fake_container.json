@@ -2,7 +2,16 @@
 	"type": "entity",
 	"mixins": "stonehearth:mixins:placed_object",
 	"components": {
-		"archipelago_biome:fake_container":{},
+		"archipelago_biome:trojan":{
+			"uri":"archipelago_biome:monsters:cocoling",
+			"player_id":"forest",
+			"min":2,
+			"max":2,
+			"in_game_mode_hard":{
+				"min":4,
+				"max":4,
+			}
+		},
 		"stonehearth:commands": {
 			"commands": [
 				"archipelago_biome:commands:open_crate"

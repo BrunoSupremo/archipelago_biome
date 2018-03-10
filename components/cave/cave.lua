@@ -234,8 +234,7 @@ function ArchipelagoCave:add_skull(location)
 end
 
 function ArchipelagoCave:add_skull_x_axis(location)
-	local layer = rng:get_int(1,8)
-	local stone_block = radiant.terrain.get_block_types()["rock_layer_"..layer]
+	local stone_block = self:stone_block(location.y)
 	radiant.terrain.add_cube(
 		Cube3(
 			location + Point3(0,0,0),
@@ -307,8 +306,7 @@ function ArchipelagoCave:add_skull_x_axis(location)
 end
 
 function ArchipelagoCave:add_skull_z_axis(location)
-	local layer = rng:get_int(1,8)
-	local stone_block = radiant.terrain.get_block_types()["rock_layer_"..layer]
+	local stone_block = self:stone_block(location.y)
 	radiant.terrain.add_cube(
 		Cube3(
 			location + Point3(0,0,0),
@@ -379,6 +377,12 @@ function ArchipelagoCave:add_skull_z_axis(location)
 	end
 end
 
+function ArchipelagoCave:stone_block(y)
+	--gets the stone type from two floors above
+	local mountain_step = (y -27) /10
+	return radiant.terrain.get_block_types()["rock_layer_"..mountain_step]
+end
+
 function ArchipelagoCave:populate_cave(location)
 	if stonehearth.game_creation:get_game_mode() == "stonehearth:game_mode:peaceful" then
 		return
@@ -388,12 +392,14 @@ function ArchipelagoCave:populate_cave(location)
 
 	local undead_population = stonehearth.population:get_population('undead')
 	local skeleton_info = {
+		--comment align
 		tuning = 'archipelago_biome:monster_tuning:undead:cave_skeleton',
 		combat_leash_range = 16,
 		from_population = {
+			--comment align
 			role = 'skeleton',
-			min = 3,
-			max = 5,
+			min = 2,
+			max = 6,
 			location = {},
 			range = 3
 		}

@@ -45,11 +45,11 @@
 			"unknown": "#25221a",
 			"bedrock": "#514e45",
 			"rock_layer_1": "#70685f",
-			"rock_layer_2": "#76726b",
-			"rock_layer_3": "#82807b",
-			"rock_layer_4": "#918d86",
-			"rock_layer_5": "#82807b",
-			"rock_layer_6": "#76726b",
+			"rock_layer_2": "#776F67",
+			"rock_layer_3": "#7D776F",
+			"rock_layer_4": "#847E76",
+			"rock_layer_5": "#8A867E",
+			"rock_layer_6": "#918D86",
 			"rock_layer_7": "#918d86",
 			"rock_layer_8": "#918d86",
 			"soil_light": "#918154",
@@ -73,7 +73,8 @@
 			"silver_ore": "#cccccc",
 			"gold_ore": "#ffd700",
 			"coal": "#021c24",
-			"marble" : "#DEDEDE"
+			"marble" : "#DEDEDE",
+			"clay" : "#492A16"
 		}
 	},
 	"terrain": {

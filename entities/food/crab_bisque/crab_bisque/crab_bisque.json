@@ -5,7 +5,7 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(crab_omelette.qb)"
+					"file(crab_bisque.qb)"
 				]
 			}
 		},
@@ -13,17 +13,17 @@
 			"model_origin": { "x": 0, "y": 0, "z": 0 }
 		},
 		"stonehearth:stacks": {
-			"max_stacks": 4
+			"max_stacks": 20
 		}
 	},
 	"entity_data": {
 		"stonehearth:food_container": {
 			"effect": "fiddle",
-			"food": "archipelago_biome:food:crab_omelette_serving",
-			"stacks_per_serving": 1
+			"food": "archipelago_biome:food:crab_bisque_serving",
+			"stacks_per_serving": 6
 		},
 		"stonehearth:net_worth": {
-			"value_in_gold": 14,
+			"value_in_gold": 10,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": false,
@@ -33,15 +33,15 @@
 			}
 		},
 		"stonehearth:catalog": {
-			"display_name": "i18n(archipelago_biome:entities.food.crab_omelette.display_name)",
-			"description": "i18n(archipelago_biome:entities.food.crab_omelette.description)",
-			"icon": "file(crab_omelette.png)",
+			"display_name": "i18n(archipelago_biome:entities.food.crab_bisque.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.crab_bisque.description)",
+			"icon": "file(crab_bisque.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": "food_container prepared_food crab omelette stockpile_prepared_food meat"
+			"material_tags": "food_container prepared_food stew crab meat refined stockpile_prepared_food"
 		},
 		"stonehearth:appeal": {
-			"appeal": 2
+			"appeal": 1
 		}
 	}
 }

@@ -1,5 +1,7 @@
 local Cube3 = _radiant.csg.Cube3
 local Array2D = require 'stonehearth.services.server.world_generation.array_2D'
+local Timer = require 'stonehearth.services.server.world_generation.timer'
+local log = radiant.log.create_logger('world_generation')
 local CustomWorldGenerationService = class()
 
 function CustomWorldGenerationService:set_blueprint(blueprint)

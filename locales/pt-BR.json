@@ -172,6 +172,17 @@
 				"display_name":"Caranguejo fresco",
 				"description":"Ainda não está pronto pra comer"
 			},
+			"crab_bisque": {
+				"display_name": "Bisque de caranguejo",
+				"description": "Quente e delicioso",
+				"recipe": {
+					"description": "Um caldo saboroso de leite de coco com carne de caranguejo.",
+					"flavor": "Não há nada para não amar nesta rica sopa que combina dois ingredientes incríveis."
+				}
+			},
+			"crab_bisque_serving": {
+				"display_name": "Tijela de Bisque de caranguejo"
+			},
 			"crab_cake":{
 				"display_name":"Bolinho de Caranguejo",
 				"description":"Empada de carne de caranguejo em flocos ou picada, normalmente servido frito.",
@@ -214,6 +225,14 @@
 			},
 			"fish_stew_serving":{
 				"display_name": "Tigela de ensopado de peixe"
+			},
+			"papaya_smoothie": {
+				"display_name": "Batida de mamão",
+				"description": "Cheio de frutas de mamão",
+				"recipe": {
+					"description": "Irá te deixar bem em um dia quente.",
+					"flavor": "É um ótimo começo para a manhã"
+				}
 			},
 			"papaya_basket":{
 				"display_name":"Cesta de mamão",
@@ -366,6 +385,11 @@
 		}
 	},
 	"jobs":{
+		"cook":{
+			"recipes": {
+				"tropical_recipes_name":"Receitas Tropicais"
+			}
+		},
 		"fisher":{
 			"fisher_description":{
 				"display_name":"Pescador",

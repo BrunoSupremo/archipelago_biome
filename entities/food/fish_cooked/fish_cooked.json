@@ -30,7 +30,7 @@
 			"quality": 5
 		},
 		"stonehearth:net_worth": {
-			"value_in_gold": 10,
+			"value_in_gold": 9,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": false,

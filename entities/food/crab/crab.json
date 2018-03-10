@@ -25,7 +25,7 @@
 			"rotten_entity_alias": "archipelago_biome:food:crab:rotten"
 		},
 		"stonehearth:net_worth": {
-			"value_in_gold": 7,
+			"value_in_gold": 5,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": false,

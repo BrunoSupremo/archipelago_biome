@@ -16,9 +16,11 @@
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":	"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 
+		"archipelago_biome/jobs/cook/recipes/crab_bisque_recipe.json":		"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/cook/recipes/crab_cake_recipe.json":		"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/cook/recipes/crab_omelette_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/cook/recipes/fruit_container_recipe.json":	"file(jobs/unlock_recipe.json)",
+		"archipelago_biome/jobs/cook/recipes/papaya_smoothie_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/fisher/recipes/pearl_container_recipe.json":"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/fisher/recipes/crab_pincer_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/fisher/recipes/crab_trap_recipe.json":		"file(jobs/unlock_recipe.json)",

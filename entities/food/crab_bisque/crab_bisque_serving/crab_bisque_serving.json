@@ -1,0 +1,34 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(crab_bisque_serving.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food",
+			"destroy_on_uncarry": true
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 34
+			},
+			"default": {
+				"satisfaction": 30
+			},
+			"quality": 5
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.crab_bisque_serving.display_name)",
+			"description": "",
+			"material_tags": "food crab meat",
+			"subject_override": "archipelago_biome:food:crab_bisque"
+		}
+	}
+}

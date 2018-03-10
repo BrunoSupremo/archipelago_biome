@@ -172,6 +172,17 @@
 				"display_name": "Fresh Crab",
 				"description": "Not ready to be eaten"
 			},
+			"crab_bisque": {
+				"display_name": "Crab Bisque",
+				"description": "Warm and delicious",
+				"recipe": {
+					"description": "A flavorful broth of coconut milk with crab meat.",
+					"flavor": "There's nothing not to love in this rich soup that combines two amazing ingredients."
+				}
+			},
+			"crab_bisque_serving": {
+				"display_name": "Bowl of Savory Crab Bisque"
+			},
 			"crab_cake": {
 				"display_name": "Crab Cake",
 				"description": "A patty of flaked or minced crab meat, typically served fried.",
@@ -214,6 +225,14 @@
 			},
 			"fish_stew_serving": {
 				"display_name": "Bowl of Savory Fish Stew"
+			},
+			"papaya_smoothie": {
+				"display_name": "Papaya Smoothie",
+				"description": "Full of Papaya fruits",
+				"recipe": {
+					"description": "Keep you nice and cool on a hot day.",
+					"flavor": "It is a great starter for the morning"
+				}
 			},
 			"papaya_basket": {
 				"display_name": "Papaya Basket",
@@ -366,6 +385,11 @@
 		}
 	},
 	"jobs": {
+		"cook":{
+			"recipes": {
+				"tropical_recipes_name":"Tropical Recipes"
+			}
+		},
 		"fisher": {
 			"fisher_description": {
 				"display_name": "Fisher",

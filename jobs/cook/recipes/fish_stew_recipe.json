@@ -7,6 +7,7 @@
 	"flavor": "i18n(archipelago_biome:entities.food.fish_stew.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/food/fish_stew/fish_stew/fish_stew.png", 
 	"workshop": "stonehearth:cook:workbench",
+	"level_requirement": 1,
 	"ingredients": [
 		{
 			"material": "food_container raw_food vegetable",

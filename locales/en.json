@@ -226,6 +226,14 @@
 			"fish_stew_serving": {
 				"display_name": "Bowl of Savory Fish Stew"
 			},
+			"papaya_cookie": {
+				"display_name": "Papaya Cookie",
+				"description": "With coconut rasps",
+				"recipe": {
+					"description": "Papaya cookie with coconut rasps.",
+					"flavor": "Healthier, but you will still get fat if you eat a lot."
+				}
+			},
 			"papaya_smoothie": {
 				"display_name": "Papaya Smoothie",
 				"description": "Full of Papaya fruits",

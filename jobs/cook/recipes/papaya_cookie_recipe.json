@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 60,
+	"work_units": 5,
+	"recipe_name": "i18n(archipelago_biome:entities.food.papaya_cookie.display_name)",
+	"description": "i18n(archipelago_biome:entities.food.papaya_cookie.recipe.description)",
+	"flavor": "i18n(archipelago_biome:entities.food.papaya_cookie.recipe.flavor)",
+	"portrait" : "/archipelago_biome/entities/food/papaya_cookie/papaya_cookie.png", 
+	"level_requirement": 4,
+	"manual_unlock": true,
+	"workshop": "stonehearth:cook:oven",
+	"ingredients": [
+		{
+			"uri": "archipelago_biome:food:papaya_basket",
+			"count": 1
+		},
+		{
+			"uri": "archipelago_biome:food:coconut",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "archipelago_biome:food:papaya_cookie"
+		}
+	]
+}

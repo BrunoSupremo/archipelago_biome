@@ -2,15 +2,18 @@
 	"mixins": "stonehearth:mixins:item_properties",
 	"type": "entity",
 	"components": {
+		"render_info": {
+			"scale": 0.07
+		},
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(papaya_smoothie.qb)"
+					"file(papaya_cookie.qb)"
 				]
 			}
 		},
 		"mob": {
-			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+			"model_origin": { "x": 0, "y": 0, "z": 0 }
 		}
 	},
 	"entity_data": {
@@ -27,7 +30,7 @@
 			"quality": 6
 		},
 		"stonehearth:net_worth": {
-			"value_in_gold": 11,
+			"value_in_gold": 12,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": false,
@@ -37,12 +40,12 @@
 			}
 		},
 		"stonehearth:catalog": {
-			"display_name": "i18n(archipelago_biome:entities.food.papaya_smoothie.display_name)",
-			"description": "i18n(archipelago_biome:entities.food.papaya_smoothie.description)",
-			"icon": "file(papaya_smoothie.png)",
+			"display_name": "i18n(archipelago_biome:entities.food.papaya_cookie.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.papaya_cookie.description)",
+			"icon": "file(papaya_cookie.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": "food prepared_food papaya fruit vegetarian stockpile_prepared_food coconut drink"
+			"material_tags": "food prepared_food coconut papaya cookie stockpile_prepared_food vegetarian fruit"
 		},
 		"stonehearth:appeal": {
 			"appeal": 3

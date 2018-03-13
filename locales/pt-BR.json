@@ -226,6 +226,14 @@
 			"fish_stew_serving":{
 				"display_name": "Tigela de ensopado de peixe"
 			},
+			"papaya_cookie": {
+				"display_name": "Biscoito de mamão",
+				"description": "Com coco granulado",
+				"recipe": {
+					"description": "Biscoito de mamão com coco granulado.",
+					"flavor": "Mais saudável, mas você ainda vai ficar gordo se você comer muito."
+				}
+			},
 			"papaya_smoothie": {
 				"display_name": "Batida de mamão",
 				"description": "Cheio de frutas de mamão",

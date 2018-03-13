@@ -20,6 +20,7 @@
 		"archipelago_biome/jobs/cook/recipes/crab_cake_recipe.json":		"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/cook/recipes/crab_omelette_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/cook/recipes/fruit_container_recipe.json":	"file(jobs/unlock_recipe.json)",
+		"archipelago_biome/jobs/cook/recipes/papaya_cookie_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/cook/recipes/papaya_smoothie_recipe.json":	"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/fisher/recipes/pearl_container_recipe.json":"file(jobs/unlock_recipe.json)",
 		"archipelago_biome/jobs/fisher/recipes/crab_pincer_recipe.json":	"file(jobs/unlock_recipe.json)",
@@ -48,7 +49,7 @@
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":	"file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":	"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
 
-		"stonehearth/ui/game/create_camp/create_camp.js":"file(ui/game/create_camp/create_camp.js)",
+		"stonehearth/ui/game/bulletin/bulletin_dialog/town_founding_dialog/town_founding_dialog.js": "file(ui/game/bulletin/bulletin_dialog/town_founding_dialog/town_founding_dialog.js)",
 
 		"stonehearth/ui/shell/loading_screen/images/bg0.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
 		"stonehearth/ui/shell/loading_screen/images/bg1.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",

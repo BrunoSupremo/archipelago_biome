@@ -7,7 +7,6 @@
 	"flavor": "i18n(archipelago_biome:entities.food.papaya_smoothie.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/food/papaya_smoothie/papaya_smoothie.png", 
 	"level_requirement": 3,
-	"manual_unlock": true,
 	"workshop": "stonehearth:cook:workbench",
 	"ingredients": [
 		{

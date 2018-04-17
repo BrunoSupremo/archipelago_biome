@@ -14,7 +14,27 @@
 			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect",
 			"unripe_description": "i18n(archipelago_biome:entities.plants.hibiscus_plant.unripe_description)",
 			"resource": "archipelago_biome:resources:herb:hibiscus",
-			"renewal_time": "1d+1d"
+			"renewal_time": "1d+1d",
+			"resource_loot_table": {
+				"entries": {
+					"optional": {
+						"num_rolls": {
+							"min": 1,
+							"max": 1
+						},
+						"items": {
+							"none": {
+								"uri": "",
+								"weight": 4
+							},
+							"seed": {
+								"uri": "archipelago_biome:plants:hibiscus:seed",
+								"weight": 1
+							}
+						}
+					}
+				}
+			}
 		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(hibiscus_plant_iconic.json)",

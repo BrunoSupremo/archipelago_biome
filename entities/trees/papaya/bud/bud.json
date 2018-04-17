@@ -1,0 +1,53 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"render_info": {
+			"scale": 0.5
+		},
+		"stonehearth:evolve": {},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(bud.qb)"
+				]
+			}
+		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 8, "z": 1 }
+				}
+			]
+		},
+		"mob": {
+			"model_origin": {"x": -0.25, "y": 0, "z": 0.25 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:evolve_data": {
+			"next_stage": "archipelago_biome:trees:papaya",
+			"evolve_time": "1d+1h"
+		},
+		"stonehearth:catalog": {
+			"material_tags": "stockpile_plant",
+			"display_name": "i18n(archipelago_biome:entities.trees.papaya.bud.display_name)",
+			"description": "i18n(archipelago_biome:entities.trees.papaya.bud.description)",
+			"category": "plants",
+			"subject_override": "archipelago_biome:trees:papaya"
+		},
+		"stonehearth:appeal": {
+			"appeal": 1
+		}
+	}
+}

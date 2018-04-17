@@ -34,5 +34,8 @@
 	"#413D37": "archipelago_biome:oak:wood:dark6",
 	"#4C4841": "archipelago_biome:oak:wood:light6",
 
-	"#275E43": "archipelago_biome:oak:leaves:lighter7"
+	"#275E43": "archipelago_biome:oak:leaves:lighter7",
+
+	"#304444": "archipelago_biome:juniper:leaves:dark",
+	"#37564D": "archipelago_biome:juniper:leaves:light"
 }

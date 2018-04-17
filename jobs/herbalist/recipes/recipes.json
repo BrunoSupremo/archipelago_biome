@@ -1,5 +1,18 @@
 {
 	"craftable_recipes" : {
+		"refinement": {
+			"recipes": {
+				"papaya_herbalist": {
+					"recipe": "file(papaya_transmute_recipe.json)"
+				},
+				"hibiscus_herbalist": {
+					"recipe": "file(hibiscus_transmute_recipe.json)"
+				},
+				"blue_hibiscus_herbalist": {
+					"recipe": "file(blue_hibiscus_transmute_recipe.json)"
+				}
+			}
+		},
 		"decorations" : {
 			"recipes" : {
 				"lei" : {

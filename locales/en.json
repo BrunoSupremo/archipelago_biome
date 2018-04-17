@@ -291,12 +291,44 @@
 			"hibiscus_plant": {
 				"display_name": "Giant Sea Hibiscus",
 				"description": "Can be harvested for healing herbs",
-				"unripe_description": "This plant has been harvested and has not grown back yet"
+				"unripe_description": "This plant has been harvested and has not grown back yet",
+				"seed": {
+					"display_name": "Hibiscus Seed",
+					"description": "Once planted, it will grow into healing herbs"
+				},
+				"sprout": {
+					"description": "Just needs some time and care.",
+					"display_name": "Hibiscus Sproutling"
+				},
+				"stem": {
+					"description": "Still growing!",
+					"display_name": "Hibiscus Stemming Plant"
+				},
+				"bud": {
+					"description": "Its almost there!  Look, it has buds!",
+					"display_name": "Hibiscus Budding Plant"
+				}
 			},
 			"blue_hibiscus_plant": {
 				"display_name": "Blue Giant Sea Hibiscus",
 				"description": "Rare, can be harvested for healing herbs",
-				"unripe_description": "This plant has been harvested and has not grown back yet"
+				"unripe_description": "This plant has been harvested and has not grown back yet",
+				"seed": {
+					"display_name": "Blue Hibiscus Seed",
+					"description": "Once planted, it will grow into healing herbs"
+				},
+				"sprout": {
+					"description": "Just needs some time and care.",
+					"display_name": "Blue Hibiscus Sproutling"
+				},
+				"stem": {
+					"description": "Still growing!",
+					"display_name": "Blue Hibiscus Stemming Plant"
+				},
+				"bud": {
+					"description": "Its almost there!  Look, it has buds!",
+					"display_name": "Blue Hibiscus Budding Plant"
+				}
 			}
 		},
 		"resources": {
@@ -355,16 +387,64 @@
 			},
 			"dranden": {
 				"display_name": "Dranden Tree",
-				"description": "Large trunk with heavy leaves"
+				"description": "Large trunk with heavy leaves",
+				"seed": {
+					"display_name": "Dranden Seed",
+					"description": "Can be planted to grow a dranden tree"
+				},
+				"sprout": {
+					"display_name": "Dranden Tree Sproutling",
+					"description": "Just needs some time and care."
+				},
+				"stem": {
+					"display_name": "Stemming Dranden Tree",
+					"description": "Still growing!"
+				},
+				"bud": {
+					"display_name": "Budding Dranden Tree",
+					"description": "Its almost there!  It's growing its adult leaves!"
+				}
 			},
 			"smalea": {
 				"display_name": "Smalea Tree",
-				"description": "Small and dense tree"
+				"description": "Small and dense tree",
+				"seed": {
+					"display_name": "Smalea Seed",
+					"description": "Can be planted to grow a smalea tree"
+				},
+				"sprout": {
+					"display_name": "Smalea Tree Sproutling",
+					"description": "Just needs some time and care."
+				},
+				"stem": {
+					"display_name": "Stemming Smalea Tree",
+					"description": "Still growing!"
+				},
+				"bud": {
+					"display_name": "Budding Smalea Tree",
+					"description": "Its almost there!  It's growing its adult leaves!"
+				}
 			},
 			"papaya": {
 				"display_name": "Papaya Tree",
 				"description": "A large, tree-like plant (it is not a tree?)",
-				"unripe_description": "Not yet ripe for harvest"
+				"unripe_description": "Not yet ripe for harvest",
+				"seed": {
+					"display_name": "Papaya Seed",
+					"description": "Can be planted to grow a papaya tree"
+				},
+				"sprout": {
+					"display_name": "Papaya Tree Sproutling",
+					"description": "Just needs some time and care."
+				},
+				"stem": {
+					"display_name": "Stemming Papaya Tree",
+					"description": "Still growing!"
+				},
+				"bud": {
+					"display_name": "Budding Papaya Tree",
+					"description": "Its almost there!  It's growing its adult leaves!"
+				}
 			}
 		},
 		"weapons": {
@@ -393,9 +473,9 @@
 		}
 	},
 	"jobs": {
-		"cook":{
+		"cook": {
 			"recipes": {
-				"tropical_recipes_name":"Tropical Recipes"
+				"tropical_recipes_name": "Tropical Recipes"
 			}
 		},
 		"fisher": {
@@ -474,6 +554,13 @@
 					"recipe_name": "Fishing Dock",
 					"description": "Place it at an edge facing the water. The fisher will recognize this as a fishing spot and use it when fishing.",
 					"flavor": "Fish loves to be under its shadow"
+				}
+			}
+		},
+		"herbalist": {
+			"recipes": {
+				"papaya_transmute_recipe": {
+					"recipe_name": "Papaya Seeds (x3)"
 				}
 			}
 		}
@@ -611,7 +698,7 @@
 						},
 						"lets_trade_again": {
 							"title": "Let's trade again?",
-							"message_start": "Hi! Wanna buy some useless items again?<br> Oh, sorry, didn't noticed you had visitors. I will return later.",
+							"message_start": "Hi! Wanna buy some useless items again?<br>Oh, sorry, didn't noticed you had visitors. I will return later.",
 							"choice": "Visitors?..",
 							"message_those_guys": "Yes, those guys over there. Let me show you."
 						},
@@ -662,10 +749,6 @@
 					}
 				}
 			}
-		},
-		"version_check": {
-			"title": "Outdated Archipelago Biome Mod",
-			"message": "The mod was designed for version alpha [str(i18n_data.current_mod_version)], but your game is at alpha [str(i18n_data.current_alpha)]. <br>Check at the mod page for an update. Updates are released usually in the first days after the main game is updated."
 		}
 	}
 }

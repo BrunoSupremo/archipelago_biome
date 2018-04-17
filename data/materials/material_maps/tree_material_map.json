@@ -34,5 +34,8 @@
 	"archipelago_biome:oak:wood:dark6" :	{"color" : "#725936"},
 	"archipelago_biome:oak:wood:light6" :	{"color" : "#86683C"},
 
-	"archipelago_biome:oak:leaves:lighter7":{"color" : "#3C8A3A"}
+	"archipelago_biome:oak:leaves:lighter7":{"color" : "#3C8A3A"},
+
+	"archipelago_biome:juniper:leaves:dark" :	{"color" : "#40763B"},
+	"archipelago_biome:juniper:leaves:light" :	{"color" : "#44863F"}
 }

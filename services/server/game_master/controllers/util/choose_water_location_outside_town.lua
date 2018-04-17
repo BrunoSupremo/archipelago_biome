@@ -277,7 +277,7 @@ function ChooseWaterLocationOutsideTown:_try_one_perimeter_point(perimeter_point
                   -- _radiant.sim.is_valid_move() on the adjacent points. This is a bit more involved
                   -- as we need to specify who the path should be valid (in addition to requiring a bit more
                   -- computation). Using standability seems good enough for now.
-                  if _physics:is_standable(search_point) then
+                  if _physics:is_standable(search_point,0) then
                      visit_point(search_point)
                   end
                end

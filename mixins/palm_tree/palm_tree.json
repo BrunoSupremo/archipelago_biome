@@ -25,7 +25,8 @@
 	"entity_data": {
 		"stonehearth:catalog": {
 			"description": "i18n(archipelago_biome:entities.trees.common_palm.description)",
-			"icon":"file(palm_tree.png)"
+			"icon":"file(palm_tree.png)",
+			"subject_override": "archipelago_biome:trees:palm:small"
 		}
 	}
 }

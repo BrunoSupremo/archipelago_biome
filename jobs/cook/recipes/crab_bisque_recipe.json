@@ -7,7 +7,6 @@
 	"flavor": "i18n(archipelago_biome:entities.food.crab_bisque.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/food/crab_bisque/crab_bisque/crab_bisque.png", 
 	"workshop": "stonehearth:cook:workbench",
-	"manual_unlock": true,
 	"level_requirement": 2,
 	"ingredients": [
 		{

@@ -16,5 +16,31 @@
 		"archipelago": "archipelago_biome/archipelago_selected/manifest.json"
 	},
 	"mining_loot_table": "file(archipelago_mining_loot_table.json)",
-	"generation_file": "file(archipelago_generation_data.json)"
+	"generation_file": "file(archipelago_generation_data.json)",
+	"weather": [
+		{
+			"uri": "stonehearth:weather:sunny",
+			"weight": 20
+		},
+		{
+			"uri": "stonehearth:weather:rain",
+			"weight": 10
+		},
+		{
+			"uri": "stonehearth:weather:thunderstorm",
+			"weight": 5
+		},
+		{
+			"uri": "stonehearth:weather:windy",
+			"weight": 10
+		},
+		{
+			"uri": "stonehearth:weather:foggy",
+			"weight": 3.5
+		},
+		{
+			"uri": "stonehearth:weather:lucky",
+			"weight": 0.1
+		}
+	]
 }

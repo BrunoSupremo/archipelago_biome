@@ -126,8 +126,16 @@
 		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
 		"outfit:visitor":		"file(entities/outfit/visitor_outfit)",
 
-		"plants:hibiscus":		"file(entities/plants/hibiscus_plant)",
-		"plants:blue_hibiscus":	"file(entities/plants/blue_hibiscus_plant)",
+		"plants:hibiscus":			"file(entities/plants/hibiscus_plant)",
+		"plants:hibiscus:seed":		"file(entities/plants/hibiscus_plant/seed)",
+		"plants:hibiscus:sprout":	"file(entities/plants/hibiscus_plant/sprout)",
+		"plants:hibiscus:stem":		"file(entities/plants/hibiscus_plant/stem)",
+		"plants:hibiscus:bud":		"file(entities/plants/hibiscus_plant/bud)",
+		"plants:blue_hibiscus":			"file(entities/plants/blue_hibiscus_plant)",
+		"plants:blue_hibiscus:seed":	"file(entities/plants/blue_hibiscus_plant/seed)",
+		"plants:blue_hibiscus:sprout":	"file(entities/plants/blue_hibiscus_plant/sprout)",
+		"plants:blue_hibiscus:stem":	"file(entities/plants/blue_hibiscus_plant/stem)",
+		"plants:blue_hibiscus:bud":		"file(entities/plants/blue_hibiscus_plant/bud)",
 
 		"resources:herb:hibiscus":		"file(entities/resources/herb/hibiscus)",
 		"resources:herb:blue_hibiscus":	"file(entities/resources/herb/blue_hibiscus)",
@@ -141,8 +149,6 @@
 
 		"terrain:cave": "file(entities/terrain/cave)",
 
-		"town_names": "file(services/server/population/data/archipelago_town_names.json)",
-
 		"toys:beachball":"file(entities/toys/beachball)",
 
 		"traits:passion_fisher":"file(data/traits/passion_fisher/passion_fisher_trait.json)",
@@ -150,11 +156,23 @@
 		"trees:bend_palm:large":"file(entities/trees/bend_palm_tree/large_bend_palm_tree)",
 		"trees:bend_palm:small":"file(entities/trees/bend_palm_tree/small_bend_palm_tree)",
 		"trees:dranden:small":	"file(entities/trees/dranden)",
+		"trees:dranden:seed":	"file(entities/trees/dranden/seed)",
+		"trees:dranden:sprout":	"file(entities/trees/dranden/sprout)",
+		"trees:dranden:stem":	"file(entities/trees/dranden/stem)",
+		"trees:dranden:bud":	"file(entities/trees/dranden/bud)",
 		"trees:palm:large":		"file(entities/trees/palm_tree/large_palm_tree)",
 		"trees:palm:small":		"file(entities/trees/palm_tree/small_palm_tree)",
 		"trees:palm:sapling":	"file(entities/trees/palm_tree/sapling_palm_tree)",
 		"trees:papaya":			"file(entities/trees/papaya)",
+		"trees:papaya:seed":	"file(entities/trees/papaya/seed)",
+		"trees:papaya:sprout":	"file(entities/trees/papaya/sprout)",
+		"trees:papaya:stem":	"file(entities/trees/papaya/stem)",
+		"trees:papaya:bud":		"file(entities/trees/papaya/bud)",
 		"trees:smalea:small":	"file(entities/trees/smalea)",
+		"trees:smalea:seed":	"file(entities/trees/smalea/seed)",
+		"trees:smalea:sprout":	"file(entities/trees/smalea/sprout)",
+		"trees:smalea:stem":	"file(entities/trees/smalea/stem)",
+		"trees:smalea:bud":		"file(entities/trees/smalea/bud)",
 
 		"ui:input_box:fish_filters": "file(ui/data/input_box_fish_filters.json)",
 		"ui:input_box:food_bin_filters": "file(ui/data/input_box_food_bin_filters.json)",
@@ -170,8 +188,6 @@
 		"stonehearth:build:brushes": "file(data/build/building_brushes.json)",
 
 		"stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
-		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
-		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json":"file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops/bakery_shop.json)",
 		"stonehearth:gm:campaigns:arcs:ambient_threats": "file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/very_easy_raids.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/very_easy_raids.json)",
@@ -194,8 +210,6 @@
 		"stonehearth/jobs/potter/recipes/recipes.json":		"file(jobs/potter/recipes)",
 		"stonehearth/jobs/weaver/recipes/recipes.json":		"file(jobs/weaver/recipes)",
 
-		"stonehearth:kingdoms:ascendancy":			"archipelago_biome:town_names",
-		"rayyas_children:kingdoms:rayyas_children":	"archipelago_biome:town_names",
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:resources:wood:palm_log":"file(entities/resources/wood/palm_log)",
@@ -207,12 +221,6 @@
 		"stonehearth/locales/pt-BR.json" : "file(locales/pt-BR.json)",
 
 		"brewerymod/manifest.json":"file(modding_mods/brewerymod/manifest.json)"
-	},
-	"functions": {
-		"generate_town_name": {
-			"controller": "file(call_handlers/population_call_handler.lua)",
-			"endpoint": "server"
-		}
 	},
 	"overrides": {
 		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":	"file(data/rigs/entities/humans/animations/female/fishing_start.json)",

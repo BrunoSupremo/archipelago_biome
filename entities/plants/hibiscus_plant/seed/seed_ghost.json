@@ -1,0 +1,63 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.15
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(../hibiscus_plant.qb)"
+						]
+					}
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			],
+			"adjacency_flags": [
+				"front_left",
+				"front_right",
+				"back_left",
+				"back_right"
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": -1, "y": 0, "z": 0 },
+					"max": {"x": 0, "y": 2, "z": 1 }
+				},
+				{
+					"min": {"x": 1, "y": 0, "z": 0 },
+					"max": {"x": 2, "y": 2, "z": 1 }
+				},
+				{
+					"min": {"x": 0, "y": 0, "z": -1 },
+					"max": {"x": 1, "y": 2, "z": 2 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.plants.hibiscus_plant.seed.display_name)",
+			"description": "i18n(archipelago_biome:entities.plants.hibiscus_plant.seed.description)",
+			"icon": "file(seed.png)",
+			"category": "seed"
+		}
+	}
+}

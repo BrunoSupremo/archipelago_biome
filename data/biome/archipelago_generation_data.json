@@ -149,6 +149,14 @@
 	},
 	"landscape": {
 		"placement_table": {
+			"stonehearth:plants:foxlily": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.1,
+					"exclusion_radius": 1
+				}
+			},
 			"archipelago_biome:terrain:cave": {
 				"placement_type": "single",
 				"parameters": {
@@ -461,7 +469,8 @@
 							"archipelago_biome:plants:hibiscus": 1,
 							"archipelago_biome:plants:blue_hibiscus": 0.1,
 							"stonehearth:plants:brightbell": 3,
-							"stonehearth:plants:frostsnap": 3,
+							"stonehearth:plants:frostsnap": 2,
+							"stonehearth:plants:foxlily": 1,
 							"stonehearth:plants:silkweed": 2,
 							"archipelago_biome:trees:papaya": 3
 						}
@@ -471,7 +480,8 @@
 							"archipelago_biome:plants:hibiscus": 1,
 							"archipelago_biome:plants:blue_hibiscus": 0.1,
 							"stonehearth:plants:brightbell": 2,
-							"stonehearth:plants:frostsnap": 3,
+							"stonehearth:plants:frostsnap": 2,
+							"stonehearth:plants:foxlily": 1,
 							"archipelago_biome:trees:papaya": 2
 						},
 						"2": {

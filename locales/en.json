@@ -561,6 +561,12 @@
 			"recipes": {
 				"papaya_transmute_recipe": {
 					"recipe_name": "Papaya Seeds (x3)"
+				},
+				"hibiscus_transmute_recipe": {
+					"recipe_name": "Hibiscus Seeds (x3)"
+				},
+				"blue_hibiscus_transmute_recipe": {
+					"recipe_name": "Blue Hibiscus Seeds (x3)"
 				}
 			}
 		}

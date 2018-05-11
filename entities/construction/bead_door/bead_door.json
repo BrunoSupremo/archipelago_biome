@@ -1,0 +1,34 @@
+{
+	"type": "entity",
+	"mixins": [
+		"file(bead_door_ghost.json)",
+		"stonehearth:mixins:basic_destructable_door"
+	],
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(bead_door_iconic.json)",
+			"ghost_form": "file(bead_door_ghost.json)",
+			"placeable_on_walls": true,
+			"placeable_on_ground": true,
+			"hide_placement_ui": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 4,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 5
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

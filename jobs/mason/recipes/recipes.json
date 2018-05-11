@@ -1,0 +1,11 @@
+{
+	"craftable_recipes" : {
+		"signage_decoration" : {
+			"recipes" : {
+				"archipelago_totem" : {
+					"recipe" : "file(totem_recipe.json)"
+				}
+			}
+		}
+	}
+}

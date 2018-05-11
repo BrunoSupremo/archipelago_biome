@@ -35,6 +35,18 @@
 				"description":"Não são estrelas, nem peixes."
 			}
 		},
+		"construction": {
+			"bead_door": {
+				"display_name": "Porta de miçangas",
+				"description": "Muitas cordas com miçangas descendo do teto",
+				"flavor": "Barulhento em ventanias."
+			},
+			"porthole": {
+				"display_name": "Portinhola",
+				"description": "Pequena janela redonda comum em navios",
+				"flavor": "Por que as portinholas dos navios são redondas? <br> Para quando quebrarem, a água não atingir essa sua cara quadrada."
+			}
+		},
 		"containers": {
 			"input_fish_rack": {
 				"display_name": "Cabide de peixes",
@@ -102,14 +114,6 @@
 					"flavor":"Pronto pra ser exportado"
 				}
 			},
-			"hammock":{
-				"display_name":"Rede",
-				"description":"Tire uma soneca após comer",
-				"recipe":{
-					"description":"Usado para dormir",
-					"flavor":"Caranguejos podem te beliscar, por baixo..."
-				}
-			},
 			"lei":{
 				"display_name":"Guirlanda de flores",
 				"description":"Flores penduradas na parede",
@@ -161,6 +165,11 @@
 					"description":"Uma luz ao ar livre anexada a uma longa vara fixada no chão.",
 					"flavor":"Vai iluminar a festa e manter os insetos longe"
 				}
+			},
+			"totem": {
+				"display_name": "Totem",
+				"description": "Animais de praia empilhados",
+				"flavor": "Uma tartaruga, um caranguejo e uma gaivota"
 			}
 		},
 		"food":{
@@ -253,6 +262,16 @@
 			"sashimi":{
 				"display_name":"Sashimi",
 				"description":"Peixe cru fresco cortado em fatias bem fininhas"
+			}
+		},
+		"furniture":{
+			"hammock":{
+				"display_name":"Rede",
+				"description":"Tire uma soneca após comer",
+				"recipe":{
+					"description":"Usado para dormir",
+					"flavor":"Caranguejos podem te beliscar, por baixo..."
+				}
 			}
 		},
 		"gizmos":{
@@ -503,6 +522,11 @@
 			"fisher_rod": {
 				"display_name": "Vara de Pescar",
 				"description": "Uma vara longa e flexível usada para pegar peixes"
+			},
+			"fisher_firepit": {
+				"display_name": "Fogueirinha",
+				"description": "Para cozinhar comida quentinha",
+				"flavor": "Para uma melhor comida, converse com seus principais cozinheiros"
 			},
 			"fisher_outfit":{
 				"display_name":"Roupa de Pescador",

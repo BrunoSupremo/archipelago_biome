@@ -7,6 +7,9 @@
 				},
 				"hammock" : {
 					"recipe" : "file(hammock_recipe.json)"
+				},
+				"bead_door" : {
+					"recipe" : "file(bead_door_recipe.json)"
 				}
 			}
 		}

@@ -1,0 +1,22 @@
+{
+	"type" : "recipe",
+	"effort": 90,
+	"work_units" : 2,
+	"recipe_name": "i18n(archipelago_biome:entities.construction.bead_door.display_name)",
+	"description": "i18n(archipelago_biome:entities.construction.bead_door.description)",
+	"flavor": "i18n(archipelago_biome:entities.construction.bead_door.flavor)",
+	"portrait" : "/archipelago_biome/entities/construction/bead_door/bead_door.png", 
+	"workshop": "stonehearth:weaver:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item":"archipelago_biome:construction:bead_door"
+		}
+	]
+}

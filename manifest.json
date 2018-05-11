@@ -1,7 +1,9 @@
 {
 	"info": {
-		"name": "archipelago_biome",
-		"version": 3
+		"name" : "Archipelago Biome",
+		"namespace" : "archipelago_biome",
+		"version" : 3,
+		"steam_file_id" : "1370165251"
 	},
 	"default_locale": "en",
 	"server_init_script": "file(archipelago_biome_server)",
@@ -37,6 +39,9 @@
 
 		"commands:open_crate":"file(data/commands/open_crate)",
 
+		"construction:bead_door": "file(entities/construction/bead_door)",
+		"construction:porthole": "file(entities/construction/porthole)",
+
 		"containers:input_fish_rack": "file(entities/containers/input_fish_rack)",
 		"containers:input_bin:food_bin": "file(entities/containers/input_food_bin)",
 
@@ -54,7 +59,6 @@
 		"decoration:dock_spot":			"file(entities/decoration/dock/dock_spot.json)",
 		"decoration:fish_container":	"file(entities/decoration/fish_container)",
 		"decoration:fruit_container":	"file(entities/decoration/fruit_container)",
-		"decoration:hammock":			"file(entities/decoration/hammock)",
 		"decoration:lei":				"file(entities/decoration/lei)",
 		"decoration:pearl_container":	"file(entities/decoration/pearl_container)",
 		"decoration:pirate_flag":		"file(entities/decoration/pirate_flag)",
@@ -62,6 +66,7 @@
 		"decoration:sand_castle":		"file(entities/decoration/sand_castle)",
 		"decoration:ship_wheel":		"file(entities/decoration/ship_wheel)",
 		"decoration:tiki_torch":		"file(entities/decoration/tiki_torch)",
+		"decoration:totem":				"file(entities/decoration/totem)",
 
 		"effects:bubble_shot":				"file(data/effects/bubble_shot)",
 		"effects:cocobomb_effect":			"file(data/effects/cocobomb_effect)",
@@ -94,6 +99,8 @@
 		"food:papaya_serving":	"file(entities/food/papaya/papaya_serving)",
 		"food:sashimi":"file(entities/food/sashimi)",
 
+		"furniture:hammock":"file(entities/furniture/hammock)",
+
 		"gizmos:cocobomb":		"file(entities/gizmos/cocobomb)",
 		"gizmos:crab_trap":		"file(entities/gizmos/crab_trap)",
 
@@ -101,6 +108,7 @@
 		"jobs:fisher":	"file(jobs/fisher/fisher_description.json)",
 		"fisher:rod":		"file(jobs/fisher/fisher_rod/fisher_rod.json)",
 		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
+		"fisher:firepit":	"file(jobs/fisher/fisher_firepit)",
 
 		"mixins:encounter:octopus_raid":	"file(mixins/encounter/mixin_octopus_raid.json)",
 		"mixins:encounter:cocoling_raid":	"file(mixins/encounter/mixin_cocoling_raid.json)",
@@ -181,6 +189,9 @@
 		"weapons:crab_pincer":	"file(entities/weapons/crab_pincer)",
 		"weapons:slap_fish":	"file(entities/weapons/slap_fish)"
 	},
+	"deprecated_aliases": {
+		"decoration:hammock":"file(entities/decoration/hammock)"
+	},
 	"mixintos": {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
@@ -207,6 +218,7 @@
 		"stonehearth/jobs/cook/recipes/recipes.json":		"file(jobs/cook/recipes)",
 		"stonehearth/jobs/engineer/recipes/recipes.json":	"file(jobs/engineer/recipes)",
 		"stonehearth/jobs/herbalist/recipes/recipes.json":	"file(jobs/herbalist/recipes)",
+		"stonehearth/jobs/mason/recipes/recipes.json":		"file(jobs/mason/recipes)",
 		"stonehearth/jobs/potter/recipes/recipes.json":		"file(jobs/potter/recipes)",
 		"stonehearth/jobs/weaver/recipes/recipes.json":		"file(jobs/weaver/recipes)",
 

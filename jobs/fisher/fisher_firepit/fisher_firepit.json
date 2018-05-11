@@ -1,0 +1,33 @@
+{
+	"type": "entity",
+	"mixins": "file(fisher_firepit_ghost.json)",
+	"components": {
+		"stonehearth:entity_forms": {
+			"ghost_form": "file(fisher_firepit_ghost.json)",
+			"iconic_form": "file(fisher_firepit_iconic.json)",
+			"placeable_on_ground": true
+		},
+		"stonehearth:workshop": {
+			"job_alias": "archipelago_biome:jobs:fisher",
+			"workshop_effect": "/stonehearth/data/rigs/jobs/cook/cook_oven/effects/work.json"
+		}
+	},
+	"entity_data": {
+		"stonehearth:table": {
+			"drop_effect": "carry_putdown_on_table",
+			"drop_offset": { "x": -0.5, "y": 1, "z": -0.5 }
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 4,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 2
+		}
+	}
+}

@@ -7,7 +7,7 @@
 	"flavor": "i18n(archipelago_biome:entities.decoration.pirate_flag.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/decoration/pirate_flag/pirate_flag.png", 
 	"workshop": "stonehearth:weaver:workbench",
-	"level_requirement": 1,
+	"level_requirement": 3,
 	"ingredients": [
 		{
 			"material": "cloth resource",

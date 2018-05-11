@@ -1,0 +1,34 @@
+{
+	"type": "entity",
+	"mixins": "file(porthole_ghost.json)",
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(porthole_iconic.json)",
+			"ghost_form": "file(porthole_ghost.json)",
+			"placeable_on_walls": true,
+			"placeable_on_ground": true,
+			"hide_placement_ui": true
+		},
+		"mob": {
+			"mob_collision_type": "clutter"
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 10,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 1
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

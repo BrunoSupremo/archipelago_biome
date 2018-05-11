@@ -8,7 +8,7 @@
 			}
 		},
 		"tropical_recipes": {
-			"ordinal": 65.1,
+			"ordinal": 65.01641,
 			"name": "i18n(archipelago_biome:jobs.cook.recipes.tropical_recipes_name)",
 			"recipes" : {
 				"papaya_cookie" : {

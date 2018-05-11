@@ -33,11 +33,11 @@
 		"stonehearth:rabbit:statue": "file(entities/rabbit/rabbit_statue)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
-		"stonehearth/scenarios/static/critter_nest/critter_nest.json":	"file(scenarios/static/critter_nest/critter_nest.json)",
-		"stonehearth/scenarios/static/fox_nest/fox_nest.json":			"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
-		"stonehearth/scenarios/static/rabbit_nest/rabbit_nest.json":	"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
-		"stonehearth/scenarios/static/racoon_nest/racoon_nest.json":	"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
-		"stonehearth/scenarios/static/squirrel_nest/squirrel_nest.json":"file(scenarios/static/rabbit_nest/rabbit_nest.json)"
+		"stonehearth:scenarios:static:critter_nest":"file(scenarios/static/critter_nest/critter_nest.json)",
+		"stonehearth:scenarios:static:fox_nest":		"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
+		"stonehearth:scenarios:static:rabbit_nest":		"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
+		"stonehearth:scenarios:static:racoon_nest":		"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
+		"stonehearth:scenarios:static:squirrel_nest":	"file(scenarios/static/rabbit_nest/rabbit_nest.json)"
 	},
 	"overrides": {
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":	"file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",

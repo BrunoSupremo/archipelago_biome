@@ -2,11 +2,12 @@
 	"type" : "recipe",
 	"effort": 60,
 	"work_units" : 2,
-	"recipe_name": "i18n(archipelago_biome:entities.decoration.hammock.display_name)",
-	"description": "i18n(archipelago_biome:entities.decoration.hammock.recipe.description)",
-	"flavor": "i18n(archipelago_biome:entities.decoration.hammock.recipe.flavor)",
-	"portrait" : "/archipelago_biome/entities/decoration/hammock/hammock.png", 
+	"recipe_name": "i18n(archipelago_biome:entities.furniture.hammock.display_name)",
+	"description": "i18n(archipelago_biome:entities.furniture.hammock.recipe.description)",
+	"flavor": "i18n(archipelago_biome:entities.furniture.hammock.recipe.flavor)",
+	"portrait" : "/archipelago_biome/entities/furniture/hammock/hammock.png", 
 	"workshop": "stonehearth:weaver:loom",
+	"level_requirement": 2,
 	"ingredients": [
 		{
 			"material": "fiber resource",
@@ -19,7 +20,7 @@
 	],
 	"produces": [
 		{
-			"item":"archipelago_biome:decoration:hammock"
+			"item":"archipelago_biome:furniture:hammock"
 		}
 	]
 }

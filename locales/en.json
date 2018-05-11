@@ -19,7 +19,7 @@
 				"description": "Bottle"
 			},
 			"broken_boat": {
-				"display_name": "Broken Boat",
+				"display_name": "Shipwreck",
 				"description": "Harvest for wood and gold."
 			},
 			"oyster": {
@@ -33,6 +33,18 @@
 			"starfish": {
 				"display_name": "Starfish",
 				"description": "A.k.a. Sea Stars, starfish is not really a fish."
+			}
+		},
+		"construction": {
+			"bead_door": {
+				"display_name": "Bead Door Curtain",
+				"description": "Many strings with beads dropping from the ceiling",
+				"flavor": "Noisy when windy."
+			},
+			"porthole": {
+				"display_name": "Porthole",
+				"description": "Small round window common in ships",
+				"flavor": "Why are ships' portholes round?<br>So that if they break, water doesn't hit you square in the face."
 			}
 		},
 		"containers": {
@@ -102,14 +114,6 @@
 					"flavor": "Ready to be exported"
 				}
 			},
-			"hammock": {
-				"display_name": "Hammock",
-				"description": "Take a nap after lunch",
-				"recipe": {
-					"description": "Used for sleeping",
-					"flavor": "Crabs can pinch you, from below..."
-				}
-			},
 			"lei": {
 				"display_name": "Flower Garland",
 				"description": "Flowers hanging on the wall",
@@ -161,6 +165,11 @@
 					"description": "An outdoor light attached to a long pole fixed into the ground.",
 					"flavor": "Will brighten up the party and keep bugs at bay"
 				}
+			},
+			"totem": {
+				"display_name": "Totem",
+				"description": "Beach animals piled up",
+				"flavor": "A turtle, a crab and a seagull"
 			}
 		},
 		"food": {
@@ -253,6 +262,16 @@
 			"sashimi": {
 				"display_name": "Sashimi",
 				"description": "Fresh raw fish sliced into thin pieces"
+			}
+		},
+		"furniture":{
+			"hammock": {
+				"display_name": "Hammock",
+				"description": "Take a nap after lunch",
+				"recipe": {
+					"description": "Used for sleeping",
+					"flavor": "Crabs can pinch you, from below..."
+				}
 			}
 		},
 		"gizmos": {
@@ -504,6 +523,11 @@
 				"display_name": "Fishing Rod",
 				"description": "A long, flexible rod used to catch fish"
 			},
+			"fisher_firepit": {
+				"display_name": "Firepit",
+				"description": "To cook basic hot food",
+				"flavor": "For better food, visit your main cooks"
+			},
 			"fisher_outfit": {
 				"display_name": "Fisher Outfit",
 				"description": "Usual fisher outfit"
@@ -664,7 +688,7 @@
 							"message_accept": "Yes! Finally someone accepted my help!<br>Er... I mean, follow me!",
 							"message_trees": "You will start looking for wood and food, right?<br>Here we have both with palm trees!<br>When you harvest them you get coconuts. Those don't fill much though.<br>Harvesting it a second time (while it has no coconuts) will instead chop it for wood.",
 							"message_oysters": "Oh, and these big oysters are awesome. Only a fisher can harvest them and their pearls sell for a good amount.<br>Rumours mention rare black pearls, but I never saw one myself.",
-							"message_broken_boats": "Take a look around and you may find some unlucky boat wrecks.<br>You can scavenger those and find good treasures.",
+							"message_broken_boats": "Take a look around and you may find some shipwrecks.<br>You can scavenger those and find good treasures.",
 							"message_bye": "That's all for now.<br>I'll return later to check how you guys are doing.<br>I need to take advantage of this good wind and set sail, my ship will not fill itself with goods and treasures.<br>Bye bye and good luck."
 						}
 					}

@@ -4,15 +4,15 @@
 			"colors": {
 				"#f1f1a4": {
 					"display_name": "i18n(archipelago_biome:data.build.building_brushes.colors.#f1f1a4)",
-					"ordinal": 21
+					"ordinal": 16.993624
 				},
 				"#f0ea99": {
 					"display_name": "i18n(archipelago_biome:data.build.building_brushes.colors.#f0ea99)",
-					"ordinal": 22
+					"ordinal": 16.993625
 				},
 				"#f0e187": {
 					"display_name": "i18n(archipelago_biome:data.build.building_brushes.colors.#f0e187)",
-					"ordinal": 23
+					"ordinal": 16.993626
 				}
 			}
 		}

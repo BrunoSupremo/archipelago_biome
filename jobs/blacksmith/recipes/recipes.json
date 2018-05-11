@@ -4,6 +4,9 @@
 			"recipes" : {
 				"anchor" : {
 					"recipe" : "file(anchor_recipe.json)"
+				},
+				"porthole" : {
+					"recipe" : "file(porthole_recipe.json)"
 				}
 			}
 		}

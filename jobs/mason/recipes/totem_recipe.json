@@ -1,0 +1,21 @@
+{
+	"type": "recipe",
+	"effort": 180,
+	"work_units": 20,
+	"recipe_name": "i18n(archipelago_biome:entities.decoration.totem.display_name)",
+	"description": "i18n(archipelago_biome:entities.decoration.totem.description)",
+	"flavor": "i18n(archipelago_biome:entities.decoration.totem.flavor)",
+	"portrait" : "/archipelago_biome/entities/decoration/totem/totem.png",
+	"workshop": "stonehearth:mason:pedestal",
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 4
+		}
+	],
+	"produces": [
+		{
+			"item":"archipelago_biome:decoration:totem"
+		}
+	]
+}

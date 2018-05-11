@@ -9,6 +9,9 @@
 				},
 				"crab_trap": {
 					"recipe": "file(crab_trap_recipe.json)"
+				},
+				"firepit": {
+					"recipe": "file(firepit_recipe.json)"
 				}
 			}
 		},
@@ -18,6 +21,12 @@
 			"recipes": {
 				"sashimi": {
 					"recipe": "file(sashimi_recipe.json)"
+				},
+				"fish_cooked" : {
+					"recipe" : "file(fish_cooked_recipe.json)"
+				},
+				"crab_bisque" : {
+					"recipe" : "file(crab_bisque_recipe.json)"
 				}
 			}
 		},

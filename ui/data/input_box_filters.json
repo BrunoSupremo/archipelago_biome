@@ -4,7 +4,7 @@
 		"plants": {
 			"categories": {
 				"hibiscus": {
-					"ordinal": 100.1,
+					"ordinal": 100.016641,
 					"display_name": "i18n(archipelago_biome:entities.resources.herb.hibiscus.display_name)",
 					"icon": "/archipelago_biome/entities/resources/herb/hibiscus/hibiscus.png",
 					"filter": "resource plant hibiscus"
@@ -14,13 +14,13 @@
 		"raw_foods": {
 			"categories": {
 				"coconut": {
-					"ordinal": 100.1,
+					"ordinal": 100.016641,
 					"display_name": "i18n(archipelago_biome:entities.food.coconut.display_name)",
 					"icon": "/archipelago_biome/entities/food/coconut/coconut.png",
 					"filter": "raw_food coconut"
 				},
 				"papaya_basket": {
-					"ordinal": 100.2,
+					"ordinal": 100.026641,
 					"display_name": "i18n(archipelago_biome:entities.food.papaya_basket.display_name)",
 					"icon": "/archipelago_biome/entities/food/papaya/papaya_basket/papaya_basket.png",
 					"filter": "raw_food papaya"
@@ -30,13 +30,13 @@
 		"cooking_ingredients": {
 			"categories": {
 				"fish": {
-					"ordinal": 100.1,
+					"ordinal": 100.016641,
 					"display_name": "i18n(archipelago_biome:entities.food.fish.display_name)",
 					"icon": "/archipelago_biome/entities/food/fish/fish.png",
 					"filter": "cooking_ingredient fish"
 				},
 				"crab": {
-					"ordinal": 100.2,
+					"ordinal": 100.026641,
 					"display_name": "i18n(archipelago_biome:entities.food.crab.display_name)",
 					"icon": "/archipelago_biome/entities/food/crab/crab.png",
 					"filter": "cooking_ingredient crab"

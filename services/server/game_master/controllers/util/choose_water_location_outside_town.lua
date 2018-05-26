@@ -12,6 +12,7 @@ function ChooseWaterLocationOutsideTown:initialize()
    self._sv.max_range = nil
    self._sv.target_region = nil
    self._sv.callback  = nil
+   self._sv.player_id  = nil
    self._sv.found_location = false
    self._sv.last_hull_index = nil
    self._sv.num_perimeter_points_searched = 0
@@ -23,7 +24,8 @@ end
 --@param max_range - maximum range from the edge of town
 --@param callback - fn to call when we've got the region
 --@param target_region - optional, area around the target location to ensure is clear, for placing items
-function ChooseWaterLocationOutsideTown:create(min_range, max_range, callback, target_region)
+--@param player_id - optional, only consider this player's territory instead of everyone's.
+function ChooseWaterLocationOutsideTown:create(min_range, max_range, callback, target_region, player_id)
    if not target_region then
       -- default to a 15x15 area of flatness which fits just inside a world generation feature cell
       local cube = Cube3(Point3.zero):inflated(Point3(7, 0, 7))
@@ -34,6 +36,7 @@ function ChooseWaterLocationOutsideTown:create(min_range, max_range, callback, t
    self._sv.max_range = max_range
    self._sv.target_region = target_region
    self._sv.callback  = callback
+   self._sv.player_id = player_id
 end
 
 function ChooseWaterLocationOutsideTown:activate()
@@ -76,7 +79,7 @@ function ChooseWaterLocationOutsideTown:_is_camp_too_close(location, camp_region
    end
 
    -- Make sure the camp_region is at least min_range from any territory marked by the player (or all players)
-   local territory = stonehearth.terrain:get_total_territory()
+   local territory = self._sv.player_id and stonehearth.terrain:get_territory(self._sv.player_id) or stonehearth.terrain:get_total_territory()
    local claimed_region = territory:get_region()
    local temp = camp_region:project_onto_xz_plane():inflated(self._min_range_2d)
    local result = temp:intersects_region(claimed_region)
@@ -152,7 +155,7 @@ function ChooseWaterLocationOutsideTown:_create_search_thread()
 end
 
 function ChooseWaterLocationOutsideTown:_try_finding_location()
-   local territory = stonehearth.terrain:get_total_territory()
+   local territory = self._sv.player_id and stonehearth.terrain:get_territory(self._sv.player_id) or stonehearth.terrain:get_total_territory()
 
    if next(territory:get_convex_hull()) == nil then
       self._log:always('could not choose location outside town because territory is empty')
@@ -277,7 +280,7 @@ function ChooseWaterLocationOutsideTown:_try_one_perimeter_point(perimeter_point
                   -- _radiant.sim.is_valid_move() on the adjacent points. This is a bit more involved
                   -- as we need to specify who the path should be valid (in addition to requiring a bit more
                   -- computation). Using standability seems good enough for now.
-                  if _physics:is_standable(search_point,0) then
+                  if _physics:is_standable(search_point, 0) then
                      visit_point(search_point)
                   end
                end

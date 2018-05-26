@@ -5,6 +5,15 @@ local log = radiant.log.create_logger('version')
 log:error("Archipelago Biome mod for alpha %d", archipelago_biome.version)
 
 function archipelago_biome:_on_required_loaded()
+	local custom_resource_call_handler = require('call_handlers.custom_resource_call_handler')
+	local resource_call_handler = radiant.mods.require('stonehearth.call_handlers.resource_call_handler')
+	radiant.mixin(resource_call_handler, custom_resource_call_handler)
+end
+
+function archipelago_biome:_on_biome_set(e)
+	if e.biome_uri ~= "archipelago_biome:biome:archipelago" then
+		return
+	end
 	local custom_world_generation_service = require('services.server.world_generation.custom_world_generation_service')
 	local world_generation_service = radiant.mods.require('stonehearth.services.server.world_generation.world_generation_service')
 	radiant.mixin(world_generation_service, custom_world_generation_service)
@@ -20,12 +29,9 @@ function archipelago_biome:_on_required_loaded()
 	local custom_micro_map_generator = require('services.server.world_generation.custom_micro_map_generator')
 	local micro_map_generator = radiant.mods.require('stonehearth.services.server.world_generation.micro_map_generator')
 	radiant.mixin(micro_map_generator, custom_micro_map_generator)
-
-	local custom_resource_call_handler = require('call_handlers.custom_resource_call_handler')
-	local resource_call_handler = radiant.mods.require('stonehearth.call_handlers.resource_call_handler')
-	radiant.mixin(resource_call_handler, custom_resource_call_handler)
 end
 
 radiant.events.listen_once(radiant, 'radiant:required_loaded', archipelago_biome, archipelago_biome._on_required_loaded)
+radiant.events.listen_once(radiant, 'stonehearth:biome_set', archipelago_biome, archipelago_biome._on_biome_set)
 
 return archipelago_biome

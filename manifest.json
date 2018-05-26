@@ -230,8 +230,6 @@
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
 
-		"stonehearth/locales/pt-BR.json" : "file(locales/pt-BR.json)",
-
 		"brewerymod/manifest.json":"file(modding_mods/brewerymod/manifest.json)"
 	},
 	"overrides": {

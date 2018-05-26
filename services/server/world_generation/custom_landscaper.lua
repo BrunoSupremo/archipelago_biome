@@ -10,43 +10,6 @@ local CustomLandscaper = class()
 -- local log = radiant.log.create_logger('meu_log')
 
 function CustomLandscaper:__init(biome, rng, seed)
-	local biome_name = stonehearth.world_generation:get_biome_alias()
-	local colon_position = string.find (biome_name, ":", 1, true) or -1
-	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
-	local fn = "__init_" .. mod_name_containing_the_biome
-	if self[fn] ~= nil then
-		--found a function for the biome being used, named:
-		-- self:__init_<biome_name>(args,...)
-		self[fn](self, biome, rng, seed)
-	else
-		--there is no function for this specific biome, so call a copy of the original from stonehearth
-		self:__init_original(biome, rng, seed)
-	end
-end
-
-function CustomLandscaper:__init_original(biome, rng, seed)
-	self._biome = biome
-	self._tile_width = self._biome:get_tile_size()
-	self._tile_height = self._biome:get_tile_size()
-	self._feature_size = self._biome:get_feature_block_size()
-	self._landscape_info = self._biome:get_landscape_info()
-	self._rng = rng
-	self._seed = seed
-
-	self._noise_map_buffer = nil
-	self._density_map_buffer = nil
-
-	self._perturbation_grid = PerturbationGrid(self._tile_width, self._tile_height, self._feature_size, self._rng)
-
-	self._water_table = {
-		water_1 = self._landscape_info.water.depth.shallow,
-		water_2 = self._landscape_info.water.depth.deep
-	}
-
-	self:_parse_landscape_info()
-end
-
-function CustomLandscaper:__init_archipelago_biome(biome, rng, seed)
 	self._biome = biome
 	self._tile_width = self._biome:get_tile_size()
 	self._tile_height = self._biome:get_tile_size()
@@ -63,13 +26,13 @@ function CustomLandscaper:__init_archipelago_biome(biome, rng, seed)
 	self._water_table = {
 		water_1 = self._landscape_info.water.depth.shallow,
 		water_2 = self._landscape_info.water.depth.deep,
-		water_3 = self._landscape_info.water.depth.more_deep or self._landscape_info.water.depth.deep
+		water_3 = self._landscape_info.water.depth.more_deep
 	}
 
-	self:_parse_landscape_info_archipelago_biome()
+	self:_parse_landscape_info()
 end
 
-function CustomLandscaper:_parse_landscape_info_archipelago_biome()
+function CustomLandscaper:_parse_landscape_info()
 	local landscape_info = self._landscape_info
 
 	self._placement_table = self._landscape_info.placement_table
@@ -121,7 +84,7 @@ function CustomLandscaper:mark_caves(elevation_map, feature_map)
 	end
 end
 
-function CustomLandscaper:mark_water_bodies_archipelago_biome(elevation_map, feature_map)
+function CustomLandscaper:mark_water_bodies(elevation_map, feature_map)
 	local rng = self._rng
 	local biome = self._biome
 	local config = self._landscape_info.water.noise_map_settings
@@ -164,7 +127,7 @@ function CustomLandscaper:mark_water_bodies_archipelago_biome(elevation_map, fea
 	self:_remove_juts(feature_map)
 	self:_remove_ponds(feature_map, old_feature_map)
 	self:_fix_tile_aligned_water_boundaries(feature_map, old_feature_map)
-	self:_add_deep_water_archipelago(feature_map)
+	self:_add_deep_water(feature_map)
 	self:_add_more_deep_water(feature_map)
 	self:_add_more_deep_water_second_pass(feature_map)
 end
@@ -179,7 +142,7 @@ function CustomLandscaper:_spawn_island_trees()
 	return tree[self._rng:get_int(1,4)]
 end
 
-function CustomLandscaper:_add_deep_water_archipelago(feature_map)
+function CustomLandscaper:_add_deep_water(feature_map)
 	local is_valid_and_has_water = function (i,j)
 		if feature_map:in_bounds(i,j) then
 			local feature_name = feature_map:get(i, j)
@@ -256,25 +219,6 @@ function CustomLandscaper:_add_more_deep_water_second_pass(feature_map)
 end
 
 function CustomLandscaper:is_water_feature(feature_name)
-	local biome_name = stonehearth.world_generation:get_biome_alias()
-	local colon_position = string.find (biome_name, ":", 1, true) or -1
-	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
-	local fn = "is_water_feature_" .. mod_name_containing_the_biome
-	if self[fn] ~= nil then
-		--found a function for the biome being used, named:
-		-- self:is_water_feature_<biome_name>(args,...)
-		return self[fn](self, feature_name)
-	else
-		--there is no function for this specific biome, so call a copy of the original from stonehearth
-		return self:is_water_feature_original(feature_name)
-	end
-end
-
-function CustomLandscaper:is_water_feature_original(feature_name)
-	return self._water_table[feature_name] ~= nil
-end
-
-function CustomLandscaper:is_water_feature_archipelago_biome(feature_name)
 	return self._water_table[feature_name] ~= nil
 end
 
@@ -298,30 +242,6 @@ end
 
 --- water spawning
 function CustomLandscaper:place_features(tile_map, feature_map, place_item)
-	local biome_name = stonehearth.world_generation:get_biome_alias()
-	local colon_position = string.find (biome_name, ":", 1, true) or -1
-	local mod_name_containing_the_biome = string.sub (biome_name, 1, colon_position-1)
-	local fn = "place_features_" .. mod_name_containing_the_biome
-	if self[fn] ~= nil then
-		--found a function for the biome being used, named:
-		-- self:place_features_<biome_name>(args,...)
-		self[fn](self, tile_map, feature_map, place_item)
-	else
-		--there is no function for this specific biome, so call a copy of the original from stonehearth
-		self:place_features_original(tile_map, feature_map, place_item)
-	end
-end
-
-function CustomLandscaper:place_features_original(tile_map, feature_map, place_item)
-	for j=1, feature_map.height do
-		for i=1, feature_map.width do
-			local feature_name = feature_map:get(i, j)
-			self:_place_feature(feature_name, i, j, tile_map, place_item)
-		end
-	end
-end
-
-function CustomLandscaper:place_features_archipelago_biome(tile_map, feature_map, place_item)
 	local water_1_table = WeightedSet(self._rng)
 	for item, weight in pairs(self._landscape_info.water.spawn_objects.water_1) do
 		water_1_table:add(item,weight)

@@ -14,7 +14,9 @@ function ArchipelagoShowTheVisitors:start(ctx, info)
 		16, 100,
 		function(op, location)
 			return self:_find_location_callback(op, location, ctx)
-			end)
+			end,
+			nil,
+			ctx.player_id)
 end
 
 function ArchipelagoShowTheVisitors:_find_location_callback(op, location, ctx)

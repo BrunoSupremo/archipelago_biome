@@ -17,6 +17,8 @@
 		"actions:pickup_fish":			"file(ai/actions/fisher/pickup_fish_action.lua)",
 		"actions:get_crab":				"file(ai/actions/fisher/get_crab_action.lua)",
 
+		"actions:harvest_palm_tree_adjacent_action":"file(ai/actions/harvest_palm_tree_adjacent.lua)",
+
 		"task_groups:crab_movement": "file(ai/task_groups/crab_task_group.lua)",
 		"task_groups:fishing": "file(ai/task_groups/fishing_task_group.lua)",
 
@@ -193,6 +195,7 @@
 		"decoration:hammock":"file(entities/decoration/hammock)"
 	},
 	"mixintos": {
+
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
 

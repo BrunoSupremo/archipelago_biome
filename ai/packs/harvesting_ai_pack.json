@@ -1,0 +1,5 @@
+{
+	"actions" : [
+		"archipelago_biome:actions:harvest_palm_tree_adjacent_action"
+	]
+}

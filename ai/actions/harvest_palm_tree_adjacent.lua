@@ -14,10 +14,16 @@ default = stonehearth.ai.NIL
 Harvest_Palm_Tree_Adjacent.priority = 1
 
 function Harvest_Palm_Tree_Adjacent:start_thinking(ai, entity, args)
+   local direct_path_finder = _radiant.sim.create_direct_path_finder(entity)
+      :set_start_location(ai.CURRENT.location)
+      :set_end_location(ai.CURRENT.location+ (Point3.unit_y*5))
+      :set_allow_incomplete_path(true)
+      :set_reversible_path(true)
+
+   local path = direct_path_finder:get_path()
 	if args.resource:get_uri() == "archipelago_biome:trees:palm:small" then
 		ai:set_think_output({
-			resource = args.resource,
-			location = radiant.entities.get_world_location(args.resource) + (Point3.unit_y*5)
+			path=path
 			})
 	else
 		ai:reject('not a palm tree!') 
@@ -26,16 +32,8 @@ end
 
 local ai = stonehearth.ai
 return ai:create_compound_action(Harvest_Palm_Tree_Adjacent)
-:execute('stonehearth:goto_entity', {
-	entity = ai.PREV.resource,
-	stop_distance = 0
-	})
-:execute('stonehearth:goto_location', {
-	location = ai.BACK(2).location,
-	})
-:execute('stonehearth:goto_entity', {
-	entity = ai.BACK(3).resource,
-	stop_distance = 0
+:execute('stonehearth:follow_path', {
+	path = ai.PREV.path
 	})
 -- :execute('archipelago_biome:harvest_coconut', {
 -- 	resource = ai.BACK(6).item,

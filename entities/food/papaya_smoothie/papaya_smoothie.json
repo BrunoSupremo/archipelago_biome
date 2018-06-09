@@ -17,6 +17,16 @@
 		"stonehearth:item": {
 			"category": "food"
 		},
+		"stonehearth:drink": {
+			"_for":"cookmod",
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 100
+			},
+			"default": {
+				"satisfaction": 90
+			},
+			"quality": 6
+		},
 		"stonehearth:food": {
 			"stonehearth:sitting_on_chair": {
 				"satisfaction": 150

@@ -9,8 +9,13 @@
 			"placeable_on_ground": true,
 			"hide_placement_ui": true
 		},
-		"mob": {
-			"mob_collision_type": "clutter"
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
 		}
 	},
 	"entity_data": {

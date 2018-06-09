@@ -1,0 +1,237 @@
+{
+	"header" : {
+		"preview_image" : "file(shaded_hammock.png)",
+		"revision" : 2,
+		"version" : "1.0.0",
+		"display_name" : "i18n(archipelago_biome:ui.game.build_mode.building_templates.template_names.shaded_hammock)",
+		"sunk" : false,
+		"file_name" : "\/r\/mods\/archipelago_biome\/archipelago_selected\/data\/saved_objects\/building_templates\/shaded_hammock"
+	},
+	"data" : {
+		"137" : {
+			"removed" : false,
+			"origin" : {
+				"y" : 10,
+				"x" : 14,
+				"z" : 36
+			},
+			"fixtures" : {},
+			"blocks" : [
+				{
+					"max" : {
+						"y" : 4,
+						"x" : 1,
+						"z" : 1
+					},
+					"min" : {
+						"y" : 0,
+						"x" : 0,
+						"z" : 0
+					},
+					"tag" : 3823461
+				}
+			],
+			"bid" : 137,
+			"masks" : {},
+			"masked" : {},
+			"hole_region" : {},
+			"flushed" : false,
+			"__classname" : "stonehearth:BlocksData",
+			"supported" : {},
+			"supports" : {
+				"136" : true
+			},
+			"invalid_placement" : false,
+			"brush" : "\"userdata\"",
+			"color_region" : {},
+			"kind" : 0,
+			"adjacent" : {
+				"136" : true
+			}
+		},
+		"141" : {
+			"removed" : false,
+			"origin" : {
+				"y" : 10,
+				"x" : 14,
+				"z" : 30
+			},
+			"fixtures" : {},
+			"blocks" : [
+				{
+					"max" : {
+						"y" : 4,
+						"x" : 1,
+						"z" : 1
+					},
+					"min" : {
+						"y" : 0,
+						"x" : 0,
+						"z" : 0
+					},
+					"tag" : 3823461
+				}
+			],
+			"bid" : 141,
+			"masks" : {},
+			"masked" : {},
+			"hole_region" : {},
+			"flushed" : false,
+			"__classname" : "stonehearth:BlocksData",
+			"supported" : {},
+			"supports" : {
+				"136" : true
+			},
+			"invalid_placement" : false,
+			"brush" : "\"userdata\"",
+			"color_region" : {},
+			"kind" : 0,
+			"adjacent" : {
+				"136" : true
+			}
+		},
+		"136" : {
+			"removed" : false,
+			"perimeter" : [
+				{
+					"y" : 0,
+					"x" : 2
+				},
+				{
+					"y" : 0,
+					"x" : 0
+				},
+				{
+					"y" : 4,
+					"x" : 0
+				},
+				{
+					"y" : 4,
+					"x" : 2
+				}
+			],
+			"origin" : {
+				"y" : 10,
+				"x" : 11,
+				"z" : 31
+			},
+			"wall_map" : {
+				"room_id" : 136,
+				"__classname" : "stonehearth:WallMap",
+				"total_mask" : {},
+				"lookup" : {
+					"size" : 0
+				}
+			},
+			"fixtures" : {},
+			"roof_brush" : "stonehearth:build:brushes:roof:peaked_roof_oak_leaf",
+			"bid" : 136,
+			"masks" : {},
+			"masked" : {},
+			"wall_brush" : "stonehearth:build:brushes:wall:plastered_wall",
+			"options" : {
+				"drop_walls" : false,
+				"max_height" : 4,
+				"slope" : 1,
+				"gradient" : {
+					"left" : true
+				},
+				"margin" : {
+					"left" : 1,
+					"right" : 1,
+					"front" : 1,
+					"back" : 1
+				},
+				"y_offset" : 0
+			},
+			"hole_region" : {},
+			"flushed" : false,
+			"__classname" : "stonehearth:RoofData",
+			"supported" : {
+				"137" : true,
+				"141" : true
+			},
+			"supports" : {},
+			"invalid_placement" : false,
+			"fusing" : false,
+			"column_brush" : "#65573a",
+			"color_region" : {},
+			"invisible" : false,
+			"adjacent" : {
+				"137" : true,
+				"141" : true
+			}
+		},
+		"145" : {
+			"removed" : false,
+			"direction" : {
+				"y" : 1,
+				"x" : 0,
+				"z" : 0
+			},
+			"origin" : {
+				"y" : 10,
+				"x" : 14,
+				"z" : 33
+			},
+			"fixtures" : {},
+			"placement_walls" : false,
+			"masks" : {},
+			"uri" : "archipelago_biome:furniture:hammock",
+			"quality" : 1,
+			"cutter" : {},
+			"adjacent" : {},
+			"total_mask" : {},
+			"hole_region" : {},
+			"owner_bid" : -1,
+			"__classname" : "stonehearth:FixtureData",
+			"supported" : {},
+			"supports" : {},
+			"invalid_placement" : false,
+			"bounds" : [
+				{
+					"min" : {
+						"y" : 0,
+						"x" : -1,
+						"z" : -1
+					},
+					"max" : {
+						"y" : 1,
+						"x" : 2,
+						"z" : 2
+					}
+				},
+				{
+					"min" : {
+						"y" : 0,
+						"x" : 0,
+						"z" : -2
+					},
+					"max" : {
+						"y" : 2,
+						"x" : 1,
+						"z" : -1
+					}
+				},
+				{
+					"min" : {
+						"y" : 0,
+						"x" : 0,
+						"z" : 2
+					},
+					"max" : {
+						"y" : 2,
+						"x" : 1,
+						"z" : 3
+					}
+				}
+			],
+			"masked" : {},
+			"placement_ground" : true,
+			"rotation" : 180,
+			"color_region" : {},
+			"flushed" : false,
+			"bid" : 145
+		}
+	}
+}

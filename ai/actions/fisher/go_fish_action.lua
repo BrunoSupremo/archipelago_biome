@@ -7,17 +7,23 @@ GoFish.args = { }
 GoFish.version = 2
 GoFish.priority = 1
 
-function find_a_fishing_spot()
-	return stonehearth.ai:filter_from_key('archipelago_biome:go_fish', 'none', function(target)
-		return radiant.entities.get_entity_data(target, 'archipelago_biome:fishing_spot') ~= nil
-		end)
+function find_a_fishing_spot(ai_entity)
+	local player_id = ai_entity:get_player_id()
+	return stonehearth.ai:filter_from_key('archipelago_biome:go_fish', player_id,
+		function(target)
+			if target:get_player_id() ~= player_id then
+				return false
+			end
+			return radiant.entities.get_entity_data(target, 'archipelago_biome:fishing_spot') ~= nil
+		end
+		)
 end
 
 local ai = stonehearth.ai
 return ai:create_compound_action(GoFish)
 :execute('stonehearth:drop_carrying_now', {})
 :execute('stonehearth:goto_entity_type', {
-	filter_fn = find_a_fishing_spot(),
+	filter_fn = ai.CALL(find_a_fishing_spot, ai.ENTITY),
 	description = 'find a dock'
 	})
 :execute('stonehearth:reserve_entity', { entity = ai.PREV.destination_entity })

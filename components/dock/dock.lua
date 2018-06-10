@@ -73,7 +73,8 @@ end
 function ArchipelagoDock:add_fishing_spot(location)
 	-- log:error("add_fishing_spot")
 	if not self._sv.dock_spot then
-		self._sv.dock_spot = radiant.entities.create_entity("archipelago_biome:decoration:dock_spot")
+		self._sv.dock_spot = radiant.entities.create_entity("archipelago_biome:decoration:dock_spot",
+			{owner = self._entity:get_player_id()})
 		radiant.terrain.place_entity_at_exact_location(self._sv.dock_spot,
 			self:_get_dock_center(self._entity,location) +Point3.unit_y)
 		local facing = radiant.entities.get_facing(self._entity)

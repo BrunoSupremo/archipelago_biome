@@ -2,6 +2,24 @@ local Point3 = _radiant.csg.Point3
 local ArchipelagoDock = class()
 -- local log = radiant.log.create_logger('dock')
 
+local VERSIONS = {
+ZERO = 0,
+DOCK_SPOT_FOR_MULTIPLAYER = 1
+}
+
+function ArchipelagoDock:get_version()
+	return VERSIONS.DOCK_SPOT_FOR_MULTIPLAYER
+end
+
+function ArchipelagoDock:fixup_post_load(old_save_data)
+	if old_save_data.version < VERSIONS.DOCK_SPOT_FOR_MULTIPLAYER then
+		--older versions didn't have a player_id, so could endup being used by other factions
+		if self._sv.dock_spot then
+			radiant.entities.set_player_id(self._sv.dock_spot, self._entity:get_player_id())
+		end
+	end
+end
+
 function ArchipelagoDock:initialize()
 	-- log:error("initialize")
 	self._sv.dock_spot = nil

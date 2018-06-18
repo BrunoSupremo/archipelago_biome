@@ -45,8 +45,20 @@
 				}
 			}
 		},
-		"weapons": {
+		"decorations": {
 			"ordinal": 4,
+			"name": "i18n(stonehearth:jobs.herbalist.recipes.decorations_name)",
+			"recipes": {
+				"fisher_sign": {
+					"recipe": "file(fisher_sign_recipe.json)"
+				},
+				"fancy_fisher_sign": {
+					"recipe": "file(fancy_fisher_sign_recipe.json)"
+				}
+			}
+		},
+		"weapons": {
+			"ordinal": 5,
 			"name": "i18n(stonehearth:jobs.blacksmith.recipes.weapons_name)",
 			"recipes": {
 				"slap_fish": {

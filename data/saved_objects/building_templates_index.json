@@ -7,19 +7,28 @@
 					"display_name": "i18n(archipelago_biome:data.saved_objects.building_templates_index.template_tabs.categories.camp)",
 					"ordinal": 2,
 					"templates": {
-						"beach_tower": "file(building_templates/beach_tower.json)",
-						"little_pier": "file(building_templates/little_pier.json)",
-						"open_house": "file(building_templates/open_house.json)",
-						"small_beach_house": "file(building_templates/small_beach_house.json)",
-						"carpenter_house": "file(building_templates/carpenter_house.json)",
-						"tiki_bar": "file(building_templates/tiki_bar.json)",
-						"shaded_hammock": "file(building_templates/shaded_hammock.json)"
 					}
 				},
 				"boats": {
 					"display_name": "i18n(archipelago_biome:data.saved_objects.building_templates_index.template_tabs.categories.boats)",
 					"ordinal": 1,
 					"templates": {
+						"fisher_hut": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "archipelago_biome:jobs:fisher"
+							},
+							"file": "file(building_templates/fisher_hut.json)"
+						},
+						"beach_tower": "file(building_templates/beach_tower.json)",
+						"little_pier": "file(building_templates/little_pier.json)",
+						"open_house": "file(building_templates/open_house.json)",
+						"small_beach_house": "file(building_templates/small_beach_house.json)",
+						"carpenter_house": "file(building_templates/carpenter_house.json)",
+						"tiki_bar": "file(building_templates/tiki_bar.json)",
+						"shaded_hammock": "file(building_templates/shaded_hammock.json)",
+
+
 						"small_boat": "file(building_templates/small_boat.json)",
 						"double_outrigger_boat": "file(building_templates/double_outrigger_boat.json)",
 						"explorer_ship": "file(building_templates/explorer_ship.json)",

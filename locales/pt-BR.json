@@ -106,6 +106,20 @@
 				"display_name":"Caixote de peixes",
 				"description":"Pronto pra ser exportado"
 			},
+			"fancy_fisher_sign": {
+				"display_name": "Placa Chique do Pescador",
+				"description": "Uma placa chique com a marca do pescador",
+				"recipe": {
+					"flavor": "Peixes ainda melhores aqui"
+				}
+			},
+			"fisher_sign": {
+				"display_name": "Placa de Madeira do Pescador",
+				"description": "Uma placa com a marca do pescador",
+				"recipe": {
+					"flavor": "Os melhores peixes estão aqui"
+				}
+			},
 			"fruit_container":{
 				"display_name":"Caixote de Cocos",
 				"description":"Pronto pra ser exportado",
@@ -600,6 +614,8 @@
 			"build_mode":{
 				"building_templates":{
 					"template_names":{
+						"fisher_hut": "Cabana de Pesca",
+						"shaded_hammock": "Rede na Sombra",
 						"beach_tower":"Torre de Praia",
 						"little_pier":"Pequeno porto",
 						"open_house":"Casa Aberta",

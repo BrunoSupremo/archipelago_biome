@@ -60,6 +60,8 @@
 		"decoration:dock_leg":			"file(entities/decoration/dock/dock_leg.json)",
 		"decoration:dock_spot":			"file(entities/decoration/dock/dock_spot.json)",
 		"decoration:fish_container":	"file(entities/decoration/fish_container)",
+		"decoration:fancy_fisher_sign":	"file(entities/decoration/fancy_fisher_sign)",
+		"decoration:fisher_sign":		"file(entities/decoration/fisher_sign)",
 		"decoration:fruit_container":	"file(entities/decoration/fruit_container)",
 		"decoration:lei":				"file(entities/decoration/lei)",
 		"decoration:pearl_container":	"file(entities/decoration/pearl_container)",
@@ -200,6 +202,8 @@
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
 
 		"stonehearth:build:brushes": "file(data/build/building_brushes.json)",
+
+		"stonehearth:building_templates:index": "file(data/saved_objects/building_templates_index.json)",
 
 		"stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
 		"stonehearth:gm:campaigns:arcs:ambient_threats": "file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json)",

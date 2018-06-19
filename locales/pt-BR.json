@@ -781,6 +781,16 @@
 							"choice_end": "Tchau!"
 						}
 					}
+				},
+				"archipelago_free_bucket": {
+					"trigger": {
+						"goblin_donation": {
+							"title": "Um goblin com um balde se aproxima",
+							"message_1": "Ei bobão. Eu achei esse balde, mas é um lixo, então deve ser seu. Não cabe na minha cabeça, ó!<br><br><font size=-1>(Aponta pra cabeça)</font>",
+							"message_2": "Não me importo com o que vai fazer. Pode queimar se quiser, não ligo!<br><br><font size=-1>(Joga o balde no chão, chuta, e sai bravo)</font>",
+							"answer": "Obrigado?"
+						}
+					}
 				}
 			}
 		},

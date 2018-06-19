@@ -694,6 +694,7 @@
 		"gm": {
 			"anya": "Anya",
 			"captain_miranda": "Captain Miranda",
+			"goblin_bucket": "Goblin with a bucket",
 			"campaigns": {
 				"archipelago_tutorial": {
 					"trigger": {
@@ -779,6 +780,16 @@
 							"choice_3": "That is nice",
 							"message_4": "Thank you Miranda. Thanks guys. We should go.<br>Wish us luck! Bye!",
 							"choice_end": "Bye!"
+						}
+					}
+				},
+				"archipelago_free_bucket": {
+					"trigger": {
+						"goblin_donation": {
+							"title": "A goblin with a bucket approaches",
+							"message_1": "Hey fool. I found this bucket, but it is trash, so it must be yours. It does not fit in my head, see?<br><br><font size=-1>(Points to own head)</font>",
+							"message_2": "I don't care about what you do with it. You can burn it for all I care!<br><br><font size=-1>(Throws the bucket in the ground, kicks it, and then goes away angry)</font>",
+							"answer": "Thanks?"
 						}
 					}
 				}

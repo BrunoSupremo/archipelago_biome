@@ -6,7 +6,7 @@
 	"description": "i18n(archipelago_biome:entities.decoration.fisher_sign.description)",
 	"flavor": "i18n(archipelago_biome:entities.decoration.fisher_sign.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/decoration/fisher_sign/fisher_sign.png",
-	"level_requirement": 0,
+	"level_requirement": 1,
 	"ingredients": [
 		{
 			"material": "wood resource",

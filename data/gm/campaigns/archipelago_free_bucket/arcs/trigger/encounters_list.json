@@ -1,0 +1,9 @@
+{
+	"type": "arc",
+	"rarity": "common",
+	"encounters": {
+		"start": "file(encounters/start.json)",
+		"goblin_donation": "file(encounters/goblin_donation.json)",
+		"spawn_bucket": "file(encounters/spawn_bucket.json)"
+	}
+}

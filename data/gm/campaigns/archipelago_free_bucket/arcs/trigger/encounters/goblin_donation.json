@@ -1,0 +1,46 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"in_edge": "goblin_donation",
+	"can_start": {
+		"test_1": {
+			"has_carpenter": {
+				"item": "highest_job_level",
+				"type": "deny_if_greater_than",
+				"value": 0,
+				"job_alias": "stonehearth:jobs:carpenter"
+			}
+		}
+	},
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.goblin_bucket)",
+					"portrait": "file(images/goblin_bucket.png)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.message_1)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "msg2"
+						}
+					}
+				}
+			},
+			"msg2": {
+				"bulletin": {
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.title)",
+					"dialog_title": "i18n(archipelago_biome:data.gm.goblin_bucket)",
+					"portrait": "file(images/goblin_bucket.png)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.message_2)",
+					"choices": {
+						"archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.answer": {
+							"out_edge" : "spawn_bucket"
+						}
+					}
+				}
+			}
+		}
+	}
+}

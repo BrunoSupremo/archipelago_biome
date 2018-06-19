@@ -1,10 +1,13 @@
 {
 	"campaigns" : {
 		"archipelago_tutorial": {
-			"archipelago_tutorial": "file(campaigns/archipelago_tutorial/archipelago_tutorial.json)"
+			"archipelago_tutorial": "file(campaigns/archipelago_tutorial)"
 		},
 		"archipelago_campaign": {
-			"archipelago_campaign": "file(campaigns/archipelago_campaign/archipelago_campaign.json)"
+			"archipelago_campaign": "file(campaigns/archipelago_campaign)"
+		},
+		"archipelago_free_bucket": {
+			"archipelago_free_bucket": "file(campaigns/archipelago_free_bucket)"
 		}
 	}
 }

@@ -6,7 +6,6 @@
 	"description": "i18n(archipelago_biome:entities.decoration.sand_castle.recipe.description)",
 	"flavor": "i18n(archipelago_biome:entities.decoration.sand_castle.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/decoration/sand_castle/sand_castle.png",
-	"manual_unlock": true,
 	"ingredients": [
 		{
 			"material" : "clay resource",

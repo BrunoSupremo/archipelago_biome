@@ -8,7 +8,7 @@
 			"days_elapsed_requirement": {
 				"item": "days_elapsed",
 				"type": "deny_if_less_than",
-				"value": 2
+				"value": 1
 			}
 		}
 	}

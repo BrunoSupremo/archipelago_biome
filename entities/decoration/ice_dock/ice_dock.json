@@ -1,0 +1,33 @@
+{
+	"type": "entity",
+	"mixins": "file(ice_dock_ghost.json)",
+	"components": {
+		"effect_list": {
+			"default": "archipelago_biome:effects:ice_dock_bubbles"
+		},
+		"archipelago_biome:dock": {
+			"no_legs":true,
+			"no_water":true,
+			"dock_spot_offset":3
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(ice_dock_iconic.json)",
+			"ghost_form": "file(ice_dock_ghost.json)",
+			"placeable_on_walls": false,
+			"placeable_on_ground": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:hide_child_entities_from_pathfinder": true,
+		"stonehearth:net_worth": {
+			"value_in_gold": 2,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		}
+	}
+}

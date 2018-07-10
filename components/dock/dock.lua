@@ -1,6 +1,8 @@
 local Point3 = _radiant.csg.Point3
 local ArchipelagoDock = class()
--- local log = radiant.log.create_logger('dock')
+local no_legs = nil
+local no_water = nil
+local dock_spot_offset = nil
 
 local VERSIONS = {
 ZERO = 0,
@@ -21,42 +23,44 @@ function ArchipelagoDock:fixup_post_load(old_save_data)
 end
 
 function ArchipelagoDock:initialize()
-	-- log:error("initialize")
 	self._sv.dock_spot = nil
 	self.__saved_variables:mark_changed()
 end
 
 function ArchipelagoDock:activate()
-	-- log:error("activate")
+	local json = radiant.entities.get_json(self)
+	no_legs = json.no_legs
+	no_water = json.no_water
+	dock_spot_offset = json.dock_spot_offset or -1
+
 	if not self._added_to_world_listener then
 		self._added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', function()
-			-- log:error("_added_to_world_listener")
 			self:on_added_to_world()
 			end)
 	end
 	if not self._removed_from_world_listener then
 		self._removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', function()
-			-- log:error("_removed_from_world_listener")
 			self:remove_legs()
 			self:remove_fishing_spot()
 			end)
 	end
-	if not self._in_the_water_listener then
+	if not self._in_the_water_listener and not no_water then
 		self._in_the_water_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', function(e)
-			-- log:error("_in_the_water_listener")
 			self:add_fishing_spot(e.location)
 			end)
 	end
 end
 
 function ArchipelagoDock:on_added_to_world()
-	-- log:error("on_added_to_world")
 	local delayed_function = function ()
 		--for some reason, location is nil when the on_added event fires,
 		--so I have to wait 1gametick for it to be set, and it is done running inside this
 		local location = radiant.entities.get_world_grid_location(self._entity)
-		if location then
+		if location and not no_legs then
 			self:add_legs(location)
+		end
+		if location and no_water then
+			self:add_fishing_spot(location)
 		end
 		self.stupid_delay:destroy()
 		self.stupid_delay = nil
@@ -70,9 +74,9 @@ function ArchipelagoDock:_get_dock_edge(dock,location)
 	return location + offset
 end
 
-function ArchipelagoDock:_get_dock_center(dock,location)
+function ArchipelagoDock:_get_dock_spot_location(dock,location)
 	local facing = radiant.entities.get_facing(dock)
-	local offset = radiant.math.rotate_about_y_axis(-Point3.unit_z, facing):to_closest_int()
+	local offset = radiant.math.rotate_about_y_axis(Point3(0,0,dock_spot_offset), facing):to_closest_int()
 	return location + offset
 end
 
@@ -89,12 +93,11 @@ function ArchipelagoDock:get_bottom()
 end
 
 function ArchipelagoDock:add_fishing_spot(location)
-	-- log:error("add_fishing_spot")
 	if not self._sv.dock_spot then
 		self._sv.dock_spot = radiant.entities.create_entity("archipelago_biome:decoration:dock_spot",
 			{owner = self._entity:get_player_id()})
 		radiant.terrain.place_entity_at_exact_location(self._sv.dock_spot,
-			self:_get_dock_center(self._entity,location) +Point3.unit_y)
+			self:_get_dock_spot_location(self._entity,location) +Point3.unit_y)
 		local facing = radiant.entities.get_facing(self._entity)
 		radiant.entities.turn_to(self._sv.dock_spot, facing)
 		self.__saved_variables:mark_changed()
@@ -102,7 +105,6 @@ function ArchipelagoDock:add_fishing_spot(location)
 end
 
 function ArchipelagoDock:remove_fishing_spot()
-	-- log:error("remove_fishing_spot")
 	if self._sv.dock_spot then
 		radiant.entities.destroy_entity(self._sv.dock_spot)
 		self._sv.dock_spot = nil
@@ -111,7 +113,6 @@ function ArchipelagoDock:remove_fishing_spot()
 end
 
 function ArchipelagoDock:add_legs(location)
-	-- log:error("add_legs")
 	local ec = self._entity:get_component("entity_container")
 	if ec and ec:num_children()>0 then
 		return --to avoid adding it again at reload
@@ -126,7 +127,6 @@ function ArchipelagoDock:add_legs(location)
 end
 
 function ArchipelagoDock:remove_legs()
-	-- log:error("remove_legs")
 	local ec = self._entity:get_component("entity_container")
 	if ec then
 		for id, child in ec:each_child() do
@@ -137,7 +137,6 @@ function ArchipelagoDock:remove_legs()
 end
 
 function ArchipelagoDock:destroy()
-	-- log:error("destroy")
 	self:remove_legs()
 	self:remove_fishing_spot()
 	if self._added_to_world_listener then

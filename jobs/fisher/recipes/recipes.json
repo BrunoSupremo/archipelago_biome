@@ -12,6 +12,9 @@
 				},
 				"firepit": {
 					"recipe": "file(firepit_recipe.json)"
+				},
+				"ice_dock": {
+					"recipe": "file(ice_dock_recipe.json)"
 				}
 			}
 		},

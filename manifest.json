@@ -56,6 +56,7 @@
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"decoration:anchor":			"file(entities/decoration/anchor)",
+		"decoration:ice_dock":			"file(entities/decoration/ice_dock)",
 		"decoration:dock":				"file(entities/decoration/dock)",
 		"decoration:dock_leg":			"file(entities/decoration/dock/dock_leg.json)",
 		"decoration:dock_spot":			"file(entities/decoration/dock/dock_spot.json)",
@@ -79,6 +80,7 @@
 		"effects:harvest_crab_overlay":		"file(data/effects/harvest_crab_overlay)",
 		"effects:harvest_papaya_overlay":	"file(data/effects/harvest_papaya_overlay)",
 		"effects:harvest_pearl_overlay":	"file(data/effects/harvest_pearl_overlay)",
+		"effects:ice_dock_bubbles":			"file(data/effects/ice_dock_bubbles)",
 		"effects:no_water_overlay":			"file(data/effects/no_water_overlay)",
 		"effects:open_crate":				"file(data/effects/open_crate)",
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
@@ -251,8 +253,7 @@
 		"stonehearth/data/rigs/entities/humans/effects/fishing_middle.json":"file(data/rigs/entities/humans/effects/fishing_middle.json)",
 		"stonehearth/data/rigs/entities/humans/effects/fishing_end.json":	"file(data/rigs/entities/humans/effects/fishing_end.json)",
 
-		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
-		"stonehearth/ui/shell/select_settlement/select_settlement.js": "file(ui/shell/select_settlement/select_settlement.js)"
+		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)"
 	},
 	"controllers": {
 		"class:fisher": "file(jobs/fisher/fisher.lua)",

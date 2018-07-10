@@ -1,0 +1,8 @@
+{
+	"type": "arc",
+	"rarity": "common",
+	"encounters": {
+		"start": "file(encounters/start.json)",
+		"unlock_stuff": "file(encounters/unlock_stuff.json)"
+	}
+}

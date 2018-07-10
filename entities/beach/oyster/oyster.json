@@ -40,8 +40,8 @@
 		"destination": {
 			"region": [
 				{
-					"min": {"x": 0, "y": 0, "z": -1 },
-					"max": {"x": 1, "y": 1, "z": 1.5 }
+					"min": {"x": 0, "y": 0, "z":-1 },
+					"max": {"x": 1, "y": 1, "z": 2 }
 				}
 			],
 			"adjacency_flags": [
@@ -51,8 +51,19 @@
 		"region_collision_shape": {
 			"region": [
 				{
-					"min": {"x": -0.5, "y": 0, "z": -0.5 },
-					"max": {"x": 1.5, "y": 1, "z": 1.5 }
+					"min": {"x":-1, "y": 0, "z":-1 },
+					"max": {"x": 2, "y": 1, "z": 2 }
+				}
+			],
+			"region_collision_type": "platform"
+		},
+		"movement_modifier_shape": {
+			"modifier": 0,
+			"nav_preference_modifier": -1.0,
+			"region": [
+				{
+					"min": {"x":-1, "y": 0, "z":-1 },
+					"max": {"x": 2, "y": 1, "z": 2 }
 				}
 			]
 		}

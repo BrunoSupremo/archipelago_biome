@@ -102,6 +102,10 @@
 				"display_name": "Fishing Dock",
 				"description": "A platform where fishers go to fish"
 			},
+			"ice_dock": {
+				"display_name": "Ice Fishing Spot",
+				"description": "A hole in the ice where fishers go to fish"
+			},
 			"fish_container": {
 				"display_name": "Fish Container",
 				"description": "Ready to be exported"
@@ -592,6 +596,11 @@
 					"recipe_name": "Fishing Dock",
 					"description": "Place it at an edge facing the water. The fisher will recognize this as a fishing spot and use it when fishing.",
 					"flavor": "Fish loves to be under its shadow"
+				},
+				"ice_dock_recipe": {
+					"recipe_name": "Ice Fishing Spot",
+					"description": "Place over the snow and ice to make a hole. The fisher will recognize this as a fishing spot and use it when fishing.",
+					"flavor": "Fish loves to swim near the hole"
 				}
 			}
 		},

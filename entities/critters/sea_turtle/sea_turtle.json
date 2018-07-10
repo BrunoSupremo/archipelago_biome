@@ -1,6 +1,7 @@
 {
 	"type": "entity",
 	"mixins": "stonehearth:mixins:critter",
+	"player_id": "peaceful_animals",
 	"components": {
 		"render_info": {
 			"animation_table": "file(/data/rigs/entities/critters/sea_turtle)",

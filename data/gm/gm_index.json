@@ -8,6 +8,9 @@
 		},
 		"archipelago_free_bucket": {
 			"archipelago_free_bucket": "file(campaigns/archipelago_free_bucket)"
+		},
+		"archipelago_unlock_stuff": {
+			"archipelago_unlock_stuff": "file(campaigns/archipelago_unlock_stuff)"
 		}
 	}
 }

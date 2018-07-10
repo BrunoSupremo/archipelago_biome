@@ -1,13 +1,11 @@
 archipelago_biome = {
-version = 24
+version = 25
 }
 local log = radiant.log.create_logger('version')
 log:error("Archipelago Biome mod for alpha %d", archipelago_biome.version)
 
 function archipelago_biome:_on_services_init()
-	if stonehearth.world_generation:get_biome_alias() ~= "archipelago_biome:biome:archipelago" then
-		return
-	end
+	log:error("resource_call_handler modded by archipelago_biome")
 	local custom_resource_call_handler = require('call_handlers.custom_resource_call_handler')
 	local resource_call_handler = radiant.mods.require('stonehearth.call_handlers.resource_call_handler')
 	radiant.mixin(resource_call_handler, custom_resource_call_handler)

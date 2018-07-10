@@ -1,0 +1,8 @@
+{
+	"type": "encounter",
+	"encounter_type": "script",
+	"in_edge": "unlock_stuff",
+	"script_info": {
+		"script": "file(unlock_stuff.lua)"
+	}
+}

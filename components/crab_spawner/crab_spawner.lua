@@ -3,6 +3,7 @@ local Cube3 = _radiant.csg.Cube3
 local Point3 = _radiant.csg.Point3
 local CRAB = "archipelago_biome:critters:crab"
 local COLLAR = "archipelago_biome:critters:crab:collar"
+local rng = _radiant.math.get_default_rng()
 -- local log = radiant.log.create_logger('crab_spawner')
 
 function ArchipelagoCrabSpawner:initialize()
@@ -29,6 +30,12 @@ end
 
 function ArchipelagoCrabSpawner:activate_the_spawner()
 	-- log:error("activate_the_spawner")
+	local location = radiant.entities.get_world_grid_location(self._entity)
+	local block_kind = radiant.terrain.get_block_kind_at(location-Point3.unit_y)
+	if block_kind ~= "sand" then
+		return
+	end
+
 	local delayed_function = function ()
 		-- log:error("activate_the_spawner delayed")
 		if not self._sv.spawn_timer then
@@ -93,7 +100,8 @@ end
 function ArchipelagoCrabSpawner:spawn_crab(location)
 	-- log:error("spawn_crab")
 	local crab = radiant.entities.create_entity(CRAB)
-	local far_location, found = radiant.terrain.find_placement_point(location, self.radius, self.radius, crab)
+	radiant.entities.set_player_id(crab, "peaceful_animals")
+	local far_location, found = self:find_placement_point(location, self.radius/2, self.radius)
 	if found then
 		radiant.terrain.place_entity_at_exact_location(crab, far_location)
 		self:approach_task(crab,location)
@@ -101,6 +109,40 @@ function ArchipelagoCrabSpawner:spawn_crab(location)
 		-- log:error("Somehow the game didn't found a place to spawn the crab")
 		radiant.entities.destroy_entity(crab)
 	end
+end
+
+function ArchipelagoCrabSpawner:find_placement_point(location, min_radius, max_radius)
+	local function random_terrain_position()
+		local x,z
+		local max_tries = max_radius
+		repeat
+			max_tries = max_tries-1
+			x = rng:get_int(-max_radius,max_radius)
+			z = rng:get_int(-max_radius,max_radius)
+		--code aligner comment because sublime can't understand repeat until identation ¬¬
+		until max_tries<0 or (not radiant.math.in_bounds(x, -min_radius,min_radius) and not radiant.math.in_bounds(z, -min_radius,min_radius) )
+		--code aligner comment because sublime can't understand repeat until identation ¬¬
+		if max_tries <0 then
+			return false
+		end
+
+		return radiant.terrain.get_point_on_terrain(location+Point3(x,0,z))
+	end
+
+	local max_tries = max_radius
+	local new_location, is_reachable
+	repeat
+		max_tries = max_tries-1
+		new_location = random_terrain_position()
+		is_reachable = new_location and (location.y - new_location.y) >= -1 and (location.y - new_location.y) <= 1
+	--code aligner comment because sublime can't understand repeat until identation ¬¬
+	until max_tries<0 or (new_location and is_reachable)
+	--code aligner comment because sublime can't understand repeat until identation ¬¬
+
+	if max_tries <0 then
+		return false,false
+	end
+	return new_location, true
 end
 
 function ArchipelagoCrabSpawner:approach_task(crab,location)

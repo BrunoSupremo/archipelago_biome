@@ -7,7 +7,6 @@
 	"flavor": "i18n(archipelago_biome:jobs.fisher.recipes.crab_trap_recipe.flavor)",
 	"portrait": "/archipelago_biome/entities/gizmos/crab_trap/crab_trap.png",
 	"level_requirement": 2,
-	"manual_unlock": true,
 	"ingredients": [
 		{
 			"material": "wood resource",

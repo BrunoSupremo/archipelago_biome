@@ -6,7 +6,6 @@
 	"description": "i18n(archipelago_biome:entities.decoration.fruit_container.recipe.description)",
 	"flavor": "i18n(archipelago_biome:entities.decoration.fruit_container.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/decoration/fruit_container/fruit_container.png", 
-	"manual_unlock": true,
 	"ingredients": [
 		{
 			"uri": "stonehearth:containers:large_crate",

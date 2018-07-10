@@ -7,7 +7,6 @@
 	"flavor": "i18n(archipelago_biome:jobs.fisher.recipes.crab_pincer_recipe.flavor)",
 	"portrait": "/archipelago_biome/entities/weapons/crab_pincer/crab_pincer.png",
 	"level_requirement": 2,
-	"manual_unlock": true,
 	"ingredients": [
 		{
 			"uri": "archipelago_biome:food:crab",

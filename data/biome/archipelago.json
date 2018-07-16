@@ -17,30 +17,104 @@
 	},
 	"mining_loot_table": "file(archipelago_mining_loot_table.json)",
 	"generation_file": "file(archipelago_generation_data.json)",
-	"weather": [
-		{
-			"uri": "stonehearth:weather:sunny",
-			"weight": 20
+	"default_starting_season": "dry",
+	"seasons": {
+		"dry": {
+			"display_name": "i18n(archipelago_biome:data.biome.archipelago.seasons.dry.display_name)",
+			"description": "i18n(archipelago_biome:data.biome.archipelago.seasons.dry.description)",
+			"start_day": 0,
+			"weather": [
+				{
+					"uri": "stonehearth:weather:sunny",
+					"weight": 32
+				},
+				{
+					"uri": "stonehearth:weather:rain:sunny",
+					"weight": 8
+				},
+				{
+					"uri": "stonehearth:weather:rain",
+					"weight": 8
+				},
+				{
+					"uri": "stonehearth:weather:windy",
+					"weight": 8
+				},
+				{
+					"uri": "stonehearth:weather:cloudy",
+					"weight": 8
+				},
+				{
+					"uri": "stonehearth:weather:foggy",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:thunderstorm",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:lucky",
+					"weight": 0.1
+				}
+			]
 		},
-		{
-			"uri": "stonehearth:weather:rain",
-			"weight": 10
+		"hurricane": {
+			"display_name": "i18n(archipelago_biome:data.biome.archipelago.seasons.hurricane.display_name)",
+			"description": "i18n(archipelago_biome:data.biome.archipelago.seasons.hurricane.description)",
+			"start_day": 56,
+			"weather": [
+				{
+					"uri": "stonehearth:weather:thunderstorm",
+					"weight": 30
+				},
+				{
+					"uri": "stonehearth:weather:rain",
+					"weight": 20
+				},
+				{
+					"uri": "stonehearth:weather:windy",
+					"weight": 10
+				}
+			]
 		},
-		{
-			"uri": "stonehearth:weather:thunderstorm",
-			"weight": 5
-		},
-		{
-			"uri": "stonehearth:weather:windy",
-			"weight": 10
-		},
-		{
-			"uri": "stonehearth:weather:foggy",
-			"weight": 3.5
-		},
-		{
-			"uri": "stonehearth:weather:lucky",
-			"weight": 0.1
+		"wet": {
+			"display_name": "i18n(archipelago_biome:data.biome.archipelago.seasons.wet.display_name)",
+			"description": "i18n(archipelago_biome:data.biome.archipelago.seasons.wet.description)",
+			"start_day": 63,
+			"weather": [
+				{
+					"uri": "stonehearth:weather:rain:sunny",
+					"weight": 25
+				},
+				{
+					"uri": "stonehearth:weather:rain",
+					"weight": 25
+				},
+				{
+					"uri": "stonehearth:weather:windy",
+					"weight": 12
+				},
+				{
+					"uri": "stonehearth:weather:cloudy",
+					"weight": 12
+				},
+				{
+					"uri": "stonehearth:weather:foggy",
+					"weight": 3
+				},
+				{
+					"uri": "stonehearth:weather:sunny",
+					"weight": 3
+				},
+				{
+					"uri": "stonehearth:weather:thunderstorm",
+					"weight": 3
+				},
+				{
+					"uri": "stonehearth:weather:lucky",
+					"weight": 0.1
+				}
+			]
 		}
-	]
+	}
 }

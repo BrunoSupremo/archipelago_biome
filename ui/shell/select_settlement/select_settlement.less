@@ -1,14 +1,23 @@
-#selectSettlement.archipelago_biome::before {
+#selectSettlement[class="archipelago_biome:biome:archipelago"]::before {
 	content:"";
 	position: absolute;
 	left:100px;
-	top:130px;
+	top:165px;
 	width: 1052px;
 	height: 665px;
 	background: url('images/x_map.png');
-	opacity:0.5;
+	opacity:0.3;
 }
-#selectSettlement.archipelago_biome {
+#selectSettlement[class="archipelago_biome:biome:archipelago"] {
+	input[type=radio]#dry:checked + label {
+		background-image: url(images/radio_dry.png)
+	}
+	input[type=radio]#hurricane:checked + label {
+		background-image: url(images/radio_hurricane.png)
+	}
+	input[type=radio]#wet:checked + label {
+		background-image: url(images/radio_wet.png)
+	}
 	#scroll {
 		#vegetation  {
 			.bullet {

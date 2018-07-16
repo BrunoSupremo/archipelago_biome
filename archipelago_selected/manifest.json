@@ -14,12 +14,6 @@
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":	"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 
-		"archipelago_biome/jobs/cook/recipes/fruit_container_recipe.json":	"file(jobs/unlock_recipe.json)",
-		"archipelago_biome/jobs/fisher/recipes/pearl_container_recipe.json":"file(jobs/unlock_recipe.json)",
-		"archipelago_biome/jobs/fisher/recipes/crab_pincer_recipe.json":	"file(jobs/unlock_recipe.json)",
-		"archipelago_biome/jobs/fisher/recipes/crab_trap_recipe.json":		"file(jobs/unlock_recipe.json)",
-		"archipelago_biome/jobs/potter/recipes/sand_castle_recipe.json":	"file(jobs/unlock_recipe.json)",
-
 		"stonehearth:mixins:tree": "archipelago_biome:mixins:foreign_tree",
 		"stonehearth/entities/trees/acacia_tree/sapling_acacia_tree/sapling_acacia_tree_iconic.json": "archipelago_biome:mixins:foreign_tree",
 		"stonehearth/entities/trees/oak_tree/sapling_oak_tree/sapling_oak_tree_iconic.json": "archipelago_biome:mixins:foreign_tree",

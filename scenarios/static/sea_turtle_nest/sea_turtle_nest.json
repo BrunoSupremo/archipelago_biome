@@ -1,7 +1,8 @@
 {
-	"name" : "crab_nest",
+	"name" : "sea_turtle_nest",
 	"category" : "beachlife",
 	"habitat_types" : ["plains"],
+	"biomes": ["archipelago_biome:biome:archipelago"],
 	"size" : {
 		"width" : 16,
 		"length" : 16
@@ -16,6 +17,6 @@
 			"min" : 1,
 			"max" : 4
 		},
-		"critter_type" : [ "archipelago_biome:critters:crab" ]
+		"critter_type" : [ "archipelago_biome:critters:sea_turtle" ]
 	}
 }

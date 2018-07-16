@@ -1,15 +1,9 @@
 {
 	"type" : "encounter",
-	"encounter_type" : "wait_for_requirements_met",
+	"encounter_type" : "wait",
 	"in_edge"  : "start",
 	"out_edge" : "goblin_donation",
-	"wait_for_requirements_met_info": {
-		"requirements": {
-			"days_elapsed_requirement": {
-				"item": "days_elapsed",
-				"type": "deny_if_less_than",
-				"value": 1
-			}
-		}
+	"wait_info" :  {
+		"duration" : "24h"
 	}
 }

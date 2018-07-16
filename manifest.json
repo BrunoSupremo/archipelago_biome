@@ -235,6 +235,8 @@
 
 		"stonehearth:resources:wood:palm_log":"file(entities/resources/wood/palm_log)",
 
+		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
+
 		"stonehearth:traits_index":"file(data/traits/traits_index.json)",
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",

@@ -1,0 +1,18 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["archipelago_biome:biome:archipelago"],
+	"name": "gully_archipelago",
+	"category": "terrain_feature_common",
+	"unique" : false,
+	"size": {
+		"width": 128,
+		"length": 128
+	},
+	"habitat_types": ["mountains","foothills"],
+	"overwrite_occupied_size": 5,
+	"weight": 1,
+	"data": {
+		"brush" : "/archipelago_biome/data/models/landmark/128x_gully_archipelago.qb",
+		"landmark_block_types": "stonehearth:landmark_blocks"
+	}
+}

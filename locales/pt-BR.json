@@ -675,6 +675,20 @@
 				"description": "Água em todo canto, ou areia, o que for mais irritante",
 				"random_location_names": {
 					"000": "Arquipélago Mauna Loa"
+				},
+				"seasons":{
+					"dry":{
+						"display_name":"Estação Seca",
+						"description":"Estação seca no Arquipélago é uma estação ensolarada, durando longos oito meses. Perfeito pra férias, mas fortes ventos e chuvas também podem acontecer.",
+					},
+					"hurricane":{
+						"display_name":"Temporada de Furacões",
+						"description":"Temporada de furacões no Arquipélago é uma estação perigosa, durando apenas um mês. Ventanias e tempestades no melhor dos casos.",
+					},
+					"wet":{
+						"display_name":"Estação Úmida",
+						"description":"Estação úmida no Arquipélago é uma estação com chuvas, durando três meses. Chuva e vento, raramente dias de sol",
+					}
 				}
 			}
 		},

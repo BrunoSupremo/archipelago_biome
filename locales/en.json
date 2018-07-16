@@ -675,6 +675,20 @@
 				"description": "Water everywhere, or sand, whichever is disliked most",
 				"random_location_names": {
 					"000": "Mauna Loa Archipelago"
+				},
+				"seasons":{
+					"dry":{
+						"display_name":"Dry Season",
+						"description":"Dry season in the Archipelago is a sunny season, lasting long eight months. Perfect for vacations, though some strong wind and rain can also happen.",
+					},
+					"hurricane":{
+						"display_name":"Hurricane Season",
+						"description":"Hurricane season in the Archipelago is a dangerous season, lasting only one month. Windy and stormy at best.",
+					},
+					"wet":{
+						"display_name":"Wet Season",
+						"description":"Wet season in the archipelago is a rainy season, lasting three months. Rain and wind, rarely sunny days",
+					}
 				}
 			}
 		},

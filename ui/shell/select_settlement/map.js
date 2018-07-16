@@ -71,7 +71,7 @@ $.widget( "stonehearth.stonehearthMap", {
    suspended: function() {
       var self = this;
 
-      return self._suspended;   
+      return self._suspended;
    },
 
    clearCrosshairs: function() {
@@ -82,6 +82,7 @@ $.widget( "stonehearth.stonehearthMap", {
 
    _create: function() {
       var self = this;
+
       self._suspended = false;
       map_icons = new Image();
       map_icons.src = '/archipelago_biome/ui/shell/select_settlement/images/map_icons.png';
@@ -103,24 +104,24 @@ $.widget( "stonehearth.stonehearthMap", {
       self.mapHeight = grid.length * self.options.cellSize;
 
       canvas
-      .addClass('mapCanvas')
-      .attr('width', self.mapWidth)
-      .attr('height', self.mapHeight);
+         .addClass('mapCanvas')
+         .attr('width', self.mapWidth)
+         .attr('height', self.mapHeight);
 
       overlay
-      .addClass('mapCanvas')
-      .addClass('noCursor')
-      .attr('id', 'overlay')
-      .attr('width', self.mapWidth)
-      .attr('height', self.mapHeight)
+         .addClass('mapCanvas')
+         .addClass('noCursor')
+         .attr('id', 'overlay')
+         .attr('width', self.mapWidth)
+         .attr('height', self.mapHeight)
 
-      .click(function(e) {
-         self._onMouseClick(self, e);
-      })
+         .click(function(e) {
+            self._onMouseClick(self, e);
+         })
 
-      .mousemove(self, function(e) {
-         self._onMouseMove(self, e);
-      });
+         .mousemove(self, function(e) {
+            self._onMouseMove(self, e);
+         });
 
       self.mapContext = canvas[0].getContext('2d');
       self.overlayContext = overlay[0].getContext('2d');
@@ -186,16 +187,16 @@ $.widget( "stonehearth.stonehearthMap", {
       // Clear the bounding box
       var boundingBoxRadius = cellSize * self.options.settlementRadius;
       context.clearRect(lineX - boundingBoxRadius, lineY - boundingBoxRadius,
-         boundingBoxRadius * 2, boundingBoxRadius * 2
+            boundingBoxRadius * 2, boundingBoxRadius * 2
          );
 
       context.globalAlpha = 0.8;
       context.fillStyle = '#ffc000';
       context.fillRect(
-         cellX * cellSize, cellY * cellSize, 
+         cellX * cellSize, cellY * cellSize,
          cellSize, cellSize
-         );
-      
+      );
+
       context.lineWidth = 1.0;
       context.setLineDash([2]);
 
@@ -203,25 +204,25 @@ $.widget( "stonehearth.stonehearthMap", {
          context,
          0, lineY,
          lineX - cellSize/2, lineY
-         );
+      );
 
       self._drawLine(
          context,
          lineX + cellSize/2, lineY,
          self.mapWidth, lineY
-         );
+      );
 
       self._drawLine(
          context,
          lineX, 0,
          lineX, lineY - cellSize/2
-         );
+      );
 
       self._drawLine(
          context,
          lineX, lineY + cellSize/2,
          lineX, self.mapHeight
-         );
+      );
 
       context.globalAlpha = 1.0;
    },
@@ -284,9 +285,9 @@ $.widget( "stonehearth.stonehearthMap", {
 
       context.fillStyle = color ? color : '#000000';
       context.fillRect(
-         x, y, 
+         x, y,
          cellSize, cellSize
-         );
+      );
 
       //var cellHeight = self._heightAt(cellX, cellY)
       context.lineWidth = 0.4;
@@ -298,7 +299,7 @@ $.widget( "stonehearth.stonehearthMap", {
             context,
             x, y,
             x + cellSize, y
-            );
+         );
 
          //xxx, shading above me
          context.globalAlpha = 0.3;
@@ -306,7 +307,7 @@ $.widget( "stonehearth.stonehearthMap", {
          context.fillRect(
             x, y,
             cellSize, cellSize * -0.4
-            );
+         );
          context.globalAlpha = 1.0;
       }
       if(self._isHigher(cellX, cellY + 1,terrain_code)) {
@@ -315,7 +316,7 @@ $.widget( "stonehearth.stonehearthMap", {
             context,
             x, y + cellSize,
             x + cellSize, y + cellSize
-            );
+         );
       }
       if(self._isHigher(cellX - 1, cellY,terrain_code)) {
          // east, line on my left
@@ -323,7 +324,7 @@ $.widget( "stonehearth.stonehearthMap", {
             context,
             x, y,
             x, y + cellSize
-            );
+         );
       }
       if(self._isHigher(cellX + 1, cellY,terrain_code)) {
          // west, line on my right
@@ -331,7 +332,7 @@ $.widget( "stonehearth.stonehearthMap", {
             context,
             x + cellSize, y,
             x + cellSize, y + cellSize
-            );
+         );
       }
 
       // overlay forest
@@ -344,9 +345,9 @@ $.widget( "stonehearth.stonehearthMap", {
          context.globalAlpha = 0.6;
 
          context.fillRect(
-            x + margin, y + margin, 
+            x + margin, y + margin,
             cellSize - margin*2, cellSize - margin*2
-            );
+         );
          context.globalAlpha = 1.0;
       }
    },
@@ -379,12 +380,12 @@ $.widget( "stonehearth.stonehearthMap", {
       context.beginPath();
       context.moveTo(x1, y1);
       context.lineTo(x2, y2);
-      context.stroke();     
+      context.stroke();
    },
 
    _drawRect: function(context, x1, y1, width, height) {
       context.rect(x1, y1, width, height);
-      context.stroke();     
+      context.stroke();
    },
 
    _enableCursor: function() {

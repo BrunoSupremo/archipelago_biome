@@ -6,6 +6,7 @@
 		"type": "trigger_many",
 		"out_edges": [
 			"introduction_dialogue",
+			"introduction_dialogue_na",
 			"add_crops_and_recipes"
 		]
 	},

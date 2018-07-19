@@ -2,11 +2,11 @@
 	"type": "encounter",
 	"encounter_type": "dialog_tree",
 	"rarity": "common",
-	"in_edge": "introduction_dialogue",
+	"in_edge": "introduction_dialogue_na",
 	"can_start": {
 		"test_1": {
 			"kingdom_check": {
-				"type": "deny_if",
+				"type": "deny_if_not",
 				"item": "kingdom",
 				"value": "northern_alliance:kingdoms:northern_alliance"
 			}
@@ -20,7 +20,7 @@
 					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
 					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_start)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.na_message_start)",
 					"choices": {
 						"stonehearth:ui.game.common.decline": {
 							"next_node": "decline"
@@ -36,7 +36,7 @@
 					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
 					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_decline)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.na_message_decline)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {
 							"out_edge": "arc:finish"
@@ -101,7 +101,7 @@
 					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.title)",
 					"dialog_title": "i18n(archipelago_biome:data.gm.captain_miranda)",
 					"portrait": "file(images/captain_miranda.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.message_bye)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_tutorial.trigger.introduction.na_message_bye)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {
 							"out_edge": "arc:finish"

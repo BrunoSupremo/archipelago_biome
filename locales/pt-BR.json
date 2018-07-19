@@ -728,7 +728,11 @@
 							"message_trees":"Vai começar procurando madeira e comida, né?<br>Aqui temos os dois com palmeiras!<br>Quando você colher elas vai pegar cocos. Mas eles não enchem muito<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
 							"message_oysters":"Ah, e essas ostras gigantes são incríveis. Apenas um pescador pode colhê-las e suas pérolas vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
 							"message_broken_boats":"Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
-							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento bom e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
+							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento bom e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte.",
+
+							"na_message_start": "Ei caras da neve! Como eu sei que você veio da neve? Olhe para você, completamente vestido para neve!..<br>A propósito, sou Miranda. Quer ajuda? <br> Eu posso falar sobre algumas coisas como você é novo aqui nas ilhas.",
+							"na_message_decline": "Bem, tome cuidado.<br>Boa sorte. E tente pegar leve nas roupas pesadas!",
+							"na_message_bye": "Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo. Espero que o sol não tenha te cozido em suas roupas pesadas até lá!<br>Preciso aproveitar este vento bom e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
 						}
 					}
 				},

@@ -2,17 +2,16 @@
 	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
 	"biomes": ["archipelago_biome:biome:archipelago"],
 	"name": "buried_treasure",
-	"category": "terrain_feature_common",
+	"category": "archipelago_landmark",
 	"unique" : false,
 	"size": {
 		"width": 8,
 		"length": 8
 	},
 	"habitat_types": ["plains"],
-	"overwrite_occupied_size": 2,
-	"weight": 1,
+	"weight": 10,
 	"data": {
 		"brush" : "/archipelago_biome/data/models/landmark/8x_buried_treasure.qb",
-		"landmark_block_types": "stonehearth:landmark_blocks"
+		"landmark_block_types": "archipelago_biome:landmark_blocks"
 	}
 }

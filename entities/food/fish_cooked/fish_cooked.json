@@ -49,6 +49,9 @@
 		},
 		"stonehearth:appeal": {
 			"appeal": 1
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
 		}
 	}
 }

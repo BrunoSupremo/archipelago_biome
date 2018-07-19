@@ -116,6 +116,11 @@
 		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 		"fisher:firepit":	"file(jobs/fisher/fisher_firepit)",
 
+		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
+
+		"loot_bag:archipelago:mountain_tree_random": "file(data/loot_bag/mountain_tree_random.json)",
+		"loot_bag:archipelago:beach_tree_random": "file(data/loot_bag/beach_tree_random.json)",
+
 		"mixins:encounter:octopus_raid":	"file(mixins/encounter/mixin_octopus_raid.json)",
 		"mixins:encounter:cocoling_raid":	"file(mixins/encounter/mixin_cocoling_raid.json)",
 		"mixins:foreign_tree":"file(mixins/foreign_tree)",
@@ -232,6 +237,8 @@
 		"stonehearth/jobs/weaver/recipes/recipes.json":		"file(jobs/weaver/recipes)",
 
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
+
+		"stonehearth:loadouts": "file(data/loadouts/loadouts.json)",
 
 		"stonehearth:resources:wood:palm_log":"file(entities/resources/wood/palm_log)",
 

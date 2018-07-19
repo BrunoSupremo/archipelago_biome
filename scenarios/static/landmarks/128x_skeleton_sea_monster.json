@@ -1,0 +1,19 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["archipelago_biome:biome:archipelago"],
+	"name": "skeleton_sea_monster",
+	"category": "archipelago_water_landmark",
+	"unique" : false,
+	"size": {
+		"width": 128,
+		"length": 128
+	},
+	"habitat_types": ["water"],
+	"overwrite_occupied_size": 1,
+	"weight": 1,
+	"data": {
+		"brush" : "/archipelago_biome/data/models/landmark/128x_skeleton_sea_monster.qb",
+		"brush_mask" : "/archipelago_biome/data/models/landmark/128x_skeleton_sea_monster_mask.qb",
+		"landmark_block_types": "archipelago_biome:landmark_blocks"
+	}
+}

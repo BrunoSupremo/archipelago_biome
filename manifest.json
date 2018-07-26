@@ -22,6 +22,9 @@
 		"task_groups:crab_movement": "file(ai/task_groups/crab_task_group.lua)",
 		"task_groups:fishing": "file(ai/task_groups/fishing_task_group.lua)",
 
+		"archer:abilities:fish_arrow": "file(entities/weapons/arrow/fish_arrow/fish_arrow_skill.json)",
+
+		"armor:fish_quiver":"file(entities/armor/fish_quiver)",
 		"armor:turtle_shield":"file(entities/armor/turtle_shield)",
 
 		"beach:bottle":		"file(entities/beach/bottle)",
@@ -33,6 +36,8 @@
 
 		"biome:archipelago": "file(data/biome/archipelago.json)",
 
+		"buffs:archer:fish_arrow": "file(jobs/archer/archer_buffs/fish_arrow.json)",
+
 		"captain_miranda":	"file(entities/humans/captain_miranda)",
 		"anya":				"file(entities/humans/anya)",
 
@@ -40,6 +45,7 @@
 		"color_map:tree":	"file(data/materials/color_maps/tree_color_map.json)",
 
 		"commands:open_crate":"file(data/commands/open_crate)",
+		"commands:archer_arrows:fish": "file(data/commands/archer_arrows/fish_arrows.json)",
 
 		"construction:bead_door": "file(entities/construction/bead_door)",
 		"construction:porthole": "file(entities/construction/porthole)",
@@ -117,6 +123,7 @@
 		"fisher:firepit":	"file(jobs/fisher/fisher_firepit)",
 
 		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
+		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)",
 
 		"loot_bag:archipelago:mountain_tree_random": "file(data/loot_bag/mountain_tree_random.json)",
 		"loot_bag:archipelago:beach_tree_random": "file(data/loot_bag/beach_tree_random.json)",
@@ -198,13 +205,13 @@
 
 		"weapons:bubble_shot":	"file(entities/weapons/bubble_shot)",
 		"weapons:crab_pincer":	"file(entities/weapons/crab_pincer)",
-		"weapons:slap_fish":	"file(entities/weapons/slap_fish)"
+		"weapons:slap_fish":	"file(entities/weapons/slap_fish)",
+		"weapons:fish_arrow":	"file(entities/weapons/fish_arrow)"
 	},
 	"deprecated_aliases": {
 		"decoration:hammock":"file(entities/decoration/hammock)"
 	},
 	"mixintos": {
-
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
 
@@ -231,6 +238,7 @@
 		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/cook/recipes/recipes.json":		"file(jobs/cook/recipes)",
 		"stonehearth/jobs/engineer/recipes/recipes.json":	"file(jobs/engineer/recipes)",
+		"stonehearth/jobs/geomancer/recipes/geomancer_recipes.json":"file(jobs/geomancer/recipes)",
 		"stonehearth/jobs/herbalist/recipes/recipes.json":	"file(jobs/herbalist/recipes)",
 		"stonehearth/jobs/mason/recipes/recipes.json":		"file(jobs/mason/recipes)",
 		"stonehearth/jobs/potter/recipes/recipes.json":		"file(jobs/potter/recipes)",
@@ -243,6 +251,28 @@
 		"stonehearth:resources:wood:palm_log":"file(entities/resources/wood/palm_log)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
+
+		"stonehearth/scenarios/static/beetle_nest/beetle_nest.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/doodles_nest/doodles_nest.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/duckduck_nest/duckduck_nest.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/ostrich_nest/ostrich_nest.json":"file(scenarios/static/add_to_archipelago_too.json)",
+
+		"stonehearth/scenarios/static/landmarks/64x_cave_lake.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_bad_omen.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_lucky_strike.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_small_strike.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_pattern_lucky_snake.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_pattern_ugly_duckling.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_sanctuary.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_ruin_building.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_ruin_building_cellar.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_ruin_building_farm.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_giant_sleeping.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_ruin_town_farming.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_ruin_town_undead.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_1.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_2.json":"file(scenarios/static/add_to_archipelago_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_3.json":"file(scenarios/static/add_to_archipelago_too.json)",
 
 		"stonehearth:traits_index":"file(data/traits/traits_index.json)",
 

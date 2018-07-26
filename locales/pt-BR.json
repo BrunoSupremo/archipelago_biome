@@ -8,6 +8,10 @@
 	},
 	"entities":{
 		"armor":{
+			"fish_quiver": {
+				"display_name": "Aljava de Peixe",
+				"description": "Inimigos perdem a coragem quando um peixe voador atinge seu rosto"
+			},
 			"turtle_shield":{
 				"display_name":"Escudo Tartaruga",
 				"description":"Um casco utilizado como escudo"
@@ -306,6 +310,12 @@
 				"description":"Irá atrair e capturar caranguejos."
 			}
 		},
+		"landmark":{
+			"summon_stone_tropical_island":{
+				"display_name": "Ilha Tropical",
+				"description": "Invoca uma mini ilha inteira."
+			}
+		},
 		"monsters":{
 			"cocoling":{
 				"display_name":"Cocoling",
@@ -492,6 +502,10 @@
 			"crab_pincer":{
 				"display_name":"Garra de Caranguejo",
 				"description":"Sinta o beliscão!"
+			},
+			"fish_arrow": {
+				"display_name": "Flecha de Peixe",
+				"description": "Ninguém é corajoso quando o peixe voa."
 			}
 		},
 		"humans": {
@@ -510,6 +524,14 @@
 		}
 	},
 	"jobs":{
+		"archer":{
+			"archer_buffs":{
+				"fish_arrow":{
+					"display_name":"Desorientado",
+					"description":"Coragem abaixada pelo peixe na cara"
+				}
+			}
+		},
 		"cook":{
 			"recipes": {
 				"tropical_recipes_name":"Receitas Tropicais"
@@ -519,7 +541,7 @@
 			"fisher_description":{
 				"display_name":"Pescador",
 				"description":"Irá pegar caranguejos, colher pérolas, e fazer outras tarefas relacionadas a água",
-				"requirements":"Feito por seu principal artesão",
+				"requirements":"Feito pelo Carpinteiro",
 				"level_1":{
 					"perk_name":"Pescando",
 					"perk_description":"O pescador pode criar ferramentas para ajudar a pegar peixes."
@@ -527,6 +549,10 @@
 				"level_2":{
 					"perk_name":"Caranguejos",
 					"perk_description":"O pescador agora pode criar e colocar armadilhas para capturar caranguejos."
+				},
+				"level_3": {
+					"perk_name": "Cozinhando",
+					"perk_description": "Com uma fogueirinha, o pescador consegue cozinhar receitas básicas."
 				}
 			},
 			"fisher_bucket":{
@@ -572,6 +598,10 @@
 					"description":"É mais fácil vender os peixes assim.",
 					"flavor":"Pronto pra ser exportado"
 				},
+				"fish_quiver_recipe": {
+					"recipe_name": "Aljava de Peixe",
+					"description": "Os inimigos perderão a coragem, enojados e desorientados pelos peixes que acabaram de bater em seu rosto."
+				},
 				"input_fish_rack_recipe": {
 					"recipe_name": "Cabide de peixes",
 					"description": "Um recipiente para peixes, para manter os cozinheiros abastecidos.",
@@ -601,6 +631,14 @@
 					"recipe_name": "Local de Pesca de Gelo",
 					"description": "Coloque sobre a neve e gelo para fazer um buraco. O pescador irá reconhecer isso como um ponto de pesca e usá-lo na pesca.",
 					"flavor": "Peixes gostam de nadar perto do buraco"
+				}
+			}
+		},
+		"geomancer": {
+			"recipes": {
+				"summon_stone_tropical_island_recipe":{
+					"recipe_name": "Ilha Tropical",
+					"description": "Invoca uma mini ilha inteira."
 				}
 			}
 		},
@@ -705,6 +743,12 @@
 			"open_crate":{
 				"display_name":"Abrir Caixote",
 				"description":"Martelar até quebrar"
+			},
+			"archer_arrows":{
+				"fish_arrows": {
+					"display_name": "Usando Flechas de Peixe",
+					"description": "Atualmente usando flechas de peixe, o que reduz a coragem dos inimigos. Clique para trocar entre os tipos de flechas."
+				}
 			}
 		},
 		"monster_tuning":{

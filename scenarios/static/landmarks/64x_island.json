@@ -9,7 +9,6 @@
 		"length": 64
 	},
 	"habitat_types": ["water"],
-	"overwrite_occupied_size": 1,
 	"weight": 1,
 	"data": {
 		"brush" : "/archipelago_biome/data/models/landmark/64x_island.qb",

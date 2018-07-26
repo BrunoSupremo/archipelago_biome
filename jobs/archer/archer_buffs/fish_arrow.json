@@ -1,0 +1,16 @@
+{
+	"type": "buff",
+	"display_name": "i18n(archipelago_biome:jobs.archer.archer_buffs.fish_arrow.display_name)",
+	"description": "i18n(archipelago_biome:jobs.archer.archer_buffs.fish_arrow.description)",
+	"icon": "file(fish_in_face.png)",
+	"duration": "20m",
+	"repeat_add_action": "stack_and_refresh",
+	"modifiers": {
+		"courage": {
+			"multiply": 0.5
+		},
+		"menace": {
+			"multiply": 0.5
+		}
+	}
+}

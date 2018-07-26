@@ -55,7 +55,7 @@
 			"material_tags": "food prepared_food papaya fruit vegetarian stockpile_prepared_food coconut drink"
 		},
 		"stonehearth:appeal": {
-			"appeal": 4
+			"appeal": 10
 		},
 		"stonehearth:item_quality": {
 			"variable_quality": true

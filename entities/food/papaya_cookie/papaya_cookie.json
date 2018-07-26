@@ -48,7 +48,7 @@
 			"material_tags": "food prepared_food coconut papaya cookie stockpile_prepared_food vegetarian fruit"
 		},
 		"stonehearth:appeal": {
-			"appeal": 4
+			"appeal": 9
 		},
 		"stonehearth:item_quality": {
 			"variable_quality": true

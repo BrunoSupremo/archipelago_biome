@@ -1,0 +1,11 @@
+{
+	"craftable_recipes" : {
+		"landmark": {
+			"recipes": {
+				"tropical_island": {
+					"recipe": "file(tropical_island_recipe.json)"
+				}
+			}
+		}
+	}
+}

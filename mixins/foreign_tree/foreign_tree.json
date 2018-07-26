@@ -5,6 +5,13 @@
 			"material_maps": [
 				"/archipelago_biome/data/materials/material_maps/tree_material_map.json"
 			]
+		},
+		"stonehearth:seasonal_model_switcher": {
+			"archipelago_biome:biome:archipelago": {
+				"dry": "spring",
+				"hurricane": "spring",
+				"wet": "spring"
+			}
 		}
 	}
 }

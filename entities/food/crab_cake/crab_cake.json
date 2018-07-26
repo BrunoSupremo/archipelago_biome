@@ -45,7 +45,7 @@
 			"material_tags": "food prepared_food crab stockpile_prepared_food meat"
 		},
 		"stonehearth:appeal": {
-			"appeal": 3
+			"appeal": 4
 		},
 		"stonehearth:item_quality": {
 			"variable_quality": true

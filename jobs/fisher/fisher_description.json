@@ -69,6 +69,17 @@
 					"level": 2
 				}
 			]
+		},
+		"3": {
+			"perks": [
+				{
+					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_3.perk_name)",
+					"id": "crafter_recipe_unlock_3",
+					"icon": "file(images/food_perk.png)",
+					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_3.perk_description)",
+					"level": 3
+				}
+			]
 		}
 	}
 }

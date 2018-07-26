@@ -1,0 +1,19 @@
+{
+	"type": "entity",
+	"components": {
+		"stonehearth:equipment_piece": {}
+	},
+	"entity_data": {
+		"stonehearth:buffs": {
+			"inflictable_debuffs": {
+				"infection": {
+					"uri": "archipelago_biome:buffs:archer:fish_arrow",
+					"chance": 0.75
+				}
+			}
+		},
+		"stonehearth:projectile_data": {
+			"projectile_uri": "archipelago_biome:weapons:fish_arrow"
+		}
+	}
+}

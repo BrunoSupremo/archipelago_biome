@@ -69,6 +69,9 @@
 				},
 				"crab_pincer": {
 					"recipe": "file(crab_pincer_recipe.json)"
+				},
+				"fish_quiver": {
+					"recipe": "file(fish_quiver_recipe.json)"
 				}
 			}
 		}

@@ -8,6 +8,10 @@
 	},
 	"entities": {
 		"armor": {
+			"fish_quiver": {
+				"display_name": "Fish Quiver",
+				"description": "Enemies lose courage when a flying fish hits their face"
+			},
 			"turtle_shield": {
 				"display_name": "Turtle Shield",
 				"description": "A turtle shell used as a shield"
@@ -306,6 +310,12 @@
 				"description": "Will attract and capture crabs."
 			}
 		},
+		"landmark":{
+			"summon_stone_tropical_island":{
+				"display_name": "Tropical Island",
+				"description": "Summon a whole mini island."
+			}
+		},
 		"monsters": {
 			"cocoling": {
 				"display_name": "Cocoling",
@@ -492,6 +502,10 @@
 			"crab_pincer": {
 				"display_name": "Crab Pincer",
 				"description": "Feel the pinch!"
+			},
+			"fish_arrow": {
+				"display_name": "Fish Arrow",
+				"description": "When fish flies, no one is courageous."
 			}
 		},
 		"humans": {
@@ -510,6 +524,14 @@
 		}
 	},
 	"jobs": {
+		"archer":{
+			"archer_buffs":{
+				"fish_arrow":{
+					"display_name":"Disoriented",
+					"description":"Courage lowered from fish in the face"
+				}
+			}
+		},
 		"cook": {
 			"recipes": {
 				"tropical_recipes_name": "Tropical Recipes"
@@ -519,7 +541,7 @@
 			"fisher_description": {
 				"display_name": "Fisher",
 				"description": "Will capture crabs, harvest pearls, and do other water related works",
-				"requirements": "Crafted by your main crafter",
+				"requirements": "Crafted by Carpenter",
 				"level_1": {
 					"perk_name": "Fishing",
 					"perk_description": "The fisher can craft tools to help catching fish."
@@ -527,6 +549,10 @@
 				"level_2": {
 					"perk_name": "Crabs",
 					"perk_description": "The fisher can now craft and place traps to capture crabs."
+				},
+				"level_3": {
+					"perk_name": "Cooking",
+					"perk_description": "With a small firepit, the fisher can cook basic recipes."
 				}
 			},
 			"fisher_bucket": {
@@ -572,6 +598,10 @@
 					"description": "Easier to sell your fish this way.",
 					"flavor": "Ready to be exported"
 				},
+				"fish_quiver_recipe": {
+					"recipe_name": "Fish Quiver",
+					"description": "Enemies will lose courage, disgusted and disoriented by the fish that just hit their face."
+				},
 				"input_fish_rack_recipe": {
 					"recipe_name": "Fish Rack",
 					"description": "A container for fish, to help keep crafters supplied.",
@@ -601,6 +631,14 @@
 					"recipe_name": "Ice Fishing Spot",
 					"description": "Place over the snow and ice to make a hole. The fisher will recognize this as a fishing spot and use it when fishing.",
 					"flavor": "Fish loves to swim near the hole"
+				}
+			}
+		},
+		"geomancer": {
+			"recipes": {
+				"summon_stone_tropical_island_recipe":{
+					"recipe_name": "Tropical Island",
+					"description": "Summon a whole mini island."
 				}
 			}
 		},
@@ -705,6 +743,12 @@
 			"open_crate": {
 				"display_name": "Open Crate",
 				"description": "Hammer it until it breaks"
+			},
+			"archer_arrows":{
+				"fish_arrows": {
+					"display_name": "Using Fish Arrows",
+					"description": "Currently using fish arrows, which lowers enemies courage. Click to swap between arrow types."
+				}
 			}
 		},
 		"monster_tuning": {

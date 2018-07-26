@@ -25,13 +25,40 @@
 		"stonehearth:rabbit:statue": "file(entities/rabbit/rabbit_statue)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
-		"stonehearth:scenarios:static:critter_nest":"file(scenarios/static/critter_nest/critter_nest.json)",
-		"stonehearth:scenarios:static:fox_nest":		"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
-		"stonehearth:scenarios:static:rabbit_nest":		"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
-		"stonehearth:scenarios:static:racoon_nest":		"file(scenarios/static/rabbit_nest/rabbit_nest.json)",
-		"stonehearth:scenarios:static:squirrel_nest":	"file(scenarios/static/rabbit_nest/rabbit_nest.json)"
+		"stonehearth:scenarios:static:critter_nest":"file(scenarios/static/remove_from_plains_too.json)",
+		"stonehearth:scenarios:static:fox_nest":	"file(scenarios/static/remove_from_plains_too.json)",
+		"stonehearth:scenarios:static:rabbit_nest":	"file(scenarios/static/remove_from_plains_too.json)",
+		"stonehearth:scenarios:static:racoon_nest":	"file(scenarios/static/remove_from_plains_too.json)",
+		"stonehearth:scenarios:static:squirrel_nest":"file(scenarios/static/remove_from_plains_too.json)",
+		"stonehearth/scenarios/static/beetle_nest/beetle_nest.json":"file(scenarios/static/remove_from_plains_too.json)",
+		"stonehearth/scenarios/static/doodles_nest/doodles_nest.json":"file(scenarios/static/remove_from_plains_too.json)",
+		"stonehearth/scenarios/static/duckduck_nest/duckduck_nest.json":"file(scenarios/static/remove_from_plains_too.json)",
+		"stonehearth/scenarios/static/ostrich_nest/ostrich_nest.json":"file(scenarios/static/remove_from_plains_too.json)",
+
+		"stonehearth/scenarios/static/landmarks/64x_cave_lake.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_bad_omen.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_lucky_strike.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_small_strike.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_pattern_lucky_snake.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_pattern_ugly_duckling.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_sanctuary.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_ruin_building.json":"file(scenarios/static/add_to_foothills_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_ruin_building_cellar.json":"file(scenarios/static/add_to_foothills_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_ruin_building_farm.json":"file(scenarios/static/add_to_foothills_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_giant_sleeping.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_ruin_town_farming.json":"file(scenarios/static/add_to_foothills_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_ruin_town_undead.json":"file(scenarios/static/add_to_foothills_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_1.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_2.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_3.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+
+		"stonehearth:trapper:trapping_grounds": "file(jobs/trapper/trapping_grounds)"
 	},
 	"overrides": {
+		"stonehearth/entities/critters/doodles/doodles.qb":	"file(entities/critters/doodles/doodles.qb)",
+		"stonehearth/entities/monsters/avian/ostrich/ostrich.qb":	"file(entities/monsters/avian/ostrich/ostrich.qb)",
+		"stonehearth/entities/monsters/avian/duckduck/duckduck.qb":	"file(entities/monsters/avian/duckduck/duckduck.qb)",
+
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":	"file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":	"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
 

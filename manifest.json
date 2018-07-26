@@ -231,6 +231,8 @@
 
 		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
 
+		"stonehearth/entities/monsters/undead/skeleton/female/skeleton_female.json": "file(entities/monsters/undead/skeleton/female/skeleton_female.json)",
+
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
 		"stonehearth:jobs:index": "archipelago_biome:jobs:index",

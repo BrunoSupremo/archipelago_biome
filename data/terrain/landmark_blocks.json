@@ -59,5 +59,11 @@
 	},
 	"#F0EA99": {
 		"terrain_tag": "sand_edge_2"
+	},
+	"#E0D177": {
+		"terrain_tag": "sand_soil_light"
+	},
+	"#D0C167": {
+		"terrain_tag": "sand_soil_dark"
 	}
 }

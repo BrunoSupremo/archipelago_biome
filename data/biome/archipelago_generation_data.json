@@ -662,11 +662,11 @@
 						},
 						"mountains": {
 							"1": {
-								"probability": 0.275,
+								"probability": 0.26,
 								"density": 1
 							},
 							"2": {
-								"probability": 0.225,
+								"probability": 0.21,
 								"density": 1
 							},
 							"4": {

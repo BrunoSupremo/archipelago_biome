@@ -1,6 +1,6 @@
 archipelago_biome = {}
 local log = radiant.log.create_logger('version')
-log:error("Archipelago Biome mod for Stonehearth Beta")
+log:error("Archipelago Biome mod for Stonehearth 1.0")
 
 function archipelago_biome:_on_services_init()
 

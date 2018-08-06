@@ -9,6 +9,12 @@
 				"type": "deny_if_greater_than",
 				"value": 0,
 				"job_alias": "stonehearth:jobs:carpenter"
+			},
+			"has_fisher": {
+				"item": "highest_job_level",
+				"type": "deny_if_greater_than",
+				"value": 0,
+				"job_alias": "archipelago_biome:jobs:fisher"
 			}
 		}
 	},

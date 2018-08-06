@@ -63,7 +63,7 @@ function FisherClass:_got_a_crab(crab_trap)
 end
 
 function FisherClass:_on_resource_gathered(args)
-	if args.harvested_target then --fish is the only possibility for now
+	if args.harvested_target then --fish (as an entity) was the only possibility, not used now
 		self._job_component:add_exp(10)
 	end
 end

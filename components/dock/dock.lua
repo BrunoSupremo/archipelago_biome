@@ -1,8 +1,5 @@
 local Point3 = _radiant.csg.Point3
 local ArchipelagoDock = class()
-local no_legs = nil
-local no_water = nil
-local dock_spot_offset = nil
 
 local VERSIONS = {
 ZERO = 0,
@@ -29,9 +26,9 @@ end
 
 function ArchipelagoDock:activate()
 	local json = radiant.entities.get_json(self)
-	no_legs = json.no_legs
-	no_water = json.no_water
-	dock_spot_offset = json.dock_spot_offset or -1
+	self.no_legs = json.no_legs or false
+	self.no_water = json.no_water or false
+	self.dock_spot_offset = json.dock_spot_offset or -1
 
 	if not self._added_to_world_listener then
 		self._added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', function()
@@ -44,7 +41,7 @@ function ArchipelagoDock:activate()
 			self:remove_fishing_spot()
 			end)
 	end
-	if not self._in_the_water_listener and not no_water then
+	if not self._in_the_water_listener and not self.no_water then
 		self._in_the_water_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', function(e)
 			self:add_fishing_spot(e.location)
 			end)
@@ -56,10 +53,10 @@ function ArchipelagoDock:on_added_to_world()
 		--for some reason, location is nil when the on_added event fires,
 		--so I have to wait 1gametick for it to be set, and it is done running inside this
 		local location = radiant.entities.get_world_grid_location(self._entity)
-		if location and not no_legs then
+		if location and not self.no_legs then
 			self:add_legs(location)
 		end
-		if location and no_water then
+		if location and self.no_water then
 			self:add_fishing_spot(location)
 		end
 		self.stupid_delay:destroy()
@@ -76,7 +73,7 @@ end
 
 function ArchipelagoDock:_get_dock_spot_location(dock,location)
 	local facing = radiant.entities.get_facing(dock)
-	local offset = radiant.math.rotate_about_y_axis(Point3(0,0,dock_spot_offset), facing):to_closest_int()
+	local offset = radiant.math.rotate_about_y_axis(Point3(0,0,self.dock_spot_offset), facing):to_closest_int()
 	return location + offset
 end
 

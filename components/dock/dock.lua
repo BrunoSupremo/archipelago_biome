@@ -90,15 +90,14 @@ function ArchipelagoDock:get_bottom()
 end
 
 function ArchipelagoDock:add_fishing_spot(location)
-	if not self._sv.dock_spot then
-		self._sv.dock_spot = radiant.entities.create_entity("archipelago_biome:decoration:dock_spot",
-			{owner = self._entity:get_player_id()})
-		radiant.terrain.place_entity_at_exact_location(self._sv.dock_spot,
-			self:_get_dock_spot_location(self._entity,location) +Point3.unit_y)
-		local facing = radiant.entities.get_facing(self._entity)
-		radiant.entities.turn_to(self._sv.dock_spot, facing)
-		self.__saved_variables:mark_changed()
-	end
+	self:remove_fishing_spot()
+	self._sv.dock_spot = radiant.entities.create_entity("archipelago_biome:decoration:dock_spot",
+		{owner = self._entity:get_player_id()})
+	radiant.terrain.place_entity_at_exact_location(self._sv.dock_spot,
+		self:_get_dock_spot_location(self._entity,location) +Point3.unit_y)
+	local facing = radiant.entities.get_facing(self._entity)
+	radiant.entities.turn_to(self._sv.dock_spot, facing)
+	self.__saved_variables:mark_changed()
 end
 
 function ArchipelagoDock:remove_fishing_spot()

@@ -3,7 +3,8 @@
 	"mixins": "file(seaweed_ghost.json)",
 	"components": {
 		"archipelago_biome:need_water":{
-			"need_water_icon":true
+			"need_water_icon":true,
+			"only_grow_with_water":true
 		},
 		"model_variants": {
 			"depleted": {

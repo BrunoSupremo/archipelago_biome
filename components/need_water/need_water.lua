@@ -13,6 +13,7 @@ function ArchipelagoNeedWater:activate()
 	local json = radiant.entities.get_json(self)
 	self.need_water_icon = json.need_water_icon
 	self.water_location_function = json.water_location_function
+	self.only_grow_with_water = json.only_grow_with_water
 	self.float = json.float
 	if self.float and self.float.add_animation then
 		self._ground_animation = self.float.add_animation.at_ground
@@ -22,7 +23,9 @@ function ArchipelagoNeedWater:activate()
 	if not self._added_to_world_listener then
 		self._added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', function()
 			-- log:error("_added_to_world_listener")
-			self:resource_timer(false)
+			if self.only_grow_with_water then
+				self:resource_timer(false)
+			end
 			self:on_added_to_world()
 			end)
 	end
@@ -35,7 +38,9 @@ function ArchipelagoNeedWater:activate()
 	if not self._in_the_water_listener then
 		self._in_the_water_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', function(e)
 			-- log:error("_in_the_water_listener")
-			self:resource_timer(true)
+			if self.only_grow_with_water then
+				self:resource_timer(true)
+			end
 			self:float_now(e.water_level, e.location)
 			end)
 	end
@@ -75,8 +80,7 @@ function ArchipelagoNeedWater:on_added_to_world()
 				local component = self._entity:get_component(self.water_location_function.component)
 				local fn = self.water_location_function.fn
 
-				local water_location = component[fn](component)
-				intersected_entities = radiant.terrain.get_entities_at_point(water_location)
+				intersected_entities = component[fn](component)
 			else
 				intersected_entities = radiant.terrain.get_entities_at_point(location)
 			end

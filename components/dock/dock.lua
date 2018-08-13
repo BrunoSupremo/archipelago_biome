@@ -86,7 +86,7 @@ function ArchipelagoDock:get_bottom()
 		bottom_position = edge - offset
 		offset = offset + Point3.unit_y
 	end
-	return bottom_position
+	return radiant.terrain.get_entities_at_point(bottom_position)
 end
 
 function ArchipelagoDock:add_fishing_spot(location)

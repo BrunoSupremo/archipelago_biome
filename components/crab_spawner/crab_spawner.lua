@@ -22,7 +22,7 @@ function ArchipelagoCrabSpawner:activate()
 		self._on_removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', self, self.spawner_removed)
 	end
 	if not self._on_added_to_world_listener then
-		self._on_added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', self, self.activate_the_spawner)
+		self._on_added_to_world_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', self, self.activate_the_spawner)
 	end
 	
 	self:ready_to_harvest(false)
@@ -30,12 +30,6 @@ end
 
 function ArchipelagoCrabSpawner:activate_the_spawner()
 	-- log:error("activate_the_spawner")
-	local location = radiant.entities.get_world_grid_location(self._entity)
-	local block_kind = radiant.terrain.get_block_kind_at(location-Point3.unit_y)
-	if block_kind ~= "sand" then
-		return
-	end
-
 	local delayed_function = function ()
 		-- log:error("activate_the_spawner delayed")
 		if not self._sv.spawn_timer then
@@ -215,6 +209,12 @@ function ArchipelagoCrabSpawner:ready_to_harvest(resume)
 			rsc:pause_resource_timer()
 		end
 	end
+end
+
+function ArchipelagoCrabSpawner:find_nearby_water()
+	local location = radiant.entities.get_world_grid_location(self._entity)
+	local cube = Cube3(location):inflated(Point3(self.radius, self.radius, self.radius))
+	return radiant.terrain.get_entities_in_cube(cube)
 end
 
 function ArchipelagoCrabSpawner:destroy_spawn_timer()

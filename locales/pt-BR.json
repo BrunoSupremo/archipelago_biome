@@ -590,8 +590,8 @@
 				},
 				"crab_trap_recipe":{
 					"recipe_name":"Armadilha de Caranguejos",
-					"description":"Irá atrair e capturar caranguejos depois que for colocado no chão",
-					"flavor":"Os caranguejos irão aparecer em torno dela se não houver nenhum perto."
+					"description":"Irá atrair e capturar caranguejos. Precisa ser colocada perto da água pra funcionar.",
+					"flavor":""
 				},
 				"fish_container_recipe":{
 					"recipe_name":"Caixote de Peixes",

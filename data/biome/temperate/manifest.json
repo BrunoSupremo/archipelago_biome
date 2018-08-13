@@ -1,0 +1,5 @@
+{
+	"overrides" : {
+		"/archipelago_biome/entities/critters/crab/crab.qb": "file(temperate_crab.qb)"
+	}
+}

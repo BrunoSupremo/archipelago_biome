@@ -219,6 +219,10 @@
 
 		"stonehearth:building_templates:index": "file(data/saved_objects/building_templates_index.json)",
 
+		"stonehearth/data/biome/arctic/manifest.json": "archipelago_biome/data/biome/arctic/manifest.json",
+		"stonehearth/data/biome/desert/manifest.json": "archipelago_biome/data/biome/desert/manifest.json",
+		"stonehearth/data/biome/temperate.json": "archipelago_biome/data/biome/temperate.json",
+
 		"stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
 		"stonehearth:gm:campaigns:arcs:ambient_threats": "file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json)",

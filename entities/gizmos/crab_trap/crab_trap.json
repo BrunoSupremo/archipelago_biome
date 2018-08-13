@@ -6,6 +6,13 @@
 			"interval":"8h+4h",
 			"radius":15
 		},
+		"archipelago_biome:need_water":{
+			"need_water_icon":true,
+			"water_location_function":{
+				"component":"archipelago_biome:crab_spawner",
+				"fn":"find_nearby_water"
+			}
+		},
 		"stonehearth:renewable_resource_node": {
 			"category": "fishing",
 			"harvest_overlay_effect": "archipelago_biome:effects:harvest_crab_overlay",

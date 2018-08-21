@@ -230,6 +230,21 @@
 				"display_name":"Caranguejo estragado",
 				"description":"Caranguejos estragam bem depressa..."
 			},
+			"big_fish": {
+				"display_name":"Grande Peixe fresco",
+				"description":"Muito grande, teve que ser cortado. Ainda não está pronto pra comer"
+			},
+			"big_fish_cooked": {
+				"display_name":"Grande Peixe Cozido",
+				"description":"Frito e delicioso",
+				"recipe":{
+					"description":"Apenas deixe esquentando no forno.",
+					"flavor":"Crocante por fora, macio por dentro"
+				}
+			},
+			"big_fish_cooked_serving": {
+				"display_name": "Cooked Big Fish"
+			},
 			"fish":{
 				"display_name":"Peixe fresco",
 				"description":"Ainda não está pronto pra comer"
@@ -241,6 +256,10 @@
 					"description":"Apenas deixe esquentando no forno.",
 					"flavor":"Crocante por fora, macio por dentro"
 				}
+			},
+			"big_fish_rotten":{
+				"display_name":"Grande Peixe estragado",
+				"description":"Peixes estragam bem depressa..."
 			},
 			"fish_rotten":{
 				"display_name":"Peixe estragado",
@@ -751,6 +770,12 @@
 				}
 			}
 		},
+		"fishing":{
+			"turtle_shield":{
+				"title":"O epscador pegou um Escudo Tartaruga!",
+				"message":"Parece um escudo para soldados de nível baixo, e está pronto para ser usado."
+			}
+		},
 		"monster_tuning":{
 			"forest":{
 				"insane_octopus":{
@@ -809,9 +834,6 @@
 							"title":"Outra caixa...",
 							"message_start":"Cuidado, eu acabei de avistar outro caixote na sua ilha! Melhor chamar os guardas antes de abri-lo.",
 							"choice":"Me mostre!"
-						},
-						"shield_spawned":{
-							"found":"O pescador viu alguma coisa na água"
 						},
 						"lets_trade_again": {
 							"title": "Vamos fazer mais trocas?",

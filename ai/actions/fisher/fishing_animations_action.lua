@@ -2,15 +2,14 @@ local FishingAnimations = class()
 
 FishingAnimations.name = 'run fishing animations'
 FishingAnimations.does = 'archipelago_biome:fishing_animations'
-FishingAnimations.args = {}
+FishingAnimations.args = {
+effort = 'number'
+}
 FishingAnimations.version = 2
 FishingAnimations.priority = 1
 
 function FishingAnimations:start_thinking(ai, entity, args)
-	local job_component = entity:get_component('stonehearth:job')
-	local level = job_component:get_current_job_level()
-	local minutes = 140 - level*20
-	ai:set_think_output({time_waiting_for_fish = minutes.."m"})
+	ai:set_think_output({time_waiting_for_fish = args.effort.."m"})
 end
 
 local ai = stonehearth.ai

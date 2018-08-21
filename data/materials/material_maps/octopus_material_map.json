@@ -2,6 +2,12 @@
 	"archipelago_biome:skin:main" : {
 		"color" : "#6C358D"
 	},
+	"archipelago_biome:skin:dark" : {
+		"color" : "#653383"
+	},
+	"archipelago_biome:skin:light" : {
+		"color" : "#723F91"
+	},
 	"archipelago_biome:eyes:glowing" : {
 		"render_material" : "materials/glowy_voxel.material.json"
 	}

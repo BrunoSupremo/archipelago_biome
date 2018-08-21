@@ -4,10 +4,6 @@
 	"encounters": {
 		"start": "file(encounters/start.json)",
 		"wait_first_soldier":"file(encounters/wait_first_soldier.json)",
-
-		"soldier_and_fisher_levelup":"file(encounters/soldier_and_fisher_levelup.json)",
-		"fisher_in_the_water":"file(encounters/fisher_in_the_water.json)",
-
 		"miranda_before_selling_clay":"file(encounters/miranda_before_selling_clay.json)",
 		"miranda_clay_shop":"file(encounters/miranda_clay_shop.json)",
 		"miranda_notice_a_lost_crate":"file(encounters/miranda_notice_a_lost_crate.json)",
@@ -20,7 +16,6 @@
 		"wait_to_spawn_crate_again":"file(encounters/wait_to_spawn_crate_again.json)",
 		"miranda_notice_another_crate":"file(encounters/miranda_notice_another_crate.json)",
 		"spawn_crate_again":"file(encounters/spawn_crate_again.json)",
-
 		"wait_after_spawn_crate_again":"file(encounters/wait_after_spawn_crate_again.json)",
 		"lets_trade_again":"file(encounters/lets_trade_again.json)",
 		"show_the_visitors":"file(encounters/show_the_visitors.json)",

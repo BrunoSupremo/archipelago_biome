@@ -1,14 +1,57 @@
 local CraftingJob = require 'stonehearth.jobs.crafting_job'
+local BaseJob = require 'stonehearth.jobs.base_job'
+local WeightedSet = require 'stonehearth.lib.algorithms.weighted_set'
+local rng = _radiant.math.get_default_rng()
 
 local FisherClass = class()
 radiant.mixin(FisherClass, CraftingJob)
+
+function FisherClass:initialize()
+	CraftingJob.initialize(self)
+	self._sv.fished = {}
+end
+
+function FisherClass:activate()
+	BaseJob.activate(self)
+	self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true)
+	self.biome_alias = stonehearth.world_generation:get_biome_alias()
+	self.player_id = radiant.entities.get_player_id(self._sv._entity)
+	self.kingdom_alias = stonehearth.player:get_kingdom(self.player_id)
+end
+
+function FisherClass:chose_random_fish()
+	local function has_filter( key, value )
+		local valid = false
+		for i,v in ipairs(key) do
+			if v == value then
+				valid = true
+				break
+			end
+		end
+		return valid
+	end
+	local weighted_set = WeightedSet(rng)
+	local level = "level_"..self:get_job_level()
+	for fish, table in pairs(self.fishing_data[level]) do
+		local weight = table.weight or 0
+		local is_valid_biome = not table.is_biome_exclusive or has_filter(table.is_biome_exclusive, self.biome_alias)
+		local is_valid_kingdom = not table.is_kingdom_exclusive or has_filter(table.is_kingdom_exclusive, self.kingdom_alias)
+		local is_below_limit = not table.max_limit or table.max_limit>(self._sv.fished[level..fish] or 0)
+		if weight>0 and is_valid_biome and is_valid_kingdom and is_below_limit then
+			weighted_set:add(fish, weight)
+		end
+	end
+	local fish_key = weighted_set:choose_random()
+	self.current_fish_key = fish_key
+	return self.fishing_data[level][fish_key]
+end
 
 function FisherClass:_create_listeners()
 	CraftingJob._create_listeners(self)
 	self._xp_listeners = {}
 
 	table.insert(self._xp_listeners, radiant.events.listen(self._sv._entity, 'stonehearth:gather_renewable_resource', self, self._on_renewable_resource_gathered))
-	table.insert(self._xp_listeners, radiant.events.listen(self._sv._entity, 'stonehearth:gather_resource', self, self._on_resource_gathered))
+	table.insert(self._xp_listeners, radiant.events.listen(self._sv._entity, 'archipelago_biome:got_a_fish', self, self._on_got_a_fish))
 end
 
 function FisherClass:_remove_listeners()
@@ -62,10 +105,25 @@ function FisherClass:_got_a_crab(crab_trap)
 	end
 end
 
-function FisherClass:_on_resource_gathered(args)
-	if args.harvested_target then --fish (as an entity) was the only possibility, not used now
-		self._job_component:add_exp(10)
+function FisherClass:_on_got_a_fish(args)
+	local fish_key = self.current_fish_key
+	local level = "level_"..self:get_job_level()
+	self._sv.fished[level..fish_key] = (self._sv.fished[level..fish_key] or 0) +1
+	self.__saved_variables:mark_changed()
+
+	if self.fishing_data[level][fish_key].bulletin then
+		stonehearth.bulletin_board:post_bulletin(self.player_id)
+		:set_ui_view('ArchipelagoFisherBulletinDialog')
+		:set_data({
+			zoom_to_entity = args.the_fish,
+			title = self.fishing_data[level][fish_key].bulletin.title,
+			message = self.fishing_data[level][fish_key].bulletin.message,
+			image = self.fishing_data[level][fish_key].bulletin.image
+			})
 	end
+
+	local xp = self.fishing_data[level][fish_key].xp or 1
+	self._job_component:add_exp(xp)
 end
 
 return FisherClass

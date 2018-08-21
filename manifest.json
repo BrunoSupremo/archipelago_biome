@@ -59,6 +59,8 @@
 
 		"crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",
 
+		"data:fishing": "file(data/fishing)",
+
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"decoration:anchor":			"file(entities/decoration/anchor)",
@@ -92,6 +94,10 @@
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
 		"effects:wave_effect":				"file(data/effects/wave_effect)",
 
+		"food:big_fish":		"file(entities/food/big_fish)",
+		"food:big_fish:rotten": "file(entities/food/big_fish/big_fish_rotten.json)",
+		"food:big_fish_cooked":			"file(entities/food/big_fish_cooked/big_fish_cooked)",
+		"food:big_fish_cooked_serving":	"file(entities/food/big_fish_cooked/big_fish_cooked_serving)",
 		"food:coconut":"file(entities/food/coconut)",
 		"food:crab":				 "file(entities/food/crab)",
 		"food:crab_bisque":			 "file(entities/food/crab_bisque/crab_bisque)",
@@ -314,9 +320,16 @@
 		"wave":			"file(components/wave/wave.lua)"
 	},
 	"ui":{
+		"html":[
+			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.html)"
+		],
+		"js":[
+			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.js)"
+		],
 		"less":[
 			"file(jobs/fisher/skin/workshop.less)",
-			"file(ui/shell/select_settlement/select_settlement.less)"
+			"file(ui/shell/select_settlement/select_settlement.less)",
+			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.less)"
 		]
 	}
 }

@@ -2,13 +2,7 @@
 	"type": "encounter",
 	"encounter_type": "wait_for_requirements_met",
 	"in_edge"  : "wait_first_soldier",
-	"out_edge" : {
-		"type": "trigger_many",
-		"out_edges": [
-			"soldier_and_fisher_levelup",
-			"miranda_before_selling_clay"
-		]
-	},
+	"out_edge" : "miranda_before_selling_clay",
 	"wait_for_requirements_met_info": {
 		"requirements": {
 			"has_soldier": {

@@ -230,6 +230,21 @@
 				"display_name": "Rotten Crab",
 				"description": "Crabs spoils very fast..."
 			},
+			"big_fish": {
+				"display_name": "Big Fresh Fish",
+				"description": "Too big, had to be cut. Not ready to be eaten"
+			},
+			"big_fish_cooked": {
+				"display_name": "Cooked Big Fish",
+				"description": "Fried and delicious",
+				"recipe": {
+					"description": "Just let it heat in the oven.",
+					"flavor": "Crunchy outside, soft inside"
+				}
+			},
+			"big_fish_cooked_serving": {
+				"display_name": "Cooked Big Fish"
+			},
 			"fish": {
 				"display_name": "Fresh Fish",
 				"description": "Not ready to be eaten"
@@ -241,6 +256,10 @@
 					"description": "Just let it heat in the oven.",
 					"flavor": "Crunchy outside, soft inside"
 				}
+			},
+			"big_fish_rotten": {
+				"display_name": "Rotten Big Fish",
+				"description": "Fish spoils very fast..."
 			},
 			"fish_rotten": {
 				"display_name": "Rotten Fish",
@@ -751,6 +770,12 @@
 				}
 			}
 		},
+		"fishing":{
+			"turtle_shield":{
+				"title":"The fisher got a Turtle Shield!",
+				"message":"It looks like a low level shield for footman, and ready to be used."
+			}
+		},
 		"monster_tuning": {
 			"forest": {
 				"insane_octopus": {
@@ -810,9 +835,6 @@
 							"title": "Another crate...",
 							"message_start": "Watch out, I just saw another crate at your island! Better move your guards before opening it.",
 							"choice": "Show me!"
-						},
-						"shield_spawned": {
-							"found": "The fisher saw something in the water"
 						},
 						"lets_trade_again": {
 							"title": "Let's trade again?",

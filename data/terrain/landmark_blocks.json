@@ -52,13 +52,7 @@
 		"terrain_tag": "grass_hills"
 	},
 	"#F0E187": {
-		"terrain_tag": "sand"
-	},
-	"#F1F1A4": {
-		"terrain_tag": "sand_edge_1"
-	},
-	"#F0EA99": {
-		"terrain_tag": "sand_edge_2"
+		"terrain_tag": "grass"
 	},
 	"#E0D177": {
 		"terrain_tag": "sand_soil_light"

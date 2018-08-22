@@ -2,7 +2,9 @@
 	"level_1":{
 		"default_fish":{
 			"alias":"archipelago_biome:food:fish",
+			"_alias":"alias of the desired item that can be fished",
 			"weight":100,
+			"_weight":"a number > 0. relative chance of getting this item instead of the others",
 			"_max_limit":"optional. a number > 0, how many times the fisher can get this item",
 			"_bulletin":{
 				"_comment":"optional. shows a notification when the fisher get this item.",
@@ -21,7 +23,9 @@
 				"rayyas_children:kingdoms:rayyas_children"
 			],
 			"effort":120,
-			"xp":15
+			"_effort":"a number > 0. how long in (game) minutes it takes to fish this item",
+			"xp":15,
+			"xp":"a number > 0. rewarded xp after the action. ~100xp is required to reach level 2"
 		},
 		"big_fish":{
 			"alias":"archipelago_biome:food:big_fish",

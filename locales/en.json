@@ -320,7 +320,7 @@
 				"display_name": "CocoBomb",
 				"description": "Don't play with your food.",
 				"recipe": {
-					"description": "After placed, it will explode when enemies hit it. Damage and set fire to enemies near the explosion.",
+					"description": "After being placed, it will explode when enemies hit it. Damages and sets fire to enemies near the explosion.",
 					"flavor": "Everything's better with explosions"
 				}
 			},
@@ -524,7 +524,7 @@
 			},
 			"fish_arrow": {
 				"display_name": "Fish Arrow",
-				"description": "When fish flies, no one is courageous."
+				"description": "When fish fly, no one is courageous."
 			}
 		},
 		"humans": {
@@ -811,24 +811,24 @@
 						"miranda_before_selling_clay": {
 							"title": "Too much clay on my boat",
 							"message_start": "I made some trades with a Rayya merchant. Did you know they have a lot of clay, super cheap? I couldn't refuse, but now I have too much of it!",
-							"message_convincing": "I can't sail with the ship being so heavy! What you say? Can I sell some to you? I guess you will need some as you don't have much land to dig for it..."
+							"message_convincing": "I can't sail with the ship being so heavy! What do you say? Can I sell some to you? I guess you will need some as you don't have much land to dig for it..."
 						},
 						"miranda_clay_shop": "Captain Miranda's clay excess",
 						"miranda_notice_a_lost_crate": {
-							"title": "Did you lost a crate?",
+							"title": "Did you lose a crate?",
 							"message_start": "By the way, while we were trading I noticed this crate near your camp. I'm guessing it is yours, so I put it near your camp flag.",
 							"choice": "Uhm? What crate?",
 							"this_crate": "This crate?"
 						},
 						"teaches_how_to_break_crate": {
 							"title": "Curious?",
-							"message_start": "Aren't you going to open that crate? Maybe it is important or it can spoils!<br>(To open it, select it then click on the open button)"
+							"message_start": "Aren't you going to open that crate? Maybe it is important or will spoil!<br><br><font size=-1>To open it, select it then click on the open button</font>"
 						},
 						"miranda_talks_about_cocolings": {
 							"title": "Cocolings",
 							"message_start": "I'm sorry that you got attacked yesterday. Those cocolings are appearing everywhere lately...",
 							"choice": "The little evil coconuts?",
-							"message_2": "Yes. They are causing problems in many other islands too!<br>We still don't know how they got here or why...<br>There are many other islanders trying to figured this mystery out.",
+							"message_2": "Yes. They are causing problems on many other islands too!<br>We still don't know how they got here or why...<br>There are many other islanders trying to figure this mystery out.",
 							"choice_end": "I will help when possible."
 						},
 						"miranda_notice_another_crate": {
@@ -838,7 +838,7 @@
 						},
 						"lets_trade_again": {
 							"title": "Let's trade again?",
-							"message_start": "Hi! Wanna buy some useless items again?<br>Oh, sorry, didn't noticed you had visitors. I will return later.",
+							"message_start": "Hi! Wanna buy some useless items again?<br>Oh, sorry, didn't notice you had visitors. I will return later.",
 							"choice": "Visitors?..",
 							"message_those_guys": "Yes, those guys over there. Let me show you."
 						},
@@ -856,7 +856,7 @@
 						},
 						"teaches_how_to_donate_food": {
 							"title": "Do you need help?",
-							"message_start": "The food bin is not full yet?<br>(To start filling it, click on it, and activate the food filter)"
+							"message_start": "The food bin is not full yet?<br><br><font size=-1>To start filling it, click on it, and activate the food filter</font>"
 						},
 						"anya_says_she_will_leave": {
 							"message_start": "Hey! You did it! Thank you.",
@@ -880,8 +880,8 @@
 					"trigger": {
 						"goblin_donation": {
 							"title": "A goblin with a bucket approaches",
-							"message_1": "Hey fool. I found this bucket, but it is trash, so it must be yours. It does not fit in my head, see?<br><br><font size=-1>(Points to own head)</font>",
-							"message_2": "I don't care about what you do with it. You can burn it for all I care!<br><br><font size=-1>(Throws the bucket in the ground, kicks it, and then goes away angry)</font>",
+							"message_1": "Hey fool. I found this bucket, but it is trash, so it must be yours. It does not fit on my head, see?<br><br><font size=-1>Points to own head</font>",
+							"message_2": "I don't care about what you do with it. You can burn it for all I care!<br><br><font size=-1>Throws the bucket in the ground, kicks it, and then goes away angry</font>",
 							"answer": "Thanks?"
 						}
 					}

@@ -62,6 +62,12 @@
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":	"file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":	"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
 
+		"archipelago_biome/entities/trees/papaya/papaya.qb":		"file(entities/trees/papaya/papaya.qb)",
+		"archipelago_biome/entities/trees/papaya/papaya_empty.qb":	"file(entities/trees/papaya/papaya_empty.qb)",
+		"archipelago_biome/entities/trees/papaya/bud/bud.qb":		"file(entities/trees/papaya/bud/bud.qb)",
+		"archipelago_biome/entities/trees/papaya/sprout/sprout.qb":	"file(entities/trees/papaya/sprout/sprout.qb)",
+		"archipelago_biome/entities/trees/papaya/stem/stem.qb":		"file(entities/trees/papaya/stem/stem.qb)",
+
 		"stonehearth/ui/shell/loading_screen/images/bg0.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
 		"stonehearth/ui/shell/loading_screen/images/bg1.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",
 		"stonehearth/ui/shell/loading_screen/images/bg2.jpg": "file(ui/shell/loading_screen/images/bg_archipelago.jpg)",

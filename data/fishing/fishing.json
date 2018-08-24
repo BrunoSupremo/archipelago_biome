@@ -25,7 +25,7 @@
 			"effort":120,
 			"_effort":"a number > 0. how long in (game) minutes it takes to fish this item",
 			"xp":15,
-			"xp":"a number > 0. rewarded xp after the action. ~100xp is required to reach level 2"
+			"_xp":"a number > 0. rewarded xp after the action. ~100xp is required to reach level 2"
 		},
 		"big_fish":{
 			"alias":"archipelago_biome:food:big_fish",

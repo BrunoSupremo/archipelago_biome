@@ -130,6 +130,8 @@
 
 		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
 		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)",
+		"landmark:summon_stone:block:sand": "file(entities/landmark/summon_stone_block_sand)",
+		"landmark:summon_stone:patch:sand": "file(entities/landmark/summon_stone_patch_sand)",
 
 		"loot_bag:archipelago:mountain_tree_random": "file(data/loot_bag/mountain_tree_random.json)",
 		"loot_bag:archipelago:beach_tree_random": "file(data/loot_bag/beach_tree_random.json)",

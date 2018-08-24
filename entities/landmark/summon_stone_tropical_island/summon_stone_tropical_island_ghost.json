@@ -4,6 +4,7 @@
 		"stonehearth:landmark": {
 			"landmark": {
 				"brush" : "/archipelago_biome/data/models/landmark/64x_island.qb",
+				"brush_mask" : "/archipelago_biome/data/models/landmark/64x_island_mask.qb",
 				"landmark_block_types": "archipelago_biome:landmark_blocks",
 				"destroy_entities": false,
 				"clip_if_outside_terrain": true

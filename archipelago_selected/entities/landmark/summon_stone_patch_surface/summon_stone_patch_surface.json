@@ -1,0 +1,7 @@
+{
+	"components": {
+		"stonehearth:terrain_patch": {
+			"terrain_tag": "grass_hills"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"work_units": 5,
+	"recipe_name": "i18n(archipelago_biome:entities.landmark.summon_stone_block_sand.display_name)",
+	"description": "i18n(archipelago_biome:entities.landmark.summon_stone_block_sand.description)",
+	"flavor": "",
+	"portrait": "/archipelago_biome/entities/landmark/summon_stone_block_sand/summon_stone_block_sand.png",
+	"level_requirement": 0,
+	"manual_unlock":true,
+	"workshop": "stonehearth:geomancer:workbench",
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 3
+		},
+		{
+			"material": "stone resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "archipelago_biome:landmark:summon_stone:block:sand"
+		}
+	]
+}

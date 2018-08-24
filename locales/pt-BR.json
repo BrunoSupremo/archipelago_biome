@@ -330,6 +330,14 @@
 			}
 		},
 		"landmark":{
+			"summon_stone_block_sand": {
+				"display_name": "Bloco de Terreno de Areia",
+				"description": "Invoca um bloco 8x5x8 de areia."
+			},
+			"summon_stone_patch_sand": {
+				"display_name": "Manto de Terreno de Areia",
+				"description": "Cresce em um cobertor de areia, até 12x12 de tamanho."
+			},
 			"summon_stone_tropical_island":{
 				"display_name": "Ilha Tropical",
 				"description": "Invoca uma mini ilha inteira."

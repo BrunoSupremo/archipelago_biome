@@ -14,6 +14,9 @@
 		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":	"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 
+		"stonehearth/entities/landmark/summon_stone_block_surface/summon_stone_block_surface_ghost.json":	"file(entities/landmark/summon_stone_block_surface/summon_stone_block_surface_ghost.json)",
+		"stonehearth/entities/landmark/summon_stone_patch_surface/summon_stone_patch_surface.json":			"file(entities/landmark/summon_stone_patch_surface/summon_stone_patch_surface.json)",
+
 		"stonehearth:mixins:tree": "archipelago_biome:mixins:foreign_tree",
 		"stonehearth/entities/trees/acacia_tree/sapling_acacia_tree/sapling_acacia_tree_iconic.json": "archipelago_biome:mixins:foreign_tree",
 		"stonehearth/entities/trees/oak_tree/sapling_oak_tree/sapling_oak_tree_iconic.json": "archipelago_biome:mixins:foreign_tree",

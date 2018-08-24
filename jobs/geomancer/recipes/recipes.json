@@ -1,5 +1,15 @@
 {
 	"craftable_recipes" : {
+		"terrain": {
+			"recipes": {
+				"archipelago_summon_stone_block_sand": {
+					"recipe": "file(summon_stone_block_sand_recipe.json)"
+				},
+				"archipelago_summon_stone_patch_sand": {
+					"recipe": "file(summon_stone_patch_sand_recipe.json)"
+				}
+			}
+		},
 		"landmark": {
 			"recipes": {
 				"tropical_island": {

@@ -1,0 +1,9 @@
+{
+	"components": {
+		"stonehearth:landmark": {
+			"landmark": {
+				"tag": "grass_hills"
+			}
+		}
+	}
+}

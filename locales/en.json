@@ -330,6 +330,14 @@
 			}
 		},
 		"landmark":{
+			"summon_stone_block_sand": {
+				"display_name": "Sand Terrain Block Stone",
+				"description": "Summons an 8x5x8 block of sand terrain."
+			},
+			"summon_stone_patch_sand": {
+				"display_name": "Sand Terrain Patch Stone",
+				"description": "Grows into a patch of sandy terrain, up to 12x12 units in size."
+			},
 			"summon_stone_tropical_island":{
 				"display_name": "Tropical Island",
 				"description": "Summon a whole mini island."

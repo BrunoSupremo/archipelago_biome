@@ -4,7 +4,6 @@
 	"encounters": {
 		"start": "file(encounters/start.json)",
 		"introduction_dialogue": "file(encounters/introduction_dialogue.json)",
-		"introduction_dialogue_na": "file(encounters/introduction_dialogue_na.json)",
-		"add_crops_and_recipes": "file(encounters/add_crops_and_recipes.json)"
+		"introduction_dialogue_na": "file(encounters/introduction_dialogue_na.json)"
 	}
 }

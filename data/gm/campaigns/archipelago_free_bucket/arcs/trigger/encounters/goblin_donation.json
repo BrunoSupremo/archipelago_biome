@@ -4,17 +4,11 @@
 	"in_edge": "goblin_donation",
 	"can_start": {
 		"test_1": {
-			"has_carpenter": {
-				"item": "highest_job_level",
-				"type": "deny_if_greater_than",
-				"value": 0,
-				"job_alias": "stonehearth:jobs:carpenter"
-			},
-			"has_fisher": {
-				"item": "highest_job_level",
-				"type": "deny_if_greater_than",
-				"value": 0,
-				"job_alias": "archipelago_biome:jobs:fisher"
+			"has_carpenter_or_fisher": {
+				"item": "script",
+				"type": "deny_if",
+				"value": true,
+				"script": "file(has_carpenter_or_fisher.lua)"
 			}
 		}
 	},

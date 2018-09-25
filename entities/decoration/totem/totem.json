@@ -6,7 +6,8 @@
 			"iconic_form": "file(totem_iconic.json)",
 			"ghost_form": "file(totem_ghost.json)",
 			"placeable_on_ground": true
-		}
+		},
+		"stonehearth:traveler_attraction": {}
 	},
 	"entity_data": {
 		"stonehearth:net_worth": {

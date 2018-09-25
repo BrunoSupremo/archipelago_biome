@@ -102,6 +102,20 @@
 					"flavor": "If a boat were a head, would its anchors be earrings?"
 				}
 			},
+			"aquarium": {
+				"display_name": "Aquarium",
+				"description": "Fish swimming in a transparent box",
+				"recipe": {
+					"flavor": "You either have a cat or an aquarium, not both."
+				}
+			},
+			"big_fish_hanging": {
+				"display_name": "Big Fish Hanging",
+				"description": "A big fish displayed hanging in the chain",
+				"recipe": {
+					"flavor": "You better display it else no one will believe you fished this."
+				}
+			},
 			"dock": {
 				"display_name": "Fishing Dock",
 				"description": "A platform where fishers go to fish"
@@ -245,6 +259,9 @@
 			"big_fish_cooked_serving": {
 				"display_name": "Cooked Big Fish"
 			},
+			"nemo": {
+				"display_name": "Nemo"
+			},
 			"fish": {
 				"display_name": "Fresh Fish",
 				"description": "Not ready to be eaten"
@@ -303,6 +320,9 @@
 			"sashimi": {
 				"display_name": "Sashimi",
 				"description": "Fresh raw fish sliced into thin pieces"
+			},
+			"tropical_fish": {
+				"display_name": "Fresh Exotic Fish"
 			}
 		},
 		"furniture":{
@@ -427,6 +447,10 @@
 			"hot_rock": {
 				"display_name": "Hot Rock",
 				"description": "Rich in minerals, just mine it"
+			},
+			"ice_cube": {
+				"display_name": "Ice Cube",
+				"description": "Someone fished this. It will melt soon."
 			}
 		},
 		"toys": {
@@ -684,6 +708,12 @@
 		}
 	},
 	"ui": {
+		"data":{
+			"constants":{
+				"raw_fish_name":"Fresh Fish",
+				"raw_big_fish_name":"Big Fresh Fish"
+			}
+		},
 		"game": {
 			"build_mode": {
 				"building_templates": {
@@ -782,6 +812,10 @@
 			"turtle_shield":{
 				"title":"The fisher got a Turtle Shield!",
 				"message":"It looks like a low level shield for footman, and ready to be used."
+			},
+			"nemo":{
+				"title":"Finding a fish",
+				"message":"The fisher just got this cute lost clowfish."
 			}
 		},
 		"monster_tuning": {

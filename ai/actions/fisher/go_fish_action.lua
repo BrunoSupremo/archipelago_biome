@@ -1,3 +1,4 @@
+--I do not give consent to copy this
 local GoFish = class()
 
 GoFish.name = 'go to a dock to fish'
@@ -19,6 +20,11 @@ function find_a_fishing_spot(ai_entity)
 		)
 end
 
+local function rate_fishing_spot(entity)
+	local rng = _radiant.math.get_default_rng()
+	return rng:get_real(0, 1)
+end
+
 function GoFish:start_thinking(ai, entity, args)
 	local job_component = entity:get_component('stonehearth:job')
 	local fish_table = job_component:get_curr_job_controller():chose_random_fish()
@@ -31,16 +37,20 @@ end
 local ai = stonehearth.ai
 return ai:create_compound_action(GoFish)
 :execute('stonehearth:drop_carrying_now', {})
-:execute('stonehearth:goto_entity_type', {
+:execute('stonehearth:find_best_reachable_entity_by_type', {
 	filter_fn = ai.CALL(find_a_fishing_spot, ai.ENTITY),
+	rating_fn = rate_fishing_spot,
 	description = 'find a dock'
 	})
-:execute('stonehearth:reserve_entity', { entity = ai.PREV.destination_entity })
-:execute('archipelago_biome:turn_to_face_water', {dock = ai.BACK(2).destination_entity})
-:execute('archipelago_biome:fishing_animations', {effort = ai.BACK(5).effort})
+:execute('stonehearth:goto_entity', {
+	entity = ai.PREV.item
+	})
+:execute('stonehearth:reserve_entity', { entity = ai.BACK(2).item })
+:execute('archipelago_biome:turn_to_face_water', {dock = ai.BACK(3).item})
+:execute('archipelago_biome:fishing_animations', {effort = ai.BACK(6).effort})
 :execute('archipelago_biome:pickup_fish', {
-	dock = ai.BACK(4).destination_entity,
-	fish_alias = ai.BACK(6).alias
+	dock = ai.BACK(5).item,
+	fish_alias = ai.BACK(7).alias
 	})
 :execute('stonehearth:wait_for_closest_storage_space', { item = ai.PREV.fish })
 :execute('stonehearth:drop_carrying_in_storage', {storage = ai.PREV.storage})

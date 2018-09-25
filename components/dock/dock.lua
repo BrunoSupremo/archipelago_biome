@@ -3,11 +3,12 @@ local ArchipelagoDock = class()
 
 local VERSIONS = {
 ZERO = 0,
-DOCK_SPOT_FOR_MULTIPLAYER = 1
+DOCK_SPOT_FOR_MULTIPLAYER = 1,
+SAVED_LEGS = 2
 }
 
 function ArchipelagoDock:get_version()
-	return VERSIONS.DOCK_SPOT_FOR_MULTIPLAYER
+	return VERSIONS.SAVED_LEGS
 end
 
 function ArchipelagoDock:fixup_post_load(old_save_data)
@@ -17,10 +18,21 @@ function ArchipelagoDock:fixup_post_load(old_save_data)
 			radiant.entities.set_player_id(self._sv.dock_spot, self._entity:get_player_id())
 		end
 	end
+	if old_save_data.version < VERSIONS.SAVED_LEGS then
+		--buildings could split the legs from docks and leave them in the world
+		local ec = self._entity:get_component("entity_container")
+		if ec then
+			for id, child in ec:each_child() do
+				ec:remove_child(id)
+				radiant.entities.destroy_entity(child)
+			end
+		end
+	end
 end
 
 function ArchipelagoDock:initialize()
 	self._sv.dock_spot = nil
+	self._sv.saved_legs = {}
 	self.__saved_variables:mark_changed()
 end
 
@@ -53,7 +65,7 @@ function ArchipelagoDock:on_added_to_world()
 		--for some reason, location is nil when the on_added event fires,
 		--so I have to wait 1gametick for it to be set, and it is done running inside this
 		local location = radiant.entities.get_world_grid_location(self._entity)
-		if location and not self.no_legs then
+		if location and not self.no_legs and not next(self._sv.saved_legs) then
 			self:add_legs(location)
 		end
 		if location and self.no_water then
@@ -109,27 +121,26 @@ function ArchipelagoDock:remove_fishing_spot()
 end
 
 function ArchipelagoDock:add_legs(location)
-	local ec = self._entity:get_component("entity_container")
-	if ec and ec:num_children()>0 then
-		return --to avoid adding it again at reload
-	end
 	local offset = Point3.unit_y
 	local edge = self:_get_dock_edge(self._entity,location)
 	while not radiant.terrain.is_blocked(edge - offset) do
-		local leg = radiant.entities.create_entity("archipelago_biome:decoration:dock_leg")
-		radiant.entities.add_child(self._entity, leg, -offset, true)
+		local leg = radiant.entities.create_entity("archipelago_biome:decoration:dock_leg",
+			{owner = self._entity:get_player_id()})
+		table.insert(self._sv.saved_legs, leg)
+		radiant.terrain.place_entity_at_exact_location(leg, edge-offset)
+		local facing = radiant.entities.get_facing(self._entity)
+		radiant.entities.turn_to(leg, facing)
 		offset = offset + Point3.unit_y
 	end
+	self.__saved_variables:mark_changed()
 end
 
 function ArchipelagoDock:remove_legs()
-	local ec = self._entity:get_component("entity_container")
-	if ec then
-		for id, child in ec:each_child() do
-			ec:remove_child(id)
-			radiant.entities.destroy_entity(child)
-		end
+	for i,v in ipairs(self._sv.saved_legs) do
+		radiant.entities.destroy_entity(v)
 	end
+	self._sv.saved_legs = {}
+	self.__saved_variables:mark_changed()
 end
 
 function ArchipelagoDock:destroy()

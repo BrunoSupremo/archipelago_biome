@@ -1,40 +1,31 @@
 {
-	"mixins": "stonehearth:mixins:food_decay",
-	"type": "entity",
+	"mixins": "archipelago_biome:mixins:fish",
 	"components": {
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(fish.qb)"
+					{
+						"type": "one_of",
+						"items": [
+							"file(fish1.qb)",
+							"file(fish2.qb)",
+							"file(fish3.qb)",
+							"file(fish4.qb)",
+							"file(fish5.qb)",
+							"file(fish6.qb)",
+							"file(fish7.qb)",
+							"file(fish8.qb)"
+						]
+					}
 				]
 			}
 		}
 	},
 	"entity_data": {
-		"stonehearth:food_decay": {
-			"initial_decay": {
-				"min": 60,
-				"max": 70
-			},
-			"rotten_entity_alias": "archipelago_biome:food:fish:rotten"
-		},
-		"stonehearth:net_worth": {
-			"value_in_gold": 3,
-			"rarity": "common",
-			"shop_info": {
-				"buyable": true,
-				"sellable": true,
-				"shopkeeper_level": 2,
-				"shopkeeper_type": "caravan"
-			}
-		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.food.fish.display_name)",
 			"description": "i18n(archipelago_biome:entities.food.fish.description)",
-			"icon": "file(fish.png)",
-			"is_item": true,
-			"category": "cooking_ingredient",
-			"material_tags": "stockpile_cooking_ingredient cooking_ingredient meat raw fish"
+			"icon": "file(fish.png)"
 		}
 	}
 }

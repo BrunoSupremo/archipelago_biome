@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"effort": 120,
+	"work_units": 5,
+	"recipe_name": "i18n(archipelago_biome:entities.decoration.big_fish_hanging.display_name)",
+	"description": "i18n(archipelago_biome:entities.decoration.big_fish_hanging.description)",
+	"flavor": "i18n(archipelago_biome:entities.decoration.big_fish_hanging.recipe.flavor)",
+	"portrait" : "/archipelago_biome/entities/decoration/big_fish_hanging/big_fish_hanging.png",
+	"level_requirement": 6,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 2
+		},
+		{
+			"material": "raw big_fish",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "archipelago_biome:decoration:big_fish_hanging"
+		}
+	]
+}

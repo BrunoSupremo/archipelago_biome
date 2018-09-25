@@ -32,6 +32,21 @@
 			"weight":1,
 			"effort":240,
 			"xp":30
+		},
+		"ice_cube":{
+			"alias":"archipelago_biome:resources:ice_cube",
+			"weight":50,
+			"is_biome_exclusive":[
+				"stonehearth:biome:arctic"
+			],
+			"effort":60,
+			"xp":1
+		},
+		"tropical_fish":{
+			"alias":"archipelago_biome:food:tropical_fish",
+			"weight":1,
+			"effort":120,
+			"xp":15
 		}
 	},
 	"level_2":{
@@ -61,6 +76,21 @@
 			],
 			"effort":100,
 			"xp":10
+		},
+		"ice_cube":{
+			"alias":"archipelago_biome:resources:ice_cube",
+			"weight":25,
+			"is_biome_exclusive":[
+				"stonehearth:biome:arctic"
+			],
+			"effort":50,
+			"xp":1
+		},
+		"tropical_fish":{
+			"alias":"archipelago_biome:food:tropical_fish",
+			"weight":4,
+			"effort":100,
+			"xp":13
 		}
 	},
 	"level_3":{
@@ -75,6 +105,21 @@
 			"weight":8,
 			"effort":160,
 			"xp":22
+		},
+		"ice_cube":{
+			"alias":"archipelago_biome:resources:ice_cube",
+			"weight":12,
+			"is_biome_exclusive":[
+				"stonehearth:biome:arctic"
+			],
+			"effort":40,
+			"xp":1
+		},
+		"tropical_fish":{
+			"alias":"archipelago_biome:food:tropical_fish",
+			"weight":8,
+			"effort":80,
+			"xp":11
 		}
 	},
 	"level_4":{
@@ -89,6 +134,21 @@
 			"weight":12,
 			"effort":120,
 			"xp":18
+		},
+		"ice_cube":{
+			"alias":"archipelago_biome:resources:ice_cube",
+			"weight":6,
+			"is_biome_exclusive":[
+				"stonehearth:biome:arctic"
+			],
+			"effort":30,
+			"xp":1
+		},
+		"tropical_fish":{
+			"alias":"archipelago_biome:food:tropical_fish",
+			"weight":12,
+			"effort":60,
+			"xp":9
 		}
 	},
 	"level_5":{
@@ -103,6 +163,21 @@
 			"weight":16,
 			"effort":80,
 			"xp":14
+		},
+		"ice_cube":{
+			"alias":"archipelago_biome:resources:ice_cube",
+			"weight":3,
+			"is_biome_exclusive":[
+				"stonehearth:biome:arctic"
+			],
+			"effort":20,
+			"xp":1
+		},
+		"tropical_fish":{
+			"alias":"archipelago_biome:food:tropical_fish",
+			"weight":16,
+			"effort":40,
+			"xp":7
 		}
 	},
 	"level_6":{
@@ -136,6 +211,33 @@
 			"weight":5,
 			"effort":10,
 			"xp":1
+		},
+		"nemo":{
+			"alias":"archipelago_biome:food:nemo",
+			"weight":1,
+			"max_limit":1,
+			"bulletin":{
+				"title":"i18n(archipelago_biome:data.fishing.nemo.title)",
+				"message":"i18n(archipelago_biome:data.fishing.nemo.message)",
+				"image":"/archipelago_biome/entities/food/nemo/nemo.png"
+			},
+			"effort":100,
+			"xp":10
+		},
+		"ice_cube":{
+			"alias":"archipelago_biome:resources:ice_cube",
+			"weight":1,
+			"is_biome_exclusive":[
+				"stonehearth:biome:arctic"
+			],
+			"effort":10,
+			"xp":1
+		},
+		"tropical_fish":{
+			"alias":"archipelago_biome:food:tropical_fish",
+			"weight":20,
+			"effort":20,
+			"xp":5
 		}
 	}
 }

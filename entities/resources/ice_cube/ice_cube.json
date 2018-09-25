@@ -1,0 +1,45 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:item_properties",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(ice_cube.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 1,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.resources.ice_cube.display_name)",
+			"description": "i18n(archipelago_biome:entities.resources.ice_cube.description)",
+			"icon": "file(ice_cube.png)",
+			"is_item": true,
+			"category": "resources",
+			"material_tags": "ice_cube resource stockpile_raw_food stockpile_trophy"
+		},
+		"stonehearth:appeal": {
+			"appeal": 1
+		},
+		"stonehearth:food_decay": {
+			"initial_decay": {
+				"min": 12,
+				"max": 24
+			}
+		}
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"mixins": "archipelago_biome:mixins:fish",
+	"components": {
+		"render_info": {
+			"cache_model_geometry":false,
+			"color_map": "archipelago_biome:color_map:tropical_fish",
+			"material_maps": [
+				{
+					"type": "one_of",
+					"items": [
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/red_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/brown_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/orange_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/yellow_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/lime_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/green_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/silver_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/white_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/sky_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/teal_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/blue_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/plum_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/magenta_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/pink_base.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/gray_base.json"
+					]
+				},
+				{
+					"type": "one_of",
+					"items": [
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/red_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/brown_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/orange_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/yellow_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/lime_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/green_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/silver_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/white_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/sky_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/teal_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/blue_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/plum_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/magenta_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/pink_pattern.json",
+						"/archipelago_biome/data/materials/material_maps/tropical_fish_material_map/gray_pattern.json"
+					]
+				}
+			]
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(tropical_fish1.qb)",
+							"file(tropical_fish2.qb)",
+							"file(tropical_fish3.qb)",
+							"file(tropical_fish4.qb)",
+							"file(tropical_fish5.qb)",
+							"file(tropical_fish6.qb)",
+							"file(tropical_fish7.qb)",
+							"file(tropical_fish8.qb)",
+							"file(tropical_fish9.qb)",
+							"file(tropical_fish10.qb)",
+							"file(tropical_fish11.qb)",
+							"file(tropical_fish12.qb)"
+						]
+					}
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 4,
+			"shop_info": {
+				"shopkeeper_level": 2
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.tropical_fish.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.fish.description)",
+			"icon": "file(tropical_fish.png)"
+		}
+	}
+}

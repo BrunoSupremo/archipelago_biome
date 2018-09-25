@@ -15,7 +15,8 @@
 			"ghost_form": "file(ice_dock_ghost.json)",
 			"placeable_on_walls": false,
 			"placeable_on_ground": true
-		}
+		},
+		"stonehearth:traveler_attraction": {}
 	},
 	"entity_data": {
 		"stonehearth:hide_child_entities_from_pathfinder": true,

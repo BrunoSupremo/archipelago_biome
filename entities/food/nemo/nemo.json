@@ -1,0 +1,31 @@
+{
+	"mixins": "archipelago_biome:mixins:fish",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(nemo.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:food_decay": {
+			"initial_decay": {
+				"min": 600,
+				"max": 700
+			}
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 30,
+			"shop_info": {
+				"buyable": false
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.nemo.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.fish.description)",
+			"icon": "file(nemo.png)"
+		}
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"name": "bubbles",
+	"duration": 1000,
+	"material": "materials/cubemitter.material.json",
+	"loops": true,
+	"emission": {
+		"rate": {
+			"kind": "RANDOM_BETWEEN",
+			"values": [-2, 7]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [5]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": {
+				"surface": "POINT"
+			}
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [1900, 2000]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0.5, 0.6]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0.01, 0.075]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 1],
+					[0.95, 1],
+					[1, 2]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [
+					[0.5, 1, 1, 1],
+					[0.7, 1, 1, 1]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0.4],
+					[0.95, 0.4],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

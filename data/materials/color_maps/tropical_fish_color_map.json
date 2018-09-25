@@ -1,0 +1,10 @@
+{
+	"#D2D2D2": "archipelago_biome:tropical_fish_base:lighter",
+	"#BDBDBD": "archipelago_biome:tropical_fish_base:light",
+	"#A7A7A7": "archipelago_biome:tropical_fish_base:dark",
+	"#8E8E8E": "archipelago_biome:tropical_fish_base:darker",
+
+	"#E63C32": "archipelago_biome:tropical_fish_pattern:light",
+	"#B12E26": "archipelago_biome:tropical_fish_pattern:dark",
+	"#701D18": "archipelago_biome:tropical_fish_pattern:darker",
+}

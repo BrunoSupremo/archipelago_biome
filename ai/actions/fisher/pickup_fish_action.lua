@@ -1,3 +1,4 @@
+--I do not give consent to copy this
 local Entity = _radiant.om.Entity
 local rng = _radiant.math.get_default_rng()
 local PickUpFish = class()
@@ -27,6 +28,9 @@ function PickUpFish:start_thinking(ai, entity, args)
 		end
 	end
 	if not ai.CURRENT.carrying then
+		local job_component = entity:get_component('stonehearth:job')
+		local fish_table = job_component:get_curr_job_controller():remember_current_fish(self.fish)
+
 		ai.CURRENT.carrying = self.fish
 		ai:set_think_output({fish = self.fish})
 	end

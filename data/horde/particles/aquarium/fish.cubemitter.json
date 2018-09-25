@@ -1,0 +1,133 @@
+{
+	"name": "bubbles",
+	"duration": 1000,
+	"material": "materials/cubemitter.material.json",
+	"loops": true,
+	"mesh": {
+		"file": "archipelago_biome/entities/food/fish/fish1.qb",
+		"matrix": "",
+		"offset": {"x": 0, "y": 0, "z": 0 }
+	},
+	"emission": {
+		"rate": {
+			"kind": "CONSTANT",
+			"values": [1]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [0]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": {
+				"surface": "POINT"
+			}
+		},
+		"translation_x": {
+			"kind": "RANDOM_BETWEEN",
+			"values": [-0.2,0.2]
+		},
+		"translation_y": {
+			"kind": "RANDOM_BETWEEN",
+			"values": [-0.2,0.2]
+		},
+		"translation_z": {
+			"kind": "RANDOM_BETWEEN",
+			"values": [-0.2,0.1]
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [20000]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [-0.2, 0.2]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.1, 1],
+					[0.2, -1],
+					[0.3, 1],
+					[0.4, -1],
+					[0.5, 1],
+					[0.6, -1],
+					[0.7, 1],
+					[0.8, -1],
+					[0.9, 1],
+					[1, -1]
+				]
+			}
+		},
+		"velocity": {
+			"over_lifetime_x": {
+				"kind": "CURVE",
+				"values": [
+					[0, 3],
+					[0.01, 0],
+					[0.25, -0.15],
+					[0.5, 0],
+					[0.75, 0.15],
+					[1, 0]
+				]
+			},
+			"over_lifetime_z": {
+				"kind": "CURVE",
+				"values": [
+					[0, -0.15],
+					[0.25, 0],
+					[0.5, 0.15],
+					[0.75, 0],
+					[1, -0.15]
+				]
+			}
+		},
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "CURVE",
+				"values": [
+					[0, 180],
+					[1, -180]
+				]
+			},
+			"over_lifetime_z": {
+				"kind": "CURVE",
+				"values": [
+					[0, 270],
+					[1, 270]
+				]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0.01, 0.02]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [
+					[0, 0.2, 0.2, 1],
+					[0.2, 0, 0, 1]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.01, 0],
+					[0.02, 1],
+					[0.99, 1],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

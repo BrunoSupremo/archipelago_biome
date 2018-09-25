@@ -1,0 +1,14 @@
+{
+	"archipelago_biome:tropical_fish_base:lighter" : {
+		"color" : "#751EB8"
+	},
+	"archipelago_biome:tropical_fish_base:light" : {
+		"color" : "#651A9E"
+	},
+	"archipelago_biome:tropical_fish_base:dark" : {
+		"color" : "#5D1891"
+	},
+	"archipelago_biome:tropical_fish_base:darker" : {
+		"color" : "#541685"
+	}
+}

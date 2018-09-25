@@ -102,6 +102,20 @@
 					"flavor":"Se um barco fosse uma cabeça, suas âncoras seriam brincos?"
 				}
 			},
+			"aquarium": {
+				"display_name": "Aquário",
+				"description": "Peixes nadando em uma caixa transparente",
+				"recipe": {
+					"flavor": "Ou você tem um gato ou um aquário, mas não os dois."
+				}
+			},
+			"big_fish_hanging": {
+				"display_name": "Peixe Grande Pendurado",
+				"description": "Um peixe grande amostra pendurado em uma corrente",
+				"recipe": {
+					"flavor": "É bom você mostrá-lo ou então ninguém vai acreditar que pescou isso."
+				}
+			},
 			"dock":{
 				"display_name":"Doca de pesca",
 				"description":"Uma plataforma onde os pescadores vão para pescar"
@@ -245,6 +259,9 @@
 			"big_fish_cooked_serving": {
 				"display_name": "Cooked Big Fish"
 			},
+			"nemo": {
+				"display_name": "Nemo"
+			},
 			"fish":{
 				"display_name":"Peixe fresco",
 				"description":"Ainda não está pronto pra comer"
@@ -303,6 +320,9 @@
 			"sashimi":{
 				"display_name":"Sashimi",
 				"description":"Peixe cru fresco cortado em fatias bem fininhas"
+			},
+			"tropical_fish": {
+				"display_name": "Peixe Exótico Fresco"
 			}
 		},
 		"furniture":{
@@ -427,6 +447,10 @@
 			"hot_rock":{
 				"display_name":"Pedra Quente",
 				"description":"Rico em minerais, é só minerar"
+			},
+			"ice_cube": {
+				"display_name": "Cubo de Gelo",
+				"description": "Alguém pescou isso. Vai derreter logo."
 			}
 		},
 		"toys":{
@@ -684,6 +708,12 @@
 		}
 	},
 	"ui": {
+		"data":{
+			"constants":{
+				"raw_fish_name":"Peixe Fresco",
+				"raw_big_fish_name":"Peixe Fresco Grande"
+			}
+		},
 		"game":{
 			"build_mode":{
 				"building_templates":{
@@ -780,8 +810,12 @@
 		},
 		"fishing":{
 			"turtle_shield":{
-				"title":"O epscador pegou um Escudo Tartaruga!",
+				"title":"O pescador pegou um Escudo Tartaruga!",
 				"message":"Parece um escudo para soldados de nível baixo, e está pronto para ser usado."
+			},
+			"nemo":{
+				"title":"Procurando um peixe",
+				"message":"O pescador acabou de pegar esse peixinho palhaço perdido."
 			}
 		},
 		"monster_tuning":{

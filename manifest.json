@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name" : "Archipelago Biome",
+		"name" : "Fisher Job + Archipelago Biome",
 		"namespace" : "archipelago_biome",
 		"version" : 3,
 		"steam_file_id" : "1370165251"
@@ -43,6 +43,7 @@
 
 		"color_map:octopus":"file(data/materials/color_maps/octopus_color_map.json)",
 		"color_map:tree":	"file(data/materials/color_maps/tree_color_map.json)",
+		"color_map:tropical_fish":"file(data/materials/color_maps/tropical_fish_color_map.json)",
 
 		"commands:open_crate":"file(data/commands/open_crate)",
 		"commands:archer_arrows:fish": "file(data/commands/archer_arrows/fish_arrows.json)",
@@ -64,6 +65,8 @@
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"decoration:anchor":			"file(entities/decoration/anchor)",
+		"decoration:aquarium":			"file(entities/decoration/aquarium)",
+		"decoration:big_fish_hanging":	"file(entities/decoration/big_fish_hanging)",
 		"decoration:ice_dock":			"file(entities/decoration/ice_dock)",
 		"decoration:dock":				"file(entities/decoration/dock)",
 		"decoration:dock_leg":			"file(entities/decoration/dock/dock_leg.json)",
@@ -81,6 +84,7 @@
 		"decoration:tiki_torch":		"file(entities/decoration/tiki_torch)",
 		"decoration:totem":				"file(entities/decoration/totem)",
 
+		"effects:aquarium":					"file(data/effects/aquarium)",
 		"effects:bubble_shot":				"file(data/effects/bubble_shot)",
 		"effects:cocobomb_effect":			"file(data/effects/cocobomb_effect)",
 		"effects:cocobomb_explosion_effect":"file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
@@ -111,11 +115,13 @@
 		"food:fish:rotten":		 "file(entities/food/fish/fish_rotten.json)",
 		"food:fish_stew":		 "file(entities/food/fish_stew/fish_stew)",
 		"food:fish_stew_serving":"file(entities/food/fish_stew/fish_stew_serving)",
+		"food:nemo":"file(entities/food/nemo)",
 		"food:papaya_cookie":	"file(entities/food/papaya_cookie)",
 		"food:papaya_smoothie":	"file(entities/food/papaya_smoothie)",
 		"food:papaya_basket":	"file(entities/food/papaya/papaya_basket)",
 		"food:papaya_serving":	"file(entities/food/papaya/papaya_serving)",
 		"food:sashimi":"file(entities/food/sashimi)",
+		"food:tropical_fish":"file(entities/food/tropical_fish)",
 
 		"furniture:hammock":"file(entities/furniture/hammock)",
 
@@ -138,6 +144,7 @@
 
 		"mixins:encounter:octopus_raid":	"file(mixins/encounter/mixin_octopus_raid.json)",
 		"mixins:encounter:cocoling_raid":	"file(mixins/encounter/mixin_cocoling_raid.json)",
+		"mixins:fish":"file(mixins/fish)",
 		"mixins:foreign_tree":"file(mixins/foreign_tree)",
 		"mixins:palm_tree":"file(mixins/palm_tree)",
 		"mixins:spice":"file(mixins/spice)",
@@ -174,6 +181,7 @@
 		"resources:herb:hibiscus":		"file(entities/resources/herb/hibiscus)",
 		"resources:herb:blue_hibiscus":	"file(entities/resources/herb/blue_hibiscus)",
 		"resources:hot_rock":	"file(entities/resources/hot_rock)",
+		"resources:ice_cube":	"file(entities/resources/ice_cube)",
 		"resources:pearl":		"file(entities/resources/pearl)",
 		"resources:pearl:black":"file(entities/resources/black_pearl)",
 		"resources:spice:red":	"file(entities/resources/spice/red_spice.json)",
@@ -240,6 +248,8 @@
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/insane_raids.json":	"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/insane_raids.json)",
 
 		"stonehearth:data:player_task_groups": "file(services/server/population/data/player_task_groups.json)",
+
+		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
 
 		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
 

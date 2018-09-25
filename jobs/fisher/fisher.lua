@@ -1,3 +1,4 @@
+--I do not give consent to copy this
 local CraftingJob = require 'stonehearth.jobs.crafting_job'
 local BaseJob = require 'stonehearth.jobs.base_job'
 local WeightedSet = require 'stonehearth.lib.algorithms.weighted_set'
@@ -9,6 +10,7 @@ radiant.mixin(FisherClass, CraftingJob)
 function FisherClass:initialize()
 	CraftingJob.initialize(self)
 	self._sv.fished = {}
+	self._sv.current_fish = nil
 end
 
 function FisherClass:activate()
@@ -105,6 +107,20 @@ function FisherClass:_got_a_crab(crab_trap)
 	end
 end
 
+function FisherClass:remember_current_fish(fish)
+	if self._sv.current_fish then
+		--previously created fish that end up not used
+		radiant.entities.destroy_entity(self._sv.current_fish)
+	end
+	self._sv.current_fish = fish
+	self.__saved_variables:mark_changed()
+end
+
+function FisherClass:clear_current_fish()
+	self._sv.current_fish = nil
+	self.__saved_variables:mark_changed()
+end
+
 function FisherClass:_on_got_a_fish(args)
 	local fish_key = self.current_fish_key
 	local level = "level_"..self:get_job_level()
@@ -124,6 +140,8 @@ function FisherClass:_on_got_a_fish(args)
 
 	local xp = self.fishing_data[level][fish_key].xp or 1
 	self._job_component:add_exp(xp)
+
+	self:clear_current_fish()
 end
 
 return FisherClass

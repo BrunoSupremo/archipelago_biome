@@ -5,6 +5,8 @@
 		"version": 3
 	},
 	"mixintos": {
+		"archipelago_biome:data:fishing": "file(data/fishing)",
+
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/wait_to_start.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/wait_to_start.json)",
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json)",
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/stockpile.json":"file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp/stockpile.json)",

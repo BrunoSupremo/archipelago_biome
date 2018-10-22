@@ -1,5 +1,8 @@
 {
 	"actions" : [
-		"archipelago_biome:actions:harvest_palm_tree_adjacent_action"
+		"archipelago_biome:actions:climb_down",
+		"archipelago_biome:actions:climb_up",
+		"archipelago_biome:actions:harvest_coconut",
+		"archipelago_biome:actions:harvest_palm_tree"
 	]
 }

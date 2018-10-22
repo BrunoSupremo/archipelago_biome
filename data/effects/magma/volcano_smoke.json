@@ -1,0 +1,12 @@
+{
+	"type": "effect",
+	"tracks": {
+		"bright": {
+			"type": "cubemitter",
+			"cubemitter": "/archipelago_biome/data/horde/particles/magma/volcano_smoke.cubemitter.json",
+			"loop": true,
+			"start_time": 0,
+			"transforms": { "x": 0, "y": 5, "z": 0, "rx": 90, "ry": 0, "rz": 0 }
+		}
+	}
+}

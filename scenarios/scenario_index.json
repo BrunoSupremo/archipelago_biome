@@ -6,6 +6,7 @@
 
 			"file(static/landmarks/128x_gully_archipelago.json)",
 			"file(static/landmarks/128x_skeleton_sea_monster.json)",
+			"file(static/landmarks/32x_volcano.json)",
 			"file(static/landmarks/64x_island.json)",
 			"file(static/landmarks/64x_rune_site_archipelago.json)",
 			"file(static/landmarks/8x_buried_treasure.json)"
@@ -26,7 +27,7 @@
 			"archipelago_landmark" : {
 				"density" : 10,
 				"priority" : 0,
-				"max_count": [12],
+				"max_count": [13],
 				"location_type" : "surface",
 				"activation_type" : "immediate"
 			}

@@ -158,6 +158,10 @@
 					"flavor":"Flores podem embelezar as paredes!"
 				}
 			},
+			"magma":{
+				"display_name":"Bloco de Magma",
+				"description":"Magma super quente, incandescente, meio sólido. Não toque.",
+			},
 			"pearl_container":{
 				"display_name":"Caixote de pérolas",
 				"description":"Pronto pra ser exportado"
@@ -358,9 +362,9 @@
 				"display_name": "Manto de Terreno de Areia",
 				"description": "Cresce em um cobertor de areia, até 12x12 de tamanho."
 			},
-			"summon_stone_tropical_island":{
-				"display_name": "Ilha Tropical",
-				"description": "Invoca uma mini ilha inteira."
+			"summon_stone_volcano":{
+				"display_name": "Vulcão",
+				"description": "Invoca um mini vulcão inteiro."
 			}
 		},
 		"monsters":{
@@ -465,6 +469,22 @@
 				"unripe_description":"Ainda sem cocos."
 			},
 			"palm_tree":{
+				"seed": {
+					"display_name": "Semente de Palmeira",
+					"description": "Pode ser plantada para crescer uma palmeira"
+				},
+				"sprout": {
+					"display_name": "Broto de palmeira",
+					"description": "Só precisa de algum tempo e cuidado."
+				},
+				"stem": {
+					"display_name": "Palmeirinha",
+					"description": "Ainda crescendo!"
+				},
+				"bud": {
+					"display_name": "Brotamento de palmeira",
+					"description": "Está quase lá! Está crescendo suas folhas adultas!"
+				},
 				"sapling_palm_tree":{
 					"display_name":"Muda de Palmeira"
 				},
@@ -687,14 +707,19 @@
 		},
 		"geomancer": {
 			"recipes": {
-				"summon_stone_tropical_island_recipe":{
-					"recipe_name": "Ilha Tropical",
-					"description": "Invoca uma mini ilha inteira."
+				"summon_stone_volcano_recipe":{
+					"recipe_name": "Vulcão",
+					"description": "Invoca um mini vulcão inteiro."
 				}
 			}
 		},
 		"herbalist":{
 			"recipes":{
+				"palm_transmute_recipe":{
+					"recipe_name":"Semente de Palmeira",
+					"description":"Cure e fertilize o coco",
+					"flavor":"Depois que as duas metades são curadas juntas, você tem um novo coco fértil, pronto para ser plantado"
+				},
 				"papaya_transmute_recipe":{
 					"recipe_name":"Sementes de Mamão (x3)"
 				},

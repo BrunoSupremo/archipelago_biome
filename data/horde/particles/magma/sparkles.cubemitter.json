@@ -1,0 +1,79 @@
+{
+	"name": "fire",
+	"duration": 1000,
+	"material": "materials/cubemitter_bloom.material.json",
+	"loops": true,
+	"emission": {
+		"rate": {
+			"kind": "CONSTANT",
+			"values": [4]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [0]
+		},
+		"origin": {
+			"surface": "CUBOID",
+			"values": [3, 3, 3, 2.9, 2.9, 2.9]
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [1000, 1111]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [1]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 1],
+					[1, -1]
+				]
+			}
+		},
+		"velocity": {
+			"over_lifetime_x": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [-1,1]
+			},
+			"over_lifetime_z": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [-1,1]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0.1, 0.3]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 1],
+					[1, 0]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.7, 0.5, 0.2, 1]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.25, 1],
+					[0.75, 1],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

@@ -16,8 +16,10 @@
 		"actions:fishing_animations":	"file(ai/actions/fisher/fishing_animations_action.lua)",
 		"actions:pickup_fish":			"file(ai/actions/fisher/pickup_fish_action.lua)",
 		"actions:get_crab":				"file(ai/actions/fisher/get_crab_action.lua)",
-
-		"actions:harvest_palm_tree_adjacent_action":"file(ai/actions/harvest_palm_tree_adjacent.lua)",
+		"actions:climb_down":		"file(ai/actions/harvest_palm_tree/climb_down_action.lua)",
+		"actions:climb_up":			"file(ai/actions/harvest_palm_tree/climb_up_action.lua)",
+		"actions:harvest_coconut":	"file(ai/actions/harvest_palm_tree/harvest_coconut_action.lua)",
+		"actions:harvest_palm_tree":"file(ai/actions/harvest_palm_tree/harvest_palm_tree_action.lua)",
 
 		"task_groups:crab_movement": "file(ai/task_groups/crab_task_group.lua)",
 		"task_groups:fishing": "file(ai/task_groups/fishing_task_group.lua)",
@@ -76,6 +78,8 @@
 		"decoration:fisher_sign":		"file(entities/decoration/fisher_sign)",
 		"decoration:fruit_container":	"file(entities/decoration/fruit_container)",
 		"decoration:lei":				"file(entities/decoration/lei)",
+		"decoration:magma":				"file(entities/decoration/magma)",
+		"decoration:volcano_smoke":		"file(entities/decoration/magma/volcano_smoke.json)",
 		"decoration:pearl_container":	"file(entities/decoration/pearl_container)",
 		"decoration:pirate_flag":		"file(entities/decoration/pirate_flag)",
 		"decoration:raft":				"file(entities/decoration/raft)",
@@ -93,6 +97,8 @@
 		"effects:harvest_papaya_overlay":	"file(data/effects/harvest_papaya_overlay)",
 		"effects:harvest_pearl_overlay":	"file(data/effects/harvest_pearl_overlay)",
 		"effects:ice_dock_bubbles":			"file(data/effects/ice_dock_bubbles)",
+		"effects:magma":					"file(data/effects/magma)",
+		"effects:magma:volcano_smoke":		"file(data/effects/magma/volcano_smoke.json)",
 		"effects:no_water_overlay":			"file(data/effects/no_water_overlay)",
 		"effects:open_crate":				"file(data/effects/open_crate)",
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
@@ -135,9 +141,9 @@
 		"fisher:firepit":	"file(jobs/fisher/fisher_firepit)",
 
 		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
-		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)",
-		"landmark:summon_stone:block:sand": "file(entities/landmark/summon_stone_block_sand)",
-		"landmark:summon_stone:patch:sand": "file(entities/landmark/summon_stone_patch_sand)",
+		"landmark:summon_stone:minor:volcano":	"file(entities/landmark/summon_stone_volcano)",
+		"landmark:summon_stone:block:sand":		"file(entities/landmark/summon_stone_block_sand)",
+		"landmark:summon_stone:patch:sand":		"file(entities/landmark/summon_stone_patch_sand)",
 
 		"loot_bag:archipelago:mountain_tree_random": "file(data/loot_bag/mountain_tree_random.json)",
 		"loot_bag:archipelago:beach_tree_random": "file(data/loot_bag/beach_tree_random.json)",
@@ -205,6 +211,10 @@
 		"trees:palm:large":		"file(entities/trees/palm_tree/large_palm_tree)",
 		"trees:palm:small":		"file(entities/trees/palm_tree/small_palm_tree)",
 		"trees:palm:sapling":	"file(entities/trees/palm_tree/sapling_palm_tree)",
+		"trees:palm:seed":		"file(entities/trees/palm_tree/seed)",
+		"trees:palm:sprout":	"file(entities/trees/palm_tree/sprout)",
+		"trees:palm:stem":		"file(entities/trees/palm_tree/stem)",
+		"trees:palm:bud":		"file(entities/trees/palm_tree/bud)",
 		"trees:papaya":			"file(entities/trees/papaya)",
 		"trees:papaya:seed":	"file(entities/trees/papaya/seed)",
 		"trees:papaya:sprout":	"file(entities/trees/papaya/sprout)",
@@ -225,9 +235,12 @@
 		"weapons:fish_arrow":	"file(entities/weapons/fish_arrow)"
 	},
 	"deprecated_aliases": {
-		"decoration:hammock":"file(entities/decoration/hammock)"
+		"decoration:hammock":"file(entities/decoration/hammock)",
+		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)"
 	},
 	"mixintos": {
+		"stonehearth:ai_pack:harvesting": "file(ai/packs/harvesting_ai_pack.json)",
+
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
 

@@ -28,10 +28,12 @@ end
 function GoFish:start_thinking(ai, entity, args)
 	local job_component = entity:get_component('stonehearth:job')
 	local fish_table = job_component:get_curr_job_controller():chose_random_fish()
-	ai:set_think_output({
-		effort = fish_table.effort or 60,
-		alias = fish_table.alias
-		})
+	if fish_table then
+		ai:set_think_output({
+			effort = fish_table.effort or 60,
+			alias = fish_table.alias
+			})
+	end
 end
 
 local ai = stonehearth.ai

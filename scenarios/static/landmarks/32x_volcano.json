@@ -1,0 +1,17 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["archipelago_biome:biome:archipelago"],
+	"name": "volcano",
+	"category": "archipelago_landmark",
+	"unique" : true,
+	"size": {
+		"width": 48,
+		"length": 48
+	},
+	"habitat_types": ["mountains"],
+	"weight": 2,
+	"data": {
+		"brush" : "/archipelago_biome/data/models/landmark/32x_volcano.qb",
+		"landmark_block_types": "archipelago_biome:landmark_blocks"
+	}
+}

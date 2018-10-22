@@ -12,8 +12,8 @@
 		},
 		"landmark": {
 			"recipes": {
-				"tropical_island": {
-					"recipe": "file(tropical_island_recipe.json)"
+				"volcano": {
+					"recipe": "file(volcano_recipe.json)"
 				}
 			}
 		}

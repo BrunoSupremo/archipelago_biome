@@ -34,6 +34,9 @@ function FisherClass:chose_random_fish()
 	end
 	local weighted_set = WeightedSet(rng)
 	local level = "level_"..self:get_job_level()
+	if not (self.fishing_data and self.fishing_data[level]) then
+		return nil
+	end
 	for fish, table in pairs(self.fishing_data[level]) do
 		local weight = table.weight or 0
 		local is_valid_biome = not table.is_biome_exclusive or has_filter(table.is_biome_exclusive, self.biome_alias)
@@ -42,6 +45,9 @@ function FisherClass:chose_random_fish()
 		if weight>0 and is_valid_biome and is_valid_kingdom and is_below_limit then
 			weighted_set:add(fish, weight)
 		end
+	end
+	if weighted_set:is_empty() then
+		return nil
 	end
 	local fish_key = weighted_set:choose_random()
 	self.current_fish_key = fish_key

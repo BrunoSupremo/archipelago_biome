@@ -33,5 +33,6 @@ end
 
 radiant.events.listen_once(radiant, 'radiant:services:init', archipelago_biome, archipelago_biome._on_services_init)
 radiant.events.listen_once(radiant, 'stonehearth:biome_set', archipelago_biome, archipelago_biome._on_biome_set)
-
+radiant.util.set_global_config('mods.directory.cfm.enabled', false)
+radiant.util.set_global_config('mods.steam_uploads.cfm.enabled', false)
 return archipelago_biome

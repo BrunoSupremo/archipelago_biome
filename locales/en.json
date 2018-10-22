@@ -158,6 +158,10 @@
 					"flavor": "Flowers can add extra beauty to walls!"
 				}
 			},
+			"magma":{
+				"display_name":"Magma Block",
+				"description":"Super hot, glowing red, half solid, magma. Do not touch.",
+			},
 			"pearl_container": {
 				"display_name": "Pearl Container",
 				"description": "Ready to be exported"
@@ -358,9 +362,9 @@
 				"display_name": "Sand Terrain Patch Stone",
 				"description": "Grows into a patch of sandy terrain, up to 12x12 units in size."
 			},
-			"summon_stone_tropical_island":{
-				"display_name": "Tropical Island",
-				"description": "Summon a whole mini island."
+			"summon_stone_volcano":{
+				"display_name": "Volcano",
+				"description": "Summon a whole mini volcano."
 			}
 		},
 		"monsters": {
@@ -465,6 +469,22 @@
 				"unripe_description": "No coconuts yet. A symbol of the tropical island paradise."
 			},
 			"palm_tree": {
+				"seed": {
+					"display_name": "Palm Seed",
+					"description": "Can be planted to grow a palm tree"
+				},
+				"sprout": {
+					"display_name": "Palm Tree Sproutling",
+					"description": "Just needs some time and care."
+				},
+				"stem": {
+					"display_name": "Stemming Palm Tree",
+					"description": "Still growing!"
+				},
+				"bud": {
+					"display_name": "Budding Palm Tree",
+					"description": "Its almost there!  It's growing its adult leaves!"
+				},
 				"sapling_palm_tree": {
 					"display_name": "Palm Tree Sapling"
 				},
@@ -687,14 +707,19 @@
 		},
 		"geomancer": {
 			"recipes": {
-				"summon_stone_tropical_island_recipe":{
-					"recipe_name": "Tropical Island",
-					"description": "Summon a whole mini island."
+				"summon_stone_volcano_recipe":{
+					"recipe_name": "Volcano",
+					"description": "Summon a whole mini volcano."
 				}
 			}
 		},
 		"herbalist": {
 			"recipes": {
+				"palm_transmute_recipe": {
+					"recipe_name": "Palm Tree Seed",
+					"description":"Heal and fertilize the coconut",
+					"flavor":"After the two halves are healed together, you have a new fertile coconut, ready to be planted"
+				},
 				"papaya_transmute_recipe": {
 					"recipe_name": "Papaya Seeds (x3)"
 				},

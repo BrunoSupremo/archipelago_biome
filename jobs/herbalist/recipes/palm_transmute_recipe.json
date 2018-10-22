@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(archipelago_biome:jobs.herbalist.recipes.palm_transmute_recipe.recipe_name)",
+	"description": "i18n(archipelago_biome:jobs.herbalist.recipes.palm_transmute_recipe.description)",
+	"flavor": "i18n(archipelago_biome:jobs.herbalist.recipes.palm_transmute_recipe.flavor)",
+	"portrait": "/archipelago_biome/entities/trees/palm_tree/seed/seed.png",
+	"workshop": "stonehearth:herbalist:workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"uri": "archipelago_biome:food:coconut",
+			"count": 2
+		},
+		{
+			"uri": "stonehearth:consumables:healing_tonic:small",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "archipelago_biome:trees:palm:seed"
+		}
+	]
+}

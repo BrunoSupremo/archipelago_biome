@@ -2,6 +2,9 @@
 	"craftable_recipes" : {
 		"refinement": {
 			"recipes": {
+				"palm_herbalist": {
+					"recipe": "file(palm_transmute_recipe.json)"
+				},
 				"papaya_herbalist": {
 					"recipe": "file(papaya_transmute_recipe.json)"
 				},

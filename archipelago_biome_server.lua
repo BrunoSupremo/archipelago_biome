@@ -1,6 +1,12 @@
 archipelago_biome = {}
 local log = radiant.log.create_logger('version')
-log:error("Archipelago Biome mod for Stonehearth 1.0.6")
+log:error("Archipelago Biome Mod last updated at Stonehearth 1.0.0.907")
+
+function archipelago_biome:_on_required_loaded()
+	local custom_biome = require('services.server.world_generation.custom_biome')
+	local biome = radiant.mods.require('stonehearth.services.server.world_generation.biome')
+	radiant.mixin(biome, custom_biome)
+end
 
 function archipelago_biome:_on_services_init()
 
@@ -32,7 +38,8 @@ function archipelago_biome:_on_biome_set(e)
 end
 
 radiant.events.listen_once(radiant, 'radiant:services:init', archipelago_biome, archipelago_biome._on_services_init)
+radiant.events.listen_once(radiant, 'radiant:required_loaded', archipelago_biome, archipelago_biome._on_required_loaded)
 radiant.events.listen_once(radiant, 'stonehearth:biome_set', archipelago_biome, archipelago_biome._on_biome_set)
 radiant.util.set_global_config('mods.directory.cfm.enabled', false)
-radiant.util.set_global_config('mods.steam_uploads.cfm.enabled', false)
+radiant.util.set_global_config('mods.steam_workshop.cfm.enabled', false)
 return archipelago_biome

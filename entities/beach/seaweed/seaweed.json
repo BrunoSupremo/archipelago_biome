@@ -14,6 +14,7 @@
 			}
 		},
 		"stonehearth:renewable_resource_node": {
+			"show_autoharvest_ui": true,
 			"category": "fishing",
 			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect",
 			"unripe_description": "i18n(stonehearth:entities.plants.silkweed.silkweed.unripe_description)",

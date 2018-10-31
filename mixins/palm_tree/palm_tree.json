@@ -6,6 +6,7 @@
 			"resource": "stonehearth:resources:wood:palm_log"
 		},
 		"stonehearth:renewable_resource_node": {
+			"show_autoharvest_ui": true,
 			"harvester_effect": "work_high",
 			"category": "harvest",
 			"resource": "archipelago_biome:food:coconut",

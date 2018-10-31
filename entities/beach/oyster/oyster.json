@@ -10,6 +10,7 @@
 			}
 		},
 		"stonehearth:renewable_resource_node": {
+			"show_autoharvest_ui": true,
 			"category": "fishing",
 			"harvest_overlay_effect": "archipelago_biome:effects:harvest_pearl_overlay",
 			"unripe_description": "i18n(archipelago_biome:entities.beach.oyster.unripe_description)",

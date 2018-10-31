@@ -45,6 +45,7 @@ function Climb_Up_Palm_tree:run(ai, entity, args)
 		self._gameloop_trace = radiant.on_game_loop('climbing movement', function()
 			if not args.resource:is_valid() then
 				self:_destroy_gameloop_trace()
+				self:_destroy_effect(ai)
 				return
 			end
 
@@ -52,7 +53,7 @@ function Climb_Up_Palm_tree:run(ai, entity, args)
 			local distance = vector:length()
 			local move_distance = self:_get_distance_per_gameloop()
 
-			if distance < move_distance then
+			if distance < move_distance+0.05 then
 				self:_destroy_gameloop_trace()
 				vector:normalize()
 				vector:scale(move_distance)
@@ -61,6 +62,7 @@ function Climb_Up_Palm_tree:run(ai, entity, args)
 				local new_climber_location = climber_location + vector
 
 				self._mob:move_to(new_climber_location)
+				self:_destroy_effect(ai)
 				return
 			end
 
@@ -76,12 +78,48 @@ function Climb_Up_Palm_tree:run(ai, entity, args)
 		if i%2==0 then
 			effect = "run_climb_ladder_up"
 		end
-		ai:execute('stonehearth:run_effect_timed', { effect = effect, duration = outer_distance.."m" })
+		self:run_effect_timed(ai, entity, effect, outer_distance.."m")
+		-- ai:execute('stonehearth:run_effect_timed', { effect = effect, duration = outer_distance.."m" })
 	end
 	self.succeded = true
 end
 
+function Climb_Up_Palm_tree:run_effect_timed(ai, entity, effect, duration)
+	self._effect = radiant.effects.run_effect(entity, effect, 0):set_cleanup_on_finish(false)
+
+	self._timer = stonehearth.calendar:set_timer("RunEffectTimedAction ai resume", duration, function()
+		if self.is_suspend then
+			self.is_suspend = false
+			ai:resume()
+		end
+		end)
+
+	self.is_suspend = true
+	ai:suspend('waiting for timed effect')
+	self:_destroy_effect(ai)
+end
+
+function Climb_Up_Palm_tree:_destroy_effect(ai)
+	if self._effect then
+		if self._timer then
+			self._timer:destroy()
+			self._timer = nil
+		end
+		self._effect:stop()
+		self._effect = nil
+		if self.is_suspend then
+			self.is_suspend = false
+			ai:resume()
+		end
+	end
+end
+
 function Climb_Up_Palm_tree:stop(ai, entity, args)
+	if self._timer then
+		self._timer:destroy()
+		self._timer = nil
+	end
+	self:_destroy_effect(ai)
 	self:_destroy_gameloop_trace()
 	if not self.succeded then
 		local entity_location = radiant.entities.get_world_grid_location(entity)

@@ -10,6 +10,7 @@
 			}
 		},
 		"stonehearth:renewable_resource_node": {
+			"show_autoharvest_ui": true,
 			"category": "harvest",
 			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect",
 			"unripe_description": "i18n(archipelago_biome:entities.plants.blue_hibiscus_plant.unripe_description)",

@@ -40,6 +40,10 @@
 	},
 	"season": "dry",
 	"palettes": {
+		"minimap":{
+			"water":"#15CFBF",
+			"mountains_1":"#79865F"
+		},
 		"dry": {
 			"null": "#FF00FF",
 			"unknown": "#25221A",

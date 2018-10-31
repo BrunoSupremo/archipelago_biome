@@ -340,7 +340,7 @@ $.widget( "stonehearth.stonehearthMap", {
 
       if (forest_density > 0) {
          var margin = self.forestMargin[forest_density];
-         context.fillStyle = '#263c2c';
+         context.fillStyle = self.options.mapInfo.color_map.trees;
          //context.fillStyle = '#223025';   // darker color
          context.globalAlpha = 0.6;
 

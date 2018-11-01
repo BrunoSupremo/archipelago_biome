@@ -109,7 +109,9 @@ function Climb_Up_Palm_tree:_destroy_effect(ai)
 		self._effect = nil
 		if self.is_suspend then
 			self.is_suspend = false
-			ai:resume()
+			if ai then
+				ai:resume()
+			end
 		end
 	end
 end
@@ -127,6 +129,9 @@ function Climb_Up_Palm_tree:stop(ai, entity, args)
 		if entity_location.y ~= tree_location.y then
 			radiant.entities.move_to(entity, tree_location)
 		end
+	end
+	if self.is_suspend and ai then
+		ai:resume()
 	end
 end
 

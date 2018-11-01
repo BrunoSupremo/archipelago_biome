@@ -13,6 +13,15 @@ Harvest_Coconut.args = {
 }
 Harvest_Coconut.priority = 1
 
+function Harvest_Coconut:start(ai, entity, args)
+   local renewable_resource_component = args.resource:get_component('stonehearth:renewable_resource_node')
+   local status_text_key = 'stonehearth:ai.actions.status_text.harvest_resource'
+   if renewable_resource_component and renewable_resource_component:get_harvest_status_text() then
+      status_text_key = renewable_resource_component:get_harvest_status_text()
+   end
+   ai:set_status_text_key(status_text_key, { target = args.resource })
+end
+
 function Harvest_Coconut:run(ai, entity, args)
 	local resource = args.resource
 	local id = resource:get_id()

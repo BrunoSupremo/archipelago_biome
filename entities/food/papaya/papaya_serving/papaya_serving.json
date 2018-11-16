@@ -36,7 +36,7 @@
 			"description": "i18n(archipelago_biome:entities.food.papaya_serving.description)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": "food vegetarian",
+			"material_tags":["food", "vegetarian"],
 			"subject_override": "archipelago_biome:food:papaya_basket"
 		}
 	}

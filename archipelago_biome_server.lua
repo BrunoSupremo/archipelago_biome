@@ -31,10 +31,6 @@ function archipelago_biome:_on_biome_set(e)
 	local custom_micro_map_generator = require('services.server.world_generation.custom_micro_map_generator')
 	local micro_map_generator = radiant.mods.require('stonehearth.services.server.world_generation.micro_map_generator')
 	radiant.mixin(micro_map_generator, custom_micro_map_generator)
-
-	local custom_habitat_manager = require('services.server.world_generation.custom_habitat_manager')
-	local habitat_manager = radiant.mods.require('stonehearth.services.server.world_generation.habitat_manager')
-	radiant.mixin(habitat_manager, custom_habitat_manager)
 end
 
 radiant.events.listen_once(radiant, 'radiant:services:init', archipelago_biome, archipelago_biome._on_services_init)

@@ -23,7 +23,7 @@
 			"description": "i18n(archipelago_biome:entities.gizmos.crab_trap.description)",
 			"icon": "file(crab_trap.png)",
 			"category": "decoration",
-			"material_tags": "wood fiber crafted decoration stockpile_decoration"
+			"material_tags":["wood", "fiber", "crafted", "decoration", "stockpile_decoration"]
 		}
 	}
 }

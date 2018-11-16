@@ -239,8 +239,6 @@
 		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)"
 	},
 	"mixintos": {
-		"stonehearth:ai_pack:harvesting": "file(ai/packs/harvesting_ai_pack.json)",
-
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
 
@@ -265,8 +263,6 @@
 		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
 
 		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
-
-		"stonehearth/entities/monsters/undead/skeleton/female/skeleton_female.json": "file(entities/monsters/undead/skeleton/female/skeleton_female.json)",
 
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 

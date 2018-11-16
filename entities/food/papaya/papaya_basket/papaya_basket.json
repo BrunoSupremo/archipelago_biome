@@ -42,7 +42,7 @@
          "icon": "file(papaya_basket.png)",
          "is_item": true,
          "category": "food",
-         "material_tags": "food_container raw_food fruit papaya vegetarian stockpile_raw_food"
+         "material_tags":["food_container", "raw_food", "fruit", "papaya", "vegetarian", "stockpile_raw_food"]
       }
    }
 }

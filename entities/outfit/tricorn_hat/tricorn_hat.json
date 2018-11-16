@@ -26,7 +26,7 @@
          "slot": "helmet",
          "ilevel": 2,
          "required_job_level": 2,
-         "roles": "footman_job",
+         "roles":["footman_job"],
          "equip_effect": "stonehearth:effects:weapon_level_up"
       }
    },
@@ -49,7 +49,7 @@
          "description": "i18n(archipelago_biome:entities.outfit.tricorn_hat.description)",
          "icon": "file(tricorn_hat.png)",
          "category": "armor",
-         "material_tags": "leather armor light_armor stockpile_equipment"
+         "material_tags":["leather", "armor", "light_armor", "stockpile_equipment"]
       }
    }
 }

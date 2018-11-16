@@ -52,7 +52,7 @@
 			"icon": "file(papaya_smoothie.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": "food prepared_food papaya fruit vegetarian stockpile_prepared_food coconut drink"
+			"material_tags":["food", "prepared_food", "papaya", "fruit", "vegetarian", "stockpile_prepared_food", "coconut", "drink"]
 		},
 		"stonehearth:appeal": {
 			"appeal": 10

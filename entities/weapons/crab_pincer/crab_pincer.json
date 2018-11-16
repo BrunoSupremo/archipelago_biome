@@ -23,7 +23,7 @@
 				"stonehearth:patrol"
 			],
 			"ilevel": 12,
-			"roles": "footman_job",
+			"roles":["footman_job"],
 			"required_job_level": 1,
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
@@ -57,7 +57,7 @@
 			"description": "i18n(archipelago_biome:entities.weapons.crab_pincer.description)",
 			"icon": "file(crab_pincer.png)",
 			"category": "weapons",
-			"material_tags": "crab melee_weapon crafted stockpile_weapon"
+			"material_tags":["crab", "melee_weapon", "crafted", "stockpile_weapon"]
 		}
 	}
 }

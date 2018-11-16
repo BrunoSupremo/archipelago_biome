@@ -27,7 +27,7 @@
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.food.crab_bisque_serving.display_name)",
 			"description": "",
-			"material_tags": "food crab meat",
+			"material_tags":["food", "crab", "meat"],
 			"subject_override": "archipelago_biome:food:crab_bisque"
 		}
 	}

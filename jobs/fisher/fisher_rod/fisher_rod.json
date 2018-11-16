@@ -43,7 +43,7 @@
 			"description": "i18n(archipelago_biome:jobs.fisher.fisher_rod.description)",
 			"icon": "file(fisher_rod.png)",
 			"category": "tools",
-			"material_tags": "tool"
+			"material_tags":["tool"]
 		}
 	}
 }

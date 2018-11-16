@@ -40,7 +40,7 @@
 			"evolve_time": "1d+1h"
 		},
 		"stonehearth:catalog": {
-			"material_tags": "stockpile_plant",
+			"material_tags":["stockpile_plant"],
 			"display_name": "i18n(archipelago_biome:entities.trees.smalea.stem.display_name)",
 			"description": "i18n(archipelago_biome:entities.trees.smalea.stem.description)",
 			"category": "plants",

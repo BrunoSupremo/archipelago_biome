@@ -27,7 +27,7 @@
 			"description": "i18n(archipelago_biome:entities.landmark.summon_stone_patch_sand.description)",
 			"icon": "file(summon_stone_patch_sand.png)",
 			"category": "geomancer",
-			"material_tags": "crafted stone summon_stone stockpile_geomancer"
+			"material_tags":["crafted", "stone", "summon_stone", "stockpile_geomancer"]
 		}
 	}
 }

@@ -29,7 +29,7 @@
 			"description": "i18n(stonehearth:entities.plants.silkweed.silkweed.description)",
 			"icon": "file(seaweed.png)",
 			"category": "plants",
-			"material_tags": "plant stockpile_plant"
+			"material_tags":["plant", "stockpile_plant"]
 		}
 	}
 }

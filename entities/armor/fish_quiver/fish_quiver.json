@@ -26,7 +26,7 @@
 			"slot": "accessory",
 			"ilevel": 2,
 			"required_job_level": 2,
-			"roles": "archer_job",
+			"roles":["archer_job"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		},
 		"stonehearth:equipment_swap": {
@@ -65,7 +65,7 @@
 			"description": "i18n(archipelago_biome:entities.armor.fish_quiver.description)",
 			"icon": "file(fish_quiver.png)",
 			"category": "armor",
-			"material_tags": "leather armor light_armor quiver stockpile_equipment"
+			"material_tags":["leather", "armor", "light_armor", "quiver", "stockpile_equipment"]
 		}
 	}
 }

@@ -44,7 +44,7 @@
 			"description": "i18n(archipelago_biome:entities.construction.porthole.description)",
 			"icon": "file(porthole.png)",
 			"category": "window",
-			"material_tags": "metal portal crafted window stockpile_portal"
+			"material_tags":["metal", "portal", "crafted", "window", "stockpile_portal"]
 		}
 	}
 }

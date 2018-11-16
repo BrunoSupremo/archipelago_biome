@@ -45,7 +45,7 @@
 			"icon": "file(fish_cooked.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": "prepared_food stockpile_prepared_food meat food fish_cooked"
+			"material_tags":["prepared_food", "stockpile_prepared_food", "meat", "food", "fish_cooked"]
 		},
 		"stonehearth:appeal": {
 			"appeal": 1

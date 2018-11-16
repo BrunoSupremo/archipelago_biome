@@ -52,7 +52,7 @@
 			"icon": "file(coconut.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": "food raw_food fruit coconut vegetarian stockpile_raw_food drink"
+			"material_tags":["food", "raw_food", "fruit", "coconut", "vegetarian", "stockpile_raw_food", "drink"]
 		}
 	}
 }

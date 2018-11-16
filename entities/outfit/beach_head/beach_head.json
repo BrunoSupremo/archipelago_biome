@@ -23,7 +23,7 @@
          "slot": "helmet",
          "ilevel": 1,
          "required_job_level": 0,
-         "roles": "footman_job",
+         "roles":["footman_job"],
          "equip_effect": "stonehearth:effects:weapon_level_up"
       }
    },
@@ -46,7 +46,7 @@
          "description": "i18n(archipelago_biome:entities.outfit.beach_head.description)",
          "icon": "file(beach_head.png)",
          "category": "armor",
-         "material_tags": "leather armor light_armor stockpile_equipment"
+         "material_tags":["leather", "armor", "light_armor", "stockpile_equipment"]
       }
    }
 }

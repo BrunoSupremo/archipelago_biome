@@ -24,7 +24,7 @@
 			"description": "i18n(archipelago_biome:entities.gizmos.cocobomb.description)",
 			"icon": "file(cocobomb.png)",
 			"category": "defense",
-			"material_tags": "coal coconut defense stockpile_defense"
+			"material_tags":["coal", "coconut", "defense", "stockpile_defense"]
 		}
 	}
 }

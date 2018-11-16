@@ -28,7 +28,7 @@
 			"description": "i18n(archipelago_biome:entities.toys.beachball.description)",
 			"icon": "file(beachball.png)",
 			"category": "trophy",
-			"material_tags": "beachball toy stockpile_trophy loot"
+			"material_tags":["beachball", "toy", "stockpile_trophy", "loot"]
 		}
 	}
 }

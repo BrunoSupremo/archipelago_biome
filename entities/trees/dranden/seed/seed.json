@@ -49,7 +49,7 @@
 			"display_name": "i18n(archipelago_biome:entities.trees.dranden.seed.display_name)",
 			"description": "i18n(archipelago_biome:entities.trees.dranden.seed.description)",
 			"icon": "file(seed.png)",
-			"material_tags": "stockpile_plant resource seed seed_hard plant",
+			"material_tags":["stockpile_plant", "resource", "seed", "seed_hard", "plant"],
 			"category": "seed",
 			"subject_override": "archipelago_biome:trees:dranden:small"
 		},

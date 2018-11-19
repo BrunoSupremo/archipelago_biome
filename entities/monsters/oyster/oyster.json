@@ -1,0 +1,104 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:monster",
+	"components": {
+		"render_info": {
+			"cache_model_geometry":false,
+			"animation_table": "stonehearth/data/rigs/entities/monster/evil/loot_chest_fake"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(oyster.qb)"
+				]
+			}
+		},
+		"stonehearth:equipment": {
+			"items": [
+				"stonehearth:monsters:evil:loot_chest_fake:mouth_weapon"
+			]
+		},
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 500
+			},
+			"muscle": {
+				"type": "basic",
+				"value": 0
+			},
+			"menace": {
+				"type": "basic",
+				"value": 20
+			},
+			"courage": {
+				"type": "basic",
+				"value": 50
+			},
+			"speed": {
+				"type": "basic",
+				"value": 80
+			},
+			"exp_reward": {
+				"type": "basic",
+				"value": 0
+			}
+		},
+		"stonehearth:loot_drops": {
+			"entries": {
+				"default": {
+					"num_rolls": {
+						"min": 1,
+						"max": 1
+					},
+					"items": {
+						"pearl": {
+							"uri": "archipelago_biome:resources:pearl",
+							"weight": 5
+						},
+						"black_pear": {
+							"uri": "archipelago_biome:resources:pearl:black",
+							"weight": 1
+						}
+					}
+				}
+			}
+		},
+		"stonehearth:carry_block": {}
+	},
+	"entity_data": {
+		"stonehearth:entity_radius": 1.25,
+		"stonehearth:entity_reach": 1.0,
+		"stonehearth:ai_packs": {
+			"packs": [
+				"stonehearth:ai_pack:harvesting",
+				"stonehearth:ai_pack:restocking",
+				"stonehearth:ai_pack:patrolling"
+			]
+		},
+		"stonehearth:portrait": {
+			"portrait_types": {
+				"headshot": {
+					"camera": {
+						"pos": [
+							24,
+							1.2,
+							-27
+						],
+						"look_at": [
+							0,
+							1.3,
+							0
+						],
+						"fov": 65
+					}
+				}
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.monsters.oyster.display_name)",
+			"description": "i18n(archipelago_biome:entities.monsters.oyster.description)",
+			"icon": "file(oyster.png)"
+		}
+	}
+}

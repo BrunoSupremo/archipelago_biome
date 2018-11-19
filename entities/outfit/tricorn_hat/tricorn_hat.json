@@ -49,7 +49,7 @@
          "description": "i18n(archipelago_biome:entities.outfit.tricorn_hat.description)",
          "icon": "file(tricorn_hat.png)",
          "category": "armor",
-         "material_tags":["leather", "armor", "light_armor", "stockpile_equipment"]
+         "material_tags":["leather", "helmet", "armor", "light_armor", "stockpile_equipment"]
       }
    }
 }

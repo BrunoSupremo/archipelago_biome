@@ -9,7 +9,7 @@
 			"max":2,
 			"in_game_mode_hard":{
 				"min":4,
-				"max":4,
+				"max":4
 			}
 		},
 		"stonehearth:commands": {

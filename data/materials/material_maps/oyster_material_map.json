@@ -1,0 +1,14 @@
+{
+	"archipelago_biome:shell:darker" : {
+		"color" : "#7C7C7C"
+	},
+	"archipelago_biome:shell:dark" : {
+		"color" : "#878686"
+	},
+	"archipelago_biome:shell:light" : {
+		"color" : "#909090"
+	},
+	"archipelago_biome:shell:lighter" : {
+		"color" : "#999999"
+	}
+}

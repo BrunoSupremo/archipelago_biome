@@ -1,0 +1,13 @@
+{
+	"type": "monster_tuning",
+	"estimated_difficulty": 2,
+	"attributes": {
+		"max_health": 450,
+		"muscle": 2,
+		"menace": 75,
+		"courage": 90,
+		"speed": 80,
+		"additive_armor_modifier": 3,
+		"exp_reward": 40
+	}
+}

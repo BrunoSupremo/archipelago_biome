@@ -1,0 +1,10 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_event",
+	"in_edge": "wait_for_oyster_pack_killed",
+	"out_edge": "oyster_pack_killed",
+	"wait_for_event_info": {
+		"source": "pack_of_oyster.oyster",
+		"event": "stonehearth:kill_event"
+	}
+}

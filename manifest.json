@@ -44,6 +44,7 @@
 		"anya":				"file(entities/humans/anya)",
 
 		"color_map:octopus":"file(data/materials/color_maps/octopus_color_map.json)",
+		"color_map:oyster":	"file(data/materials/color_maps/oyster_color_map.json)",
 		"color_map:tree":	"file(data/materials/color_maps/tree_color_map.json)",
 		"color_map:tropical_fish":"file(data/materials/color_maps/tropical_fish_color_map.json)",
 
@@ -149,6 +150,7 @@
 		"loot_bag:archipelago:beach_tree_random": "file(data/loot_bag/beach_tree_random.json)",
 
 		"mixins:encounter:octopus_raid":	"file(mixins/encounter/mixin_octopus_raid.json)",
+		"mixins:encounter:oyster_raid":		"file(mixins/encounter/mixin_oyster_raid.json)",
 		"mixins:encounter:cocoling_raid":	"file(mixins/encounter/mixin_cocoling_raid.json)",
 		"mixins:fish":"file(mixins/fish)",
 		"mixins:foreign_tree":"file(mixins/foreign_tree)",
@@ -160,6 +162,7 @@
 		"monsters:cocoling_spawner":"file(entities/monsters/cocoling_spawner)",
 		"monsters:fake_container":	"file(entities/monsters/fake_container)",
 		"monsters:octopus":			"file(entities/monsters/octopus)",
+		"monsters:oyster":			"file(entities/monsters/oyster)",
 
 		"monster_tuning:forest:easy_cocoling":	"file(data/monster_tuning/forest/easy_cocoling.json)",
 		"monster_tuning:forest:giant_cocoling":	"file(data/monster_tuning/forest/giant_cocoling.json)",
@@ -167,6 +170,10 @@
 		"monster_tuning:forest:medium_octopus":	"file(data/monster_tuning/forest/medium_octopus.json)",
 		"monster_tuning:forest:giant_octopus":	"file(data/monster_tuning/forest/giant_octopus.json)",
 		"monster_tuning:forest:insane_octopus":	"file(data/monster_tuning/forest/insane_octopus.json)",
+		"monster_tuning:forest:easy_oyster":	"file(data/monster_tuning/forest/easy_oyster.json)",
+		"monster_tuning:forest:medium_oyster":	"file(data/monster_tuning/forest/medium_oyster.json)",
+		"monster_tuning:forest:giant_oyster":	"file(data/monster_tuning/forest/giant_oyster.json)",
+		"monster_tuning:forest:insane_oyster":	"file(data/monster_tuning/forest/insane_oyster.json)",
 		"monster_tuning:undead:cave_skeleton":	"file(data/monster_tuning/undead/cave_skeleton.json)",
 
 		"outfit:beach_head":	"file(entities/outfit/beach_head)",

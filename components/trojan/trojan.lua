@@ -23,8 +23,13 @@ function ArchipelagoTrojan:destroy()
 		end
 	end
 
+
+	local uri = json.uri
+	if radiant.util.is_table(uri) then
+		uri = uri[rng:get_int(1, #uri)]
+	end
 	for i=1, rng:get_int(json.min,json.max) do
-		local entity = radiant.entities.create_entity(json.uri, {owner = json.player_id})
+		local entity = radiant.entities.create_entity(uri, {owner = json.player_id})
 		if json.equipment then
 			entity:get_component("stonehearth:equipment"):equip_item(json.equipment)
 		end

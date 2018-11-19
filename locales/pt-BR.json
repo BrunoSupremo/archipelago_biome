@@ -353,6 +353,15 @@
 				"description":"Irá atrair e capturar caranguejos."
 			}
 		},
+		"humans": {
+			"anya":{
+				"display_name": "Anya"
+			},
+			"captain_miranda":{
+				"display_name": "Capitã Miranda",
+				"description": "O mar é seu lar"
+			}
+		},
 		"landmark":{
 			"summon_stone_block_sand": {
 				"display_name": "Bloco de Terreno de Areia",
@@ -383,6 +392,15 @@
 			"octopus":{
 				"display_name":"Polvo",
 				"description":"Braços, mais do que você consegue contar"
+			},
+			"oyster": {
+				"display_name": "Ostra Monstra",
+				"description": "Maior e raivosa, casca dura"
+			}
+		},
+		"outfit": {
+			"visitor_outfit": {
+				"description": "Roupa comum de outra ilha"
 			}
 		},
 		"plants": {
@@ -577,20 +595,6 @@
 			"fish_arrow": {
 				"display_name": "Flecha de Peixe",
 				"description": "Ninguém é corajoso quando o peixe voa."
-			}
-		},
-		"humans": {
-			"anya":{
-				"display_name": "Anya"
-			},
-			"captain_miranda":{
-				"display_name": "Capitã Miranda",
-				"description": "O mar é seu lar"
-			}
-		},
-		"outfit": {
-			"visitor_outfit": {
-				"description": "Roupa comum de outra ilha"
 			}
 		}
 	},
@@ -847,6 +851,9 @@
 			"forest":{
 				"insane_octopus":{
 					"description":"Polvos menores tendem a se reunir em torno deles."
+				},
+				"insane_oyster":{
+					"description":"Ostras menores tendem a se reunir em torno delas."
 				}
 			}
 		},
@@ -877,7 +884,9 @@
 						"miranda_before_selling_clay":{
 							"title":"Muito barro no meu barco",
 							"message_start":"Fiz algumas trocas com um comerciante de Rayya. Você sabia que eles têm um monte de barro, super barato? Eu não podia recusar, mas agora eu tenho muito!",
-							"message_convincing":"Eu não posso navegar com o navio tão pesado! O que você me diz? Posso vender um pouco para você? Eu acho que você vai precisar já que você não tem muita terra para cavar por ai..."
+							"message_convincing":"Eu não posso navegar com o navio tão pesado! O que você me diz? Posso vender um pouco para você? Eu acho que você vai precisar já que você não tem muita terra para cavar por ai...",
+
+							"rc_message_start": "Fiz algumas trocas com outro comerciante de Rayya. Bom, você já sabe como argila é um recurso fundametal, certo? Eu não podia recusar, mas agora eu tenho muito!"
 						},
 						"miranda_clay_shop":"O excesso de argila da capitã Miranda",
 						"miranda_notice_a_lost_crate":{

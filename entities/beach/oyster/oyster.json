@@ -20,7 +20,7 @@
 						"items": {
 							"pearl": {
 								"uri": "archipelago_biome:resources:pearl",
-								"weight": 10
+								"weight": 15
 							},
 							"black_pear": {
 								"uri": "archipelago_biome:resources:pearl:black",

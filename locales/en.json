@@ -353,6 +353,15 @@
 				"description": "Will attract and capture crabs."
 			}
 		},
+		"humans": {
+			"anya": {
+				"display_name": "Anya"
+			},
+			"captain_miranda": {
+				"display_name": "Captain Miranda",
+				"description": "The sea is her home"
+			}
+		},
 		"landmark":{
 			"summon_stone_block_sand": {
 				"display_name": "Sand Terrain Block Stone",
@@ -383,6 +392,15 @@
 			"octopus": {
 				"display_name": "Octopus",
 				"description": "Arms, more than you can count"
+			},
+			"oyster": {
+				"display_name": "Monster Oyster",
+				"description": "Bigger and angry oyster with a hard shell"
+			}
+		},
+		"outfit": {
+			"visitor_outfit": {
+				"description": "Common worker outfit from another island"
 			}
 		},
 		"plants": {
@@ -577,20 +595,6 @@
 			"fish_arrow": {
 				"display_name": "Fish Arrow",
 				"description": "When fish fly, no one is courageous."
-			}
-		},
-		"humans": {
-			"anya": {
-				"display_name": "Anya"
-			},
-			"captain_miranda": {
-				"display_name": "Captain Miranda",
-				"description": "The sea is her home"
-			}
-		},
-		"outfit": {
-			"visitor_outfit": {
-				"description": "Common worker outfit from another island"
 			}
 		}
 	},
@@ -847,6 +851,9 @@
 			"forest": {
 				"insane_octopus": {
 					"description": "Smaller octopus tend to flock around them."
+				},
+				"insane_oyster": {
+					"description": "Smaller oysters tend to flock around them."
 				}
 			}
 		},
@@ -878,7 +885,9 @@
 						"miranda_before_selling_clay": {
 							"title": "Too much clay on my boat",
 							"message_start": "I made some trades with a Rayya merchant. Did you know they have a lot of clay, super cheap? I couldn't refuse, but now I have too much of it!",
-							"message_convincing": "I can't sail with the ship being so heavy! What do you say? Can I sell some to you? I guess you will need some as you don't have much land to dig for it..."
+							"message_convincing": "I can't sail with the ship being so heavy! What do you say? Can I sell some to you? I guess you will need some as you don't have much land to dig for it...",
+
+							"rc_message_start": "I made some trades with another Rayya merchant. You already know how important clay is, right? I couldn't refuse, but now I have too much of it!"
 						},
 						"miranda_clay_shop": "Captain Miranda's clay excess",
 						"miranda_notice_a_lost_crate": {

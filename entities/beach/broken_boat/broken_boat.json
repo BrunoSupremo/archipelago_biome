@@ -2,6 +2,21 @@
 	"type": "entity",
 	"mixins": "stonehearth:mixins:placed_object",
 	"components": {
+		"archipelago_biome:trojan":{
+			"uri":[
+				"archipelago_biome:monsters:octopus",
+				"archipelago_biome:monsters:oyster"
+			],
+			"player_id":"forest",
+			"min":1,
+			"max":2,
+			"no_trojan_percent_chance":66,
+			"in_game_mode_hard":{
+				"min":2,
+				"max":4,
+				"no_trojan_percent_chance":33
+			}
+		},
 		"render_info": {
 			"scale": 0.5
 		},

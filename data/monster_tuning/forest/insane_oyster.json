@@ -1,0 +1,23 @@
+{
+	"type": "monster_tuning",
+	"estimated_difficulty": 7,
+	"render_info": {
+		"color_map": "archipelago_biome:color_map:oyster",
+		"material_maps": [
+			"/archipelago_biome/data/materials/material_maps/oyster_material_map.json"
+		]
+	},
+	"unit_info": {
+		"description": "i18n(archipelago_biome:data.monster_tuning.forest.insane_oyster.description)"
+	},
+	"scale": 0.25,
+	"attributes": {
+		"max_health": 2250,
+		"muscle": 150,
+		"menace": 60,
+		"courage": 90,
+		"speed": 80,
+		"additive_armor_modifier": 7,
+		"exp_reward": 100
+	}
+}

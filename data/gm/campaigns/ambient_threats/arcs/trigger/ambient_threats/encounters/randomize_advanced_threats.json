@@ -5,6 +5,11 @@
 				"out_edge": "pack_of_octopus",
 				"type": "weighted_edge",
 				"weight": 2
+			},
+			{
+				"out_edge": "pack_of_oyster",
+				"type": "weighted_edge",
+				"weight": 2
 			}
 		]
 	}

@@ -1,0 +1,17 @@
+{
+	"type": "monster_tuning",
+	"estimated_difficulty": 6,
+	"scale": 0.2,
+	"attributes": {
+		"max_health": 1800,
+		"muscle": 45,
+		"menace": 105,
+		"courage": 90,
+		"speed": 80,
+		"additive_armor_modifier": 6,
+		"exp_reward": 120
+	},
+	"unit_info": {
+		"description": "i18n(stonehearth:data.gm.campaigns.ambient_threats.giant_alligator_raid_6.alligators.description)"
+	}
+}

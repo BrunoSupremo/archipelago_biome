@@ -642,6 +642,11 @@
 				"display_name": "Vara de Pescar",
 				"description": "Uma vara longa e flexível usada para pegar peixes"
 			},
+			"fisher_workbench": {
+				"display_name": "Bancada",
+				"description": "O pescador pode fazer um pouco de tudo aqui",
+				"flavor": "Nunca toque nas ferramentas de um pescador"
+			},
 			"fisher_firepit": {
 				"display_name": "Fogueirinha",
 				"description": "Para cozinhar comida quentinha",
@@ -748,6 +753,8 @@
 				"building_templates":{
 					"template_names":{
 						"fisher_hut": "Cabana de Pesca",
+						"fisher_hut_rayya": "Cabana de Pesca (Rayyas)",
+						"fisher_hut_north": "Cabana de Pesca (Northern)",
 						"shaded_hammock": "Rede na Sombra",
 						"beach_tower":"Torre de Praia",
 						"little_pier":"Pequeno porto",

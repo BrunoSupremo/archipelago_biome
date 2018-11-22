@@ -1,6 +1,6 @@
 {
 	"type": "recipe",
-	"effort": 30,
+	"effort": 31,
 	"work_units": 5,
 	"recipe_name": "i18n(archipelago_biome:jobs.herbalist.recipes.papaya_transmute_recipe.recipe_name)",
 	"description": "i18n(stonehearth:jobs.herbalist.recipes.berry_bush_transmute_recipe.description)",

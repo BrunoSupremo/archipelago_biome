@@ -5,6 +5,7 @@
 		"archipelago_biome:actions:turn_to_face_water",
 		"archipelago_biome:actions:fishing_animations",
 		"archipelago_biome:actions:pickup_fish",
+		"archipelago_biome:actions:closest_storage_to_dock",
 		"archipelago_biome:actions:get_crab"
 	]
 }

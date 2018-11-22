@@ -1,0 +1,17 @@
+{
+	"entity_data": {
+		"stonehearth:catalog": {
+			"material_tags": ["smokehouse_curable","stockpile_cooking_ingredient","cooking_ingredient","fish_meat","meat","raw","big","fish"]
+		},
+		"core_dani:cooling": {
+			"initial_cooling": {
+				"min": 12,
+				"max": 24
+			},
+			"cool_entity_alias": "archipelago_biome:food:big_fish",
+			"proper_cool_entity_alias": "trapper_plus:food:big_fish_smoked",
+			"proper_cooler_alias": "trapper_plus:trapper:smokehouse",
+			"proper_cooler_alias_2": "trapper_plus:trapper:rc_smokehouse"
+		}
+	}
+}

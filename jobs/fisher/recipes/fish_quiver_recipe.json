@@ -1,11 +1,12 @@
 {
 	"type": "recipe",
-	"effort": 60,
+	"effort": 45,
 	"work_units": 10,
 	"recipe_name": "i18n(archipelago_biome:jobs.fisher.recipes.fish_quiver_recipe.recipe_name)",
 	"description": "i18n(archipelago_biome:jobs.fisher.recipes.fish_quiver_recipe.description)",
 	"flavor": "",
 	"portrait": "/archipelago_biome/entities/armor/fish_quiver/fish_quiver.png",
+	"workshop": "archipelago_biome:fisher:workbench",
 	"level_requirement": 5,
 	"ingredients": [
 		{
@@ -13,7 +14,7 @@
 			"count": 1
 		},
 		{
-			"material": "raw fish",
+			"material": "raw small fish",
 			"count": 1
 		}
 	],

@@ -15,7 +15,8 @@
 		"actions:turn_to_face_water":	"file(ai/actions/fisher/turn_to_face_water_action.lua)",
 		"actions:fishing_animations":	"file(ai/actions/fisher/fishing_animations_action.lua)",
 		"actions:pickup_fish":			"file(ai/actions/fisher/pickup_fish_action.lua)",
-		"actions:get_crab":				"file(ai/actions/fisher/get_crab_action.lua)",
+		"actions:closest_storage_to_dock":"file(ai/actions/fisher/closest_storage_to_dock.lua)",
+		"actions:get_crab":	"file(ai/actions/fisher/get_crab_action.lua)",
 		"actions:climb_down":		"file(ai/actions/harvest_palm_tree/climb_down_action.lua)",
 		"actions:climb_up":			"file(ai/actions/harvest_palm_tree/climb_up_action.lua)",
 		"actions:harvest_coconut":	"file(ai/actions/harvest_palm_tree/harvest_coconut_action.lua)",
@@ -132,13 +133,14 @@
 
 		"furniture:hammock":"file(entities/furniture/hammock)",
 
-		"gizmos:cocobomb":		"file(entities/gizmos/cocobomb)",
-		"gizmos:crab_trap":		"file(entities/gizmos/crab_trap)",
+		"gizmos:cocobomb":	"file(entities/gizmos/cocobomb)",
+		"gizmos:crab_trap":	"file(entities/gizmos/crab_trap)",
 
 		"jobs:index":	"file(jobs/index.json)",
 		"jobs:fisher":	"file(jobs/fisher/fisher_description.json)",
 		"fisher:rod":		"file(jobs/fisher/fisher_rod/fisher_rod.json)",
 		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
+		"fisher:workbench":	"file(jobs/fisher/fisher_workbench)",
 		"fisher:firepit":	"file(jobs/fisher/fisher_firepit)",
 
 		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
@@ -332,7 +334,10 @@
 		"stonehearth/data/rigs/entities/humans/effects/fishing_middle.json":"file(data/rigs/entities/humans/effects/fishing_middle.json)",
 		"stonehearth/data/rigs/entities/humans/effects/fishing_end.json":	"file(data/rigs/entities/humans/effects/fishing_end.json)",
 
-		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)"
+		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
+
+		"trapper_plus/mod_compatibility/archipelago_biome/big_fish.json":"file(modding_mods/trapper_plus/big_fish.json)",
+		"trapper_plus/mod_compatibility/archipelago_biome/fish.json":"file(modding_mods/trapper_plus/fish.json)"
 	},
 	"controllers": {
 		"class:fisher": "file(jobs/fisher/fisher.lua)",

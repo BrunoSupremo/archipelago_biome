@@ -27,7 +27,7 @@
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.food.big_fish_cooked_serving.display_name)",
 			"description": "",
-			"material_tags":["food", "big_fish", "meat"],
+			"material_tags":["food", "big","fish", "meat"],
 			"subject_override": "archipelago_biome:food:big_fish_cooked"
 		}
 	}

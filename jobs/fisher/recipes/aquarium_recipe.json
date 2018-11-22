@@ -1,11 +1,12 @@
 {
 	"type": "recipe",
-	"effort": 60,
+	"effort": 30,
 	"work_units": 5,
 	"recipe_name": "i18n(archipelago_biome:entities.decoration.aquarium.display_name)",
 	"description": "i18n(archipelago_biome:entities.decoration.aquarium.description)",
 	"flavor": "i18n(archipelago_biome:entities.decoration.aquarium.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/decoration/aquarium/aquarium.png",
+	"workshop": "archipelago_biome:fisher:workbench",
 	"level_requirement": 3,
 	"ingredients": [
 		{
@@ -13,7 +14,7 @@
 			"count": 1
 		},
 		{
-			"material": "raw fish",
+			"material": "raw small fish",
 			"count": 1
 		}
 	],

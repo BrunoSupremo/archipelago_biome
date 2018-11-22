@@ -41,7 +41,7 @@
 	"season": "dry",
 	"palettes": {
 		"minimap":{
-			"water":"#15CFBF",
+			"water":"#17CBCF",
 			"mountains_1":"#79865F"
 		},
 		"dry": {

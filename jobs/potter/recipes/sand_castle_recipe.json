@@ -1,6 +1,6 @@
 {
 	"type" : "recipe",
-	"effort": 30,
+	"effort": 2,
 	"work_units" : 1,
 	"recipe_name": "i18n(archipelago_biome:entities.decoration.sand_castle.display_name)",
 	"description": "i18n(archipelago_biome:entities.decoration.sand_castle.recipe.description)",

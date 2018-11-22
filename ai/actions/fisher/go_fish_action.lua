@@ -54,5 +54,8 @@ return ai:create_compound_action(GoFish)
 	dock = ai.BACK(5).item,
 	fish_alias = ai.BACK(7).alias
 	})
-:execute('stonehearth:wait_for_closest_storage_space', { item = ai.PREV.fish })
+:execute('archipelago_biome:closest_storage_to_dock', {
+	dock = ai.BACK(6).item,
+	item = ai.PREV.fish
+	})
 :execute('stonehearth:drop_carrying_in_storage', {storage = ai.PREV.storage})

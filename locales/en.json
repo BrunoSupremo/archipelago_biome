@@ -642,6 +642,11 @@
 				"display_name": "Fishing Rod",
 				"description": "A long, flexible rod used to catch fish"
 			},
+			"fisher_workbench": {
+				"display_name": "Workbench",
+				"description": "The fisher can do a little of everything here",
+				"flavor": "Never touch the fisher tools"
+			},
 			"fisher_firepit": {
 				"display_name": "Firepit",
 				"description": "To cook basic hot food",
@@ -748,6 +753,8 @@
 				"building_templates": {
 					"template_names": {
 						"fisher_hut": "Fisher Hut",
+						"fisher_hut_rayya": "Fisher Hut (Rayyas)",
+						"fisher_hut_north": "Fisher Hut (Northern)",
 						"shaded_hammock": "Shaded Hammock",
 						"beach_tower": "Beach Tower",
 						"little_pier": "Little Pier",

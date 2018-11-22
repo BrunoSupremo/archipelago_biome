@@ -1,11 +1,11 @@
 {
 	"resources": {
-		"raw fish": {
+		"raw small fish": {
 			"name": "i18n(archipelago_biome:ui.data.constants.raw_fish_name)",
 			"default_resource": "archipelago_biome:food:fish",
 			"icon": "/archipelago_biome/entities/food/fish/fish.png"
 		},
-		"raw big_fish": {
+		"raw big fish": {
 			"name": "i18n(archipelago_biome:ui.data.constants.raw_big_fish_name)",
 			"default_resource": "archipelago_biome:food:big_fish",
 			"icon": "/archipelago_biome/entities/food/big_fish/big_fish.png"

@@ -1,14 +1,15 @@
 {
 	"type": "recipe",
-	"effort": 30,
+	"effort": 8,
 	"work_units": 2,
 	"recipe_name": "i18n(archipelago_biome:jobs.fisher.recipes.slap_fish_recipe.recipe_name)",
 	"description": "i18n(archipelago_biome:jobs.fisher.recipes.slap_fish_recipe.description)",
 	"flavor": "i18n(archipelago_biome:jobs.fisher.recipes.slap_fish_recipe.flavor)",
 	"portrait": "/archipelago_biome/entities/weapons/slap_fish/slap_fish.png",
+	"workshop": "archipelago_biome:fisher:workbench",
 	"ingredients": [
 		{
-			"material": "raw fish",
+			"material": "raw small fish",
 			"count": 1
 		}
 	],

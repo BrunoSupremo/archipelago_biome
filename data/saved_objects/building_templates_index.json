@@ -19,7 +19,7 @@
 						"open_house": "file(building_templates/open_house.json)",
 						"small_beach_house": "file(building_templates/small_beach_house.json)",
 						"tiki_bar": "file(building_templates/tiki_bar.json)",
-						"shaded_hammock": "file(building_templates/shaded_hammock.json)",
+						"shaded_hammock": "file(building_templates/shaded_hammock.json)"
 					}
 				},
 				"archipelago_boats": {
@@ -29,6 +29,40 @@
 						"explorer_ship": "file(building_templates/explorer_ship.json)",
 						"long_ship": "file(building_templates/long_ship.json)",
 						"trader_ship": "file(building_templates/trader_ship.json)"
+					}
+				}
+			}
+		},
+		"archipelago_rayya": {
+			"required_kingdom": "rayyas_children:kingdoms:rayyas_children",
+			"categories": {
+				"archipelago_camp_rayya": {
+					"ordinal": 20,
+					"templates": {
+						"fisher_hut_rayya": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "archipelago_biome:jobs:fisher"
+							},
+							"file": "file(building_templates/fisher_hut_rayya.json)"
+						}
+					}
+				}
+			}
+		},
+		"archipelago_north": {
+			"required_kingdom": "northern_alliance:kingdoms:northern_alliance",
+			"categories": {
+				"archipelago_camp_north": {
+					"ordinal": 20,
+					"templates": {
+						"fisher_hut_north": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "archipelago_biome:jobs:fisher"
+							},
+							"file": "file(building_templates/fisher_hut_north.json)"
+						}
 					}
 				}
 			}

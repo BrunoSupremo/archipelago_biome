@@ -10,6 +10,9 @@
 				"crab_trap": {
 					"recipe": "file(crab_trap_recipe.json)"
 				},
+				"workbench": {
+					"recipe": "file(workbench_recipe.json)"
+				},
 				"firepit": {
 					"recipe": "file(firepit_recipe.json)"
 				},

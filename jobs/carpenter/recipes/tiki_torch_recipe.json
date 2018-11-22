@@ -1,6 +1,6 @@
 {
 	"type" : "recipe",
-	"effort": 45,
+	"effort": 11,
 	"work_units" : 1,
 	"recipe_name": "i18n(archipelago_biome:entities.decoration.tiki_torch.display_name)",
 	"description": "i18n(archipelago_biome:entities.decoration.tiki_torch.recipe.description)",

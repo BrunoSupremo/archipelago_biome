@@ -3,7 +3,7 @@ $.widget( "stonehearth.stonehearthMap", {
       // callbacks
       hover: null,
       cellSize: 12,
-      settlementRadius: 19,
+      settlementRadius: App.constants.game_creation.settlement_radius,
       click: function(cellX, cellY) {
          console.log('Selected cell: ' + cellX + ', ' + cellY);
       }
@@ -340,7 +340,7 @@ $.widget( "stonehearth.stonehearthMap", {
 
       if (forest_density > 0) {
          var margin = self.forestMargin[forest_density];
-         context.fillStyle = self.options.mapInfo.color_map.trees;
+         context.fillStyle = self.options.mapInfo.color_map.trees || '#263C2C';
          //context.fillStyle = '#223025';   // darker color
          context.globalAlpha = 0.6;
 

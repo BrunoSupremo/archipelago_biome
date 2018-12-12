@@ -15,6 +15,18 @@
 				"models": [
 					"file(fisher_outfit_female.qb)"
 				]
+			},
+			"rabbit_male": {
+				"layer": "clothing",
+				"models": [
+					"file(fisher_rabbit.qb)"
+				]
+			},
+			"rabbit_female": {
+				"layer": "clothing",
+				"models": [
+					"file(fisher_rabbit.qb)"
+				]
 			}
 		},
 		"stonehearth:equipment_piece": {

@@ -1,15 +1,11 @@
 archipelago_biome = {}
 local log = radiant.log.create_logger('version')
-log:error("Archipelago Biome Mod last updated at Stonehearth 1.0.0.907")
+log:error("Archipelago Biome Mod last updated at Stonehearth 1.1.0.933")
 
 function archipelago_biome:_on_required_loaded()
-	local custom_biome = require('services.server.world_generation.custom_biome')
-	local biome = radiant.mods.require('stonehearth.services.server.world_generation.biome')
-	radiant.mixin(biome, custom_biome)
 end
 
 function archipelago_biome:_on_services_init()
-
 end
 
 function archipelago_biome:_on_biome_set(e)

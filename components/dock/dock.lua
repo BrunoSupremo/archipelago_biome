@@ -91,12 +91,12 @@ end
 
 function ArchipelagoDock:get_bottom()
 	local location = radiant.entities.get_world_grid_location(self._entity)
-	local offset = Point3.unit_y
 	local edge = self:_get_dock_edge(self._entity,location)
+	local edge_offset = edge - Point3.unit_y
 	local bottom_position = edge
-	while not radiant.terrain.is_blocked(edge - offset) do
-		bottom_position = edge - offset
-		offset = offset + Point3.unit_y
+	while not radiant.terrain.is_blocked(edge_offset) and edge_offset.y>0 do
+		bottom_position = edge_offset
+		edge_offset = edge_offset - Point3.unit_y
 	end
 	return radiant.terrain.get_entities_at_point(bottom_position)
 end
@@ -121,16 +121,17 @@ function ArchipelagoDock:remove_fishing_spot()
 end
 
 function ArchipelagoDock:add_legs(location)
-	local offset = Point3.unit_y
 	local edge = self:_get_dock_edge(self._entity,location)
-	while not radiant.terrain.is_blocked(edge - offset) do
+	local edge_offset = edge - Point3.unit_y
+	while not radiant.terrain.is_blocked(edge_offset) and edge_offset.y >0 do
+		--todo: allow other leg types, and random types
 		local leg = radiant.entities.create_entity("archipelago_biome:decoration:dock_leg",
 			{owner = self._entity:get_player_id()})
 		table.insert(self._sv.saved_legs, leg)
-		radiant.terrain.place_entity_at_exact_location(leg, edge-offset)
+		radiant.terrain.place_entity_at_exact_location(leg, edge_offset)
 		local facing = radiant.entities.get_facing(self._entity)
 		radiant.entities.turn_to(leg, facing)
-		offset = offset + Point3.unit_y
+		edge_offset = edge_offset - Point3.unit_y
 	end
 	self.__saved_variables:mark_changed()
 end

@@ -793,8 +793,7 @@
 			"select_settlement": {
 				"terrain_codes": {
 					"water": "Ocean",
-					"plains_2": "Beach",
-					"foothills_1": "Plains"
+					"plains_2": "Beach"
 				}
 			}
 		}

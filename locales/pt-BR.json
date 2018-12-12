@@ -793,8 +793,7 @@
 			"select_settlement": {
 				"terrain_codes": {
 					"water": "Oceano",
-					"plains_2": "Praia",
-					"foothills_1": "Planice"
+					"plains_2": "Praia"
 				}
 			}
 		}

@@ -27,7 +27,7 @@ function PickUpFish:start_thinking(ai, entity, args)
 			self.fish = iconic_entity
 		end
 	end
-	if not ai.CURRENT.carrying then
+	if ai.CURRENT and not ai.CURRENT.carrying then
 		local job_component = entity:get_component('stonehearth:job')
 		local fish_table = job_component:get_curr_job_controller():remember_current_fish(self.fish)
 

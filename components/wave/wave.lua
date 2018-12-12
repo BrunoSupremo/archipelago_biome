@@ -13,10 +13,12 @@ function ArchipelagoWave:post_activate()
 end
 
 function ArchipelagoWave:run_effect()
+	--todo: change effect based on weather/season
 	radiant.effects.run_effect(self._entity, "archipelago_biome:effects:wave_effect")
 end
 
 function ArchipelagoWave:rotate()
+	--todo: detect if there is water (always have at first, but later the player can mess with it)
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	local x = 0
 	local z = 0

@@ -271,6 +271,8 @@
 
 		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
 
+		"stonehearth/data/rigs/entities/humans/postures.json": "file(data/rigs/entities/humans/postures.json)",
+
 		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
 
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
@@ -289,8 +291,6 @@
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:loadouts": "file(data/loadouts/loadouts.json)",
-
-		"stonehearth:resources:wood:palm_log":"file(entities/resources/wood/palm_log)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
 
@@ -333,6 +333,14 @@
 		"stonehearth/data/rigs/entities/humans/effects/fishing_start.json":	"file(data/rigs/entities/humans/effects/fishing_start.json)",
 		"stonehearth/data/rigs/entities/humans/effects/fishing_middle.json":"file(data/rigs/entities/humans/effects/fishing_middle.json)",
 		"stonehearth/data/rigs/entities/humans/effects/fishing_end.json":	"file(data/rigs/entities/humans/effects/fishing_end.json)",
+
+		"stonehearth/data/rigs/entities/rabbit_biped/animations/fishing_start.json":	"file(data/rigs/entities/rabbit_biped/animations/fishing_start.json)",
+		"stonehearth/data/rigs/entities/rabbit_biped/animations/fishing_middle.json":	"file(data/rigs/entities/rabbit_biped/animations/fishing_middle.json)",
+		"stonehearth/data/rigs/entities/rabbit_biped/animations/fishing_end.json":		"file(data/rigs/entities/rabbit_biped/animations/fishing_end.json)",
+		"stonehearth/data/rigs/entities/rabbit_biped/effects/emote_watch_fish.json":"file(data/rigs/entities/humans/effects/emote_watch_fish.json)",
+		"stonehearth/data/rigs/entities/rabbit_biped/effects/fishing_start.json":	"file(data/rigs/entities/humans/effects/fishing_start.json)",
+		"stonehearth/data/rigs/entities/rabbit_biped/effects/fishing_middle.json":	"file(data/rigs/entities/humans/effects/fishing_middle.json)",
+		"stonehearth/data/rigs/entities/rabbit_biped/effects/fishing_end.json":		"file(data/rigs/entities/humans/effects/fishing_end.json)",
 
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
 

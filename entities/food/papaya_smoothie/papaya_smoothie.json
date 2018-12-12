@@ -34,7 +34,8 @@
 			"default": {
 				"satisfaction": 80
 			},
-			"quality": 6
+			"quality": 6,
+			"eating_effect":"sitting_drink"
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 11,

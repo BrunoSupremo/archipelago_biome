@@ -18,8 +18,22 @@ function ArchipelagoWave:run_effect()
 end
 
 function ArchipelagoWave:rotate()
-	--todo: detect if there is water (always have at first, but later the player can mess with it)
 	local location = radiant.entities.get_world_grid_location(self._entity)
+	if not location then
+		return
+	end
+	local intersected_entities = radiant.terrain.get_entities_at_point(location)
+	local has_water=false
+	for id, entity in pairs(intersected_entities) do
+		if entity:get_component('stonehearth:water') then
+			has_water = true
+			break
+		end
+	end
+	if not has_water then
+		radiant.entities.destroy_entity(self._entity)
+		return
+	end
 	local x = 0
 	local z = 0
 	local terrain_count = 0

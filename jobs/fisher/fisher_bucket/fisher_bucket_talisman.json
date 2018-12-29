@@ -11,9 +11,6 @@
       },
       "effect_list": {
          "default": "stonehearth:effects:talisman_glow"
-      },
-      "stonehearth:promotion_talisman": {
-         "job": "archipelago_biome:jobs:fisher"
       }
    },
    "entity_data": {

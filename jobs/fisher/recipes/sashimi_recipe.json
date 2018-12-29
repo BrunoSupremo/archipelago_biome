@@ -9,7 +9,7 @@
 	"workshop": "archipelago_biome:fisher:workbench",
 	"ingredients": [
 		{
-			"material": "raw small fish",
+			"material": "raw fish_meat",
 			"count": 1
 		}
 	],

@@ -1,0 +1,4 @@
+{
+	"mixins": "file(fisher_description.json)",
+	"parent_job": "swamp_goblins:jobs:worker"
+}

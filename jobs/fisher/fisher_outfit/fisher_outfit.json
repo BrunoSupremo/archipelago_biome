@@ -27,6 +27,12 @@
 				"models": [
 					"file(fisher_rabbit.qb)"
 				]
+			},
+			"firefly_goblin": {
+				"layer": "clothing",
+				"models": [
+					"file(firefly.qb)"
+				]
 			}
 		},
 		"stonehearth:equipment_piece": {

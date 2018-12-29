@@ -53,7 +53,7 @@
 				{
 					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_1.perk_name)",
 					"id": "crafter_recipe_unlock_1",
-					"icon": "file(images/fisher_menu_icon.png)",
+					"icon": "file(images/fishing_perk.png)",
 					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_1.perk_description)",
 					"level": 1
 				}

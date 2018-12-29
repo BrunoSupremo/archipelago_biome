@@ -1,0 +1,37 @@
+{
+	"craftable_recipes" : {
+		"food": {
+			"recipes": {
+				"mixintypes": {
+					"fish_stew": "remove",
+					"roast_fish": "remove"
+				}
+			}
+		},
+		"chefs_specials": {
+			"recipes": {
+				"mixintypes": {
+					"sushi": "remove",
+					"sushi_vegetarian": "remove",
+					"fish_pot_pie": "remove"
+				}		
+			}
+		},
+		"tropical_recipes": {
+			"recipes" : {
+				"roast_fish": {
+					"recipe": "stonehearth_ace/jobs/cook/recipes/roast_fish_recipe.json"
+				},
+				"sushi": {
+					"recipe": "stonehearth_ace/jobs/cook/recipes/sushi_recipe.json"
+				},
+				"sushi_vegetarian": {
+					"recipe": "stonehearth_ace/jobs/cook/recipes/sushi_vegetarian_recipe.json"
+				},
+				"fish_pot_pie": {
+					"recipe": "stonehearth_ace/jobs/cook/recipes/fish_pot_pie_recipe.json"
+				}
+			}
+		}
+	}
+}

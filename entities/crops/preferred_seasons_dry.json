@@ -1,0 +1,9 @@
+{
+	"components": {
+		"stonehearth:growing": {
+			"preferred_seasons": {
+				"archipelago_biome:biome:archipelago": ["dry"]
+			}
+		}
+	}
+}

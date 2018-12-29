@@ -10,7 +10,7 @@
 	"workshop": "archipelago_biome:fisher:firepit",
 	"ingredients": [
 		{
-			"material": "raw small fish",
+			"material": "raw fish_meat",
 			"count": 1
 		}
 	],

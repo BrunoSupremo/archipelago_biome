@@ -10,7 +10,7 @@
 	"workshop": "stonehearth:cook:oven",
 	"ingredients": [
 		{
-			"material": "raw small fish",
+			"material": "raw fish_meat",
 			"count": 1
 		}
 	],

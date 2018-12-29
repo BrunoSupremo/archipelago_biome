@@ -26,7 +26,7 @@
 			"display_name": "i18n(archipelago_biome:entities.food.nemo.display_name)",
 			"description": "i18n(archipelago_biome:entities.food.fish.description)",
 			"icon": "file(nemo.png)",
-			"material_tags":["small"]
+			"material_tags":["hangable"]
 		}
 	}
 }

@@ -1,0 +1,6 @@
+{
+	"mixintypes": {
+		"biomes": "override"
+	},
+	"biomes": ["You:kids:get:off:my:lawn"]
+}

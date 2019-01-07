@@ -384,11 +384,12 @@ function ArchipelagoCave:stone_block(y)
 end
 
 function ArchipelagoCave:populate_cave(location)
+	local chest = radiant.entities.create_entity('archipelago_biome:monsters:cave_chest', {owner = "undead"})
+	radiant.terrain.place_entity_at_exact_location(chest, location)
+
 	if stonehearth.game_creation:get_game_mode() == "stonehearth:game_mode:peaceful" then
 		return
 	end
-	local chest = radiant.entities.create_entity('archipelago_biome:monsters:cave_chest', {owner = "undead"})
-	radiant.terrain.place_entity_at_exact_location(chest, location)
 
 	local undead_population = stonehearth.population:get_population('undead')
 	local skeleton_info = {

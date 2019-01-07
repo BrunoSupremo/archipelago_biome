@@ -1,7 +1,24 @@
 local ArchipelagoTrojan = class()
 local rng = _radiant.math.get_default_rng()
 
+function ArchipelagoTrojan:activate()
+	if stonehearth.game_creation:get_game_mode() == "stonehearth:game_mode:peaceful" then
+		return
+	end
+	self._on_kill_listener = radiant.events.listen(self._entity, 'stonehearth:kill_event', function(args)
+		self:kill()
+		self._on_kill_listener = nil
+		end)
+end
+
 function ArchipelagoTrojan:destroy()
+	if self._on_kill_listener then
+		self._on_kill_listener:destroy()
+		self._on_kill_listener = nil
+	end
+end
+
+function ArchipelagoTrojan:kill()
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	if not location then
 		return

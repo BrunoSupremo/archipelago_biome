@@ -3,7 +3,7 @@
 	"type": "entity",
 	"components": {
 		"render_info": {
-			"scale": 0.5
+			"scale": 0.49
 		},
 		"mob": {
 			"model_origin": {"x": 0, "y": 0, "z": 0 },
@@ -45,20 +45,8 @@
 		"region_collision_shape": {
 			"region": [
 				{
-					"min": {"x": -2, "y": 8, "z": -6 },
-					"max": {"x": 2, "y": 10, "z": 7 }
-				},
-				{
-					"min": {"x": 2, "y": 8, "z": -3 },
-					"max": {"x": 6, "y": 10, "z": 2 }
-				},
-				{
-					"min": {"x": -7, "y": 8, "z": -3 },
-					"max": {"x": -2, "y": 10, "z": 4 }
-				},
-				{
 					"min": {"x": -1, "y": 0, "z": 0 },
-					"max": {"x": 0, "y": 8, "z": 1 }
+					"max": {"x": 0, "y": 10, "z": 1 }
 				}
 			]
 		}

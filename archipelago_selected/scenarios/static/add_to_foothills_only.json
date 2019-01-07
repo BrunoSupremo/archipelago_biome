@@ -1,0 +1,6 @@
+{
+	"mixintypes": {
+		"habitat_types": "override"
+	},
+	"habitat_types" : ["foothills"]
+}

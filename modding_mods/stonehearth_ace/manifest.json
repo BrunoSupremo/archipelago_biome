@@ -1,0 +1,6 @@
+{
+	"mixintos": {
+		"archipelago_biome/entities/armor/fish_quiver/fish_quiver.json":"archipelago_biome/modding_mods/stonehearth_ace/entities/armor/fish_quiver/fish_quiver.json",
+		"archipelago_biome/entities/armor/turtle_shield/turtle_shield.json":"archipelago_biome/modding_mods/stonehearth_ace/entities/armor/turtle_shield/turtle_shield.json"
+	}
+}

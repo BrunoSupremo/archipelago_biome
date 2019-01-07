@@ -261,7 +261,7 @@
 				"placement_type": "dense",
 				"parameters": {
 					"grid_multiple": 2,
-					"item_density": 1,
+					"item_density": 0.25,
 					"exclusion_radius": 2
 				}
 			},
@@ -274,11 +274,10 @@
 				}
 			},
 			"archipelago_biome:trees:palm:small": {
-				"placement_type": "dense",
+				"placement_type": "single",
 				"parameters": {
-					"grid_multiple": 3,
-					"item_density": 0.5,
-					"exclusion_radius": 2
+					"ground_radius": 1,
+					"exclusion_radius": 4
 				}
 			},
 			"archipelago_biome:trees:palm:large": {
@@ -289,11 +288,10 @@
 				}
 			},
 			"archipelago_biome:trees:bend_palm:small": {
-				"placement_type": "dense",
+				"placement_type": "single",
 				"parameters": {
-					"grid_multiple": 3,
-					"item_density": 0.5,
-					"exclusion_radius": 2
+					"ground_radius": 1,
+					"exclusion_radius": 4
 				}
 			},
 			"archipelago_biome:trees:bend_palm:large": {
@@ -491,7 +489,7 @@
 				"terrain_based": {
 					"plains": {
 						"1": {
-							"density": 0.1,
+							"density": 0.2,
 							"mean": 1,
 							"std_dev": 2
 						}

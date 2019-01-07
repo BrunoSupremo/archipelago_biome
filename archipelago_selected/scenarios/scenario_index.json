@@ -6,6 +6,32 @@
 			},
 			"ruins" : {
 				"density" : 0.5,
+			},
+			"underwater_feature_common": {
+				"ace":"stuff",
+				"density": 0.5,
+				"mixintypes": {
+					"max_count": "override"
+				},
+				"max_count": [20],
+				"prevents_categories_in_same_tile": [
+					"underwater_feature_common",
+					"underwater_feature_rare"
+				],
+				"priority": "random",
+				"location_type": "surface",
+				"activation_type": "immediate"
+			},
+			"underwater_feature_rare": {
+				"ace":"stuff",
+				"density": 0.5,
+				"prevents_categories_in_same_tile": [
+					"underwater_feature_common",
+					"underwater_feature_rare"
+				],
+				"priority": "random",
+				"location_type": "surface",
+				"activation_type": "immediate"
 			}
 		}
 	}

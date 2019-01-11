@@ -1,0 +1,945 @@
+{
+	"ai": {
+		"actions": {
+			"status_text": {
+				"fishing": "낚시"
+			}
+		}
+	},
+	"entities": {
+		"armor": {
+			"fish_quiver": {
+				"display_name": "물고기 화살통",
+				"description": "적들은 날아다니는 물고기가 그들의 얼굴을 후려칠때마다 용기를 잃어버렸다"
+			},
+			"turtle_shield": {
+				"display_name": "거북이 방패",
+				"description": "방패로 사용할 수 있는 거북이 등껍질"
+			}
+		},
+		"beach": {
+			"bottle": {
+				"display_name": "병",
+				"description": "병"
+			},
+			"broken_boat": {
+				"display_name": "난파선",
+				"description": "나무와 금을 수확할 수 있다"
+			},
+			"oyster": {
+				"display_name": "조개",
+				"description": "진주가 안에 들어있다.",
+				"unripe_description": "비어있는 껍질."
+			},
+			"seaweed": {
+				"display_name": "해초"
+			},
+			"starfish": {
+				"display_name": "불가사리",
+				"description": "A.k.a. 바다의 별, 불가사리는 사실 물고기는 아니다."
+			}
+		},
+		"construction": {
+			"bead_door": {
+				"display_name": "구슬 커튼 - 문",
+				"description": "구슬이 늘어져 있는 줄이 많이 있다",
+				"flavor": "바람이 불면 요란한 소리가 난다."
+			},
+			"porthole": {
+				"display_name": "둥근 창문",
+				"description": "배에서 일반적으로 볼 수 있는 작고 동그란 창문",
+				"flavor": "왜 배의 창문은 동그란거지?<br>만일 창문이 부숴진다면, 물이 네 얼굴을 사각형으로 때리진 않겠지!"
+			}
+		},
+		"containers": {
+			"input_fish_rack": {
+				"display_name": "생선 가판대",
+				"description": "생선을 거래하거나 전시해둘 수 있다."
+			},
+			"input_food_bin": {
+				"display_name": "음식 기증",
+				"description": "음식을 기증하기위한 보관함"
+			}
+		},
+		"critters": {
+			"crab": {
+				"display_name": "게",
+				"description": "꼬집히는걸 느낀다."
+			},
+			"sea_turtle": {
+				"display_name": "바다거북",
+				"description": "물갈퀴를 가진 바다 파충류"
+			}
+		},
+		"crops": {
+			"palm_tree_crop": {
+				"display_name": "야자 나무 심기",
+				"description": "나무가 없다구요? 숲을 다시 만들기 위한 준비를 시작하죠!",
+				"growth_stage_0": {
+					"name": "코코넛 씨앗",
+					"description": "씨앗? 이건 그냥 파묻힌 코코넛일 뿐입니다."
+				},
+				"growth_stage_1": {
+					"name": "어린 야자 나무",
+					"description": "마침내 껍질을 뚫고 나왔습니다."
+				},
+				"growth_stage_2": {
+					"name": "야자 나무 새싹",
+					"description": "태양을 향해 나아갑니다."
+				},
+				"growth_stage_3": {
+					"name": "야자 나무 묘목",
+					"description": "더 큰 나무로 성장할 토대를 마련했습니다."
+				}
+			}
+		},
+		"decoration": {
+			"anchor": {
+				"display_name": "닻",
+				"description": "배를 붙잡아둘만큼 무겁다.",
+				"recipe": {
+					"description": "땅바닥에 두거나 벽에 걸 수 있다",
+					"flavor": "만약 보트를 머리라고 한다면, 닻은 귀걸이같은 느낌인가?"
+				}
+			},
+			"aquarium": {
+				"display_name": "아쿠아리움",
+				"description": "물고기들이 투명한 상자안에서 헤엄치고 있다",
+				"recipe": {
+					"flavor": "당신은 고양이나 아쿠아리움중 하나만 가질 수 있습니다. 둘 다는 안되요."
+				}
+			},
+			"big_fish_hanging": {
+				"display_name": "걸려있는 큰 물고기",
+				"description": "커다란 물고기가 사슬에 매달려 전시되어있다.",
+				"recipe": {
+					"flavor": "아무도 당신이 이 물고기를 잡았다고 믿어주지 않는것보단, 이렇게 전시해두는게 좋다고 본다."
+				}
+			},
+			"dock": {
+				"display_name": "낚시용 도크",
+				"description": "어부가 물고기를 잡을 수 있는 플랫폼."
+			},
+			"ice_dock": {
+				"display_name": "얼음 낚시터",
+				"description": "어부가 물고기를 잡을 수 있는 얼음구멍."
+			},
+			"fish_container": {
+				"display_name": "물고기 보관고",
+				"description": "꺼낼 준비가 되었다구요!"
+			},
+			"fancy_fisher_sign": {
+				"display_name": "화려한 어부의 표지판",
+				"description": "어부의 마크가 새겨진 팬시한 표지판",
+				"recipe": {
+					"flavor": "더 좋은 물고기가 여기 있습니다"
+				}
+			},
+			"fisher_sign": {
+				"display_name": "나무로된 어부의 표지판",
+				"description": "어부의 마크가 새겨진 표지판",
+				"recipe": {
+					"flavor": "최고의 물고기가 여기있다"
+				}
+			},
+			"fruit_container": {
+				"display_name": "코코넛 보관함",
+				"description": "꺼낼 준비가 되었다구요!",
+				"recipe": {
+					"description": "당신의 코코넛을 더 쉽게 팔 수 있습니다.",
+					"flavor": "꺼낼 준비가 되었다구요!"
+				}
+			},
+			"lei": {
+				"display_name": "화환",
+				"description": "꽃들이 벽에 걸려있다.",
+				"recipe": {
+					"description": "벽에 걸 수 있다.",
+					"flavor": "꽃이 벽에 아름다움을 더욱 추가할 수 있다"
+				}
+			},
+			"pearl_container": {
+				"display_name": "진주 보관함",
+				"description": "꺼낼 준비가 되었다구요!"
+			},
+			"pirate_flag": {
+				"display_name": "해적기",
+				"description": "친구를 사귈 좋은 방법이 아.닙.니.다",
+				"recipe": {
+					"description": "고전적인 테마의 해적기.",
+					"flavor": "Aaaarrrrgggghhhh!"
+				}
+			},
+			"raft": {
+				"display_name": "레프트",
+				"description": "원시적인 범선",
+				"recipe": {
+					"description": "모든 해군 함대의 출발점.",
+					"flavor": "당신이 간절하게 소망한다면, 이걸로 항해를 할 수 있을지도 모릅니다."
+				}
+			},
+			"sand_castle": {
+				"display_name": "모래성",
+				"description": "모래 공주님은 다른 모래성에 살고 있습니다",
+				"recipe": {
+					"description": "모래와 진흙을 사용해 당신의 꿈의 성을 만드세요!",
+					"flavor": "건축학교 4학년생이 이걸 만든다고?"
+				}
+			},
+			"ship_wheel": {
+				"display_name": "배의 키",
+				"description": "당신은 당신의 꿈을 안내할 수 있습니다",
+				"recipe": {
+					"description": "배를 조종할 수 있습니다만, 오늘날엔 대부분 데코레이션으로 사용됩니다",
+					"flavor": "이게 뭐랑 같이 있어야 좋은지 알고 있니? 배야!"
+				}
+			},
+			"tiki_torch": {
+				"display_name": "티키 횃불",
+				"description": "매우 긴 횃불",
+				"recipe": {
+					"description": "땅바닥에 고정되어있는 기다란 횃불",
+					"flavor": "파티를 밝게유지하고 벌레의 침입을 막습니다"
+				}
+			},
+			"totem": {
+				"display_name": "토템",
+				"description": "해변의 동물들이 쌓여있다",
+				"flavor": "거북이에 게, 갈매기까지!"
+			}
+		},
+		"food": {
+			"coconut": {
+				"display_name": "코코넛",
+				"description": "언제나 상쾌하다"
+			},
+			"crab": {
+				"display_name": "신선한 게",
+				"description": "먹을 준비가 되지 않았다"
+			},
+			"crab_bisque": {
+				"display_name": "게살 수프",
+				"description": "따듯하고 맛있다",
+				"recipe": {
+					"description": "코코넛 밀크와 게살로만든 풍미깊은 국물",
+					"flavor": "이 놀라운 두 가지 재료로 만든 풍부한 맛에 빠지지 않는 사람은 없다구요."
+				}
+			},
+			"crab_bisque_serving": {
+				"display_name": "그릇에 담은 짭쪼름한 게살 수프"
+			},
+			"crab_cake": {
+				"display_name": "게살 튀김",
+				"description": "잘 다진 게살 패티를 평범하게 기름에 튀겼다.",
+				"recipe": {
+					"description": "잘 다진 게살 패티를 평범하게 기름에 튀겼다.",
+					"flavor": "겉은 바삭, 속은 부드럽다!"
+				}
+			},
+			"crab_omelette": {
+				"display_name": "게살 오믈렛",
+				"description": "맛있는 달걀이 게살을 감싸고 있다."
+			},
+			"crab_rotten": {
+				"display_name": "썩은 게살",
+				"description": "게는 매우 빠르게 부패한다..."
+			},
+			"big_fish": {
+				"display_name": "커다랗고 신선한 물고기",
+				"description": "너무 커서 잘라야 한다. 아직 먹을 준비가 되지 않았다."
+			},
+			"big_fish_cooked": {
+				"display_name": "조리된 커다란 물고기",
+				"description": "기름지고 맛이 끝내준다.",
+				"recipe": {
+					"description": "단지 오븐에 구울 뿐이다.",
+					"flavor": "겉은 바삭, 속은 부드럽다!"
+				}
+			},
+			"big_fish_cooked_serving": {
+				"display_name": "조리된 커다란 물고기"
+			},
+			"nemo": {
+				"display_name": "Nemo"
+			},
+			"fish": {
+				"display_name": "신선한 물고기",
+				"description": "먹을 준비가 되지 않았다."
+			},
+			"fish_cooked": {
+				"display_name": "조리된 물고기",
+				"description": "기름지고 맛이 끝내준다.",
+				"recipe": {
+					"description": "단지 오븐에 구울 뿐이다.",
+					"flavor": "겉은 바삭, 속은 부드럽다!"
+				}
+			},
+			"big_fish_rotten": {
+				"display_name": "썩은 커다란 물고기",
+				"description": "물고기는 매우 빠르게 부패한다..."
+			},
+			"fish_rotten": {
+				"display_name": "썩은 물고기",
+				"description": "물고기는 매우 빠르게 부패한다..."
+			},
+			"fish_stew": {
+				"display_name": "물고기 스튜",
+				"description": "따듯하고 맛있다",
+				"recipe": {
+					"description": "따듯하고 향긋한 수프속에서 물고기가 매우 부드러워진다.",
+					"flavor": "환상적으로 만들기 쉽다"
+				}
+			},
+			"fish_stew_serving": {
+				"display_name": "그릇에 담은 향긋한 물고기 스튜"
+			},
+			"papaya_cookie": {
+				"display_name": "파파야 쿠키",
+				"description": "코코넛이 들어있다",
+				"recipe": {
+					"description": "코코넛이 들어있는 파파야 쿠키.",
+					"flavor": "몸에 좋지만, 많이 먹으면 뚱뚱해진다."
+				}
+			},
+			"papaya_smoothie": {
+				"display_name": "파파야 스무디",
+				"description": "파파야 100%",
+				"recipe": {
+					"description": "당신을 더위로부터 시원하게 지켜줍니다.",
+					"flavor": "아침을 시작하는 훌륭한 방법"
+				}
+			},
+			"papaya_basket": {
+				"display_name": "파파야 바구니",
+				"description": "파파야가 가득하다"
+			},
+			"papaya_serving": {
+				"display_name": "파파야",
+				"description": "과일의 절반이다"
+			},
+			"sashimi": {
+				"display_name": "회",
+				"description": "얇게 저민 신선한 날생선."
+			},
+			"tropical_fish": {
+				"display_name": "신선한 이국적인 물고기"
+			}
+		},
+		"furniture": {
+			"hammock": {
+				"display_name": "해먹",
+				"description": "점심을 먹고 잠깐 눈좀 붙이자구요.",
+				"recipe": {
+					"description": "잠을 자기 위해 사용한다.",
+					"flavor": "게가 당신을 꼬집을지도 모릅니다. 아래에서 말이죠..."
+				}
+			}
+		},
+		"gizmos": {
+			"cocobomb": {
+				"display_name": "코코넛폭탄",
+				"description": "음식으로 장난치지 마시오.",
+				"recipe": {
+					"description": "설치 후에 적이 여기에 닿으면 폭발합니다. 근처에 있던 적들은 피해를 입고 불이 붙을 겁니다.",
+					"flavor": "폭발과 함께라면 모든것이 더 좋아진다."
+				}
+			},
+			"crab_trap": {
+				"display_name": "게잡이 통발",
+				"description": "게를 잡습니다.."
+			}
+		},
+		"landmark": {
+			"summon_stone_block_sand": {
+				"display_name": "모래 지형 블럭스톤",
+				"description": "소환합니다. 8x5x8블렉의 모래지형을"
+			},
+			"summon_stone_patch_sand": {
+				"display_name": "모래지형 패치스톤",
+				"description": "최대 12x12 크기의 모래 지형으로 변합니다."
+			},
+			"summon_stone_tropical_island": {
+				"display_name": "트로피칼 섬",
+				"description": "하나의 미니 섬을 소환"
+			}
+		},
+		"monsters": {
+			"cocoling": {
+				"display_name": "코코링",
+				"description": "코코넛이 아니고, 상쾌하지도 않습니다"
+			},
+			"cocoling_spawner": {
+				"display_name": "고대의 스포너",
+				"description": "낡았지만 금입니다."
+			},
+			"fake_container": {
+				"display_name": "미스터리한 상자",
+				"description": "부숴서 뭐가 들었는지 확인해보자구요!"
+			},
+			"octopus": {
+				"display_name": "문어",
+				"description": "당신이 셀 수 있는것보다 팔이 많이 달려있네요."
+			}
+		},
+		"plants": {
+			"hibiscus_plant": {
+				"display_name": "거대 바다 히비스커스",
+				"description": "치료용 허브를 수확할 수 있다",
+				"unripe_description": "이 식물은 이미 수확되었으며, 아직다시 자라지 않았습니다.",
+				"seed": {
+					"display_name": "히비스커스 씨앗",
+					"description": "심는다면, 치유 효과가 있는 허브로 자랄 것입니다."
+				},
+				"sprout": {
+					"description": "단지 약간의 시간과 관심을 필요로 합니다.",
+					"display_name": "히비스커스 새싹"
+				},
+				"stem": {
+					"description": "여전히 자라고 있습니다!",
+					"display_name": "히비스커스 줄기"
+				},
+				"bud": {
+					"description": "여기봐! 여기 싹이 났다고!",
+					"display_name": "히비스커스 발아중"
+				}
+			},
+			"blue_hibiscus_plant": {
+				"display_name": "푸른 거대 바다 히비스커스",
+				"description": "희귀하다. 치료용 허브를 수확할 수 있다",
+				"unripe_description": "이 식물은 이미 수확되었으며, 아직다시 자라지 않았습니다.",
+				"seed": {
+					"display_name": "푸른 히비스커스 씨앗",
+					"description": "심는다면, 치유 효과가 있는 허브로 자랄 것입니다."
+				},
+				"sprout": {
+					"description": "단지 약간의 시간과 관심을 필요로 합니다.",
+					"display_name": "히비스커스 새싹"
+				},
+				"stem": {
+					"description": "여전히 자라고 있습니다!",
+					"display_name": "히비스커스 줄기"
+				},
+				"bud": {
+					"description": "여기봐! 여기 싹이 났다고!",
+					"display_name": "히비스커스 발아중"
+				}
+			}
+		},
+		"resources": {
+			"pearl": {
+				"display_name": "하얀 진주",
+				"description": "아마 언제나 가장 사랑받은 보석일겁니다."
+			},
+			"black_pearl": {
+				"display_name": "흑진주",
+				"description": "저주로 가득한 이 진주는 매우 좋은 값에 팔립니다."
+			},
+			"herb": {
+				"hibiscus": {
+					"display_name": "히비스커스 꽃",
+					"description": "치유 효과가 있는 매우 아름다운 열대지방의 꽃"
+				},
+				"blue_hibiscus": {
+					"display_name": "푸른 히비스커스 꽃",
+					"description": "치유 효과가 있는 매우 아름다운 열대지방의 희귀한 꽃"
+				}
+			},
+			"hot_rock": {
+				"display_name": "뜨거운 돌",
+				"description": "미네랄이 풍부합니다. 캐기만 하세요!"
+			},
+			"ice_cube": {
+				"display_name": "얼음 큐브",
+				"description": "누군가 이것을 낚았습니다. 곧 녹아버릴 거에요."
+			}
+		},
+		"toys": {
+			"beachball": {
+				"display_name": "비치볼",
+				"description": "해변이나 물놀이에서 사용한다"
+			}
+		},
+		"trees": {
+			"common_palm": {
+				"description": "열대 섬 낙원의 상징이라고 할 수 있다.",
+				"unripe_description": "아직 코코넛이 열리지 않았다.열대 섬 낙원의 상징이라고 할 수 있다."
+			},
+			"palm_tree": {
+				"sapling_palm_tree": {
+					"display_name": "어린 야자 나무"
+				},
+				"small_palm_tree": {
+					"display_name": "작은 야자 나무"
+				},
+				"large_palm_tree": {
+					"display_name": "큰 야자 나무"
+				}
+			},
+			"bend_palm_tree": {
+				"small_bend_palm_tree": {
+					"display_name": "작은 구부러진 야자 나무"
+				},
+				"large_bend_palm_tree": {
+					"display_name": "큰 구부러진 야자 나무"
+				}
+			},
+			"dranden": {
+				"display_name": "Dranden 나무",
+				"description": "무거운 이파리들이 달린 커다란 줄기",
+				"seed": {
+					"display_name": "Dranden 씨앗",
+					"description": "dranden tree를 키울 수 있다."
+				},
+				"sprout": {
+					"display_name": "어린 Dranden",
+					"description": "단지 약간의 시간과 관심을 필요로 합니다."
+				},
+				"stem": {
+					"display_name": "Dranden 새싹",
+					"description": "여전히 자라는 중입니다!"
+				},
+				"bud": {
+					"display_name": "Dranden 묘목",
+					"description": "여길 봐요! 이건 이미 성숙한 잎으로 자랐어요!"
+				}
+			},
+			"smalea": {
+				"display_name": "Smalea 나무",
+				"description": "작지만 빽빽하게 밀집한 나무",
+				"seed": {
+					"display_name": "Smalea 씨앗",
+					"description": "smalea tree를 키울 수 있다."
+				},
+				"sprout": {
+					"display_name": "어린 Smalea",
+					"description": "단지 약간의 시간과 관심을 필요로 합니다."
+				},
+				"stem": {
+					"display_name": "Smalea 새싹",
+					"description": "여전히 자라는 중입니다!"
+				},
+				"bud": {
+					"display_name": "Smalea 묘목",
+					"description": "여길 봐요! 이건 이미 성숙한 잎으로 자랐어요!"
+				}
+			},
+			"papaya": {
+				"display_name": "파파야 나무",
+				"description": "커다란 나무-같은 식물이다 (그게 나무 아님?)",
+				"unripe_description": "아직 덜익었다.",
+				"seed": {
+					"display_name": "파파야 씨앗",
+					"description": "파파야 나무를 키울 수 있습니다."
+				},
+				"sprout": {
+					"display_name": "어린 파파야 나무",
+					"description": "단지 약간의 시간과 관심을 필요로 합니다."
+				},
+				"stem": {
+					"display_name": "파파야 나무 새싹",
+					"description": "여전히 자라는 중입니다!"
+				},
+				"bud": {
+					"display_name": "파파야 나무 묘목",
+					"description": "여길 봐요! 이건 이미 성숙한 잎으로 자랐어요!"
+				}
+			}
+		},
+		"weapons": {
+			"slap_fish": {
+				"display_name": "때리는 물고기",
+				"description": "아야! (찰지구나!)"
+			},
+			"crab_pincer": {
+				"display_name": "집게발",
+				"description": "꼬집어주마!"
+			},
+			"fish_arrow": {
+				"display_name": "물고기 화살",
+				"description": "물고기가 하늘을 날아오를때, 용기있는 사람은 아무도 없다."
+			}
+		},
+		"humans": {
+			"anya": {
+				"display_name": "Anya"
+			},
+			"captain_miranda": {
+				"display_name": "캡틴 Miranda",
+				"description": "바다는 그녀의 집입니다."
+			}
+		},
+		"outfit": {
+			"visitor_outfit": {
+				"description": "다른 섬에서 만들어진 일반적인 작업복"
+			}
+		}
+	},
+	"jobs": {
+		"archer": {
+			"archer_buffs": {
+				"fish_arrow": {
+					"display_name": "방향감각 상실",
+					"description": "얼굴에 붙은 물고기가 당신의 용기를 작게 만드는군요."
+				}
+			}
+		},
+		"cook": {
+			"recipes": {
+				"tropical_recipes_name": "트로피칼 레시피"
+			}
+		},
+		"fisher": {
+			"fisher_description": {
+				"display_name": "어부",
+				"description": "게를 잡고, 진주를 캐고, 그 외 물에서 하는 여러 일들을 합니다.",
+				"requirements": "목수가 제작 가능합니다.",
+				"level_1": {
+					"perk_name": "낚시",
+					"perk_description": "어부는 낚시에 도움이 되는 도구들을 제작할 수 있습니다."
+				},
+				"level_2": {
+					"perk_name": "게",
+					"perk_description": "어부는 이제 게잡이 통발을 제작하고 설치할 수 있습니다."
+				},
+				"level_3": {
+					"perk_name": "요리",
+					"perk_description": "작은 화덕만 있다면 어부는 기본적인 조리를 할 수 있습니다."
+				}
+			},
+			"fisher_bucket": {
+				"display_name": "어부의 양동이",
+				"description": "다용도 양동이",
+				"fisher_bucket_talisman": {
+					"display_name": "어부의 양동이",
+					"description": "하슬링들이 어부이 되기 위해 필요합니다."
+				}
+			},
+			"fisher_rod": {
+				"display_name": "낚시대",
+				"description": "물고기를 잡기 위해 사용되는 길고 유연한 막대기"
+			},
+			"fisher_firepit": {
+				"display_name": "화덕",
+				"description": "기본적인 익힌 요리를 할때 필요하다.",
+				"flavor": "더 좋은 음식을 원한다면 당신의 주방장을 찾아가시오."
+			},
+			"fisher_outfit": {
+				"display_name": "어부의 옷",
+				"description": "어부들이 주로 사용하는 옷"
+			},
+			"recipes": {
+				"fisher_tools_name": "낚시 도구",
+				"fisher_bucket_recipe": {
+					"recipe_name": "어부의 양동이",
+					"description": "하슬링들이 어부가 되기 위해 필요합니다.",
+					"flavor": "다용도 양동이"
+				},
+				"crab_pincer_recipe": {
+					"recipe_name": "집게발",
+					"description": "당신의 손에 쥔다면 훌륭한 무기가 될 수 있죠!",
+					"flavor": "손에 쥐기 전에 깨끗하게 씻는게 좋습니다!"
+				},
+				"crab_trap_recipe": {
+					"recipe_name": "게잡이 통발",
+					"description": "이것으로 게를 잡을 수 있습니다. 물 근처에만 설치할 수 있습니다.",
+					"flavor": ""
+				},
+				"fish_container_recipe": {
+					"recipe_name": "물고기 보관고",
+					"description": "당신이 물고기를 더 쉽게 거래할 수 있는 방법.",
+					"flavor": "꺼낼 준비가 되었다구요!"
+				},
+				"fish_quiver_recipe": {
+					"recipe_name": "물고기 공포증",
+					"description": "물고기가 얼굴을 후려칠때마다 적들은 겁에 질려 매스껍고 혼란스러워 할겁니다."
+				},
+				"input_fish_rack_recipe": {
+					"recipe_name": "생선 가판대",
+					"description": "크래프터들의 공급을 도와줄 생선 보관고입니다.",
+					"flavor": "바닥에 두는것보단 났겠죠."
+				},
+				"pearl_container_recipe": {
+					"recipe_name": "진주 보관고",
+					"description": "당신의 진주를 거래하기 위한 더 쉬운 방법.",
+					"flavor": "꺼낼 준비가 되었다구요!"
+				},
+				"sashimi_recipe": {
+					"recipe_name": "회",
+					"description": "얇게 저민 신선한 날생선.",
+					"flavor": "준비하는게 너무 어렵진 않습니다."
+				},
+				"slap_fish_recipe": {
+					"recipe_name": "때리는 물고기",
+					"description": "아야! (찰지구나!)",
+					"flavor": "무척 위험합니다. 그리고 그 2배로 역겹습니다."
+				},
+				"dock_recipe": {
+					"recipe_name": "낚시용 도크",
+					"description": "물가의 가장 자리에 설치할 수 있습니다. 어부들은 이곳을 낚시터로 인식하고, 낚시를 할 때 사용할겁니다.",
+					"flavor": "물고기는 수면에 비친 그림자 아래를 좋아합니다."
+				},
+				"ice_dock_recipe": {
+					"recipe_name": "얼음 낚시터",
+					"description": "눈이나 얼음 위에 뚫는 구멍. 어부들은 이곳을 낚시터로 인식하고, 낚시를 할 때 사용할겁니다.",
+					"flavor": "물고기는 구멍 근처에서 수영하는걸 좋아합니다."
+				}
+			}
+		},
+		"geomancer": {
+			"recipes": {
+				"summon_stone_tropical_island_recipe": {
+					"recipe_name": "트로피칼 아일랜드",
+					"description": "작고 동그란 섬을 소환합니다."
+				}
+			}
+		},
+		"herbalist": {
+			"recipes": {
+				"papaya_transmute_recipe": {
+					"recipe_name": "파파야 씨앗 (x3)"
+				},
+				"hibiscus_transmute_recipe": {
+					"recipe_name": "히비스커스 씨앗 (x3)"
+				},
+				"blue_hibiscus_transmute_recipe": {
+					"recipe_name": "푸른 히비스커스 씨앗 (x3)"
+				}
+			}
+		}
+	},
+	"ui": {
+		"data": {
+			"constants": {
+				"raw_fish_name": "신선한 물고기",
+				"raw_big_fish_name": "커다란 신선한 물고기"
+			}
+		},
+		"game": {
+			"build_mode": {
+				"building_templates": {
+					"template_names": {
+						"fisher_hut": "어부의 오두막",
+						"shaded_hammock": "그늘진 해먹",
+						"beach_tower": "비치 타워",
+						"little_pier": "작은 부두",
+						"open_house": "열린 집",
+						"small_beach_house": "작은 비치 하우스",
+						"carpenter_house": "목수의 집",
+						"tiki_bar": "티키 막대",
+						"small_boat": "작은 보트",
+						"double_outrigger_boat": "더블 아웃리거 보트",
+						"explorer_ship": "탐험선",
+						"long_ship": "바이킹선",
+						"trader_ship": "교역선"
+					}
+				}
+			},
+			"menu": {
+				"crafter_menu": {
+					"items": {
+						"fisher": {
+							"display_name": "어부 제작 메뉴",
+							"description": "어부 관련 아이템을 만듭니다.",
+							"required_job_text": "어부를 필요로 합니다."
+						}
+					}
+				}
+			},
+			"zones_mode": {
+				"stockpile": {
+					"filters": {
+						"food_bin": "음식 증여 도움말"
+					}
+				}
+			}
+		},
+		"shell": {
+			"select_settlement": {
+				"terrain_codes": {
+					"water": "바다",
+					"plains_2": "해변",
+					"foothills_1": "평원"
+				}
+			}
+		}
+	},
+	"data": {
+		"biome": {
+			"archipelago": {
+				"display_name": "군도",
+				"description": "어디를 봐도 물이 가득하다. 아니면 모래나. 뭐가 되었든 맘에 안드는 것들이다.",
+				"random_location_names": {
+					"000": "Mauna Loa 군도"
+				},
+				"seasons": {
+					"dry": {
+						"display_name": "건기",
+						"description": "군도에서 건기란, 8개월간의 해가 쨍쨍한 기간입니다. 휴가가기 완벽한 날씨지만 가끔씩 갑작스런 강풍이나 비가 올 수 있습니다."
+					},
+					"hurricane": {
+						"display_name": "허리케인 시즌",
+						"description": "군도에서 허리케인 시즌이란, 단 1달간의 무척 위험한 기간입니다. 바람과 폭풍우가 몰아칩니다."
+					},
+					"wet": {
+						"display_name": "우기",
+						"description": "군도에서 우기란, 3개월간의 비가 많이 오는 기간입니다. 비와 바람이 그치지 않지만, 드물게 맑은 날도 있습니다."
+					}
+				}
+			}
+		},
+		"build": {
+			"building_brushes": {
+				"colors": {
+					"#f1f1a4": "모래 1",
+					"#f0ea99": "모래 2",
+					"#f0e187": "모래 3"
+				}
+			}
+		},
+		"commands": {
+			"open_crate": {
+				"display_name": "상자를 연다",
+				"description": "망치로 깨질때까지 내려치세요!"
+			},
+			"archer_arrows": {
+				"fish_arrows": {
+					"display_name": "물고기 화살을 사용한다",
+					"description": "현재 물고기 화살을 사용중입니다. 적의 용기를 감소시키는 효과가 있습니다. 다른 종류의 화살로 바꾸려면 클릭하세요."
+				}
+			}
+		},
+		"fishing": {
+			"turtle_shield": {
+				"title": "어부는 거북이 방패를 얻었다!",
+				"message": "이것은 낮은 수준의 보병용 방패로 보입니다. 바로 사용할 수 있습니다."
+			},
+			"nemo": {
+				"title": "물고기를 찾는다",
+				"message": "어부는 단지 이 길을 잃어버린 귀여운 흰동가리를 가지고 있을 뿐입니다. (LIMo를 찾아서) "
+			}
+		},
+		"monster_tuning": {
+			"forest": {
+				"insane_octopus": {
+					"description": "작은 문어들은 그것들 주위에 모이는 경향이 있습니다."
+				}
+			}
+		},
+		"gm": {
+			"anya": "Anya",
+			"captain_miranda": "캡틴 Miranda",
+			"goblin_bucket": "물통을 든 고블린",
+			"campaigns": {
+				"archipelago_tutorial": {
+					"trigger": {
+						"introduction": {
+							"title": "바다로부터의 도움",
+							"message_start": "이봐, 만나서 반가워! 나는 Miranda야. 도움을 원해?<br>만일 네가 여기 새로 들어오는거라면, 몇 가지 조언을 해줄 수 있겠지.",
+							"message_decline": "좋아, 조심해.<br>행운을 빈다구.",
+							"message_accept": "그래! 마침내 누군가 내 도움을 필요로 하는군!<br>어... 내 말은, 따라오라는거야!",
+							"message_trees": "너는 우선 나무랑 음식을 찾을거야, 맞지?<br>우린 그 두가지 모두를 야자 나무에서 찾을 수 있지!<br>만약, 너가 이걸 수확한다면 너는 코코넛을 얻을 수 있어. 물론 그걸론 성이 안차겠지.<br>만약 이걸 두번째로(코코넛이 없는 상태로 말야!) 수확한다면, 코코넛대신 나무를 얻을 수 있다구.",
+							"message_oysters": "오, 그리고 이 커다란 굴들은 어-썸하지! 오직 어부만이 이걸 수확할 수 있어. 여기서 나오는 진주는 좋은 값에 거래되거든.<br>소문으로는 희귀하게 검은 진주가 나온다는데, 난 한번도 본적이 없어.",
+							"message_broken_boats": "주변을 둘러보면 아마 난파선을 발견할 수 있을거야.<br>너는 그것들을 약탈해서 보물을 발견할 수 도 있어.",
+							"message_bye": "일단은 그게 다야.<br>나중에 다시 와서 얼마나 했는지 보겠어.<br>나는 이 순풍을 타고 항해해야지. 내 배가 가만히 놔둔다고 금은보화로 가득 차는건 아니니까.<br>행운을 빈다고, 친구.",
+							"na_message_start": "이봐, 눈에서 태어난 친구! 왜 내가 너보고 눈에서 태어났다고 그러냐고? 거울을 보는게 어때!<br>나는 Miranda야. 도움을 원해?<br>만일 네가 여기 새로 들어오는거라면, 몇 가지 조언을 해줄 수 있겠지.",
+							"na_message_decline": "좋아, 조심해.<br>행운을 빈다고. 그리고 그 무거워 보이는 옷 좀 어떻게 하라고!",
+							"na_message_bye": "일단은 그게 다야.<br>나중에 다시 와서 얼마나 했는지 보겠어.바라건데, 태양이 네가 그렇게 껴입은 사이 널 구워버리지 않았으면 좋겠군!<br>나는 이 순풍을 타고 항해해야지. 내 배가 가만히 놔둔다고 금은보화로 가득 차는건 아니니까.<br>행운을 빈다고, 친구."
+						}
+					}
+				},
+				"archipelago_campaign": {
+					"trigger": {
+						"miranda_before_selling_clay": {
+							"title": "내 배에 점토가 너무 많이 있어",
+							"message_start": "나는 라이야 상인이랑 거래를 하기로 했거든. 너 걔들이 엄청난 양의 점토를 싸게 팔았는지 알아? 도저히 거절할 수 없더군, 근데, 너무 많이 사버렸어!",
+							"message_convincing": "배가 너무 무거워서 항해를 할 수 없다니까! 뭐라는거야? 내가 너한테 좀 팔 수 있을까? 내가 추측하건데, 넌 더 이상 팔 땅이 필요없을만큼 필요할 거라니까."
+						},
+						"miranda_clay_shop": "캡틴 Miranda의 점토에 접근",
+						"miranda_notice_a_lost_crate": {
+							"title": "상자를 잃어버렸어?",
+							"message_start": "그렇다면, 우리가 거래를 하는 동안 이 상자가 네 캠프 옆에 있는걸 발견했어. 내가 보기에 이건 네거야. 그래서 네 캠프 깃발 근처에 놔뒀지!",
+							"choice": "음? 무슨 상자?",
+							"this_crate": "이 상자?"
+						},
+						"teaches_how_to_break_crate": {
+							"title": "궁금해?",
+							"message_start": "상자를 열지 않을거야? 아마 굉장이 중요하거나 쓰레기거나 둘 중 하나겠는데!<br><br><font size=-1>열기를 원한다면 선택하고 버튼을 눌러</font>"
+						},
+						"miranda_talks_about_cocolings": {
+							"title": "코코링",
+							"message_start": "지난번에 공격당했다는 소식 들었어, 유감이군. 그 코코링들은 최근 시도 때도 없이 접근해온단 말이지.",
+							"choice": "그 작고 사악한 코코넛들?",
+							"message_2": "맞아. 그들은 다른 많은 섬들에서도 문제를 일으키지.<br>우린 여전히 그녀석들이 왜 오는지 모르겠어...<br>많은 섬사람들이 이 미스테리를 풀려고 시도해봤지.",
+							"choice_end": "가능하다면, 내가 도와줄께."
+						},
+						"miranda_notice_another_crate": {
+							"title": "또다른 상자...",
+							"message_start": "조심해, 너희 섬에서 또다른 상자를 봤어! 열기 전에 준비를 단단히 하라고.",
+							"choice": "여기봐!"
+						},
+						"lets_trade_again": {
+							"title": "거래할까?",
+							"message_start": "안녕하세요! 쓸모없는 물건을 재구매하고 싶지 않으십니까?<br>오, 죄송합니다. 방문겍이 있었군요. 나중에 다시 올께요.",
+							"choice": "방문객?",
+							"message_those_guys": "네, 저기 있는 사람들이요. 안내해드리죠."
+						},
+						"show_the_visitors": {
+							"show": "여기에요."
+						},
+						"visitors_introduction": {
+							"title": "우린 도움이 필요하다",
+							"message_start": "안녕하세요, 난 Anya에요. 당신의 도시에 갑자기 착륙한건 미안해요. 하지만 우리에겐 선택의 여지가 없었어요.",
+							"choice": "무슨일이죠?",
+							"message_2": "난 당신이 코코링에 대해 들어본적이 있을거라고 생각하는데, 맞나요? 그들은 무척 성가시지만 딱히 위협은 아니었어요.<br>며칠 전까지는요.<br>우리가 도와줄 사람을 찾는동안 남자들 몇명이 싸우고 있어요. 우리는 정말로 음식이 필요해요, 가능하다면요.",
+							"choice_2": "내가 도울 수 있어요.",
+							"message_3": "고마워요! 우린 당신의 도시에 있는 깃발에 음식을 넣을 수 있는 통을 둘께요.<br>그 동안, 우린 당신이 하는 일들을 도울 수 있어요.",
+							"choice_end": "환영해요!"
+						},
+						"teaches_how_to_donate_food": {
+							"title": "도움이 필요한가요?",
+							"message_start": "음식 통은 아직도 차지 않았나요?<br><br><font size=-1>채우려면 통을 클릭하고 음식 탭을 열자</font>"
+						},
+						"anya_says_she_will_leave": {
+							"message_start": "이봐요! 당신이 해냈군요! 고마워요.",
+							"message_2": "그러니까, 이 말은 우리가 출발 할 준비가 되었다는 말이네요. 우린 아침 8시에 떠날거에요, 알겠죠?",
+							"title": "채워진 음식 통"
+						},
+						"miranda_offers_a_ride": {
+							"title": "바이바이~",
+							"message_start": "당신이 얼마나 우릴 도와줬는지 믿을 수 가 없네요. 고마워요.",
+							"choice": "문제 없어요.",
+							"message_2": "우리의 낡은 땟목은 지금 어디있죠?",
+							"choice_2": "어?",
+							"message_3": "낡은 땟목? 아니아니, 우린 제 배로 갈거에요. 우린 금방 도착 할 수 있을거에요.",
+							"choice_3": "그거 좋은 일이네.",
+							"message_4": "고마워요, Miranda. 당신도 고마워요, 우리는 가야해요.<br>행운이 함게하기를! 안녕!",
+							"choice_end": "안녕!"
+						}
+					}
+				},
+				"archipelago_free_bucket": {
+					"trigger": {
+						"goblin_donation": {
+							"title": "양동이를 든 고블린의 접근",
+							"message_1": "이봐, 멍청이. 내가 이 양동이를 찾았는데 말야, 이거 쓰레기잖아? 그러니까 분명 니꺼라고. 이건 내 머리엔 전혀 안들어간단 말이지. 보여?<br><br><font size=-1>머리를 가리킨다</font>",
+							"message_2": "난 니가 이걸로 뭘 하던 전혀 신경쓰지 않을거야. 그러니까 이걸 태워버리던 어쩌던 맘대로 해봐! <br><br><font size=-1>바닥에 양동이를 던지고, 발로 차버린다. 그리고 화를 내며 가버렸다. </font>",
+							"answer": "어...고마워...?"
+						}
+					}
+				}
+			}
+		},
+		"saved_objects": {
+			"building_templates_index": {
+				"template_tabs": {
+					"display_name": "군도",
+					"categories": {
+						"camp": "비치 캠프",
+						"boats": "보트",
+						"tier3": "장엄한 항구"
+					}
+				}
+			}
+		}
+	}
+}

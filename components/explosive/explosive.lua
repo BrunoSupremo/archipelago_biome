@@ -2,21 +2,7 @@ local ArchipelagoExplosive = class()
 local Point3 = _radiant.csg.Point3
 local Region3 = _radiant.csg.Region3
 
-function ArchipelagoExplosive:activate()
-	self._on_kill_listener = radiant.events.listen(self._entity, 'stonehearth:kill_event', function(args)
-		self:kill()
-		self._on_kill_listener = nil
-		end)
-end
-
 function ArchipelagoExplosive:destroy()
-	if self._on_kill_listener then
-		self._on_kill_listener:destroy()
-		self._on_kill_listener = nil
-	end
-end
-
-function ArchipelagoExplosive:kill()
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	if not location then
 		return

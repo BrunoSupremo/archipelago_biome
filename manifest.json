@@ -396,8 +396,7 @@
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
 
-		"brewerymod/manifest.json":		"file(modding_mods/brewerymod/manifest.json)",
-		"stonehearth_ace/manifest.json":"file(modding_mods/stonehearth_ace/manifest.json)"
+		"brewerymod/manifest.json":		"file(modding_mods/brewerymod/manifest.json)"
 	},
 	"overrides": {
 		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":	"file(data/rigs/entities/humans/animations/female/fishing_start.json)",

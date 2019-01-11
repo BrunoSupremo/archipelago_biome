@@ -1,6 +1,6 @@
 archipelago_biome = {}
 local log = radiant.log.create_logger('version')
-log:error("Archipelago Biome Mod last updated at Stonehearth 1.1.0.947")
+log:error("Archipelago Biome Mod version 19.1.2")
 
 function archipelago_biome:_on_required_loaded()
 end

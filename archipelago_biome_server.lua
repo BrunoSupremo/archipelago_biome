@@ -1,6 +1,6 @@
 archipelago_biome = {}
 local log = radiant.log.create_logger('version')
-log:error("Archipelago Biome Mod version 19.1.2")
+log:error("Archipelago Biome Mod version 19.1.20")
 
 function archipelago_biome:_on_required_loaded()
 end

@@ -420,6 +420,8 @@
 		"stonehearth/data/rigs/entities/rabbit_biped/effects/sitting_drink.json":			"file(data/rigs/entities/rabbit_biped/effects/sitting_drink.json)",
 		"stonehearth/data/rigs/entities/rabbit_biped/effects/sitting_on_chair_drink.json":	"file(data/rigs/entities/rabbit_biped/effects/sitting_on_chair_drink.json)",
 
+		"stonehearth/data/rigs/entities/critters/rabbit/effects/sitting_drink.json":"file(data/rigs/entities/critters/rabbit/effects/sitting_drink.json)",
+
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)"
 	},
 	"controllers": {

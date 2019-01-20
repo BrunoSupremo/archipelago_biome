@@ -16,13 +16,6 @@
 					"recipe" : "file(tiki_torch_recipe.json)"
 				}
 			}
-		},
-		"utility" : {
-			"recipes" : {
-				"raft" : {
-					"recipe" : "file(raft_recipe.json)"
-				}
-			}
 		}
 	}
 }

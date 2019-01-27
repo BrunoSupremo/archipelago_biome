@@ -628,6 +628,10 @@
 				"level_3": {
 					"perk_name": "Cooking",
 					"perk_description": "With a small firepit, the fisher can cook basic recipes."
+				},
+				"level_4": {
+					"perk_name": "Faster",
+					"perk_description": "With each level, fishing gets faster, with less time waiting for a bite."
 				}
 			},
 			"fisher_bucket": {

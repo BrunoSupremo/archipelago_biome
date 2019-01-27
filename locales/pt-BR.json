@@ -628,6 +628,10 @@
 				"level_3": {
 					"perk_name": "Cozinhando",
 					"perk_description": "Com uma fogueirinha, o pescador consegue cozinhar receitas básicas."
+				},
+				"level_4": {
+					"perk_name": "Mais rápido",
+					"perk_description": "A cada nível, pescar fica mais rápido, com menos tempo esperando uma mordida."
 				}
 			},
 			"fisher_bucket":{

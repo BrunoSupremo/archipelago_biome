@@ -15,10 +15,13 @@ end
 
 function FisherClass:activate()
 	BaseJob.activate(self)
-	self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true)
 	self.biome_alias = stonehearth.world_generation:get_biome_alias()
 	self.player_id = radiant.entities.get_player_id(self._sv._entity)
 	self.kingdom_alias = stonehearth.player:get_kingdom(self.player_id)
+end
+
+function FisherClass:post_activate()
+	self.fishing_data = radiant.resources.load_json(self._job_component:get_job_data().fishing_data, true)
 end
 
 function FisherClass:chose_random_fish()

@@ -138,7 +138,6 @@
 
 		"jobs:index":	"file(jobs/index.json)",
 		"jobs:fisher":	"file(jobs/fisher/fisher_description.json)",
-		"jobs:firefly_fisher":	"file(jobs/fisher/firefly_fisher_description.json)",
 		"fisher:rod":		"file(jobs/fisher/fisher_rod/fisher_rod.json)",
 		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 		"fisher:workbench":	"file(jobs/fisher/fisher_workbench)",
@@ -246,7 +245,8 @@
 	},
 	"deprecated_aliases": {
 		"decoration:hammock":"file(entities/decoration/hammock)",
-		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)"
+		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)",
+		"jobs:firefly_fisher":	"file(jobs/fisher/fisher_description.json)",
 	},
 	"mixintos": {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
@@ -310,7 +310,6 @@
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
 		"stonehearth:jobs:index": "archipelago_biome:jobs:index",
-		"swamp_goblins:jobs:index": "file(jobs/firefly_index.json)",
 		"stonehearth/jobs/blacksmith/recipes/recipes.json":			"file(jobs/blacksmith/recipes)",
 		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/cook/recipes/recipes.json":				"file(jobs/cook/recipes)",

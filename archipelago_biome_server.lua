@@ -1,6 +1,5 @@
 archipelago_biome = {}
-local log = radiant.log.create_logger('version')
-log:error("Archipelago Biome Mod version 19.1.20")
+print("Archipelago Biome Mod version 19.1.27")
 
 function archipelago_biome:_on_required_loaded()
 end
@@ -32,6 +31,5 @@ end
 radiant.events.listen_once(radiant, 'radiant:services:init', archipelago_biome, archipelago_biome._on_services_init)
 radiant.events.listen_once(radiant, 'radiant:required_loaded', archipelago_biome, archipelago_biome._on_required_loaded)
 radiant.events.listen_once(radiant, 'stonehearth:biome_set', archipelago_biome, archipelago_biome._on_biome_set)
-radiant.util.set_global_config('mods.directory.cfm.enabled', false)
-radiant.util.set_global_config('mods.steam_workshop.cfm.enabled', false)
+
 return archipelago_biome

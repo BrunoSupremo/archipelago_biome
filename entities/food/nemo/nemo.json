@@ -18,8 +18,12 @@
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 30,
+			"rarity": "common",
 			"shop_info": {
-				"buyable": false
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
 			}
 		},
 		"stonehearth:catalog": {

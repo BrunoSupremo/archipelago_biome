@@ -1,7 +1,8 @@
 {
 	"jobs": {
 		"archipelago_biome:jobs:fisher": {
-			"description": "archipelago_biome:jobs:fisher"
+			"description": "archipelago_biome:jobs:fisher",
+			"firefly_job":"shared"
 		}
 	}
 }

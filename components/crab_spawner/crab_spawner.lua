@@ -25,7 +25,11 @@ function ArchipelagoCrabSpawner:activate()
 		self._on_added_to_world_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', self, self.activate_the_spawner)
 	end
 	
-	self:ready_to_harvest(false)
+	if self:has_child() then
+		self:ready_to_harvest(true)
+	else
+		self:ready_to_harvest(false)
+	end
 end
 
 function ArchipelagoCrabSpawner:activate_the_spawner()
@@ -60,15 +64,21 @@ function ArchipelagoCrabSpawner:spawner_removed()
 	end
 end
 
-function ArchipelagoCrabSpawner:try_to_spawn_crab()
-	-- log:error("try_to_spawn_crab")
+function ArchipelagoCrabSpawner:has_child()
 	local ec = self._entity:get_component("entity_container")
 	if ec then
 		for id, child in ec:each_child() do
 			--if it has a child (trapped) it should do nothing, just wait until it is harvested.
-			return
+			return true
 		end
 	end
+	return false
+end
+
+function ArchipelagoCrabSpawner:try_to_spawn_crab()
+	if self:has_child() then
+		return
+	end	
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	if not location then
 		-- log:error("try_to_spawn_crab nil location")

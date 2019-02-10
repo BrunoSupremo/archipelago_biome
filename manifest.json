@@ -235,8 +235,11 @@
 		"trees:smalea:stem":	"file(entities/trees/smalea/stem)",
 		"trees:smalea:bud":		"file(entities/trees/smalea/bud)",
 
-		"ui:input_box:fish_filters": "file(ui/data/input_box_fish_filters.json)",
-		"ui:input_box:food_bin_filters": "file(ui/data/input_box_food_bin_filters.json)",
+		"ui:input_box:fish_filters":	"file(ui/data/input_box_fish_filters.json)",
+		"ui:input_box:food_bin_filters":"file(ui/data/input_box_food_bin_filters.json)",
+		"ui:stockpile:fish_filters":	"file(ui/data/stockpile_fish_filters.json)",
+		"ui:stockpile:fruit_filters":	"file(ui/data/stockpile_fruit_filters.json)",
+		"ui:stockpile:pearl_filters":	"file(ui/data/stockpile_pearl_filters.json)",
 
 		"weapons:bubble_shot":	"file(entities/weapons/bubble_shot)",
 		"weapons:crab_pincer":	"file(entities/weapons/crab_pincer)",
@@ -249,6 +252,9 @@
 		"jobs:firefly_fisher":	"file(jobs/fisher/fisher_description.json)",
 	},
 	"mixintos": {
+		"archipelago_biome:armor:fish_quiver":"stonehearth_ace:mixins:armor:quiver_arrows",
+		"archipelago_biome:armor:turtle_shield":"stonehearth_ace:mixins:armor:shield",
+
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
 
@@ -395,7 +401,10 @@
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
 
-		"brewerymod/manifest.json":		"file(modding_mods/brewerymod/manifest.json)"
+		"archipelago_biome:weapons:crab_pincer":"stonehearth_ace:mixins:weapons:mainhand",
+		"archipelago_biome:weapons:slap_fish":	"stonehearth_ace:mixins:weapons:mainhand",
+
+		"brewerymod/manifest.json":	"file(modding_mods/brewerymod/manifest.json)"
 	},
 	"overrides": {
 		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":	"file(data/rigs/entities/humans/animations/female/fishing_start.json)",
@@ -420,6 +429,7 @@
 		"stonehearth/data/rigs/entities/rabbit_biped/effects/sitting_on_chair_drink.json":	"file(data/rigs/entities/rabbit_biped/effects/sitting_on_chair_drink.json)",
 
 		"stonehearth/data/rigs/entities/critters/rabbit/effects/sitting_drink.json":"file(data/rigs/entities/critters/rabbit/effects/sitting_drink.json)",
+		"stonehearth/data/rigs/entities/critters/beetle/effects/sitting_drink.json":"file(data/rigs/entities/critters/rabbit/effects/sitting_drink.json)",
 
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)"
 	},

@@ -18,13 +18,23 @@ function FisherClass:activate()
 	self.biome_alias = stonehearth.world_generation:get_biome_alias()
 	self.player_id = radiant.entities.get_player_id(self._sv._entity)
 	self.kingdom_alias = stonehearth.player:get_kingdom(self.player_id)
+	self:add_fishing_data()
 end
 
 function FisherClass:post_activate()
-	self.fishing_data = radiant.resources.load_json(self._job_component:get_job_data().fishing_data, true)
+	self:add_fishing_data()
+end
+
+function FisherClass:add_fishing_data()
+	if not self.fishing_data then
+		if self._job_component and self._job_component:get_job_data() then
+			self.fishing_data = radiant.resources.load_json(self._job_component:get_job_data().fishing_data, true)
+		end
+	end
 end
 
 function FisherClass:chose_random_fish()
+	self:add_fishing_data()
 	local function has_filter( key, value )
 		local valid = false
 		for i,v in ipairs(key) do

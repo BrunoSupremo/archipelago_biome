@@ -126,7 +126,7 @@
 			},
 			"fish_container":{
 				"display_name":"Caixote de peixes",
-				"description":"Pronto pra ser exportado"
+				"description":"Armazena até 16 peixes"
 			},
 			"fancy_fisher_sign": {
 				"display_name": "Placa Chique do Pescador",
@@ -144,9 +144,9 @@
 			},
 			"fruit_container":{
 				"display_name":"Caixote de Cocos",
-				"description":"Pronto pra ser exportado",
+				"description":"Armazena até 16 cocos",
 				"recipe":{
-					"description":"É mais fácil vender os cocos assim.",
+					"description":"Armazena até 16 cocos",
 					"flavor":"Pronto pra ser exportado"
 				}
 			},
@@ -164,7 +164,7 @@
 			},
 			"pearl_container":{
 				"display_name":"Caixote de pérolas",
-				"description":"Pronto pra ser exportado"
+				"description":"Armazena até 16 pérolas"
 			},
 			"pirate_flag":{
 				"display_name":"Bandeira Pirata",
@@ -679,7 +679,7 @@
 				},
 				"fish_container_recipe":{
 					"recipe_name":"Caixote de Peixes",
-					"description":"É mais fácil vender os peixes assim.",
+					"description":"Armazena até 16 peixes",
 					"flavor":"Pronto pra ser exportado"
 				},
 				"fish_quiver_recipe": {
@@ -693,7 +693,7 @@
 				},
 				"pearl_container_recipe":{
 					"recipe_name":"Caixote de Pérolas",
-					"description":"É mais fácil vender as pérolas assim.",
+					"description":"Armazena até 16 pérolas",
 					"flavor":"Pronto pra ser exportado"
 				},
 				"sashimi_recipe":{
@@ -855,6 +855,9 @@
 			"nemo":{
 				"title":"Procurando um peixe",
 				"message":"O pescador acabou de pegar esse peixinho palhaço perdido."
+			},
+			"dusty_tome":{
+				"message":"Um livro bem velho, valioso para cidades do deserto. É um mistério como ainda está empoeirado e não molhado..."
 			}
 		},
 		"monster_tuning":{
@@ -877,15 +880,15 @@
 							"title":"Uma ajuda do mar",
 							"message_start":"Ei, prazer em te conhecer! Sou a Miranda. Quer uma ajuda?<br>Posso te falar sobre algumas coisas se for novo aqui nas ilhas.",
 							"message_decline":"Bom, se cuida.<br>Boa sorte.",
-							"message_accept":"Isso! Finalmente aceitaram minha ajuda!<br>Er... Quero dizer, me siga!",
-							"message_trees":"Vai começar procurando madeira e comida, né?<br>Aqui temos os dois com palmeiras!<br>Quando você colher elas vai pegar cocos. Mas eles não enchem muito<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
+							"message_accept":"Isso! Finalmente aceitaram minha ajuda!<br>Me siga!",
+							"message_trees":"Vai começar procurando madeira e comida, né?<br>Temos os dois nas palmeiras!<br>Quando você colher elas vai pegar cocos.<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
 							"message_oysters":"Ah, e essas ostras gigantes são incríveis. Apenas um pescador pode colhê-las e suas pérolas vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
 							"message_broken_boats":"Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
-							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Preciso aproveitar este vento bom e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte.",
+							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Tchau tchau e boa sorte.",
 
 							"na_message_start": "Ei caras da neve! Como eu sei que você veio da neve? Olhe para você, completamente vestido para neve!..<br>A propósito, sou Miranda. Quer ajuda? <br> Eu posso falar sobre algumas coisas como você é novo aqui nas ilhas.",
 							"na_message_decline": "Bem, tome cuidado.<br>Boa sorte. E tente pegar leve nas roupas pesadas!",
-							"na_message_bye": "Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo. Espero que o sol não tenha te cozido em suas roupas pesadas até lá!<br>Preciso aproveitar este vento bom e navegar, meu navio não vai se encher sozinho de mercadorias e tesouros.<br>Tchau tchau e boa sorte."
+							"na_message_bye": "Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo. Espero que o sol não tenha te cozido em suas roupas pesadas até lá!<br>Tchau tchau e boa sorte."
 						}
 					}
 				},

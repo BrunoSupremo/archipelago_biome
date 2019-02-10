@@ -1,0 +1,24 @@
+{
+	"type": "index",
+	"stockpile": {
+		"food_and_drink": {
+			"display_name": "i18n(stonehearth:ui.game.zones_mode.stockpile.filters.food_and_drink)",
+			"filter": "food_and_drink",
+			"ordinal": 4,
+			"categories": {
+				"coconut": {
+					"ordinal": 100.016641,
+					"display_name": "i18n(archipelago_biome:entities.food.coconut.display_name)",
+					"icon": "/archipelago_biome/entities/food/coconut/coconut.png",
+					"filter": "raw_food coconut"
+				},
+				"papaya_basket": {
+					"ordinal": 100.026641,
+					"display_name": "i18n(archipelago_biome:entities.food.papaya_basket.display_name)",
+					"icon": "/archipelago_biome/entities/food/papaya/papaya_basket/papaya_basket.png",
+					"filter": "raw_food papaya"
+				}
+			}
+		}
+	}
+}

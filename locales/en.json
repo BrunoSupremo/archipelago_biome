@@ -126,7 +126,7 @@
 			},
 			"fish_container": {
 				"display_name": "Fish Container",
-				"description": "Ready to be exported"
+				"description": "Store up to 16 fish"
 			},
 			"fancy_fisher_sign": {
 				"display_name": "Ornate Fisher's Sign",
@@ -144,9 +144,9 @@
 			},
 			"fruit_container": {
 				"display_name": "Coconut Container",
-				"description": "Ready to be exported",
+				"description": "Store up to 16 coconuts",
 				"recipe": {
-					"description": "Easier to sell your coconuts this way.",
+					"description": "Store up to 16 coconuts",
 					"flavor": "Ready to be exported"
 				}
 			},
@@ -160,11 +160,11 @@
 			},
 			"magma":{
 				"display_name":"Magma Block",
-				"description":"Super hot, glowing red, half solid, magma. Do not touch.",
+				"description":"Super hot, glowing red, half solid, magma. Do not touch."
 			},
 			"pearl_container": {
 				"display_name": "Pearl Container",
-				"description": "Ready to be exported"
+				"description": "Store up to 16 pearls"
 			},
 			"pirate_flag": {
 				"display_name": "Pirate Flag",
@@ -679,7 +679,7 @@
 				},
 				"fish_container_recipe": {
 					"recipe_name": "Fish Container",
-					"description": "Easier to sell your fish this way.",
+					"description": "Store up to 16 fish",
 					"flavor": "Ready to be exported"
 				},
 				"fish_quiver_recipe": {
@@ -693,7 +693,7 @@
 				},
 				"pearl_container_recipe": {
 					"recipe_name": "Pearl Container",
-					"description": "Easier to sell your pearls this way.",
+					"description": "Store up to 16 pearls",
 					"flavor": "Ready to be exported"
 				},
 				"sashimi_recipe": {
@@ -813,15 +813,15 @@
 				"seasons":{
 					"dry":{
 						"display_name":"Dry Season",
-						"description":"Dry season in the Archipelago is a sunny season, lasting long eight months. Perfect for vacations, though some strong wind and rain can also happen.",
+						"description":"Dry season in the Archipelago is a sunny season, lasting long eight months. Perfect for vacations, though some strong wind and rain can also happen."
 					},
 					"hurricane":{
 						"display_name":"Hurricane Season",
-						"description":"Hurricane season in the Archipelago is a dangerous season, lasting only one month. Windy and stormy at best.",
+						"description":"Hurricane season in the Archipelago is a dangerous season, lasting only one month. Windy and stormy at best."
 					},
 					"wet":{
 						"display_name":"Wet Season",
-						"description":"Wet season in the Archipelago is a rainy season, lasting three months. Rain and wind, rarely sunny days",
+						"description":"Wet season in the Archipelago is a rainy season, lasting three months. Rain and wind, rarely sunny days"
 					}
 				}
 			}
@@ -855,6 +855,9 @@
 			"nemo":{
 				"title":"Finding a fish",
 				"message":"The fisher just got this cute lost clownfish."
+			},
+			"dusty_tome":{
+				"message":"A very old book, valuable to desert towns. It is a mistery how it is still dusty and not wet..."
 			}
 		},
 		"monster_tuning": {
@@ -878,15 +881,15 @@
 							"title": "A help from the seas",
 							"message_start": "Hey, nice to meet you! I'm Miranda. Want some help?<br>I can talk about a few things if you are new here in the islands.",
 							"message_decline": "Well, take care.<br>Good luck.",
-							"message_accept": "Yes! Finally someone accepted my help!<br>Er... I mean, follow me!",
-							"message_trees": "You will start looking for wood and food, right?<br>Here we have both with palm trees!<br>When you harvest them you get coconuts. Those don't fill much though.<br>Harvesting it a second time (while it has no coconuts) will instead chop it for wood.",
+							"message_accept": "Yes! Finally someone accepted my help!<br>Follow me!",
+							"message_trees": "Start looking for wood and food, right?<br>We have both in palm trees!<br>When you harvest them you first get coconuts only.<br>Harvesting it a second time (while it has no coconuts) will instead chop it for wood.",
 							"message_oysters": "Oh, and these big oysters are awesome. Only a fisher can harvest them and their pearls sell for a good amount.<br>Rumours mention rare black pearls, but I never saw one myself.",
 							"message_broken_boats": "Take a look around and you may find some shipwrecks.<br>You can scavenger those and find good treasures.",
-							"message_bye": "That's all for now.<br>I'll return later to check how you guys are doing.<br>I need to take advantage of this good wind and set sail, my ship will not fill itself with goods and treasures.<br>Bye bye and good luck.",
+							"message_bye": "That's all for now.<br>I'll return later to check how you guys are doing.<br>Bye bye and good luck.",
 
 							"na_message_start": "Hey, guys from the snow! How do I know you came from the snow? Look at you, fully clothed for snow!..<br>I'm Miranda, by the way. Want some help?<br>I can talk about a few things as you are new here in the islands.",
 							"na_message_decline": "Well, take care.<br>Good luck. And try to take easy on the heavy clothes!",
-							"na_message_bye": "That's all for now.<br>I'll return later to check how you guys are doing. I hope the sun will not have cooked you in your heavy clothes until then!<br>I need to take advantage of this good wind and set sail, my ship will not fill itself with goods and treasures.<br>Bye bye and good luck."
+							"na_message_bye": "That's all for now.<br>I'll return later to check how you guys are doing. I hope the sun will not have cooked you in your heavy clothes until then!<br>Bye bye and good luck."
 						}
 					}
 				},

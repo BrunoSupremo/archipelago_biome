@@ -1,9 +1,23 @@
 {
-   "type": "entity",
-   "mixins": "file(beachball_ghost.json)",
-   "entity_data": {
-      "stonehearth:catalog": {
-         "is_item": true
-      }
-   }
+	"type": "entity",
+	"mixins": "stonehearth:mixins:item_properties",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(beachball.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {"x": -0.05, "y": 0, "z": 0.05 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"is_item": true,
+			"category": "trophy",
+			"subject_override": "archipelago_biome:toys:beachball"
+		}
+	}
 }

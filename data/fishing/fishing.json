@@ -53,13 +53,13 @@
 		"default_fish":{
 			"alias":"archipelago_biome:food:fish",
 			"weight":100,
-			"effort":100,
+			"effort":104,
 			"xp":13
 		},
 		"big_fish":{
 			"alias":"archipelago_biome:food:big_fish",
 			"weight":4,
-			"effort":200,
+			"effort":208,
 			"xp":26
 		},
 		"turtle_shield":{
@@ -89,7 +89,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":4,
-			"effort":100,
+			"effort":104,
 			"xp":13
 		}
 	},
@@ -97,13 +97,13 @@
 		"default_fish":{
 			"alias":"archipelago_biome:food:fish",
 			"weight":100,
-			"effort":80,
+			"effort":88,
 			"xp":11
 		},
 		"big_fish":{
 			"alias":"archipelago_biome:food:big_fish",
 			"weight":8,
-			"effort":160,
+			"effort":176,
 			"xp":22
 		},
 		"ice_cube":{
@@ -118,7 +118,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":8,
-			"effort":80,
+			"effort":88,
 			"xp":11
 		}
 	},
@@ -126,13 +126,13 @@
 		"default_fish":{
 			"alias":"archipelago_biome:food:fish",
 			"weight":100,
-			"effort":60,
+			"effort":72,
 			"xp":9
 		},
 		"big_fish":{
 			"alias":"archipelago_biome:food:big_fish",
 			"weight":12,
-			"effort":120,
+			"effort":144,
 			"xp":18
 		},
 		"ice_cube":{
@@ -147,7 +147,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":12,
-			"effort":60,
+			"effort":72,
 			"xp":9
 		}
 	},
@@ -155,13 +155,13 @@
 		"default_fish":{
 			"alias":"archipelago_biome:food:fish",
 			"weight":100,
-			"effort":40,
+			"effort":56,
 			"xp":7
 		},
 		"big_fish":{
 			"alias":"archipelago_biome:food:big_fish",
 			"weight":16,
-			"effort":80,
+			"effort":112,
 			"xp":14
 		},
 		"ice_cube":{
@@ -176,7 +176,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":16,
-			"effort":40,
+			"effort":56,
 			"xp":7
 		}
 	},
@@ -184,13 +184,13 @@
 		"default_fish":{
 			"alias":"archipelago_biome:food:fish",
 			"weight":100,
-			"effort":20,
+			"effort":40,
 			"xp":5
 		},
 		"big_fish":{
 			"alias":"archipelago_biome:food:big_fish",
 			"weight":20,
-			"effort":40,
+			"effort":80,
 			"xp":10
 		},
 		"dusty_tome":{
@@ -203,13 +203,18 @@
 			"is_kingdom_exclusive":[
 				"rayyas_children:kingdoms:rayyas_children"
 			],
-			"effort":10,
+			"bulletin":{
+				"title":"i18n(stonehearth:entities.loot.dusty_tome.display_name)",
+				"message":"i18n(archipelago_biome:data.fishing.dusty_tome.message)",
+				"image":"/stonehearth/entities/loot/dusty_tome/dusty_tome.png"
+			},
+			"effort":20,
 			"xp":1
 		},
 		"gold_chest":{
 			"alias":"stonehearth:loot:gold",
 			"weight":5,
-			"effort":10,
+			"effort":15,
 			"xp":1
 		},
 		"nemo":{
@@ -236,7 +241,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":20,
-			"effort":20,
+			"effort":40,
 			"xp":5
 		}
 	}

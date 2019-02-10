@@ -11,7 +11,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":8,
-			"effort":100,
+			"effort":104,
 			"xp":13
 		}
 	},
@@ -19,7 +19,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":16,
-			"effort":80,
+			"effort":88,
 			"xp":11
 		}
 	},
@@ -27,7 +27,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":24,
-			"effort":60,
+			"effort":72,
 			"xp":9
 		}
 	},
@@ -35,7 +35,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":32,
-			"effort":40,
+			"effort":56,
 			"xp":7
 		}
 	},
@@ -43,7 +43,7 @@
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":40,
-			"effort":20,
+			"effort":40,
 			"xp":5
 		}
 	}

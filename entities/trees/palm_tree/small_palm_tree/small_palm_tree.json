@@ -35,11 +35,11 @@
 		}
 	},
 	"entity_data": {
-		"archipelago_biome:climbable":{
-			"path":[
-				{"x":0,"y":0},
-				{"x":0,"y":8}
-			]
+		"stonehearth:stump_data": {
+			"stump_alias": "archipelago_biome:trees:palm:small:stump"
+		},
+		"stonehearth_ace:replant_data": {
+			"seed_alias": "archipelago_biome:trees:palm:seed"
 		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.trees.palm_tree.small_palm_tree.display_name)"

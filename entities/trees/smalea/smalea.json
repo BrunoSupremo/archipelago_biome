@@ -78,6 +78,12 @@
 		}
 	},
 	"entity_data": {
+		"stonehearth:stump_data": {
+			"stump_alias": "archipelago_biome:trees:smalea:small:stump"
+		},
+		"stonehearth_ace:replant_data": {
+			"seed_alias": "archipelago_biome:trees:smalea:seed"
+		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.trees.smalea.display_name)",
 			"description": "i18n(archipelago_biome:entities.trees.smalea.description)",

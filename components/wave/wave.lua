@@ -6,7 +6,7 @@ function ArchipelagoWave:post_activate()
 	self.timer = stonehearth.calendar:set_timer('rotate wave to correct orientation', "1m", function()
 		self:rotate()
 		self.timer = nil
-		end)
+	end)
 
 	local interval = 2000 + rng:get_int(1,2000)
 	self.wave_timer = stonehearth.calendar:set_interval("ArchipelagoWave wave_timer", interval, function() self:run_effect() end, interval)
@@ -21,6 +21,12 @@ function ArchipelagoWave:rotate()
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	if not location then
 		return
+	else
+		if location.y>40 then
+			--to avoid waves in the foothills/mountains rivers
+			radiant.entities.destroy_entity(self._entity)
+			return
+		end
 	end
 	local intersected_entities = radiant.terrain.get_entities_at_point(location)
 	local has_water=false

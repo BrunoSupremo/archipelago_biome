@@ -9,89 +9,71 @@ local water_more_deep = 'water_3'
 local CustomLandscaper = class()
 -- local log = radiant.log.create_logger('meu_log')
 
-function CustomLandscaper:__init(biome, rng, seed)
-	self._biome = biome
-	self._tile_width = self._biome:get_tile_size()
-	self._tile_height = self._biome:get_tile_size()
-	self._feature_size = self._biome:get_feature_block_size()
-	self._landscape_info = self._biome:get_landscape_info()
-	self._rng = rng
-	self._seed = seed
+function CustomLandscaper:mark_water_bodies(elevation_map, feature_map)
+	self._water_table["water_3"] = self._landscape_info.water.depth.more_deep
 
-	self._noise_map_buffer = nil
-	self._density_map_buffer = nil
+	if self._extra_map_options_on then
+		self:extra_map_options_mark_water_bodies(elevation_map, feature_map)
+	else
+		local rng = self._rng
+		local biome = self._biome
+		local config = self._landscape_info.water.noise_map_settings
+		local modifier_map, density_map = self:_get_filter_buffers(feature_map.width, feature_map.height)
+		--fill modifier map to push water bodies away from terrain type boundaries
+		local modifier_fn = function (i,j)
+			if self:_is_flat(elevation_map, i, j, 1) then
+				return 0
+			else
+				return -1*config.range
+			end
+		end
+		--use density map as buffer for smoothing filter
+		density_map:fill(modifier_fn)
+		FilterFns.filter_2D_0125(modifier_map, density_map, modifier_map.width, modifier_map.height, 10)
+		--mark water bodies on feature map using density map and simplex noise
+		local old_feature_map = Array2D(feature_map.width, feature_map.height)
+		for j=1, feature_map.height do
+			for i=1, feature_map.width do
+				local occupied = feature_map:get(i, j) ~= nil
+				if not occupied then
+					local elevation = elevation_map:get(i, j)
+					local terrain_type = biome:get_terrain_type(elevation)
+					local value = SimplexNoise.proportional_simplex_noise(config.octaves,config.persistence_ratio, config.bandlimit,config.mean[terrain_type],config.range,config.aspect_ratio, self._seed,i,j)
+					value = value + modifier_map:get(i,j)
+					if value > 0 then
+						local old_value = feature_map:get(i, j)
+						old_feature_map:set(i, j, old_value)
 
-	self._perturbation_grid = PerturbationGrid(self._tile_width, self._tile_height, self._feature_size, self._rng)
-
-	self._water_table = {
-		water_1 = self._landscape_info.water.depth.shallow,
-		water_2 = self._landscape_info.water.depth.deep,
-		water_3 = self._landscape_info.water.depth.more_deep
-	}
-
-	self:_parse_landscape_info()
-end
-
-function CustomLandscaper:_parse_landscape_info()
-	local landscape_info = self._landscape_info
-
-	self._placement_table = self._landscape_info.placement_table
-
-	self._tree_size_data = self:_parse_tree_sizes(landscape_info.trees.sizes)
-
-	local boulder_config = landscape_info.scattered.boulders
-	self._noise_map_params = self:_parse_simplex_noise(boulder_config)
-
-	local plant_config = landscape_info.scattered.plants
-	local plant_data = {}
-	plant_data.types = self:_parse_weights(plant_config)
-	plant_data.noise_map_parameters = self:_parse_simplex_noise(plant_config)
-	self._plant_data = plant_data
-
-	local cave_config = landscape_info.scattered.caves
-	local cave_data = {}
-	cave_data.types = self:_parse_weights(cave_config)
-	cave_data.noise_map_parameters = self:_parse_simplex_noise(cave_config)
-	self._cave_data = cave_data
-
-	local tree_config = landscape_info.trees
-	local tree_data = {}
-	tree_data.types = self:_parse_weights(tree_config)
-	tree_data.noise_map_parameters = self:_parse_gaussian_noise(tree_config)
-	self._tree_data = tree_data
-end
-
-function CustomLandscaper:mark_caves(elevation_map, feature_map)
-	local rng = self._rng
-	local biome = self._biome
-	local config = self._landscape_info.scattered.caves
-	local occupied, elevation, noise_variant, value, cave_types, cave_name, cave_type
-
-	for j=1, feature_map.height do
-		for i=1, feature_map.width do
-			occupied = feature_map:get(i, j) ~= nil
-			if not occupied then
-				elevation = elevation_map:get(i, j)
-				noise_variant = self:_get_variant(self._cave_data.noise_map_parameters, elevation)
-				value = self:_scattered_noise_function(i,j,noise_variant.probability)
-				if value > 0 and rng:get_real(0, 1) < noise_variant.density then
-					cave_types = self:_get_variant(self._cave_data.types, elevation)
-					cave_name = cave_types:choose_random()
-					feature_map:set(i, j, cave_name)
+						local islands_value = SimplexNoise.proportional_simplex_noise(config.octaves,config.persistence_ratio, config.bandlimit,config.mean[terrain_type],config.range,config.aspect_ratio, self._seed,i,j)
+						if islands_value > config.range-1 then
+							feature_map:set(i, j, self:_spawn_island_trees())
+						else
+							feature_map:set(i, j, water_shallow)
+						end
+					end
 				end
 			end
 		end
+		self:_remove_juts(feature_map)
+		self:_remove_ponds(feature_map, old_feature_map)
+		self:_fix_tile_aligned_water_boundaries(feature_map, old_feature_map)
+		self:_add_deep_water(feature_map)
+		self:_add_more_deep_water(feature_map)
+		self:_add_more_deep_water_second_pass(feature_map)
 	end
 end
 
-function CustomLandscaper:mark_water_bodies(elevation_map, feature_map)
+function CustomLandscaper:extra_map_options_mark_water_bodies(elevation_map, feature_map)
+	if not self._lakes then
+		return
+	end
 	local rng = self._rng
 	local biome = self._biome
 	local config = self._landscape_info.water.noise_map_settings
 	local modifier_map, density_map = self:_get_filter_buffers(feature_map.width, feature_map.height)
 	--fill modifier map to push water bodies away from terrain type boundaries
 	local modifier_fn = function (i,j)
-		if self:_is_flat(elevation_map, i, j, 1) then
+		if self:_is_flat(elevation_map, i, j, 1) and not self:_has_sky_near(feature_map, i, j, 3) then
 			return 0
 		else
 			return -1*config.range
@@ -155,10 +137,7 @@ function CustomLandscaper:_add_deep_water(feature_map)
 			local feature_name = feature_map:get(i, j)
 
 			if self:is_water_feature(feature_name) then
-				if		is_valid_and_has_water(i-1, j) 
-					and is_valid_and_has_water(i+1, j)
-					and is_valid_and_has_water(i, j-1)
-					and is_valid_and_has_water(i, j+1) then
+				if is_valid_and_has_water(i-1, j) and is_valid_and_has_water(i+1, j) and is_valid_and_has_water(i, j-1) and is_valid_and_has_water(i, j+1) then
 					feature_map:set(i, j, water_deep)
 				end
 			end
@@ -179,10 +158,7 @@ function CustomLandscaper:_add_more_deep_water(feature_map)
 			local feature_name = feature_map:get(i, j)
 
 			if self:is_water_feature(feature_name) then
-				if		is_valid_and_has_water(i-1, j) 
-					and is_valid_and_has_water(i+1, j)
-					and is_valid_and_has_water(i, j-1)
-					and is_valid_and_has_water(i, j+1) then
+				if is_valid_and_has_water(i-1, j) and is_valid_and_has_water(i+1, j) and is_valid_and_has_water(i, j-1) and is_valid_and_has_water(i, j+1) then
 					feature_map:set(i, j, water_more_deep)
 				end
 			end
@@ -200,10 +176,10 @@ function CustomLandscaper:_add_more_deep_water_second_pass(feature_map)
 				local number_of_neighbors = 0
 
 				feature_map:each_neighbor(i, j, true, function(value)
-						if self:is_exactly_deep_water_feature(value) then
-							number_of_neighbors = number_of_neighbors+1
-						end
-					end)
+					if self:is_exactly_deep_water_feature(value) then
+						number_of_neighbors = number_of_neighbors+1
+					end
+				end)
 
 				if number_of_neighbors>=3 then
 					copy_feature_map:set(i, j, water_more_deep)
@@ -219,6 +195,9 @@ function CustomLandscaper:_add_more_deep_water_second_pass(feature_map)
 end
 
 function CustomLandscaper:is_water_feature(feature_name)
+	if feature_name == "water_3" then
+		return true
+	end
 	return self._water_table[feature_name] ~= nil
 end
 

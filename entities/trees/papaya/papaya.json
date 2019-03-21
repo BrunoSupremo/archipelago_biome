@@ -52,11 +52,11 @@
 		}
 	},
 	"entity_data": {
-		"archipelago_biome:climbable":{
-			"path":[
-				{"x":0,"y":0},
-				{"x":0,"y":4}
-			]
+		"stonehearth:stump_data": {
+			"stump_alias": "archipelago_biome:trees:papaya:stump"
+		},
+		"stonehearth_ace:replant_data": {
+			"seed_alias": "archipelago_biome:trees:papaya:seed"
 		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(archipelago_biome:entities.trees.papaya.display_name)",

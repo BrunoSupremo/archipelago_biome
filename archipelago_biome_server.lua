@@ -1,5 +1,5 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 19.2.10")
+print("Archipelago Biome Mod version 19.3.21")
 
 function archipelago_biome:_on_required_loaded()
 end
@@ -11,9 +11,6 @@ function archipelago_biome:_on_biome_set(e)
 	if e.biome_uri ~= "archipelago_biome:biome:archipelago" then
 		return
 	end
-	local custom_world_generation_service = require('services.server.world_generation.custom_world_generation_service')
-	local world_generation_service = radiant.mods.require('stonehearth.services.server.world_generation.world_generation_service')
-	radiant.mixin(world_generation_service, custom_world_generation_service)
 
 	local custom_landscaper = require('services.server.world_generation.custom_landscaper')
 	local landscaper = radiant.mods.require('stonehearth.services.server.world_generation.landscaper')

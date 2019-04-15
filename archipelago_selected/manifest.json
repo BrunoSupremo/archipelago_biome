@@ -41,11 +41,6 @@
 		"stonehearth/scenarios/static/duckduck_nest/duckduck_nest.json":"file(scenarios/static/remove_from_plains.json)",
 		"stonehearth/scenarios/static/ostrich_nest/ostrich_nest.json":	"file(scenarios/static/remove_from_plains.json)",
 
-		"stonehearth_ace/scenarios/static/bolete_nest/bolete_nest.json":				"file(scenarios/static/remove_from_plains.json)",
-		"stonehearth_ace/scenarios/static/daisy_flowers_nest/daisy_flowers_nest.json":	"file(scenarios/static/remove_from_plains.json)",
-		"stonehearth_ace/scenarios/static/poyo_nest/poyo_nest.json":					"file(scenarios/static/add_to_foothills_only.json)",
-		"stonehearth_ace/scenarios/static/sheep_nest/sheep_nest.json":					"file(scenarios/static/add_to_foothills_only.json)",
-
 		"stonehearth/scenarios/static/landmarks/64x_cave_lake.json":					"file(scenarios/static/add_to_foothills_mountains_too.json)",
 		"stonehearth/scenarios/static/landmarks/64x_cave_ore_bad_omen.json":			"file(scenarios/static/add_to_foothills_mountains_too.json)",
 		"stonehearth/scenarios/static/landmarks/64x_cave_ore_lucky_strike.json":		"file(scenarios/static/add_to_foothills_mountains_too.json)",
@@ -62,9 +57,6 @@
 		"stonehearth/scenarios/static/landmarks/128x_stone_collection_1.json":			"file(scenarios/static/add_to_foothills_mountains_too.json)",
 		"stonehearth/scenarios/static/landmarks/128x_stone_collection_2.json":			"file(scenarios/static/add_to_foothills_mountains_too.json)",
 		"stonehearth/scenarios/static/landmarks/128x_stone_collection_3.json":			"file(scenarios/static/add_to_foothills_mountains_too.json)",
-
-		"stonehearth_ace/scenarios/static/landmarks/32x_poyo_land.json":	"file(scenarios/static/add_to_foothills_only.json)",
-		"stonehearth_ace/scenarios/static/landmarks/32x_sheep_herd.json":	"file(scenarios/static/add_to_foothills_only.json)",
 
 		"stonehearth:trapper:trapping_grounds": "file(jobs/trapper/trapping_grounds)"
 	},

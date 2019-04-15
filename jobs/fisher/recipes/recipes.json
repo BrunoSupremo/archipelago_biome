@@ -5,19 +5,19 @@
 			"name": "i18n(archipelago_biome:jobs.fisher.recipes.fisher_tools_name)",
 			"recipes": {
 				"dock": {
-					"recipe": "file(dock_recipe.json)"
+					"recipe": "file(workbenches/dock_recipe.json)"
 				},
 				"crab_trap": {
-					"recipe": "file(crab_trap_recipe.json)"
+					"recipe": "file(workbenches/crab_trap_recipe.json)"
 				},
 				"workbench": {
-					"recipe": "file(workbench_recipe.json)"
+					"recipe": "file(workbenches/workbench_recipe.json)"
 				},
 				"firepit": {
-					"recipe": "file(firepit_recipe.json)"
+					"recipe": "file(workbenches/firepit_recipe.json)"
 				},
 				"ice_dock": {
-					"recipe": "file(ice_dock_recipe.json)"
+					"recipe": "file(workbenches/ice_dock_recipe.json)"
 				}
 			}
 		},
@@ -26,13 +26,13 @@
 			"name": "i18n(stonehearth:jobs.cook.recipes.food_name)",
 			"recipes": {
 				"sashimi": {
-					"recipe": "file(sashimi_recipe.json)"
+					"recipe": "file(food/sashimi_recipe.json)"
 				},
 				"fish_cooked" : {
-					"recipe" : "file(fish_cooked_recipe.json)"
+					"recipe" : "file(food/fish_cooked_recipe.json)"
 				},
 				"crab_bisque" : {
-					"recipe" : "file(crab_bisque_recipe.json)"
+					"recipe" : "file(food/crab_bisque_recipe.json)"
 				}
 			}
 		},
@@ -41,13 +41,13 @@
 			"name": "i18n(stonehearth:jobs.blacksmith.recipes.storage_name)",
 			"recipes": {
 				"input_fish_rack": {
-					"recipe": "file(input_fish_rack_recipe.json)"
+					"recipe": "file(storage/input_fish_rack_recipe.json)"
 				},
 				"fish_container": {
-					"recipe": "file(fish_container_recipe.json)"
+					"recipe": "file(storage/fish_container_recipe.json)"
 				},
 				"pearl_container": {
-					"recipe": "file(pearl_container_recipe.json)"
+					"recipe": "file(storage/pearl_container_recipe.json)"
 				}
 			}
 		},
@@ -56,16 +56,16 @@
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.decorations_name)",
 			"recipes": {
 				"fisher_sign": {
-					"recipe": "file(fisher_sign_recipe.json)"
+					"recipe": "file(decorations/fisher_sign_recipe.json)"
 				},
 				"fancy_fisher_sign": {
-					"recipe": "file(fancy_fisher_sign_recipe.json)"
+					"recipe": "file(decorations/fancy_fisher_sign_recipe.json)"
 				},
 				"aquarium": {
-					"recipe": "file(aquarium_recipe.json)"
+					"recipe": "file(decorations/aquarium_recipe.json)"
 				},
 				"big_fish_hanging": {
-					"recipe": "file(big_fish_hanging_recipe.json)"
+					"recipe": "file(decorations/big_fish_hanging_recipe.json)"
 				}
 			}
 		},
@@ -74,13 +74,13 @@
 			"name": "i18n(stonehearth:jobs.blacksmith.recipes.weapons_name)",
 			"recipes": {
 				"slap_fish": {
-					"recipe": "file(slap_fish_recipe.json)"
+					"recipe": "file(weapons/slap_fish_recipe.json)"
 				},
 				"crab_pincer": {
-					"recipe": "file(crab_pincer_recipe.json)"
+					"recipe": "file(weapons/crab_pincer_recipe.json)"
 				},
 				"fish_quiver": {
-					"recipe": "file(fish_quiver_recipe.json)"
+					"recipe": "file(weapons/fish_quiver_recipe.json)"
 				}
 			}
 		}

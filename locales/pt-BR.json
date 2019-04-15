@@ -774,6 +774,36 @@
 					}
 				}
 			},
+			"goblinpedia":{
+				"menu":{
+					"goblins":{
+						"jobs":{
+							"fisher":"Pescador"
+						}
+					}
+				},
+				"pages":{
+					"jobs":{
+						"fisher":{
+							"title":"Pescador",
+							"description1":"Será que conseguem pegar um peixe maior que eles mesmos?",
+							"topic1":{
+								"title":"Descrição:",
+								"desc1":"Artesão e produtor de comida, promovido de trabalhadores."
+							},
+							"topic2":{
+								"title":"Como funciona:",
+								"desc1":"Coloque uma doca de pesca, ela marca onde devem pescar.",
+								"desc2":"Armadilhas de caranguejos precisam estar perto da água."
+							},
+							"topic3":{
+								"title":"Menu de itens:",
+								"desc1":"Pode fazer decorações simples, fritar peixes, e até alguns itens uteis, como armas de peixe."
+							}
+						}
+					}
+				}
+			},
 			"menu":{
 				"crafter_menu":{
 					"items":{

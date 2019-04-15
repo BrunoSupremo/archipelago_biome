@@ -774,6 +774,36 @@
 					}
 				}
 			},
+			"goblinpedia":{
+				"menu":{
+					"goblins":{
+						"jobs":{
+							"fisher":"Fisher"
+						}
+					}
+				},
+				"pages":{
+					"jobs":{
+						"fisher":{
+							"title":"Fisher",
+							"description1":"Can they catch a fish bigger than themself?",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Crafter and food producer, promoted from workers."
+							},
+							"topic2":{
+								"title":"How it works:",
+								"desc1":"Place a fishing dock, it signs where they will stand while fishing.",
+								"desc2":"Crab traps must be placed near water."
+							},
+							"topic3":{
+								"title":"Crafting menu:",
+								"desc1":"Can make simple decorations, cook fish, and even some useful items, like fish weapons."
+							}
+						}
+					}
+				}
+			},
 			"menu": {
 				"crafter_menu": {
 					"items": {

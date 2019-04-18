@@ -20,6 +20,8 @@
 	"default_starting_season": "dry",
 	"seasons": {
 		"dry": {
+			"humidity": 0.5,
+			"sunlight": 1,
 			"display_name": "i18n(archipelago_biome:data.biome.archipelago.seasons.dry.display_name)",
 			"description": "i18n(archipelago_biome:data.biome.archipelago.seasons.dry.description)",
 			"start_day": 0,
@@ -59,6 +61,8 @@
 			]
 		},
 		"hurricane": {
+			"humidity": 1,
+			"sunlight": 0.5,
 			"display_name": "i18n(archipelago_biome:data.biome.archipelago.seasons.hurricane.display_name)",
 			"description": "i18n(archipelago_biome:data.biome.archipelago.seasons.hurricane.description)",
 			"start_day": 56,
@@ -78,6 +82,8 @@
 			]
 		},
 		"wet": {
+			"humidity": 0.9,
+			"sunlight": 0.9,
 			"display_name": "i18n(archipelago_biome:data.biome.archipelago.seasons.wet.display_name)",
 			"description": "i18n(archipelago_biome:data.biome.archipelago.seasons.wet.description)",
 			"start_day": 63,

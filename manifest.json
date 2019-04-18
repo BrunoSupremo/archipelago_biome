@@ -369,6 +369,7 @@
 		"stonehearth:traits_index":"file(data/traits/traits_index.json)",
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
+		"stonehearth_ace/ui/data/season_icons.json":"file(ui/data/season_icons.json)",
 
 		"archipelago_biome:weapons:crab_pincer":"stonehearth_ace:mixins:weapons:mainhand",
 		"archipelago_biome:weapons:slap_fish":	"stonehearth_ace:mixins:weapons:mainhand",

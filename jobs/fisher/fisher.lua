@@ -1,4 +1,5 @@
---I do not give consent to copy this
+--It is ok to learn from this (though everything here is also in the vanilla game),
+--just don't rip the code directly
 local CraftingJob = require 'stonehearth.jobs.crafting_job'
 local BaseJob = require 'stonehearth.jobs.base_job'
 local WeightedSet = require 'stonehearth.lib.algorithms.weighted_set'
@@ -28,13 +29,32 @@ end
 function FisherClass:add_fishing_data()
 	if not self.fishing_data then
 		if self._job_component and self._job_component:get_job_data() then
-			self.fishing_data = radiant.resources.load_json(self._job_component:get_job_data().fishing_data, true)
+			self.fishing_data = radiant.resources.load_json(self._job_component:get_job_data().fishing_data, true, false)
 		end
+	end
+	if not self.fishing_data then
+		print("Failed to load fisher files. Setting defaults manually.")
+		self.fishing_data = {
+			level_1 = {
+				default_fish = {
+					alias = "archipelago_biome:food:fish",
+					weight = 100,
+					effort = 120,
+					xp = 15
+				}
+			}
+		}
+		self._timer = stonehearth.calendar:set_timer("add_fishing_data retry", "1h", function()
+			self.fishing_data = radiant.resources.load_json(self._job_component:get_job_data().fishing_data, true)
+		end)
 	end
 end
 
 function FisherClass:chose_random_fish()
 	self:add_fishing_data()
+	if not self.fishing_data then
+		return nil
+	end
 	local function has_filter( key, value )
 		local valid = false
 		for i,v in ipairs(key) do
@@ -47,8 +67,8 @@ function FisherClass:chose_random_fish()
 	end
 	local weighted_set = WeightedSet(rng)
 	local level = "level_"..self:get_job_level()
-	if not (self.fishing_data and self.fishing_data[level]) then
-		return nil
+	if not self.fishing_data[level] then
+		level = "level_1"
 	end
 	for fish, table in pairs(self.fishing_data[level]) do
 		local weight = table.weight or 0
@@ -154,7 +174,7 @@ function FisherClass:_on_got_a_fish(args)
 			title = self.fishing_data[level][fish_key].bulletin.title,
 			message = self.fishing_data[level][fish_key].bulletin.message,
 			image = self.fishing_data[level][fish_key].bulletin.image
-			})
+		})
 	end
 
 	local xp = self.fishing_data[level][fish_key].xp or 1

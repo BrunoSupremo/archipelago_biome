@@ -46,7 +46,6 @@
 		"craft_level_5": 15,
 		"craft_level_6": 17
 	},
-	"fishing_data": "archipelago_biome:data:fishing",
 	"max_level": 6,
 	"level_data": {
 		"1": {

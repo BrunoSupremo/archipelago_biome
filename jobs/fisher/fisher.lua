@@ -28,12 +28,10 @@ end
 
 function FisherClass:add_fishing_data()
 	if not self.fishing_data then
-		if self._job_component and self._job_component:get_job_data() then
-			self.fishing_data = radiant.resources.load_json(self._job_component:get_job_data().fishing_data, true, false)
-		end
+		self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true, false)
 	end
 	if not self.fishing_data then
-		print("Failed to load fisher files. Setting defaults manually.")
+		print("Failed to load fisher files. Setting defaults manually. Trying again later.")
 		self.fishing_data = {
 			level_1 = {
 				default_fish = {
@@ -44,10 +42,19 @@ function FisherClass:add_fishing_data()
 				}
 			}
 		}
-		self._timer = stonehearth.calendar:set_timer("add_fishing_data retry", "1h", function()
-			self.fishing_data = radiant.resources.load_json(self._job_component:get_job_data().fishing_data, true)
-		end)
+		self:try_add_fishing_data_again()
 	end
+end
+
+function FisherClass:try_add_fishing_data_again()
+	self._timer = stonehearth.calendar:set_interval('add_fishing_data retry', '1h', function()
+		print("Trying to load fisher files again.")
+		self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true, false)
+		if self.fishing_data then
+			self._timer:destroy()
+			self._timer = nil
+		end
+	end)
 end
 
 function FisherClass:chose_random_fish()
@@ -107,6 +114,11 @@ function FisherClass:_remove_listeners()
 	if self._crab_trapped_listener then
 		self._crab_trapped_listener:destroy()
 		self._crab_trapped_listener = nil
+	end
+
+	if self._timer then
+		self._timer:destroy()
+		self._timer = nil
 	end
 end
 

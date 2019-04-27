@@ -16,7 +16,8 @@
 		"actions:fishing_animations":	"file(ai/actions/fisher/fishing_animations_action.lua)",
 		"actions:pickup_fish":			"file(ai/actions/fisher/pickup_fish_action.lua)",
 		"actions:closest_storage_to_dock":"file(ai/actions/fisher/closest_storage_to_dock.lua)",
-		"actions:get_crab":	"file(ai/actions/fisher/get_crab_action.lua)",
+		"actions:get_crab":			"file(ai/actions/fisher/get_crab_action.lua)",
+		"actions:get_crab_adjacent":"file(ai/actions/fisher/get_crab_adjacent.lua)",
 		"actions:climb_down":		"file(ai/actions/harvest_palm_tree/climb_down_action.lua)",
 		"actions:climb_up":			"file(ai/actions/harvest_palm_tree/climb_up_action.lua)",
 		"actions:harvest_coconut":	"file(ai/actions/harvest_palm_tree/harvest_coconut_action.lua)",
@@ -256,7 +257,7 @@
 	"deprecated_aliases": {
 		"decoration:hammock":"file(entities/decoration/hammock)",
 		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)",
-		"jobs:firefly_fisher":	"file(jobs/fisher/fisher_description.json)",
+		"jobs:firefly_fisher":	"file(jobs/fisher/fisher_description.json)"
 	},
 	"mixintos": {
 		"archipelago_biome:armor:fish_quiver":"stonehearth_ace:mixins:armor:quiver_arrows",

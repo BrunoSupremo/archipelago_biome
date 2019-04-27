@@ -136,15 +136,15 @@ function FisherClass:_on_renewable_resource_gathered(args)
 	end
 
 	if args.harvested_target:get_uri() == "archipelago_biome:gizmos:crab_trap" then
-		stonehearth.ai:reconsider_entity(args.harvested_target)
 		self:_got_a_crab(args.harvested_target)
+		stonehearth.ai:reconsider_entity(args.harvested_target)
 		self._job_component:add_exp(10) --extra for crabs traps
 	end
 end
 
 function FisherClass:_got_a_crab(crab_trap)
-	local rsc = crab_trap:get_component('stonehearth:renewable_resource_node')
-	rsc:pause_resource_timer()
+	local crab_spawner = crab_trap:get_component('archipelago_biome:crab_spawner')
+	crab_spawner:harvestable(false)
 
 	local ec = crab_trap:get_component("entity_container")
 	if ec then

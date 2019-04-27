@@ -14,9 +14,9 @@ function make_is_available_crab_fn(ai_entity)
          if target:get_player_id() ~= player_id then
             return false
          end
-         if radiant.entities.get_entity_data(target, 'archipelago_biome:crab_trap') then
-            local rc = target:get_component('stonehearth:renewable_resource_node')
-            return rc:is_harvestable()
+         local crab_spawner = target:get_component('archipelago_biome:crab_spawner')
+         if crab_spawner then
+            return crab_spawner:harvestable()
          end
          return false
       end
@@ -29,6 +29,6 @@ return ai:create_compound_action(GetCrab)
 :execute('stonehearth:goto_entity_type', {
    filter_fn = ai.CALL(make_is_available_crab_fn, ai.ENTITY),
    description = 'get a crab'
-   })
+})
 :execute('stonehearth:reserve_entity', { entity = ai.PREV.destination_entity })
-:execute('stonehearth:harvest_renewable_resource_adjacent', { resource = ai.PREV.entity })
+:execute('archipelago_biome:get_crab_adjacent', { trap = ai.PREV.entity })

@@ -1,5 +1,5 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 19.4.25")
+print("Archipelago Biome Mod version 19.4.27")
 
 function archipelago_biome:_on_required_loaded()
 end

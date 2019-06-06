@@ -20,7 +20,7 @@
 		"beach":{
 			"bottle":{
 				"display_name":"Garrafa",
-				"description":"Bottle"
+				"description":"Garrafa"
 			},
 			"broken_boat":{
 				"display_name":"Barco Quebrado",
@@ -160,7 +160,7 @@
 			},
 			"magma":{
 				"display_name":"Bloco de Magma",
-				"description":"Magma super quente, incandescente, meio sólido. Não toque.",
+				"description":"Magma super quente, incandescente, meio sólido. Não toque."
 			},
 			"pearl_container":{
 				"display_name":"Caixote de pérolas",
@@ -171,7 +171,7 @@
 				"description":"Não é uma boa forma de fazer amigos",
 				"recipe":{
 					"description":"Bandeira com tema pirata clássica.",
-					"flavor":"Aaaarrrrgggghhhh!"
+					"flavor":"Aaaarrrrgggghhh!"
 				}
 			},
 			"raft":{
@@ -261,7 +261,7 @@
 				}
 			},
 			"big_fish_cooked_serving": {
-				"display_name": "Cooked Big Fish"
+				"display_name":"Grande Peixe Cozido"
 			},
 			"nemo": {
 				"display_name": "Nemo"
@@ -340,6 +340,14 @@
 			}
 		},
 		"gizmos":{
+			"boat": {
+				"display_name": "Barco",
+				"description": "Transporta hearthligns de um lado pro outro"
+			},
+			"boat_dock": {
+				"display_name": "Doca de barcos",
+				"description": "Viagens de barco começam aqui e vão até o outro lado"
+			},
 			"cocobomb":{
 				"display_name":"CocoBomba",
 				"description":"Não brinque com a comida.",
@@ -630,6 +638,10 @@
 					"perk_description": "Com uma fogueirinha, o pescador consegue cozinhar receitas básicas."
 				},
 				"level_4": {
+					"perk_name": "Barcos",
+					"perk_description": "Após colocar uma doca para barcos, os heartlings poderão atravessar a água de um lado para o outro."
+				},
+				"level_5": {
 					"perk_name": "Mais rápido",
 					"perk_description": "A cada nível, pescar fica mais rápido, com menos tempo esperando uma mordida."
 				}
@@ -705,6 +717,11 @@
 					"recipe_name":"Peixe Porrete",
 					"description":"Ai!",
 					"flavor":"É mais nojento do que perigoso"
+				},
+				"boat_dock_recipe": {
+					"recipe_name": "Doca de barcos",
+					"description": "Coloque-a em uma borda de frente para a água. Uma outra será criado do outro lado da água. Hearthlings agora vão poder atravessar de um lado pro outro usando barquinhos.",
+					"flavor": "'Então todo mundo tem seu próprio barquinho?' - 'Sim.'"
 				},
 				"dock_recipe": {
 					"recipe_name": "Doca de pesca",
@@ -903,6 +920,7 @@
 		"gm":{
 			"anya": "Anya",
 			"captain_miranda":"Capitã Miranda",
+			"goblin_bucket": "Goblin com um balde",
 			"campaigns":{
 				"archipelago_tutorial":{
 					"trigger":{

@@ -32,7 +32,10 @@
 			"capacity": 7,
 			"render_contents": true,
 			"filter_list": "archipelago_biome:ui:input_box:fish_filters",
-			"is_single_filter": true
+			"is_single_filter": true,
+			"default_filter": [
+				"cooking_ingredient hangable fish_meat"
+			]
 		},
 		"effect_list": {
 			"default": "file(/data/rigs/entities/containers/input_fish_rack/effects/idle.json)"

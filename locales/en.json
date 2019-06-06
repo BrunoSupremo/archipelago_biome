@@ -340,6 +340,14 @@
 			}
 		},
 		"gizmos": {
+			"boat": {
+				"display_name": "Boat",
+				"description": "Transport hearthligns from one side to another"
+			},
+			"boat_dock": {
+				"display_name": "Boat dock",
+				"description": "Boat travels starts here and ends at the dock in the other side"
+			},
 			"cocobomb": {
 				"display_name": "CocoBomb",
 				"description": "Don't play with your food.",
@@ -630,6 +638,10 @@
 					"perk_description": "With a small firepit, the fisher can cook basic recipes."
 				},
 				"level_4": {
+					"perk_name": "Boats",
+					"perk_description": "After placing a boat dock, hearthligns can use it to travel from one side to another over the water"
+				},
+				"level_5": {
 					"perk_name": "Faster",
 					"perk_description": "With each level, fishing gets faster, with less time waiting for a bite."
 				}
@@ -705,6 +717,11 @@
 					"recipe_name": "Slap Fish",
 					"description": "Ouch!",
 					"flavor": "It's more disgusting than dangerous"
+				},
+				"boat_dock_recipe": {
+					"recipe_name": "Boat Dock",
+					"description": "Place it at an edge facing the water. A second one will be auto created on the far other side. Hearthlings will now be able to cross the water on their own from one dock to another using boats.",
+					"flavor": "'So everyone has their own boats?' - 'Yes.'"
 				},
 				"dock_recipe": {
 					"recipe_name": "Fishing Dock",

@@ -1,0 +1,47 @@
+{
+	"type": "entity",
+	"mixins": "file(boat_dock_ghost.json)",
+	"components": {
+		"archipelago_biome:boat_dock":{},
+		"archipelago_biome:need_water":{
+			"need_water_icon":true,
+			"water_location_function":{
+				"component":"archipelago_biome:boat_dock",
+				"fn":"get_water_entity"
+			}
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(boat_dock_iconic.json)",
+			"ghost_form": "file(boat_dock_ghost.json)",
+			"placeable_on_walls": true,
+			"placeable_on_ground": false
+		},
+		"sensor_list": {
+			"sensors": {
+				"dock_sensor": {
+					"type": "sensor",
+					"radius": 1
+				}
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:hide_child_entities_from_pathfinder": true,
+		"stonehearth:net_worth": {
+			"value_in_gold": 6,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 2,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 2
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

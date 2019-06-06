@@ -41,6 +41,8 @@
 		"biome:archipelago": "file(data/biome/archipelago.json)",
 
 		"buffs:archer:fish_arrow": "file(jobs/archer/archer_buffs/fish_arrow.json)",
+		"buffs:boat": "file(data/buffs/boat)",
+		"buff_scripts:boat": "file(data/buffs/boat/boat_script.lua)",
 
 		"captain_miranda":	"file(entities/humans/captain_miranda)",
 		"anya":				"file(entities/humans/anya)",
@@ -92,6 +94,7 @@
 		"decoration:totem":				"file(entities/decoration/totem)",
 
 		"effects:aquarium":					"file(data/effects/aquarium)",
+		"effects:boat":						"file(data/effects/boat)",
 		"effects:bubble_shot":				"file(data/effects/bubble_shot)",
 		"effects:cocobomb_effect":			"file(data/effects/cocobomb_effect)",
 		"effects:cocobomb_explosion_effect":"file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
@@ -102,6 +105,7 @@
 		"effects:ice_dock_bubbles":			"file(data/effects/ice_dock_bubbles)",
 		"effects:magma":					"file(data/effects/magma)",
 		"effects:magma:volcano_smoke":		"file(data/effects/magma/volcano_smoke.json)",
+		"effects:no_connection_overlay":	"file(data/effects/no_connection_overlay)",
 		"effects:no_water_overlay":			"file(data/effects/no_water_overlay)",
 		"effects:open_crate":				"file(data/effects/open_crate)",
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
@@ -134,6 +138,9 @@
 
 		"furniture:hammock":"file(entities/furniture/hammock)",
 
+		"gizmos:boat":	"file(entities/gizmos/boat)",
+		"gizmos:boat_dock":			"file(entities/gizmos/boat_dock)",
+		"gizmos:boat_dock_platform":"file(entities/gizmos/boat_dock/boat_dock_platform.json)",
 		"gizmos:cocobomb":	"file(entities/gizmos/cocobomb)",
 		"gizmos:crab_trap":	"file(entities/gizmos/crab_trap)",
 
@@ -304,6 +311,8 @@
 		"stonehearth/data/biome/desert/manifest.json":	"file(data/biome/desert/manifest.json)",
 		"stonehearth/data/biome/temperate.json":		"file(data/biome/temperate.json)",
 
+		"stonehearth:data:constants": "file(data/constants.json)",
+
 		"swamp_goblins:data:goblinpedia": "file(data/goblinpedia)",
 
 		"stonehearth:data:gm_index": "archipelago_biome:data:gm_index",
@@ -340,6 +349,8 @@
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:loadouts": "file(data/loadouts/loadouts.json)",
+
+		"stonehearth:mixins:mob": "file(mixins/mob)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
 
@@ -409,6 +420,7 @@
 		"game_master:util:choose_water_location_outside_town": "file(services/server/game_master/controllers/util/choose_water_location_outside_town.lua)"
 	},
 	"components": {
+		"boat_dock":	"file(components/boat_dock/boat_dock.lua)",
 		"cave":			"file(components/cave/cave.lua)",
 		"crab_spawner":	"file(components/crab_spawner/crab_spawner.lua)",
 		"dock":			"file(components/dock/dock.lua)",

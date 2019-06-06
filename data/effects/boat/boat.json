@@ -1,0 +1,14 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"wave": {
+			"type": "cubemitter",
+			"cubemitter": "/archipelago_biome/data/horde/particles/boat/wave.json",
+			"loop": true,
+			"transforms": {
+				"x":0, "y":0, "z":0,
+				"rx":90, "ry":0, "rz":0
+			}
+		}
+	}
+}

@@ -86,9 +86,20 @@
 				{
 					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_4.perk_name)",
 					"id": "crafter_recipe_unlock_4",
-					"icon": "file(images/faster_fishing_perk.png)",
+					"icon": "file(images/boat_perk.png)",
 					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_4.perk_description)",
 					"level": 4
+				}
+			]
+		},
+		"5": {
+			"perks": [
+				{
+					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_5.perk_name)",
+					"id": "crafter_recipe_unlock_5",
+					"icon": "file(images/faster_fishing_perk.png)",
+					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_5.perk_description)",
+					"level": 5
 				}
 			]
 		}

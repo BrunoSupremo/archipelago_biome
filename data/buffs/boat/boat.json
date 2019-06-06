@@ -1,0 +1,14 @@
+{
+	"type": "buff",
+	"axis": "debuff",
+	"invisible_to_player" : true,
+	"persistent": true,
+	"duration": "1h",
+	"modifiers": {
+		"speed": {
+			"multiply": 0.666
+		}
+	},
+	"script": "archipelago_biome:buff_scripts:boat",
+	"set_posture": "stonehearth:in_boat"
+}

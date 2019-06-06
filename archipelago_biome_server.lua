@@ -1,11 +1,5 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 19.4.27")
-
-function archipelago_biome:_on_required_loaded()
-end
-
-function archipelago_biome:_on_services_init()
-end
+print("Archipelago Biome Mod version 19.6.6")
 
 function archipelago_biome:_on_biome_set(e)
 	if e.biome_uri ~= "archipelago_biome:biome:archipelago" then
@@ -25,8 +19,6 @@ function archipelago_biome:_on_biome_set(e)
 	radiant.mixin(micro_map_generator, custom_micro_map_generator)
 end
 
-radiant.events.listen_once(radiant, 'radiant:services:init', archipelago_biome, archipelago_biome._on_services_init)
-radiant.events.listen_once(radiant, 'radiant:required_loaded', archipelago_biome, archipelago_biome._on_required_loaded)
 radiant.events.listen_once(radiant, 'stonehearth:biome_set', archipelago_biome, archipelago_biome._on_biome_set)
 
 return archipelago_biome

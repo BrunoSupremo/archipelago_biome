@@ -1,0 +1,9 @@
+{
+	"components": {
+		"stonehearth:posture": {
+			"priorities": {
+				"stonehearth:in_boat": 2200
+			}
+		}
+	}
+}

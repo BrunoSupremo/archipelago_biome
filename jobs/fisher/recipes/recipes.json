@@ -18,6 +18,9 @@
 				},
 				"ice_dock": {
 					"recipe": "file(workbenches/ice_dock_recipe.json)"
+				},
+				"boat_dock": {
+					"recipe": "file(workbenches/boat_dock_recipe.json)"
 				}
 			}
 		},

@@ -1,5 +1,5 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 19.6.6")
+print("Archipelago Biome Mod version 19.6.10")
 
 function archipelago_biome:_on_biome_set(e)
 	if e.biome_uri ~= "archipelago_biome:biome:archipelago" then

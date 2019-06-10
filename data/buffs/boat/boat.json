@@ -3,7 +3,7 @@
 	"axis": "debuff",
 	"invisible_to_player" : true,
 	"persistent": true,
-	"duration": "1h",
+	"duration": "15m",
 	"modifiers": {
 		"speed": {
 			"multiply": 0.666

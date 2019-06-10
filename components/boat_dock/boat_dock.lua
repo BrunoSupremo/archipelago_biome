@@ -209,12 +209,26 @@ function ArchipelagoBoatDock:_on_added_to_sensor(id, entity)
 	end
 end
 
+function ArchipelagoBoatDock:_customize_boat(boat, boat_owner)
+	local boat_render_info = boat:get_component('render_info')
+	--model
+	local player_id = radiant.entities.get_player_id(boat_owner)
+	if player_id and stonehearth.player:get_kingdom(player_id) then
+		boat_render_info:set_model_variant(stonehearth.player:get_kingdom(player_id))
+	end
+	--size
+	local custom_size = boat_owner:get_component("render_info"):get_scale()
+	custom_size = (custom_size + 0.2)/2
+	boat_render_info:set_scale(custom_size)
+end
+
 function ArchipelagoBoatDock:_on_removed_to_sensor(id)
 	local entity = radiant.entities.get_entity(id)
 	if self:_valid_entity(entity) then
 		local location = radiant.entities.get_world_grid_location(entity)
 		if not radiant.terrain.is_blocked(location - Point3.unit_y) then
 			local boat = radiant.entities.create_entity("archipelago_biome:gizmos:boat")
+			self:_customize_boat(boat, entity)
 			entity:add_component('entity_container'):add_child_to_bone(boat, 'cant_believe_this_worked')
 			radiant.entities.move_to_grid_aligned(boat, Point3.zero)
 

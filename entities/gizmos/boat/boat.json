@@ -10,12 +10,41 @@
 			"render_type": "attach_to_bone"
 		},
 		"render_info": {
+			"color_map": "stonehearth:color_map:mob",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/mob_material_map.json"
+			],
 			"scale": 0.15
 		},
 		"model_variants": {
 			"default": {
 				"models": [
 					"file(boat.qb)"
+				]
+			},
+			"stonehearth:kingdoms:animals": {
+				"models": [
+					"file(raft.qb)"
+				]
+			},
+			"stonehearth:kingdoms:forest": {
+				"models": [
+					"file(raft.qb)"
+				]
+			},
+			"stonehearth:kingdoms:undead": {
+				"models": [
+					"file(raft.qb)"
+				]
+			},
+			"stonehearth:kingdoms:titans": {
+				"models": [
+					"file(bramble.qb)"
+				]
+			},
+			"swamp_goblins:kingdoms:firefly_clan": {
+				"models": [
+					"file(canoe.qb)"
 				]
 			}
 		},

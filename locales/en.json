@@ -773,21 +773,19 @@
 			"build_mode": {
 				"building_templates": {
 					"template_names": {
-						"fisher_hut": "Fisher Hut",
-						"fisher_hut_rayya": "Fisher Hut (Rayyas)",
-						"fisher_hut_north": "Fisher Hut (Northern)",
-						"shaded_hammock": "Shaded Hammock",
-						"beach_tower": "Beach Tower",
-						"little_pier": "Little Pier",
-						"open_house": "Open House",
-						"small_beach_house": "Small Beach House",
-						"carpenter_house": "Carpenter's House",
-						"tiki_bar": "Tiki Bar",
-						"small_boat": "Small Boat",
-						"double_outrigger_boat": "Double Outrigger Boat",
-						"explorer_ship": "Explorer Ship",
-						"long_ship": "Long Ship",
-						"trader_ship": "Trader Ship"
+						"fisher_hut": "🏝️ Fisher Hut",
+						"fisher_hut_rayya": "🏝️ Fisher Hut (Rayyas)",
+						"fisher_hut_north": "🏝️ Fisher Hut (Northern)",
+						"shaded_hammock": "🏝️ Shaded Hammock",
+						"beach_tower": "🏝️ Beach Tower",
+						"little_pier": "🏝️ Little Pier",
+						"open_house": "🏝️ Open House",
+						"small_beach_house": "🏝️ Small Beach House",
+						"carpenter_house": "🏝️ Carpenter's House",
+						"tiki_bar": "🏝️ Tiki Bar",
+						"explorer_ship": "🏝️🚢 Explorer Ship",
+						"long_ship": "🏝️🚢 Long Ship",
+						"trader_ship": "🏝️🚢 Trader Ship"
 					}
 				}
 			},

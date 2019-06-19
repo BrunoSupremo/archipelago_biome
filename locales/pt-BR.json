@@ -773,21 +773,19 @@
 			"build_mode":{
 				"building_templates":{
 					"template_names":{
-						"fisher_hut": "Cabana de Pesca",
-						"fisher_hut_rayya": "Cabana de Pesca (Rayyas)",
-						"fisher_hut_north": "Cabana de Pesca (Northern)",
-						"shaded_hammock": "Rede na Sombra",
-						"beach_tower":"Torre de Praia",
-						"little_pier":"Pequeno porto",
-						"open_house":"Casa Aberta",
-						"small_beach_house":"Casa Pequena de Praia",
-						"carpenter_house":"Casa do Carpinteiro",
-						"tiki_bar":"Bar Tiki",
-						"small_boat":"Barquinho",
-						"double_outrigger_boat":"Barco com estabilizadores",
-						"explorer_ship":"Navio Explorador",
-						"long_ship":"Navio Comprido",
-						"trader_ship":"Navio Comerciante"
+						"fisher_hut": "🏝️ Cabana de Pesca",
+						"fisher_hut_rayya": "🏝️ Cabana de Pesca (Rayyas)",
+						"fisher_hut_north": "🏝️ Cabana de Pesca (Northern)",
+						"shaded_hammock": "🏝️ Rede na Sombra",
+						"beach_tower":"🏝️ Torre de Praia",
+						"little_pier":"🏝️ Pequeno porto",
+						"open_house":"🏝️ Casa Aberta",
+						"small_beach_house":"🏝️ Casa Pequena de Praia",
+						"carpenter_house":"🏝️ Casa do Carpinteiro",
+						"tiki_bar":"🏝️ Bar Tiki",
+						"explorer_ship":"🏝️🚢 Navio Explorador",
+						"long_ship":"🏝️🚢 Navio Comprido",
+						"trader_ship":"🏝️🚢 Navio Comerciante"
 					}
 				}
 			},

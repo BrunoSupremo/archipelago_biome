@@ -12,6 +12,10 @@ end
 
 function ArchipelagoCrabSpawner:post_activate()
 	self._entity:remove_component("stonehearth:renewable_resource_node")
+	local effect_list = self._entity:get_component("effect_list")
+	if effect_list then
+		effect_list:remove_effect(select(2, effect_list:first_effect()))
+	end
 end
 
 function ArchipelagoCrabSpawner:activate()

@@ -718,19 +718,17 @@
 			"build_mode": {
 				"building_templates": {
 					"template_names": {
-						"fisher_hut": "어부의 오두막",
-						"shaded_hammock": "그늘진 해먹",
-						"beach_tower": "비치 타워",
-						"little_pier": "작은 부두",
-						"open_house": "열린 집",
-						"small_beach_house": "작은 비치 하우스",
-						"carpenter_house": "목수의 집",
-						"tiki_bar": "티키 막대",
-						"small_boat": "작은 보트",
-						"double_outrigger_boat": "더블 아웃리거 보트",
-						"explorer_ship": "탐험선",
-						"long_ship": "바이킹선",
-						"trader_ship": "교역선"
+						"fisher_hut": "🏝️ 어부의 오두막",
+						"shaded_hammock": "🏝️ 그늘진 해먹",
+						"beach_tower": "🏝️ 비치 타워",
+						"little_pier": "🏝️ 작은 부두",
+						"open_house": "🏝️ 열린 집",
+						"small_beach_house": "🏝️ 작은 비치 하우스",
+						"carpenter_house": "🏝️ 목수의 집",
+						"tiki_bar": "🏝️ 티키 막대",
+						"explorer_ship": "🏝️🚢 탐험선",
+						"long_ship": "🏝️🚢 바이킹선",
+						"trader_ship": "🏝️🚢 교역선"
 					}
 				}
 			},

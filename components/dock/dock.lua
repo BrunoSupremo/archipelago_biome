@@ -2,9 +2,9 @@ local Point3 = _radiant.csg.Point3
 local ArchipelagoDock = class()
 
 local VERSIONS = {
-ZERO = 0,
-DOCK_SPOT_FOR_MULTIPLAYER = 1,
-SAVED_LEGS = 2
+	ZERO = 0,
+	DOCK_SPOT_FOR_MULTIPLAYER = 1,
+	SAVED_LEGS = 2
 }
 
 function ArchipelagoDock:get_version()
@@ -45,18 +45,18 @@ function ArchipelagoDock:activate()
 	if not self._added_to_world_listener then
 		self._added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', function()
 			self:on_added_to_world()
-			end)
+		end)
 	end
 	if not self._removed_from_world_listener then
 		self._removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', function()
 			self:remove_legs()
 			self:remove_fishing_spot()
-			end)
+		end)
 	end
 	if not self._in_the_water_listener and not self.no_water then
 		self._in_the_water_listener = radiant.events.listen(self._entity, 'archipelago_biome:in_the_water', function(e)
 			self:add_fishing_spot(e.location)
-			end)
+		end)
 	end
 end
 
@@ -122,7 +122,9 @@ end
 
 function ArchipelagoDock:add_legs(location)
 	local edge = self:_get_dock_edge(self._entity,location)
+	local facing = radiant.entities.get_facing(self._entity)
 	local edge_offset = edge - Point3.unit_y
+	local leg_offset = radiant.math.rotate_about_y_axis( Point3(0, 1, -0.2), facing)
 	while not radiant.terrain.is_blocked(edge_offset) and edge_offset.y >0 do
 		--todo: allow other leg types, and random types
 		local leg = radiant.entities.create_entity("archipelago_biome:decoration:dock_leg",
@@ -131,7 +133,7 @@ function ArchipelagoDock:add_legs(location)
 		radiant.terrain.place_entity_at_exact_location(leg, edge_offset)
 		local facing = radiant.entities.get_facing(self._entity)
 		radiant.entities.turn_to(leg, facing)
-		edge_offset = edge_offset - Point3.unit_y
+		edge_offset = edge_offset - leg_offset
 	end
 	self.__saved_variables:mark_changed()
 end

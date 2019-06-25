@@ -311,6 +311,8 @@
 		"stonehearth/data/biome/desert/manifest.json":	"file(data/biome/desert/manifest.json)",
 		"stonehearth/data/biome/temperate.json":		"file(data/biome/temperate.json)",
 
+		"tower_defense/data/compatible_mods.json": "file(data/compatible_mods.json)",
+
 		"stonehearth:data:constants": "file(data/constants.json)",
 
 		"swamp_goblins:data:goblinpedia": "file(data/goblinpedia)",
@@ -424,7 +426,8 @@
 		"archipelago_biome:weapons:crab_pincer":"stonehearth_ace:mixins:weapons:mainhand",
 		"archipelago_biome:weapons:slap_fish":	"stonehearth_ace:mixins:weapons:mainhand",
 
-		"brewerymod/manifest.json":	"file(modding_mods/brewerymod/manifest.json)"
+		"brewerymod/manifest.json":		"file(modding_mods/brewerymod/manifest.json)",
+		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)"
 	},
 	"overrides": {
 		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":	"file(data/rigs/entities/humans/animations/female/fishing_start.json)",

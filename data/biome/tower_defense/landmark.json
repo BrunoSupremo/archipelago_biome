@@ -1,0 +1,6 @@
+{
+	"brush": "file(landmark.qb)",
+	"landmark_block_types": "archipelago_biome:landmark_blocks",
+	"offset":{"x":32,"y":3,"z":32},
+	"rotation": 0
+}

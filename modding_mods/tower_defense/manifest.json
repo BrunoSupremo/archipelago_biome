@@ -1,0 +1,14 @@
+{
+	"mixintos": {
+		"archipelago_biome:trees:bend_palm:large":	"tower_defense/mixins/tree/tree.json",
+		"archipelago_biome:trees:bend_palm:small":	"tower_defense/mixins/tree/tree.json",
+		"archipelago_biome:trees:dranden:small":	"tower_defense/mixins/tree/tree.json",
+		"archipelago_biome:trees:palm:large":		"tower_defense/mixins/tree/tree.json",
+		"archipelago_biome:trees:palm:small":		"tower_defense/mixins/tree/tree.json",
+		"archipelago_biome:trees:papaya":			"archipelago_biome/modding_mods/tower_defense/tree.json",
+		"archipelago_biome:trees:smalea:small":		"tower_defense/mixins/tree/tree.json"
+	},
+	"overrides":{
+		"archipelago_biome/data/biome/images/archipelago_400x300.jpg":"archipelago_biome/data/biome/images/tower_defense.png"
+	}
+}

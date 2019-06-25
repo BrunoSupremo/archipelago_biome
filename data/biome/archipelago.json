@@ -17,6 +17,7 @@
 	},
 	"mining_loot_table": "file(archipelago_mining_loot_table.json)",
 	"generation_file": "file(archipelago_generation_data.json)",
+	"tower_defense_generation_file": "file(tower_defense/archipelago_generation_data.json)",
 	"default_starting_season": "dry",
 	"seasons": {
 		"dry": {

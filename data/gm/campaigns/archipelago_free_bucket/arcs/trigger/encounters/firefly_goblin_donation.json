@@ -11,7 +11,7 @@
 				"script": "file(has_carpenter_or_fisher.lua)"
 			},
 			"kingdom_check": {
-				"type": "deny_if",
+				"type": "deny_if_not",
 				"item": "kingdom",
 				"value": "swamp_goblins:kingdoms:firefly_clan"
 			}
@@ -22,10 +22,10 @@
 		"nodes": {
 			"msg1": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.title)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.firefly_goblin_donation.title)",
 					"dialog_title": "i18n(archipelago_biome:data.gm.goblin_bucket)",
 					"portrait": "file(images/goblin_bucket.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.message_1)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.firefly_goblin_donation.message_1)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {
 							"next_node": "msg2"
@@ -35,12 +35,12 @@
 			},
 			"msg2": {
 				"bulletin": {
-					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.title)",
+					"title": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.firefly_goblin_donation.title)",
 					"dialog_title": "i18n(archipelago_biome:data.gm.goblin_bucket)",
 					"portrait": "file(images/goblin_bucket.png)",
-					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.message_2)",
+					"message": "i18n(archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.firefly_goblin_donation.message_2)",
 					"choices": {
-						"archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.goblin_donation.answer": {
+						"archipelago_biome:data.gm.campaigns.archipelago_free_bucket.trigger.firefly_goblin_donation.answer": {
 							"out_edge" : "spawn_bucket"
 						}
 					}

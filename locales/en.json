@@ -1017,6 +1017,12 @@
 							"message_1": "Hey fool. I found this bucket, but it is trash, so it must be yours. It does not fit on my head, see?<br><br><font size=-1>Points to own head</font>",
 							"message_2": "I don't care about what you do with it. You can burn it for all I care!<br><br><font size=-1>Throws the bucket in the ground, kicks it, and then goes away angry</font>",
 							"answer": "Thanks?"
+						},
+						"firefly_goblin_donation": {
+							"title": "A green goblin with a bucket approaches",
+							"message_1": "Hey cousin. I found this bucket, but it is trash, I have no use for it. It does not fit on my head, see?<br><br><font size=-1>Points to own head</font>",
+							"message_2": "Feel free to do whatever you like with it!<br><br><font size=-1>Rolls it towards your camp, then leaves</font>",
+							"answer": "Thanks!"
 						}
 					}
 				}

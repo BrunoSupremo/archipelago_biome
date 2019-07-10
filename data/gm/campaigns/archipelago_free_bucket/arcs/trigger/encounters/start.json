@@ -4,6 +4,6 @@
 	"in_edge"  : "start",
 	"out_edge" : "goblin_donation",
 	"wait_info" :  {
-		"duration" : "24h"
+		"duration" : "24h+1h"
 	}
 }

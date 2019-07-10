@@ -342,7 +342,7 @@
 		"gizmos": {
 			"boat": {
 				"display_name": "Boat",
-				"description": "Transport hearthligns from one side to another"
+				"description": "Transport hearthlings from one side to another"
 			},
 			"boat_dock": {
 				"display_name": "Boat dock",
@@ -639,7 +639,7 @@
 				},
 				"level_4": {
 					"perk_name": "Boats",
-					"perk_description": "After placing a boat dock, hearthligns can use it to travel from one side to another over the water"
+					"perk_description": "After placing a boat dock, hearthlings can use it to travel from one side to another over the water"
 				},
 				"level_5": {
 					"perk_name": "Faster",

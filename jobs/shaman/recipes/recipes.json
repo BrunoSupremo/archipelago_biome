@@ -1,0 +1,11 @@
+{
+	"craftable_recipes" : {
+		"goblin_tools": {
+			"recipes": {
+				"fisher_bucket": {
+					"recipe": "file(tools/fisher_bucket_recipe.json)"
+				}
+			}
+		}
+	}
+}

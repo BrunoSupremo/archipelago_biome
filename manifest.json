@@ -385,6 +385,7 @@
 		"stonehearth/jobs/potter/recipes/recipes.json":				"file(jobs/potter/recipes)",
 		"stonehearth/jobs/weaver/recipes/recipes.json":				"file(jobs/weaver/recipes)",
 		"stonehearth_ace/jobs/cook/recipes/recipes.json":	"file(jobs/cook/recipes/ace_recipes.json)",
+		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"file(jobs/shaman/recipes)",
 
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 

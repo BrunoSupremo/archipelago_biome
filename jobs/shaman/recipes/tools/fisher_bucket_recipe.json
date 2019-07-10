@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 4,
+	"recipe_name": "i18n(archipelago_biome:jobs.fisher.recipes.fisher_bucket_recipe.recipe_name)",
+	"description": "i18n(archipelago_biome:jobs.fisher.recipes.fisher_bucket_recipe.description)",
+	"flavor": "i18n(archipelago_biome:jobs.fisher.recipes.fisher_bucket_recipe.flavor)",
+	"portrait": "/archipelago_biome/jobs/fisher/fisher_bucket/fisher_bucket.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "wood resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "archipelago_biome:fisher:talisman"
+		}
+	]
+}

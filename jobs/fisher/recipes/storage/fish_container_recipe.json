@@ -10,8 +10,8 @@
 	"level_requirement": 2,
 	"ingredients": [
 		{
-			"uri": "stonehearth:containers:large_crate",
-			"count" : 1
+			"material": "wood resource",
+			"count": 2
 		},
 		{
 			"material": "raw fish_meat",

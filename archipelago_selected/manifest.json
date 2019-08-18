@@ -65,6 +65,8 @@
 		"stonehearth/entities/monsters/avian/ostrich/ostrich.qb":	"file(entities/monsters/avian/ostrich/ostrich.qb)",
 		"stonehearth/entities/monsters/avian/duckduck/duckduck.qb":	"file(entities/monsters/avian/duckduck/duckduck.qb)",
 
+		"stonehearth/entities/monsters/forest/alligator/alligator.qb":	"file(entities/monsters/forest/alligator/alligator.qb)",
+
 		"stonehearth/entities/monsters/goblins/goblin_hut/goblin_hut.qb":	"file(entities/monsters/goblins/goblin_hut/goblin_hut.qb)",
 		"stonehearth/entities/monsters/goblins/goblin_tent/goblin_tent.qb":	"file(entities/monsters/goblins/goblin_tent/goblin_tent.qb)",
 

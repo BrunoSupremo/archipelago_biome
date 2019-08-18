@@ -386,6 +386,7 @@
 		"stonehearth/jobs/weaver/recipes/recipes.json":				"file(jobs/weaver/recipes)",
 		"stonehearth_ace/jobs/cook/recipes/recipes.json":	"file(jobs/cook/recipes/ace_recipes.json)",
 		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"file(jobs/shaman/recipes)",
+		"archipelago_biome/jobs/fisher/fisher_description.json":	"stonehearth_ace/jobs/fisher/ace_fisher_description.json",
 
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
@@ -455,7 +456,9 @@
 		"stonehearth/data/rigs/entities/critters/rabbit/effects/sitting_drink.json":"file(data/rigs/entities/critters/rabbit/effects/sitting_drink.json)",
 		"stonehearth/data/rigs/entities/critters/beetle/effects/sitting_drink.json":"file(data/rigs/entities/critters/rabbit/effects/sitting_drink.json)",
 
-		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)"
+		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
+
+		"stonehearth_ace/jobs/fisher/ace_fisher_description.json":"archipelago_biome/jobs/fisher/ace_fisher_description.json"
 	},
 	"controllers": {
 		"class:fisher": "file(jobs/fisher/fisher.lua)",

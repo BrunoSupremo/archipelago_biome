@@ -1,8 +1,13 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 19.8.18")
+print("Archipelago Biome Mod version 19.8.20")
 
---jellyfish
---rework pirate hat
+--[[
+add jellyfish
+rework pirate hat
+
+Bugs:
+
+]]
 
 function archipelago_biome:_on_biome_set(e)
 	if e.biome_uri ~= "archipelago_biome:biome:archipelago" then

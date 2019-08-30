@@ -1,5 +1,3 @@
---It is ok to learn from this (though everything here is also in the vanilla game),
---just don't rip the code directly
 local CraftingJob = require 'stonehearth.jobs.crafting_job'
 local BaseJob = require 'stonehearth.jobs.base_job'
 local WeightedSet = require 'stonehearth.lib.algorithms.weighted_set'
@@ -24,6 +22,15 @@ end
 
 function FisherClass:post_activate()
 	self:add_fishing_data()
+end
+
+function FisherClass:promote(json_path, options)
+	CraftingJob.promote(self, json_path, options)
+	local town = stonehearth.town:get_town(self.player_id)
+	if town then
+		town:add_placement_slot_entity(self._sv._entity, {fish_trap = 2})
+	end
+	self.__saved_variables:mark_changed()
 end
 
 function FisherClass:add_fishing_data()

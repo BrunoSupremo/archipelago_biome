@@ -689,6 +689,10 @@
 					"description":"Irá atrair e capturar caranguejos. Precisa ser colocada perto da água pra funcionar.",
 					"flavor":""
 				},
+				"fish_trap_recipe": {
+					"recipe_name": "Armadilha de Peixes (ACE)",
+					"description": "Usado pelo Pescador (e Caçador) para capturar e coletar peixes com segurança. Também pode ser usado para capturar peixes para o transporte."
+				},
 				"fish_container_recipe":{
 					"recipe_name":"Caixote de Peixes",
 					"description":"Armazena até 16 peixes",

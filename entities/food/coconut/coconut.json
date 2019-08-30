@@ -17,22 +17,31 @@
 		"stonehearth:item": {
 			"category": "food"
 		},
-		"stonehearth:drink": {
-			"_for":"cookmod",
+		"stonehearth_ace:drink": {
 			"stonehearth:sitting_on_chair": {
-				"satisfaction": 100
+				"satisfaction": 70,
+				"food_satisfaction": 6
 			},
 			"default": {
-				"satisfaction": 90
+				"satisfaction": 60,
+				"food_satisfaction": 5
 			},
-			"quality": 5
+			"applied_buffs": [
+				"stonehearth_ace:buffs:consumption:fruity_flavors",
+				"stonehearth_ace:buffs:consumption:refreshed_belly",
+				"stonehearth_ace:buffs:consumption:sweet_energy"
+			],
+			"quality": 2,
+			"effect_loops": 2
 		},
 		"stonehearth:food": {
 			"stonehearth:sitting_on_chair": {
-				"satisfaction": 30
+				"satisfaction": 30,
+				"drink_satisfaction": 3
 			},
 			"default": {
-				"satisfaction": 20
+				"satisfaction": 20,
+				"drink_satisfaction": 2
 			},
 			"quality": 2,
 			"eating_effect":"sitting_drink"

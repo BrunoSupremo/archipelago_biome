@@ -23,6 +23,9 @@
 				"satisfaction": 30
 			},
 			"quality": 5,
+			"applied_buffs": [
+				"stonehearth_ace:buffs:consumption:warm_belly"
+			],
 			"eating_effect":"sitting_drink"
 		},
 		"stonehearth:catalog": {

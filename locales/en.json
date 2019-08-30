@@ -689,6 +689,10 @@
 					"description": "It will attract and capture crabs. Requires to be placed in or near water to work.",
 					"flavor": ""
 				},
+				"fish_trap_recipe": {
+					"recipe_name": "Fish Trap (ACE)",
+					"description": "Used by the Fisher (and Trapper) to safely catch and harvest fish. It can also be used to capture fish for transport."
+				},
 				"fish_container_recipe": {
 					"recipe_name": "Fish Container",
 					"description": "Store up to 16 fish",

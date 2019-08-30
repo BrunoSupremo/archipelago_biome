@@ -1,0 +1,11 @@
+{
+	"craftable_recipes": {
+		"fishing": {
+			"recipes": {
+				"ace_fish_trap": {
+					"recipe": "file(workbenches/ace_fish_trap_recipe.json)"
+				}
+			}
+		}
+	}
+}

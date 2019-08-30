@@ -17,15 +17,22 @@
 		"stonehearth:item": {
 			"category": "food"
 		},
-		"stonehearth:drink": {
-			"_for":"cookmod",
+		"stonehearth_ace:drink": {
 			"stonehearth:sitting_on_chair": {
-				"satisfaction": 100
+				"satisfaction": 80,
+				"food_satisfaction": 6
 			},
 			"default": {
-				"satisfaction": 90
+				"satisfaction": 70,
+				"food_satisfaction": 5
 			},
-			"quality": 6
+			"applied_buffs": [
+				"stonehearth_ace:buffs:consumption:fruity_flavors",
+				"stonehearth_ace:buffs:consumption:refreshed_belly",
+				"stonehearth_ace:buffs:consumption:sweet_energy"
+			],
+			"quality": 5,
+			"effect_loops": 2
 		},
 		"stonehearth:food": {
 			"stonehearth:sitting_on_chair": {
@@ -53,7 +60,19 @@
 			"icon": "file(papaya_smoothie.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags":["food", "prepared_food", "papaya", "fruit", "vegetarian", "stockpile_prepared_food", "coconut", "drink"]
+			"material_tags":[
+				"food",
+				"prepared_food",
+				"papaya",
+				"fruit",
+				"vegetarian",
+				"stockpile_prepared_food",
+				"coconut",
+				"drink",
+				"smoothie_serving",
+				"milk",
+				"dairy"
+			]
 		},
 		"stonehearth:appeal": {
 			"appeal": 10

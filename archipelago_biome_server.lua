@@ -1,5 +1,5 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 19.8.29")
+print("Archipelago Biome Mod version 19.9.7")
 
 --[[
 add jellyfish

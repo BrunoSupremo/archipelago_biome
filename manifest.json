@@ -388,11 +388,8 @@
 		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"file(jobs/shaman/recipes)",
 
 		"archipelago_biome/jobs/fisher/recipes/recipes.json":	"stonehearth_ace/jobs/fisher/recipes/ace_recipes.json",
-		"archipelago_biome/jobs/fisher/fisher_description.json":"stonehearth_ace/jobs/fisher/ace_fisher_description.json",
 
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
-
-		"stonehearth:loadouts": "file(data/loadouts/loadouts.json)",
 
 		"stonehearth:mixins:mob": "file(mixins/mob)",
 
@@ -459,7 +456,6 @@
 
 		"stonehearth/ui/shell/select_settlement/map.js": "file(ui/shell/select_settlement/map.js)",
 
-		"stonehearth_ace/jobs/fisher/ace_fisher_description.json":	"archipelago_biome/jobs/fisher/ace_fisher_description.json",
 		"stonehearth_ace/jobs/fisher/recipes/ace_recipes.json":		"archipelago_biome/jobs/fisher/recipes/ace_recipes.json"
 	},
 	"controllers": {

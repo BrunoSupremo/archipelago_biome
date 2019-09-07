@@ -23,6 +23,8 @@
 		"stonehearth/entities/trees/oak_tree/sapling_oak_tree/sapling_oak_tree_iconic.json": "archipelago_biome:mixins:foreign_tree",
 		"stonehearth/entities/trees/juniper_tree/sapling_juniper_tree/sapling_juniper_tree_iconic.json": "archipelago_biome:mixins:foreign_tree",
 
+		"stonehearth:monsters:forest:alligator": "file(entities/monsters/forest/alligator)",
+		
 		"stonehearth:monster_tuning:goblins:worker":		"file(data/monster_tuning/goblins/worker)",
 		"stonehearth:monster_tuning:goblins:worker_thief":	"file(data/monster_tuning/goblins/worker)",
 

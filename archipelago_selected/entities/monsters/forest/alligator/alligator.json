@@ -1,0 +1,15 @@
+{
+	"components": {
+		"stonehearth:loot_drops": {
+			"entries": {
+				"fish": {
+					"items": {
+						"fish": {
+							"uri": "archipelago_biome:food:fish"
+						}
+					}
+				}
+			}
+		}
+	}
+}

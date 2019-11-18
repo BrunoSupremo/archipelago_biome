@@ -1,0 +1,4 @@
+{
+	"mixins": "stonehearth:jobs:weaver",
+	"display_order": 6
+}

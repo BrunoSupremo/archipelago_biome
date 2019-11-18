@@ -1,0 +1,8 @@
+{
+	"mixins": "stonehearth:jobs:shepherd",
+	"parent_job": "archipelago_biome:jobs:fisher",
+	"parent_level_requirement": 2,
+	"mixintypes": {
+		"parent_jobs": "remove"
+	}
+}

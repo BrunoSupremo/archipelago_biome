@@ -1,0 +1,35 @@
+{
+	"mixins": "stonehearth:jobs:index",
+	"jobs": {
+		"stonehearth:jobs:farmer": {
+			"description": "archipelago_biome:jobs:farmer"
+		},
+		"stonehearth:jobs:trapper": {
+			"description": "archipelago_biome:jobs:trapper"
+		},
+		"stonehearth:jobs:shepherd": {
+			"description": "archipelago_biome:jobs:shepherd"
+		},
+		"stonehearth:jobs:cook": {
+			"description": "archipelago_biome:jobs:cook"
+		},
+		"stonehearth:jobs:carpenter": {
+			"description": "archipelago_biome:jobs:carpenter"
+		},
+		"stonehearth:jobs:potter": {
+			"description": "archipelago_biome:jobs:potter"
+		},
+		"stonehearth:jobs:blacksmith": {
+			"description": "archipelago_biome:jobs:blacksmith"
+		},
+		"stonehearth:jobs:engineer": {
+			"description": "archipelago_biome:jobs:engineer"
+		},
+		"stonehearth:jobs:geomancer": {
+			"description": "archipelago_biome:jobs:geomancer"
+		},
+		"stonehearth:jobs:weaver": {
+			"description": "archipelago_biome:jobs:weaver"
+		}
+	}
+}

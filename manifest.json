@@ -144,12 +144,27 @@
 		"gizmos:cocobomb":	"file(entities/gizmos/cocobomb)",
 		"gizmos:crab_trap":	"file(entities/gizmos/crab_trap)",
 
-		"jobs:index":	"file(jobs/index.json)",
+		"jobs:index":	"file(jobs/atlanteans_index.json)",
+		"jobs:farmer":		"file(jobs/farmer/atlanteans_farmer_description.json)",
+		"jobs:trapper":		"file(jobs/trapper/atlanteans_trapper_description.json)",
+		"jobs:shepherd":	"file(jobs/shepherd/atlanteans_shepherd_description.json)",
+		"jobs:cook":		"file(jobs/cook/atlanteans_cook_description.json)",
+		"jobs:carpenter":	"file(jobs/carpenter/atlanteans_carpenter_description.json)",
+		"jobs:potter":		"file(jobs/potter/atlanteans_potter_description.json)",
+		"jobs:blacksmith":	"file(jobs/blacksmith/atlanteans_blacksmith_description.json)",
+		"jobs:engineer":	"file(jobs/engineer/atlanteans_engineer_description.json)",
+		"jobs:geomancer":	"file(jobs/geomancer/atlanteans_geomancer_description.json)",
+		"jobs:weaver":		"file(jobs/weaver/atlanteans_weaver_description.json)",
+
 		"jobs:fisher":	"file(jobs/fisher/fisher_description.json)",
 		"fisher:rod":		"file(jobs/fisher/fisher_rod/fisher_rod.json)",
 		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 		"fisher:workbench":	"file(jobs/fisher/fisher_workbench)",
 		"fisher:firepit":	"file(jobs/fisher/fisher_firepit)",
+
+		"kingdoms:atlanteans": "file(data/atlanteans_population.json)",
+		"atlantean_male":	"file(entities/atlanteans/male)",
+		"atlantean_female":	"file(entities/atlanteans/female)",
 
 		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
 		"landmark:summon_stone:minor:volcano":	"file(entities/landmark/summon_stone_volcano)",
@@ -373,7 +388,7 @@
 
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
-		"stonehearth:jobs:index": "archipelago_biome:jobs:index",
+		"stonehearth:jobs:index": "file(jobs/index.json)",
 		"nordlingmod:jobs:index":"file(jobs/index_nordlings.json)",
 		"stonehearth/jobs/blacksmith/recipes/recipes.json":			"file(jobs/blacksmith/recipes)",
 		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
@@ -389,6 +404,7 @@
 
 		"archipelago_biome/jobs/fisher/recipes/recipes.json":	"stonehearth_ace/jobs/fisher/recipes/ace_recipes.json",
 
+		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:mixins:mob": "file(mixins/mob)",

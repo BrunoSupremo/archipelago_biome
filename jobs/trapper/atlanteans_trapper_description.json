@@ -1,0 +1,5 @@
+{
+	"mixins": "stonehearth:jobs:trapper",
+	"parent_job": "archipelago_biome:jobs:fisher",
+	"parent_level_requirement": 2
+}

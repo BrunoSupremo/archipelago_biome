@@ -589,6 +589,10 @@
 					"display_name": "Budding Papaya Tree",
 					"description": "Its almost there!  It's growing its adult leaves!"
 				}
+			},
+			"stump":{
+				"display_name":"Stump",
+				"description":"Not a tree anymore"
 			}
 		},
 		"weapons": {

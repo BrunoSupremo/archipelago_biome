@@ -1,0 +1,20 @@
+{
+	"mixins": "stonehearth:jobs:engineer",
+	"parent_jobs": [
+		{
+			"job": "stonehearth:jobs:blacksmith",
+			"level_requirement": 2,
+			"one_of": true
+		},
+		{
+			"job": "stonehearth:jobs:carpenter",
+			"level_requirement": 2,
+			"one_of": true
+		},
+		{
+			"job": "stonehearth:jobs:potter",
+			"level_requirement": 2,
+			"one_of": true
+		}
+	]
+}

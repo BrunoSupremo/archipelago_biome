@@ -589,6 +589,10 @@
 					"display_name": "Brotamento de mamão",
 					"description": "Está quase lá! Está crescendo suas folhas adultas!"
 				}
+			},
+			"stump":{
+				"display_name":"Toco",
+				"description":"Era uma árvore"
 			}
 		},
 		"weapons":{

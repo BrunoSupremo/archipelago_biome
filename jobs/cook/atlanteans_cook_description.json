@@ -1,0 +1,20 @@
+{
+	"mixins": "stonehearth:jobs:cook",
+	"parent_jobs": [
+		{
+			"job": "stonehearth:jobs:farmer",
+			"level_requirement": 2,
+			"one_of": true
+		},
+		{
+			"job": "stonehearth:jobs:trapper",
+			"level_requirement": 2,
+			"one_of": true
+		},
+		{
+			"job": "stonehearth:jobs:shepherd",
+			"level_requirement": 2,
+			"one_of": true
+		}
+	]
+}

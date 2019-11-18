@@ -1,0 +1,5 @@
+{
+	"mixins": "stonehearth:jobs:geomancer",
+	"parent_job": "stonehearth:jobs:herbalist",
+	"parent_level_requirement": 2
+}

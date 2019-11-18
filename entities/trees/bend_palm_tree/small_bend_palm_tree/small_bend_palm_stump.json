@@ -36,8 +36,8 @@
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
-			"display_name": "i18n(tree_stump:entities.trees.stump)",
-			"description": "i18n(tree_stump:entities.trees.stump_description)"
+			"display_name": "i18n(archipelago_biome:entities.trees.stump.display_name)",
+			"description": "i18n(archipelago_biome:entities.trees.stump.description)"
 		}
 	}
 }

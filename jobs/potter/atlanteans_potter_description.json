@@ -1,0 +1,5 @@
+{
+	"mixins": "stonehearth:jobs:potter",
+	"parent_job": "stonehearth:jobs:mason",
+	"parent_level_requirement": 2
+}

@@ -1,9 +1,11 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 19.11.18")
+print("Archipelago Biome Mod version 19.12.31")
 
 --[[
 add jellyfish
 rework pirate hat
+
+fish pond
 
 Bugs:
 

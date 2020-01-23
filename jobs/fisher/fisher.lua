@@ -12,12 +12,21 @@ function FisherClass:initialize()
 	self._sv.current_fish = nil
 end
 
+function FisherClass:restore()
+	if self._sv.is_current_class then
+		self:_register_with_town()
+	end
+end
+
 function FisherClass:activate()
 	BaseJob.activate(self)
 	self.biome_alias = stonehearth.world_generation:get_biome_alias()
 	self.player_id = radiant.entities.get_player_id(self._sv._entity)
 	self.kingdom_alias = stonehearth.player:get_kingdom(self.player_id)
 	self:add_fishing_data()
+	if self._sv.is_current_class then
+		self:_register_with_town()
+	end
 end
 
 function FisherClass:post_activate()
@@ -26,11 +35,26 @@ end
 
 function FisherClass:promote(json_path, options)
 	CraftingJob.promote(self, json_path, options)
-	local town = stonehearth.town:get_town(self.player_id)
+	self:_register_with_town()
+end
+
+function FisherClass:_register_with_town()
+	local player_id = radiant.entities.get_player_id(self._sv._entity)
+	local town = stonehearth.town:get_town(player_id)
 	if town then
 		town:add_placement_slot_entity(self._sv._entity, {fish_trap = 2})
 	end
 	self.__saved_variables:mark_changed()
+end
+
+function FisherClass:demote()
+	local player_id = radiant.entities.get_player_id(self._sv._entity)
+	local town = stonehearth.town:get_town(player_id)
+	if town then
+		town:remove_placement_slot_entity(self._sv._entity)
+	end
+
+	CraftingJob.demote(self)
 end
 
 function FisherClass:add_fishing_data()

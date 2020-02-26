@@ -1,0 +1,10 @@
+{
+	"biome_options": {
+		"archipelago_biome:biome:archipelago": {
+			"dirt_holes":false,
+			"modes":{
+				"waterworld":true
+			}
+		}
+	}
+}

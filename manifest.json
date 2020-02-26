@@ -329,6 +329,7 @@
 		"tower_defense/data/compatible_mods.json": "file(data/compatible_mods.json)",
 
 		"stonehearth:data:constants": "file(data/constants.json)",
+		"extra_map_options:data:extra_map_options":"file(data/extra_map_options.json)",
 
 		"swamp_goblins:data:goblinpedia": "file(data/goblinpedia)",
 

@@ -9,11 +9,15 @@ local water_more_deep = 'water_3'
 local CustomLandscaper = class()
 -- local log = radiant.log.create_logger('meu_log')
 
+local ExtraMapOptions = require 'extra_map_options.services.server.world_generation.landscaper'
+
 function CustomLandscaper:mark_water_bodies(elevation_map, feature_map)
 	self._water_table["water_3"] = self._landscape_info.water.depth.more_deep
 
 	if self._extra_map_options_on then
-		self:extra_map_options_mark_water_bodies(elevation_map, feature_map)
+		ExtraMapOptions.mark_water_bodies(self, elevation_map, feature_map)
+		self:_add_more_deep_water(feature_map)
+		self:_add_more_deep_water_second_pass(feature_map)
 	else
 		local rng = self._rng
 		local biome = self._biome
@@ -46,7 +50,7 @@ function CustomLandscaper:mark_water_bodies(elevation_map, feature_map)
 
 						local islands_value = SimplexNoise.proportional_simplex_noise(config.octaves,config.persistence_ratio, config.bandlimit,config.mean[terrain_type],config.range,config.aspect_ratio, self._seed,i,j)
 						if islands_value > config.range-1 then
-							feature_map:set(i, j, self:_spawn_island_trees())
+							feature_map:set(i, j, self:_spawn_island())
 						else
 							feature_map:set(i, j, water_shallow)
 						end
@@ -63,58 +67,7 @@ function CustomLandscaper:mark_water_bodies(elevation_map, feature_map)
 	end
 end
 
-function CustomLandscaper:extra_map_options_mark_water_bodies(elevation_map, feature_map)
-	if not self._lakes then
-		return
-	end
-	local rng = self._rng
-	local biome = self._biome
-	local config = self._landscape_info.water.noise_map_settings
-	local modifier_map, density_map = self:_get_filter_buffers(feature_map.width, feature_map.height)
-	--fill modifier map to push water bodies away from terrain type boundaries
-	local modifier_fn = function (i,j)
-		if self:_is_flat(elevation_map, i, j, 1) and not self:_has_sky_near(feature_map, i, j, 3) then
-			return 0
-		else
-			return -1*config.range
-		end
-	end
-	--use density map as buffer for smoothing filter
-	density_map:fill(modifier_fn)
-	FilterFns.filter_2D_0125(modifier_map, density_map, modifier_map.width, modifier_map.height, 10)
-	--mark water bodies on feature map using density map and simplex noise
-	local old_feature_map = Array2D(feature_map.width, feature_map.height)
-	for j=1, feature_map.height do
-		for i=1, feature_map.width do
-			local occupied = feature_map:get(i, j) ~= nil
-			if not occupied then
-				local elevation = elevation_map:get(i, j)
-				local terrain_type = biome:get_terrain_type(elevation)
-				local value = SimplexNoise.proportional_simplex_noise(config.octaves,config.persistence_ratio, config.bandlimit,config.mean[terrain_type],config.range,config.aspect_ratio, self._seed,i,j)
-				value = value + modifier_map:get(i,j)
-				if value > 0 then
-					local old_value = feature_map:get(i, j)
-					old_feature_map:set(i, j, old_value)
-
-					local islands_value = SimplexNoise.proportional_simplex_noise(config.octaves,config.persistence_ratio, config.bandlimit,config.mean[terrain_type],config.range,config.aspect_ratio, self._seed,i,j)
-					if islands_value > config.range-1 then
-						feature_map:set(i, j, self:_spawn_island_trees())
-					else
-						feature_map:set(i, j, water_shallow)
-					end
-				end
-			end
-		end
-	end
-	self:_remove_juts(feature_map)
-	self:_remove_ponds(feature_map, old_feature_map)
-	self:_fix_tile_aligned_water_boundaries(feature_map, old_feature_map)
-	self:_add_deep_water(feature_map)
-	self:_add_more_deep_water(feature_map)
-	self:_add_more_deep_water_second_pass(feature_map)
-end
-
-function CustomLandscaper:_spawn_island_trees()
+function CustomLandscaper:_spawn_island()
 	local tree = {
 		"archipelago_biome:trees:palm:small",
 		"archipelago_biome:trees:palm:large",

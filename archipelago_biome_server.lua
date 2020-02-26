@@ -1,13 +1,18 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 20.1.22")
+print("Archipelago Biome Mod version 20.2.25")
 
 --[[
+
+bug: crabs spawnig on top of trees
+
 add jellyfish
 rework pirate hat
 
 fish pond
+fish anywhere near water, dock is just a prefered place
 
 Bugs:
+(vanilla) chairs stocked on fish only container because it has the "all" option set
 
 ]]
 

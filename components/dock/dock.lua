@@ -41,6 +41,7 @@ function ArchipelagoDock:activate()
 	self.no_legs = json.no_legs or false
 	self.no_water = json.no_water or false
 	self.dock_spot_offset = json.dock_spot_offset or -1
+	self.reverse_facing = json.reverse_facing
 
 	if not self._added_to_world_listener then
 		self._added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', function()
@@ -109,6 +110,10 @@ function ArchipelagoDock:add_fishing_spot(location)
 		self:_get_dock_spot_location(self._entity,location) +Point3.unit_y)
 	local facing = radiant.entities.get_facing(self._entity)
 	radiant.entities.turn_to(self._sv.dock_spot, facing)
+	if self.reverse_facing then
+		radiant.entities.turn_to(self._sv.dock_spot, facing+180)
+	end
+
 	self.__saved_variables:mark_changed()
 end
 

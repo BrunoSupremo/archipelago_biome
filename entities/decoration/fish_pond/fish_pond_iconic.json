@@ -5,18 +5,19 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(input_fish_rack_iconic.qb)"
+					"file(fish_pond_iconic.qb)"
 				]
 			}
 		},
 		"mob": {
-			"model_origin": { "x": 0, "y": 0, "z": 0 }
+			"model_origin" : { "x": 0, "y": 0, "z": 0 }
 		}
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
 			"is_item": true,
-			"category": "storage"
+			"category": "decoration",
+			"subject_override": "archipelago_biome:decoration:fish_pond"
 		}
 	}
 }

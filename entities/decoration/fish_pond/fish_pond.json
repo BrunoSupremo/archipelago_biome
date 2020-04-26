@@ -1,0 +1,38 @@
+{
+	"type": "entity",
+	"mixins": "file(fish_pond_ghost.json)",
+	"components": {
+		"render_info": {
+			"color_map": "stonehearth:color_map:water",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/water_material_map.json"
+			]
+		},
+		"archipelago_biome:dock": {
+			"no_legs":true,
+			"no_water":true,
+			"dock_spot_offset":-4,
+			"reverse_facing":true,
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(fish_pond_iconic.json)",
+			"ghost_form": "file(fish_pond_ghost.json)",
+			"placeable_on_walls": false,
+			"placeable_on_ground": true
+		},
+		"stonehearth:traveler_attraction": {}
+	},
+	"entity_data": {
+		"stonehearth:hide_child_entities_from_pathfinder": true,
+		"stonehearth:net_worth": {
+			"value_in_gold": 6,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		}
+	}
+}

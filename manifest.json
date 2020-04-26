@@ -78,6 +78,7 @@
 		"decoration:dock":				"file(entities/decoration/dock)",
 		"decoration:dock_leg":			"file(entities/decoration/dock/dock_leg.json)",
 		"decoration:dock_spot":			"file(entities/decoration/dock/dock_spot.json)",
+		"decoration:fish_pond":			"file(entities/decoration/fish_pond)",
 		"decoration:fish_container":	"file(entities/decoration/fish_container)",
 		"decoration:fancy_fisher_sign":	"file(entities/decoration/fancy_fisher_sign)",
 		"decoration:fisher_sign":		"file(entities/decoration/fisher_sign)",
@@ -411,6 +412,7 @@
 		"stonehearth:mixins:mob": "file(mixins/mob)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
+		"stonehearth_ace:scenarios:scenario_index": "file(scenarios/insert_into_ace.json)",
 
 		"stonehearth/scenarios/static/beetle_nest/beetle_nest.json":	"file(scenarios/static/add_to_archipelago_too.json)",
 		"stonehearth/scenarios/static/doodles_nest/doodles_nest.json":	"file(scenarios/static/add_to_archipelago_too.json)",

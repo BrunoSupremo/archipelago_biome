@@ -120,6 +120,10 @@
 				"display_name":"Doca de pesca",
 				"description":"Uma plataforma onde os pescadores vão para pescar"
 			},
+			"fish_pond": {
+				"display_name": "Laguinho",
+				"description": "Uma poçinha de água com peixes infinitos?"
+			},
 			"ice_dock":{
 				"display_name":"Local de pesca de gelo",
 				"description":"Um buraco no gelo onde os pescadores vão pescar"
@@ -735,6 +739,11 @@
 					"recipe_name": "Doca de pesca",
 					"description": "Coloque-o em uma borda de frente para a água. O pescador irá reconhecer isso como um ponto de pesca e usá-lo na pesca.",
 					"flavor": "Os peixes gostam de ficar embaixo da sombra"
+				},
+				"fish_pond_recipe": {
+					"recipe_name": "Laguinho",
+					"description": "O pescador irá reconhecer isso como um ponto de pesca e usá-lo na pesca.",
+					"flavor": "Deve ter um feitiço ou algo do tipo, os peixes não acabam nunca..."
 				},
 				"ice_dock_recipe": {
 					"recipe_name": "Local de Pesca de Gelo",

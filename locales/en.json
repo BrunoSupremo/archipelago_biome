@@ -120,6 +120,10 @@
 				"display_name": "Fishing Dock",
 				"description": "A platform where fishers go to fish"
 			},
+			"fish_pond": {
+				"display_name": "Fish Pond",
+				"description": "A small pond with infinite fish?"
+			},
 			"ice_dock": {
 				"display_name": "Ice Fishing Spot",
 				"description": "A hole in the ice where fishers go to fish"
@@ -735,6 +739,11 @@
 					"recipe_name": "Fishing Dock",
 					"description": "Place it at an edge facing the water. The fisher will recognize this as a fishing spot and use it when fishing.",
 					"flavor": "Fish loves to be under its shadow"
+				},
+				"fish_pond_recipe": {
+					"recipe_name": "Fish Pond",
+					"description": "The fisher will recognize this as a fishing spot and use it when fishing.",
+					"flavor": "This must be under a spell or something, because the fish never ends..."
 				},
 				"ice_dock_recipe": {
 					"recipe_name": "Ice Fishing Spot",

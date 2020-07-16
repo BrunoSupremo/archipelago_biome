@@ -1,5 +1,5 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 20.4.25")
+print("Archipelago Biome Mod version 20.7.16")
 
 --[[
 

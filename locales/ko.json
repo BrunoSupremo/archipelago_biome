@@ -120,6 +120,10 @@
 				"display_name": "낚시용 도크",
 				"description": "어부가 물고기를 잡을 수 있는 플랫폼."
 			},
+			"fish_pond": {
+				"display_name": "물고기 연못",
+				"description": "무한한 물고기가있는 작은 연못"
+			},
 			"ice_dock": {
 				"display_name": "얼음 낚시터",
 				"description": "어부가 물고기를 잡을 수 있는 얼음구멍."
@@ -158,6 +162,10 @@
 					"flavor": "꽃이 벽에 아름다움을 더욱 추가할 수 있다"
 				}
 			},
+			"magma": {
+				"display_name": "용암 블록",
+				"description": "매우 뜨겁고 빛나는 빨강, 반고체, 용암. 만지지 마세요."
+			},
 			"pearl_container": {
 				"display_name": "진주 보관함",
 				"description": "꺼낼 준비가 되었다구요!"
@@ -167,7 +175,7 @@
 				"description": "친구를 사귈 좋은 방법이 아.닙.니.다",
 				"recipe": {
 					"description": "고전적인 테마의 해적기.",
-					"flavor": "Aaaarrrrgggghhhh!"
+					"flavor": "아아 아아아 아아아!"
 				}
 			},
 			"raft": {
@@ -260,7 +268,7 @@
 				"display_name": "조리된 커다란 물고기"
 			},
 			"nemo": {
-				"display_name": "Nemo"
+				"display_name": "네모"
 			},
 			"fish": {
 				"display_name": "신선한 물고기",
@@ -336,6 +344,14 @@
 			}
 		},
 		"gizmos": {
+			"boat": {
+				"display_name": "보트",
+				"description": "한 쪽에서 다른 쪽으로 난로 운반"
+			},
+			"boat_dock": {
+				"display_name": "보트 선착장",
+				"description": "보트 여행은 여기에서 시작하여 다른 쪽의 부두에서 끝납니다."
+			},
 			"cocobomb": {
 				"display_name": "코코넛폭탄",
 				"description": "음식으로 장난치지 마시오.",
@@ -349,6 +365,15 @@
 				"description": "게를 잡습니다.."
 			}
 		},
+		"humans": {
+			"anya": {
+				"display_name": "아냐"
+			},
+			"captain_miranda": {
+				"display_name": "캡틴 Miranda",
+				"description": "바다는 그녀의 집입니다."
+			}
+		},
 		"landmark": {
 			"summon_stone_block_sand": {
 				"display_name": "모래 지형 블럭스톤",
@@ -358,9 +383,9 @@
 				"display_name": "모래지형 패치스톤",
 				"description": "최대 12x12 크기의 모래 지형으로 변합니다."
 			},
-			"summon_stone_tropical_island": {
-				"display_name": "트로피칼 섬",
-				"description": "하나의 미니 섬을 소환"
+			"summon_stone_volcano": {
+				"display_name": "화산",
+				"description": "작은 화산을 통째로 소환한다."
 			}
 		},
 		"monsters": {
@@ -379,6 +404,15 @@
 			"octopus": {
 				"display_name": "문어",
 				"description": "당신이 셀 수 있는것보다 팔이 많이 달려있네요."
+			},
+			"oyster": {
+				"display_name": "몬스터 굴(생물)",
+				"description": "단단한 껍데기를 가진 커다란 굴"
+			}
+		},
+		"outfit": {
+			"visitor_outfit": {
+				"description": "다른 섬에서 만들어진 일반적인 작업복"
 			}
 		},
 		"plants": {
@@ -465,6 +499,22 @@
 				"unripe_description": "아직 코코넛이 열리지 않았다.열대 섬 낙원의 상징이라고 할 수 있다."
 			},
 			"palm_tree": {
+				"seed": {
+					"display_name": "야자수 씨앗",
+					"description": "야자수를 심기 위해 심을 수 있습니다"
+				},
+				"sprout": {
+					"display_name": "어린 야자나무",
+					"description": "시간과 관심이 필요합니다."
+				},
+				"stem": {
+					"display_name": "야자나무 새싹",
+					"description": "여전히 자라는 중입니다!"
+				},
+				"bud": {
+					"display_name": "야자나무 묘목",
+					"description": "곧 나무가 다 자랍니다!"
+				},
 				"sapling_palm_tree": {
 					"display_name": "어린 야자 나무"
 				},
@@ -484,48 +534,48 @@
 				}
 			},
 			"dranden": {
-				"display_name": "Dranden 나무",
+				"display_name": "드란덴 나무",
 				"description": "무거운 이파리들이 달린 커다란 줄기",
 				"seed": {
-					"display_name": "Dranden 씨앗",
-					"description": "dranden tree를 키울 수 있다."
+					"display_name": "드란덴 씨앗",
+					"description": "드란덴 나무를 키울 수 있다."
 				},
 				"sprout": {
-					"display_name": "어린 Dranden",
+					"display_name": "어린 드란덴",
 					"description": "단지 약간의 시간과 관심을 필요로 합니다."
 				},
 				"stem": {
-					"display_name": "Dranden 새싹",
+					"display_name": "드란덴 새싹",
 					"description": "여전히 자라는 중입니다!"
 				},
 				"bud": {
-					"display_name": "Dranden 묘목",
+					"display_name": "드란덴 묘목",
 					"description": "여길 봐요! 이건 이미 성숙한 잎으로 자랐어요!"
 				}
 			},
 			"smalea": {
-				"display_name": "Smalea 나무",
+				"display_name": "스말라 나무",
 				"description": "작지만 빽빽하게 밀집한 나무",
 				"seed": {
-					"display_name": "Smalea 씨앗",
-					"description": "smalea tree를 키울 수 있다."
+					"display_name": "스말라 씨앗",
+					"description": "스말라 나무를 키울 수 있다."
 				},
 				"sprout": {
-					"display_name": "어린 Smalea",
+					"display_name": "어린 스말라",
 					"description": "단지 약간의 시간과 관심을 필요로 합니다."
 				},
 				"stem": {
-					"display_name": "Smalea 새싹",
+					"display_name": "스말라 새싹",
 					"description": "여전히 자라는 중입니다!"
 				},
 				"bud": {
-					"display_name": "Smalea 묘목",
+					"display_name": "스말라 묘목",
 					"description": "여길 봐요! 이건 이미 성숙한 잎으로 자랐어요!"
 				}
 			},
 			"papaya": {
 				"display_name": "파파야 나무",
-				"description": "커다란 나무-같은 식물이다 (그게 나무 아님?)",
+				"description": "커다란 나무-같은 식물이다",
 				"unripe_description": "아직 덜익었다.",
 				"seed": {
 					"display_name": "파파야 씨앗",
@@ -543,6 +593,10 @@
 					"display_name": "파파야 나무 묘목",
 					"description": "여길 봐요! 이건 이미 성숙한 잎으로 자랐어요!"
 				}
+			},
+			"stump": {
+				"display_name": "그루터기",
+				"description": "더 이상 나무가 아닙니다"
 			}
 		},
 		"weapons": {
@@ -557,20 +611,6 @@
 			"fish_arrow": {
 				"display_name": "물고기 화살",
 				"description": "물고기가 하늘을 날아오를때, 용기있는 사람은 아무도 없다."
-			}
-		},
-		"humans": {
-			"anya": {
-				"display_name": "Anya"
-			},
-			"captain_miranda": {
-				"display_name": "캡틴 Miranda",
-				"description": "바다는 그녀의 집입니다."
-			}
-		},
-		"outfit": {
-			"visitor_outfit": {
-				"description": "다른 섬에서 만들어진 일반적인 작업복"
 			}
 		}
 	},
@@ -604,6 +644,14 @@
 				"level_3": {
 					"perk_name": "요리",
 					"perk_description": "작은 화덕만 있다면 어부는 기본적인 조리를 할 수 있습니다."
+				},
+				"level_4": {
+					"perk_name": "보트",
+					"perk_description": "보트 선착장을 설치 한 후 하슬링들은 그것을 사용하여 물을 통해 한쪽에서 다른쪽으로 이동할 수 있습니다."
+				},
+				"level_5": {
+					"perk_name": "더 빠르게",
+					"perk_description": "각 수준마다 물고기를 기다리는 시간이 줄어들어 낚시가 더 빨라집니다."
 				}
 			},
 			"fisher_bucket": {
@@ -617,6 +665,11 @@
 			"fisher_rod": {
 				"display_name": "낚시대",
 				"description": "물고기를 잡기 위해 사용되는 길고 유연한 막대기"
+			},
+			"fisher_workbench": {
+				"display_name": "작업대",
+				"description": "어부는 여기서 약간의 모든 것을 할 수 있습니다.",
+				"flavor": "어부 도구에 손대지 못합니다."
 			},
 			"fisher_firepit": {
 				"display_name": "화덕",
@@ -643,6 +696,10 @@
 					"recipe_name": "게잡이 통발",
 					"description": "이것으로 게를 잡을 수 있습니다. 물 근처에만 설치할 수 있습니다.",
 					"flavor": ""
+				},
+				"fish_trap_recipe": {
+					"recipe_name": "생선 트랩(ACE)",
+					"description": "어부 (및 함정설치자)가 물고기를 안전하게 잡아 수확하기 위해 사용합니다. 수송을 위해 물고기를 잡는 데에도 사용할 수 있습니다."
 				},
 				"fish_container_recipe": {
 					"recipe_name": "물고기 보관고",
@@ -673,10 +730,20 @@
 					"description": "아야! (찰지구나!)",
 					"flavor": "무척 위험합니다. 그리고 그 2배로 역겹습니다."
 				},
+				"boat_dock_recipe": {
+					"recipe_name": "보트 선착장",
+					"description": "물을 향한 가장자리에 놓으십시오. 두 번째 것은 먼쪽에 자동으로 생성됩니다.하슬링들은 이제 보트를 사용하여 한 부두에서 다른 부두로 물을 건너 갈 수 있습니다.",
+					"flavor": "'그래서 모두가 자신의 보트를 가지고 있습니까?' - '예.'"
+				},
 				"dock_recipe": {
 					"recipe_name": "낚시용 도크",
 					"description": "물가의 가장 자리에 설치할 수 있습니다. 어부들은 이곳을 낚시터로 인식하고, 낚시를 할 때 사용할겁니다.",
 					"flavor": "물고기는 수면에 비친 그림자 아래를 좋아합니다."
+				},
+				"fish_pond_recipe": {
+					"recipe_name": "물고기 연못",
+					"description": "어부는 이것을 낚시 장소로 인식하고 낚시 할 때 사용합니다.",
+					"flavor": "이것은 마법의 일종인것 같습니다. 물고기가 무한히 나와요!"
 				},
 				"ice_dock_recipe": {
 					"recipe_name": "얼음 낚시터",
@@ -687,14 +754,19 @@
 		},
 		"geomancer": {
 			"recipes": {
-				"summon_stone_tropical_island_recipe": {
-					"recipe_name": "트로피칼 아일랜드",
-					"description": "작고 동그란 섬을 소환합니다."
+				"summon_stone_volcano_recipe": {
+					"recipe_name": "화산",
+					"description": "작은 화산을 통째로 소환합니다."
 				}
 			}
 		},
 		"herbalist": {
 			"recipes": {
+				"palm_transmute_recipe": {
+					"recipe_name": "야자나무 씨",
+					"description": "코코넛을 비옥하게 재생합니다.",
+					"flavor": "두 개의 반쪽이 함께 치유되면 새로운 비옥 한 코코넛이 생겨 심을 수 있습니다."
+				},
 				"papaya_transmute_recipe": {
 					"recipe_name": "파파야 씨앗 (x3)"
 				},
@@ -718,17 +790,49 @@
 			"build_mode": {
 				"building_templates": {
 					"template_names": {
-						"fisher_hut": "🏝️ 어부의 오두막",
-						"shaded_hammock": "🏝️ 그늘진 해먹",
-						"beach_tower": "🏝️ 비치 타워",
-						"little_pier": "🏝️ 작은 부두",
-						"open_house": "🏝️ 열린 집",
-						"small_beach_house": "🏝️ 작은 비치 하우스",
-						"carpenter_house": "🏝️ 목수의 집",
-						"tiki_bar": "🏝️ 티키 막대",
-						"explorer_ship": "🏝️🚢 탐험선",
-						"long_ship": "🏝️🚢 바이킹선",
-						"trader_ship": "🏝️🚢 교역선"
+						"fisher_hut": "어부의 오두막",
+						"fisher_hut_rayya": "어부의 오두막(라야)",
+						"fisher_hut_north": "어부의 오두막(북부연합)",
+						"shaded_hammock": "그늘진 해먹",
+						"beach_tower": "비치 타워",
+						"little_pier": "작은 부두",
+						"open_house": "열린 집",
+						"small_beach_house": "작은 비치 하우스",
+						"carpenter_house": "목수의 집",
+						"tiki_bar": "티키 막대",
+						"explorer_ship": "탐험선",
+						"long_ship": "바이킹선",
+						"trader_ship": "교역선"
+					}
+				}
+			},
+			"goblinpedia": {
+				"menu": {
+					"goblins": {
+						"jobs": {
+							"fisher": "어부"
+						}
+					}
+				},
+				"pages": {
+					"jobs": {
+						"fisher": {
+							"title": "어부",
+							"description1": "그들은 자신보다 큰 물고기를 잡을 수 있습니까?",
+							"topic1": {
+								"title": "기술:",
+								"desc1": "공예가 및 식품 생산자."
+							},
+							"topic2": {
+								"title": "작동 방식 :",
+								"desc1": "낚시 도크를 설치하십시오. 낚시 중 서있을 위치에 표시됩니다.",
+								"desc2": "게 함정은 물 근처에 놓아야합니다."
+							},
+							"topic3": {
+								"title": "제작 메뉴 :",
+								"desc1": "간단한 장식을 만들고, 생선을 요리하고, 생선 무기와 같은 유용한 아이템을 만들 수 있습니다."
+							}
+						}
 					}
 				}
 			},
@@ -755,8 +859,7 @@
 			"select_settlement": {
 				"terrain_codes": {
 					"water": "바다",
-					"plains_2": "해변",
-					"foothills_1": "평원"
+					"plains_2": "해변"
 				}
 			}
 		}
@@ -767,7 +870,7 @@
 				"display_name": "군도",
 				"description": "어디를 봐도 물이 가득하다. 아니면 모래나. 뭐가 되었든 맘에 안드는 것들이다.",
 				"random_location_names": {
-					"000": "Mauna Loa 군도"
+					"000": "마누아 로아 군도"
 				},
 				"seasons": {
 					"dry": {
@@ -814,18 +917,24 @@
 			"nemo": {
 				"title": "물고기를 찾는다",
 				"message": "어부는 단지 이 길을 잃어버린 귀여운 흰동가리를 가지고 있을 뿐입니다. (LIMo를 찾아서) "
+			},
+			"dusty_tome": {
+				"message": "사막 도시에 가치있는 아주 오래된 책. 먼지가 많고 젖지 않은 방법은 미스터리입니다."
 			}
 		},
 		"monster_tuning": {
 			"forest": {
 				"insane_octopus": {
 					"description": "작은 문어들은 그것들 주위에 모이는 경향이 있습니다."
+				},
+				"insane_oyster": {
+					"description": "작은 굴은 그들 주위에 무리를 짓는 경향이 있습니다."
 				}
 			}
 		},
 		"gm": {
-			"anya": "Anya",
-			"captain_miranda": "캡틴 Miranda",
+			"anya": "아냐",
+			"captain_miranda": "캡틴 미란다",
 			"goblin_bucket": "물통을 든 고블린",
 			"campaigns": {
 				"archipelago_tutorial": {
@@ -850,9 +959,10 @@
 						"miranda_before_selling_clay": {
 							"title": "내 배에 점토가 너무 많이 있어",
 							"message_start": "나는 라이야 상인이랑 거래를 하기로 했거든. 너 걔들이 엄청난 양의 점토를 싸게 팔았는지 알아? 도저히 거절할 수 없더군, 근데, 너무 많이 사버렸어!",
-							"message_convincing": "배가 너무 무거워서 항해를 할 수 없다니까! 뭐라는거야? 내가 너한테 좀 팔 수 있을까? 내가 추측하건데, 넌 더 이상 팔 땅이 필요없을만큼 필요할 거라니까."
+							"message_convincing": "배가 너무 무거워서 항해를 할 수 없다니까! 뭐라는거야? 내가 너한테 좀 팔 수 있을까? 내가 추측하건데, 넌 더 이상 팔 땅이 필요없을만큼 필요할 거라니까.",
+							"rc_message_start": "다른 라야 상인과 거래를했습니다. 당신은 이미 점토가 얼마나 중요한지 알고 있습니까? 나는 거절 할 수 없었지만 지금은 너무 많이 가지고있다!"
 						},
-						"miranda_clay_shop": "캡틴 Miranda의 점토에 접근",
+						"miranda_clay_shop": "캡틴 미란다의 점토에 접근",
 						"miranda_notice_a_lost_crate": {
 							"title": "상자를 잃어버렸어?",
 							"message_start": "그렇다면, 우리가 거래를 하는 동안 이 상자가 네 캠프 옆에 있는걸 발견했어. 내가 보기에 이건 네거야. 그래서 네 캠프 깃발 근처에 놔뒀지!",
@@ -886,7 +996,7 @@
 						},
 						"visitors_introduction": {
 							"title": "우린 도움이 필요하다",
-							"message_start": "안녕하세요, 난 Anya에요. 당신의 도시에 갑자기 착륙한건 미안해요. 하지만 우리에겐 선택의 여지가 없었어요.",
+							"message_start": "안녕하세요, 난 아냐에요. 당신의 도시에 갑자기 착륙한건 미안해요. 하지만 우리에겐 선택의 여지가 없었어요.",
 							"choice": "무슨일이죠?",
 							"message_2": "난 당신이 코코링에 대해 들어본적이 있을거라고 생각하는데, 맞나요? 그들은 무척 성가시지만 딱히 위협은 아니었어요.<br>며칠 전까지는요.<br>우리가 도와줄 사람을 찾는동안 남자들 몇명이 싸우고 있어요. 우리는 정말로 음식이 필요해요, 가능하다면요.",
 							"choice_2": "내가 도울 수 있어요.",
@@ -922,6 +1032,12 @@
 							"message_1": "이봐, 멍청이. 내가 이 양동이를 찾았는데 말야, 이거 쓰레기잖아? 그러니까 분명 니꺼라고. 이건 내 머리엔 전혀 안들어간단 말이지. 보여?<br><br><font size=-1>머리를 가리킨다</font>",
 							"message_2": "난 니가 이걸로 뭘 하던 전혀 신경쓰지 않을거야. 그러니까 이걸 태워버리던 어쩌던 맘대로 해봐! <br><br><font size=-1>바닥에 양동이를 던지고, 발로 차버린다. 그리고 화를 내며 가버렸다. </font>",
 							"answer": "어...고마워...?"
+						},
+						"firefly_goblin_donation": {
+							"title": "양동이가 달린 녹색 고블린",
+							"message_1": "안녕 사촌? 나는 양동이를 찾았지만 너무 쓰레기더라. 도저히 쓸수가 없어. 머리에 맞지 않아서 투구로 쓰지도 못한다구.<br><br><font size=-1>머리를 가리킬 포인트</font>",
+							"message_2": "네가 좋아하는 일을 자유롭게하라구! <br><br><font size=-1>롤은 당신의 캠프 반대쪽으로 떠납니다.</font>",
+							"answer": "고마워!"
 						}
 					}
 				}

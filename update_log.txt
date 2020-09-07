@@ -1,6 +1,7 @@
 Additions:
 
 Changes:
+Delayed starting tutorial dialog to happen only after the town has settled and picked a banner
 
 Fixes:
-(for ACE mod) Fish can be stocked again on food only containers (thanks for multiple reports and findersword for the fix)
+(for ACE mod) Stumps can be auto removed

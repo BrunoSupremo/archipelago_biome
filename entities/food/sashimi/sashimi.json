@@ -45,7 +45,14 @@
 			"icon": "file(sashimi.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags":["food", "raw_food", "meat", "sashimi", "stockpile_raw_food"]
+			"material_tags":[
+				"food",
+				"raw_food",
+				"meat",
+				"sashimi",
+				"stockpile_raw_food",
+				"stockpile_prepared_food"
+			]
 		},
 		"stonehearth:item_quality": {
 			"variable_quality": true

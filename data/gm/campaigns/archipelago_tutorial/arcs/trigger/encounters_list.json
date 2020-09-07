@@ -3,6 +3,7 @@
 	"rarity": "common",
 	"encounters": {
 		"start": "file(encounters/start.json)",
+		"start_delay": "file(encounters/start_delay.json)",
 		"introduction_dialogue": "file(encounters/introduction_dialogue.json)",
 		"introduction_dialogue_na": "file(encounters/introduction_dialogue_na.json)"
 	}

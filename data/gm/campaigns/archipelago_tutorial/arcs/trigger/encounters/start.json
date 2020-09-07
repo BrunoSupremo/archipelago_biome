@@ -1,15 +1,15 @@
 {
-	"type" : "encounter",
-	"encounter_type" : "wait",
-	"in_edge"  : "start",
-	"out_edge" : {
-		"type": "trigger_many",
-		"out_edges": [
-			"introduction_dialogue",
-			"introduction_dialogue_na"
-		]
-	},
-	"wait_info" :  {
-		"duration" : "30m"
+	"type": "encounter",
+	"encounter_type": "wait_for_requirements_met",
+	"in_edge": "start",
+	"out_edge": "start_delay",
+	"wait_for_requirements_met_info": {
+		"requirements": {
+			"city_tier": {
+				"type": "deny_if_less_than",
+				"item": "city_tier",
+				"value": 1
+			}
+		}
 	}
 }

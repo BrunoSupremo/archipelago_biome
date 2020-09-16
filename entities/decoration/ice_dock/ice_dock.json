@@ -16,6 +16,30 @@
 			"placeable_on_walls": false,
 			"placeable_on_ground": true
 		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": -2, "y": 0, "z": -2 },
+					"max": {"x": 3, "y": 1, "z": 4 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 2, "z": 1 }
+				},
+				{
+					"min": {"x": 2, "y": 0, "z": 3 },
+					"max": {"x": 3, "y": 2, "z": 4 }
+				},
+				{
+					"min": {"x": -2, "y": 0, "z": -2 },
+					"max": {"x": -1, "y": 1, "z": -1 }
+				}
+			]
+		},
 		"stonehearth:traveler_attraction": {}
 	},
 	"entity_data": {

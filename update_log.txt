@@ -1,7 +1,8 @@
 Additions:
+Fishing Net decoration (floor and wall variation)
 
 Changes:
-Delayed starting tutorial dialog to happen only after the town has settled and picked a banner
 
 Fixes:
-(for ACE mod) Stumps can be auto removed
+A bunch of objects hitboxes
+(for ACE mod)

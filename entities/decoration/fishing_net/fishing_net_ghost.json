@@ -1,0 +1,35 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.11
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(fishing_net.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {"x": 0.45, "y": 0, "z": 0 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.decoration.fishing_net.display_name)",
+			"description": "i18n(archipelago_biome:entities.decoration.fishing_net.description)",
+			"icon": "file(fishing_net.png)",
+			"category": "decoration",
+			"material_tags":[
+				"wood",
+				"fiber",
+				"decoration",
+				"crafted",
+				"stockpile_decoration"
+			]
+		}
+	}
+}

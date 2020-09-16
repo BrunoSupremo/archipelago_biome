@@ -146,6 +146,14 @@
 					"flavor": "Os melhores peixes estão aqui"
 				}
 			},
+			"fishing_net": {
+				"display_name": "Rede de Pesca",
+				"description": "Pendurado em estruturas de suporte"
+			},
+			"wall_fishing_net": {
+				"display_name": "Rede de Pesca na parede",
+				"description": "Pendurado em ganchos na parede"
+			},
 			"fruit_container":{
 				"display_name":"Caixote de Cocos",
 				"description":"Armazena até 16 cocos",

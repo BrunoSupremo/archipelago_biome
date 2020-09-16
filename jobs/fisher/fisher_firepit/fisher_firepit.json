@@ -7,6 +7,22 @@
 			"iconic_form": "file(fisher_firepit_iconic.json)",
 			"placeable_on_ground": true
 		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
 		"stonehearth:workshop": {
 			"job_alias": "archipelago_biome:jobs:fisher",
 			"workshop_effect": "/stonehearth/data/rigs/jobs/cook/cook_oven/effects/work.json"

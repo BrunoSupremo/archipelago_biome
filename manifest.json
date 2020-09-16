@@ -82,6 +82,8 @@
 		"decoration:fish_container":	"file(entities/decoration/fish_container)",
 		"decoration:fancy_fisher_sign":	"file(entities/decoration/fancy_fisher_sign)",
 		"decoration:fisher_sign":		"file(entities/decoration/fisher_sign)",
+		"decoration:fishing_net":		"file(entities/decoration/fishing_net)",
+		"decoration:wall_fishing_net":	"file(entities/decoration/wall_fishing_net)",
 		"decoration:fruit_container":	"file(entities/decoration/fruit_container)",
 		"decoration:lei":				"file(entities/decoration/lei)",
 		"decoration:magma":				"file(entities/decoration/magma)",

@@ -146,6 +146,14 @@
 					"flavor": "The best fish are here"
 				}
 			},
+			"fishing_net": {
+				"display_name": "Fishing Net",
+				"description": "Hanging from support structures"
+			},
+			"wall_fishing_net": {
+				"display_name": "Wall Fishing Net",
+				"description": "Hanging from hooks on the wall"
+			},
 			"fruit_container": {
 				"display_name": "Coconut Container",
 				"description": "Store up to 16 coconuts",

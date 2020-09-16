@@ -20,6 +20,22 @@
 			"placeable_on_walls": false,
 			"placeable_on_ground": true
 		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": -3, "y": 0, "z": -3 },
+					"max": {"x": 4, "y": 1, "z": 4 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": -3, "y": 0, "z": -3 },
+					"max": {"x": 4, "y": 1, "z": 4 }
+				}
+			]
+		},
 		"stonehearth:traveler_attraction": {}
 	},
 	"entity_data": {

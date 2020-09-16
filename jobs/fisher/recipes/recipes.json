@@ -72,6 +72,12 @@
 				},
 				"big_fish_hanging": {
 					"recipe": "file(decorations/big_fish_hanging_recipe.json)"
+				},
+				"fishing_net": {
+					"recipe": "file(decorations/fishing_net_recipe.json)"
+				},
+				"wall_fishing_net": {
+					"recipe": "file(decorations/wall_fishing_net_recipe.json)"
 				}
 			}
 		},

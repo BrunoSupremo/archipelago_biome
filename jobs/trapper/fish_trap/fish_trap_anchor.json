@@ -1,0 +1,9 @@
+{
+	"entity_data": {
+		"stonehearth_ace:transform_data": {
+			"worker_required_job": {
+				"archipelago_biome:jobs:fisher": true
+			}
+		}
+	}
+}

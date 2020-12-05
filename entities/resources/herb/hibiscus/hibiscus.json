@@ -33,7 +33,16 @@
 			"icon": "file(hibiscus.png)",
 			"is_item": true,
 			"category": "resources",
-			"material_tags":["plant", "herb", "resource", "hibiscus", "stockpile_plant"]
+			"material_tags":[
+				"plant",
+				"herb",
+				"resource",
+				"hibiscus",
+				"flower",
+				"aromatic",
+				"red",
+				"stockpile_plant"
+			]
 		},
 		"stonehearth:appeal": {
 			"appeal": 2

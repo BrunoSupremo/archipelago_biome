@@ -1,7 +1,13 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 20.9.16")
+print("Archipelago Biome Mod version 20.12.4")
 
 --[[
+
+redo dock urgent, it is ugly
+
+add Ace warm system, tree farm system
+
+seaweed seeds
 
 add jellyfish
 rework pirate hat

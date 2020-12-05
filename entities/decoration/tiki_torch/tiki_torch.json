@@ -11,7 +11,15 @@
 			]
 		},
 		"stonehearth:lamp": {
-			"light_effect": "archipelago_biome:effects:tiki_torch_effect"
+			"light_effect": "archipelago_biome:effects:tiki_torch_effect",
+			"buff_source": true
+		},
+		"sensor_list": {
+			"sensors": {
+				"warmth": {
+					"radius": 8
+				}
+			}
 		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(tiki_torch_iconic.json)",

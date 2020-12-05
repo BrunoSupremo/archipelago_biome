@@ -1,8 +1,13 @@
 Additions:
-Fishing Net decoration (floor and wall variation)
 
 Changes:
+Volcano smoke emitter is located inside a volcano and can be easily moved or destroyed by players
+Hearthlings will avoid stepping on top of magma blocks
+
+Changes for ACE:
+Removed old ace fish trap recipe
+Fisher can use fish traps like the trapper
+Tiki Torches will give warm buffs for those around it
 
 Fixes:
-A bunch of objects hitboxes
 (for ACE mod)

@@ -1,0 +1,23 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"mob" : {
+			"model_origin" : { "x": 0, "y": 0, "z": 0 }
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"/stonehearth/entities/resources/copper/copper_ore/copper_ore.qb"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"is_item": true,
+			"display_name": "i18n(archipelago_biome:entities.decoration.volcano_smoke.display_name)",
+			"description": "i18n(archipelago_biome:entities.decoration.volcano_smoke.description)"
+		}
+	}
+}

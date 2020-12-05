@@ -1,0 +1,16 @@
+{
+	"task_groups": [
+		"stonehearth_ace:task_groups:transform"
+	],
+	"initial_num_siege_weapons": {
+		"fish_trap": 3
+	},
+	"commands": {
+		"add_on_promote": [
+			"stonehearth_ace:commands:trapper:place_fish_trap"
+		],
+		"remove_on_demote": [
+			"stonehearth_ace:commands:trapper:place_fish_trap"
+		]
+	}
+}

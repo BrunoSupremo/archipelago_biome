@@ -39,7 +39,9 @@
 				"palm_tree_4": "archipelago_biome:trees:palm:sapling"
 			},
 			"harvest_threshhold": "palm_tree_4",
-			"plant_overlay_effect": "stonehearth:effects:plant_crop_overlay_effect"
+			"plant_overlay_effect": "stonehearth:effects:plant_crop_overlay_effect",
+			"megacrop_chance": 0,
+			"auto_harvest": "place"
 		},
 		"stonehearth:growing": {
 			"growth_period": "1d",

@@ -392,6 +392,11 @@
 
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
+		"archipelago_biome:fisher:firepit":	"stonehearth_ace:mixins:workbench:cook_oven",
+
+		"archipelago_biome:jobs:fisher":"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json",
+		"archipelago_biome/jobs/fisher/fisher_abilities/fisher_abilities.json":"stonehearth_ace/archipelago_biome/jobs/common/ace_abilities.json",
+
 		"stonehearth:jobs:index": "file(jobs/index.json)",
 		"nordlingmod:jobs:index":"file(jobs/index_nordlings.json)",
 		"stonehearth/jobs/blacksmith/recipes/recipes.json":			"file(jobs/blacksmith/recipes)",
@@ -448,9 +453,6 @@
 
 		"archipelago_biome:weapons:crab_pincer":"stonehearth_ace:mixins:weapons:mainhand",
 		"archipelago_biome:weapons:slap_fish":	"stonehearth_ace:mixins:weapons:mainhand",
-
-		"archipelago_biome:jobs:fisher":"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json",
-		"archipelago_biome/jobs/fisher/fisher_abilities/fisher_abilities.json":"stonehearth_ace/archipelago_biome/jobs/common/ace_abilities.json",
 
 		"brewerymod/manifest.json":		"file(modding_mods/brewerymod/manifest.json)",
 		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)"

@@ -10,6 +10,11 @@
 				"models": [
 					"file(fisher_firepit.qb)"
 				]
+			},
+			"no_fuel": {
+				"models": [
+					"file(fisher_firepit_no_fuel.qb)"
+				]
 			}
 		}
 	},

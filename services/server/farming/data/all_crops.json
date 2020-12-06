@@ -3,7 +3,10 @@
 		"palm_tree": {
 			"crop_type": "archipelago_biome:crops:palm_tree_crop",
 			"ordinal": 12.99465,
-			"level_requirement": 5
+			"level_requirement": 5,
+			"field_types": {
+				"orchard": true
+			}
 		}
 	}
 }

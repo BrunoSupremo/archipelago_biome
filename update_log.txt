@@ -1,13 +1,11 @@
 Additions:
 
 Changes:
-Volcano smoke emitter is located inside a volcano and can be easily moved or destroyed by players
-Hearthlings will avoid stepping on top of magma blocks
 
 Changes for ACE:
-Removed old ace fish trap recipe
-Fisher can use fish traps like the trapper
-Tiki Torches will give warm buffs for those around it
+Updated fisher firepit model and now using ace fuel system
+Palm trees are one of the new options for orchard farms while on the biome
+Magma from volcanos give warm buff
 
 Fixes:
 (for ACE mod)

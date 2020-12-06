@@ -6,9 +6,8 @@ print("Archipelago Biome Mod version 20.12.5")
 redo dock urgent, it is ugly
 	fish anywhere near water, docks will be just a prefered place
 
-ace tree/bush farm system
-
 seaweed seeds
+	seaweed ace farm
 
 add jellyfish
 rework pirate hat

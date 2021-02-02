@@ -28,8 +28,9 @@
 
 		"archer:abilities:fish_arrow": "file(entities/weapons/arrow/fish_arrow/fish_arrow_skill.json)",
 
-		"armor:fish_quiver":"file(entities/armor/fish_quiver)",
-		"armor:turtle_shield":"file(entities/armor/turtle_shield)",
+		"armor:coconut_helmet":	"file(entities/armor/coconut_helmet)",
+		"armor:fish_quiver":	"file(entities/armor/fish_quiver)",
+		"armor:turtle_shield":	"file(entities/armor/turtle_shield)",
 
 		"beach:bottle":		"file(entities/beach/bottle)",
 		"beach:broken_boat":"file(entities/beach/broken_boat)",

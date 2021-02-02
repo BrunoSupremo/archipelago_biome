@@ -1,0 +1,26 @@
+{
+	"type" : "recipe",
+	"effort": 33,
+	"work_units" : 2,
+	"recipe_name": "i18n(archipelago_biome:entities.armor.coconut_helmet.display_name)",
+	"description": "i18n(archipelago_biome:entities.armor.coconut_helmet.recipe.description)",
+	"flavor": "i18n(archipelago_biome:entities.armor.coconut_helmet.recipe.flavor)",
+	"portrait" : "/archipelago_biome/entities/armor/coconut_helmet/coconut_helmet.png", 
+	"workshop": "stonehearth:weaver:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"uri" : "archipelago_biome:food:coconut",
+			"count": 1
+		},
+		{
+			"material": "pelt resource",
+			"count" : 1
+		}
+	],
+	"produces": [
+		{
+			"item":"archipelago_biome:armor:coconut_helmet"
+		}
+	]
+}

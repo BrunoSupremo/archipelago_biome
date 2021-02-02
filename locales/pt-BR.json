@@ -1,42 +1,47 @@
 {
-	"ai":{
-		"actions":{
-			"status_text":{
-				"fishing":"Pescando"
+	"ai": {
+		"actions": {
+			"status_text": {
+				"fishing": "Pescando"
 			}
 		}
 	},
-	"entities":{
-		"armor":{
+	"entities": {
+		"armor": {
+			"coconut_helmet": {
+				"display_name": "Capacete de Coco",
+				"description": "Leve e duro, mas apertado",
+				"flavor": "Fica um tempo no sol secando, depois é preparado com peles para a cabeça de alguém."
+			},
 			"fish_quiver": {
 				"display_name": "Aljava de Peixe",
 				"description": "Inimigos perdem a coragem quando um peixe voador atinge seu rosto"
 			},
-			"turtle_shield":{
-				"display_name":"Escudo Tartaruga",
-				"description":"Um casco utilizado como escudo"
+			"turtle_shield": {
+				"display_name": "Escudo Tartaruga",
+				"description": "Um casco utilizado como escudo"
 			}
 		},
-		"beach":{
-			"bottle":{
-				"display_name":"Garrafa",
-				"description":"Garrafa"
+		"beach": {
+			"bottle": {
+				"display_name": "Garrafa",
+				"description": "Garrafa"
 			},
-			"broken_boat":{
-				"display_name":"Barco Quebrado",
-				"description":"Quebre-o para madeira e ouro."
+			"broken_boat": {
+				"display_name": "Barco Quebrado",
+				"description": "Quebre-o para madeira e ouro."
 			},
-			"oyster":{
-				"display_name":"Ostra",
-				"description":"Lar de uma pérola.",
-				"unripe_description":"Uma concha vazia."
+			"oyster": {
+				"display_name": "Ostra",
+				"description": "Lar de uma pérola.",
+				"unripe_description": "Uma concha vazia."
 			},
-			"seaweed":{
-				"display_name":"Algas"
+			"seaweed": {
+				"display_name": "Algas"
 			},
-			"starfish":{
-				"display_name":"Estrela do Mar",
-				"description":"Não são estrelas, nem peixes."
+			"starfish": {
+				"display_name": "Estrela do Mar",
+				"description": "Não são estrelas, nem peixes."
 			}
 		},
 		"construction": {
@@ -61,45 +66,45 @@
 				"description": "Um container com suprimentos, para doações de comida"
 			}
 		},
-		"critters":{
-			"crab":{
-				"display_name":"Caranguejo",
-				"description":"Sinta o beliscão"
+		"critters": {
+			"crab": {
+				"display_name": "Caranguejo",
+				"description": "Sinta o beliscão"
 			},
-			"sea_turtle":{
-				"display_name":"Tartaruga Marinha",
-				"description":"Répteis marinhos com nadadeiras"
+			"sea_turtle": {
+				"display_name": "Tartaruga Marinha",
+				"description": "Répteis marinhos com nadadeiras"
 			}
 		},
-		"crops":{
-			"palm_tree_crop":{
-				"display_name":"Muda de Palmeira",
+		"crops": {
+			"palm_tree_crop": {
+				"display_name": "Muda de Palmeira",
 				"description": "Acabou as árvores? Comece a reflorestamento.",
-				"growth_stage_0":{
-					"name":"Semente",
-					"description":"É só um coco enterrado."
+				"growth_stage_0": {
+					"name": "Semente",
+					"description": "É só um coco enterrado."
 				},
-				"growth_stage_1":{
-					"name":"Broto de Palmeira",
-					"description":"Finalmente atravessou a casca."
+				"growth_stage_1": {
+					"name": "Broto de Palmeira",
+					"description": "Finalmente atravessou a casca."
 				},
-				"growth_stage_2":{
-					"name":"Broto de Palmeira",
-					"description":"Tentando alcançar o sol."
+				"growth_stage_2": {
+					"name": "Broto de Palmeira",
+					"description": "Tentando alcançar o sol."
 				},
-				"growth_stage_3":{
-					"name":"Muda de Palmeira",
-					"description":"Pronta pra ser transferida."
+				"growth_stage_3": {
+					"name": "Muda de Palmeira",
+					"description": "Pronta pra ser transferida."
 				}
 			}
 		},
-		"decoration":{
-			"anchor":{
-				"display_name":"Âncora",
-				"description":"Pesado, pra segurar o barco",
-				"recipe":{
-					"description":"Pode ser colocado no chão ou pendurado em paredes",
-					"flavor":"Se um barco fosse uma cabeça, suas âncoras seriam brincos?"
+		"decoration": {
+			"anchor": {
+				"display_name": "Âncora",
+				"description": "Pesado, pra segurar o barco",
+				"recipe": {
+					"description": "Pode ser colocado no chão ou pendurado em paredes",
+					"flavor": "Se um barco fosse uma cabeça, suas âncoras seriam brincos?"
 				}
 			},
 			"aquarium": {
@@ -116,21 +121,21 @@
 					"flavor": "É bom você mostrá-lo ou então ninguém vai acreditar que pescou isso."
 				}
 			},
-			"dock":{
-				"display_name":"Doca de pesca",
-				"description":"Uma plataforma onde os pescadores vão para pescar"
+			"dock": {
+				"display_name": "Doca de pesca",
+				"description": "Uma plataforma onde os pescadores vão para pescar"
 			},
 			"fish_pond": {
 				"display_name": "Laguinho",
 				"description": "Uma poçinha de água com peixes infinitos?"
 			},
-			"ice_dock":{
-				"display_name":"Local de pesca de gelo",
-				"description":"Um buraco no gelo onde os pescadores vão pescar"
+			"ice_dock": {
+				"display_name": "Local de pesca de gelo",
+				"description": "Um buraco no gelo onde os pescadores vão pescar"
 			},
-			"fish_container":{
-				"display_name":"Caixote de peixes",
-				"description":"Armazena até 16 peixes"
+			"fish_container": {
+				"display_name": "Caixote de peixes",
+				"description": "Armazena até 16 peixes"
 			},
 			"fancy_fisher_sign": {
 				"display_name": "Placa Chique do Pescador",
@@ -154,84 +159,88 @@
 				"display_name": "Rede de Pesca na parede",
 				"description": "Pendurado em ganchos na parede"
 			},
-			"fruit_container":{
-				"display_name":"Caixote de Cocos",
-				"description":"Armazena até 16 cocos",
-				"recipe":{
-					"description":"Armazena até 16 cocos",
-					"flavor":"Pronto pra ser exportado"
+			"fruit_container": {
+				"display_name": "Caixote de Cocos",
+				"description": "Armazena até 16 cocos",
+				"recipe": {
+					"description": "Armazena até 16 cocos",
+					"flavor": "Pronto pra ser exportado"
 				}
 			},
-			"lei":{
-				"display_name":"Guirlanda de flores",
-				"description":"Flores penduradas na parede",
-				"recipe":{
-					"description":"Para pendurar na parede.",
-					"flavor":"Flores podem embelezar as paredes!"
+			"lei": {
+				"display_name": "Guirlanda de flores",
+				"description": "Flores penduradas na parede",
+				"recipe": {
+					"description": "Para pendurar na parede.",
+					"flavor": "Flores podem embelezar as paredes!"
 				}
 			},
-			"magma":{
-				"display_name":"Bloco de Magma",
-				"description":"Magma super quente, incandescente, meio sólido. Não toque."
+			"magma": {
+				"display_name": "Bloco de Magma",
+				"description": "Magma super quente, incandescente, meio sólido. Não toque."
 			},
-			"pearl_container":{
-				"display_name":"Caixote de pérolas",
-				"description":"Armazena até 16 pérolas"
+			"volcano_smoke": {
+				"display_name": "Fonte de Fumaça",
+				"description": "Fumaça infinita gerada por esse objeto."
 			},
-			"pirate_flag":{
-				"display_name":"Bandeira Pirata",
-				"description":"Não é uma boa forma de fazer amigos",
-				"recipe":{
-					"description":"Bandeira com tema pirata clássica.",
-					"flavor":"Aaaarrrrgggghhh!"
+			"pearl_container": {
+				"display_name": "Caixote de pérolas",
+				"description": "Armazena até 16 pérolas"
+			},
+			"pirate_flag": {
+				"display_name": "Bandeira Pirata",
+				"description": "Não é uma boa forma de fazer amigos",
+				"recipe": {
+					"description": "Bandeira com tema pirata clássica.",
+					"flavor": "Aaaarrrrgggghhh!"
 				}
 			},
-			"raft":{
-				"display_name":"Jangada",
-				"description":"Veleiro primitivo",
-				"recipe":{
-					"description":"O começo de uma frota de navios.",
-					"flavor":"Talvez ele veleje se você desejar bastante!"
+			"raft": {
+				"display_name": "Jangada",
+				"description": "Veleiro primitivo",
+				"recipe": {
+					"description": "O começo de uma frota de navios.",
+					"flavor": "Talvez ele veleje se você desejar bastante!"
 				}
 			},
-			"sand_castle":{
-				"display_name":"Castelo de Areia",
-				"description":"A princesa de areia está em outro castelo",
-				"recipe":{
-					"description":"Use areia (barro) para construí-lo",
-					"flavor":"4 anos estudando arquitetura, pra construir isso?"
+			"sand_castle": {
+				"display_name": "Castelo de Areia",
+				"description": "A princesa de areia está em outro castelo",
+				"recipe": {
+					"description": "Use areia (barro) para construí-lo",
+					"flavor": "4 anos estudando arquitetura, pra construir isso?"
 				}
 			},
-			"ship_wheel":{
-				"display_name":"Timão",
-				"description":"Para que você possa guiar seus sonhos",
-				"recipe":{
-					"description":"Poderia ser usado para dirigir um navio, mas hoje em dia é usado principalmente para decorações",
-					"flavor":"Você sabe o que seria bom com ele? Um barco!"
+			"ship_wheel": {
+				"display_name": "Timão",
+				"description": "Para que você possa guiar seus sonhos",
+				"recipe": {
+					"description": "Poderia ser usado para dirigir um navio, mas hoje em dia é usado principalmente para decorações",
+					"flavor": "Você sabe o que seria bom com ele? Um barco!"
 				}
 			},
-			"tiki_torch":{
-				"display_name":"Tocha Tiki",
-				"description":"Uma tocha bem comprida",
-				"recipe":{
-					"description":"Uma luz ao ar livre anexada a uma longa vara fixada no chão.",
-					"flavor":"Vai iluminar a festa e manter os insetos longe"
+			"tiki_torch": {
+				"display_name": "Tocha Tiki",
+				"description": "Uma tocha bem comprida",
+				"recipe": {
+					"description": "Uma luz ao ar livre anexada a uma longa vara fixada no chão.",
+					"flavor": "Vai iluminar a festa e manter os insetos longe"
 				}
 			},
 			"totem": {
-				"display_name": "Totem",
+				"display_name": "Totem ",
 				"description": "Animais de praia empilhados",
 				"flavor": "Uma tartaruga, um caranguejo e uma gaivota"
 			}
 		},
-		"food":{
-			"coconut":{
-				"display_name":"Coco",
-				"description":"Sempre refrescante"
+		"food": {
+			"coconut": {
+				"display_name": "Coco",
+				"description": "Sempre refrescante"
 			},
-			"crab":{
-				"display_name":"Caranguejo fresco",
-				"description":"Ainda não está pronto pra comer"
+			"crab": {
+				"display_name": "Caranguejo fresco",
+				"description": "Ainda não está pronto pra comer"
 			},
 			"crab_bisque": {
 				"display_name": "Bisque de caranguejo",
@@ -244,69 +253,69 @@
 			"crab_bisque_serving": {
 				"display_name": "Tijela de Bisque de caranguejo"
 			},
-			"crab_cake":{
-				"display_name":"Bolinho de Caranguejo",
-				"description":"Empada de carne de caranguejo em flocos ou picada, normalmente servido frito.",
-				"recipe":{
-					"description":"Empada de carne de caranguejo em flocos ou picada, normalmente servido frito.",
-					"flavor":"Crocante fora, macio dentro"
+			"crab_cake": {
+				"display_name": "Bolinho de Caranguejo",
+				"description": "Empada de carne de caranguejo em flocos ou picada, normalmente servido frito.",
+				"recipe": {
+					"description": "Empada de carne de caranguejo em flocos ou picada, normalmente servido frito.",
+					"flavor": "Crocante fora, macio dentro"
 				}
 			},
-			"crab_omelette":{
-				"display_name":"Omelete de Caranguejo",
+			"crab_omelette": {
+				"display_name": "Omelete de Caranguejo",
 				"description": "Carne de caranguejo embalada com ovos deliciosos"
 			},
-			"crab_rotten":{
-				"display_name":"Caranguejo estragado",
-				"description":"Caranguejos estragam bem depressa..."
+			"crab_rotten": {
+				"display_name": "Caranguejo estragado",
+				"description": "Caranguejos estragam bem depressa..."
 			},
 			"big_fish": {
-				"display_name":"Grande Peixe fresco",
-				"description":"Muito grande, teve que ser cortado. Ainda não está pronto pra comer"
+				"display_name": "Grande Peixe fresco",
+				"description": "Muito grande, teve que ser cortado. Ainda não está pronto pra comer"
 			},
 			"big_fish_cooked": {
-				"display_name":"Grande Peixe Cozido",
-				"description":"Frito e delicioso",
-				"recipe":{
-					"description":"Apenas deixe esquentando no forno.",
-					"flavor":"Crocante por fora, macio por dentro"
+				"display_name": "Grande Peixe Cozido",
+				"description": "Frito e delicioso",
+				"recipe": {
+					"description": "Apenas deixe esquentando no forno.",
+					"flavor": "Crocante por fora, macio por dentro"
 				}
 			},
 			"big_fish_cooked_serving": {
-				"display_name":"Grande Peixe Cozido"
+				"display_name": "Grande Peixe Cozido"
 			},
 			"nemo": {
-				"display_name": "Nemo"
+				"display_name": "Nemo "
 			},
-			"fish":{
-				"display_name":"Peixe fresco",
-				"description":"Ainda não está pronto pra comer"
+			"fish": {
+				"display_name": "Peixe fresco",
+				"description": "Ainda não está pronto pra comer"
 			},
-			"fish_cooked":{
-				"display_name":"Peixe Cozido",
-				"description":"Fritinho e delicioso",
-				"recipe":{
-					"description":"Apenas deixe esquentando no forno.",
-					"flavor":"Crocante por fora, macio por dentro"
+			"fish_cooked": {
+				"display_name": "Peixe Cozido",
+				"description": "Fritinho e delicioso",
+				"recipe": {
+					"description": "Apenas deixe esquentando no forno.",
+					"flavor": "Crocante por fora, macio por dentro"
 				}
 			},
-			"big_fish_rotten":{
-				"display_name":"Grande Peixe estragado",
-				"description":"Peixes estragam bem depressa..."
+			"big_fish_rotten": {
+				"display_name": "Grande Peixe estragado",
+				"description": "Peixes estragam bem depressa..."
 			},
-			"fish_rotten":{
-				"display_name":"Peixe estragado",
-				"description":"Peixes estragam bem depressa..."
+			"fish_rotten": {
+				"display_name": "Peixe estragado",
+				"description": "Peixes estragam bem depressa..."
 			},
-			"fish_stew":{
-				"display_name":"Moqueca de peixe",
+			"fish_stew": {
+				"display_name": "Moqueca de peixe",
 				"description": "Quente e delicioso",
-				"recipe":{
-					"description":"Um caldo quente e salgado, onde o peixe fica muito macio.",
+				"recipe": {
+					"description": "Um caldo quente e salgado, onde o peixe fica muito macio.",
 					"flavor": "Fantasticamente fácil de fazer"
 				}
 			},
-			"fish_stew_serving":{
+			"fish_stew_serving": {
 				"display_name": "Tigela de ensopado de peixe"
 			},
 			"papaya_cookie": {
@@ -325,33 +334,33 @@
 					"flavor": "É um ótimo começo para a manhã"
 				}
 			},
-			"papaya_basket":{
-				"display_name":"Cesta de mamão",
-				"description":"Cheio de frutas de mamão"
+			"papaya_basket": {
+				"display_name": "Cesta de mamão",
+				"description": "Cheio de frutas de mamão"
 			},
-			"papaya_serving":{
-				"display_name":"Mamão",
-				"description":"Uma metade da fruta"
+			"papaya_serving": {
+				"display_name": "Mamão",
+				"description": "Uma metade da fruta"
 			},
-			"sashimi":{
-				"display_name":"Sashimi",
-				"description":"Peixe cru fresco cortado em fatias bem fininhas"
+			"sashimi": {
+				"display_name": "Sashimi ",
+				"description": "Peixe cru fresco cortado em fatias bem fininhas"
 			},
 			"tropical_fish": {
 				"display_name": "Peixe Exótico Fresco"
 			}
 		},
-		"furniture":{
-			"hammock":{
-				"display_name":"Rede",
-				"description":"Tire uma soneca após comer",
-				"recipe":{
-					"description":"Usado para dormir",
-					"flavor":"Caranguejos podem te beliscar, por baixo..."
+		"furniture": {
+			"hammock": {
+				"display_name": "Rede",
+				"description": "Tire uma soneca após comer",
+				"recipe": {
+					"description": "Usado para dormir",
+					"flavor": "Caranguejos podem te beliscar, por baixo..."
 				}
 			}
 		},
-		"gizmos":{
+		"gizmos": {
 			"boat": {
 				"display_name": "Barco",
 				"description": "Transporta hearthligns de um lado pro outro"
@@ -360,29 +369,29 @@
 				"display_name": "Doca de barcos",
 				"description": "Viagens de barco começam aqui e vão até o outro lado"
 			},
-			"cocobomb":{
-				"display_name":"CocoBomba",
-				"description":"Não brinque com a comida.",
-				"recipe":{
-					"description":"Após posicionado, irá explodir quando um inimigo bater nele. Machuca e taca fogo nos inimigos próximos da explosão.",
-					"flavor":"Tudo fica melhor com explosões."
+			"cocobomb": {
+				"display_name": "CocoBomba",
+				"description": "Não brinque com a comida.",
+				"recipe": {
+					"description": "Após posicionado, irá explodir quando um inimigo bater nele. Machuca e taca fogo nos inimigos próximos da explosão.",
+					"flavor": "Tudo fica melhor com explosões."
 				}
 			},
-			"crab_trap":{
-				"display_name":"Armadilha de Caranguejo",
-				"description":"Irá atrair e capturar caranguejos."
+			"crab_trap": {
+				"display_name": "Armadilha de Caranguejo",
+				"description": "Irá atrair e capturar caranguejos."
 			}
 		},
 		"humans": {
-			"anya":{
-				"display_name": "Anya"
+			"anya": {
+				"display_name": "Anya "
 			},
-			"captain_miranda":{
+			"captain_miranda": {
 				"display_name": "Capitã Miranda",
 				"description": "O mar é seu lar"
 			}
 		},
-		"landmark":{
+		"landmark": {
 			"summon_stone_block_sand": {
 				"display_name": "Bloco de Terreno de Areia",
 				"description": "Invoca um bloco 8x5x8 de areia."
@@ -391,27 +400,27 @@
 				"display_name": "Manto de Terreno de Areia",
 				"description": "Cresce em um cobertor de areia, até 12x12 de tamanho."
 			},
-			"summon_stone_volcano":{
+			"summon_stone_volcano": {
 				"display_name": "Vulcão",
 				"description": "Invoca um mini vulcão inteiro."
 			}
 		},
-		"monsters":{
-			"cocoling":{
-				"display_name":"Cocoling",
-				"description":"Não é um coco. Não é refrescante"
+		"monsters": {
+			"cocoling": {
+				"display_name": "Cocoling ",
+				"description": "Não é um coco. Não é refrescante"
 			},
-			"cocoling_spawner":{
-				"display_name":"Invocador antigo",
-				"description":"Velho porém valioso."
+			"cocoling_spawner": {
+				"display_name": "Invocador antigo",
+				"description": "Velho porém valioso."
 			},
-			"fake_container":{
-				"display_name":"Caixote Misterioso",
-				"description":"Quebre ele pra ver o que tem dentro"
+			"fake_container": {
+				"display_name": "Caixote Misterioso",
+				"description": "Quebre ele pra ver o que tem dentro"
 			},
-			"octopus":{
-				"display_name":"Polvo",
-				"description":"Braços, mais do que você consegue contar"
+			"octopus": {
+				"display_name": "Polvo",
+				"description": "Braços, mais do que você consegue contar"
 			},
 			"oyster": {
 				"display_name": "Ostra Monstra",
@@ -467,14 +476,14 @@
 				}
 			}
 		},
-		"resources":{
-			"pearl":{
-				"display_name":"Pérola Branca",
-				"description":"Talvez a jóia mais amada de todos os tempos"
+		"resources": {
+			"pearl": {
+				"display_name": "Pérola Branca",
+				"description": "Talvez a jóia mais amada de todos os tempos"
 			},
-			"black_pearl":{
-				"display_name":"Pérola Negra",
-				"description":"Cheia de maldições, vende por um bom preço"
+			"black_pearl": {
+				"display_name": "Pérola Negra",
+				"description": "Cheia de maldições, vende por um bom preço"
 			},
 			"herb": {
 				"hibiscus": {
@@ -486,27 +495,27 @@
 					"description": "Uma rara flor tropical com propriedades curativas"
 				}
 			},
-			"hot_rock":{
-				"display_name":"Pedra Quente",
-				"description":"Rico em minerais, é só minerar"
+			"hot_rock": {
+				"display_name": "Pedra Quente",
+				"description": "Rico em minerais, é só minerar"
 			},
 			"ice_cube": {
 				"display_name": "Cubo de Gelo",
 				"description": "Alguém pescou isso. Vai derreter logo."
 			}
 		},
-		"toys":{
-			"beachball":{
-				"display_name":"Bola de Praia",
-				"description":"Para jogos de água e praia"
+		"toys": {
+			"beachball": {
+				"display_name": "Bola de Praia",
+				"description": "Para jogos de água e praia"
 			}
 		},
-		"trees":{
-			"common_palm":{
-				"description":"O simbolo de uma ilha parasidiaca tropical.",
-				"unripe_description":"Ainda sem cocos."
+		"trees": {
+			"common_palm": {
+				"description": "O simbolo de uma ilha parasidiaca tropical.",
+				"unripe_description": "Ainda sem cocos."
 			},
-			"palm_tree":{
+			"palm_tree": {
 				"seed": {
 					"display_name": "Semente de Palmeira",
 					"description": "Pode ser plantada para crescer uma palmeira"
@@ -523,27 +532,27 @@
 					"display_name": "Brotamento de palmeira",
 					"description": "Está quase lá! Está crescendo suas folhas adultas!"
 				},
-				"sapling_palm_tree":{
-					"display_name":"Muda de Palmeira"
+				"sapling_palm_tree": {
+					"display_name": "Muda de Palmeira"
 				},
-				"small_palm_tree":{
-					"display_name":"Pequena Palmeira"
+				"small_palm_tree": {
+					"display_name": "Pequena Palmeira"
 				},
-				"large_palm_tree":{
-					"display_name":"Grande Palmeira"
+				"large_palm_tree": {
+					"display_name": "Grande Palmeira"
 				}
 			},
-			"bend_palm_tree":{
-				"small_bend_palm_tree":{
-					"display_name":"Pequena Palmeira Curvada"
+			"bend_palm_tree": {
+				"small_bend_palm_tree": {
+					"display_name": "Pequena Palmeira Curvada"
 				},
-				"large_bend_palm_tree":{
-					"display_name":"Grande Palmeira Curvada"
+				"large_bend_palm_tree": {
+					"display_name": "Grande Palmeira Curvada"
 				}
 			},
-			"dranden":{
-				"display_name":"Árvore Dranden",
-				"description":"Tronco largo com folhas pesadas",
+			"dranden": {
+				"display_name": "Árvore Dranden",
+				"description": "Tronco largo com folhas pesadas",
 				"seed": {
 					"display_name": "Semente de Dranden",
 					"description": "Pode ser plantada para crescer um dranden"
@@ -561,9 +570,9 @@
 					"description": "Está quase lá! Está crescendo suas folhas adultas!"
 				}
 			},
-			"smalea":{
-				"display_name":"Árvore Smalea",
-				"description":"Árvore pequena e densa",
+			"smalea": {
+				"display_name": "Árvore Smalea",
+				"description": "Árvore pequena e densa",
 				"seed": {
 					"display_name": "Semente de Smalea",
 					"description": "Pode ser plantada para crescer um smalea"
@@ -581,10 +590,10 @@
 					"description": "Está quase lá! Está crescendo suas folhas adultas!"
 				}
 			},
-			"papaya":{
-				"display_name":"Pé de Mamão",
-				"description":"Uma planta grande como uma árvore (não é uma?)",
-				"unripe_description":"Ainda não está madura",
+			"papaya": {
+				"display_name": "Pé de Mamão",
+				"description": "Uma planta grande como uma árvore (não é uma?)",
+				"unripe_description": "Ainda não está madura",
 				"seed": {
 					"display_name": "Semente de Mamão",
 					"description": "Pode ser plantada para crescer um mamoeiro"
@@ -602,19 +611,19 @@
 					"description": "Está quase lá! Está crescendo suas folhas adultas!"
 				}
 			},
-			"stump":{
-				"display_name":"Toco",
-				"description":"Era uma árvore"
+			"stump": {
+				"display_name": "Toco",
+				"description": "Era uma árvore"
 			}
 		},
-		"weapons":{
-			"slap_fish":{
-				"display_name":"Peixe Porrete",
-				"description":"Ai!"
+		"weapons": {
+			"slap_fish": {
+				"display_name": "Peixe Porrete",
+				"description": "Ai!"
 			},
-			"crab_pincer":{
-				"display_name":"Garra de Caranguejo",
-				"description":"Sinta o beliscão!"
+			"crab_pincer": {
+				"display_name": "Garra de Caranguejo",
+				"description": "Sinta o beliscão!"
 			},
 			"fish_arrow": {
 				"display_name": "Flecha de Peixe",
@@ -622,32 +631,32 @@
 			}
 		}
 	},
-	"jobs":{
-		"archer":{
-			"archer_buffs":{
-				"fish_arrow":{
-					"display_name":"Desorientado",
-					"description":"Coragem abaixada pelo peixe na cara"
+	"jobs": {
+		"archer": {
+			"archer_buffs": {
+				"fish_arrow": {
+					"display_name": "Desorientado",
+					"description": "Coragem abaixada pelo peixe na cara"
 				}
 			}
 		},
-		"cook":{
+		"cook": {
 			"recipes": {
-				"tropical_recipes_name":"Receitas Tropicais e Frutos do Mar"
+				"tropical_recipes_name": "Receitas Tropicais e Frutos do Mar"
 			}
 		},
-		"fisher":{
-			"fisher_description":{
-				"display_name":"Pescador",
-				"description":"Irá pegar caranguejos, colher pérolas, e fazer outras tarefas relacionadas a água",
-				"requirements":"Feito pelo Carpinteiro",
-				"level_1":{
-					"perk_name":"Pescando",
-					"perk_description":"O pescador pode criar ferramentas para ajudar a pegar peixes."
+		"fisher": {
+			"fisher_description": {
+				"display_name": "Pescador",
+				"description": "Irá pegar caranguejos, colher pérolas, e fazer outras tarefas relacionadas a água",
+				"requirements": "Feito pelo Carpinteiro",
+				"level_1": {
+					"perk_name": "Pescando",
+					"perk_description": "O pescador pode criar ferramentas para ajudar a pegar peixes."
 				},
-				"level_2":{
-					"perk_name":"Caranguejos",
-					"perk_description":"O pescador agora pode criar e colocar armadilhas para capturar caranguejos."
+				"level_2": {
+					"perk_name": "Caranguejos",
+					"perk_description": "O pescador agora pode criar e colocar armadilhas para capturar caranguejos."
 				},
 				"level_3": {
 					"perk_name": "Cozinhando",
@@ -662,12 +671,12 @@
 					"perk_description": "A cada nível, pescar fica mais rápido, com menos tempo esperando uma mordida."
 				}
 			},
-			"fisher_bucket":{
-				"display_name":"Balde de Pescador",
-				"description":"Balde multiuso",
-				"fisher_bucket_talisman":{
-					"display_name":"Balde de Pescador",
-					"description":"Necessário para promover alguém em um pescador"
+			"fisher_bucket": {
+				"display_name": "Balde de Pescador",
+				"description": "Balde multiuso",
+				"fisher_bucket_talisman": {
+					"display_name": "Balde de Pescador",
+					"description": "Necessário para promover alguém em um pescador"
 				}
 			},
 			"fisher_rod": {
@@ -684,35 +693,35 @@
 				"description": "Para cozinhar comida quentinha",
 				"flavor": "Para uma melhor comida, converse com seus principais cozinheiros"
 			},
-			"fisher_outfit":{
-				"display_name":"Roupa de Pescador",
-				"description":"Roupa comum de pescador"
+			"fisher_outfit": {
+				"display_name": "Roupa de Pescador",
+				"description": "Roupa comum de pescador"
 			},
-			"recipes":{
-				"fisher_tools_name":"Ferramentas de Pescador",
-				"fisher_bucket_recipe":{
-					"recipe_name":"Balde de Pescador",
-					"description":"Necessário para promover alguém em um pescador.",
-					"flavor":"Balde multiuso"
+			"recipes": {
+				"fisher_tools_name": "Ferramentas de Pescador",
+				"fisher_bucket_recipe": {
+					"recipe_name": "Balde de Pescador",
+					"description": "Necessário para promover alguém em um pescador.",
+					"flavor": "Balde multiuso"
 				},
-				"crab_pincer_recipe":{
-					"recipe_name":"Garra de Caranguejo",
-					"description":"Uma arma que você pode vestir em sua mão!",
-					"flavor":"Limpe antes de enfiar sua mão dentro!"
+				"crab_pincer_recipe": {
+					"recipe_name": "Garra de Caranguejo",
+					"description": "Uma arma que você pode vestir em sua mão!",
+					"flavor": "Limpe antes de enfiar sua mão dentro!"
 				},
-				"crab_trap_recipe":{
-					"recipe_name":"Armadilha de Caranguejos",
-					"description":"Irá atrair e capturar caranguejos. Precisa ser colocada perto da água pra funcionar.",
-					"flavor":""
+				"crab_trap_recipe": {
+					"recipe_name": "Armadilha de Caranguejos",
+					"description": "Irá atrair e capturar caranguejos. Precisa ser colocada perto da água pra funcionar.",
+					"flavor": ""
 				},
 				"fish_trap_recipe": {
 					"recipe_name": "Armadilha de Peixes (ACE)",
 					"description": "Usado pelo Pescador (e Caçador) para capturar e coletar peixes com segurança. Também pode ser usado para capturar peixes para o transporte."
 				},
-				"fish_container_recipe":{
-					"recipe_name":"Caixote de Peixes",
-					"description":"Armazena até 16 peixes",
-					"flavor":"Pronto pra ser exportado"
+				"fish_container_recipe": {
+					"recipe_name": "Caixote de Peixes",
+					"description": "Armazena até 16 peixes",
+					"flavor": "Pronto pra ser exportado"
 				},
 				"fish_quiver_recipe": {
 					"recipe_name": "Aljava de Peixe",
@@ -723,20 +732,20 @@
 					"description": "Um recipiente para peixes, para manter os cozinheiros abastecidos.",
 					"flavor": "Melhor do que armazená-los no chão"
 				},
-				"pearl_container_recipe":{
-					"recipe_name":"Caixote de Pérolas",
-					"description":"Armazena até 16 pérolas",
-					"flavor":"Pronto pra ser exportado"
+				"pearl_container_recipe": {
+					"recipe_name": "Caixote de Pérolas",
+					"description": "Armazena até 16 pérolas",
+					"flavor": "Pronto pra ser exportado"
 				},
-				"sashimi_recipe":{
-					"recipe_name":"Sashimi",
-					"description":"Peixe cru fresco cortado em pedaços finos",
-					"flavor":"Não é muito difícil de preparar"
+				"sashimi_recipe": {
+					"recipe_name": "Sashimi ",
+					"description": "Peixe cru fresco cortado em pedaços finos",
+					"flavor": "Não é muito difícil de preparar"
 				},
-				"slap_fish_recipe":{
-					"recipe_name":"Peixe Porrete",
-					"description":"Ai!",
-					"flavor":"É mais nojento do que perigoso"
+				"slap_fish_recipe": {
+					"recipe_name": "Peixe Porrete",
+					"description": "Ai!",
+					"flavor": "É mais nojento do que perigoso"
 				},
 				"boat_dock_recipe": {
 					"recipe_name": "Doca de barcos",
@@ -762,21 +771,21 @@
 		},
 		"geomancer": {
 			"recipes": {
-				"summon_stone_volcano_recipe":{
+				"summon_stone_volcano_recipe": {
 					"recipe_name": "Vulcão",
 					"description": "Invoca um mini vulcão inteiro."
 				}
 			}
 		},
-		"herbalist":{
-			"recipes":{
-				"palm_transmute_recipe":{
-					"recipe_name":"Semente de Palmeira",
-					"description":"Cure e fertilize o coco",
-					"flavor":"Depois que as duas metades são curadas juntas, você tem um novo coco fértil, pronto para ser plantado"
+		"herbalist": {
+			"recipes": {
+				"palm_transmute_recipe": {
+					"recipe_name": "Semente de Palmeira",
+					"description": "Cure e fertilize o coco",
+					"flavor": "Depois que as duas metades são curadas juntas, você tem um novo coco fértil, pronto para ser plantado"
 				},
-				"papaya_transmute_recipe":{
-					"recipe_name":"Sementes de Mamão (x3)"
+				"papaya_transmute_recipe": {
+					"recipe_name": "Sementes de Mamão (x3)"
 				},
 				"hibiscus_transmute_recipe": {
 					"recipe_name": "Sementes de Hibisco (x3)"
@@ -788,69 +797,69 @@
 		}
 	},
 	"ui": {
-		"data":{
-			"constants":{
-				"raw_fish_name":"Peixe Fresco",
-				"raw_big_fish_name":"Peixe Fresco Grande"
+		"data": {
+			"constants": {
+				"raw_fish_name": "Peixe Fresco",
+				"raw_big_fish_name": "Peixe Fresco Grande"
 			}
 		},
-		"game":{
-			"build_mode":{
-				"building_templates":{
-					"template_names":{
+		"game": {
+			"build_mode": {
+				"building_templates": {
+					"template_names": {
 						"fisher_hut": "🏝️ Cabana de Pesca",
 						"fisher_hut_rayya": "🏝️ Cabana de Pesca (Rayyas)",
 						"fisher_hut_north": "🏝️ Cabana de Pesca (Northern)",
 						"shaded_hammock": "🏝️ Rede na Sombra",
-						"beach_tower":"🏝️ Torre de Praia",
-						"little_pier":"🏝️ Pequeno porto",
-						"open_house":"🏝️ Casa Aberta",
-						"small_beach_house":"🏝️ Casa Pequena de Praia",
-						"carpenter_house":"🏝️ Casa do Carpinteiro",
-						"tiki_bar":"🏝️ Bar Tiki",
-						"explorer_ship":"🏝️🚢 Navio Explorador",
-						"long_ship":"🏝️🚢 Navio Comprido",
-						"trader_ship":"🏝️🚢 Navio Comerciante"
+						"beach_tower": "🏝️ Torre de Praia",
+						"little_pier": "🏝️ Pequeno porto",
+						"open_house": "🏝️ Casa Aberta",
+						"small_beach_house": "🏝️ Casa Pequena de Praia",
+						"carpenter_house": "🏝️ Casa do Carpinteiro",
+						"tiki_bar": "🏝️ Bar Tiki",
+						"explorer_ship": "🏝️🚢 Navio Explorador",
+						"long_ship": "🏝️🚢 Navio Comprido",
+						"trader_ship": "🏝️🚢 Navio Comerciante"
 					}
 				}
 			},
-			"goblinpedia":{
-				"menu":{
-					"goblins":{
-						"jobs":{
-							"fisher":"Pescador"
+			"goblinpedia": {
+				"menu": {
+					"goblins": {
+						"jobs": {
+							"fisher": "Pescador"
 						}
 					}
 				},
-				"pages":{
-					"jobs":{
-						"fisher":{
-							"title":"Pescador",
-							"description1":"Será que conseguem pegar um peixe maior que eles mesmos?",
-							"topic1":{
-								"title":"Descrição:",
-								"desc1":"Artesão e produtor de comida, promovido de trabalhadores."
+				"pages": {
+					"jobs": {
+						"fisher": {
+							"title": "Pescador",
+							"description1": "Será que conseguem pegar um peixe maior que eles mesmos?",
+							"topic1": {
+								"title": "Descrição:",
+								"desc1": "Artesão e produtor de comida, promovido de trabalhadores."
 							},
-							"topic2":{
-								"title":"Como funciona:",
-								"desc1":"Coloque uma doca de pesca, ela marca onde devem pescar.",
-								"desc2":"Armadilhas de caranguejos precisam estar perto da água."
+							"topic2": {
+								"title": "Como funciona:",
+								"desc1": "Coloque uma doca de pesca, ela marca onde devem pescar.",
+								"desc2": "Armadilhas de caranguejos precisam estar perto da água."
 							},
-							"topic3":{
-								"title":"Menu de itens:",
-								"desc1":"Pode fazer decorações simples, fritar peixes, e até alguns itens uteis, como armas de peixe."
+							"topic3": {
+								"title": "Menu de itens:",
+								"desc1": "Pode fazer decorações simples, fritar peixes, e até alguns itens uteis, como armas de peixe."
 							}
 						}
 					}
 				}
 			},
-			"menu":{
-				"crafter_menu":{
-					"items":{
-						"fisher":{
-							"display_name":"Menu do Pescador",
-							"description":"Cria itens relacionados com pesca",
-							"required_job_text":"Requer um pescador"
+			"menu": {
+				"crafter_menu": {
+					"items": {
+						"fisher": {
+							"display_name": "Menu do Pescador",
+							"description": "Cria itens relacionados com pesca",
+							"required_job_text": "Requer um pescador"
 						}
 					}
 				}
@@ -880,120 +889,118 @@
 				"random_location_names": {
 					"000": "Arquipélago Mauna Loa"
 				},
-				"seasons":{
-					"dry":{
-						"display_name":"Estação Seca",
-						"description":"Estação seca no Arquipélago é uma estação ensolarada, durando longos oito meses. Perfeito pra férias, mas fortes ventos e chuvas também podem acontecer."
+				"seasons": {
+					"dry": {
+						"display_name": "Estação Seca",
+						"description": "Estação seca no Arquipélago é uma estação ensolarada, durando longos oito meses. Perfeito pra férias, mas fortes ventos e chuvas também podem acontecer."
 					},
-					"hurricane":{
-						"display_name":"Temporada de Furacões",
-						"description":"Temporada de furacões no Arquipélago é uma estação perigosa, durando apenas um mês. Ventanias e tempestades no melhor dos casos."
+					"hurricane": {
+						"display_name": "Temporada de Furacões",
+						"description": "Temporada de furacões no Arquipélago é uma estação perigosa, durando apenas um mês. Ventanias e tempestades no melhor dos casos."
 					},
-					"wet":{
-						"display_name":"Estação Úmida",
-						"description":"Estação úmida no Arquipélago é uma estação com chuvas, durando três meses. Chuva e vento, raramente dias de sol"
+					"wet": {
+						"display_name": "Estação Úmida",
+						"description": "Estação úmida no Arquipélago é uma estação com chuvas, durando três meses. Chuva e vento, raramente dias de sol"
 					}
 				}
 			}
 		},
-		"build":{
-			"building_brushes":{
-				"colors":{
-					"#f1f1a4":"Areia 1 (Arquipélago)",
-					"#f0ea99":"Areia 2 (Arquipélago)",
-					"#f0e187":"Areia 3 (Arquipélago)"
+		"build": {
+			"building_brushes": {
+				"colors": {
+					"#f1f1a4": "Areia 1 (Arquipélago)",
+					"#f0ea99": "Areia 2 (Arquipélago)",
+					"#f0e187": "Areia 3 (Arquipélago)"
 				}
 			}
 		},
-		"commands":{
-			"open_crate":{
-				"display_name":"Abrir Caixote",
-				"description":"Martelar até quebrar"
+		"commands": {
+			"open_crate": {
+				"display_name": "Abrir Caixote",
+				"description": "Martelar até quebrar"
 			},
-			"archer_arrows":{
+			"archer_arrows": {
 				"fish_arrows": {
 					"display_name": "Usando Flechas de Peixe",
 					"description": "Atualmente usando flechas de peixe, o que reduz a coragem dos inimigos. Clique para trocar entre os tipos de flechas."
 				}
 			}
 		},
-		"fishing":{
-			"turtle_shield":{
-				"title":"O pescador pegou um Escudo Tartaruga!",
-				"message":"Parece um escudo para soldados de nível baixo, e está pronto para ser usado."
+		"fishing": {
+			"turtle_shield": {
+				"title": "O pescador pegou um Escudo Tartaruga!",
+				"message": "Parece um escudo para soldados de nível baixo, e está pronto para ser usado."
 			},
-			"nemo":{
-				"title":"Procurando um peixe",
-				"message":"O pescador acabou de pegar esse peixinho palhaço perdido."
+			"nemo": {
+				"title": "Procurando um peixe",
+				"message": "O pescador acabou de pegar esse peixinho palhaço perdido."
 			},
-			"dusty_tome":{
-				"message":"Um livro bem velho, valioso para cidades do deserto. É um mistério como ainda está empoeirado e não molhado..."
+			"dusty_tome": {
+				"message": "Um livro bem velho, valioso para cidades do deserto. É um mistério como ainda está empoeirado e não molhado..."
 			}
 		},
-		"monster_tuning":{
-			"forest":{
-				"insane_octopus":{
-					"description":"Polvos menores tendem a se reunir em torno deles."
+		"monster_tuning": {
+			"forest": {
+				"insane_octopus": {
+					"description": "Polvos menores tendem a se reunir em torno deles."
 				},
-				"insane_oyster":{
-					"description":"Ostras menores tendem a se reunir em torno delas."
+				"insane_oyster": {
+					"description": "Ostras menores tendem a se reunir em torno delas."
 				}
 			}
 		},
-		"gm":{
-			"anya": "Anya",
-			"captain_miranda":"Capitã Miranda",
+		"gm": {
+			"anya": "Anya ",
+			"captain_miranda": "Capitã Miranda",
 			"goblin_bucket": "Goblin com um balde",
-			"campaigns":{
-				"archipelago_tutorial":{
-					"trigger":{
-						"introduction":{
-							"title":"Uma ajuda do mar",
-							"message_start":"Ei, prazer em te conhecer! Sou a Miranda. Quer uma ajuda?<br>Posso te falar sobre algumas coisas se for novo aqui nas ilhas.",
-							"message_decline":"Bom, se cuida.<br>Boa sorte.",
-							"message_accept":"Isso! Finalmente aceitaram minha ajuda!<br>Me siga!",
-							"message_trees":"Vai começar procurando madeira e comida, né?<br>Temos os dois nas palmeiras!<br>Quando você colher elas vai pegar cocos.<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
-							"message_oysters":"Ah, e essas ostras gigantes são incríveis. Apenas um pescador pode colhê-las e suas pérolas vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
-							"message_broken_boats":"Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
-							"message_bye":"Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Tchau tchau e boa sorte.",
-
+			"campaigns": {
+				"archipelago_tutorial": {
+					"trigger": {
+						"introduction": {
+							"title": "Uma ajuda do mar",
+							"message_start": "Ei, prazer em te conhecer! Sou a Miranda. Quer uma ajuda?<br>Posso te falar sobre algumas coisas se for novo aqui nas ilhas.",
+							"message_decline": "Bom, se cuida.<br>Boa sorte.",
+							"message_accept": "Isso! Finalmente aceitaram minha ajuda!<br>Me siga!",
+							"message_trees": "Vai começar procurando madeira e comida, né?<br>Temos os dois nas palmeiras!<br>Quando você colher elas vai pegar cocos.<br>Ao tentar colher uma segunda vez (enquanto não há cocos) irá cortar ela pra pegar madeira.",
+							"message_oysters": "Ah, e essas ostras gigantes são incríveis. Apenas um pescador pode colhê-las e suas pérolas vendem por um bom preço.<br>Rumores mencionam raras pérolas negras, mas eu nunca vi uma.",
+							"message_broken_boats": "Dê uma olhada ao redor e você pode encontrar alguns naufrágios azarados.<br>Você pode quebra-los e encontrar bons tesouros.",
+							"message_bye": "Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo.<br>Tchau tchau e boa sorte.",
 							"na_message_start": "Ei caras da neve! Como eu sei que você veio da neve? Olhe para você, completamente vestido para neve!..<br>A propósito, sou Miranda. Quer ajuda? <br> Eu posso falar sobre algumas coisas como você é novo aqui nas ilhas.",
 							"na_message_decline": "Bem, tome cuidado.<br>Boa sorte. E tente pegar leve nas roupas pesadas!",
 							"na_message_bye": "Isso é tudo por enquanto.<br>Eu vou voltar mais tarde para verificar como vocês estão indo. Espero que o sol não tenha te cozido em suas roupas pesadas até lá!<br>Tchau tchau e boa sorte."
 						}
 					}
 				},
-				"archipelago_campaign":{
-					"trigger":{
-						"miranda_before_selling_clay":{
-							"title":"Muito barro no meu barco",
-							"message_start":"Fiz algumas trocas com um comerciante de Rayya. Você sabia que eles têm um monte de barro, super barato? Eu não podia recusar, mas agora eu tenho muito!",
-							"message_convincing":"Eu não posso navegar com o navio tão pesado! O que você me diz? Posso vender um pouco para você? Eu acho que você vai precisar já que você não tem muita terra para cavar por ai...",
-
+				"archipelago_campaign": {
+					"trigger": {
+						"miranda_before_selling_clay": {
+							"title": "Muito barro no meu barco",
+							"message_start": "Fiz algumas trocas com um comerciante de Rayya. Você sabia que eles têm um monte de barro, super barato? Eu não podia recusar, mas agora eu tenho muito!",
+							"message_convincing": "Eu não posso navegar com o navio tão pesado! O que você me diz? Posso vender um pouco para você? Eu acho que você vai precisar já que você não tem muita terra para cavar por ai...",
 							"rc_message_start": "Fiz algumas trocas com outro comerciante de Rayya. Bom, você já sabe como argila é um recurso fundametal, certo? Eu não podia recusar, mas agora eu tenho muito!"
 						},
-						"miranda_clay_shop":"O excesso de argila da capitã Miranda",
-						"miranda_notice_a_lost_crate":{
-							"title":"Você perdeu um caixote?",
-							"message_start":"A propósito, enquanto estávamos negociando eu notei esta caixa perto de seu acampamento. Eu acho que é sua, então eu coloquei perto da sua bandeira.",
-							"choice":"Uhm? Que caixa?",
-							"this_crate":"Esse caixote?"
+						"miranda_clay_shop": "O excesso de argila da capitã Miranda",
+						"miranda_notice_a_lost_crate": {
+							"title": "Você perdeu um caixote?",
+							"message_start": "A propósito, enquanto estávamos negociando eu notei esta caixa perto de seu acampamento. Eu acho que é sua, então eu coloquei perto da sua bandeira.",
+							"choice": "Uhm? Que caixa?",
+							"this_crate": "Esse caixote?"
 						},
-						"teaches_how_to_break_crate":{
-							"title":"Curioso?",
-							"message_start":"Você não vai abrir aquela caixa? Talvez seja importante ou pode estragar!<br>(Para abri-lo, selecione-o e clique no botão Abrir)"
+						"teaches_how_to_break_crate": {
+							"title": "Curioso?",
+							"message_start": "Você não vai abrir aquela caixa? Talvez seja importante ou pode estragar!<br>(Para abri-lo, selecione-o e clique no botão Abrir)"
 						},
-						"miranda_talks_about_cocolings":{
-							"title":"Cocolings",
-							"message_start":"Lamento ter sido atacado ontem. Aqueles cocolings estão aparecendo em toda parte ultimamente...",
-							"choice":"Os coquinhos endiabrados?",
-							"message_2":"Sim. Eles estão causando problemas em muitas outras ilhas também!<br>Nós ainda não sabemos como eles chegaram aqui ou pra que...<br>Existem muitas outras ilhas tentando descobrir esse mistério.",
-							"choice_end":"Ajudarei no que for possível."
+						"miranda_talks_about_cocolings": {
+							"title": "Cocolings ",
+							"message_start": "Lamento ter sido atacado ontem. Aqueles cocolings estão aparecendo em toda parte ultimamente...",
+							"choice": "Os coquinhos endiabrados?",
+							"message_2": "Sim. Eles estão causando problemas em muitas outras ilhas também!<br>Nós ainda não sabemos como eles chegaram aqui ou pra que...<br>Existem muitas outras ilhas tentando descobrir esse mistério.",
+							"choice_end": "Ajudarei no que for possível."
 						},
-						"miranda_notice_another_crate":{
-							"title":"Outra caixa...",
-							"message_start":"Cuidado, eu acabei de avistar outro caixote na sua ilha! Melhor chamar os guardas antes de abri-lo.",
-							"choice":"Me mostre!"
+						"miranda_notice_another_crate": {
+							"title": "Outra caixa...",
+							"message_start": "Cuidado, eu acabei de avistar outro caixote na sua ilha! Melhor chamar os guardas antes de abri-lo.",
+							"choice": "Me mostre!"
 						},
 						"lets_trade_again": {
 							"title": "Vamos fazer mais trocas?",
@@ -1053,14 +1060,14 @@
 				}
 			}
 		},
-		"saved_objects":{
-			"building_templates_index":{
-				"template_tabs":{
+		"saved_objects": {
+			"building_templates_index": {
+				"template_tabs": {
 					"display_name": "Arquipélago",
-					"categories":{
-						"camp":"Acampamento de Praia",
-						"boats":"Barcos",
-						"tier3":"Porto Real"
+					"categories": {
+						"camp": "Acampamento de Praia",
+						"boats": "Barcos",
+						"tier3": "Porto Real"
 					}
 				}
 			}

@@ -8,6 +8,11 @@
 	},
 	"entities": {
 		"armor": {
+			"coconut_helmet": {
+				"display_name": "Coconut Helmet",
+				"description": "Lightweight and hard, but a little tight",
+				"flavor": "Left in the sun for a while to dry, then prepared with fur to fit someones head."
+			},
 			"fish_quiver": {
 				"display_name": "물고기 화살통",
 				"description": "적들은 날아다니는 물고기가 그들의 얼굴을 후려칠때마다 용기를 잃어버렸다"
@@ -146,6 +151,14 @@
 					"flavor": "최고의 물고기가 여기있다"
 				}
 			},
+			"fishing_net": {
+				"display_name": "Fishing Net",
+				"description": "Hanging from support structures"
+			},
+			"wall_fishing_net": {
+				"display_name": "Wall Fishing Net",
+				"description": "Hanging from hooks on the wall"
+			},
 			"fruit_container": {
 				"display_name": "코코넛 보관함",
 				"description": "꺼낼 준비가 되었다구요!",
@@ -165,6 +178,10 @@
 			"magma": {
 				"display_name": "용암 블록",
 				"description": "매우 뜨겁고 빛나는 빨강, 반고체, 용암. 만지지 마세요."
+			},
+			"volcano_smoke": {
+				"display_name": "Smoke Source",
+				"description": "Infinite smoke generated from this object."
 			},
 			"pearl_container": {
 				"display_name": "진주 보관함",

@@ -8,6 +8,11 @@
 	},
 	"entities": {
 		"armor": {
+			"coconut_helmet": {
+				"display_name": "Coconut Helmet",
+				"description": "Lightweight and hard, but a little tight",
+				"flavor": "Left in the sun for a while to dry, then prepared with fur to fit someones head."
+			},
 			"fish_quiver": {
 				"display_name": "Fish Quiver",
 				"description": "Enemies lose courage when a flying fish hits their face"

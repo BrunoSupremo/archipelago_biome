@@ -12,6 +12,13 @@
 					"recipe" : "file(bead_door_recipe.json)"
 				}
 			}
+		},
+		"clothing_armor": {
+			"recipes": {
+				"coconut_helmet": {
+					"recipe": "file(clothing_armor/coconut_helmet_recipe.json)"
+				}				
+			}
 		}
 	}
 }

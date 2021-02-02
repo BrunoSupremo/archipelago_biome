@@ -1,0 +1,52 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"layer": "hat",
+				"transparent": "false",
+				"models": [
+					"file(coconut_helmet.qb)"
+				]
+			}
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(coconut_helmet_iconic.json)"
+		},
+		"stonehearth:equipment_piece": {
+			"render_type": "merge_with_model",
+			"slot": "helmet",
+			"ilevel": 1,
+			"injected_buffs": [
+				"stonehearth_ace:buffs:weather:hot_resist",
+				"stonehearth_ace:buffs:weather:sunstroke_resist"
+			],
+			"required_job_level": 1,
+			"roles":["combat"],
+			"equip_effect": "stonehearth:effects:weapon_level_up"
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:armor_data": {
+			"base_damage_reduction": 1
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 6,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.armor.coconut_helmet.display_name)",
+			"description": "i18n(archipelago_biome:entities.armor.coconut_helmet.description)",
+			"icon": "file(coconut_helmet.png)",
+			"category": "armor",
+			"material_tags": ["coconut", "helmet", "armor", "heavy_armor", "stockpile_equipment"]
+		}
+	}
+}

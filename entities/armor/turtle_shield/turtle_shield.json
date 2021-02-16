@@ -21,7 +21,7 @@
 				"stonehearth:have_shield"
 			],
 			"ilevel": 2,
-			"roles":["footman_job"],
+			"roles":["melee_combat"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
 	},

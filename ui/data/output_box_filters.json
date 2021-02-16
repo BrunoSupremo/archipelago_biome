@@ -1,0 +1,14 @@
+{
+	"stockpile": {
+		"production": {
+			"categories": {
+				"fisher": {
+					"ordinal": 12,
+					"display_name": "i18n(archipelago_biome:jobs.fisher.fisher_description.display_name)",
+					"icon": "/archipelago_biome/jobs/fisher/images/icon.png",
+					"filter": "fisher"
+				}
+			}
+		}
+	}
+}

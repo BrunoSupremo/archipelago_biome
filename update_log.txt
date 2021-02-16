@@ -1,11 +1,16 @@
 Additions:
+Coconut Helmet, for any combat job, craftable at weavers
 
 Changes:
+New dock model, hopefully makes it less ugly and better fitting in more places
+Palm tree seed (from herbalist) recipe simplified to use only coconuts
+Turtle shield previously used only by footman now usable by any meele combat job.
 
 Changes for ACE:
-Updated fisher firepit model and now using ace fuel system
-Palm trees are one of the new options for orchard farms while on the biome
-Magma from volcanos give warm buff
+Fisher will now only use "field worker" equipments, not "crafters" equipments (e.g. winter clothes)
+Added custom foraging loot for the biome
+Fisher added into new output filter options
+Added food made of fish to ace "Food with Fish" filters
 
 Fixes:
 (for ACE mod)

@@ -9,7 +9,6 @@
 			]
 		},
 		"archipelago_biome:dock": {
-			"no_legs":true,
 			"no_water":true,
 			"dock_spot_offset":-4,
 			"reverse_facing":true,

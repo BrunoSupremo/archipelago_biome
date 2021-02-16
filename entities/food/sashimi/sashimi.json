@@ -48,7 +48,9 @@
 			"material_tags":[
 				"food",
 				"raw_food",
+				"prepared_food",
 				"meat",
+				"fish",
 				"sashimi",
 				"stockpile_raw_food",
 				"stockpile_prepared_food"

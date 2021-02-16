@@ -1,10 +1,9 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 20.12.5")
+print("Archipelago Biome Mod version 21.2.15")
 
 --[[
 
-redo dock urgent, it is ugly
-	fish anywhere near water, docks will be just a prefered place
+fish anywhere near water, docks will be just a prefered place
 
 seaweed seeds
 	seaweed ace farm

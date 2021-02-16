@@ -12,10 +12,6 @@
 		{
 			"uri": "archipelago_biome:food:coconut",
 			"count": 2
-		},
-		{
-			"uri": "stonehearth:consumables:healing_tonic:small",
-			"count": 1
 		}
 	],
 	"produces": [

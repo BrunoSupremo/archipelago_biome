@@ -6,7 +6,6 @@
 			"default": "archipelago_biome:effects:ice_dock_bubbles"
 		},
 		"archipelago_biome:dock": {
-			"no_legs":true,
 			"no_water":true,
 			"dock_spot_offset":3
 		},

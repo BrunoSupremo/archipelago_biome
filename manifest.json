@@ -77,7 +77,6 @@
 		"decoration:big_fish_hanging":	"file(entities/decoration/big_fish_hanging)",
 		"decoration:ice_dock":			"file(entities/decoration/ice_dock)",
 		"decoration:dock":				"file(entities/decoration/dock)",
-		"decoration:dock_leg":			"file(entities/decoration/dock/dock_leg.json)",
 		"decoration:dock_spot":			"file(entities/decoration/dock/dock_spot.json)",
 		"decoration:fish_pond":			"file(entities/decoration/fish_pond)",
 		"decoration:fish_container":	"file(entities/decoration/fish_container)",
@@ -281,13 +280,15 @@
 		"weapons:fish_arrow":	"file(entities/weapons/fish_arrow)"
 	},
 	"deprecated_aliases": {
+		"decoration:dock_leg":"file(entities/decoration/dock/dock_leg.json)",
 		"decoration:hammock":"file(entities/decoration/hammock)",
 		"landmark:summon_stone:minor:tropical_island": "file(entities/landmark/summon_stone_tropical_island)",
 		"jobs:firefly_fisher":	"file(jobs/fisher/fisher_description.json)"
 	},
 	"mixintos": {
-		"archipelago_biome:armor:fish_quiver":"stonehearth_ace:mixins:armor:quiver_arrows",
-		"archipelago_biome:armor:turtle_shield":"stonehearth_ace:mixins:armor:heavy_shield",
+		"archipelago_biome:armor:coconut_helmet":	"stonehearth_ace:mixins:armor:heavy_armor_helmet",
+		"archipelago_biome:armor:fish_quiver":		"stonehearth_ace:mixins:armor:quiver_arrows",
+		"archipelago_biome:armor:turtle_shield":	"stonehearth_ace:mixins:armor:heavy_shield",
 
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 		"stonehearth:terrain_blocks" : "file(data/terrain/terrain_blocks.json)",
@@ -412,6 +413,14 @@
 		"stonehearth_ace/jobs/cook/recipes/recipes.json":	"file(jobs/cook/recipes/ace_recipes.json)",
 		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"file(jobs/shaman/recipes)",
 
+		"archipelago_biome:plants:hibiscus":		"autoharvest_mod/mixins/autoharvest_off.json",
+		"archipelago_biome:plants:blue_hibiscus":	"autoharvest_mod/mixins/autoharvest_off.json",
+		"archipelago_biome:trees:bend_palm:large":	"autoharvest_mod/mixins/autoharvest_off.json",
+		"archipelago_biome:trees:bend_palm:small":	"autoharvest_mod/mixins/autoharvest_off.json",
+		"archipelago_biome:trees:palm:large":		"autoharvest_mod/mixins/autoharvest_off.json",
+		"archipelago_biome:trees:palm:small":		"autoharvest_mod/mixins/autoharvest_off.json",
+		"archipelago_biome:trees:papaya":			"autoharvest_mod/mixins/autoharvest_off.json",
+
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
@@ -450,6 +459,7 @@
 		"stonehearth_ace:trapper:fish_trap_anchor_ghost":	"file(jobs/trapper/fish_trap/fish_trap_anchor.json)",
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
+		"stonehearth_ace:ui:output_box:filters": "file(ui/data/output_box_filters.json)",
 		"stonehearth_ace/ui/data/season_icons.json":"file(ui/data/season_icons.json)",
 
 		"archipelago_biome:weapons:crab_pincer":"stonehearth_ace:mixins:weapons:mainhand",

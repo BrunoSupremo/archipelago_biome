@@ -19,6 +19,7 @@
 	"generation_file": "file(archipelago_generation_data.json)",
 	"tower_defense_generation_file": "file(tower_defense/archipelago_generation_data.json)",
 	"default_starting_season": "dry",
+	"foraging_spot_uri": "file(ace_foraging_spot.json)",
 	"seasons": {
 		"dry": {
 			"humidity": 0.5,

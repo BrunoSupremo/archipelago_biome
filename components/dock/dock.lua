@@ -4,11 +4,12 @@ local ArchipelagoDock = class()
 local VERSIONS = {
 	ZERO = 0,
 	DOCK_SPOT_FOR_MULTIPLAYER = 1,
-	SAVED_LEGS = 2
+	SAVED_LEGS = 2,
+	NO_LEGS = 3
 }
 
 function ArchipelagoDock:get_version()
-	return VERSIONS.SAVED_LEGS
+	return VERSIONS.NO_LEGS
 end
 
 function ArchipelagoDock:fixup_post_load(old_save_data)
@@ -28,19 +29,26 @@ function ArchipelagoDock:fixup_post_load(old_save_data)
 			end
 		end
 	end
+	if old_save_data.version < VERSIONS.NO_LEGS then
+		--docks do not have legs anymore
+		self._delay = radiant.on_game_loop_once('NO_LEGS delay', function()
+			for i,v in ipairs(self._sv.saved_legs) do
+				radiant.entities.destroy_entity(v)
+			end
+			self._sv.saved_legs = nil
+		end)
+	end
 end
 
 function ArchipelagoDock:initialize()
 	self._sv.dock_spot = nil
-	self._sv.saved_legs = {}
 	self.__saved_variables:mark_changed()
 end
 
 function ArchipelagoDock:activate()
 	local json = radiant.entities.get_json(self)
-	self.no_legs = json.no_legs or false
 	self.no_water = json.no_water or false
-	self.dock_spot_offset = json.dock_spot_offset or -1
+	self.dock_spot_offset = json.dock_spot_offset or 0
 	self.reverse_facing = json.reverse_facing
 
 	if not self._added_to_world_listener then
@@ -50,7 +58,6 @@ function ArchipelagoDock:activate()
 	end
 	if not self._removed_from_world_listener then
 		self._removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', function()
-			self:remove_legs()
 			self:remove_fishing_spot()
 		end)
 	end
@@ -66,9 +73,6 @@ function ArchipelagoDock:on_added_to_world()
 		--for some reason, location is nil when the on_added event fires,
 		--so I have to wait 1gametick for it to be set, and it is done running inside this
 		local location = radiant.entities.get_world_grid_location(self._entity)
-		if location and not self.no_legs and not next(self._sv.saved_legs) then
-			self:add_legs(location)
-		end
 		if location and self.no_water then
 			self:add_fishing_spot(location)
 		end
@@ -125,34 +129,7 @@ function ArchipelagoDock:remove_fishing_spot()
 	self.__saved_variables:mark_changed()
 end
 
-function ArchipelagoDock:add_legs(location)
-	local edge = self:_get_dock_edge(self._entity,location)
-	local facing = radiant.entities.get_facing(self._entity)
-	local edge_offset = edge - Point3.unit_y
-	local leg_offset = radiant.math.rotate_about_y_axis( Point3(0, 1, -0.2), facing)
-	while not radiant.terrain.is_blocked(edge_offset) and edge_offset.y >0 do
-		--todo: allow other leg types, and random types
-		local leg = radiant.entities.create_entity("archipelago_biome:decoration:dock_leg",
-			{owner = self._entity:get_player_id()})
-		table.insert(self._sv.saved_legs, leg)
-		radiant.terrain.place_entity_at_exact_location(leg, edge_offset)
-		local facing = radiant.entities.get_facing(self._entity)
-		radiant.entities.turn_to(leg, facing)
-		edge_offset = edge_offset - leg_offset
-	end
-	self.__saved_variables:mark_changed()
-end
-
-function ArchipelagoDock:remove_legs()
-	for i,v in ipairs(self._sv.saved_legs) do
-		radiant.entities.destroy_entity(v)
-	end
-	self._sv.saved_legs = {}
-	self.__saved_variables:mark_changed()
-end
-
 function ArchipelagoDock:destroy()
-	self:remove_legs()
 	self:remove_fishing_spot()
 	if self._added_to_world_listener then
 		self._added_to_world_listener:destroy()

@@ -9,6 +9,20 @@
 				"models": [
 					"file(coconut_helmet.qb)"
 				]
+			},
+			"female": {
+				"layer": "hat",
+				"transparent": "false",
+				"models": [
+					"file(coconut_helmet_female.qb)"
+				]
+			},
+			"firefly_goblin": {
+				"layer": "hat",
+				"transparent": "false",
+				"models": [
+					"file(coconut_helmet_goblin.qb)"
+				]
 			}
 		},
 		"stonehearth:entity_forms": {
@@ -18,10 +32,6 @@
 			"render_type": "merge_with_model",
 			"slot": "helmet",
 			"ilevel": 1,
-			"injected_buffs": [
-				"stonehearth_ace:buffs:weather:hot_resist",
-				"stonehearth_ace:buffs:weather:sunstroke_resist"
-			],
 			"required_job_level": 1,
 			"roles":["combat"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
@@ -46,7 +56,13 @@
 			"description": "i18n(archipelago_biome:entities.armor.coconut_helmet.description)",
 			"icon": "file(coconut_helmet.png)",
 			"category": "armor",
-			"material_tags": ["coconut", "helmet", "armor", "heavy_armor", "stockpile_equipment"]
+			"material_tags": [
+				"coconut",
+				"helmet",
+				"armor",
+				"heavy_armor",
+				"stockpile_equipment"
+			]
 		}
 	}
 }

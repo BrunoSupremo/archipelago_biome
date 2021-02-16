@@ -1,0 +1,61 @@
+{
+	"mixins": "stonehearth_ace:terrain:foraging_spot",
+	"components": {
+		"stonehearth:resource_node": {
+			"resource_loot_table": {
+				"entries": {
+					"optional": {
+						"items": {
+							"nothing": {
+								"weight": 45
+							},
+							"bough": {
+								"weight": 4
+							},
+							"bough_evergreen": {
+								"weight": 2
+							},
+							"random_fungus": {
+								"type": "bag",
+								"uri": "stonehearth_ace:loot_bag:foraging:temperate:fungi",
+								"weight": 5
+							},
+							"fiber": {
+								"uri": "stonehearth:resources:fiber:silkweed_bundle",
+								"weight": 1
+							},
+							"random_herb": {
+								"uri": "stonehearth:resources:herb:brightbell",
+								"weight": 5
+							},
+							"random_herb2": {
+								"uri": "archipelago_biome:resources:herb:hibiscus",
+								"weight": 3
+							},
+							"random_herb3": {
+								"uri": "stonehearth_ace:resources:herb:foxlily",
+								"weight": 1
+							},
+							"coconut": {
+								"uri": "archipelago_biome:food:coconut",
+								"weight": 1
+							},
+							"random_seed_tree": {
+								"uri": "archipelago_biome:trees:dranden:seed",
+								"weight": 0.75
+							},
+							"random_seed_tree2": {
+								"uri": "archipelago_biome:trees:smalea:seed",
+								"weight": 0.75
+							},
+							"random_seed_tree3": {
+								"uri": "archipelago_biome:trees:papaya:seed",
+								"weight": 0.25
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

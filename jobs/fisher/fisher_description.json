@@ -17,7 +17,11 @@
 		"torso": "file(fisher_outfit)",
 		"mainhand": "archipelago_biome:fisher:rod"
 	},
-	"roles":["fisher_job", "crafter", "field_work"],
+	"roles":[
+		"fisher_job",
+		"field_work",
+		"fish_trap_placer"
+	],
 	"icon": "file(images/icon.png)",
 	"task_groups": [
 		"archipelago_biome:task_groups:fishing",

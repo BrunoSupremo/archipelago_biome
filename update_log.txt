@@ -1,16 +1,12 @@
 Additions:
-Coconut Helmet, for any combat job, craftable at weavers
+Boiled Crab recipe for fisher and cook
+Mermaid mini quest challenge. Have too many fish and she will appear, not happy.
 
 Changes:
-New dock model, hopefully makes it less ugly and better fitting in more places
-Palm tree seed (from herbalist) recipe simplified to use only coconuts
-Turtle shield previously used only by footman now usable by any meele combat job.
 
 Changes for ACE:
-Fisher will now only use "field worker" equipments, not "crafters" equipments (e.g. winter clothes)
-Added custom foraging loot for the biome
-Fisher added into new output filter options
-Added food made of fish to ace "Food with Fish" filters
+Correctly tagged the biome flowers for the new herbalist herb system
+Daylily and Oleanders (ACE flowers) can generate on the biome
 
 Fixes:
 (for ACE mod)

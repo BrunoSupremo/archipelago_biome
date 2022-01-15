@@ -1,0 +1,44 @@
+{
+	"landscape": {
+		"placement_table": {
+			"stonehearth_ace:plants:daylily": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.1,
+					"exclusion_radius": 1
+				}
+			},
+			"stonehearth_ace:plants:oleander": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.1,
+					"exclusion_radius": 1
+				}
+			}
+		},
+		"scattered": {
+			"plants": {
+				"weights": {
+					"foothills": {
+						"1": {
+							"stonehearth_ace:plants:daylily": 0.25,
+							"stonehearth_ace:plants:oleander": 0.25
+						}
+					},
+					"mountains": {
+						"1": {
+							"stonehearth_ace:plants:daylily": 0.25,
+							"stonehearth_ace:plants:oleander": 0.25
+						},
+						"2": {
+							"stonehearth_ace:plants:daylily": 0.25,
+							"stonehearth_ace:plants:oleander": 0.25
+						}
+					}
+				}
+			}
+		}
+	}
+}

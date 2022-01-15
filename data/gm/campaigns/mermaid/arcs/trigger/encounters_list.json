@@ -1,0 +1,15 @@
+{
+	"type": "arc",
+	"rarity": "common",
+	"encounters": {
+		"start": "file(encounters/start.json)",
+		"resource_check_encounter": "file(encounters/resource_check_encounter.json)",
+		"fish_check": "file(encounters/fish_check.json)",
+		"mermaid_warning": "file(encounters/mermaid_warning.json)",
+		"wait_to_start_mermaid_wrath": "file(encounters/wait_to_start_mermaid_wrath.json)",
+		"mermaid_wrath": "file(encounters/mermaid_wrath.json)",
+		"wait_to_destroy_resource_raids": "file(encounters/wait_to_destroy_resource_raids.json)",
+		"destroy_resource_raids": "file(encounters/destroy_resource_raids.json)",
+		"mermaid_donation_dialog": "file(encounters/mermaid_donation_dialog.json)"
+	}
+}

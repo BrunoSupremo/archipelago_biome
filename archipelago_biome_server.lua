@@ -1,12 +1,11 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 21.2.15")
+print("Archipelago Biome Mod version 22.1.13")
 
 --[[
 
 fish anywhere near water, docks will be just a prefered place
 
 seaweed seeds
-	seaweed ace farm
 
 add jellyfish
 rework pirate hat

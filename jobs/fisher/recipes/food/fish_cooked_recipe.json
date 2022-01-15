@@ -6,7 +6,7 @@
 	"description": "i18n(archipelago_biome:entities.food.fish_cooked.recipe.description)",
 	"flavor": "i18n(archipelago_biome:entities.food.fish_cooked.recipe.flavor)",
 	"portrait" : "/archipelago_biome/entities/food/fish_cooked/fish_cooked.png",
-	"level_requirement": 3,
+	"level_requirement": 2,
 	"workshop": "archipelago_biome:fisher:firepit",
 	"ingredients": [
 		{

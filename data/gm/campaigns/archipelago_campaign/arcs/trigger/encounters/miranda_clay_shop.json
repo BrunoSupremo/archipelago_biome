@@ -22,22 +22,6 @@
 					}
 				},
 				{
-					"items_matching": {
-						"stone stuff": {
-							"category": [
-								"resources"
-							],
-							"material": [
-								"wood"
-							]
-						}
-					},
-					"quantity": {
-						"min": 0,
-						"max": 2
-					}
-				},
-				{
 					"items": [
 						"stonehearth:resources:wood:palm_log",
 						"stonehearth:containers:log_pile",

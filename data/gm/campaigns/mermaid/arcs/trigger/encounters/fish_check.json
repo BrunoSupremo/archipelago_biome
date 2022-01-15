@@ -1,0 +1,13 @@
+{
+	"type": "encounter",
+	"encounter_type": "item_threshold",
+	"in_edge": "fish_check",
+	"out_edge": "mermaid_warning",
+	"item_threshold_info": {
+		"materials": [
+			"mermaid_radar"
+		],
+		"check": "greater_than",
+		"threshold": 50
+	}
+}

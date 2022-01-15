@@ -45,6 +45,8 @@
 		"buffs:boat": "file(data/buffs/boat)",
 		"buff_scripts:boat": "file(data/buffs/boat/boat_script.lua)",
 
+		"building_templates:index": "file(data/saved_objects/building_templates_index.json)",
+
 		"captain_miranda":	"file(entities/humans/captain_miranda)",
 		"anya":				"file(entities/humans/anya)",
 
@@ -122,6 +124,7 @@
 		"food:crab":				 "file(entities/food/crab)",
 		"food:crab_bisque":			 "file(entities/food/crab_bisque/crab_bisque)",
 		"food:crab_bisque_serving":	 "file(entities/food/crab_bisque/crab_bisque_serving)",
+		"food:crab_boiled":			 "file(entities/food/crab_boiled)",
 		"food:crab_cake":			 "file(entities/food/crab_cake)",
 		"food:crab_omelette":		 "file(entities/food/crab_omelette/crab_omelette)",
 		"food:crab_omelette_serving":"file(entities/food/crab_omelette/crab_omelette_serving)",
@@ -331,6 +334,8 @@
 		"stonehearth/data/biome/desert/manifest.json":	"file(data/biome/desert/manifest.json)",
 		"stonehearth/data/biome/temperate.json":		"file(data/biome/temperate.json)",
 
+		"archipelago_biome/data/biome/archipelago_generation_data.json":"stonehearth_ace/archipelago_biome/data/biome/ace_generation_data.json",
+
 		"tower_defense/data/compatible_mods.json": "file(data/compatible_mods.json)",
 
 		"stonehearth:data:constants": "file(data/constants.json)",
@@ -395,6 +400,12 @@
 		"stonehearth:farmer:all_crops": "file(services/server/farming/data/all_crops.json)",
 
 		"archipelago_biome:fisher:firepit":	"stonehearth_ace:mixins:workbench:cook_oven",
+
+		"stonehearth_ace:food:fish_meat":			"file(data/gm/campaigns/mermaid/mermaid_radar.json)",
+		"stonehearth_ace:food:fish_meat:carp":		"file(data/gm/campaigns/mermaid/mermaid_radar.json)",
+		"stonehearth_ace:food:fish_meat:catfish":	"file(data/gm/campaigns/mermaid/mermaid_radar.json)",
+		"stonehearth_ace:food:fish_meat:salmon":	"file(data/gm/campaigns/mermaid/mermaid_radar.json)",
+		"stonehearth_ace:food:fish_meat:trout":		"file(data/gm/campaigns/mermaid/mermaid_radar.json)",
 
 		"archipelago_biome:jobs:fisher":"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json",
 		"archipelago_biome/jobs/fisher/fisher_abilities/fisher_abilities.json":"stonehearth_ace/archipelago_biome/jobs/common/ace_abilities.json",
@@ -491,6 +502,8 @@
 		"stonehearth/data/rigs/entities/rabbit_biped/effects/fishing_end.json":		"file(data/rigs/entities/humans/effects/fishing_end.json)",
 		"stonehearth/data/rigs/entities/rabbit_biped/effects/sitting_drink.json":			"file(data/rigs/entities/rabbit_biped/effects/sitting_drink.json)",
 		"stonehearth/data/rigs/entities/rabbit_biped/effects/sitting_on_chair_drink.json":	"file(data/rigs/entities/rabbit_biped/effects/sitting_on_chair_drink.json)",
+
+		"stonehearth_ace/archipelago_biome/data/biome/ace_generation_data.json":"archipelago_biome/data/biome/ace_generation_data.json",
 
 		"stonehearth_ace/archipelago_biome/jobs/common/ace_abilities.json":	"archipelago_biome/jobs/common/ace_abilities.json",
 		"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json":	"archipelago_biome/jobs/fisher/ace_description.json"

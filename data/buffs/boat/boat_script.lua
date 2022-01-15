@@ -4,6 +4,9 @@ local Point3 = _radiant.csg.Point3
 function BoatAddBuffOnExpire:on_buff_removed(entity, buff)
 	if buff and buff:is_duration_expired() then
 		local location = radiant.entities.get_world_grid_location(entity)
+		if not location then
+			return
+		end
 		if radiant.terrain.is_blocked(location - Point3.unit_y) then
 			local entity_container = entity:get_component('entity_container')
 			if entity_container then

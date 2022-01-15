@@ -1,0 +1,16 @@
+{
+	"Hi": "This is a quick guide explaining some areas of the mod and how they work",
+
+	"data":{
+		"biome":{
+			"seasons":"Consider 'dry' as similar to usual summer, and 'wet' similar to spring."
+		},
+		"fishing":"'/data/fishing/fishing.json' has all the fisher loot table on it. Inside itself there are instructions on how it works"
+	},
+	"entities":{
+		"material_tags":{
+			"hangable":"Used for fish that can be stocked (hang) on the fish rack",
+			"mermaid_radar":"This item will be tracked in the mermaid quest. If the player have too many of these, it will trigger her. Usually for fish and other water resources"
+		}
+	}
+}

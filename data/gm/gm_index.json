@@ -11,6 +11,9 @@
 		},
 		"archipelago_unlock_stuff": {
 			"archipelago_unlock_stuff": "file(campaigns/archipelago_unlock_stuff)"
+		},
+		"mermaid": {
+			"mermaid": "file(campaigns/mermaid)"
 		}
 	}
 }

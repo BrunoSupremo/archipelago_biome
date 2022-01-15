@@ -37,6 +37,9 @@
 				"fish_cooked" : {
 					"recipe" : "file(food/fish_cooked_recipe.json)"
 				},
+				"crab_boiled" : {
+					"recipe" : "file(food/crab_boiled_recipe.json)"
+				},
 				"crab_bisque" : {
 					"recipe" : "file(food/crab_bisque_recipe.json)"
 				}

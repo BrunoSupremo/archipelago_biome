@@ -205,7 +205,12 @@ end
 
 function FisherClass:_on_got_a_fish(args)
 	local fish_key = self.current_fish_key
-	local level = "level_"..self:get_job_level()
+	local level = self:get_job_level()
+	if level<1 or level>6 then
+		error("🔴 INVALID LEVEL "..level.." 🔴 There is no fishing data for level "..level)
+		level = 1
+	end
+	level = "level_"..level
 	self._sv.fished[level..fish_key] = (self._sv.fished[level..fish_key] or 0) +1
 	self.__saved_variables:mark_changed()
 

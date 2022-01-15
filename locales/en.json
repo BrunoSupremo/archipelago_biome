@@ -253,6 +253,11 @@
 			"crab_bisque_serving": {
 				"display_name": "Bowl of Savory Crab Bisque"
 			},
+			"crab_boiled": {
+				"display_name": "Boiled Crab",
+				"description": "A very simple and easy way to cook crabs.",
+				"flavor": "Taste the true flavor of crab"
+			},
 			"crab_cake": {
 				"display_name": "Crab Cake",
 				"description": "A patty of flaked or minced crab meat, typically served fried.",
@@ -953,6 +958,7 @@
 			"anya": "Anya",
 			"captain_miranda": "Captain Miranda",
 			"goblin_bucket": "Goblin with a bucket",
+			"mermaid": "Mermaid",
 			"campaigns": {
 				"archipelago_tutorial": {
 					"trigger": {
@@ -1057,6 +1063,56 @@
 							"message_1": "Hey cousin. I found this bucket, but it is trash, I have no use for it. It does not fit on my head, see?<br><br><font size=-1>Points to own head</font>",
 							"message_2": "Feel free to do whatever you like with it!<br><br><font size=-1>Rolls it towards your camp, then leaves</font>",
 							"answer": "Thanks!"
+						}
+					}
+				},
+				"mermaid":{
+					"trigger":{
+						"mermaid_warning": {
+							"introduction": {
+								"bulletin_message": {
+									"000": "Greetings, [str(i18n_data.town_name)]. I have come to warn you of the growing unrest within these waters.",
+									"001": "Silently, we have been watching... since even before the fall of the old ones. Why? To protect. Our water."
+								},
+								"bulletin_title": "A mermaid figure approaches."
+							},
+							"collection_due": {
+								"bulletin_message": {
+									"000": "Will you not return the children of the water? They do not belong in your crates and piles of trinkets. Your compliance will be rewarded.",
+									"001": "Hundreds of fish have been caught to satiate the greed. Our patience wears thin. I ask of you, return them home.",
+									"002": "Return our fish and help restore the natural balance of the great waters. I cannot guarantee your safety if you refuse.",
+									"003": "Our wilderness has been sacrificed for your lifestyle of excess. We will give you a chance to return our fish. I suggest you heed my warning..."
+								},
+								"bulletin_title": "The Mermaid has a request."
+							},
+							"collection_failed": {
+								"bulletin_message": {
+									"000": "I am deeply disappointed... I would suggest you prepare yourselves. The minions of the water speak of an invasion."
+								},
+								"bulletin_title": "The Mermaid furrows her brow"
+							},
+							"collection_success": {
+								"bulletin_title": "The Mermaid nods peacefully"
+							},
+							"revenge": {
+								"bulletin_title": "A horde of aquatics escape with your fish!"
+							}
+						},
+						"mermaid_wrath": {
+							"mission": {
+								"sighted_bulletin": {
+									"title": "An angry aquatic army approaches!"
+								}
+							}
+						},
+						"mermaid_donation_dialog": {
+							"donation_dialog_info": {
+								"dialog_nodes": {
+									"simple_message": {
+										"bulletin_title": "Aquatics carrying loot scurry toward you"
+									}
+								}
+							}
 						}
 					}
 				}

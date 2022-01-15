@@ -17,6 +17,9 @@
 				"papaya_cookie" : {
 					"recipe" : "file(papaya_cookie_recipe.json)"
 				},
+				"crab_boiled" : {
+					"recipe" : "file(crab_boiled_recipe.json)"
+				},
 				"crab_bisque" : {
 					"recipe" : "file(crab_bisque_recipe.json)"
 				},

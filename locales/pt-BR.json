@@ -253,6 +253,11 @@
 			"crab_bisque_serving": {
 				"display_name": "Tijela de Bisque de caranguejo"
 			},
+			"crab_boiled": {
+				"display_name": "Caranguejo Cozido",
+				"description": "Uma maneira muito simples e fácil de cozinhar caranguejos.",
+				"flavor": "Prove o verdadeiro sabor do caranguejo"
+			},
 			"crab_cake": {
 				"display_name": "Bolinho de Caranguejo",
 				"description": "Empada de carne de caranguejo em flocos ou picada, normalmente servido frito.",
@@ -953,6 +958,7 @@
 			"anya": "Anya ",
 			"captain_miranda": "Capitã Miranda",
 			"goblin_bucket": "Goblin com um balde",
+			"mermaid": "Sereia",
 			"campaigns": {
 				"archipelago_tutorial": {
 					"trigger": {
@@ -1055,6 +1061,56 @@
 							"message_1": "Ei primo. Eu achei esse balde, mas é um lixo, não serve pra nada. Não cabe na minha cabeça, ó!<br><br><font size=-1>(Aponta pra cabeça)</font>",
 							"message_2": "Pode fazer o que quiser com ele<br><br><font size=-1>(Rola o balde até seu acampamento, e depois vai embora)</font>",
 							"answer": "Obrigado!"
+						}
+					}
+				},
+				"mermaid":{
+					"trigger":{
+						"mermaid_warning": {
+							"introduction": {
+								"bulletin_message": {
+									"000": "Saudações, [str(i18n_data.town_name)]. Eu vim para avisá-lo da crescente inquietação dentro dessas águas.",
+									"001": "Silenciosamente, estamos observando... desde antes mesmo da queda dos antigos. Por quê? Proteger. Nossa água."
+								},
+								"bulletin_title": "Uma figura de sereia se aproxima."
+							},
+							"collection_due": {
+								"bulletin_message": {
+									"000": "Você não devolverá os filhos da água? Eles não pertencem às suas caixas e pilhas de bugigangas. Sua conformidade será recompensada.",
+									"001": "Centenas de peixes foram capturados para saciar a ganância. Nossa paciência se esgota. Eu peço a você, devolva-os para casa.",
+									"002": "Devolva nossos peixes e ajude a restabelecer o equilíbrio natural das grandes águas. Não posso garantir sua segurança se você recusar.",
+									"003": "Nossa região foi sacrificada por seu estilo de vida de excessos. Nós lhe daremos a chance de devolver nosso peixe. Sugiro que preste atenção ao meu aviso..."
+								},
+								"bulletin_title": "A Sereia tem um pedido."
+							},
+							"collection_failed": {
+								"bulletin_message": {
+									"000": "Estou profundamente desapontada... Sugiro que se preparem. Os lacaios da água falam de uma invasão."
+								},
+								"bulletin_title": "A sereia franze a testa"
+							},
+							"collection_success": {
+								"bulletin_title": "A sereia acena pacificamente"
+							},
+							"revenge": {
+								"bulletin_title": "Uma horda de aquáticos escapa com seus peixes!"
+							}
+						},
+						"mermaid_wrath": {
+							"mission": {
+								"sighted_bulletin": {
+									"title": "Um exército aquático furioso se aproxima!"
+								}
+							}
+						},
+						"mermaid_donation_dialog": {
+							"donation_dialog_info": {
+								"dialog_nodes": {
+									"simple_message": {
+										"bulletin_title": "Aquáticos carregando saques correm em sua direção"
+									}
+								}
+							}
 						}
 					}
 				}

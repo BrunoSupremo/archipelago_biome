@@ -9,6 +9,7 @@
 	"image": "file(images/archipelago_400x300.jpg)",
 	"story_board_image": "file(images/archipelago_story_board.jpg)",
 	"game_mode_images": {
+		"stonehearth_ace:game_mode:gentle": "file(images/archipelago_story_normal.png)",
 		"stonehearth:game_mode:normal": "file(images/archipelago_story_normal.png)",
 		"stonehearth:game_mode:hard": "file(images/archipelago_story_hard.png)"
 	},
@@ -20,6 +21,25 @@
 	"tower_defense_generation_file": "file(tower_defense/archipelago_generation_data.json)",
 	"default_starting_season": "dry",
 	"foraging_spot_uri": "file(ace_foraging_spot.json)",
+	"native_crops": {
+		"brightbell": true,
+		"frostsnap": true,
+		"oleander": true,
+		"daylily": true,
+		"silkweed": true,
+		"sugarbell": true,
+		"water_lily_pad": true,
+		"water_lily_pink": true,
+		"water_lily_purple": true,
+		"water_lily_white": true,
+		"water_lily_yellow": true,
+		"algae_green": true,
+		"algae_red": true,
+		"algae_brown": true,
+		"bolete": true,
+		"sweet_tooth": true,
+		"parasol": true
+	},
 	"seasons": {
 		"dry": {
 			"humidity": 0.5,

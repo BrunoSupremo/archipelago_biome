@@ -196,7 +196,7 @@
 		"dusty_tome":{
 			"alias":"stonehearth:loot:dusty_tome",
 			"weight":5,
-			"max_limit":1,
+			"max_limit":2,
 			"is_biome_exclusive":[
 				"stonehearth:biome:desert"
 			],

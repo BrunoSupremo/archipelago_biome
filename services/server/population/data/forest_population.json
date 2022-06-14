@@ -7,6 +7,13 @@
 				]
 			}
 		},
+		"jellyfish": {
+			"male": {
+				"uri": [
+					"archipelago_biome:monsters:jellyfish"
+				]
+			}
+		},
 		"octopus": {
 			"male": {
 				"uri": [

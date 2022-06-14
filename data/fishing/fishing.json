@@ -1,29 +1,53 @@
 {
 	"level_1":{
 		"default_fish":{
+			"_underline_prefixes":"are just for comments/instructions",
+
 			"alias":"archipelago_biome:food:fish",
 			"_alias":"alias of the desired item that can be fished",
+
 			"weight":100,
 			"_weight":"a number > 0. relative chance of getting this item instead of the others",
+
 			"_max_limit":"optional. a number > 0, how many times the fisher can get this item",
+
 			"_bulletin":{
 				"_comment":"optional. shows a notification when the fisher get this item.",
 				"_title":"the notification and bulletin title",
 				"_message":"whatever you want to appear as text in the bulletin",
 				"_image":"address of the image you want displayed, probably a portrait of the item"
 			},
-			"_is_biome_exclusive":[
-				"optional. it makes the item only available in the listed biomes",
+
+			"_is_biome":[
+				"optional. it makes the item only available for the listed biomes",
 				"stonehearth:biome:temperate",
 				"stonehearth:biome:desert"
 			],
-			"_is_kingdom_exclusive":[
+			"_is_not_biome":[
+				"optional. it prohibits the item for the listed biomes",
+				"stonehearth:biome:temperate",
+				"stonehearth:biome:desert"
+			],
+
+			"_is_kingdom":[
 				"optional. it makes the item only available for the listed kingdoms",
 				"stonehearth:kingdoms:ascendancy",
 				"rayyas_children:kingdoms:rayyas_children"
 			],
+			"_is_not_kingdom":[
+				"optional. it prohibits the item for the listed kingdoms",
+				"stonehearth:kingdoms:ascendancy",
+				"rayyas_children:kingdoms:rayyas_children"
+			],
+
+			"(is_) and (is_not_)":[
+				"are mutually exclusive, you can't use both",
+				"when none is used, the item will simple have no restriction",
+			],
+
 			"effort":120,
 			"_effort":"a number > 0. how long in (game) minutes it takes to fish this item",
+
 			"xp":15,
 			"_xp":"a number > 0. rewarded xp after the action. ~100xp is required to reach level 2"
 		},
@@ -36,7 +60,7 @@
 		"ice_cube":{
 			"alias":"archipelago_biome:resources:ice_cube",
 			"weight":50,
-			"is_biome_exclusive":[
+			"is_biome":[
 				"stonehearth:biome:arctic"
 			],
 			"effort":60,
@@ -71,7 +95,7 @@
 				"message":"i18n(archipelago_biome:data.fishing.turtle_shield.message)",
 				"image":"/archipelago_biome/entities/armor/turtle_shield/turtle_shield.png"
 			},
-			"is_biome_exclusive":[
+			"is_biome":[
 				"archipelago_biome:biome:archipelago"
 			],
 			"effort":100,
@@ -80,7 +104,7 @@
 		"ice_cube":{
 			"alias":"archipelago_biome:resources:ice_cube",
 			"weight":25,
-			"is_biome_exclusive":[
+			"is_biome":[
 				"stonehearth:biome:arctic"
 			],
 			"effort":50,
@@ -109,7 +133,7 @@
 		"ice_cube":{
 			"alias":"archipelago_biome:resources:ice_cube",
 			"weight":12,
-			"is_biome_exclusive":[
+			"is_biome":[
 				"stonehearth:biome:arctic"
 			],
 			"effort":40,
@@ -138,7 +162,7 @@
 		"ice_cube":{
 			"alias":"archipelago_biome:resources:ice_cube",
 			"weight":6,
-			"is_biome_exclusive":[
+			"is_biome":[
 				"stonehearth:biome:arctic"
 			],
 			"effort":30,
@@ -167,7 +191,7 @@
 		"ice_cube":{
 			"alias":"archipelago_biome:resources:ice_cube",
 			"weight":3,
-			"is_biome_exclusive":[
+			"is_biome":[
 				"stonehearth:biome:arctic"
 			],
 			"effort":20,
@@ -197,10 +221,10 @@
 			"alias":"stonehearth:loot:dusty_tome",
 			"weight":5,
 			"max_limit":2,
-			"is_biome_exclusive":[
+			"is_biome":[
 				"stonehearth:biome:desert"
 			],
-			"is_kingdom_exclusive":[
+			"is_kingdom":[
 				"rayyas_children:kingdoms:rayyas_children"
 			],
 			"bulletin":{
@@ -232,7 +256,7 @@
 		"ice_cube":{
 			"alias":"archipelago_biome:resources:ice_cube",
 			"weight":1,
-			"is_biome_exclusive":[
+			"is_biome":[
 				"stonehearth:biome:arctic"
 			],
 			"effort":10,

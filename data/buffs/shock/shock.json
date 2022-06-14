@@ -1,0 +1,22 @@
+{
+	"type": "buff",
+	"axis": "debuff",
+	"display_name": "i18n(stonehearth:data.buffs.weather.hit_by_lightning_debuff.display_name)",
+	"description": "i18n(stonehearth:data.buffs.weather.hit_by_lightning_debuff.description)",
+	"icon": "/stonehearth/data/buffs/weather/hit_by_lightning_debuff.png",
+	"duration": "5m",
+	"effect": "archipelago_biome:effects:electric:shock",
+	"modifiers": {
+		"courage": {
+			"max": 0
+		},
+		"speed": {
+			"max": 0
+		}
+	},
+	"injected_ai": {
+		"actions": [
+			"stonehearth:actions:compelled_behaviors:struggle"
+		]
+	}
+}

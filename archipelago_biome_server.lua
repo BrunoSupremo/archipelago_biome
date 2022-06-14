@@ -1,13 +1,13 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 22.1.13")
+print("Archipelago Biome Mod version 22.6.13")
 
 --[[
 
+spawn whale, maybe from turtle rig. or as a fancy and decorated landmark
+wave effect for storm weather
+
 fish anywhere near water, docks will be just a prefered place
 
-seaweed seeds
-
-add jellyfish
 rework pirate hat
 
 Bugs:

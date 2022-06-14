@@ -8,7 +8,7 @@
 				"samplers" : [
 					{
 						"name" : "foregroundMap",
-						"map": "file(no_water_overlay.png)"
+						"map": "file(harvest_papaya.png)"
 					},
 					{
 						"name" : "albedoMap",

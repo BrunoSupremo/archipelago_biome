@@ -13,13 +13,6 @@
 				"fn":"find_nearby_water"
 			}
 		},
-		"stonehearth:renewable_resource_node": {
-			"category": "soon_to_be_removed",
-			"_harvest_overlay_effect": "archipelago_biome:effects:harvest_crab_overlay",
-			"resource": "archipelago_biome:food:crab",
-			"renewal_time": "1d",
-			"start_unharvestable": true
-		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(crab_trap_iconic.json)",
 			"ghost_form": "file(crab_trap_ghost.json)",

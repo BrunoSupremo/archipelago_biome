@@ -6,13 +6,12 @@
 			"resource": "stonehearth:resources:wood:palm_log"
 		},
 		"stonehearth:renewable_resource_node": {
-			"show_autoharvest_ui": true,
 			"harvester_effect": "work_high",
 			"category": "harvest",
 			"resource": "archipelago_biome:food:coconut",
 			"renewal_time": "24h",
 			"unripe_description": "i18n(archipelago_biome:entities.trees.common_palm.unripe_description)",
-			"harvest_overlay_effect": "archipelago_biome:effects:harvest_coconut_overlay"
+			"harvest_overlay_effect": "archipelago_biome:effects:overlay:harvest_coconut"
 		},
 		"mob": {
 			"align_to_grid": [

@@ -1,0 +1,29 @@
+{
+	"type": "recipe",
+	"effort": 32,
+	"work_units": 5,
+	"recipe_name": "i18n(archipelago_biome:jobs.herbalist.recipes.hibiscus_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.brightbell_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.brightbell_transmute_recipe.flavor)",
+	"portrait": "/archipelago_biome/entities/beach/seaweed/seed/seed.png",
+	"workshop": "stonehearth:herbalist:workbench",
+	"ace_smart_crafter_ignore": true,
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"uri": "stonehearth:resources:fiber:silkweed_bundle",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "archipelago_biome:beach:seaweed:seed"
+		},
+		{
+			"item": "archipelago_biome:beach:seaweed:seed"
+		},
+		{
+			"item": "archipelago_biome:beach:seaweed:seed"
+		}
+	]
+}

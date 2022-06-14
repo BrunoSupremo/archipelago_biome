@@ -1,0 +1,56 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:monsters:forest:entling",
+	"components": {
+		"render_info": {
+			"model_variant": "jellyfish"
+		},
+		"model_variants": {
+			"jellyfish": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(jellyfish.qb)",
+							"file(jellyfish_pink.qb)"
+						]
+					}
+				]
+			}
+		},
+		"stonehearth:equipment": {
+			"items": [
+				"file(jellyfish_weapon.json)"
+			]
+		},
+		"stonehearth:loot_drops": {
+			"entries": {
+				"default": {
+					"num_rolls": {
+						"min": 0,
+						"max": 0
+					}
+				},
+				"jellyfish_loot": {
+					"num_rolls": {
+						"min": 1,
+						"max": 1
+					},
+					"items": {
+						"coconut": {
+							"uri": "archipelago_biome:food:fish",
+							"weight": 10
+						}
+					}
+				}
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.monsters.jellyfish.display_name)",
+			"description": "i18n(archipelago_biome:entities.monsters.jellyfish.description)",
+			"icon":"file(jellyfish.png)"
+		}
+	}
+}

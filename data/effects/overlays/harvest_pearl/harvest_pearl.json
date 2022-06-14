@@ -8,7 +8,7 @@
 				"samplers" : [
 					{
 						"name" : "foregroundMap",
-						"map": "file(harvest_coconut_overlay.png)"
+						"map": "file(harvest_pearl.png)"
 					},
 					{
 						"name" : "albedoMap",

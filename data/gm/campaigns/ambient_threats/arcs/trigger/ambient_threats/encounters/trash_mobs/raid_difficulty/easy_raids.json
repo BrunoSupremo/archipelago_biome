@@ -1,6 +1,7 @@
 {
 	"out_edge": {
 		"out_edges": [
+			"jellyfish_raid_2",
 			"octopus_raid_2",
 			"oyster_raid_2"
 		]

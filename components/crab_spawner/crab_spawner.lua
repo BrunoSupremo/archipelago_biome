@@ -11,7 +11,6 @@ function ArchipelagoCrabSpawner:initialize()
 end
 
 function ArchipelagoCrabSpawner:post_activate()
-	self._entity:remove_component("stonehearth:renewable_resource_node")
 	local task_tracker_component = self._entity:get_component('stonehearth:task_tracker')
 	if task_tracker_component then
 		task_tracker_component:cancel_current_task(true)

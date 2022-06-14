@@ -714,10 +714,6 @@
 					"description": "이것으로 게를 잡을 수 있습니다. 물 근처에만 설치할 수 있습니다.",
 					"flavor": ""
 				},
-				"fish_trap_recipe": {
-					"recipe_name": "생선 트랩(ACE)",
-					"description": "어부 (및 함정설치자)가 물고기를 안전하게 잡아 수확하기 위해 사용합니다. 수송을 위해 물고기를 잡는 데에도 사용할 수 있습니다."
-				},
 				"fish_container_recipe": {
 					"recipe_name": "물고기 보관고",
 					"description": "당신이 물고기를 더 쉽게 거래할 수 있는 방법.",

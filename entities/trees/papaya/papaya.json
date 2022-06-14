@@ -32,7 +32,7 @@
 			"resource": "archipelago_biome:food:papaya_basket",
 			"renewal_time": "20h+4h",
 			"unripe_description": "i18n(archipelago_biome:entities.trees.papaya.unripe_description)",
-			"harvest_overlay_effect": "archipelago_biome:effects:harvest_papaya_overlay"
+			"harvest_overlay_effect": "archipelago_biome:effects:overlay:harvest_papaya"
 		},
 		"destination": {
 			"region": [

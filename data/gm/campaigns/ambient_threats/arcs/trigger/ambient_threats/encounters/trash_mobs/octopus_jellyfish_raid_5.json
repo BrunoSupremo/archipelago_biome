@@ -1,0 +1,40 @@
+{
+	"type": "encounter",
+	"mixins": "archipelago_biome:mixins:encounter:octopus_raid",
+	"encounter_type": "create_mission",
+	"in_edge": "octopus_jellyfish_raid_5",
+	"out_edge": "wait_to_destroy_raiding_party",
+	"can_start": {
+		"test_1": {
+			"biome_check": {
+				"type": "deny_if_not",
+				"item": "biome",
+				"value": "archipelago_biome:biome:archipelago"
+			}
+		}
+	},
+	"create_mission_info": {
+		"mission": {
+			"ctx_entity_registration_path": "octopus_jellyfish_raid_5",
+			"members": {
+				"octopus": {
+					"from_population": {
+						"min": 1,
+						"max": 1
+					},
+					"tuning": "archipelago_biome:monster_tuning:forest:medium_octopus"
+				},
+				"jellyfish": {
+					"from_population": {
+						"role": "jellyfish",
+						"location": { "x": 0, "z": 0 },
+						"min": 3,
+						"max": 5,
+						"range": 10
+					},
+					"tuning": "archipelago_biome:monster_tuning:forest:easy_octopus"
+				}
+			}
+		}
+	}
+}

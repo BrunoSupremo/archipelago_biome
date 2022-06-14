@@ -37,7 +37,11 @@
 				"unripe_description": "An empty shell."
 			},
 			"seaweed": {
-				"display_name": "Seaweed"
+				"display_name": "Seaweed",
+				"seed": {
+					"display_name": "Seaweed Seed",
+					"description": "After it grows, it can be harvested for fibers"
+				}
 			},
 			"starfish": {
 				"display_name": "Starfish",
@@ -423,6 +427,10 @@
 				"display_name": "Mysterious Crate",
 				"description": "Break it to check what is inside"
 			},
+			"jellyfish": {
+				"display_name": "Jellyfish",
+				"description": "Don't touch it"
+			},
 			"octopus": {
 				"display_name": "Octopus",
 				"description": "Arms, more than you can count"
@@ -719,10 +727,6 @@
 					"description": "It will attract and capture crabs. Requires to be placed in or near water to work.",
 					"flavor": ""
 				},
-				"fish_trap_recipe": {
-					"recipe_name": "Fish Trap (ACE)",
-					"description": "Used by the Fisher (and Trapper) to safely catch and harvest fish. It can also be used to capture fish for transport."
-				},
 				"fish_container_recipe": {
 					"recipe_name": "Fish Container",
 					"description": "Store up to 16 fish",
@@ -797,6 +801,9 @@
 				},
 				"blue_hibiscus_transmute_recipe": {
 					"recipe_name": "Blue Hibiscus Seeds (x3)"
+				},
+				"seaweed_transmute_recipe": {
+					"recipe_name": "Seaweed Seeds (x3)"
 				}
 			}
 		}
@@ -946,6 +953,9 @@
 		},
 		"monster_tuning": {
 			"forest": {
+				"insane_jellyfish": {
+					"description": "Smaller jellyfish tend to flock around them."
+				},
 				"insane_octopus": {
 					"description": "Smaller octopus tend to flock around them."
 				},

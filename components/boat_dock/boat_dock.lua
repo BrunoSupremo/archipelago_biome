@@ -55,7 +55,7 @@ function ArchipelagoBoatDock:create_connections()
 			self:create_platform(other_side)
 			self:create_destination_dock(other_side)
 		else
-			self._sv._effect_overlay = radiant.effects.run_effect(self._entity, "archipelago_biome:effects:no_connection_overlay", nil, nil, { playerColor = radiant.entities.get_player_color(self._entity) })
+			self._sv._effect_overlay = radiant.effects.run_effect(self._entity, "archipelago_biome:effects:overlay:no_connection", nil, nil, { playerColor = radiant.entities.get_player_color(self._entity) })
 		end
 	end
 end

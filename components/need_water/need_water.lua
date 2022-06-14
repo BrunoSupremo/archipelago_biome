@@ -95,7 +95,7 @@ function ArchipelagoNeedWater:on_added_to_world()
 				end
 			end
 			if self.need_water_icon and not in_the_water then
-				self._sv._effect_overlay = radiant.effects.run_effect(self._entity, "archipelago_biome:effects:no_water_overlay", nil, nil, { playerColor = radiant.entities.get_player_color(self._entity) })
+				self._sv._effect_overlay = radiant.effects.run_effect(self._entity, "archipelago_biome:effects:overlay:no_water", nil, nil, { playerColor = radiant.entities.get_player_color(self._entity) })
 				self.__saved_variables:mark_changed()
 			end
 			self:run_animation(in_the_water)

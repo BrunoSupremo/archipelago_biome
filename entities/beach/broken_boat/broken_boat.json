@@ -4,6 +4,7 @@
 	"components": {
 		"archipelago_biome:trojan":{
 			"uri":[
+				"archipelago_biome:monsters:jellyfish",
 				"archipelago_biome:monsters:octopus",
 				"archipelago_biome:monsters:oyster"
 			],

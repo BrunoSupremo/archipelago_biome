@@ -2,6 +2,11 @@
 	"out_edge": {
 		"out_edges": [
 			{
+				"out_edge": "pack_of_jellyfish",
+				"type": "weighted_edge",
+				"weight": 2
+			},
+			{
 				"out_edge": "pack_of_octopus",
 				"type": "weighted_edge",
 				"weight": 2

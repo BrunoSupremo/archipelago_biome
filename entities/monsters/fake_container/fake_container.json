@@ -19,7 +19,7 @@
 		},
 		"stonehearth:resource_node": {
 			"category": "harvest",
-			"harvest_overlay_effect": "archipelago_biome:effects:open_crate",
+			"harvest_overlay_effect": "archipelago_biome:effects:overlay:open_crate",
 			"harvester_effect": "work",
 			"durability": 6
 		},

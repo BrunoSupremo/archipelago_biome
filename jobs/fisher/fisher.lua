@@ -93,16 +93,6 @@ function FisherClass:chose_random_fish()
 	if not self.fishing_data then
 		return nil
 	end
-	local function has_filter( key, value )
-		local valid = false
-		for i,v in ipairs(key) do
-			if v == value then
-				valid = true
-				break
-			end
-		end
-		return valid
-	end
 	local weighted_set = WeightedSet(rng)
 	local level = "level_"..self:get_job_level()
 	if not self.fishing_data[level] then
@@ -110,8 +100,8 @@ function FisherClass:chose_random_fish()
 	end
 	for fish, table in pairs(self.fishing_data[level]) do
 		local weight = table.weight or 0
-		local is_valid_biome = not table.is_biome_exclusive or has_filter(table.is_biome_exclusive, self.biome_alias)
-		local is_valid_kingdom = not table.is_kingdom_exclusive or has_filter(table.is_kingdom_exclusive, self.kingdom_alias)
+		local is_valid_biome = self:_is_valid_X( table.is_biome, table.is_not_biome, self.biome_alias )
+		local is_valid_kingdom = self:_is_valid_X( table.is_kingdom, table.is_not_kingdom, self.kingdom_alias )
 		local is_below_limit = not table.max_limit or table.max_limit>(self._sv.fished[level..fish] or 0)
 		if weight>0 and is_valid_biome and is_valid_kingdom and is_below_limit then
 			weighted_set:add(fish, weight)
@@ -123,6 +113,32 @@ function FisherClass:chose_random_fish()
 	local fish_key = weighted_set:choose_random()
 	self.current_fish_key = fish_key
 	return self.fishing_data[level][fish_key]
+end
+
+function FisherClass:_is_valid_X(is_X, is_not_X, X_alias)
+	--X = biome or kingdom. E.g. is_X = is_biome
+	local function has_filter( key, value )
+		local valid = false
+		for i,v in ipairs(key) do
+			if v == value then
+				valid = true
+				break
+			end
+		end
+		return valid
+	end
+	if (not is_X) and (not is_not_X) then
+		--no restriction
+		return true
+	end
+	if is_X then
+		--has to match the current alias
+		return has_filter(is_X, X_alias)
+	end
+	if is_not_X then
+		--can't match the current alias
+		return not has_filter(is_not_X, X_alias)
+	end
 end
 
 function FisherClass:_create_listeners()

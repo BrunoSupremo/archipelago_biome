@@ -19,7 +19,27 @@
 			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect",
 			"unripe_description": "i18n(stonehearth:entities.plants.silkweed.silkweed.unripe_description)",
 			"resource": "stonehearth:resources:fiber:silkweed_bundle",
-			"renewal_time": "20h"
+			"renewal_time": "20h",
+			"resource_loot_table": {
+				"entries": {
+					"optional": {
+						"num_rolls": {
+							"min": 1,
+							"max": 1
+						},
+						"items": {
+							"none": {
+								"uri": "",
+								"weight": 4
+							},
+							"seed": {
+								"uri": "archipelago_biome:beach:seaweed:seed",
+								"weight": 1
+							}
+						}
+					}
+				}
+			}
 		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(seaweed_iconic.json)",

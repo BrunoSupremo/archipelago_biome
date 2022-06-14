@@ -39,8 +39,8 @@
 							"x": 0,
 							"z": 0
 						},
-						"min": 4,
-						"max": 5,
+						"min": 3,
+						"max": 4,
 						"range": 10,
 						"scale_with_run": {
 							"scale_factor": 1.4,
@@ -56,8 +56,25 @@
 							"x": 0,
 							"z": 0
 						},
-						"min": 4,
-						"max": 5,
+						"min": 3,
+						"max": 4,
+						"range": 10,
+						"scale_with_run": {
+							"scale_factor": 1.4,
+							"encounter_cap": 3
+						}
+					},
+					"tuning": "archipelago_biome:monster_tuning:forest:easy_octopus"
+				},
+				"jellyfish": {
+					"from_population": {
+						"role": "jellyfish",
+						"location": {
+							"x": 0,
+							"z": 0
+						},
+						"min": 3,
+						"max": 4,
 						"range": 10,
 						"scale_with_run": {
 							"scale_factor": 1.4,
@@ -73,8 +90,8 @@
 							"x": 0,
 							"z": 0
 						},
-						"min": 4,
-						"max": 5,
+						"min": 3,
+						"max": 4,
 						"range": 10,
 						"scale_with_run": {
 							"scale_factor": 1.4,

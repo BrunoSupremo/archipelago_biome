@@ -2,6 +2,8 @@
 	"out_edge": {
 		"out_edges": [
 			"octopus_cocoling_raid_5",
+			"octopus_jellyfish_raid_5",
+			"giant_jellyfish_raid_6",
 			"giant_octopus_raid_6",
 			"giant_oyster_raid_6"
 		]

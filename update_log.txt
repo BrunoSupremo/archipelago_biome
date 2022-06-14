@@ -1,12 +1,12 @@
 Additions:
-Boiled Crab recipe for fisher and cook
-Mermaid mini quest challenge. Have too many fish and she will appear, not happy.
+Jellyfish enemies
+Seaweed seeds, so you can grow more of it (drop from seaweed or crafted by herbalist)
 
 Changes:
 
 Changes for ACE:
-Correctly tagged the biome flowers for the new herbalist herb system
-Daylily and Oleanders (ACE flowers) can generate on the biome
+
 
 Fixes:
 (for ACE mod)
+Fixed bug with seed crafting while ACE auto craft is on.

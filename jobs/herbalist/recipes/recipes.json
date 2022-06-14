@@ -3,23 +3,26 @@
 		"refinement": {
 			"recipes": {
 				"palm_herbalist": {
-					"recipe": "file(palm_transmute_recipe.json)"
+					"recipe": "file(refinement/palm_transmute_recipe.json)"
 				},
 				"papaya_herbalist": {
-					"recipe": "file(papaya_transmute_recipe.json)"
+					"recipe": "file(refinement/papaya_transmute_recipe.json)"
 				},
 				"hibiscus_herbalist": {
-					"recipe": "file(hibiscus_transmute_recipe.json)"
+					"recipe": "file(refinement/hibiscus_transmute_recipe.json)"
 				},
 				"blue_hibiscus_herbalist": {
-					"recipe": "file(blue_hibiscus_transmute_recipe.json)"
+					"recipe": "file(refinement/blue_hibiscus_transmute_recipe.json)"
+				},
+				"seaweed_herbalist": {
+					"recipe": "file(refinement/seaweed_transmute_recipe.json)"
 				}
 			}
 		},
 		"decorations" : {
 			"recipes" : {
 				"lei" : {
-					"recipe" : "file(lei_recipe.json)"
+					"recipe" : "file(decorations/lei_recipe.json)"
 				}
 			}
 		}

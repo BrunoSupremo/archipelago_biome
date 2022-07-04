@@ -659,6 +659,10 @@
 			}
 		},
 		"fisher": {
+			"field": {
+				"display_name":"Área de Pesca",
+				"description":"Pescadores podem vir aqui para pescar"
+			},
 			"fisher_description": {
 				"display_name": "Pescador",
 				"description": "Irá pegar caranguejos, colher pérolas, e fazer outras tarefas relacionadas a água",
@@ -872,6 +876,17 @@
 							"display_name": "Menu do Pescador",
 							"description": "Cria itens relacionados com pesca",
 							"required_job_text": "Requer um pescador"
+						}
+					}
+				},
+				"zone_menu": {
+					"items": {
+						"create_fish": {
+							"display_name": "Ponto de Pesca",
+							"description": "Marca um lugar para pescar",
+							"required_job_text": "Requer um pescador",
+							"tip_title": "Clique e arraste para marcar como local de pesca",
+							"tip_description": "A área será considerada um local de pesca que os pescadores podem ir para pescar.<br/><br/>Clique com o botão direito para sair deste modo"
 						}
 					}
 				}

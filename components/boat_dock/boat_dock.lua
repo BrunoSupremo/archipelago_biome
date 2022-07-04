@@ -18,6 +18,7 @@ end
 function ArchipelagoBoatDock:initialize()
 	self._sv.platform = nil
 	self._sv.other_dock = nil
+	self._sv.dock_spots = {}
 	self._sv._effect_overlay = nil
 end
 
@@ -26,6 +27,7 @@ function ArchipelagoBoatDock:activate()
 		self._removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', function()
 			self:destroy_platform()
 			self:destroy_other_dock()
+			self:destroy_fishing_spot()
 			if self._sv._effect_overlay then
 				self._sv._effect_overlay:stop()
 				self._sv._effect_overlay = nil
@@ -54,9 +56,26 @@ function ArchipelagoBoatDock:create_connections()
 		if other_side then
 			self:create_platform(other_side)
 			self:create_destination_dock(other_side)
+			self:create_fishing_spot(radiant.entities.get_world_grid_location(self._entity), other_side)
 		else
 			self._sv._effect_overlay = radiant.effects.run_effect(self._entity, "archipelago_biome:effects:overlay:no_connection", nil, nil, { playerColor = radiant.entities.get_player_color(self._entity) })
 		end
+	end
+end
+
+function ArchipelagoBoatDock:create_fishing_spot(this_side, other_side)
+	local total_distance = this_side:distance_to(other_side)
+	if total_distance > 15 then
+		local middle_point = (this_side+other_side)/2
+		local dock_spot = radiant.entities.create_entity("archipelago_biome:decoration:dock_spot",
+			{owner = self._entity:get_player_id()})
+		radiant.terrain.place_entity_at_exact_location(dock_spot,
+			middle_point +Point3.unit_y*2)
+
+		table.insert(self._sv.dock_spots, dock_spot)
+
+		self:create_fishing_spot(middle_point, this_side)
+		self:create_fishing_spot(middle_point, other_side)
 	end
 end
 
@@ -153,9 +172,21 @@ function ArchipelagoBoatDock:destroy_other_dock()
 	end
 end
 
+function ArchipelagoBoatDock:destroy_fishing_spot()
+	if self._sv.dock_spots then
+		for i, dock_spot in ipairs(self._sv.dock_spots) do
+			if dock_spot and dock_spot:is_valid() then
+				radiant.entities.destroy_entity(dock_spot)
+			end
+		end
+		self._sv.dock_spots = {}
+	end
+end
+
 function ArchipelagoBoatDock:destroy()
 	self:destroy_platform()
 	self:destroy_other_dock()
+	self:destroy_fishing_spot()
 
 	if self._sensor_trace then
 		self._sensor_trace:destroy()

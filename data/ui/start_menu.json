@@ -14,5 +14,19 @@
 				"hotkey": ""
 			}
 		}
+	},
+	"zone_menu": {
+		"items": {
+			"create_fish": {
+				"name": "i18n(archipelago_biome:ui.game.menu.zone_menu.items.create_fish.display_name)",
+				"description": "i18n(archipelago_biome:ui.game.menu.zone_menu.items.create_fish.description)",
+				"required_job": "archipelago_biome:jobs:fisher",
+				"required_job_text": "i18n(archipelago_biome:ui.game.menu.zone_menu.items.create_fish.required_job_text)",
+				"class": "button",
+				"icon": "/archipelago_biome/ui/game/start_menu/images/zone_fish.png",
+				"sticky": true,
+				"hotkey_action": "zone:fish"
+			}
+		}
 	}
 }

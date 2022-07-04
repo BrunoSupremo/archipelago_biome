@@ -253,15 +253,6 @@
 			"effort":100,
 			"xp":10
 		},
-		"ice_cube":{
-			"alias":"archipelago_biome:resources:ice_cube",
-			"weight":1,
-			"is_biome":[
-				"stonehearth:biome:arctic"
-			],
-			"effort":10,
-			"xp":1
-		},
 		"tropical_fish":{
 			"alias":"archipelago_biome:food:tropical_fish",
 			"weight":20,

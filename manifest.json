@@ -72,6 +72,9 @@
 
 		"crops:palm_tree_crop": "file(entities/crops/palm_tree_crop)",
 
+		"cursors:zone_fish":		"file(data/cursors/zone_fish.cur)",
+		"cursors:zone_fish_invalid":"file(data/cursors/zone_fish_invalid.cur)",
+
 		"data:fishing": "file(data/fishing)",
 
 		"data:gm_index": "file(data/gm/gm_index.json)",
@@ -169,6 +172,7 @@
 		"fisher:talisman":	"file(jobs/fisher/fisher_bucket/fisher_bucket_talisman.json)",
 		"fisher:workbench":	"file(jobs/fisher/fisher_workbench)",
 		"fisher:firepit":	"file(jobs/fisher/fisher_firepit)",
+		"fisher:field":		"file(jobs/fisher/field)",
 
 		"kingdoms:atlanteans": "file(data/atlanteans_population.json)",
 		"atlantean_male":	"file(entities/atlanteans/male)",
@@ -509,28 +513,43 @@
 		"class:fisher": "file(jobs/fisher/fisher.lua)",
 		"game_master:util:choose_water_location_outside_town": "file(services/server/game_master/controllers/util/choose_water_location_outside_town.lua)"
 	},
+	"functions": {
+		"choose_new_fish_location": {
+			"controller": "file(call_handlers/fishing_call_handler.lua)",
+			"endpoint": "client"
+		},
+		"create_new_field": {
+			"controller": "file(call_handlers/fishing_call_handler.lua)",
+			"endpoint": "server"
+		}
+	},
 	"components": {
 		"boat_dock":	"file(components/boat_dock/boat_dock.lua)",
 		"cave":			"file(components/cave/cave.lua)",
 		"crab_spawner":	"file(components/crab_spawner/crab_spawner.lua)",
 		"dock":			"file(components/dock/dock.lua)",
 		"explosive":	"file(components/explosive/explosive.lua)",
+		"fisher_field":	"file(components/fisher_field/fisher_field.lua)",
 		"need_water":	"file(components/need_water/need_water.lua)",
 		"trojan":		"file(components/trojan/trojan.lua)",
 		"wave":			"file(components/wave/wave.lua)"
+	},
+	"component_renderers":{
+		"fisher_field": "file(renderers/fisher_field/fisher_field.lua)"
 	},
 	"ui":{
 		"html":[
 			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.html)"
 		],
 		"js":[
-			"file(ui/shell/select_settlement/map.js)",
-			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.js)"
+			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.js)",
+			"file(ui/game/start_menu/start_menu.js)",
+			"file(ui/shell/select_settlement/map.js)"
 		],
 		"less":[
 			"file(jobs/fisher/skin/workshop.less)",
-			"file(ui/shell/select_settlement/select_settlement.less)",
-			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.less)"
+			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.less)",
+			"file(ui/shell/select_settlement/select_settlement.less)"
 		]
 	}
 }

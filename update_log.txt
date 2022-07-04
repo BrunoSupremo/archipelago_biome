@@ -1,12 +1,12 @@
 Additions:
-Jellyfish enemies
-Seaweed seeds, so you can grow more of it (drop from seaweed or crafted by herbalist)
+Fishing zones. Draw it at the water edge and the fisher will be able to fish there.
 
 Changes:
+With boat docks, fisher can go fish with boats on those paths
+Updated old fish images with a new fish design
 
 Changes for ACE:
 
 
 Fixes:
 (for ACE mod)
-Fixed bug with seed crafting while ACE auto craft is on.

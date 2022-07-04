@@ -112,7 +112,15 @@ function FisherClass:chose_random_fish()
 	end
 	local fish_key = weighted_set:choose_random()
 	self.current_fish_key = fish_key
-	return self.fishing_data[level][fish_key]
+	local boat_effort = 1
+	if radiant.entities.get_posture(self._sv._entity) == "stonehearth:in_boat" then
+		boat_effort = 0.8
+	end
+	local to_AI = {
+		effort = self.fishing_data[level][fish_key].effort * boat_effort,
+		alias = self.fishing_data[level][fish_key].alias
+	}
+	return to_AI
 end
 
 function FisherClass:_is_valid_X(is_X, is_not_X, X_alias)

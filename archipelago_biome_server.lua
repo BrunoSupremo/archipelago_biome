@@ -1,12 +1,12 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 22.6.13")
+print("Archipelago Biome Mod version 22.7.4")
 
 --[[
 
+fisher village
+
 spawn whale, maybe from turtle rig. or as a fancy and decorated landmark
 wave effect for storm weather
-
-fish anywhere near water, docks will be just a prefered place
 
 rework pirate hat
 

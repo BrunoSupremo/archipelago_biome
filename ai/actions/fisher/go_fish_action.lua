@@ -1,7 +1,6 @@
---I do not give consent to copy this
 local GoFish = class()
 
-GoFish.name = 'go to a dock to fish'
+GoFish.name = 'go to a fishing_spot to fish'
 GoFish.does = 'archipelago_biome:go_fish'
 GoFish.status_text_key = 'archipelago_biome:ai.actions.status_text.fishing'
 GoFish.args = { }
@@ -21,6 +20,7 @@ function find_a_fishing_spot(ai_entity)
 end
 
 local function rate_fishing_spot(entity)
+	--take entity type (zone, boat or dock) and distance into consideration
 	local rng = _radiant.math.get_default_rng()
 	return rng:get_real(0, 1)
 end
@@ -42,7 +42,7 @@ return ai:create_compound_action(GoFish)
 :execute('stonehearth:find_best_reachable_entity_by_type', {
 	filter_fn = ai.CALL(find_a_fishing_spot, ai.ENTITY),
 	rating_fn = rate_fishing_spot,
-	description = 'find a dock'
+	description = 'find a fishing_spot'
 	})
 :execute('stonehearth:goto_entity', {
 	entity = ai.PREV.item

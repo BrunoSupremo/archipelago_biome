@@ -659,6 +659,10 @@
 			}
 		},
 		"fisher": {
+			"field": {
+				"display_name":"Fishing Area",
+				"description":"Fishers can stop here to fish"
+			},
 			"fisher_description": {
 				"display_name": "Fisher",
 				"description": "Will capture crabs, harvest pearls, and do other water related works",
@@ -872,6 +876,17 @@
 							"display_name": "Fisher Craft Menu",
 							"description": "Create fisher related items",
 							"required_job_text": "Requires a fisher"
+						}
+					}
+				},
+				"zone_menu": {
+					"items": {
+						"create_fish": {
+							"display_name": "Fishing Spot",
+							"description": "Marks a place to fish",
+							"required_job_text": "Requires a fisher",
+							"tip_title": "Click and drag to mark as a fishing spot",
+							"tip_description": "The zone area will be considered a valid fishing spot that fishers can go to fish.<br/><br/>Right click to exit this mode"
 						}
 					}
 				}

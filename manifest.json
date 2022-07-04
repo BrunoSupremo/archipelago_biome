@@ -549,6 +549,7 @@
 		"less":[
 			"file(jobs/fisher/skin/workshop.less)",
 			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.less)",
+			"file(ui/game/show_workshop/mod_icon.less)",
 			"file(ui/shell/select_settlement/select_settlement.less)"
 		]
 	}

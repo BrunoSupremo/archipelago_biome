@@ -20,6 +20,11 @@ function FishingCallHandler._custom_is_valid_location(self_variable, brick)
 	end
 	local entities = radiant.terrain.get_entities_at_point(brick)
 	for _, entity in pairs(entities) do
+		local water_component = entity:get_component('stonehearth:water')
+		if water_component and water_component:get_data().height>1 then
+			-- :get_data() and then you have the contents of ._sv - thanks for the tip Paul
+			return false
+		end
 		if not self_variable._can_contain_entity_filter_fn(entity, self_variable) then
 			return false
 		end

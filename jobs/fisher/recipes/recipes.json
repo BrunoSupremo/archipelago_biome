@@ -52,6 +52,9 @@
 				"input_fish_rack": {
 					"recipe": "file(storage/input_fish_rack_recipe.json)"
 				},
+				"input_fish_stall": {
+					"recipe": "file(storage/input_fish_stall_recipe.json)"
+				},
 				"fish_container": {
 					"recipe": "file(storage/fish_container_recipe.json)"
 				},

@@ -63,8 +63,9 @@
 		"construction:bead_door": "file(entities/construction/bead_door)",
 		"construction:porthole": "file(entities/construction/porthole)",
 
-		"containers:input_fish_rack": "file(entities/containers/input_fish_rack)",
-		"containers:input_bin:food_bin": "file(entities/containers/input_food_bin)",
+		"containers:input_fish_rack":	"file(entities/containers/input_fish_rack)",
+		"containers:input_fish_stall":	"file(entities/containers/input_fish_stall)",
+		"containers:input_bin:food_bin":"file(entities/containers/input_food_bin)",
 
 		"critters:crab":		"file(entities/critters/crab)",
 		"critters:crab:collar":	"file(entities/critters/crab/collar.json)",
@@ -280,7 +281,8 @@
 		"trees:smalea:stem":		"file(entities/trees/smalea/stem)",
 		"trees:smalea:bud":			"file(entities/trees/smalea/bud)",
 
-		"ui:input_box:fish_filters":	"file(ui/data/input_box_fish_filters.json)",
+		"ui:input_box:fish_filters":		"file(ui/data/input_box_fish_filters.json)",
+		"ui:input_box:fish_stall_filters":	"file(ui/data/input_box_fish_stall_filters.json)",
 		"ui:input_box:food_bin_filters":"file(ui/data/input_box_food_bin_filters.json)",
 		"ui:stockpile:fish_filters":	"file(ui/data/stockpile_fish_filters.json)",
 		"ui:stockpile:fruit_filters":	"file(ui/data/stockpile_fruit_filters.json)",

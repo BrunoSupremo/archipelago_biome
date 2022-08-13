@@ -1,44 +1,39 @@
 {
-	"menu":{
+	"categories":{
 		"goblins":{
-			"items":{
+			"sub_categories":{
 				"jobs":{
-					"items":{
+					"articles":{
 						"fisher":{
-							"display_name":"i18n(archipelago_biome:ui.game.goblinpedia.menu.goblins.jobs.fisher)",
-							"open_page_id":"jobs_fisher"
+							"ordinal":100,
+							"menu_link":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.menu_link)",
+							"title":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.title)",
+							"image":"/archipelago_biome/jobs/fisher/images/icon.png",
+							"descriptions":{
+								"desc1":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.description1)"
+							},
+							"topics":{
+								"topic1":{
+									"title":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.topic1.title)",
+									"descriptions":{
+										"desc1":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.topic1.desc1)"
+									}
+								},
+								"topic2":{
+									"title":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.topic2.title)",
+									"descriptions":{
+										"desc1":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.topic2.desc1)",
+										"desc2":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.topic2.desc2)"
+									}
+								},
+								"topic3":{
+									"title":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.topic3.title)",
+									"descriptions":{
+										"desc1":"i18n(archipelago_biome:ui.game.goblinpedia.goblins.jobs.fisher.topic3.desc1)"
+									}
+								}
+							}
 						}
-					}
-				}
-			}
-		}
-	},
-	"pages":{
-		"jobs_fisher":{
-			"page_id":"jobs_fisher",
-			"title":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.title)",
-			"image":"/archipelago_biome/jobs/fisher/images/icon.png",
-			"descriptions":{
-				"desc1":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.description1)"
-			},
-			"topics":{
-				"topic1":{
-					"title":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.topic1.title)",
-					"descriptions":{
-						"desc1":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.topic1.desc1)"
-					}
-				},
-				"topic2":{
-					"title":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.topic2.title)",
-					"descriptions":{
-						"desc1":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.topic2.desc1)",
-						"desc2":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.topic2.desc2)"
-					}
-				},
-				"topic3":{
-					"title":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.topic3.title)",
-					"descriptions":{
-						"desc1":"i18n(archipelago_biome:ui.game.goblinpedia.pages.jobs.fisher.topic3.desc1)"
 					}
 				}
 			}

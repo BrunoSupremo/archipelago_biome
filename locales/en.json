@@ -65,6 +65,10 @@
 				"display_name": "Fish Rack",
 				"description": "Store and display your fish"
 			},
+			"input_fish_stall": {
+				"display_name": "Fish Stall",
+				"description": "Store and display your fish"
+			},
 			"input_food_bin": {
 				"display_name": "Food Donation",
 				"description": "A supply container, for food donations"
@@ -745,6 +749,11 @@
 					"description": "A container for fish, to help keep crafters supplied.",
 					"flavor": "Better than storing it in the floor"
 				},
+				"input_fish_stall_recipe": {
+					"recipe_name": "Fish Stall",
+					"description": "A container for fish, to help keep crafters supplied.",
+					"flavor": "Better than storing it in the floor"
+				},
 				"pearl_container_recipe": {
 					"recipe_name": "Pearl Container",
 					"description": "Store up to 16 pearls",
@@ -840,16 +849,10 @@
 				}
 			},
 			"goblinpedia":{
-				"menu":{
-					"goblins":{
-						"jobs":{
-							"fisher":"Fisher"
-						}
-					}
-				},
-				"pages":{
+				"goblins":{
 					"jobs":{
 						"fisher":{
+							"menu_link":"Fisher",
 							"title":"Fisher",
 							"description1":"Can they catch a fish bigger than themself?",
 							"topic1":{
@@ -858,7 +861,7 @@
 							},
 							"topic2":{
 								"title":"How it works:",
-								"desc1":"Place a fishing dock, it signs where they will stand while fishing.",
+								"desc1":"Place a fishing dock or draw a zone, it signs where they will stand while fishing.",
 								"desc2":"Crab traps must be placed near water."
 							},
 							"topic3":{

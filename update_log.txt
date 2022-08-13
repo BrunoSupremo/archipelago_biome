@@ -1,12 +1,12 @@
 Additions:
-Fishing zones. Draw it at the water edge and the fisher will be able to fish there.
+Fish stall. Input storage for 12 fish.
 
 Changes:
-With boat docks, fisher can go fish with boats on those paths
-Updated old fish images with a new fish design
+Fish zones can't be draw on deep water. It can go on the water edge or in shallow water.
 
 Changes for ACE:
 
 
 Fixes:
+(for Firefly mod) Fixed fisher article on goblinpedia
 (for ACE mod)

@@ -65,6 +65,10 @@
 				"display_name": "Cabide de peixes",
 				"description": "Guarda e deixa amostra seus peixes"
 			},
+			"input_fish_stall": {
+				"display_name": "Barraca de peixes",
+				"description": "Guarda e deixa amostra seus peixes"
+			},
 			"input_food_bin": {
 				"display_name": "Doação de Comida",
 				"description": "Um container com suprimentos, para doações de comida"
@@ -745,6 +749,11 @@
 					"description": "Um recipiente para peixes, para manter os cozinheiros abastecidos.",
 					"flavor": "Melhor do que armazená-los no chão"
 				},
+				"input_fish_stall_recipe": {
+					"recipe_name": "Barraca de peixes",
+					"description": "Um recipiente para peixes, para manter os cozinheiros abastecidos.",
+					"flavor": "Melhor do que armazená-los no chão"
+				},
 				"pearl_container_recipe": {
 					"recipe_name": "Caixote de Pérolas",
 					"description": "Armazena até 16 pérolas",
@@ -840,16 +849,10 @@
 				}
 			},
 			"goblinpedia": {
-				"menu": {
-					"goblins": {
-						"jobs": {
-							"fisher": "Pescador"
-						}
-					}
-				},
-				"pages": {
-					"jobs": {
-						"fisher": {
+				"goblins":{
+					"jobs":{
+						"fisher":{
+							"menu_link":"Pescador",
 							"title": "Pescador",
 							"description1": "Será que conseguem pegar um peixe maior que eles mesmos?",
 							"topic1": {
@@ -858,7 +861,7 @@
 							},
 							"topic2": {
 								"title": "Como funciona:",
-								"desc1": "Coloque uma doca de pesca, ela marca onde devem pescar.",
+								"desc1": "Coloque uma doca de pesca ou desenhe uma zona, elas marcam onde devem pescar.",
 								"desc2": "Armadilhas de caranguejos precisam estar perto da água."
 							},
 							"topic3": {

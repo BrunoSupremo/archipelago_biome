@@ -34,7 +34,7 @@ end
 
 function FishingCallHandler:choose_new_fish_location(session, response)
 	stonehearth.selection:select_xz_region("fish_zone")
-	:use_designation_marquee(Color4(129, 192, 165, 255))
+	:use_designation_marquee(Color4(100, 150, 200, 255))
 	:set_cursor('archipelago_biome:cursors:zone_fish')
 	:set_invalid_cursor('archipelago_biome:cursors:zone_fish_invalid')
 	:require_unblocked(true)

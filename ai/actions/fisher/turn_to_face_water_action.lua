@@ -18,7 +18,9 @@ function TurnToFaceWater:run(ai, entity, args)
 		local fisher_field_component = args.dock:get_component("archipelago_biome:fisher_field")
 		if fisher_field_component then
 			local water_location = fisher_field_component:get_water_direction(radiant.entities.get_world_grid_location(entity))
-			entity:get_component('mob'):turn_to_face_point(water_location)
+			if water_location then
+				entity:get_component('mob'):turn_to_face_point(water_location)
+			end
 			face = radiant.entities.get_facing(entity)
 		else
 			face = radiant.entities.get_facing(args.dock)

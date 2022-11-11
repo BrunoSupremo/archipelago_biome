@@ -99,6 +99,9 @@
 				},
 				"fish_quiver": {
 					"recipe": "file(weapons/fish_quiver_recipe.json)"
+				},
+				"giant_bone_axe": {
+					"recipe": "file(weapons/giant_bone_axe_recipe.json)"
 				}
 			}
 		}

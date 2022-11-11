@@ -1,11 +1,11 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 22.8.13")
+print("Archipelago Biome Mod version 22.11.10")
 
 --[[
 
-fisher village
+fisher village, landmark, ~3x3 chunks
 
-spawn whale, maybe from turtle rig. or as a fancy and decorated landmark
+spawn whale, poyo rig. or as a fancy and decorated landmark
 wave effect for storm weather
 
 rework pirate hat

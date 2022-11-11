@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 2,
+	"recipe_name": "i18n(stonehearth:entities.weapons.giant_bone_axe.display_name)",
+	"description": "i18n(stonehearth:entities.weapons.giant_bone_axe.description)",
+	"flavor": "",
+	"portrait": "/stonehearth/entities/weapons/giant_bone_axe/giant_bone_axe.png",
+	"workshop": "archipelago_biome:fisher:workbench",
+	"level_requirement": 6,
+	"ingredients": [
+		{
+			"material": "pelt resource",
+			"count": 2
+		},
+		{
+			"material": "fiber resource",
+			"count": 2
+		},
+		{
+			"uri": "archipelago_biome:food:big_fish",
+			"count": 5
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:weapons:giant_bone_axe"
+		}
+	]
+}

@@ -8,8 +8,8 @@ function FisherFieldRenderer:initialize(render_entity, datastore)
 	self._datastore = datastore
 
 	self._zone_renderer = ZoneRenderer(render_entity)
-	:set_designation_colors(Color4(129, 192, 165, 255), Color4(129, 192, 165, 255))
-	:set_ground_colors(Color4(77, 62, 38, 10), Color4(77, 62, 38, 30))
+	:set_designation_colors(Color4(100, 150, 200, 255), Color4(100, 150, 200, 255))
+	:set_ground_colors(Color4(50, 75, 100, 10), Color4(50, 75, 100, 30))
 
 	self._datastore_trace = self._datastore:trace_data('rendering fisher field')
 	:on_changed(

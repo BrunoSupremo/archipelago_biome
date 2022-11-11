@@ -1,12 +1,11 @@
 Additions:
-Fish stall. Input storage for 12 fish.
+Fisher recipe to craft (vanilla) giant bone axe
 
 Changes:
-Fish zones can't be draw on deep water. It can go on the water edge or in shallow water.
 
 Changes for ACE:
 
-
 Fixes:
-(for Firefly mod) Fixed fisher article on goblinpedia
+Seaweed seeds were named hibiscus seeds
+Fisher error about facing/direction
 (for ACE mod)

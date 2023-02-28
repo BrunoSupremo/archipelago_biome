@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"work_units": 5,
+	"recipe_name": "i18n(archipelago_biome:entities.decoration.magma.display_name)",
+	"description": "i18n(archipelago_biome:entities.decoration.magma.recipe_description)",
+	"flavor": "i18n(archipelago_biome:entities.decoration.magma.description)",
+	"portrait": "/archipelago_biome/entities/decoration/magma/magma.png",
+	"level_requirement": 2,
+	"workshop": "stonehearth:geomancer:workbench",
+	"ingredients": [
+		{
+			"material": "ore resource",
+			"count": 4
+		},
+		{
+			"uri": "stonehearth:resources:coal:lump_of_coal",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "archipelago_biome:decoration:geomancer_magma"
+		}
+	]
+}

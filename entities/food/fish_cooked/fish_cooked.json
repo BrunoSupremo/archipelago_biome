@@ -14,20 +14,17 @@
 		},
 		"mob": {
 			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		},
+		"stonehearth:stacks": {
+			"max_stacks": 1
 		}
 	},
 	"entity_data": {
-		"stonehearth:item": {
-			"category": "food"
-		},
-		"stonehearth:food": {
-			"stonehearth:sitting_on_chair": {
-				"satisfaction": 150
-			},
-			"default": {
-				"satisfaction": 80
-			},
-			"quality": 5
+		"stonehearth:food_container": {
+			"effect": "fiddle",
+			"require_reservation": true,
+			"food": "archipelago_biome:food:fish:cooked_serving",
+			"stacks_per_serving": 1
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 8,
@@ -49,7 +46,7 @@
 				"prepared_food",
 				"stockpile_prepared_food",
 				"meat",
-				"food",
+				"food_container",
 				"fish",
 				"fish_cooked"
 			]

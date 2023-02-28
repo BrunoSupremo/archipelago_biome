@@ -5,8 +5,7 @@
 	"description": "i18n(archipelago_biome:entities.landmark.summon_stone_patch_sand.description)",
 	"flavor": "",
 	"portrait": "/archipelago_biome/entities/landmark/summon_stone_patch_sand/summon_stone_patch_sand.png",
-	"level_requirement": 2,
-	"manual_unlock":true,
+	"level_requirement": 1,
 	"workshop": "stonehearth:geomancer:workbench",
 	"ingredients": [
 		{

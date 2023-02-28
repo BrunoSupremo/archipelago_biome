@@ -185,7 +185,8 @@
 			},
 			"magma": {
 				"display_name": "Bloco de Magma",
-				"description": "Magma super quente, incandescente, meio sólido. Não toque."
+				"description": "Magma super quente, incandescente, meio sólido. Não toque.",
+				"recipe_description": "Invoca um grande (3x3x3) bloco de magma."
 			},
 			"volcano_smoke": {
 				"display_name": "Fonte de Fumaça",
@@ -412,6 +413,14 @@
 			"summon_stone_patch_sand": {
 				"display_name": "Manto de Terreno de Areia",
 				"description": "Cresce em um cobertor de areia, até 12x12 de tamanho."
+			},
+			"summon_stone_crab_island_recipe":{
+				"display_name": "Ilha do Caranguejo",
+				"description": "Invoca uma mini ilha tropical com caranguejos."
+			},
+			"summon_stone_lake_recipe":{
+				"display_name": "Lago Tropical",
+				"description": "Invoca um lago com vegetação tropical."
 			},
 			"summon_stone_volcano": {
 				"display_name": "Vulcão",
@@ -793,6 +802,17 @@
 		},
 		"geomancer": {
 			"recipes": {
+				"categories":{
+					"archipelago_landmarks":"Marcos do Arquipélago"
+				},
+				"summon_stone_crab_island_recipe":{
+					"recipe_name": "Ilha do Caranguejo",
+					"description": "Invoca uma mini ilha tropical com caranguejos."
+				},
+				"summon_stone_lake_recipe":{
+					"recipe_name": "Lago Tropical",
+					"description": "Invoca um lago com vegetação tropical."
+				},
 				"summon_stone_volcano_recipe": {
 					"recipe_name": "Vulcão",
 					"description": "Invoca um mini vulcão inteiro."
@@ -966,7 +986,7 @@
 				"message": "O pescador acabou de pegar esse peixinho palhaço perdido."
 			},
 			"dusty_tome": {
-				"message": "Um livro bem velho, valioso para cidades do deserto. É um mistério como ainda está empoeirado e não molhado..."
+				"message": "Um livro muito antigo, valioso para cidades desertas. É um mistério como ainda está empoeirado e não molhado depois de ser fisgado..."
 			}
 		},
 		"monster_tuning": {

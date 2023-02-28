@@ -1,0 +1,30 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.1876
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(magma.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": -1.5, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"allow_vertical_adjacent": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.decoration.magma.display_name)",
+			"description": "i18n(archipelago_biome:entities.decoration.magma.description)",
+			"icon": "file(magma.png)",
+			"category": "decoration",
+			"material_tags":["magma", "crafted", "decoration", "stockpile_decoration"]
+		}
+	}
+}

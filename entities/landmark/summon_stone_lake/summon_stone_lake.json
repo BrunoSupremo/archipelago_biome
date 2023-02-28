@@ -1,10 +1,10 @@
 {
 	"type": "entity",
-	"mixins": "file(summon_stone_tropical_island_ghost.json)",
+	"mixins": "file(summon_stone_lake_ghost.json)",
 	"components": {
 		"stonehearth:entity_forms": {
-			"iconic_form": "file(summon_stone_tropical_island_iconic.json)",
-			"ghost_form": "file(summon_stone_tropical_island_ghost.json)",
+			"iconic_form": "file(summon_stone_lake_iconic.json)",
+			"ghost_form": "file(summon_stone_lake_ghost.json)",
 			"placeable_on_ground": true
 		}
 	},

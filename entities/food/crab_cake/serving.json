@@ -1,0 +1,37 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(crab_cake.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food",
+			"destroy_on_uncarry": true
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 150
+			},
+			"default": {
+				"satisfaction": 80
+			},
+			"quality": 6
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.crab_cake.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.crab_cake.description)",
+			"material_tags":["food", "crab", "meat"],
+			"subject_override": "archipelago_biome:food:crab_cake"
+		}
+	}
+}

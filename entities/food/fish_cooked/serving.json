@@ -1,0 +1,40 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.09
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(fish_cooked.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food",
+			"destroy_on_uncarry": true
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 150
+			},
+			"default": {
+				"satisfaction": 80
+			},
+			"quality": 5
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.fish_cooked.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.fish_cooked.description)",
+			"material_tags":["food", "fish", "meat"],
+			"subject_override": "archipelago_biome:food:fish:cooked"
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"stonehearth:landmark": {
+			"landmark": {
+				"brush" : "/archipelago_biome/data/models/landmark/64x_island.qb",
+				"brush_mask" : "/archipelago_biome/data/models/landmark/64x_island_mask.qb",
+				"landmark_block_types": "archipelago_biome:landmark_blocks",
+				"destroy_entities": false,
+				"clip_if_outside_terrain": true
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.landmark.summon_stone_crab_island.display_name)",
+			"description": "i18n(archipelago_biome:entities.landmark.summon_stone_crab_island.description)",
+			"icon": "file(summon_stone_crab_island.png)",
+			"category": "geomancer",
+			"material_tags":["crafted", "stone", "summon_stone", "stockpile_geomancer"]
+		}
+	}
+}

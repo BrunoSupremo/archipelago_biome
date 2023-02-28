@@ -1,19 +1,26 @@
 {
 	"craftable_recipes" : {
-		"terrain": {
+		"archipelago_landmarks": {
+			"ordinal": 26,
+			"name": "i18n(archipelago_biome:jobs.geomancer.recipes.categories.archipelago_landmarks)",
 			"recipes": {
 				"archipelago_summon_stone_block_sand": {
 					"recipe": "file(summon_stone_block_sand_recipe.json)"
 				},
 				"archipelago_summon_stone_patch_sand": {
 					"recipe": "file(summon_stone_patch_sand_recipe.json)"
-				}
-			}
-		},
-		"landmark": {
-			"recipes": {
+				},
+				"archipelago_magma_block": {
+					"recipe": "file(summon_stone_block_magma_recipe.json)"
+				},
+				"crab_island": {
+					"recipe": "file(archipelago_landmarks/crab_island_recipe.json)"
+				},
+				"lake": {
+					"recipe": "file(archipelago_landmarks/lake_recipe.json)"
+				},
 				"volcano": {
-					"recipe": "file(volcano_recipe.json)"
+					"recipe": "file(archipelago_landmarks/volcano_recipe.json)"
 				}
 			}
 		}

@@ -1,11 +1,15 @@
 Additions:
-Fisher recipe to craft (vanilla) giant bone axe
+Geomancer recipe to craft Magma Blocks (same as the ones in volcanos)
+Geomancer recipe to craft the Crab Island Landmark
+Geomancer recipe to craft the Tropical Lake Landmark
 
 Changes:
+Geomancer recipes reoganized and put into a new category ("Archipelago Landmarks")
+Geomancer sand blocks and sand patches now craftable and usable in any biome
 
 Changes for ACE:
 
 Fixes:
-Seaweed seeds were named hibiscus seeds
-Fisher error about facing/direction
 (for ACE mod)
+Fixed food items (e.g. coconuts and some others) not being recognized as food
+Fixed uncraftable anchor and porthole (blacksmith recipes). Now using any ores as ingredients.

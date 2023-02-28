@@ -1,9 +1,16 @@
 {
-   "block_types" : {
-      "sand" :            { "tag" : 310, "kind" : "sand" },
-      "sand_edge_1" :     { "tag" : 311, "kind" : "sand" },
-      "sand_edge_2" :     { "tag" : 312, "kind" : "sand" },
-      "sand_soil_light" : { "tag" : 313, "kind" : "sand" },
-      "sand_soil_dark" :  { "tag" : 314, "kind" : "sand" }
-   }
+	"block_types": {
+		"sand":            { "tag": 310, "kind": "sand" },
+		"sand_edge_1":     { "tag": 311, "kind": "sand" },
+		"sand_edge_2":     { "tag": 312, "kind": "sand" },
+		"sand_soil_light": { "tag": 313, "kind": "sand" },
+		"sand_soil_dark":  { "tag": 314, "kind": "sand" }
+	},
+	"default_colors": {
+		"sand": "#F0E187",
+		"sand_edge_1": "#F1F1A4",
+		"sand_edge_2": "#F0EA99",
+		"sand_soil_light": "#E0D177",
+		"sand_soil_dark": "#D0C167"
+	}
 }

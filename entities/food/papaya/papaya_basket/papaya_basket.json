@@ -1,48 +1,56 @@
 {
-   "mixins": "stonehearth:mixins:food_decay",
-   "type": "entity",
-   "components": {
-      "model_variants": {
-         "default": {
-            "models": [
-               "file(papaya_basket.qb)"
-            ]
-         },
-         "decay_1": {
-            "models": [
-               "file(papaya_basket_rotting.qb)"
-            ]
-         }
-      },
-      "mob": {
-         "model_origin": { "x": 0, "y": 0, "z": 0.05 }
-      },
-      "stonehearth:stacks": {
-         "max_stacks": 6
-      }
-   },
-   "entity_data": {
-      "stonehearth:food_container": {
-         "effect": "fiddle",
-         "food": "archipelago_biome:food:papaya_serving"
-      },
-      "stonehearth:net_worth": {
-         "value_in_gold": 5,
-         "rarity": "common",
-         "shop_info": {
-            "buyable": true,
-            "sellable": true,
-            "shopkeeper_level": 1,
-            "shopkeeper_type": "caravan"
-         }
-      },
-      "stonehearth:catalog": {
-         "display_name": "i18n(archipelago_biome:entities.food.papaya_basket.display_name)",
-         "description": "i18n(archipelago_biome:entities.food.papaya_basket.description)",
-         "icon": "file(papaya_basket.png)",
-         "is_item": true,
-         "category": "food",
-         "material_tags":["food_container", "raw_food", "fruit", "papaya", "vegetarian", "stockpile_raw_food"]
-      }
-   }
+	"mixins": "stonehearth:mixins:food_decay",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(papaya_basket.qb)"
+				]
+			},
+			"decay_1": {
+				"models": [
+					"file(papaya_basket_rotting.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0.05 }
+		},
+		"stonehearth:stacks": {
+			"max_stacks": 6
+		}
+	},
+	"entity_data": {
+		"stonehearth:food_container": {
+			"effect": "fiddle",
+			"food": "archipelago_biome:food:papaya_serving"
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 5,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.papaya_basket.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.papaya_basket.description)",
+			"icon": "file(papaya_basket.png)",
+			"is_item": true,
+			"category": "food",
+			"material_tags":[
+				"food_container",
+				"raw_food",
+				"fruit",
+				"papaya",
+				"vegetarian",
+				"hearty",
+				"stockpile_raw_food"
+			]
+		}
+	}
 }

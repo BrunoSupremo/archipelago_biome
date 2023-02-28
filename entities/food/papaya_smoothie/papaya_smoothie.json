@@ -11,38 +11,23 @@
 		},
 		"mob": {
 			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		},
+		"stonehearth:stacks": {
+			"max_stacks": 1
 		}
 	},
 	"entity_data": {
-		"stonehearth:item": {
-			"category": "food"
+		"stonehearth:food_container": {
+			"effect": "fiddle",
+			"require_reservation": true,
+			"food": "archipelago_biome:food:papaya_smoothie_serving",
+			"stacks_per_serving": 1
 		},
-		"stonehearth_ace:drink": {
-			"stonehearth:sitting_on_chair": {
-				"satisfaction": 80,
-				"food_satisfaction": 6
-			},
-			"default": {
-				"satisfaction": 70,
-				"food_satisfaction": 5
-			},
-			"applied_buffs": [
-				"stonehearth_ace:buffs:consumption:fruity_flavors",
-				"stonehearth_ace:buffs:consumption:refreshed_belly",
-				"stonehearth_ace:buffs:consumption:sweet_energy"
-			],
-			"quality": 5,
-			"effect_loops": 2
-		},
-		"stonehearth:food": {
-			"stonehearth:sitting_on_chair": {
-				"satisfaction": 150
-			},
-			"default": {
-				"satisfaction": 80
-			},
-			"quality": 6,
-			"eating_effect":"sitting_drink"
+		"stonehearth_ace:drink_container": {
+			"effect": "fiddle",
+			"require_reservation": true,
+			"drink": "archipelago_biome:food:papaya_smoothie_serving",
+			"stacks_per_serving": 1
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 11,
@@ -61,14 +46,14 @@
 			"is_item": true,
 			"category": "food",
 			"material_tags":[
-				"food",
+				"food_container",
+				"drink_container",
 				"prepared_food",
 				"papaya",
 				"fruit",
 				"vegetarian",
 				"stockpile_prepared_food",
 				"coconut",
-				"drink",
 				"smoothie_serving",
 				"milk",
 				"dairy"

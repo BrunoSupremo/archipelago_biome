@@ -1,0 +1,117 @@
+{
+	"type": "entity",
+	"mixins": [
+		"stonehearth:mixins:destructable_object",
+		"file(magma_ghost.json)"
+	],
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(magma_iconic.json)",
+			"ghost_form": "file(magma_ghost.json)",
+			"placeable_on_ground": true
+		},
+		"stonehearth:buffs": {
+			"buffs": {
+				"stonehearth_ace:buffs:weather:warmth_source": true
+			}
+		},
+		"sensor_list": {
+			"sensors": {
+				"warmth": {
+					"radius": 8
+				}
+			}
+		},
+		"effect_list": {
+			"default": "archipelago_biome:effects:magma"
+		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 2, "y": 3, "z": 2 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 2, "y": 3, "z": 2 }
+				}
+			]
+		},
+		"movement_modifier_shape": {
+			"modifier": -0.5,
+			"nav_preference_modifier": -0.5,
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 2, "y": 4, "z": 2 }
+				}
+			]
+		},
+		"stonehearth:resource_node": {
+			"resource_loot_table": {
+				"entries": {
+					"extra_pearl": {
+						"items": {
+							"lump_of_coal": {
+								"uri": "stonehearth:resources:coal:lump_of_coal",
+								"weight": 3,
+								"num_rolls": {
+									"min": 1,
+									"max": 2
+								}
+							},
+							"ore1": {
+								"uri": "stonehearth:resources:iron:ore",
+								"weight": 2
+							},
+							"ore2": {
+								"uri": "stonehearth:resources:silver:ore",
+								"weight": 2
+							},
+							"ore3": {
+								"uri": "stonehearth:resources:gold:ore",
+								"weight": 1
+							},
+							"ore4": {
+								"uri": "stonehearth:resources:tin:ore",
+								"weight": 3
+							},
+							"ore5": {
+								"uri": "stonehearth:resources:copper:ore",
+								"weight": 3
+							}
+						}
+					}
+				}
+			},
+			"harvest_overlay_effect": "stonehearth:effects:mine_overlay_effect",
+			"harvester_effect": "mine",
+			"description": "mine_boulder",
+			"durability": 6
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 0,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": false
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 30
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": false
+		},
+		"stonehearth:placement": {
+			"effect": "cast_geomancer",
+			"tag": "summon_stone"
+		}
+	}
+}

@@ -185,7 +185,8 @@
 			},
 			"magma":{
 				"display_name":"Magma Block",
-				"description":"Super hot, glowing red, half solid, magma. Do not touch."
+				"description":"Super hot, glowing red, half solid, magma. Do not touch.",
+				"recipe_description": "Summons a big (3x3x3) block of magma."
 			},
 			"volcano_smoke":{
 				"display_name":"Smoke Source",
@@ -412,6 +413,14 @@
 			"summon_stone_patch_sand": {
 				"display_name": "Sand Terrain Patch Stone",
 				"description": "Grows into a patch of sandy terrain, up to 12x12 units in size."
+			},
+			"summon_stone_crab_island":{
+				"display_name": "Crab Island",
+				"description": "Summon a mini tropical island with crabs."
+			},
+			"summon_stone_lake":{
+				"display_name": "Tropical Lake",
+				"description": "Summon a lake with tropical vegetation."
 			},
 			"summon_stone_volcano":{
 				"display_name": "Volcano",
@@ -793,6 +802,17 @@
 		},
 		"geomancer": {
 			"recipes": {
+				"categories":{
+					"archipelago_landmarks":"Archipelago Landmarks"
+				},
+				"summon_stone_crab_island_recipe":{
+					"recipe_name": "Crab Island",
+					"description": "Summon a mini tropical island with crabs."
+				},
+				"summon_stone_lake_recipe":{
+					"recipe_name": "Tropical Lake",
+					"description": "Summon a lake with tropical vegetation."
+				},
 				"summon_stone_volcano_recipe":{
 					"recipe_name": "Volcano",
 					"description": "Summon a whole mini volcano."
@@ -966,7 +986,7 @@
 				"message":"The fisher just got this cute lost clownfish."
 			},
 			"dusty_tome":{
-				"message":"A very old book, valuable to desert towns. It is a mistery how it is still dusty and not wet..."
+				"message":"A very old book, valuable to desert towns. It is a mystery how it is still dusty and not wet after being hooked..."
 			}
 		},
 		"monster_tuning": {

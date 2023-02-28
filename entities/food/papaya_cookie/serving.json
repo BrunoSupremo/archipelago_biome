@@ -1,0 +1,44 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.07
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(papaya_cookie.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food",
+			"destroy_on_uncarry": true
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 150
+			},
+			"default": {
+				"satisfaction": 80
+			},
+			"applied_buffs": [
+				"stonehearth_ace:buffs:consumption:sweet_energy"
+			],
+			"quality": 6
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.food.papaya_cookie.display_name)",
+			"description": "i18n(archipelago_biome:entities.food.papaya_cookie.description)",
+			"icon": "file(papaya_cookie.png)",
+			"material_tags":["food", "papaya", "vegetarian"],
+			"subject_override": "archipelago_biome:food:papaya_cookie"
+		}
+	}
+}

@@ -6,12 +6,16 @@
 	"description": "i18n(archipelago_biome:jobs.geomancer.recipes.summon_stone_volcano_recipe.description)",
 	"flavor": "",
 	"portrait": "/archipelago_biome/entities/landmark/summon_stone_volcano/summon_stone_volcano.png",
-	"level_requirement": 4,
+	"level_requirement": 5,
 	"workshop": "stonehearth:geomancer:workbench",
 	"ingredients": [
 		{
 			"uri": "stonehearth:landmark:summon_stone:block:rock",
 			"count": 8
+		},
+		{
+			"uri": "archipelago_biome:decoration:geomancer_magma",
+			"count": 1
 		},
 		{
 			"material": "earth_essence resource",

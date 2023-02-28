@@ -11,40 +11,23 @@
 		},
 		"mob": {
 			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		},
+		"stonehearth:stacks": {
+			"max_stacks": 1
 		}
 	},
 	"entity_data": {
-		"stonehearth:item": {
-			"category": "food"
+		"stonehearth:food_container": {
+			"effect": "fiddle",
+			"require_reservation": true,
+			"food": "archipelago_biome:food:coconut_serving",
+			"stacks_per_serving": 1
 		},
-		"stonehearth_ace:drink": {
-			"stonehearth:sitting_on_chair": {
-				"satisfaction": 70,
-				"food_satisfaction": 6
-			},
-			"default": {
-				"satisfaction": 60,
-				"food_satisfaction": 5
-			},
-			"applied_buffs": [
-				"stonehearth_ace:buffs:consumption:fruity_flavors",
-				"stonehearth_ace:buffs:consumption:refreshed_belly",
-				"stonehearth_ace:buffs:consumption:sweet_energy"
-			],
-			"quality": 2,
-			"effect_loops": 2
-		},
-		"stonehearth:food": {
-			"stonehearth:sitting_on_chair": {
-				"satisfaction": 30,
-				"drink_satisfaction": 3
-			},
-			"default": {
-				"satisfaction": 20,
-				"drink_satisfaction": 2
-			},
-			"quality": 2,
-			"eating_effect":"sitting_drink"
+		"stonehearth_ace:drink_container": {
+			"effect": "fiddle",
+			"require_reservation": true,
+			"drink": "archipelago_biome:food:coconut_serving",
+			"stacks_per_serving": 1
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 3,
@@ -62,7 +45,17 @@
 			"icon": "file(coconut.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags":["food", "raw_food", "fruit", "coconut", "vegetarian", "stockpile_raw_food", "drink"]
+			"material_tags":[
+				"food_container",
+				"drink_container",
+				"raw_food",
+				"raw_drink",
+				"fruit",
+				"coconut",
+				"vegetarian",
+				"stockpile_raw_food",
+				"stockpile_drink"
+			]
 		}
 	}
 }

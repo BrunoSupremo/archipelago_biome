@@ -9,7 +9,7 @@
 	"workshop": "stonehearth:blacksmith:workbench",
 	"ingredients": [
 		{
-			"material": "ingot resource",
+			"material": "ore resource",
 			"count": 2
 		}
 	],

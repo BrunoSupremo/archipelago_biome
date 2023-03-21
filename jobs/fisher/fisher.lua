@@ -6,10 +6,30 @@ local rng = _radiant.math.get_default_rng()
 local FisherClass = class()
 radiant.mixin(FisherClass, CraftingJob)
 
+local VERSIONS = {
+	ZERO = 0,
+	CODE_CLEANUP = 1
+}
+
+function FisherClass:get_version()
+	return VERSIONS.CODE_CLEANUP
+end
+
+function FisherClass:fixup_post_load(old_save_data)
+	if old_save_data.version < VERSIONS.CODE_CLEANUP then
+		--there was strange bugs happening, probably from race conditions
+		--this cleanup should help improve the ai
+		if self._sv.current_fish then
+			radiant.entities.destroy_entity(self._sv.current_fish)
+			self._sv.current_fish = nil
+		end
+	end
+end
+
 function FisherClass:initialize()
 	CraftingJob.initialize(self)
 	self._sv.fished = {}
-	self._sv.current_fish = nil
+	self._sv.current_loot = nil
 end
 
 function FisherClass:restore()
@@ -23,19 +43,17 @@ function FisherClass:activate()
 	self.biome_alias = stonehearth.world_generation:get_biome_alias()
 	self.player_id = radiant.entities.get_player_id(self._sv._entity)
 	self.kingdom_alias = stonehearth.player:get_kingdom(self.player_id)
-	self:add_fishing_data()
 	if self._sv.is_current_class then
 		self:_register_with_town()
 	end
-end
-
-function FisherClass:post_activate()
-	self:add_fishing_data()
+	self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true, false)
+	self:prepare_next_fish_loot()
 end
 
 function FisherClass:promote(json_path, options)
 	CraftingJob.promote(self, json_path, options)
 	self:_register_with_town()
+	self:prepare_next_fish_loot()
 end
 
 function FisherClass:_register_with_town()
@@ -47,7 +65,17 @@ function FisherClass:_register_with_town()
 	self.__saved_variables:mark_changed()
 end
 
+function FisherClass:destroy_current_loot()
+	if self._sv.current_loot then
+		--previously created fish that end up not used
+		radiant.entities.destroy_entity(self._sv.current_loot.entity)
+		self._sv.current_loot = nil
+	end
+end
+
 function FisherClass:demote()
+	self:destroy_current_loot()
+
 	local player_id = radiant.entities.get_player_id(self._sv._entity)
 	local town = stonehearth.town:get_town(player_id)
 	if town then
@@ -57,42 +85,7 @@ function FisherClass:demote()
 	CraftingJob.demote(self)
 end
 
-function FisherClass:add_fishing_data()
-	if not self.fishing_data then
-		self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true, false)
-	end
-	if not self.fishing_data then
-		print("Failed to load fisher files. Setting defaults manually. Trying again later.")
-		self.fishing_data = {
-			level_1 = {
-				default_fish = {
-					alias = "archipelago_biome:food:fish",
-					weight = 100,
-					effort = 120,
-					xp = 15
-				}
-			}
-		}
-		self:try_add_fishing_data_again()
-	end
-end
-
-function FisherClass:try_add_fishing_data_again()
-	self._timer = stonehearth.calendar:set_interval('add_fishing_data retry', '1h', function()
-		print("Trying to load fisher files again.")
-		self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true, false)
-		if self.fishing_data then
-			self._timer:destroy()
-			self._timer = nil
-		end
-	end)
-end
-
-function FisherClass:chose_random_fish()
-	self:add_fishing_data()
-	if not self.fishing_data then
-		return nil
-	end
+function FisherClass:prepare_next_fish_loot()
 	local weighted_set = WeightedSet(rng)
 	local level = "level_"..self:get_job_level()
 	if not self.fishing_data[level] then
@@ -102,25 +95,26 @@ function FisherClass:chose_random_fish()
 		local weight = table.weight or 0
 		local is_valid_biome = self:_is_valid_X( table.is_biome, table.is_not_biome, self.biome_alias )
 		local is_valid_kingdom = self:_is_valid_X( table.is_kingdom, table.is_not_kingdom, self.kingdom_alias )
-		local is_below_limit = not table.max_limit or table.max_limit>(self._sv.fished[level..fish] or 0)
+		local is_below_limit = not table.max_limit or table.max_limit>(self._sv.fished[table.alias] or 0)
 		if weight>0 and is_valid_biome and is_valid_kingdom and is_below_limit then
 			weighted_set:add(fish, weight)
 		end
 	end
-	if weighted_set:is_empty() then
-		return nil
-	end
 	local fish_key = weighted_set:choose_random()
-	self.current_fish_key = fish_key
-	local boat_effort = 1
-	if radiant.entities.get_posture(self._sv._entity) == "stonehearth:in_boat" then
-		boat_effort = 0.8
+	self._sv.current_loot = self.fishing_data[level][fish_key]
+
+	local loot_entity = radiant.entities.create_entity(self.fishing_data[level][fish_key].alias, {owner = self._sv._entity})
+	if loot_entity:get_component('stonehearth:stacks') then
+		loot_entity:get_component('stonehearth:stacks'):set_stacks(rng:get_int(1,10))
 	end
-	local to_AI = {
-		effort = self.fishing_data[level][fish_key].effort * boat_effort,
-		alias = self.fishing_data[level][fish_key].alias
-	}
-	return to_AI
+	local entity_forms = loot_entity:get_component('stonehearth:entity_forms')
+	if entity_forms then
+		local iconic_entity = entity_forms:get_iconic_entity()
+		if iconic_entity then
+			loot_entity = iconic_entity
+		end
+	end
+	self._sv.current_loot.entity = loot_entity
 end
 
 function FisherClass:_is_valid_X(is_X, is_not_X, X_alias)
@@ -165,35 +159,23 @@ function FisherClass:_remove_listeners()
 		end
 		self._xp_listeners = nil
 	end
-
-	if self._crab_trapped_listener then
-		self._crab_trapped_listener:destroy()
-		self._crab_trapped_listener = nil
-	end
-
-	if self._timer then
-		self._timer:destroy()
-		self._timer = nil
-	end
 end
 
 function FisherClass:_on_renewable_resource_gathered(args)
 	if args.harvested_target then
-		self._job_component:add_exp(1) --base exp for any renewable harvest
-	end
-
-	if args.harvested_target:get_uri() == "archipelago_biome:beach:oyster" then
-		self._job_component:add_exp(10) --extra for oysters
-
-		if args.spawned_item:get_uri() == "archipelago_biome:resources:pearl:black" then
-			self._job_component:add_exp(5) --another extra for black pearls
+		if self._xp_rewards["harvested_target"][args.harvested_target:get_uri()] then
+			self._job_component:add_exp(self._xp_rewards["harvested_target"][args.harvested_target:get_uri()])
+		else
+			self._job_component:add_exp(self._xp_rewards["harvested_target"]["renewables"])
 		end
+	end
+	if args.spawned_item then
+		self._job_component:add_exp(self._xp_rewards["spawned_item"][args.spawned_item:get_uri()])
 	end
 
 	if args.harvested_target:get_uri() == "archipelago_biome:gizmos:crab_trap" then
 		self:_got_a_crab(args.harvested_target)
 		stonehearth.ai:reconsider_entity(args.harvested_target)
-		self._job_component:add_exp(10) --extra for crabs traps
 	end
 end
 
@@ -213,46 +195,28 @@ function FisherClass:_got_a_crab(crab_trap)
 	end
 end
 
-function FisherClass:remember_current_fish(fish)
-	if self._sv.current_fish then
-		--previously created fish that end up not used
-		radiant.entities.destroy_entity(self._sv.current_fish)
-	end
-	self._sv.current_fish = fish
-	self.__saved_variables:mark_changed()
-end
+function FisherClass:_on_got_a_fish()
+	self._sv.fished[self._sv.current_loot.alias] = (self._sv.fished[self._sv.current_loot.alias] or 0) +1
 
-function FisherClass:clear_current_fish()
-	self._sv.current_fish = nil
-	self.__saved_variables:mark_changed()
-end
-
-function FisherClass:_on_got_a_fish(args)
-	local fish_key = self.current_fish_key
-	local level = self:get_job_level()
-	if level<1 or level>6 then
-		error("🔴 INVALID LEVEL "..level.." 🔴 There is no fishing data for level "..level)
-		level = 1
-	end
-	level = "level_"..level
-	self._sv.fished[level..fish_key] = (self._sv.fished[level..fish_key] or 0) +1
-	self.__saved_variables:mark_changed()
-
-	if self.fishing_data[level][fish_key].bulletin then
+	if self._sv.current_loot.bulletin then
 		stonehearth.bulletin_board:post_bulletin(self.player_id)
 		:set_ui_view('ArchipelagoFisherBulletinDialog')
 		:set_data({
-			zoom_to_entity = args.the_fish,
-			title = self.fishing_data[level][fish_key].bulletin.title,
-			message = self.fishing_data[level][fish_key].bulletin.message,
-			image = self.fishing_data[level][fish_key].bulletin.image
+			zoom_to_entity = self._sv.current_loot.entity,
+			title = self._sv.current_loot.bulletin.title,
+			message = self._sv.current_loot.bulletin.message,
+			image = self._sv.current_loot.bulletin.image
 		})
 	end
 
-	local xp = self.fishing_data[level][fish_key].xp or 1
+	local xp = self._sv.current_loot.xp or 1
 	self._job_component:add_exp(xp)
 
-	self:clear_current_fish()
+	self:prepare_next_fish_loot()
+end
+
+function FisherClass:get_current_loot()
+	return self._sv.current_loot
 end
 
 return FisherClass

@@ -230,6 +230,7 @@
 		"outfit:beach_head":	"file(entities/outfit/beach_head)",
 		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
 		"outfit:visitor":		"file(entities/outfit/visitor_outfit)",
+		"outfit:hula":			"file(entities/outfit/hula)",
 
 		"plants:hibiscus":			"file(entities/plants/hibiscus_plant)",
 		"plants:hibiscus:seed":		"file(entities/plants/hibiscus_plant/seed)",
@@ -430,14 +431,16 @@
 		"nordlingmod:jobs:index":"file(jobs/index_nordlings.json)",
 		"stonehearth/jobs/blacksmith/recipes/recipes.json":			"file(jobs/blacksmith/recipes)",
 		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
-		"stonehearth/jobs/cook/recipes/recipes.json":				"file(jobs/cook/recipes)",
+		"stonehearth/jobs/cook/recipes/recipes.json": [
+			"file(jobs/cook/recipes)",
+			"stonehearth_ace/archipelago_biome/jobs/cook/recipes/recipes.json"
+		],
 		"stonehearth/jobs/engineer/recipes/recipes.json":			"file(jobs/engineer/recipes)",
 		"stonehearth/jobs/geomancer/recipes/geomancer_recipes.json":"file(jobs/geomancer/recipes)",
 		"stonehearth/jobs/herbalist/recipes/recipes.json":			"file(jobs/herbalist/recipes)",
 		"stonehearth/jobs/mason/recipes/recipes.json":				"file(jobs/mason/recipes)",
 		"stonehearth/jobs/potter/recipes/recipes.json":				"file(jobs/potter/recipes)",
 		"stonehearth/jobs/weaver/recipes/recipes.json":				"file(jobs/weaver/recipes)",
-		"stonehearth_ace/jobs/cook/recipes/recipes.json":	"file(jobs/cook/recipes/ace_recipes.json)",
 		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"file(jobs/shaman/recipes)",
 
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
@@ -488,6 +491,7 @@
 		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)"
 	},
 	"overrides": {
+
 		"stonehearth/ai/actions/eat_item_action.lua":	"file(ai/actions/eat_item_action.lua)",
 
 		"stonehearth/data/rigs/entities/humans/animations/female/fishing_start.json":	"file(data/rigs/entities/humans/animations/female/fishing_start.json)",
@@ -513,6 +517,7 @@
 
 		"stonehearth_ace/archipelago_biome/data/biome/ace_generation_data.json":"archipelago_biome/data/biome/ace_generation_data.json",
 
+		"stonehearth_ace/archipelago_biome/jobs/cook/recipes/recipes.json":"file(jobs/cook/recipes/ace_recipes.json)",
 		"stonehearth_ace/archipelago_biome/jobs/common/ace_abilities.json":	"archipelago_biome/jobs/common/ace_abilities.json",
 		"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json":	"archipelago_biome/jobs/fisher/ace_description.json"
 	},

@@ -17,7 +17,10 @@
 			"recipes": {
 				"coconut_helmet": {
 					"recipe": "file(clothing_armor/coconut_helmet_recipe.json)"
-				}				
+				},
+				"hula": {
+					"recipe": "file(clothing_armor/hula_recipe.json)"
+				}		
 			}
 		}
 	}

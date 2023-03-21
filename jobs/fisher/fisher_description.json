@@ -42,6 +42,14 @@
 		"close_sound": "stonehearth:sounds:ui:carpenter_menu:menu_closed"
 	},
 	"xp_rewards": {
+		"harvested_target":{
+			"renewables": 1,
+			"archipelago_biome:beach:oyster": 10,
+			"archipelago_biome:gizmos:crab_trap": 10
+		},
+		"spawned_item":{
+			"archipelago_biome:resources:pearl:black":5
+		},
 		"craft_level_0": 5,
 		"craft_level_1": 7,
 		"craft_level_2": 9,

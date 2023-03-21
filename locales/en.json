@@ -456,6 +456,10 @@
 		"outfit": {
 			"visitor_outfit": {
 				"description": "Common worker outfit from another island"
+			},
+			"hula": {
+				"display_name": "Hula",
+				"description": "Hula outfit ready for a luau"
 			}
 		},
 		"plants": {

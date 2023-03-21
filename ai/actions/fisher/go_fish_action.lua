@@ -27,12 +27,9 @@ end
 
 function GoFish:start_thinking(ai, entity, args)
 	local job_component = entity:get_component('stonehearth:job')
-	local fish_table = job_component:get_curr_job_controller():chose_random_fish()
-	if fish_table then
-		ai:set_think_output({
-			effort = fish_table.effort or 60,
-			alias = fish_table.alias
-			})
+	local current_loot = job_component:get_curr_job_controller():get_current_loot()
+	if current_loot then
+		ai:set_think_output()
 	end
 end
 
@@ -43,19 +40,15 @@ return ai:create_compound_action(GoFish)
 	filter_fn = ai.CALL(find_a_fishing_spot, ai.ENTITY),
 	rating_fn = rate_fishing_spot,
 	description = 'find a fishing_spot'
-	})
+})
 :execute('stonehearth:goto_entity', {
 	entity = ai.PREV.item
-	})
+})
 :execute('stonehearth:reserve_entity', { entity = ai.BACK(2).item })
 :execute('archipelago_biome:turn_to_face_water', {dock = ai.BACK(3).item})
-:execute('archipelago_biome:fishing_animations', {effort = ai.BACK(6).effort})
-:execute('archipelago_biome:pickup_fish', {
-	dock = ai.BACK(5).item,
-	fish_alias = ai.BACK(7).alias
-	})
+:execute('archipelago_biome:fishing_animations', {})
+:execute('archipelago_biome:pickup_fish', {dock = ai.BACK(5).item})
 :execute('archipelago_biome:closest_storage_to_dock', {
-	dock = ai.BACK(6).item,
-	item = ai.PREV.fish
-	})
+	dock = ai.BACK(6).item
+})
 :execute('stonehearth:drop_carrying_in_storage', {storage = ai.PREV.storage})

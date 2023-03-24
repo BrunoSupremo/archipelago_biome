@@ -6,30 +6,11 @@ local rng = _radiant.math.get_default_rng()
 local FisherClass = class()
 radiant.mixin(FisherClass, CraftingJob)
 
-local VERSIONS = {
-	ZERO = 0,
-	CODE_CLEANUP = 1
-}
-
-function FisherClass:get_version()
-	return VERSIONS.CODE_CLEANUP
-end
-
-function FisherClass:fixup_post_load(old_save_data)
-	if old_save_data.version < VERSIONS.CODE_CLEANUP then
-		--there was strange bugs happening, probably from race conditions
-		--this cleanup should help improve the ai
-		if self._sv.current_fish then
-			radiant.entities.destroy_entity(self._sv.current_fish)
-			self._sv.current_fish = nil
-		end
-	end
-end
-
 function FisherClass:initialize()
 	CraftingJob.initialize(self)
 	self._sv.fished = {}
 	self._sv.current_loot = nil
+	self._sv.current_fish = nil --deprecated
 end
 
 function FisherClass:restore()
@@ -48,6 +29,12 @@ function FisherClass:activate()
 	end
 	self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true, false)
 	self:prepare_next_fish_loot()
+
+	--deprecated
+	if self._sv.current_fish then
+		radiant.entities.destroy_entity(self._sv.current_fish)
+		self._sv.current_fish = nil
+	end
 end
 
 function FisherClass:promote(json_path, options)

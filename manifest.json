@@ -5,6 +5,9 @@
 		"version" : 3,
 		"steam_file_id" : "1370165251"
 	},
+	"dependencies": [
+		"stonehearth_ace"
+	],
 	"default_locale": "en",
 	"server_init_script": "file(archipelago_biome_server)",
 	"aliases": {
@@ -368,6 +371,17 @@
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/insane_raids.json":	"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/insane_raids.json)",
 
+		"stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json":	"file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/tier_1_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_1_shops)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/tier_2_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_3_shops/tier_3_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_3_shops)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/caravan_shops_arc.json":	"file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/tier_1_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_1_shops)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/tier_2_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_3_shops/tier_3_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_3_shops)",
+
+		"stonehearth_ace:data:merchants:exotic_goods": "file(data/mercantile/merchants/exotic_goods.json)",
+
 		"stonehearth:data:player_task_groups": "file(services/server/population/data/player_task_groups.json)",
 
 		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
@@ -424,6 +438,8 @@
 		"stonehearth_ace:food:fish_meat:salmon":	"file(data/gm/campaigns/mermaid/mermaid_radar.json)",
 		"stonehearth_ace:food:fish_meat:trout":		"file(data/gm/campaigns/mermaid/mermaid_radar.json)",
 
+		"stonehearth_ace:herbalist:bee_skep":"file(jobs/herbalist/herbalist_bee_skep/herbalist_bee_skep.json)",
+
 		"archipelago_biome:jobs:fisher":"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json",
 		"archipelago_biome/jobs/fisher/fisher_abilities/fisher_abilities.json":"stonehearth_ace/archipelago_biome/jobs/common/ace_abilities.json",
 
@@ -447,6 +463,9 @@
 		"stonehearth:kingdoms:forest":"file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:mixins:mob": "file(mixins/mob)",
+		"stonehearth_ace:mixins:market_stall:tier_1": "file(mixins/market_stall/market_stall_tier_1.json)",
+		"stonehearth_ace:mixins:market_stall:tier_2": "file(mixins/market_stall/market_stall_tier_2.json)",
+		"stonehearth_ace:mixins:market_stall:tier_3": "file(mixins/market_stall/market_stall_tier_3.json)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
 		"stonehearth_ace:scenarios:scenario_index": "file(scenarios/insert_into_ace.json)",

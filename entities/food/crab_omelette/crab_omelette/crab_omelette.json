@@ -26,7 +26,7 @@
 			"value_in_gold": 13,
 			"rarity": "common",
 			"shop_info": {
-				"buyable": false,
+				"buyable": true,
 				"sellable": true,
 				"shopkeeper_level": 2,
 				"shopkeeper_type": "caravan"
@@ -38,7 +38,7 @@
 			"icon": "file(crab_omelette.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags":["food_container", "prepared_food", "crab", "omelette", "stockpile_prepared_food", "meat"]
+			"material_tags":["archipelago_made","food_container", "prepared_food", "crab", "omelette", "stockpile_prepared_food", "meat"]
 		},
 		"stonehearth:appeal": {
 			"appeal": 2

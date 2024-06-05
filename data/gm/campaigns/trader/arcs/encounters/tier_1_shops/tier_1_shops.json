@@ -1,0 +1,12 @@
+{
+	"out_edge": {
+		"type": "trigger_one",
+		"out_edges": [
+			{
+				"out_edge": "archipelago_shop_1",
+				"type": "weighted_edge",
+				"weight": 1
+			}
+		]
+	}
+}

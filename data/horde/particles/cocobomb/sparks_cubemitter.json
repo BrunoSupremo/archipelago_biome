@@ -10,7 +10,7 @@
 		},
 		"angle": {
 			"kind": "CONSTANT",
-			"values": [45]
+			"values": [10]
 		},
 		"origin": {
 			"surface": "POINT",
@@ -23,7 +23,7 @@
 		"lifetime": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values": [200, 500]
+				"values": [250, 550]
 			}
 		},
 		"speed": {
@@ -67,6 +67,21 @@
 				"values": [
 					[1, 0.8, 0, 1],
 					[1, 0.4, 0, 1]
+				]
+			},
+			"over_lifetime": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 1, 1, 1],
+						[0.2, 1, 0.3, 0],
+						[1, 1, 0.3, 0]
+					],
+					[
+						[0, 1, 1, 1],
+						[0.2, 1, 0.8, 0],
+						[1, 1, 0.8, 0]
+					]
 				]
 			},
 			"over_lifetime_a": {

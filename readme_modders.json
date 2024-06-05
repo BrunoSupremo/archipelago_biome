@@ -9,6 +9,7 @@
 	},
 	"entities":{
 		"material_tags":{
+			"archipelago_made":"Mark this item as from the biome or local recipe",
 			"hangable":"Used for fish that can be stocked (hang) on the fish rack",
 			"mermaid_radar":"This item will be tracked in the mermaid quest. If the player have too many of these, it will trigger her. Usually for fish and other water resources"
 		}

@@ -1,5 +1,6 @@
 {
 	"mixins": "archipelago_biome:mixins:fish",
+	"type": "entity",
 	"components": {
 		"model_variants": {
 			"default": {

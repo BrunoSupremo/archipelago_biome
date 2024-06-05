@@ -24,7 +24,7 @@
 			"description": "i18n(archipelago_biome:entities.decoration.fish_pond.description)",
 			"icon": "file(fish_pond.png)",
 			"category": "decoration",
-			"material_tags":["stone", "crafted", "decoration", "stockpile_decoration"]
+			"material_tags":["archipelago_made","stone", "crafted", "decoration", "stockpile_decoration"]
 		}
 	}
 }

@@ -1,0 +1,51 @@
+{
+	"components": {
+		"stonehearth_ace:market_stall": {
+			"stall_models": {
+				"exotic_archipelago_shop": {
+					"model_data": [
+						{
+							"model": "file(shop/signs/archipelago.qb)",
+							"matrix": "Tier1",
+							"scale": 0.101,
+							"offset": { "x": -15, "y": -5, "z": 17 }
+						},
+						{
+							"model": "stonehearth_ace/mixins/market_stall/shop/default_tier_1.qb",
+							"matrix": "Shop",
+							"scale": 0.1,
+							"offset": { "x": 23, "y": 0, "z": 18 }
+						}
+					],
+					"entity_points": [
+						{
+							"bone_name": "goodsShelf3"
+						},
+						{
+							"bone_name": "goodsShelf4"
+						},
+						{
+							"bone_name": "goodsShelf5"
+						},
+						{
+							"bone_name": "goodsFrontRow3",
+							"min_rarity": "uncommon"
+						},
+						{
+							"bone_name": "goodsFrontRow4"
+						},
+						{
+							"bone_name": "goodsFrontRow5"
+						},
+						{
+							"bone_name": "goodsMidRow4"
+						},
+						{
+							"bone_name": "goodsMidRow5"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -20,7 +20,7 @@
 			"description": "i18n(archipelago_biome:entities.decoration.pirate_flag.description)",
 			"icon": "file(pirate_flag.png)",
 			"category": "decoration",
-			"material_tags":["wood", "cloth", "crafted", "decoration", "stockpile_decoration"]
+			"material_tags":["archipelago_made","wood", "cloth", "crafted", "decoration", "stockpile_decoration"]
 		}
 	}
 }

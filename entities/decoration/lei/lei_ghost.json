@@ -21,7 +21,7 @@
 			"description": "i18n(archipelago_biome:entities.decoration.lei.description)",
 			"icon": "file(lei.png)",
 			"category": "decoration",
-			"material_tags":["wood", "herb", "flower", "crafted", "decoration", "stockpile_decoration"]
+			"material_tags":["archipelago_made","wood", "herb", "flower", "crafted", "decoration", "stockpile_decoration"]
 		}
 	}
 }

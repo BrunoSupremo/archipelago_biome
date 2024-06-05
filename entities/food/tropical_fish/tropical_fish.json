@@ -1,5 +1,6 @@
 {
 	"mixins": "archipelago_biome:mixins:fish",
+	"type": "entity",
 	"components": {
 		"render_info": {
 			"cache_model_geometry":false,

@@ -1,0 +1,66 @@
+{
+	"type": "encounter",
+	"encounter_type": "shop",
+	"unique": true,
+	"in_edge": "archipelago_shop_1",
+	"shop_info": {
+		"name": "i18n(archipelago_biome:data.gm.campaigns.trader.arcs.encounters.tier_1_shops.archipelago_shop_1.name)",
+		"title": "i18n(archipelago_biome:data.gm.campaigns.trader.arcs.encounters.tier_1_shops.archipelago_shop_1.title)",
+		"inventory": {
+			"merchant_options":{
+				"max_wanted_items": 4,
+				"wanted_items": [
+					{
+						"material": "wood resource",
+						"price_factor": 1.5,
+						"max_quantity": 10,
+						"chance": 0.4
+					},
+					{
+						"material": "thread resource",
+						"price_factor": 1.7,
+						"max_quantity": 15,
+						"chance": 0.4
+					},
+					{
+						"material": "any fuel",
+						"price_factor": 1.45,
+						"max_quantity": 24,
+						"chance": 0.4
+					},
+					{
+						"material": "prepared_drink",
+						"price_factor": 1.2,
+						"max_quantity": 16,
+						"chance": 0.6
+					},
+					{
+						"material": "prepared_food",
+						"price_factor": 1.45,
+						"max_quantity": 12,
+						"chance": 0.6
+					}
+				]
+			},
+			"shopkeeper_level": 1,
+			"shopkeeper_gold": 150,
+			"overall_price_multiplier": 2,
+			"entries": [
+				{
+					"items_matching": {
+						"anything_with": {
+							"material": [
+								"archipelago_made"
+							]
+						}
+					},
+					"quantity": {
+						"min": 0,
+						"max": 1
+					},
+					"fine_item_chance": 0.1
+				}
+			]
+		}
+	}
+}

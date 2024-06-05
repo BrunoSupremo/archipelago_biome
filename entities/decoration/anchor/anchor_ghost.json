@@ -24,7 +24,7 @@
 			"description": "i18n(archipelago_biome:entities.decoration.anchor.description)",
 			"icon": "file(anchor.png)",
 			"category": "decoration",
-			"material_tags":["metal", "crafted", "decoration", "stockpile_decoration"]
+			"material_tags":["archipelago_made","metal", "crafted", "decoration", "stockpile_decoration"]
 		}
 	}
 }

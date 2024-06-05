@@ -460,6 +460,10 @@
 			"hula": {
 				"display_name": "Hula",
 				"description": "Hula outfit ready for a luau"
+			},
+			"tricorn_hat": {
+				"display_name": "Tricorn Hat",
+				"description": "The best choice for the sea"
 			}
 		},
 		"plants": {
@@ -1163,6 +1167,30 @@
 									"simple_message": {
 										"bulletin_title": "Aquatics carrying loot scurry toward you"
 									}
+								}
+							}
+						}
+					}
+				},
+				"trader": {
+					"arcs": {
+						"encounters": {
+							"tier_1_shops": {
+								"archipelago_shop_1": {
+									"name": "Archipelago Simple Items Shop",
+									"title": "A trader has arrived with a few items from tropical islands"
+								}
+							},
+							"tier_2_shops": {
+								"archipelago_shop_2": {
+									"name": "Archipelago Items Shop",
+									"title": "A trader has arrived with items from tropical islands"
+								}
+							},
+							"tier_3_shops": {
+								"archipelago_shop_3": {
+									"name": "Archipelago Complete Items Shop",
+									"title": "A trader has arrived full of items from tropical islands"
 								}
 							}
 						}

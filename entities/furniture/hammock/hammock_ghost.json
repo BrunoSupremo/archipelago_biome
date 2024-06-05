@@ -22,7 +22,7 @@
 			"description": "i18n(archipelago_biome:entities.furniture.hammock.description)",
 			"icon": "file(hammock.png)",
 			"category": "furniture",
-			"material_tags":["wood", "fiber", "furniture", "crafted", "bed", "stockpile_furniture"]
+			"material_tags":["archipelago_made","wood", "fiber", "furniture", "crafted", "bed", "stockpile_furniture"]
 		}
 	}
 }

@@ -24,7 +24,7 @@
 			"value_in_gold": 6,
 			"rarity": "common",
 			"shop_info": {
-				"buyable": false,
+				"buyable": true,
 				"sellable": true,
 				"shopkeeper_level": 1,
 				"shopkeeper_type": "caravan"
@@ -37,6 +37,7 @@
 			"is_item": true,
 			"category": "food",
 			"material_tags":[
+				"archipelago_made",
 				"food_container",
 				"raw_food",
 				"prepared_food",

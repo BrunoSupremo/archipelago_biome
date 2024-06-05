@@ -1,0 +1,7 @@
+{
+	"encounters": {
+		"archipelago_shop_1": "file(encounters/tier_1_shops/archipelago_shop_1.json)",
+		"archipelago_shop_2": "file(encounters/tier_2_shops/archipelago_shop_2.json)",
+		"archipelago_shop_3": "file(encounters/tier_3_shops/archipelago_shop_3.json)"
+	}
+}

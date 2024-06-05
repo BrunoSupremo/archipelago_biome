@@ -3,6 +3,7 @@
 		"food": {
 			"recipes": {
 				"mixintypes": {
+					"fish_fingers": "remove",
 					"fish_stew": "remove",
 					"roast_fish": "remove"
 				}
@@ -11,14 +12,27 @@
 		"chefs_specials": {
 			"recipes": {
 				"mixintypes": {
+					"fish_pot_pie": "remove",
+					"fishwrap": "remove",
 					"sushi": "remove",
-					"sushi_vegetarian": "remove",
-					"fish_pot_pie": "remove"
+					"sushi_vegetarian": "remove"
 				}		
 			}
 		},
 		"tropical_recipes": {
 			"recipes" : {
+				"fish_fingers": {
+					"recipe": "stonehearth_ace/jobs/cook/recipes/fish_fingers_recipe.json"
+				},
+				"fish_pot_pie": {
+					"recipe": "stonehearth_ace/jobs/cook/recipes/fish_pot_pie_recipe.json"
+				},
+				"fish_stew": {
+					"recipe": "stonehearth_ace/jobs/cook/recipes/fish_stew_recipe.json"
+				},
+				"fishwrap": {
+					"recipe": "stonehearth_ace/jobs/cook/recipes/fishwrap_recipe.json"
+				},
 				"roast_fish": {
 					"recipe": "stonehearth_ace/jobs/cook/recipes/roast_fish_recipe.json"
 				},
@@ -27,9 +41,6 @@
 				},
 				"sushi_vegetarian": {
 					"recipe": "stonehearth_ace/jobs/cook/recipes/sushi_vegetarian_recipe.json"
-				},
-				"fish_pot_pie": {
-					"recipe": "stonehearth_ace/jobs/cook/recipes/fish_pot_pie_recipe.json"
 				}
 			}
 		}

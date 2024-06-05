@@ -1,11 +1,24 @@
 Additions:
-Hula Outfit, craftable by a weaver
+New trader, selling items from archipelago.
+
 
 Changes:
+All archipelago items properly tagged with "archipelago_made". Can be used by other modders to target them all. (e.g. shops, quests, etc.)
+All archipelago items are available in shops now. Equips, decor, foods, etc.
+Sand castle model updated
+Cocobomb effects updated, better and with sounds
+
 
 Changes for ACE:
 
+
 Fixes:
-(for ACE mod)
-Fixed the animal feed category appearing on the cook even though ACE had it moved to shepherd
-Reworked fisher a.i., should stop some random bugs that were hapenning before
+Fixed Invisible Workshop Sign in the fisher crafting menu ui
+Removed spam of buried treasures when using "plenty" landmark option from Extra Map Options mod
+Collision box of fisher pond adjusted to avoid hearthlings floating above it
+
+
+Fixes for ACE:
+Bee skeps will now properly work (make honey) in archipelago seasons except on hurricane season
+Fixed Papaya Smoothies being used as ingredient for recipes that needed milk
+Removed duplicated cook ace recipes, moved their ace fish based recipes to seafood category

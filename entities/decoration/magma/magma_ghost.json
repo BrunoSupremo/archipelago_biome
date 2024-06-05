@@ -24,7 +24,7 @@
 			"description": "i18n(archipelago_biome:entities.decoration.magma.description)",
 			"icon": "file(magma.png)",
 			"category": "decoration",
-			"material_tags":["magma", "crafted", "decoration", "stockpile_decoration"]
+			"material_tags":["archipelago_made","magma", "crafted", "decoration", "stockpile_decoration"]
 		}
 	}
 }

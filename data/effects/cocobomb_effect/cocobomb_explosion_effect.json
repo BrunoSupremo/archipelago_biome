@@ -3,10 +3,10 @@
 	"tracks": {
 		"dust": {
 			"type": "cubemitter",
-			"cubemitter": "particles/dust_poof/purple_dust_poof.cubemitter.json",
+			"cubemitter": "/archipelago_biome/data/horde/particles/cocobomb/smoke_cubemitter.json",
 			"loop": false,
 			"start_time" : 650,
-			"end_time" : 4000,
+			"end_time" : 4300,
 			"transforms": {
 				"x":0,
 				"y":0,
@@ -21,7 +21,7 @@
 			"cubemitter": "/archipelago_biome/data/horde/particles/cocobomb/explosion_cubemitter.json",
 			"loop": false,
 			"start_time" : 0,
-			"end_time" : 1000,
+			"end_time" : 1150,
 			"transforms": {
 				"x":0,
 				"y":0,
@@ -29,6 +29,28 @@
 				"rx":90,
 				"ry":0,
 				"rz":0
+			}
+		},
+		"sound": {
+			"type": "sound_effect",
+			"duration": 1000,
+			"start_time": 0,
+			"min_distance": 50,
+			"falloff": 3.6,
+			"volume": 100,
+			"track": {
+				"type": "one_of",
+				"items": [
+					"stonehearth:sounds:entling_mage_fire_01",
+					"stonehearth:sounds:entling_mage_fire_02",
+					"stonehearth:sounds:entling_mage_fire_03",
+					"stonehearth:sounds:entling_mage_fire_04",
+					"stonehearth:sounds:entling_mage_fire_05",
+					"stonehearth:sounds:entling_mage_fire_06",
+					"stonehearth:sounds:entling_mage_fire_07",
+					"stonehearth:sounds:entling_mage_fire_08",
+					"stonehearth:sounds:entling_mage_fire_09"
+				]
 			}
 		}
 	}

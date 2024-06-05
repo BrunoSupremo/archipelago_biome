@@ -1,0 +1,23 @@
+{
+	"components": {
+		"stonehearth:buffs": {
+			"seasonal_buffs": {
+				"dry": {
+					"add": {
+						"stonehearth_ace:buffs:bee_skep": true
+					}
+				},
+				"hurricane": {
+					"remove": {
+						"stonehearth_ace:buffs:bee_skep": true
+					}
+				},
+				"wet": {
+					"add": {
+						"stonehearth_ace:buffs:bee_skep": true
+					}
+				}
+			}
+		}
+	}
+}

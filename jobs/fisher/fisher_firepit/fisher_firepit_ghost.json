@@ -26,7 +26,7 @@
 			"description": "i18n(archipelago_biome:jobs.fisher.fisher_firepit.description)",
 			"icon": "file(fisher_firepit.png)",
 			"category": "workshops",
-			"material_tags":["tool", "stockpile_tool"]
+			"material_tags":["archipelago_made","tool", "stockpile_tool"]
 		}
 	}
 }

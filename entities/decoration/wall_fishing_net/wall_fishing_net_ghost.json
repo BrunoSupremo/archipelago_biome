@@ -25,6 +25,7 @@
 			"icon": "file(wall_fishing_net.png)",
 			"category": "decoration",
 			"material_tags":[
+				"archipelago_made",
 				"fiber",
 				"decoration",
 				"crafted",

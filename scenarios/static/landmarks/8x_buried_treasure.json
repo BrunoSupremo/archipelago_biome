@@ -9,6 +9,7 @@
 		"length": 8
 	},
 	"habitat_types": ["plains"],
+	"plenty_reduction_factor": 0.1,
 	"weight": 10,
 	"data": {
 		"brush" : "/archipelago_biome/data/models/landmark/8x_buried_treasure.qb",

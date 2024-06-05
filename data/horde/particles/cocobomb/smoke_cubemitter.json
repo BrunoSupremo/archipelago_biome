@@ -1,0 +1,125 @@
+{
+	"name": "smoke",
+	"duration": 9999,
+	"material": "materials/cubemitter.material.json",
+	"loops": true,
+	"emission": {
+		"rate": {
+			"kind": "BURST",
+			"values": [
+				[0, 25],
+				[100, 25],
+				[200, 25]
+			]
+		},
+		"angle": {
+			"kind": "RANDOM_BETWEEN",
+			"values": [0, 90]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": {
+				"surface": "POINT"
+			}
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [3900, 4100]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [2, 4]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 7],
+					[0.1, 0],
+					[0.5, 0],
+					[1, -0.5]
+				]
+			}
+		},
+		"acceleration": {
+			"over_lifetime_y": {
+				"kind": "CURVE",
+				"values": [
+					[0, -0.4],
+					[1, 2]
+				]
+			}
+		},
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, 0]
+					],
+					[
+						[0, 180],
+						[1, 180]
+					]
+				]
+			},
+			"over_lifetime_z": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, 0]
+					],
+					[
+						[0, 180],
+						[1, 180]
+					]
+				]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0.4, 0.8]
+			},
+			"over_lifetime": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[0.1, 1],
+						[0.9, 2],
+						[1, 1]
+					],
+					[
+						[0, 0],
+						[0.1, 1.8],
+						[0.9, 2.8],
+						[1, 1.8]
+					]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.3, 0.3, 0.3, 0.4]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.1, 0],
+					[0.25, 0.5],
+					[0.7, 0.2],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

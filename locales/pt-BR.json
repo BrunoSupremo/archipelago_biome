@@ -460,6 +460,10 @@
 			"hula": {
 				"display_name": "Hula",
 				"description": "Roupa Hula pronta para um luau"
+			},
+			"tricorn_hat": {
+				"display_name": "Chapéu Tricórnio",
+				"description": "A melhor escolha para o mar"
 			}
 		},
 		"plants": {
@@ -1161,6 +1165,30 @@
 									"simple_message": {
 										"bulletin_title": "Aquáticos carregando saques correm em sua direção"
 									}
+								}
+							}
+						}
+					}
+				},
+				"trader": {
+					"arcs": {
+						"encounters": {
+							"tier_1_shops": {
+								"arquipelago_shop_1": {
+									"name": "Loja de Itens Simples do Arquipélago",
+									"title": "Um comerciante chegou com alguns itens de ilhas tropicais"
+								}
+							},
+							"tier_2_shops": {
+								"arquipelago_shop_2": {
+									"name": "Loja de Itens do Arquipélago",
+									"title": "Um comerciante chegou com itens de ilhas tropicais"
+								}
+							},
+							"tier_3_shops": {
+								"arquipelago_shop_3": {
+									"name": "Loja de Itens Completos do Arquipélago",
+									"title": "Um comerciante chegou cheio de itens de ilhas tropicais"
 								}
 							}
 						}

@@ -22,7 +22,7 @@
          "description": "i18n(archipelago_biome:entities.decoration.tiki_torch.description)",
          "icon": "file(tiki_torch.png)",
          "category": "decoration",
-         "material_tags":["light_source", "crafted", "wood", "stockpile_decoration", "decoration"]
+         "material_tags":["archipelago_made","light_source", "crafted", "wood", "stockpile_decoration", "decoration"]
       }
    }
 }

@@ -1,4 +1,3 @@
--- local log = radiant.log.create_logger('ArchipelagoCave')
 local ArchipelagoCave = class()
 local Point3 = _radiant.csg.Point3
 local Cube3 = _radiant.csg.Cube3
@@ -37,9 +36,7 @@ function ArchipelagoCave:move_to_edge(location)
 	repeat
 		step = step +1
 		at_edge, side = self:edge_neighbor(location, step)
-	--code aligner comment because sublime can't understand repeat until identation ¬¬
 	until at_edge
-	--code aligner comment because sublime can't understand repeat until identation ¬¬
 
 	if step == 1 then
 		-- already at the edge
@@ -393,11 +390,9 @@ function ArchipelagoCave:populate_cave(location)
 
 	local undead_population = stonehearth.population:get_population('undead')
 	local skeleton_info = {
-		--comment align
 		tuning = 'archipelago_biome:monster_tuning:undead:cave_skeleton',
-		combat_leash_range = 16,
+		combat_leash_range = 32,
 		from_population = {
-			--comment align
 			role = 'skeleton',
 			min = 2,
 			max = 6,

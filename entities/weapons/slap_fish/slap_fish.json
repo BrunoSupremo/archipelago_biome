@@ -42,9 +42,9 @@
 			"value_in_gold": 9,
 			"rarity": "common",
 			"shop_info": {
-				"buyable": false,
+				"buyable": true,
 				"sellable": true,
-				"shopkeeper_level": 2,
+				"shopkeeper_level": 1,
 				"shopkeeper_type": "caravan"
 			}
 		},
@@ -53,7 +53,7 @@
 			"description": "i18n(archipelago_biome:entities.weapons.slap_fish.description)",
 			"icon": "file(slap_fish.png)",
 			"category": "weapons",
-			"material_tags":["fish", "melee_weapon", "crafted", "stockpile_weapon"]
+			"material_tags":["archipelago_made","fish", "melee_weapon", "crafted", "stockpile_weapon"]
 		}
 	}
 }

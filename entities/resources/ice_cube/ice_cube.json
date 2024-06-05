@@ -30,7 +30,7 @@
 			"icon": "file(ice_cube.png)",
 			"is_item": true,
 			"category": "resources",
-			"material_tags":["ice_cube", "resource", "stockpile_raw_food", "stockpile_trophy"]
+			"material_tags":["archipelago_made","ice_cube", "resource", "stockpile_raw_food", "stockpile_trophy"]
 		},
 		"stonehearth:appeal": {
 			"appeal": 1

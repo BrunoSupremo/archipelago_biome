@@ -45,7 +45,7 @@
 			"value_in_gold": 6,
 			"rarity": "common",
 			"shop_info": {
-				"buyable": false,
+				"buyable": true,
 				"sellable": true,
 				"shopkeeper_level": 1,
 				"shopkeeper_type": "caravan"
@@ -57,6 +57,7 @@
 			"icon": "file(coconut_helmet.png)",
 			"category": "armor",
 			"material_tags": [
+				"archipelago_made",
 				"coconut",
 				"helmet",
 				"armor",

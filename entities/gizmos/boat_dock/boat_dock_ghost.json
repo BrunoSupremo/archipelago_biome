@@ -65,7 +65,7 @@
 			"description": "i18n(archipelago_biome:entities.gizmos.boat_dock.description)",
 			"icon": "file(boat_dock.png)",
 			"category": "decoration",
-			"material_tags":["wood", "crafted", "decoration", "stockpile_decoration"]
+			"material_tags":["archipelago_made","wood", "crafted", "decoration", "stockpile_decoration"]
 		}
 	}
 }

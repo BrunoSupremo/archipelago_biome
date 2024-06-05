@@ -27,7 +27,7 @@
 			"description": "i18n(archipelago_biome:entities.decoration.fancy_fisher_sign.description)",
 			"icon": "file(fancy_fisher_sign.png)",
 			"category": "decoration",
-			"material_tags":["decoration", "crafted", "sign", "stockpile_decoration"]
+			"material_tags":["archipelago_made","decoration", "crafted", "sign", "stockpile_decoration"]
 		}
 	}
 }

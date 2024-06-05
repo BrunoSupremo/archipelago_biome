@@ -54,7 +54,7 @@
 			"description": "i18n(archipelago_biome:entities.armor.turtle_shield.description)",
 			"icon": "file(turtle_shield.png)",
 			"category": "armor",
-			"material_tags":["turtle", "shield", "armor", "heavy_armor", "stockpile_equipment"]
+			"material_tags":["archipelago_made","turtle", "shield", "armor", "heavy_armor", "stockpile_equipment"]
 		}
 	}
 }

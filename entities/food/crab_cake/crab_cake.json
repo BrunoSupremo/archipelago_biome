@@ -27,9 +27,9 @@
 			"value_in_gold": 14,
 			"rarity": "common",
 			"shop_info": {
-				"buyable": false,
+				"buyable": true,
 				"sellable": true,
-				"shopkeeper_level": 1,
+				"shopkeeper_level": 2,
 				"shopkeeper_type": "caravan"
 			}
 		},
@@ -39,7 +39,7 @@
 			"icon": "file(crab_cake.png)",
 			"is_item": true,
 			"category": "food",
-			"material_tags":["food_container", "prepared_food", "crab", "stockpile_prepared_food", "meat"]
+			"material_tags":["archipelago_made","food_container", "prepared_food", "crab", "stockpile_prepared_food", "meat"]
 		},
 		"stonehearth:appeal": {
 			"appeal": 4

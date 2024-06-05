@@ -22,7 +22,7 @@
 			"description": "i18n(archipelago_biome:entities.containers.input_fish_stall.description)",
 			"icon": "file(input_fish_stall.png)",
 			"category": "storage",
-			"material_tags":["wood", "containers", "crafted", "furniture", "stockpile_furniture"]
+			"material_tags":["archipelago_made","wood", "containers", "crafted", "furniture", "stockpile_furniture"]
 		}
 	}
 }

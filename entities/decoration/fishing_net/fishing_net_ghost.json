@@ -24,6 +24,7 @@
 			"icon": "file(fishing_net.png)",
 			"category": "decoration",
 			"material_tags":[
+				"archipelago_made",
 				"wood",
 				"fiber",
 				"decoration",

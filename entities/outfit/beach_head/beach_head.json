@@ -46,7 +46,7 @@
          "description": "i18n(archipelago_biome:entities.outfit.beach_head.description)",
          "icon": "file(beach_head.png)",
          "category": "armor",
-         "material_tags":["leather", "helmet", "armor", "light_armor", "stockpile_equipment"]
+         "material_tags":["archipelago_made","leather", "helmet", "armor", "light_armor", "stockpile_equipment"]
       }
    }
 }

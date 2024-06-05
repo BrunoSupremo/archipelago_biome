@@ -31,6 +31,7 @@
 			"is_item": true,
 			"category": "resources",
 			"material_tags":[
+				"archipelago_made",
 				"mermaid_radar",
 				"black_pearl",
 				"stockpile_trophy"

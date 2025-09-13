@@ -1,0 +1,18 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"stonehearth:landmark": {
+			"landmark": {
+				"brush" : "/archipelago_biome/data/models/landmark/16x_pirate_cave.qb",
+				"landmark_block_types": "archipelago_biome:landmark_blocks",
+				"destroy_entities": false,
+				"clip_if_outside_terrain": true
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"mob_collision_type": "clutter"
+		}
+	}
+}

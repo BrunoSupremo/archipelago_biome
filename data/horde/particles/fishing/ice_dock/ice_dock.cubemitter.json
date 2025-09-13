@@ -1,0 +1,88 @@
+{
+	"name": "ice_dock",
+	"duration": 10000,
+	"material": "materials/cubemitter.material.json",
+	"loops": true,
+	"emission": {
+		"rate": {
+			"kind": "CONSTANT",
+			"values": [1]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [0]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": {
+				"surface": "POINT"
+			}
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [5000, 9000]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [3]
+			},
+			"start_y": {
+				"kind": "CONSTANT",
+				"values": [0.075]
+			}
+		},
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, 0]
+					],
+					[
+						[0, 0],
+						[1, 2.5]
+					]
+				]
+			},
+			"over_lifetime_z": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, 0]
+					],
+					[
+						[0, 0],
+						[1, 2.5]
+					]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.0, 0.5, 0.656, 1]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.5, 0.5],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

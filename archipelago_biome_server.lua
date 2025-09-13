@@ -1,25 +1,43 @@
 archipelago_biome = {}
-print("Archipelago Biome Mod version 24.6.5")
+print("Archipelago Biome Mod version 25.9.12")
 
 --[[
 
-ostrich rig for aquatic monsters
+Floating Markets: Imagine bustling markets on large wooden rafts or floating platforms. Traders from different islands gather to exchange goods, and players can participate by setting up their own floating market stalls. The market could feature unique items, rare resources, and exotic pets.
+trader with diver gear
 
-aquatic citizen immigrant, at level 6 fisher + tier 3 town
+check ace extending bridge renderer
 
-fix boats
+underwater volcano
+
+boat as decor
+
+waterzilla
+
+zone renderer for fish docks and crab trap
+
+ostrich rig for aquatic/ness monsters
+
+fix/redo boat mechanics
 
 fisher village, landmark, ~3x3 chunks
 
 spawn whale, poyo rig. or as a fancy and decorated landmark
 
-wave effect for storm weather
-
 rework pirate hat
 
 Bugs:
 (vanilla) chairs stocked on fish only container because it has the "all" option set --too hard to fix
+varanus boat riding animation
 
+things to look up for inspiration:
+	pirates of the caribean
+	one piece
+	atlantis
+	moana
+	tropico
+
+----
 ]]
 
 function archipelago_biome:_on_biome_set(e)
@@ -53,7 +71,15 @@ function archipelago_biome:_on_required_loaded()
 		local custom_seasons_service = require('services.server.seasons.custom_seasons_service')
 		local seasons_service = radiant.mods.require('stonehearth.services.server.seasons.seasons_service')
 		radiant.mixin(seasons_service, custom_seasons_service)
+
+		local custom_follow_path_action = require('ai.actions.custom_follow_path_action')
+		local follow_path_action = radiant.mods.require('stonehearth.ai.actions.follow_path_action')
+		radiant.mixin(follow_path_action, custom_follow_path_action)
 	end
+
+	local custom_renewable_resource_node = require('components.renewable_resource_node.custom_renewable_resource_node_component')
+	local renewable_resource_node = radiant.mods.require('stonehearth.components.renewable_resource_node.renewable_resource_node_component')
+	radiant.mixin(renewable_resource_node, custom_renewable_resource_node)
 end
 
 radiant.events.listen_once(radiant, 'radiant:required_loaded', archipelago_biome, archipelago_biome._on_required_loaded)

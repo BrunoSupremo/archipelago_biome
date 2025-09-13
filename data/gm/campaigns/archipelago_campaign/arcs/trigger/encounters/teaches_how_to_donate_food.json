@@ -6,9 +6,9 @@
 		"test_1": {
 			"food_bin_is_full": {
 				"item": "script",
-				"type": "deny_if",
+				"type": "deny_if_not",
 				"value": true,
-				"script": "file(food_bin_is_full.lua)"
+				"script": "file(food_bin_is_empty.lua)"
 			}
 		}
 	},

@@ -1,0 +1,32 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(chum_bucket.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.1, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.decoration.chum_bucket.display_name)",
+			"description": "i18n(archipelago_biome:entities.decoration.chum_bucket.description)",
+			"icon": "file(chum_bucket.png)",
+			"category": "decoration",
+			"material_tags":[
+				"archipelago_made",
+				"fish",
+				"decoration",
+				"crafted",
+				"stockpile_decoration"
+			]
+		}
+	}
+}

@@ -1,14 +1,14 @@
 {
 	"name": "explosion",
 	"duration": 1000,
-	"material": "materials/cubemitter.material.json",
+	"material": "materials/cubemitter_add_bloom.material.json",
 	"loops": false,
 	"emission": {
 		"rate": {
 			"kind": "BURST",
 			"values": [
-				[0, 50],
-				[100, 50]
+				[0, 40],
+				[100, 40]
 			]
 		},
 		"angle": {
@@ -36,7 +36,7 @@
 		"lifetime": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [1100]
+				"values": [1000]
 			}
 		},
 		"speed": {
@@ -105,20 +105,21 @@
 				"values": [
 					[
 						[0, 1, 1, 1],
-						[0.2, 1, 0.3, 0],
-						[1, 1, 0.3, 0]
+						[0.2, 1, 0.1, 0],
+						[1, 0, 0, 0]
 					],
 					[
 						[0, 1, 1, 1],
-						[0.2, 1, 0.8, 0],
-						[1, 1, 0.8, 0]
+						[0.2, 1, 0.9, 0],
+						[1, 0, 0, 0]
 					]
 				]
 			},
 			"over_lifetime_a": {
 				"kind": "CURVE",
 				"values": [
-					[0, 0.8],
+					[0, 0.4],
+					[0.5, 0.1],
 					[1, 0]
 				]
 			}

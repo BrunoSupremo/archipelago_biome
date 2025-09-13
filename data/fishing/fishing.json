@@ -1,263 +1,327 @@
 {
-	"level_1":{
-		"default_fish":{
-			"_underline_prefixes":"are just for comments/instructions",
-
+	"how_to_mod_this":{
+		"example_and_instructions":{
 			"alias":"archipelago_biome:food:fish",
-			"_alias":"alias of the desired item that can be fished",
+			"_comment":"alias of the desired item that can be fished",
+			"_comment":"can be a table with a list of aliases, one will be randomly selected",
 
 			"weight":100,
-			"_weight":"a number > 0. relative chance of getting this item instead of the others",
+			"_comment":"relative chance of getting this item instead of the others",
+			"_comment":"can be a single number or a list for different levels",
 
-			"_max_limit":"optional. a number > 0, how many times the fisher can get this item",
+			"max_limit":2,
+			"_comment":"optional. a number > 0, limit how many times the fisher can get this item",
+			"_comment":"can't be used with table list of aliases, as those are random, can't be tracked",
 
-			"_bulletin":{
-				"_comment":"optional. shows a notification when the fisher get this item.",
-				"_title":"the notification and bulletin title",
-				"_message":"whatever you want to appear as text in the bulletin",
-				"_image":"address of the image you want displayed, probably a portrait of the item"
+			"bulletin":{
+				"title":"the notification and bulletin title",
+				"message":"whatever you want to appear as text in the bulletin",
+				"image":"/mod/folder/image.png"
 			},
+			"_comment":"optional. shows a notification when the fisher get this item.",
 
-			"_is_biome":[
-				"optional. it makes the item only available for the listed biomes",
+			"is_biome":[
 				"stonehearth:biome:temperate",
 				"stonehearth:biome:desert"
 			],
-			"_is_not_biome":[
-				"optional. it prohibits the item for the listed biomes",
+			"_comment":"optional. it makes the item only available for the listed biomes",
+
+			"is_not_biome":[
 				"stonehearth:biome:temperate",
 				"stonehearth:biome:desert"
 			],
+			"_comment":"optional. it prohibits the item only for the listed biomes",
 
-			"_is_kingdom":[
-				"optional. it makes the item only available for the listed kingdoms",
+			"is_kingdom":[
 				"stonehearth:kingdoms:ascendancy",
 				"rayyas_children:kingdoms:rayyas_children"
 			],
-			"_is_not_kingdom":[
-				"optional. it prohibits the item for the listed kingdoms",
+			"_comment":"optional. it makes the item only available for the listed kingdoms",
+
+			"is_not_kingdom":[
 				"stonehearth:kingdoms:ascendancy",
 				"rayyas_children:kingdoms:rayyas_children"
 			],
+			"_comment":"optional. it prohibits the item only for the listed kingdoms",
 
-			"(is_) and (is_not_)":[
+			"_comment":[
+				"(is_biome/kingdom) and (is_not_biome/kingdom)",
 				"are mutually exclusive, you can't use both",
-				"when none is used, the item will simple have no restriction",
+				"when none is used, the item will simple have no restriction"
 			],
 
 			"effort":120,
-			"_effort":"a number > 0. how long in (game) minutes it takes to fish this item",
+			"_comment":"a number > 0. how long in (game) minutes it takes to fish this item",
+			"_comment":"can be a table for different values per levels",
 
 			"xp":15,
-			"_xp":"a number > 0. rewarded xp after the action. ~100xp is required to reach level 2"
-		},
-		"big_fish":{
-			"alias":"archipelago_biome:food:big_fish",
-			"weight":1,
-			"effort":240,
-			"xp":30
-		},
-		"ice_cube":{
-			"alias":"archipelago_biome:resources:ice_cube",
-			"weight":50,
-			"is_biome":[
-				"stonehearth:biome:arctic"
-			],
-			"effort":60,
-			"xp":1
-		},
-		"tropical_fish":{
-			"alias":"archipelago_biome:food:tropical_fish",
-			"weight":1,
-			"effort":120,
-			"xp":15
-		}
-	},
-	"level_2":{
-		"default_fish":{
-			"alias":"archipelago_biome:food:fish",
-			"weight":100,
-			"effort":104,
-			"xp":13
-		},
-		"big_fish":{
-			"alias":"archipelago_biome:food:big_fish",
-			"weight":4,
-			"effort":208,
-			"xp":26
-		},
-		"turtle_shield":{
-			"alias":"archipelago_biome:armor:turtle_shield",
-			"weight":200,
-			"max_limit":1,
-			"bulletin":{
-				"title":"i18n(archipelago_biome:data.fishing.turtle_shield.title)",
-				"message":"i18n(archipelago_biome:data.fishing.turtle_shield.message)",
-				"image":"/archipelago_biome/entities/armor/turtle_shield/turtle_shield.png"
+			"_comment":"a number > 0. rewarded xp after the action. around ~100xp is required to reach crafter level 2",
+			"_comment":"can be a table for different values per levels",
+
+			"lure_weight_multiplier":{
+				"default":1,
+				"big_lure":2,
+				"plant_lure":0.5,
+				"trinket_lure":0.1
 			},
-			"is_biome":[
-				"archipelago_biome:biome:archipelago"
-			],
-			"effort":100,
-			"xp":10
-		},
-		"ice_cube":{
-			"alias":"archipelago_biome:resources:ice_cube",
-			"weight":25,
-			"is_biome":[
-				"stonehearth:biome:arctic"
-			],
-			"effort":50,
-			"xp":1
-		},
-		"tropical_fish":{
-			"alias":"archipelago_biome:food:tropical_fish",
-			"weight":4,
-			"effort":104,
-			"xp":13
+			"_comment":"multiply weights based on lure type used (level 6 skill)",
+			"_comment":[
+				"default - is the default lure, used on all previous levels",
+				"big_lure - to avoid small fish and get big fish",
+				"plant_lure - to focus on biome resources",
+				"trinket_lure - is for random items"
+			]
 		}
 	},
-	"level_3":{
-		"default_fish":{
-			"alias":"archipelago_biome:food:fish",
-			"weight":100,
-			"effort":88,
-			"xp":11
+	"default_fish":{
+		"alias":"archipelago_biome:food:fish",
+		"weight":100,
+		"effort":{
+			"level_1":120,
+			"level_2":104,
+			"level_3":88,
+			"level_4":72,
+			"level_5":56,
+			"level_6":40
 		},
-		"big_fish":{
-			"alias":"archipelago_biome:food:big_fish",
-			"weight":8,
-			"effort":176,
-			"xp":22
+		"xp":{
+			"level_1":15,
+			"level_2":13,
+			"level_3":11,
+			"level_4":9,
+			"level_5":7,
+			"level_6":5
 		},
-		"ice_cube":{
-			"alias":"archipelago_biome:resources:ice_cube",
-			"weight":12,
-			"is_biome":[
-				"stonehearth:biome:arctic"
-			],
-			"effort":40,
-			"xp":1
-		},
-		"tropical_fish":{
-			"alias":"archipelago_biome:food:tropical_fish",
-			"weight":8,
-			"effort":88,
-			"xp":11
+		"lure_weight_multiplier":{
+			"big_lure":0,
+			"trinket_lure":0.1,
+			"plant_lure":0.1
 		}
 	},
-	"level_4":{
-		"default_fish":{
-			"alias":"archipelago_biome:food:fish",
-			"weight":100,
-			"effort":72,
-			"xp":9
+	"big_fish":{
+		"alias":"archipelago_biome:food:big_fish",
+		"weight":{
+			"level_1":0,
+			"level_2":4,
+			"level_3":8,
+			"level_4":12,
+			"level_5":16,
+			"level_6":20
 		},
-		"big_fish":{
-			"alias":"archipelago_biome:food:big_fish",
-			"weight":12,
-			"effort":144,
-			"xp":18
+		"effort":{
+			"level_1":240,
+			"level_2":208,
+			"level_3":176,
+			"level_4":144,
+			"level_5":112,
+			"level_6":80
 		},
-		"ice_cube":{
-			"alias":"archipelago_biome:resources:ice_cube",
-			"weight":6,
-			"is_biome":[
-				"stonehearth:biome:arctic"
-			],
-			"effort":30,
-			"xp":1
+		"xp":{
+			"level_1":30,
+			"level_2":26,
+			"level_3":22,
+			"level_4":18,
+			"level_5":14,
+			"level_6":10
 		},
-		"tropical_fish":{
-			"alias":"archipelago_biome:food:tropical_fish",
-			"weight":12,
-			"effort":72,
-			"xp":9
+		"lure_weight_multiplier":{
+			"big_lure":2,
+			"trinket_lure":0.1,
+			"plant_lure":0.1
 		}
 	},
-	"level_5":{
-		"default_fish":{
-			"alias":"archipelago_biome:food:fish",
-			"weight":100,
-			"effort":56,
-			"xp":7
+	"tropical_fish":{
+		"alias":"archipelago_biome:food:tropical_fish",
+		"weight":{
+			"level_1":1,
+			"level_2":4,
+			"level_3":8,
+			"level_4":12,
+			"level_5":16,
+			"level_6":20
 		},
-		"big_fish":{
-			"alias":"archipelago_biome:food:big_fish",
-			"weight":16,
-			"effort":112,
-			"xp":14
+		"effort":{
+			"level_1":120,
+			"level_2":104,
+			"level_3":88,
+			"level_4":72,
+			"level_5":56,
+			"level_6":40
 		},
-		"ice_cube":{
-			"alias":"archipelago_biome:resources:ice_cube",
-			"weight":3,
-			"is_biome":[
-				"stonehearth:biome:arctic"
-			],
-			"effort":20,
-			"xp":1
+		"xp":{
+			"level_1":15,
+			"level_2":13,
+			"level_3":11,
+			"level_4":9,
+			"level_5":7,
+			"level_6":5
 		},
-		"tropical_fish":{
-			"alias":"archipelago_biome:food:tropical_fish",
-			"weight":16,
-			"effort":56,
-			"xp":7
+		"lure_weight_multiplier":{
+			"big_lure":0,
+			"trinket_lure":0.1,
+			"plant_lure":0.1
 		}
 	},
-	"level_6":{
-		"default_fish":{
-			"alias":"archipelago_biome:food:fish",
-			"weight":100,
-			"effort":40,
-			"xp":5
+	"ice_cube":{
+		"alias":"archipelago_biome:resources:ice_cube",
+		"is_biome":[
+			"stonehearth:biome:arctic"
+		],
+		"weight":{
+			"level_1":50,
+			"level_2":25,
+			"level_3":12,
+			"level_4":6,
+			"level_5":3,
+			"level_6":0
 		},
-		"big_fish":{
-			"alias":"archipelago_biome:food:big_fish",
-			"weight":20,
-			"effort":80,
-			"xp":10
+		"effort":{
+			"level_1":60,
+			"level_2":50,
+			"level_3":40,
+			"level_4":30,
+			"level_5":20,
+			"level_6":0
 		},
-		"dusty_tome":{
-			"alias":"stonehearth:loot:dusty_tome",
-			"weight":5,
-			"max_limit":2,
-			"is_biome":[
-				"stonehearth:biome:desert"
-			],
-			"is_kingdom":[
-				"rayyas_children:kingdoms:rayyas_children"
-			],
-			"bulletin":{
-				"title":"i18n(stonehearth:entities.loot.dusty_tome.display_name)",
-				"message":"i18n(archipelago_biome:data.fishing.dusty_tome.message)",
-				"image":"/stonehearth/entities/loot/dusty_tome/dusty_tome.png"
-			},
-			"effort":20,
-			"xp":1
+		"xp":1
+	},
+	"turtle_shield":{
+		"alias":"archipelago_biome:armor:turtle_shield",
+		"is_biome":[
+			"archipelago_biome:biome:archipelago"
+		],
+		"weight":{
+			"level_1":0,
+			"level_2":30,
+			"level_3":60,
+			"level_4":90,
+			"level_5":120,
+			"level_6":150
 		},
-		"gold_chest":{
-			"alias":"stonehearth:loot:gold",
-			"weight":5,
-			"effort":15,
-			"xp":1
+		"max_limit":1,
+		"bulletin":{
+			"title":"i18n(archipelago_biome:data.fishing.turtle_shield.title)",
+			"message":"i18n(archipelago_biome:data.fishing.turtle_shield.message)",
+			"image":"/archipelago_biome/entities/armor/turtle_shield/turtle_shield.png"
 		},
-		"nemo":{
-			"alias":"archipelago_biome:food:nemo",
-			"weight":1,
-			"max_limit":1,
-			"bulletin":{
-				"title":"i18n(archipelago_biome:data.fishing.nemo.title)",
-				"message":"i18n(archipelago_biome:data.fishing.nemo.message)",
-				"image":"/archipelago_biome/entities/food/nemo/nemo.png"
-			},
-			"effort":100,
-			"xp":10
+		"effort":100,
+		"xp":10
+	},
+	"dusty_tome":{
+		"alias":"stonehearth:loot:dusty_tome",
+		"is_kingdom":[
+			"rayyas_children:kingdoms:rayyas_children"
+		],
+		"weight":5,
+		"max_limit":2,
+		"bulletin":{
+			"title":"i18n(stonehearth:entities.loot.dusty_tome.display_name)",
+			"message":"i18n(archipelago_biome:data.fishing.dusty_tome.message)",
+			"image":"/stonehearth/entities/loot/dusty_tome/dusty_tome.png"
 		},
-		"tropical_fish":{
-			"alias":"archipelago_biome:food:tropical_fish",
-			"weight":20,
-			"effort":40,
-			"xp":5
+		"effort":20,
+		"xp":1,
+		"lure_weight_multiplier":{
+			"trinket_lure":10
+		}
+	},
+	"nemo":{
+		"alias":"archipelago_biome:food:nemo",
+		"weight":1,
+		"max_limit":1,
+		"bulletin":{
+			"title":"i18n(archipelago_biome:data.fishing.nemo.title)",
+			"message":"i18n(archipelago_biome:data.fishing.nemo.message)",
+			"image":"/archipelago_biome/entities/food/nemo/nemo.png"
+		},
+		"effort":60,
+		"xp":10,
+		"lure_weight_multiplier":{
+			"big_lure":0
+		}
+	},
+	"golem_restocking":{
+		"alias":"stonehearth:monsters:golems:golem_restocking:auto",
+		"weight":1,
+		"max_limit":1,
+		"bulletin":{
+			"title":"i18n(archipelago_biome:data.fishing.golem_restocking.title)",
+			"message":"i18n(archipelago_biome:data.fishing.golem_restocking.message)",
+			"image":"/stonehearth/entities/monsters/golems/golem_restocking/golem_restocking.png"
+		},
+		"effort":60,
+		"xp":10,
+		"lure_weight_multiplier":{
+			"trinket_lure":10
+		}
+	},
+	"trinkets":{
+		"alias":{
+			"stonehearth:carpenter:talisman":true,
+			"stonehearth:farmer:talisman":true,
+			"stonehearth:armor:bronze_circlet":true,
+			"stonehearth:armor:cloth_padded_helmet":true,
+			"stonehearth:armor:wooden_shield":true,
+			"stonehearth:construction:clay_bricks":true,
+			"stonehearth:consumables:coarse_bandage":true,
+			"stonehearth:consumables:energy_tonic":true,
+			"stonehearth:consumables:stamina_tonic":true,
+			"stonehearth:containers:small_crate":true,
+			"stonehearth:containers:small_urn":true,
+			"stonehearth:decoration:craftsman_statue:candle_iron":true,
+			"stonehearth:decoration:craftsman_statue:statue_rabbit":true,
+			"stonehearth:decoration:decorative_tray":true,
+			"stonehearth:decoration:garden_gnome":true,
+			"stonehearth:decoration:unfired_clay_vase":true,
+			"stonehearth:gizmos:critter_trap":true,
+			"stonehearth:loot:gold":true,
+			"stonehearth:monsters:goblins:broken_flute":true,
+			"stonehearth:monsters:goblins:skull_trophy":true,
+			"stonehearth:refined:thread":true,
+			"stonehearth:refined:leather_bolt":true,
+			"stonehearth:resources:ogre_bone":true,
+			"stonehearth:toys:plushie_toy_rabbit":true,
+			"stonehearth:weapons:stone_maul":true,
+
+			"archipelago_biome:decoration:chum_bucket":true,
+			"archipelago_biome:decoration:map":true
+		},
+		"weight":{
+			"level_1":10,
+			"level_2":25,
+			"level_3":20,
+			"level_4":15,
+			"level_5":10,
+			"level_6":5
+		},
+		"effort":10,
+		"xp":1,
+		"lure_weight_multiplier":{
+			"trinket_lure":10
+		}
+	},
+	"natural_resources":{
+		"alias":{
+			"stonehearth:food:sugar:sugarbell_basket":true,
+
+			"stonehearth:plants:earthbud:seed":true,
+			"stonehearth:plants:sugarbell:seed":true,
+
+			"stonehearth:resources:feathers:poyo_feathers":true,
+			"stonehearth:resources:varanus_skin":true
+		},
+		"weight":{
+			"level_1":10,
+			"level_2":25,
+			"level_3":20,
+			"level_4":15,
+			"level_5":10,
+			"level_6":5
+		},
+		"effort":10,
+		"xp":1,
+		"lure_weight_multiplier":{
+			"plant_lure":10
 		}
 	}
 }

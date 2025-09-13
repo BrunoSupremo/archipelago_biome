@@ -1,24 +1,43 @@
 Additions:
-New trader, selling items from archipelago.
+Chum Bucket decoration item, crafted by fisher.
+Treasure Map, wall decoration, obtained from fishing.
+New level 6 perk, lure options. Each lure influences the fishing loot in some way.
+Fishing Album. Decororation item that open an ui album with everything you fished.
 
 
 Changes:
-All archipelago items properly tagged with "archipelago_made". Can be used by other modders to target them all. (e.g. shops, quests, etc.)
-All archipelago items are available in shops now. Equips, decor, foods, etc.
-Sand castle model updated
-Cocobomb effects updated, better and with sounds
+Improved fishing and increased variety of loot, depending on lure type.
+Fisher loot can come with fine or excelent qualities, influenced by spirit stat.
+Fishing has new visual effects
+Improved visual of items placed in a fish stall (bigger and random sizes)
+Traders dealing with archipelago items have palm and papaya seeds to sell
+Fisher Sign recipe can be crafted without workbench
+Fish pond now requires a fish in its recipe to be crafted.
+Magma block model changed to a new original model
+Volcano and magma effects reworked to be less laggy
+Workers will actually climb the trees to harvest fruit
+Waves effects updated. Calm waves in calm weather, stronger waves in bad weather.
+Tweaked other visual effects (aquarium, cocobomb, octopus attacks, boat, ice hole)
+Updated fisher workbench visual. Wider, removed attached chum bucket, added a net.
+Better balance for trojan entities (a.k.a enemy spawners/traps) on different difficulties.
+Caves will not spawn their skeletons until someone gets close to it
 
 
 Changes for ACE:
+Included a few of the new ace weathers and season improvements to the biome
+Fishers have recipe to dry algae too
+With Trapper+ mod, fisher gets their same recipe to slice whole fish into fillets
 
 
 Fixes:
-Fixed Invisible Workshop Sign in the fisher crafting menu ui
-Removed spam of buried treasures when using "plenty" landmark option from Extra Map Options mod
-Collision box of fisher pond adjusted to avoid hearthlings floating above it
+Fixed issue with fishers ai getting stuck and stop fishing after a while
+Fixed crab traps and oysters error popups when harvested
+Fixed some goblin camps digging into water
+Fixed the "dirt refill" command that fill the hole back, to stop overflowing outside of the hole
+Fixed campaign request (food donation) that already were fulfilled from being asked again
+Restored ability to undeploy bead doors.
 
 
 Fixes for ACE:
-Bee skeps will now properly work (make honey) in archipelago seasons except on hurricane season
-Fixed Papaya Smoothies being used as ingredient for recipes that needed milk
-Removed duplicated cook ace recipes, moved their ace fish based recipes to seafood category
+Added missing data required for tree stumps
+Fixed Dranden tree (the big one) not working with ace gather & replant

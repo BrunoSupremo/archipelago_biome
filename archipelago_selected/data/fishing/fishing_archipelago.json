@@ -1,0 +1,58 @@
+{
+	"default_fish":{
+		"weight":80
+	},
+	"tropical_fish":{
+		"weight":{
+			"level_1":10,
+			"level_2":16,
+			"level_3":22,
+			"level_4":28,
+			"level_5":34,
+			"level_6":40
+		}
+	},
+	"natural_resources":{
+		"alias":{
+			"stonehearth:beetle_bug_meat":true,
+			"archipelago_biome:food:papaya_basket":true,
+
+			"archipelago_biome:plants:hibiscus:seed":true,
+			"archipelago_biome:plants:blue_hibiscus:seed":true,
+			"stonehearth:plants:brightbell:seed":true,
+			"stonehearth:plants:frostsnap:seed":true,
+			"stonehearth:plants:foxlily:seed":true,
+			"stonehearth:plants:silkweed:seed":true,
+
+			"stonehearth:resources:beetle_chitin":true,
+			"stonehearth:resources:feathers:duckduck_feathers":true,
+			"stonehearth:resources:feathers:ostrich_feathers":true,
+			"stonehearth:resources:fiber:silkweed_bundle":true,
+			"archipelago_biome:resources:herb:hibiscus":true,
+			"archipelago_biome:resources:herb:blue_hibiscus":true,
+			"stonehearth:resources:herb:brightbell":true,
+			"stonehearth:resources:herb:frostsnap":true,
+			"stonehearth:resources:wood:oak_log":true,
+			"stonehearth:resources:wood:palm_log":true,
+
+			"archipelago_biome:trees:dranden:seed":true,
+			"archipelago_biome:trees:palm:seed":true,
+			"archipelago_biome:trees:papaya:seed":true,
+			"archipelago_biome:trees:smalea:seed":true
+		}
+	},
+	"trinkets":{
+		"alias":{
+			"archipelago_biome:armor:coconut_helmet":true,
+			"archipelago_biome:decoration:anchor":true,
+			"archipelago_biome:decoration:lei":true,
+			"archipelago_biome:decoration:pirate_flag":true,
+			"archipelago_biome:decoration:ship_wheel":true,
+			"archipelago_biome:decoration:tiki_torch":true,
+			"archipelago_biome:gizmos:cocobomb":true,
+			"archipelago_biome:outfit:hula":true,
+			"archipelago_biome:outfit:tricorn_hat":true,
+			"archipelago_biome:toys:beachball":true
+		}
+	}
+}

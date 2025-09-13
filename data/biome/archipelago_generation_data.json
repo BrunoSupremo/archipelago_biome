@@ -238,10 +238,11 @@
 				}
 			},
 			"archipelago_biome:terrain:cave": {
-				"placement_type": "single",
+				"placement_type": "dense",
 				"parameters": {
-					"ground_radius": 0,
-					"exclusion_radius": 7.5
+					"grid_multiple": 1,
+					"item_density": 1,
+					"exclusion_radius": -1
 				}
 			},
 			"archipelago_biome:trees:papaya": {
@@ -296,10 +297,11 @@
 				}
 			},
 			"archipelago_biome:beach:wave": {
-				"placement_type": "single",
+				"placement_type": "dense",
 				"parameters": {
-					"ground_radius": 1,
-					"exclusion_radius": 7
+					"grid_multiple": 1,
+					"item_density": 1,
+					"exclusion_radius": -1
 				}
 			},
 			"archipelago_biome:beach:seaweed": {
@@ -437,7 +439,7 @@
 				"plains": {
 					"1": {
 						"archipelago_biome:trees:palm": 1,
-						"archipelago_biome:trees:bend_palm": 1
+						"archipelago_biome:trees:bend_palm": 1.5
 					}
 				},
 				"foothills": {
@@ -456,8 +458,8 @@
 					"3": {
 						"archipelago_biome:trees:dranden": 8,
 						"archipelago_biome:trees:smalea": 3,
-						"archipelago_biome:trees:palm": 1,
-						"archipelago_biome:trees:bend_palm": 1
+						"archipelago_biome:trees:palm": 1.75,
+						"archipelago_biome:trees:bend_palm": 0.25
 					}
 				},
 				"mountains": {
@@ -640,8 +642,8 @@
 		"water": {
 			"spawn_objects":{
 				"water_1":{
-					"none":15,
-					"archipelago_biome:beach:wave":15,
+					"none":10,
+					"archipelago_biome:beach:wave":20,
 					"archipelago_biome:beach:seaweed":0.1,
 					"archipelago_biome:beach:oyster":0.2,
 					"archipelago_biome:beach:starfish":4,

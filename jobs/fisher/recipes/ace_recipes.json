@@ -1,0 +1,11 @@
+{
+	"craftable_recipes": {
+		"food": {
+			"recipes": {
+				"algae_drying": {
+					"recipe": "file(food/ace_algae_drying_recipe.json)"
+				}
+			}
+		}
+	}
+}

@@ -12,9 +12,21 @@
 			"max":3,
 			"scale":0.1,
 			"loot_drops":"remove",
-			"in_game_mode_hard":{
-				"min":4,
-				"max":6,
+			"game_mode_customized":{
+				"easy_mode:game_mode:easy":{
+					"min":1,
+					"max":2,
+					"trojan_percent_chance":50
+				},
+				"stonehearth_ace:game_mode:gentle":{
+					"min":1,
+					"trojan_percent_chance":75
+				},
+				"stonehearth:game_mode:hard":{
+					"scale":0.15,
+					"min":4,
+					"max":6
+				}
 			}
 		},
 		"stonehearth:buffs": {
@@ -40,7 +52,7 @@
 			}
 		},
 		"render_info": {
-			"scale": 0.1876
+			"scale": 0.301
 		},
 		"mob": {
 			"ignore_gravity": true,

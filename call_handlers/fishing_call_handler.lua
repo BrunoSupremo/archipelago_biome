@@ -139,4 +139,17 @@ function FishingCallHandler:create_new_field(session, response, location, size)
 	return { field = entity }
 end
 
+function FishingCallHandler:fishing_mode(session, response, entity)
+	validator.expect_argument_types({'Entity'}, entity)
+	
+	local fisher_job = entity:get_component('stonehearth:job'):get_curr_job_controller()
+	fisher_job:swap_fishing_options()
+end
+
+function FishingCallHandler:get_town_fished(session, response)
+	response:resolve({
+		fish_list = stonehearth.town:get_town(session.player_id)._sv.fished
+	})
+end
+
 return FishingCallHandler

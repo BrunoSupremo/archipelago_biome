@@ -1,0 +1,5 @@
+{
+	"mixintos": {
+		"archipelago_biome:data:fishing": "archipelago_biome/data/fishing/fishing_highlands.json"
+	}
+}

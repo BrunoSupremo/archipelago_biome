@@ -1,0 +1,35 @@
+{
+	"roe":{
+		"alias":{
+			"stonehearth_ace:food:fish_roe:fish_big_roe_basket":true,
+			"stonehearth_ace:food:fish_roe:fish_roe_basket":true
+		},
+		"weight":4,
+		"effort":10,
+		"xp":5,
+		"lure_weight_multiplier":{
+			"trinket_lure":0.1,
+			"plant_lure":0.1
+		}
+	},
+	"natural_resources":{
+		"alias":{
+			"stonehearth_ace:consumables:leeches":true,
+			"stonehearth_ace:plants:water_lily:lily_pad:seed":true,
+			"stonehearth_ace:resources:algae:brown_algae":true,
+			"stonehearth_ace:resources:algae:green_algae":true,
+			"stonehearth_ace:resources:algae:red_algae":true,
+			"stonehearth_ace:resources:bone:bone_material":true,
+			"stonehearth_ace:resources:herb:water_lily:lily_pad":true,
+			"stonehearth_ace:terrain:pasture_grass:seed":true
+		}
+	},
+	"trinkets":{
+		"alias":{
+			"stonehearth_ace:refined:metal_bits:hard":true,
+			"stonehearth_ace:refined:metal_bits:soft":true,
+			"stonehearth_ace:resources:fuel:bundle_of_firewood":true,
+			"stonehearth_ace:weapons:stone_hatchet":true
+		}
+	}
+}

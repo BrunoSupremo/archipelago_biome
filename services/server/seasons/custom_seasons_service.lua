@@ -52,6 +52,8 @@ function ArchipelagoSeasonsService:_load_season_config(biome_uri)
 		})
 	end
 
+	--this is to grab the default color of e.g. modded ores
+	--and apply to all biome season colors (to avoid having to manually add them all)
 	for _, season in ipairs(self._seasons) do
 		for block, color in pairs(terrain_blocks.default_colors) do
 			if not season.terrain_palette[block] then

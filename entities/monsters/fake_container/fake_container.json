@@ -7,9 +7,15 @@
 			"player_id":"forest",
 			"min":2,
 			"max":2,
-			"in_game_mode_hard":{
-				"min":4,
-				"max":4
+			"game_mode_customized":{
+				"easy_mode:game_mode:easy":{
+					"min":1,
+					"max":1
+				},
+				"stonehearth:game_mode:hard":{
+					"min":4,
+					"max":4
+				}
 			}
 		},
 		"stonehearth:commands": {

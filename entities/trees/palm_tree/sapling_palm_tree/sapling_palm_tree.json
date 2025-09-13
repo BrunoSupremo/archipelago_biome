@@ -35,6 +35,7 @@
 	},
 	"entity_data": {
 		"stonehearth:evolve_data": {
+			"current_stage": "sapling",
 			"next_stage": "archipelago_biome:trees:palm:small",
 			"evolve_time": "1d"
 		},

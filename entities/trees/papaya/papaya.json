@@ -29,6 +29,7 @@
 			"show_autoharvest_ui": true,
 			"harvester_effect": "work_high",
 			"category": "harvest",
+			"climb_to_harvest": true,
 			"resource": "archipelago_biome:food:papaya_basket",
 			"renewal_time": "20h+4h",
 			"unripe_description": "i18n(archipelago_biome:entities.trees.papaya.unripe_description)",

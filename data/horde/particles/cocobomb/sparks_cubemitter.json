@@ -1,7 +1,7 @@
 {
 	"name": "sparks",
 	"duration": 5000,
-	"material": "materials/cubemitter_bloom.material.json",
+	"material": "materials/cubemitter_add_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {

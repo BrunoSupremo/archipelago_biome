@@ -1,0 +1,28 @@
+<script type="text/x-handlebars" data-template-name="fishing_album">
+	<div id="fishing_album" class="gui">
+		<div class="window">
+			<div class="title"><img src="/archipelago_biome/ui/game/show_workshop/mod_icon.png"> {{i18n archipelago_biome:ui.game.fishing_album.title}} <div class="closeButton"></div></div>
+			<main>
+				{{#if view.fish_list}}
+					{{#each fish in view.fish_list}}
+						{{#if fish.max_limit}}
+							<div class="fish_frame quest">
+								<img {{bind-attr src=fish.image}}>
+								<div class="name">{{i18n_key fish.name}}</div>
+								<div class="quantity">{{i18n_key fish.quantity}}/{{fish.max_limit}}</div>
+							</div>
+						{{else}}
+							<div class="fish_frame">
+								<img {{bind-attr src=fish.image}}>
+								<div class="name">{{i18n_key fish.name}}</div>
+								<div class="quantity">{{i18n_key fish.quantity}}</div>
+							</div>
+						{{/if}}
+					{{/each}}
+				{{else}}
+					<div class="empty">{{i18n archipelago_biome:ui.game.fishing_album.empty}}</div>
+				{{/if}}
+			</main>
+		</div>
+	</div>
+</script>

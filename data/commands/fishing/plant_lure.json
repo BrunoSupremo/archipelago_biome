@@ -1,0 +1,11 @@
+{
+	"type": "command",
+	"name": "fishing_plant_lure",
+	"display_name": "i18n(archipelago_biome:data.commands.fishing_plant_lure.display_name)",
+	"description": "i18n(archipelago_biome:data.commands.fishing_plant_lure.description)",
+	"icon": "file(plant_lure.png)",
+	"ordinal": -1,
+	"action": "call",
+	"function": "archipelago_biome:fishing_mode",
+	"args": []
+}

@@ -8,6 +8,7 @@
 		"stonehearth:renewable_resource_node": {
 			"harvester_effect": "work_high",
 			"category": "harvest",
+			"climb_to_harvest": true,
 			"resource": "archipelago_biome:food:coconut",
 			"renewal_time": "24h",
 			"unripe_description": "i18n(archipelago_biome:entities.trees.common_palm.unripe_description)",

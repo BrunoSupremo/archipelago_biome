@@ -1,0 +1,23 @@
+{
+	"natural_resources":{
+		"alias":{
+			"stonehearth_ace:food:almond:almond_basket":true,
+			"stonehearth_ace:food:dates:date_basket":true,
+
+			"stonehearth_ace:plants:coffee_bush:seed":true,
+			"stonehearth_ace:plants:golden_gourd:seed":true,
+			"stonehearth_ace:plants:oleander:seed":true,
+			"stonehearth_ace:plants:parsley:seed":true,
+
+			"stonehearth_ace:resources:herb:oleander":true,
+			"stonehearth_ace:resources:herb:parsley":true,
+			"stonehearth_ace:resources:herb:water_lily:yellow":true,
+			"stonehearth_ace:resources:herb:water_lily:purple":true,
+			"stonehearth_ace:resources:wood:almond_log":true,
+			"stonehearth_ace:resources:wood:date_log":true,
+
+			"stonehearth_ace:trees:almond:seed":true,
+			"stonehearth_ace:trees:date:seed":true
+		}
+	}
+}

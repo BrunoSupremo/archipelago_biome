@@ -1,0 +1,41 @@
+{
+	"tropical_fish":{
+		"weight":{
+			"level_1":1,
+			"level_2":3,
+			"level_3":6,
+			"level_4":9,
+			"level_5":12,
+			"level_6":15
+		}
+	},
+	"natural_resources":{
+		"alias":{
+			"stonehearth:doodles_bug_meat":true,
+			"stonehearth:food:sweet_potato:sweet_potato_basket":true,
+
+			"stonehearth:plants:frostsnap:seed":true,
+			"stonehearth:plants:snow_poppy:seed":true,
+			"stonehearth:plants:sweet_potato:seed":true,
+			"stonehearth:plants:violet:seed":true,
+			"stonehearth:plants:wintermoss:seed":true,
+
+			"stonehearth:resources:doodles_chitin":true,
+			"stonehearth:resources:feathers:duckduck_feathers":true,
+			"stonehearth:resources:fiber:wintermoss_bundle":true,
+			"stonehearth:resources:herb:frostsnap":true,
+			"stonehearth:resources:herb:snow_poppy":true,
+			"stonehearth:resources:herb:violet":true,
+			"stonehearth:resources:wood:juniper_log":true,
+			"stonehearth:resources:wood:pine_log":true,
+
+			"stonehearth:trees:gold:juniper:seed":true,
+			"stonehearth:trees:gold:pine:seed":true,
+			"stonehearth:trees:juniper:seed":true,
+			"stonehearth:trees:pine:seed":true,
+			"stonehearth:trees:silver:pine:seed":true,
+			"stonehearth:trees:snowy:juniper:seed":true,
+			"stonehearth:trees:snowy:pine:seed":true
+		}
+	}
+}

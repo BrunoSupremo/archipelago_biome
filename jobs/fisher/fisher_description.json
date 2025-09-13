@@ -114,6 +114,19 @@
 					"level": 5
 				}
 			]
+		},
+		"6": {
+			"perks": [
+				{
+					"type": "fishing_options",
+					"name": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_6.perk_name)",
+					"id": "crafter_recipe_unlock_6",
+					"icon": "file(images/fishing_options_perk.png)",
+					"description": "i18n(archipelago_biome:jobs.fisher.fisher_description.level_6.perk_description)",
+					"level": 6,
+					"demote_fn": "remove_fishing_options"
+				}
+			]
 		}
 	}
 }

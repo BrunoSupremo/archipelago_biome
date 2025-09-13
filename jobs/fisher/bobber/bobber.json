@@ -1,0 +1,37 @@
+{
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"animation_table": "file(/data/rigs/entities/gizmos/bobber)"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(bobber.qb)"
+				]
+			}
+		},
+		"archipelago_biome:need_water":{
+			"need_water_icon":false,
+			"float":{
+				"small_hack":"this is running on the ai instead of on_placed"
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		},
+		"effect_list": {
+			"default": "archipelago_biome/data/rigs/entities/gizmos/bobber/effects/idle.json",
+		}
+	},
+	"entity_data": {
+		"navgrid": {
+			"has_physics": false,
+			"is_searchable": false
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:jobs.fisher.bobber.display_name)",
+			"description": "i18n(archipelago_biome:jobs.fisher.bobber.description)"
+		}
+	}
+}

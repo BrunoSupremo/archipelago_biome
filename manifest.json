@@ -17,14 +17,12 @@
 		"actions:go_fish":				"file(ai/actions/fisher/go_fish_action.lua)",
 		"actions:turn_to_face_water":	"file(ai/actions/fisher/turn_to_face_water_action.lua)",
 		"actions:fishing_animations":	"file(ai/actions/fisher/fishing_animations_action.lua)",
+		"actions:create_bobber":		"file(ai/actions/fisher/create_bobber_action.lua)",
+		"actions:destroy_bobber":		"file(ai/actions/fisher/destroy_bobber_action.lua)",
 		"actions:pickup_fish":			"file(ai/actions/fisher/pickup_fish_action.lua)",
 		"actions:closest_storage_to_dock":"file(ai/actions/fisher/closest_storage_to_dock.lua)",
 		"actions:get_crab":			"file(ai/actions/fisher/get_crab_action.lua)",
 		"actions:get_crab_adjacent":"file(ai/actions/fisher/get_crab_adjacent.lua)",
-		"actions:climb_down":		"file(ai/actions/harvest_palm_tree/climb_down_action.lua)",
-		"actions:climb_up":			"file(ai/actions/harvest_palm_tree/climb_up_action.lua)",
-		"actions:harvest_coconut":	"file(ai/actions/harvest_palm_tree/harvest_coconut_action.lua)",
-		"actions:harvest_palm_tree":"file(ai/actions/harvest_palm_tree/harvest_palm_tree_action.lua)",
 
 		"task_groups:crab_movement": "file(ai/task_groups/crab_task_group.lua)",
 		"task_groups:fishing": "file(ai/task_groups/fishing_task_group.lua)",
@@ -60,8 +58,13 @@
 		"color_map:tree":	"file(data/materials/color_maps/tree_color_map.json)",
 		"color_map:tropical_fish":"file(data/materials/color_maps/tropical_fish_color_map.json)",
 
-		"commands:open_crate":"file(data/commands/open_crate)",
 		"commands:archer_arrows:fish": "file(data/commands/archer_arrows/fish_arrows.json)",
+		"commands:fishing_album":"file(data/commands/fishing_album)",
+		"commands:fishing_default":	"file(data/commands/fishing/default.json)",
+		"commands:fishing_big_lure":"file(data/commands/fishing/big_lure.json)",
+		"commands:fishing_plant_lure":"file(data/commands/fishing/plant_lure.json)",
+		"commands:fishing_trinket_lure":"file(data/commands/fishing/trinket_lure.json)",
+		"commands:open_crate":"file(data/commands/open_crate)",
 
 		"construction:bead_door": "file(entities/construction/bead_door)",
 		"construction:porthole": "file(entities/construction/porthole)",
@@ -86,6 +89,7 @@
 		"decoration:anchor":			"file(entities/decoration/anchor)",
 		"decoration:aquarium":			"file(entities/decoration/aquarium)",
 		"decoration:big_fish_hanging":	"file(entities/decoration/big_fish_hanging)",
+		"decoration:chum_bucket":		"file(entities/decoration/chum_bucket)",
 		"decoration:ice_dock":			"file(entities/decoration/ice_dock)",
 		"decoration:dock":				"file(entities/decoration/dock)",
 		"decoration:dock_spot":			"file(entities/decoration/dock/dock_spot.json)",
@@ -100,6 +104,7 @@
 		"decoration:geomancer_magma":	"file(entities/decoration/magma/geomancer_magma.json)",
 		"decoration:magma":				"file(entities/decoration/magma)",
 		"decoration:volcano_smoke":		"file(entities/decoration/magma/volcano_smoke.json)",
+		"decoration:map":				"file(entities/decoration/map)",
 		"decoration:pearl_container":	"file(entities/decoration/pearl_container)",
 		"decoration:pirate_flag":		"file(entities/decoration/pirate_flag)",
 		"decoration:raft":				"file(entities/decoration/raft)",
@@ -114,7 +119,7 @@
 		"effects:cocobomb_effect":			"file(data/effects/cocobomb_effect)",
 		"effects:cocobomb_explosion_effect":"file(data/effects/cocobomb_effect/cocobomb_explosion_effect.json)",
 		"effects:electric:shock":			"file(data/effects/electric/shock.json)",
-		"effects:ice_dock_bubbles":			"file(data/effects/ice_dock_bubbles)",
+		"effects:ice_dock_bubbles":			"file(data/effects/fishing/ice_dock_bubbles)",
 		"effects:magma":					"file(data/effects/magma)",
 		"effects:magma:volcano_smoke":		"file(data/effects/magma/volcano_smoke.json)",
 		"effects:overlay:harvest_coconut":	"file(data/effects/overlays/harvest_coconut)",
@@ -125,6 +130,9 @@
 		"effects:overlay:open_crate":		"file(data/effects/overlays/open_crate)",
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
 		"effects:wave_effect":				"file(data/effects/wave_effect)",
+		"effects:wave_bad_effect":			"file(data/effects/wave_effect/wave_bad_effect.json)",
+		"effects:water_surface_effect":		"file(data/effects/wave_effect/water_surface_effect.json)",
+		"effects:water_surface_bad_effect":	"file(data/effects/wave_effect/water_surface_bad_effect.json)",
 
 		"food:big_fish":		"file(entities/food/big_fish)",
 		"food:big_fish:rotten": "file(entities/food/big_fish/big_fish_rotten.json)",
@@ -166,6 +174,7 @@
 		"gizmos:boat_dock_platform":"file(entities/gizmos/boat_dock/boat_dock_platform.json)",
 		"gizmos:cocobomb":	"file(entities/gizmos/cocobomb)",
 		"gizmos:crab_trap":	"file(entities/gizmos/crab_trap)",
+		"gizmos:fishing_album":	"file(entities/gizmos/fishing_album)",
 
 		"jobs:index":	"file(jobs/atlanteans_index.json)",
 		"jobs:farmer":		"file(jobs/farmer/atlanteans_farmer_description.json)",
@@ -185,6 +194,7 @@
 		"fisher:workbench":	"file(jobs/fisher/fisher_workbench)",
 		"fisher:firepit":	"file(jobs/fisher/fisher_firepit)",
 		"fisher:field":		"file(jobs/fisher/field)",
+		"fisher:bobber":	"file(jobs/fisher/bobber)",
 
 		"kingdoms:atlanteans": "file(data/atlanteans_population.json)",
 		"atlantean_male":	"file(entities/atlanteans/male)",
@@ -196,6 +206,7 @@
 		"landmark:summon_stone:minor:volcano":		"file(entities/landmark/summon_stone_volcano)",
 		"landmark:summon_stone:block:sand":		"file(entities/landmark/summon_stone_block_sand)",
 		"landmark:summon_stone:patch:sand":		"file(entities/landmark/summon_stone_patch_sand)",
+		"landmark:summon_stone:pirate_cave":	"file(entities/landmark/pirate_cave)",
 
 		"loot_bag:archipelago:mountain_tree_random": "file(data/loot_bag/mountain_tree_random.json)",
 		"loot_bag:archipelago:beach_tree_random": "file(data/loot_bag/beach_tree_random.json)",
@@ -216,6 +227,7 @@
 		"monsters:jellyfish":		"file(entities/monsters/jellyfish)",
 		"monsters:octopus":			"file(entities/monsters/octopus)",
 		"monsters:oyster":			"file(entities/monsters/oyster)",
+		"monsters:skull_alarm":		"file(entities/monsters/skull_alarm)",
 
 		"monster_tuning:forest:easy_cocoling":	"file(data/monster_tuning/forest/easy_cocoling.json)",
 		"monster_tuning:forest:giant_cocoling":	"file(data/monster_tuning/forest/giant_cocoling.json)",
@@ -228,7 +240,6 @@
 		"monster_tuning:forest:giant_oyster":	"file(data/monster_tuning/forest/giant_oyster.json)",
 		"monster_tuning:forest:insane_oyster":	"file(data/monster_tuning/forest/insane_oyster.json)",
 		"monster_tuning:forest:insane_jellyfish":	"file(data/monster_tuning/forest/insane_jellyfish.json)",
-		"monster_tuning:undead:cave_skeleton":	"file(data/monster_tuning/undead/cave_skeleton.json)",
 
 		"outfit:beach_head":	"file(entities/outfit/beach_head)",
 		"outfit:tricorn_hat":	"file(entities/outfit/tricorn_hat)",
@@ -350,11 +361,15 @@
 		"stonehearth_ace:crops:violet_crop":				"file(entities/crops/preferred_seasons_wet.json)",
 		"stonehearth_ace:crops:yew_tree_crop":				"file(entities/crops/preferred_seasons_wet.json)",
 
-		"stonehearth/data/biome/arctic/manifest.json":	"file(data/biome/arctic/manifest.json)",
-		"stonehearth/data/biome/desert/manifest.json":	"file(data/biome/desert/manifest.json)",
 		"stonehearth/data/biome/temperate.json":		"file(data/biome/temperate.json)",
+		"stonehearth/data/biome/desert/manifest.json":	"file(data/biome/desert/manifest.json)",
+		"stonehearth/data/biome/arctic/manifest.json":	"file(data/biome/arctic/manifest.json)",
+		"stonehearth_ace/data/biome/highlands/applied_highlands_manifest.json":	"file(data/biome/highlands/manifest.json)",
 
 		"archipelago_biome/data/biome/archipelago_generation_data.json":"stonehearth_ace/archipelago_biome/data/biome/ace_generation_data.json",
+		"archipelago_biome/data/biome/archipelago.json":"stonehearth_ace/archipelago_biome/data/biome/ace_weather.json",
+
+		"archipelago_biome:data:fishing":"stonehearth_ace/archipelago_biome/data/fishing/fishing_with_ace.json",
 
 		"tower_defense/data/compatible_mods.json": "file(data/compatible_mods.json)",
 
@@ -442,6 +457,8 @@
 
 		"archipelago_biome:jobs:fisher":"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json",
 		"archipelago_biome/jobs/fisher/fisher_abilities/fisher_abilities.json":"stonehearth_ace/archipelago_biome/jobs/common/ace_abilities.json",
+		"stonehearth_ace/archipelago_biome/jobs/fisher/recipes/ace_recipes.json":"trapper_plus/archipelago_biome/jobs/fisher/recipes/trapper_plus_ace_recipes.json",
+		"archipelago_biome/jobs/fisher/recipes/recipes.json":"stonehearth_ace/archipelago_biome/jobs/fisher/recipes/ace_recipes.json",
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
 		"nordlingmod:jobs:index":"file(jobs/index_nordlings.json)",
@@ -535,10 +552,17 @@
 		"stonehearth/data/rigs/entities/rabbit_biped/effects/sitting_on_chair_drink.json":	"file(data/rigs/entities/rabbit_biped/effects/sitting_on_chair_drink.json)",
 
 		"stonehearth_ace/archipelago_biome/data/biome/ace_generation_data.json":"archipelago_biome/data/biome/ace_generation_data.json",
+		"stonehearth_ace/archipelago_biome/data/biome/ace_weather.json":"archipelago_biome/data/biome/ace_weather.json",
+
+		"stonehearth_ace/archipelago_biome/data/fishing/fishing_with_ace.json":"archipelago_biome/data/fishing/fishing_with_ace.json",
 
 		"stonehearth_ace/archipelago_biome/jobs/cook/recipes/recipes.json":"file(jobs/cook/recipes/ace_recipes.json)",
 		"stonehearth_ace/archipelago_biome/jobs/common/ace_abilities.json":	"archipelago_biome/jobs/common/ace_abilities.json",
-		"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json":	"archipelago_biome/jobs/fisher/ace_description.json"
+		"stonehearth_ace/archipelago_biome/jobs/fisher/ace_description.json":	"archipelago_biome/jobs/fisher/ace_description.json",
+
+		"stonehearth_ace/archipelago_biome/jobs/fisher/recipes/ace_recipes.json":"archipelago_biome/jobs/fisher/recipes/ace_recipes.json",
+
+		"trapper_plus/archipelago_biome/jobs/fisher/recipes/trapper_plus_ace_recipes.json":"archipelago_biome/jobs/fisher/recipes/trapper_plus_ace_recipes.json"
 	},
 	"controllers": {
 		"class:fisher": "file(jobs/fisher/fisher.lua)",
@@ -550,6 +574,14 @@
 			"endpoint": "client"
 		},
 		"create_new_field": {
+			"controller": "file(call_handlers/fishing_call_handler.lua)",
+			"endpoint": "server"
+		},
+		"fishing_mode": {
+			"controller": "file(call_handlers/fishing_call_handler.lua)",
+			"endpoint": "server"
+		},
+		"get_town_fished": {
 			"controller": "file(call_handlers/fishing_call_handler.lua)",
 			"endpoint": "server"
 		}
@@ -570,16 +602,19 @@
 	},
 	"ui":{
 		"html":[
-			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.html)"
+			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.html)",
+			"file(ui/game/fishing_album/fishing_album.html)"
 		],
 		"js":[
 			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.js)",
+			"file(ui/game/fishing_album/fishing_album.js)",
 			"file(ui/game/start_menu/start_menu.js)",
 			"file(ui/shell/select_settlement/map.js)"
 		],
 		"less":[
 			"file(jobs/fisher/skin/workshop.less)",
 			"file(ui/game/bulletin/bulletin_dialog/fisher_bulletin_dialog/fisher_bulletin_dialog.less)",
+			"file(ui/game/fishing_album/fishing_album.less)",
 			"file(ui/game/show_workshop/mod_icon.less)",
 			"file(ui/shell/select_settlement/select_settlement.less)"
 		]

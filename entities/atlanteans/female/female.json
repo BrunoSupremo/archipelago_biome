@@ -18,7 +18,7 @@
 	},
 	"entity_data": {
 		"stonehearth:customization_variants": {
-			"customization_options": "stonehearth:humans:female:customizations",
+			"customization_options": "file(customizations.json)",
 			"root": {
 				"hair_and_skin_color": {
 					"weights": {
@@ -35,21 +35,26 @@
 				"hair_and_skin_color": {
 					"hair_color": {
 						"weights": {
-							"platinum": 1
+							"platinum": 2,
+							"platinum_60_green": 1,
+							"platinum_120_cyan": 1,
+							"platinum_180_blue": 1,
+							"platinum_240_purple": 1,
+							"platinum_300_red": 1
 						}
 					},
 					"skin_color": {
 						"weights": {
-							"brown_2": 1
+							"brown_atlantean": 1
 						}
 					},
 					"eye_color": {
 						"weights": {
 							"aqua": 1,
-							"black": 1,
+							"black": 0.1,
 							"blue": 1,
 							"blurple": 1,
-							"brown": 1,
+							"brown": 0.1,
 							"green": 1,
 							"hazel": 1,
 							"magenta": 1,

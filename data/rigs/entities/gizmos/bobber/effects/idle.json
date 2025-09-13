@@ -1,0 +1,24 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"animation": {
+			"type": "animation_effect",
+			"start_time": 0,
+			"speed" : 0.1,
+			"animation": "idle.json",
+			"loop": true
+		},
+		"ripples": {
+			"type": "cubemitter",
+			"cubemitter": "/archipelago_biome/data/horde/particles/fishing/ripples.json",
+			"loop": true,
+			"transforms": { "x": -0.05, "y": 0, "z": 0.05, "rx": 0, "ry": 0, "rz": 0 }
+		},
+		"bubbles": {
+			"type": "cubemitter",
+			"cubemitter": "/archipelago_biome/data/horde/particles/fishing/bubbles.json",
+			"loop": true,
+			"transforms": { "x": -0.05, "y": 0, "z": 0.05, "rx": 90, "ry": 0, "rz": 0 }
+		}
+	}
+}

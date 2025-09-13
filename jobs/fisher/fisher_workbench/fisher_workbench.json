@@ -10,26 +10,22 @@
 		"destination": {
 			"region": [
 				{
-					"min": {"x": -2, "y": 0, "z": -1 },
-					"max": {"x": 2, "y": 1, "z": 1 }
+					"min": {"x": -2, "y": 0, "z": -1},
+					"max": {"x": 2, "y": 1, "z": 1}
 				}
 			],
 			"adjacent": [
 				{
-					"min": {"x": -1, "y": 0, "z": -2 },
-					"max": {"x": 0, "y": 1, "z": -1 }
+					"min": {"x": -1, "y": 0, "z": -2},
+					"max": {"x": 1, "y": 1, "z": -1}
 				}
 			]
 		},
 		"region_collision_shape": {
 			"region": [
 				{
-					"min": {"x": -2, "y": 0, "z": -1 },
-					"max": {"x": 2, "y": 1, "z": 1 }
-				},
-				{
-					"min": {"x": -2, "y": 1, "z": 0 },
-					"max": {"x": 1, "y": 2, "z": 1 }
+					"min": {"x": -2, "y": 0, "z": -1},
+					"max": {"x": 2, "y": 2, "z": 1}
 				}
 			]
 		},
@@ -40,7 +36,7 @@
 	"entity_data": {
 		"stonehearth:table": {
 			"drop_effect": "carry_putdown_on_table",
-			"drop_offset": { "x": -1.1, "y": 1.1, "z": -0.9 }
+			"drop_offset": { "x": -0.5, "y": 1.1, "z": -0.9 }
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 2,

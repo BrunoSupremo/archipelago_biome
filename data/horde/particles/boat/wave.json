@@ -1,65 +1,76 @@
 {
-	"name": "wave",
-	"duration": 1000,
-	"material": "materials/cubemitter.material.json",
+	"name": "ripples",
+	"duration": 2000,
+	"material": "materials/cubemitter_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [50]
+			"values": [10]
 		},
 		"angle": {
 			"kind": "CONSTANT",
-			"values": [90]
+			"values": [0]
 		},
 		"origin": {
 			"surface": "RECTANGLE",
-			"values": [3,3,1,3]
-		},
-		"rotation_z": {
-			"kind": "CONSTANT",
-			"values": [0]
+			"values": [0.1,3, 0,2.999]
 		}
 	},
 	"particle": {
 		"lifetime": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [1500]
+				"values": [2000]
 			}
 		},
 		"speed": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [1]
+				"values": [0]
 			}
 		},
 		"scale": {
 			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [0.1, 0.2]
+				"kind": "CONSTANT",
+				"values": [1]
+			},
+			"start_y": {
+				"kind": "CONSTANT",
+				"values": [0.1]
 			},
 			"over_lifetime": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 1],
+						[1, 1]
+					],
+					[
+						[0, 1],
+						[1, 3.5]
+					]
+				]
+			},
+			"over_lifetime_y": {
 				"kind": "CURVE",
 				"values": [
-					[0, 1],
-					[0.5, 2],
+					[0, 0],
+					[0.5, 1],
 					[1, 0]
 				]
 			}
 		},
 		"color": {
 			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [
-					[0, 0.54, 0.75, 0.6],
-					[0, 0.55, 0.95, 0.6]
-				]
+				"kind": "CONSTANT",
+				"values": [0.5, 0.9, 1, 0.1]
 			},
 			"over_lifetime_a": {
 				"kind": "CURVE",
 				"values": [
-					[0, 1],
+					[0, 0],
+					[0.25, 0.05],
 					[1, 0]
 				]
 			}

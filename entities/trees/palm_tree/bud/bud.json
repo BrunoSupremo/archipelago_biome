@@ -36,6 +36,7 @@
 	},
 	"entity_data": {
 		"stonehearth:evolve_data": {
+			"current_stage": "bud",
 			"next_stage": "archipelago_biome:trees:palm:sapling",
 			"evolve_time": "1d+1h"
 		},

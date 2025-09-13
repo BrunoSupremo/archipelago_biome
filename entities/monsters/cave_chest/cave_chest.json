@@ -11,11 +11,15 @@
 			"min":1,
 			"max":1,
 			"scale":0.1,
-			"_equipment":"stonehearth:monsters:evil:loot_chest_fake:mouth_weapon",
-			"no_trojan_percent_chance":90,
+			"trojan_percent_chance":15,
 			"loot_drops":"remove",
-			"in_game_mode_hard":{
-				"no_trojan_percent_chance":75
+			"game_mode_customized":{
+				"easy_mode:game_mode:easy":{
+					"trojan_percent_chance":6
+				},
+				"stonehearth:game_mode:hard":{
+					"trojan_percent_chance":30
+				}
 			}
 		},
 		"render_info": {

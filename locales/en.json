@@ -129,6 +129,11 @@
 					"flavor": "You better display it else no one will believe you fished this."
 				}
 			},
+			"chum_bucket": {
+				"display_name": "Chum Bucket",
+				"description": "A bucket filled with questionable fish bits.",
+				"flavor": "Used to lure fish — or ruin someone's day. Not for the faint of nose."
+			},
 			"dock": {
 				"display_name": "Fishing Dock",
 				"description": "A platform where fishers go to fish"
@@ -191,6 +196,10 @@
 			"volcano_smoke":{
 				"display_name":"Smoke Source",
 				"description":"Infinite smoke generated from this object."
+			},
+			"map": {
+				"display_name": "Treasure Map",
+				"description": "A weathered map pointing to buried secrets"
 			},
 			"pearl_container": {
 				"display_name": "Pearl Container",
@@ -394,6 +403,11 @@
 			"crab_trap": {
 				"display_name": "Crab Trap",
 				"description": "Will attract and capture crabs."
+			},
+			"fishing_album": {
+				"display_name": "Fishing Album",
+				"description": "A collection of your finest catches. Track, admire, and brag about your fishing feats.",
+				"flavor":"Use this item to open an actual album with all your recorded catches. Can also be used as just a nice decoration"
 			}
 		},
 		"humans": {
@@ -436,6 +450,9 @@
 				"display_name": "Ancient Spawner",
 				"description": "Old but gold."
 			},
+			"cursed_pirate": {
+				"display_name": "Cursed Pirate"
+			},
 			"fake_container": {
 				"display_name": "Mysterious Crate",
 				"description": "Break it to check what is inside"
@@ -451,6 +468,10 @@
 			"oyster": {
 				"display_name": "Monster Oyster",
 				"description": "Bigger and angry oyster with a hard shell"
+			},
+			"skull_alarm":{
+				"display_name": "Suspicious Skull",
+				"description": "Maybe it should be left alone"
 			}
 		},
 		"outfit": {
@@ -680,6 +701,10 @@
 			}
 		},
 		"fisher": {
+			"bobber": {
+				"display_name":"Fishing Bobber",
+				"description":"It bobs patiently… until it's time to strike!"
+			},
 			"field": {
 				"display_name":"Fishing Area",
 				"description":"Fishers can stop here to fish"
@@ -702,11 +727,15 @@
 				},
 				"level_4": {
 					"perk_name": "Boats",
-					"perk_description": "After placing a boat dock, hearthlings can use it to travel from one side to another over the water"
+					"perk_description": "After placing a boat dock, hearthlings can use it to travel from one side to another over the water."
 				},
 				"level_5": {
 					"perk_name": "Faster",
 					"perk_description": "With each level, fishing gets faster, with less time waiting for a bite."
+				},
+				"level_6": {
+					"perk_name": "Lure Mastery",
+					"perk_description": "The fisher can now switch between different lure types to attract specific fish."
 				}
 			},
 			"fisher_bucket": {
@@ -876,6 +905,13 @@
 					}
 				}
 			},
+			"fisher_bulletin_dialog":{
+				"view_album":"View Album"
+			},
+			"fishing_album":{
+				"title":"Fishing Album",
+				"empty":"Empty album. Nothing registered yet."
+			},
 			"goblinpedia":{
 				"goblins":{
 					"jobs":{
@@ -973,18 +1009,42 @@
 			}
 		},
 		"commands": {
-			"open_crate": {
-				"display_name": "Open Crate",
-				"description": "Hammer it until it breaks"
-			},
 			"archer_arrows":{
 				"fish_arrows": {
 					"display_name": "Using Fish Arrows",
 					"description": "Currently using fish arrows, which lowers enemies courage. Click to swap between arrow types."
 				}
+			},
+			"fishing_album": {
+				"display_name":"Open the Fishing Album",
+				"description":"Click to read it"
+			},
+			"fishing_default": {
+				"display_name": "Default Lure",
+				"description": "Your old and trusted lightweight lure.<br><br><font size=+3 color='#0f0'>●</font> High chance to catch small fish.<br><font size=+3 color='#dd0'>●</font> Low chance to catch big fish.<br><font size=+3 color='#f00'>●</font> Rare chance to catch local resources.<br><font size=+3 color='#f00'>●</font> Rare chance to catch trinkets."
+			},
+			"fishing_big_lure": {
+				"display_name": "Big Lure",
+				"description": "Bigger and heavier lure.<br><br><font size=+3 color='#422'>●</font> No chance to catch small fish.<br><font size=+3 color='#0f0'>●</font> High chance to catch big fish.<br><font size=+3 color='#f00'>●</font> Rare chance to catch local resources.<br><font size=+3 color='#f00'>●</font> Rare chance to catch trinkets."
+			},
+			"fishing_plant_lure": {
+				"display_name": "Plant Lure",
+				"description": "Used to wrap on natural local resources.<br><br><font size=+3 color='#dd0'>●</font> Medium chance to catch small fish.<br><font size=+3 color='#f00'>●</font> Low chance to catch big fish.<br><font size=+3 color='#0f0'>●</font> High chance to catch local resources.<br><font size=+3 color='#f00'>●</font> Rare chance to catch trinkets."
+			},
+			"fishing_trinket_lure": {
+				"display_name": "Trinket Lure",
+				"description": "Useful to attach into weird objects.<br><br><font size=+3 color='#dd0'>●</font> Medium chance to catch small fish.<br><font size=+3 color='#f00'>●</font> Low chance to catch big fish.<br><font size=+3 color='#f00'>●</font> Rare chance to catch local resources.<br><font size=+3 color='#0f0'>●</font> High chance to catch trinkets."
+			},
+			"open_crate": {
+				"display_name": "Open Crate",
+				"description": "Hammer it until it breaks"
 			}
 		},
 		"fishing":{
+			"golem_restocking":{
+				"title":"Weird bug statue?",
+				"message":"It looks like it's going to move any time."
+			},
 			"turtle_shield":{
 				"title":"The fisher got a Turtle Shield!",
 				"message":"It looks like a low level shield for footman, and ready to be used."
@@ -1196,6 +1256,13 @@
 						}
 					}
 				}
+			}
+		},
+		"population": {
+			"atlanteans": {
+				"display_name": "Atlanteans",
+				"long_description": "Steeped in ancient knowledge and shaped by their oceanic home, the Atlanteans are thinkers, tinkerers, and mystics. They believe the world is most beautiful when explored with wisdom and wonder.",
+				"post_selection_description": ", an ancient lost kingdom."
 			}
 		},
 		"saved_objects": {

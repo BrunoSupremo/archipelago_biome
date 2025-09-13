@@ -6,19 +6,22 @@ FishingAnimations.args = {}
 FishingAnimations.version = 2
 FishingAnimations.priority = 1
 
+FishingAnimations.args = {
+	current_loot_effort = 'number'
+}
+
 function FishingAnimations:start_thinking(ai, entity, args)
-	local job_component = entity:get_component('stonehearth:job')
-	local current_loot = job_component:get_curr_job_controller():get_current_loot()
-	local effort = current_loot.effort or 60
-	ai:set_think_output({time_waiting_for_fish = effort.."m"})
+	ai:set_think_output({time_waiting_for_fish = args.current_loot_effort.."m"})
 end
 
 local ai = stonehearth.ai
 return ai:create_compound_action(FishingAnimations)
 :execute('stonehearth:run_effect', { effect = "emote_watch_fish" })
 :execute('stonehearth:run_effect', { effect = "fishing_start" })
+:execute("archipelago_biome:create_bobber", {})
 :execute('stonehearth:run_effect_timed', {
 	effect = "fishing_middle",
-	duration = ai.BACK(3).time_waiting_for_fish
+	duration = ai.BACK(4).time_waiting_for_fish
 	})
 :execute('stonehearth:run_effect', { effect = "fishing_end" })
+:execute("archipelago_biome:destroy_bobber", { bobber = ai.BACK(3).bobber })

@@ -1,0 +1,48 @@
+{
+	"natural_resources":{
+		"alias":{
+			"stonehearth_ace:grasshopper_bug_meat":true,
+			"stonehearth_ace:food:cherries:cherry_basket":true,
+			"stonehearth_ace:food:beetroot:beetroot_basket":true,
+			"stonehearth_ace:food:garlic:garlic_basket":true,
+
+			"stonehearth:plants:violet:seed":true,
+			"stonehearth_ace:plants:beetroot:seed":true,
+			"stonehearth_ace:plants:cherry_bush:seed":true,
+			"stonehearth_ace:plants:cotton_plant:seed":true,
+			"stonehearth_ace:plants:daylily:seed":true,
+			"stonehearth_ace:plants:dwarfsbeard:seed":true,
+			"stonehearth_ace:plants:dill:seed":true,
+			"stonehearth_ace:plants:garlic:seed":true,
+			"stonehearth_ace:plants:marblesprout:seed":true,
+			"stonehearth_ace:plants:moonbell:seed":true,
+			"stonehearth_ace:plants:poppy:seed":true,
+			"stonehearth_ace:plants:rose:seed":true,
+			"stonehearth_ace:plants:water_lily:pink:seed":true,
+			"stonehearth_ace:plants:water_lily:purple:seed":true,
+
+			"stonehearth_ace:resources:feathers:duck_feathers":true,
+			"stonehearth_ace:resources:fiber:dwarfsbeard_bundle":true,
+			"stonehearth_ace:resources:grasshopper_chitin":true,
+			"stonehearth_ace:resources:herb:daylily":true,
+			"stonehearth_ace:resources:herb:dill":true,
+			"stonehearth_ace:resources:herb:marblesprout":true,
+			"stonehearth_ace:resources:herb:moonbell":true,
+			"stonehearth_ace:resources:herb:poppy":true,
+			"stonehearth_ace:resources:herb:rose":true,
+			"stonehearth_ace:resources:herb:water_lily:pink":true,
+			"stonehearth_ace:resources:herb:water_lily:purple":true,
+			"stonehearth_ace:resources:wood:birch_log":true,
+			"stonehearth_ace:resources:wood:yew_log":true,
+			"stonehearth_ace:resources:wood:hazelnut_log":true,
+			"stonehearth_ace:resources:wood:plum_log":true,
+			"stonehearth_ace:resources:wood:highland_pine_log":true,
+
+			"stonehearth_ace:trees:birch:seed":true,
+			"stonehearth_ace:trees:yew:seed":true,
+			"stonehearth_ace:trees:hazelnut:seed":true,
+			"stonehearth_ace:trees:plum:seed":true,
+			"stonehearth_ace:trees:highland_pine:seed":true
+		}
+	}
+}

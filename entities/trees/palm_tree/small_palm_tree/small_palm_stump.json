@@ -12,6 +12,8 @@
 			}
 		},
 		"stonehearth:resource_node": {
+			"category": "chopping",
+			"description": "chop_tree",
 			"harvest_overlay_effect": "stonehearth:effects:chop_overlay_effect",
 			"harvester_effect": "chop",
 			"resource": "stonehearth:resources:wood:oak_log"

@@ -1,0 +1,32 @@
+{
+	"type": "index",
+	"mixins": "stonehearth:humans:male:customizations",
+	"styles": {
+		"hair_color": {
+			"values": {
+				"platinum_60_green": {
+					"file": "/archipelago_biome/data/materials/material_maps/hair/platinum_60_material_map.json"
+				},
+				"platinum_120_cyan": {
+					"file": "/archipelago_biome/data/materials/material_maps/hair/platinum_120_material_map.json"
+				},
+				"platinum_180_blue": {
+					"file": "/archipelago_biome/data/materials/material_maps/hair/platinum_180_material_map.json"
+				},
+				"platinum_240_purple": {
+					"file": "/archipelago_biome/data/materials/material_maps/hair/platinum_240_material_map.json"
+				},
+				"platinum_300_red": {
+					"file": "/archipelago_biome/data/materials/material_maps/hair/platinum_300_material_map.json"
+				}
+			}
+		},
+		"skin_color": {
+			"values": {
+				"brown_atlantean": {
+					"file": "/archipelago_biome/data/materials/material_maps/atlantean_brown_material_map.json"
+				}
+			}
+		}
+	}
+}

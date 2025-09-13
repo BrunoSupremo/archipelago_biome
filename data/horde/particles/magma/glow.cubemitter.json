@@ -1,12 +1,12 @@
 {
-	"name": "fire",
+	"name": "magma_glow",
 	"duration": 10000,
 	"material": "materials/cubemitter_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [0.25]
+			"values": [0.5]
 		},
 		"angle": {
 			"kind": "RANDOM_BETWEEN",
@@ -29,19 +29,61 @@
 		"speed": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [0]
+				"values": [0.02]
 			}
 		},
 		"scale": {
 			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [3, 4]
+				"kind": "CONSTANT",
+				"values": [3.01]
 			},
 			"over_lifetime": {
 				"kind": "CURVE",
 				"values": [
-					[0, 0.85],
-					[1, 1.4]
+					[0, 1],
+					[0.5, 1.1],
+					[1, 1.5]
+				]
+			}
+		},
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, -2]
+					],
+					[
+						[0, 0],
+						[1, 2]
+					]
+				]
+			},
+			"over_lifetime_y": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, -2]
+					],
+					[
+						[0, 0],
+						[1, 2]
+					]
+				]
+			},
+			"over_lifetime_z": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, -2]
+					],
+					[
+						[0, 0],
+						[1, 2]
+					]
 				]
 			}
 		},
@@ -54,8 +96,9 @@
 				"kind": "CURVE",
 				"values": [
 					[0, 0],
-					[0.1, 0.03],
-					[0.5, 0.05],
+					[0.1, 0.2],
+					[0.45, 0.2],
+					[0.55, 0.05],
 					[0.9, 0.03],
 					[1, 0]
 				]

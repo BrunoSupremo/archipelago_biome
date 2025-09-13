@@ -5,7 +5,10 @@
 		"version": 3
 	},
 	"mixintos": {
-		"archipelago_biome:data:fishing": "file(data/fishing)",
+		"archipelago_biome:data:fishing": [
+			"file(data/fishing/fishing_archipelago.json)",
+			"stonehearth_ace/archipelago_biome/archipelago_selected/data/fishing/fishing_archipelago_with_ace.json"
+		],
 
 		"stonehearth/data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/spawn_friendly_entities.json":"file(data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/spawn_friendly_entities.json)",
 
@@ -63,6 +66,8 @@
 		"stonehearth:trapper:trapping_grounds": "file(jobs/trapper/trapping_grounds)"
 	},
 	"overrides": {
+		"stonehearth_ace/archipelago_biome/archipelago_selected/data/fishing/fishing_archipelago_with_ace.json":"file(data/fishing/fishing_archipelago_with_ace.json)",
+
 		"stonehearth/entities/critters/doodles/doodles.qb":	"file(entities/critters/doodles/doodles.qb)",
 		"stonehearth/entities/monsters/avian/ostrich/ostrich.qb":	"file(entities/monsters/avian/ostrich/ostrich.qb)",
 		"stonehearth/entities/monsters/avian/duckduck/duckduck.qb":	"file(entities/monsters/avian/duckduck/duckduck.qb)",

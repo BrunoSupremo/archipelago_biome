@@ -1,0 +1,38 @@
+{
+	"natural_resources":{
+		"alias":{
+			"stonehearth:beetle_bug_meat":true,
+			"stonehearth:bitsy_ant_bug_meat":true,
+			"stonehearth:food:golden_gourd:golden_gourd_basket":true,
+			"stonehearth:food:prickly_pear:prickly_pear_basket":true,
+
+			"stonehearth:plants:cactus:seed":true,
+			"stonehearth:plants:cactus:tulip:blue:seed":true,
+			"stonehearth:plants:cactus:tulip:red:seed":true,
+			"stonehearth:plants:cactus:tulip:yellow:seed":true,
+			"stonehearth:plants:foxlily:seed":true,
+			"stonehearth:plants:pear_cactus:seed":true,
+			"stonehearth:plants:silkweed:seed":true,
+			"stonehearth:plants:sunflower:seed":true,
+			"stonehearth:plants:tumbleweed:seed":true,
+			"stonehearth:plants:wax_plant:green:seed":true,
+			"stonehearth:plants:wax_plant:purple:seed":true,
+
+			"stonehearth:resources:beetle_chitin":true,
+			"stonehearth:resources:bitsy_ant_chitin":true,
+			"stonehearth:resources:feathers:ostrich_feathers":true,
+			"stonehearth:resources:fiber:coarse_fiber_bundle":true,
+			"stonehearth:resources:fiber:silkweed_bundle":true,
+			"stonehearth:resources:herb:cactus:tulip:blue":true,
+			"stonehearth:resources:herb:cactus:tulip:red":true,
+			"stonehearth:resources:herb:cactus:tulip:yellow":true,
+			"stonehearth:resources:herb:cactus_flower":true,
+			"stonehearth:resources:wood:acacia_log":true,
+			"stonehearth:resources:wood:cactus_log":true,
+			"stonehearth:resources:wood:palm_log":true,
+
+			"stonehearth:trees:acacia:seed":true,
+			"stonehearth:trees:cactus:seed":true
+		}
+	}
+}

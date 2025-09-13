@@ -32,6 +32,8 @@ function EatItem:run(ai, entity, args)
    -- Modders can specify a different effect in the serving file (e.g. for drinks)
    local eat_effect = "eat"
    if radiant.entities.get_entity_data(entity, 'stonehearth:conversation_type') == "humanoid" then
+      -- future me (now past too) revisited this file and can't remember why this is changed
+      -- i'm guessing it is to avoid pets without drinking animation trying to use it?
       eat_effect = radiant.entities.get_entity_data(food, 'stonehearth:food').eating_effect or 'eat'
    end
    ai:execute('stonehearth:run_effect', {

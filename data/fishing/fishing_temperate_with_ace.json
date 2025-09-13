@@ -1,0 +1,29 @@
+{
+	"natural_resources":{
+		"alias":{
+			"stonehearth_ace:food:garlic:garlic_basket":true,
+			"stonehearth_ace:food:apples:apple_basket":true,
+			"stonehearth_ace:food:chestnut:chestnut_basket":true,
+
+			"stonehearth_ace:plants:beetroot:seed":true,
+			"stonehearth_ace:plants:coffee_bush:seed":true,
+			"stonehearth_ace:plants:daylily:seed":true,
+			"stonehearth_ace:plants:garlic:seed":true,
+			"stonehearth_ace:plants:nightshade:seed":true,
+			"stonehearth_ace:plants:oleander:seed":true,
+			"stonehearth_ace:plants:sage:seed":true,
+
+			"stonehearth_ace:resources:herb:daylily":true,
+			"stonehearth_ace:resources:herb:nightshade":true,
+			"stonehearth_ace:resources:herb:oleander":true,
+			"stonehearth_ace:resources:herb:sage":true,
+			"stonehearth_ace:resources:herb:water_lily:white":true,
+			"stonehearth_ace:resources:herb:water_lily:pink":true,
+			"stonehearth_ace:resources:wood:apple_log":true,
+			"stonehearth_ace:resources:wood:chestnut_log":true,
+
+			"stonehearth_ace:trees:apple:seed":true,
+			"stonehearth_ace:trees:chestnut:seed":true
+		}
+	}
+}

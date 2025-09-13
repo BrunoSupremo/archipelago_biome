@@ -5,8 +5,8 @@
 			"type": "cubemitter",
 			"cubemitter": "/archipelago_biome/data/horde/particles/cocobomb/smoke_cubemitter.json",
 			"loop": false,
-			"start_time" : 650,
-			"end_time" : 4300,
+			"start_time" : 500,
+			"end_time" : 4600,
 			"transforms": {
 				"x":0,
 				"y":0,

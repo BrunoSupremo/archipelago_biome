@@ -129,6 +129,11 @@
 					"flavor": "É bom você mostrá-lo ou então ninguém vai acreditar que pescou isso."
 				}
 			},
+			"chum_bucket": {
+				"display_name": "Balde de Iscas",
+				"description": "Um balde cheio de pedaços de peixe questionáveis.",
+				"flavor": "Usado para atrair peixes — ou estragar o dia de alguém. Não recomendado para os fracos de nariz."
+			},
 			"dock": {
 				"display_name": "Doca de pesca",
 				"description": "Uma plataforma onde os pescadores vão para pescar"
@@ -192,6 +197,10 @@
 				"display_name": "Fonte de Fumaça",
 				"description": "Fumaça infinita gerada por esse objeto."
 			},
+			"map": {
+				"display_name": "Mapa do Tesouro",
+				"description": "Um mapa desgastado que aponta para segredos enterrados"
+			},			
 			"pearl_container": {
 				"display_name": "Caixote de pérolas",
 				"description": "Armazena até 16 pérolas"
@@ -394,6 +403,11 @@
 			"crab_trap": {
 				"display_name": "Armadilha de Caranguejo",
 				"description": "Irá atrair e capturar caranguejos."
+			},
+			"fishing_album": {
+				"display_name": "Álbum de Pesca",
+				"description": "Uma coleção das suas melhores capturas. Acompanhe, admire e se gabe dos seus feitos na pesca.",
+				"flavor": "Use este item para abrir um álbum com todas as suas capturas registradas. Também pode ser usado como uma bela decoração."
 			}
 		},
 		"humans": {
@@ -436,6 +450,9 @@
 				"display_name": "Invocador antigo",
 				"description": "Velho porém valioso."
 			},
+			"cursed_pirate": {
+				"display_name": "Pirata Amaldiçoado"
+			},
 			"fake_container": {
 				"display_name": "Caixote Misterioso",
 				"description": "Quebre ele pra ver o que tem dentro"
@@ -451,6 +468,10 @@
 			"oyster": {
 				"display_name": "Ostra Monstra",
 				"description": "Maior e raivosa, casca dura"
+			},
+			"skull_alarm":{
+				"display_name": "Crânio Suspeito",
+				"description": "Talvez devesse deixá-lo em paz"
 			}
 		},
 		"outfit": {
@@ -680,6 +701,10 @@
 			}
 		},
 		"fisher": {
+			"bobber": {
+				"display_name":"Flutuador de Pesca",
+				"description":"Ele balança pacientemente... até a hora de atacar!"
+			},
 			"field": {
 				"display_name":"Área de Pesca",
 				"description":"Pescadores podem vir aqui para pescar"
@@ -707,6 +732,10 @@
 				"level_5": {
 					"perk_name": "Mais rápido",
 					"perk_description": "A cada nível, pescar fica mais rápido, com menos tempo esperando uma mordida."
+				},
+				"level_6": {
+					"perk_name": "Maestria em Iscas",
+					"perk_description": "O pescador agora pode alternar entre diferentes tipos de iscas para atrair peixes específicos."
 				}
 			},
 			"fisher_bucket": {
@@ -876,6 +905,13 @@
 					}
 				}
 			},
+			"fisher_bulletin_dialog":{
+				"view_album":"Ver Álbum"
+			},
+			"fishing_album":{
+				"title":"Álbum de Pesca",
+				"empty":"Álbum vazio. Nada registrado ainda."
+			},
 			"goblinpedia": {
 				"goblins":{
 					"jobs":{
@@ -973,18 +1009,42 @@
 			}
 		},
 		"commands": {
-			"open_crate": {
-				"display_name": "Abrir Caixote",
-				"description": "Martelar até quebrar"
-			},
 			"archer_arrows": {
 				"fish_arrows": {
 					"display_name": "Usando Flechas de Peixe",
 					"description": "Atualmente usando flechas de peixe, o que reduz a coragem dos inimigos. Clique para trocar entre os tipos de flechas."
 				}
+			},
+			"fishing_album": {
+				"display_name":"Abrir o Álbum de Pesca",
+				"description":"Clique para ler"
+			},
+			"fishing_default": {
+				"display_name": "Isca Padrão",
+				"description": "Sua isca leve, antiga e confiável.<br><br><font size=+3 color='#0f0'>●</font> Alta chance de pegar peixes pequenos.<br><font size=+3 color='#dd0'>●</font> Baixa chance de pegar peixes grandes.<br><font size=+3 color='#f00'>●</font> Rara chance de pegar recursos locais.<br><font size=+3 color='#f00'>●</font> Rara chance de pegar bugigangas."
+			},
+			"fishing_big_lure": {
+				"display_name": "Isca Grande",
+				"description": "Isca maior e mais pesada.<br><br><font size=+3 color='#422'>●</font> Sem chance de pegar peixes pequenos.<br><font size=+3 color='#0f0'>●</font> Alta chance de pegar peixes grandes.<br><font size=+3 color='#f00'>●</font> Rara chance de pegar recursos locais.<br><font size=+3 color='#f00'>●</font> Rara chance de pegar bugigangas."
+			},
+			"fishing_plant_lure": {
+				"display_name": "Isca de Planta",
+				"description": "Usada para enroscar recursos naturais locais.<br><br><font size=+3 color='#dd0'>●</font> Chance média de pegar peixes pequenos.<br><font size=+3 color='#f00'>●</font> Chance baixa de pegar peixes grandes.<br><font size=+3 color='#0f0'>●</font> Alta chance de pegar recursos locais.<br><font size=+3 color='#f00'>●</font> Chance rara de pegar bugigangas."
+			},
+			"fishing_trinket_lure": {
+				"display_name": "Isca de Bugiganga",
+				"description": "Útil para prender em objetos estranhos.<br><br><font size=+3 color='#dd0'>●</font> Chance média de pegar peixes pequenos.<br><font size=+3 color='#f00'>●</font> Chance baixa de pegar peixes grandes.<br><font size=+3 color='#f00'>●</font> Chance rara de pegar recursos locais.<br><font size=+3 color='#0f0'>●</font> Alta chance de pegar enfeites."
+			},
+			"open_crate": {
+				"display_name": "Abrir Caixote",
+				"description": "Martelar até quebrar"
 			}
 		},
 		"fishing": {
+			"golem_restocking":{
+				"title":"Estranha estátua de inseto?",
+				"message":"Parece que vai se mover a qualquer momento"
+			},
 			"turtle_shield": {
 				"title": "O pescador pegou um Escudo Tartaruga!",
 				"message": "Parece um escudo para soldados de nível baixo, e está pronto para ser usado."
@@ -1194,6 +1254,13 @@
 						}
 					}
 				}
+			}
+		},
+		"population": {
+			"atlanteans": {
+				"display_name": "Atlantes",
+				"long_description": "Imersos em conhecimento ancestral e moldados por seu lar oceânico, os atlantes são pensadores, inventores e místicos. Eles acreditam que o mundo é mais belo quando explorado com sabedoria e admiração.",
+				"post_selection_description": ", um antigo reino perdido."
 			}
 		},
 		"saved_objects": {

@@ -1,5 +1,5 @@
 {
-	"name": "bubbles",
+	"name": "fish",
 	"duration": 1000,
 	"material": "materials/cubemitter.material.json",
 	"loops": true,
@@ -11,7 +11,7 @@
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [1]
+			"values": [0.5]
 		},
 		"angle": {
 			"kind": "CONSTANT",

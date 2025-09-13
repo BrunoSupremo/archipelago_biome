@@ -7,7 +7,8 @@
 				<div class="message">{{{ formatted_i18n_key view.model.data.message i18n_data=view.model.i18n_data }}}</div>
 			</div>
 
-			<button id="okButton" class="">{{i18n stonehearth:ui.game.common.ok}}</button>
+			<button id="okButton">{{i18n stonehearth:ui.game.common.ok}}</button>
+			<button {{action "view_album" target=view}}>{{i18n archipelago_biome:ui.game.fisher_bulletin_dialog.view_album}}</button>
 		</div>
 	</div>
 </script>

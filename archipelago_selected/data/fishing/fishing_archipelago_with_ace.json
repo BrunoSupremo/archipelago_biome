@@ -1,0 +1,16 @@
+{
+	"natural_resources":{
+		"alias":{
+			"stonehearth_ace:plants:daylily:seed":true,
+			"stonehearth_ace:plants:oleander:seed":true,
+
+			"stonehearth_ace:resources:herb:water_lily:pink":true,
+			"stonehearth_ace:resources:herb:water_lily:purple":true,
+			"stonehearth_ace:resources:herb:water_lily:white":true,
+			"stonehearth_ace:resources:herb:water_lily:yellow":true,
+			"stonehearth_ace:resources:herb:daylily":true,
+			"stonehearth_ace:resources:herb:foxlily":true,
+			"stonehearth_ace:resources:herb:oleander":true
+		}
+	}
+}

@@ -9,8 +9,7 @@
 			"iconic_form": "file(bead_door_iconic.json)",
 			"ghost_form": "file(bead_door_ghost.json)",
 			"placeable_on_walls": true,
-			"placeable_on_ground": true,
-			"hide_placement_ui": true
+			"placeable_on_ground": true
 		}
 	},
 	"entity_data": {

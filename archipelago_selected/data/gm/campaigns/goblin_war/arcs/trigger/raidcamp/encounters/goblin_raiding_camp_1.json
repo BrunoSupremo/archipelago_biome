@@ -1,5 +1,6 @@
 {
 	"create_camp_info": {
+		"keep_grass": true,
 		"searcher_delay": "6h+6h",
 		"radius": 14,
 		"spawn_range": {

@@ -12,6 +12,10 @@
 		{
 			"material": "stone resource",
 			"count": 3
+		},
+		{
+			"material": "raw fish_meat",
+			"count": 1
 		}
 	],
 	"produces": [

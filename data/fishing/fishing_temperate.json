@@ -1,0 +1,29 @@
+{
+	"natural_resources":{
+		"alias":{
+			"stonehearth:beetle_bug_meat":true,
+			"stonehearth:food:berries:berry_basket":true,
+			"stonehearth:food:carrot:carrot_basket":true,
+
+			"stonehearth:plants:berry_bush:seed":true,
+			"stonehearth:plants:brightbell:seed":true,
+			"stonehearth:plants:carrot:seed":true,
+			"stonehearth:plants:frostsnap:seed":true,
+			"stonehearth:plants:silkweed:seed":true,
+
+			"stonehearth:resources:beetle_chitin":true,
+			"stonehearth:resources:feathers:duckduck_feathers":true,
+			"stonehearth:resources:feathers:ostrich_feathers":true,
+			"stonehearth:resources:fiber:silkweed_bundle":true,
+			"stonehearth:resources:herb:brightbell":true,
+			"stonehearth:resources:herb:frostsnap":true,
+			"stonehearth:resources:wood:juniper_log":true,
+			"stonehearth:resources:wood:oak_log":true,
+			"stonehearth:resources:wood:pine_log":true,
+
+			"stonehearth:trees:juniper:seed":true,
+			"stonehearth:trees:oak:seed":true,
+			"stonehearth:trees:pine:seed":true
+		}
+	}
+}

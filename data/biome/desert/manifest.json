@@ -1,5 +1,13 @@
 {
+	"mixintos": {
+		"archipelago_biome:data:fishing": [
+			"archipelago_biome/data/fishing/fishing_desert.json",
+			"stonehearth_ace/archipelago_biome/data/fishing/fishing_desert_with_ace.json"
+		]
+	},
 	"overrides" : {
+		"stonehearth_ace/archipelago_biome/data/fishing/fishing_desert_with_ace.json":"archipelago_biome/data/fishing/fishing_desert_with_ace.json",
+
 		"/archipelago_biome/entities/critters/crab/crab.qb": "file(desert_crab.qb)"
 	}
 }

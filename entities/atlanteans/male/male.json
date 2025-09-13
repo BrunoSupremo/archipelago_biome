@@ -17,7 +17,7 @@
 	},
 	"entity_data": {
 		"stonehearth:customization_variants": {
-			"customization_options": "stonehearth:humans:male:customizations",
+			"customization_options": "file(customizations.json)",
 			"root": {
 				"hair_and_skin_color": {
 					"weights": {
@@ -34,21 +34,26 @@
 				"hair_and_skin_color": {
 					"hair_color": {
 						"weights": {
-							"platinum": 1
+							"platinum": 2,
+							"platinum_60_green": 1,
+							"platinum_120_cyan": 1,
+							"platinum_180_blue": 1,
+							"platinum_240_purple": 0.5,
+							"platinum_300_red": 0.5
 						}
 					},
 					"skin_color": {
 						"weights": {
-							"brown_2": 1
+							"brown_atlantean": 1
 						}
 					},
 					"eye_color": {
 						"weights": {
 							"aqua": 1,
-							"black": 1,
+							"black": 0.1,
 							"blue": 1,
 							"blurple": 1,
-							"brown": 1,
+							"brown": 0.1,
 							"green": 1,
 							"hazel": 1,
 							"magenta": 1,
@@ -66,7 +71,7 @@
 					},
 					"facial_hair": {
 						"weights": {
-							"[none]": 4,
+							"[none]": 10,
 							"beard_chin": 1,
 							"chops": 1,
 							"beard": 1,
@@ -76,10 +81,10 @@
 					"head_hair": {
 						"weights": {
 							"[none]": 1,
-							"male_hair_1": 1,
-							"male_hair_2": 1,
-							"male_hair_3": 1,
-							"male_hair_4": 1,
+							"male_hair_1": 3,
+							"male_hair_2": 3,
+							"male_hair_3": 3,
+							"male_hair_4": 3,
 							"male_hair_old_1": 1,
 							"male_hair_old_2": 1,
 							"male_head_bald_1": 1,

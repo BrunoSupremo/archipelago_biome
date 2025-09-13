@@ -1,0 +1,113 @@
+{
+	"seasons": {
+		"dry": {
+			"mixintypes": {
+				"weather": "override"
+			},
+			"weather": [
+				{
+					"uri": "stonehearth_ace:weather:sunny:hot",
+					"weight": [1, 8, 1]
+				},
+				{
+					"uri": "stonehearth_ace:weather:sunny:stagnant",
+					"weight": [1, 6, 1]
+				},
+				{
+					"uri": "stonehearth_ace:weather:distant_storm",
+					"weight": [0, 1, 8]
+				},		
+				{
+					"uri": "stonehearth:weather:sunny",
+					"weight": 32
+				},
+				{
+					"uri": "stonehearth:weather:rain:sunny",
+					"weight": [8, 5, 8]
+				},
+				{
+					"uri": "stonehearth:weather:rain",
+					"weight": [7, 3, 8]
+				},
+				{
+					"uri": "stonehearth:weather:windy",
+					"weight": 8
+				},
+				{
+					"uri": "stonehearth:weather:cloudy",
+					"weight": 8
+				},
+				{
+					"uri": "stonehearth:weather:foggy",
+					"weight": [0, 1, 2]
+				},
+				{
+					"uri": "stonehearth:weather:thunderstorm",
+					"weight": [0, 1, 2]
+				},
+				{
+					"uri": "stonehearth:weather:lucky",
+					"weight": 0.1
+				}
+			]
+		},
+		"hurricane": {
+			"mixintypes": {
+				"weather": "override"
+			},
+			"weather": [
+				{
+					"uri": "stonehearth:weather:thunderstorm",
+					"weight": [30, 30, 30]
+				},
+				{
+					"uri": "stonehearth:weather:rain",
+					"weight": [20, 10, 20]
+				},
+				{
+					"uri": "stonehearth:weather:windy",
+					"weight": [10, 5, 10]
+				}
+			]
+		},
+		"wet": {
+			"mixintypes": {
+				"weather": "override"
+			},
+			"weather": [
+				{
+					"uri": "stonehearth:weather:rain:sunny",
+					"weight": [20, 23, 25]
+				},
+				{
+					"uri": "stonehearth:weather:rain",
+					"weight": [25, 23, 20]
+				},
+				{
+					"uri": "stonehearth:weather:windy",
+					"weight": [10, 11, 12]
+				},
+				{
+					"uri": "stonehearth:weather:cloudy",
+					"weight": [10, 11, 12]
+				},
+				{
+					"uri": "stonehearth:weather:foggy",
+					"weight": 3
+				},
+				{
+					"uri": "stonehearth:weather:sunny",
+					"weight": [3, 3, 6]
+				},
+				{
+					"uri": "stonehearth:weather:thunderstorm",
+					"weight": [6, 3, 3]
+				},
+				{
+					"uri": "stonehearth:weather:lucky",
+					"weight": 0.1
+				}
+			]
+		}
+	}
+}

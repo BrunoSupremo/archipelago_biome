@@ -1,0 +1,108 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"sensor_list": {
+			"sensors": {
+				"trojan_sensor": {
+					"type": "sensor",
+					"radius": 2
+				}
+			}
+		},
+		"archipelago_biome:trojan":{
+			"player_id":"undead",
+			"uri":"stonehearth:monsters:undead:skeleton",
+			"custom_name":"i18n(archipelago_biome:entities.monsters.cursed_pirate.display_name)",
+			"job": "stonehearth:jobs:npc:footman",
+			"attributes": {
+				"max_health": 500,
+				"muscle": 2,
+				"menace": 70,
+				"courage": 666,
+				"speed": 20,
+				"additive_armor_modifier": 3,
+				"exp_reward": 75
+			},
+			"equipment": {
+				"weapon": [
+					"stonehearth:weapons:dagger",
+					"stonehearth:worker_axe",
+					"stonehearth:trapper:knife",
+					"stonehearth:weapons:jagged_cleaver",
+					"stonehearth:weapons:wooden_sword",
+					"stonehearth:weapons:stone_maul",
+					"stonehearth:weapons:bronze_mace",
+					"stonehearth:weapons:bronze_sword",
+					"stonehearth:weapons:iron_mace",
+					"stonehearth:weapons:short_sword"
+				],
+				"outfit": [
+					"archipelago_biome:outfit:tricorn_hat",
+					"archipelago_biome:outfit:visitor"
+				]
+			},
+			"min":2,
+			"max":4,
+			"game_mode_customized":{
+				"easy_mode:game_mode:easy":{
+					"min":1,
+					"max":2
+				},
+				"stonehearth:game_mode:hard":{
+					"min":3,
+					"max":6
+				}
+			}
+		},
+		"effect_list": {
+			"default": "stonehearth:effects:corruption:beetle"
+		},
+		"stonehearth:resource_node": {
+			"category": "harvest",
+			"harvest_overlay_effect": "archipelago_biome:effects:overlay:open_crate",
+			"harvester_effect": "work",
+			"durability": 1
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(skull_alarm.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {"x": 0, "y": 0, "z": 0 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:on_destroy": {
+			"effect": "stonehearth:effects:death"
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.monsters.skull_alarm.display_name)",
+			"description": "i18n(archipelago_biome:entities.monsters.skull_alarm.description)",
+			"icon":"file(skull_alarm.png)"
+		},
+		"stonehearth:appeal": {
+			"appeal": -10
+		}
+	}
+}

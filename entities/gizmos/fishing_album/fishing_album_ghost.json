@@ -1,0 +1,25 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(fishing_album.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.45, "y": 0, "z": 0.55 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(archipelago_biome:entities.gizmos.fishing_album.display_name)",
+			"description": "i18n(archipelago_biome:entities.gizmos.fishing_album.description)",
+			"icon": "file(fishing_album.png)",
+			"category": "furniture",
+			"material_tags": ["archipelago_made", "wood", "furniture", "crafted", "stockpile_furniture"]
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"craftable_recipes": {
+		"food": {
+			"recipes": {
+				"slice_fish": {
+					"recipe": "file(food/trapper_plus_ace_slice_fish_recipe.json)"
+				}
+			}
+		}
+	}
+}

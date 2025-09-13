@@ -52,7 +52,7 @@
 	"entity_data": {
 		"stonehearth:hide_child_entities_from_pathfinder": true,
 		"stonehearth:net_worth": {
-			"value_in_gold": 6,
+			"value_in_gold": 7,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": false,

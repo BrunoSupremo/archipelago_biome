@@ -1,0 +1,29 @@
+{
+	"natural_resources":{
+		"alias":{
+			"stonehearth_ace:food:garlic:garlic_basket":true,
+			"stonehearth_ace:food:pears:pear_basket":true,
+			"stonehearth_ace:food:walnut:walnut_basket":true,
+
+			"stonehearth_ace:plants:bog_myrtle:seed":true,
+			"stonehearth_ace:plants:chives:seed":true,
+			"stonehearth_ace:plants:daylily:seed":true,
+			"stonehearth_ace:plants:garlic:seed":true,
+			"stonehearth_ace:plants:nightshade:seed":true,
+			"stonehearth_ace:plants:rose:seed":true,
+
+			"stonehearth_ace:resources:herb:bog_myrtle":true,
+			"stonehearth_ace:resources:herb:chives":true,
+			"stonehearth_ace:resources:herb:daylily":true,
+			"stonehearth_ace:resources:herb:nightshade":true,
+			"stonehearth_ace:resources:herb:rose":true,
+			"stonehearth_ace:resources:herb:water_lily:white":true,
+			"stonehearth_ace:resources:herb:water_lily:purple":true,
+			"stonehearth_ace:resources:wood:pear_log":true,
+			"stonehearth_ace:resources:wood:walnut_log":true,
+
+			"stonehearth_ace:trees:pear:seed":true,
+			"stonehearth_ace:trees:walnut:seed":true
+		}
+	}
+}

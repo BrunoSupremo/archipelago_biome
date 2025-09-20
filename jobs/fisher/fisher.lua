@@ -42,9 +42,9 @@ end
 function FisherClass:restore()
 	if self._sv.is_current_class then
 		self:_register_with_town()
-	end
-	if self:is_max_level() and not self:has_perk("crafter_recipe_unlock_6") then
-		self:fishing_options()
+		if self:is_max_level() and not self:has_perk("crafter_recipe_unlock_6") then
+			self:fishing_options()
+		end
 	end
 
 	--removing deprecated stuff
@@ -67,13 +67,13 @@ function FisherClass:activate()
 	self.biome_alias = stonehearth.world_generation:get_biome_alias()
 	self.player_id = radiant.entities.get_player_id(self._sv._entity)
 	self.kingdom_alias = stonehearth.player:get_kingdom(self.player_id)
+	self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true, false)
 	if self._sv.is_current_class then
 		self:_register_with_town()
+		radiant.on_game_loop_once('prepare_next_fish_loot delay', function()
+			self:prepare_next_fish_loot()
+		end)
 	end
-	self.fishing_data = radiant.resources.load_json("archipelago_biome:data:fishing", true, false)
-	radiant.on_game_loop_once('prepare_next_fish_loot delay', function()
-		self:prepare_next_fish_loot()
-	end)
 end
 
 function FisherClass:promote(json_path, options)

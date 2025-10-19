@@ -3,6 +3,10 @@
 	"type": "entity",
 	"components": {
 		"render_info": {
+			"color_map": "archipelago_biome:color_map:hot",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/mob_material_map.json"
+			],
 			"scale": 0.301
 		},
 		"model_variants": {

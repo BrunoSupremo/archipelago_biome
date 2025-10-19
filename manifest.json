@@ -10,6 +10,7 @@
 	],
 	"default_locale": "en",
 	"server_init_script": "file(archipelago_biome_server)",
+	"client_init_script": "file(archipelago_biome_client)",
 	"aliases": {
 		"ai_pack:crab_movement":"file(ai/packs/crab_movement_ai_pack.json)",
 		"ai_pack:fishing":"file(ai/packs/fishing_ai_pack.json)",
@@ -53,6 +54,7 @@
 		"captain_miranda":	"file(entities/humans/captain_miranda)",
 		"anya":				"file(entities/humans/anya)",
 
+		"color_map:hot":"file(data/materials/color_maps/hot_color_map.json)",
 		"color_map:octopus":"file(data/materials/color_maps/octopus_color_map.json)",
 		"color_map:oyster":	"file(data/materials/color_maps/oyster_color_map.json)",
 		"color_map:tree":	"file(data/materials/color_maps/tree_color_map.json)",
@@ -129,6 +131,7 @@
 		"effects:overlay:no_water":			"file(data/effects/overlays/no_water)",
 		"effects:overlay:open_crate":		"file(data/effects/overlays/open_crate)",
 		"effects:tiki_torch_effect":		"file(data/effects/tiki_torch_effect)",
+		"effects:water:glint":				"file(data/effects/water/glint.json)",
 		"effects:wave_effect":				"file(data/effects/wave_effect)",
 		"effects:wave_bad_effect":			"file(data/effects/wave_effect/wave_bad_effect.json)",
 		"effects:water_surface_effect":		"file(data/effects/wave_effect/water_surface_effect.json)",
@@ -588,6 +591,7 @@
 	},
 	"components": {
 		"boat_dock":	"file(components/boat_dock/boat_dock.lua)",
+		"bobber":		"file(components/bobber/bobber.lua)",
 		"cave":			"file(components/cave/cave.lua)",
 		"crab_spawner":	"file(components/crab_spawner/crab_spawner.lua)",
 		"dock":			"file(components/dock/dock.lua)",
@@ -596,6 +600,9 @@
 		"need_water":	"file(components/need_water/need_water.lua)",
 		"trojan":		"file(components/trojan/trojan.lua)",
 		"wave":			"file(components/wave/wave.lua)"
+	},
+	"client_controllers":{
+		"weather_renderers:water_glint":"file(data/weather/ocean_renderer.lua)"
 	},
 	"component_renderers":{
 		"fisher_field": "file(renderers/fisher_field/fisher_field.lua)"

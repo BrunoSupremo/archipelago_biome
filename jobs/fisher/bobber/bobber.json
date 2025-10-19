@@ -1,6 +1,7 @@
 {
 	"type": "entity",
 	"components": {
+		"archipelago_biome:bobber": {},
 		"render_info": {
 			"animation_table": "file(/data/rigs/entities/gizmos/bobber)"
 		},

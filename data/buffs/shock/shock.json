@@ -8,7 +8,7 @@
 	"effect": "archipelago_biome:effects:electric:shock",
 	"modifiers": {
 		"courage": {
-			"max": 0
+			"multiply": 0
 		},
 		"speed": {
 			"max": 0

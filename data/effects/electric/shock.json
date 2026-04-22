@@ -1,35 +1,25 @@
 {
 	"type": "effect",
 	"tracks": {
-		"lightning_contrast": {
+		"dark_cloud": {
 			"type": "cubemitter",
-			"cubemitter": "particles/lightning/lightning_contrast.cubemitter.json",
+			"cubemitter": "/archipelago_biome/data/horde/particles/shock/dark_cloud.json",
 			"start_time": 0,
-			"end_time": 2000,
+			"end_time": 3000,
 			"loop": false,
-			"transforms": { "x": 0, "y": 0, "z": 0,
+			"transforms": { "x": 0, "y": 1.5, "z": 0,
 				"rx": 90,
 				"ry": 0,
 				"rz": 0
 			}
 		},
-		"lightning_strike_base_small": {
+		"sparks": {
 			"type": "cubemitter",
-			"cubemitter": "particles/lightning/lightning_strike_base_small.cubemitter.json",
+			"cubemitter": "/archipelago_biome/data/horde/particles/shock/sparks.json",
 			"start_time": 0,
-			"end_time": 2000,
-			"transforms": { "x": 0, "y": 0, "z": 0,
-				"rx": 90,
-				"ry": 0,
-				"rz": 0
-			}
-		},
-		"lightning_strike_smoke_small": {
-			"type": "cubemitter",
-			"cubemitter": "particles/lightning/lightning_strike_smoke_small.cubemitter.json",
-			"start_time": 0,
-			"end_time": 2000,
-			"transforms": { "x": 0, "y": 0, "z": 0,
+			"end_time": 3000,
+			"loop": false,
+			"transforms": { "x": 0, "y": 1.5, "z": 0,
 				"rx": 90,
 				"ry": 0,
 				"rz": 0
@@ -38,10 +28,18 @@
 		"light": {
 			"loop": false,
 			"start_time": 0,
-			"end_time": 2000,
+			"end_time": 3000,
 			"type": "light",
-			"light": "animatedlights/presence/cursor_light.animatedlight.json",
-			"transforms": { "x": 0, "y": 3, "z": 0 }
+			"light": "/archipelago_biome/data/horde/animatedlights/shock/light.json",
+			"transforms": { "x": 0.5, "y": 1, "z": 0.5 }
+		},
+		"light_2": {
+			"loop": false,
+			"start_time": 0,
+			"end_time": 3000,
+			"type": "light",
+			"light": "/archipelago_biome/data/horde/animatedlights/shock/light.json",
+			"transforms": { "x": -0.5, "y": 2.5, "z": -0.5 }
 		}
 	}
 }

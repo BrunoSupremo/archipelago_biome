@@ -15,7 +15,7 @@
 			{
 				"name": "combat_1h_backhand",
 				"effect": "combat_1h_backhand",
-				"active_frame": 32,
+				"active_frame": 25,
 				"cooldown": 0,
 				"priority": 0,
 				"aoe_effect": {
@@ -23,7 +23,7 @@
 					"inflictable_debuffs": {
 						"shock": {
 							"uri": "archipelago_biome:buffs:shock",
-							"chance": 0.5
+							"chance": 0.25
 						},
 						"poison": {
 							"uri": "stonehearth:buffs:undead_infection",

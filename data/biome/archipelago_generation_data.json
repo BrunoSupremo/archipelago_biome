@@ -160,7 +160,7 @@
 		},
 		"noise_map_settings": {
 			"octaves": 3,
-			"persistence_ratio": 0.01,
+			"persistence_ratio": 0.05,
 			"bandlimit": 3.5,
 			"aspect_ratio": 1
 		},

@@ -127,11 +127,13 @@ function ArchipelagoBoatDock:create_platform(other_side)
 	local x_size, z_size = other_side.x - location.x, other_side.z - location.z
 	local p_min, p_max = radiant.math.get_min_max(Point3(0,0,0), Point3(x_size, 1, z_size))
 	if p_min.x == p_max.x then
-		p_max.x = 1
+		p_min.x = -1
+		p_max.x = 2
 		p_min.z = p_min.z+1
 	end
 	if p_min.z == p_max.z then
-		p_max.z = 1
+		p_min.z = -1
+		p_max.z = 2
 		p_min.x = p_min.x+1
 	end
 	rcs:get_region():modify(function(cursor)

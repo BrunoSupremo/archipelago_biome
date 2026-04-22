@@ -1,6 +1,8 @@
 Changes:
-Some visual effects improved
+Lowered chances of getting shocked from jellyfish attacks
+Improved visual effects for the eletric shock from jellyfish
+A little more noise for the map generation, should increase island shape variations
+Boat water paths are 3 wide now, boat riders can spread while fighting in them (instead of be in a line)
 
 
 Fixes:
-Fisher bobber would not despawn after a save and reload. They will be deleted after saving and reloading now.

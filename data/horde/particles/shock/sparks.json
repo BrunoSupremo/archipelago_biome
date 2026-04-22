@@ -1,0 +1,98 @@
+{
+	"name": "sparks",
+	"duration": 3000,
+	"material": "materials/cubemitter_add_bloom.material.json",
+	"loops": true,
+	"emission": {
+		"rate": {
+			"kind": "BURST",
+			"values": [
+				[0, 30],
+				[750, 30],
+				[2200, 30]
+			]
+		},
+		"angle": {
+			"kind": "RANDOM_BETWEEN",
+			"values": [0, 180]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": {
+				"surface": "POINT"
+			}
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [800, 1200]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [2]
+			}
+		},
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, -360],
+						[1, 720]
+					],
+					[
+						[0, 360],
+						[1, 720]
+					]
+				]
+			},
+			"over_lifetime_z": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, -360],
+						[1, 720]
+					],
+					[
+						[0, 360],
+						[1, 720]
+					]
+				]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0.08, 0.15]
+			},
+			"start_z": {
+				"kind": "CONSTANT",
+				"values": [5]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.71, 0.839, 0.992, 1]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.1, 1],
+					[0.2, 0],
+					[0.3, 0],
+					[0.5, 1],
+					[0.6, 0],
+					[0.7, 0],
+					[0.9, 1],
+					[1, 0]
+				]
+			}
+		}
+	}
+}
